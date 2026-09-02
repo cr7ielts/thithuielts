@@ -1,0 +1,269 @@
+# Design System Master File
+
+> **LOGIC:** When building a specific page, first check `design-system/pages/[page-name].md`.
+> If that file exists, its rules **override** this Master file.
+> If not, strictly follow the rules below.
+
+---
+
+**Project:** IELTS Mock Test
+**Generated:** 2026-09-02 11:16:59
+**Category:** Educational App
+**Design Dials:** Variance 5/10 (Balanced / Modern) | Motion 4/10 (Standard) | Density 5/10 (Standard)
+
+---
+
+## Global Rules
+
+### Color Palette
+
+| Role | Hex | CSS Variable |
+|------|-----|--------------|
+| Primary | `#0D9488` | `--color-primary` |
+| On Primary | `#FFFFFF` | `--color-on-primary` |
+| Secondary | `#2DD4BF` | `--color-secondary` |
+| Accent/CTA | `#D97706` | `--color-accent` |
+| Background | `#F0FDFA` | `--color-background` |
+| Foreground | `#134E4A` | `--color-foreground` |
+| Muted | `#E8F1F4` | `--color-muted` |
+| Border | `#5EEAD4` | `--color-border` |
+| Destructive | `#DC2626` | `--color-destructive` |
+| Ring | `#0D9488` | `--color-ring` |
+
+**Color Notes:** Education teal + course amber + grade green
+
+### Typography
+
+- **Heading Font:** Baloo 2
+- **Body Font:** Comic Neue
+- **Mood:** kids, education, playful, friendly, colorful, learning
+- **Google Fonts:** [Baloo 2 + Comic Neue](https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Comic+Neue:wght@300;400;700&display=swap)
+
+**CSS Import:**
+```css
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Comic+Neue:wght@300;400;700&display=swap');
+```
+
+### Spacing Variables
+
+*Density: 5/10 — Standard*
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--space-xs` | `4px` / `0.25rem` | Tight gaps |
+| `--space-sm` | `8px` / `0.5rem` | Icon gaps, inline spacing |
+| `--space-md` | `16px` / `1rem` | Standard padding |
+| `--space-lg` | `24px` / `1.5rem` | Section padding |
+| `--space-xl` | `32px` / `2rem` | Large gaps |
+| `--space-2xl` | `48px` / `3rem` | Section margins |
+| `--space-3xl` | `64px` / `4rem` | Hero padding |
+
+### Shadow Depths
+
+| Level | Value | Usage |
+|-------|-------|-------|
+| `--shadow-sm` | `0 1px 2px rgba(0,0,0,0.05)` | Subtle lift |
+| `--shadow-md` | `0 4px 6px rgba(0,0,0,0.1)` | Cards, buttons |
+| `--shadow-lg` | `0 10px 15px rgba(0,0,0,0.1)` | Modals, dropdowns |
+| `--shadow-xl` | `0 20px 25px rgba(0,0,0,0.15)` | Hero images, featured cards |
+
+---
+
+## Component Specs
+
+### Buttons
+
+```css
+/* Primary Button */
+.btn-primary {
+  background: #D97706;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: transparent;
+  color: #0D9488;
+  border: 2px solid #0D9488;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+```
+
+### Cards
+
+```css
+.card {
+  background: #F0FDFA;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+```
+
+### Inputs
+
+```css
+.input {
+  padding: 12px 16px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 200ms ease;
+}
+
+.input:focus {
+  border-color: #0D9488;
+  outline: none;
+  box-shadow: 0 0 0 3px #0D948820;
+}
+```
+
+### Modals
+
+```css
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--shadow-xl);
+  max-width: 500px;
+  width: 90%;
+}
+```
+
+---
+
+## Style Guidelines
+
+**Style:** Flat Design
+
+**Keywords:** 2D, minimalist, bold colors, no shadows, clean lines, simple shapes, typography-focused, modern, icon-heavy
+
+**Best For:** Web apps, mobile apps, cross-platform, startup MVPs, user-friendly, SaaS, dashboards, corporate
+
+**Key Effects:** No gradients/shadows, simple hover (color/opacity shift), fast loading, clean transitions (150-200ms ease), minimal icons
+
+### Page Pattern
+
+**Pattern Name:** App Store Style Landing
+
+- **Conversion Strategy:** Show real screenshots. Include ratings (4.5+ stars). QR code for mobile. Platform-specific CTAs.
+- **CTA Placement:** Download buttons prominent (App Store + Play Store) throughout
+- **Section Order:** 1. Hero with device mockup, 2. Screenshots carousel, 3. Features with icons, 4. Reviews/ratings, 5. Download CTAs
+
+---
+
+## Motion
+
+**Stagger List** (Standard) — Trigger: load or scroll | Duration: 300-450ms | Easing: `back.out(1.4)`
+
+```js
+gsap.from('.grid-item', { opacity: 0, scale: 0.92, y: 16, duration: 0.4, stagger: { each: 0.06, from: 'start', grid: 'auto' }, ease: 'back.out(1.4)' });
+```
+
+**Framework notes:** grid: 'auto' lets GSAP infer rows/columns from a CSS grid layout for a natural wave stagger
+
+- ✅ Combine with from: 'center' for a bento-grid layout to draw the eye inward first
+- ❌ Don't use back.out on dense data tables; the overshoot reads as sloppy on informational UI
+- ⚡ Group DOM writes; avoid interleaving layout reads (getBoundingClientRect) between staggered tweens
+
+---
+
+## Anti-Patterns (Do NOT Use)
+
+- ❌ Dark modes
+- ❌ Complex jargon
+
+### Additional Forbidden Patterns
+
+- ❌ **Emojis as icons** — Use SVG icons (Heroicons, Lucide, Simple Icons)
+- ❌ **Missing cursor:pointer** — All clickable elements must have cursor:pointer
+- ❌ **Layout-shifting hovers** — Avoid scale transforms that shift layout
+- ❌ **Low contrast text** — Maintain 4.5:1 minimum contrast ratio
+- ❌ **Instant state changes** — Always use transitions (150-300ms)
+- ❌ **Invisible focus states** — Focus states must be visible for a11y
+
+---
+
+## Pre-Delivery Checklist
+
+Before delivering any UI code, verify:
+
+- [ ] No emojis used as icons (use SVG instead)
+- [ ] All icons from consistent icon set (Heroicons/Lucide)
+- [ ] `cursor-pointer` on all clickable elements
+- [ ] Hover states with smooth transitions (150-300ms)
+- [ ] Light mode: text contrast 4.5:1 minimum
+- [ ] Focus states visible for keyboard navigation
+- [ ] `prefers-reduced-motion` respected
+- [ ] Responsive: 375px, 768px, 1024px, 1440px
+- [ ] No content hidden behind fixed navbars
+- [ ] No horizontal scroll on mobile
+
+---
+
+## Ghi đè có chủ đích (cập nhật 02/09/2026)
+
+Ba khuyến nghị bên trên đã bị ghi đè, kèm lý do. Đừng "sửa lại cho đúng
+khuyến nghị" nếu chưa đọc phần này.
+
+### 1. Font chữ thân bài: KHÔNG dùng Comic Neue
+Khuyến nghị gốc là cặp `Baloo 2 / Comic Neue`. Giữ **Baloo 2** cho tiêu đề,
+nhưng thân bài dùng **Be Vietnam Pro**.
+
+Lý do: Comic Neue chỉ có subset `latin`. Kiểm chứng bằng
+`curl "https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400"` — chỉ trả về
+một khối `/* latin */`, `unicode-range` không chứa dải tiếng Việt (U+0102-0103,
+U+1EA0-1EF9…). Dùng nó thì mọi chữ có dấu như "ế, ữ, ộ" sẽ rơi sang font dự phòng,
+gây lệch nét ngay giữa câu. Ngoài ra đây là font kiểu truyện tranh, không hợp với
+một trang thi có chấm điểm.
+
+### 2. Nền đặc màu chính: dùng `brand-700`, không phải `#0D9488`
+Bảng màu khuyến nghị ghép `Primary #0D9488` với `On Primary #FFFFFF`.
+Cặp này chỉ đạt **3.74:1**, dưới ngưỡng 4.5:1 cho chữ thường.
+
+Đã đo toàn bộ thang màu:
+
+| Sắc độ | Mã | Chữ trắng | Kết luận |
+|---|---|---|---|
+| brand-500 | `#14b8a6` | 2.49:1 | trượt |
+| brand-600 | `#0d9488` | 3.74:1 | trượt (đây là khuyến nghị gốc) |
+| **brand-700** | `#0f766e` | **5.47:1** | đạt — dùng cho nút, tab đang chọn |
+| mint-500 | `#22a271` | 3.24:1 | trượt |
+| **mint-600** | `#15825b` | **4.80:1** | đạt |
+
+Teal vẫn là màu thương hiệu như khuyến nghị; chỉ riêng **nền đặc có chữ trắng**
+phải từ `brand-700` trở lên. Accessibility là ưu tiên số 1 trong chính bảng
+xếp hạng của skill nên nó thắng gợi ý bảng màu.
+
+### 3. Bố cục trang chủ: không theo "App Store Style Landing"
+Truy vấn `--domain landing` chỉ trả về hai mẫu: *App Store Style Landing* và
+*Lead Magnet + Form*. Cả hai đều sai ngữ cảnh — sản phẩm này không có app để tải
+về và cũng không phải trang thu thập email. Trang chủ vì vậy dựng theo bảng ưu tiên
+mặc định của skill (hero → 4 kỹ năng → 3 điểm mạnh), **không phải từ dữ liệu tra được**.

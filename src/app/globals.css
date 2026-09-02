@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --grid: rgba(49, 130, 246, 0.07);
+  }
+  body {
+    @apply bg-[#f5faf9] text-slate-800 antialiased;
+    background-image:
+      radial-gradient(circle at 12% -5%, rgba(217, 119, 6, 0.14), transparent 42%),
+      radial-gradient(circle at 92% 8%, rgba(45, 212, 191, 0.20), transparent 40%),
+      radial-gradient(circle at 50% 110%, rgba(13, 148, 136, 0.14), transparent 45%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3 { font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif; }
+}
+
+@layer components {
+  .card {
+    @apply rounded-3xl border border-white bg-white/85 p-6 shadow-card backdrop-blur;
+  }
+  .btn {
+    @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-2xl px-5 py-3
+           font-semibold transition active:translate-y-px
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary { @apply btn bg-brand-700 text-white shadow-pop hover:bg-brand-800; }
+  .btn-sun     { @apply btn bg-mango-300 text-mango-900 hover:bg-mango-400; }
+  .btn-mint    { @apply btn bg-mint-600 text-white hover:bg-mint-700; }
+  .btn-ghost   { @apply btn border-2 border-slate-200 bg-white text-slate-700 hover:border-brand-300 hover:text-brand-700; }
+  .input {
+    @apply w-full rounded-2xl border-2 border-slate-200 bg-white px-4 py-3 text-slate-800
+           outline-none transition placeholder:text-slate-400 focus:border-brand-400
+           focus:ring-4 focus:ring-brand-100;
+  }
+  .label { @apply mb-1.5 block text-sm font-semibold text-slate-600; }
+  .chip  { @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold; }
+}
+
+/* Khoa boi den trong luc thi de tranh copy noi dung de */
+.exam-locked, .exam-locked * {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.exam-locked input, .exam-locked textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Vien focus thay cho outline mac dinh - nguoi dung ban phim phai nhin thay
+   dang o o nao. Chi hien khi dieu huong bang ban phim, khong hien khi bam chuot. */
+@layer base {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  summary:focus-visible,
+  [tabindex]:focus-visible {
+    @apply outline-none ring-4 ring-brand-300 ring-offset-2 ring-offset-white;
+    border-radius: 0.75rem;
+  }
+
+  button:not(:disabled),
+  summary,
+  label:has(input[type='radio']),
+  label:has(input[type='checkbox']) {
+    cursor: pointer;
+  }
+}
+
+/* Ton trong cai dat "giam chuyen dong" cua he dieu hanh. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { @apply rounded-full bg-slate-300; }
+::-webkit-scrollbar-thumb:hover { @apply bg-slate-400; }
