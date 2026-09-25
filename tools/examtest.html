@@ -1,0 +1,22 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>exam test</title><link rel="stylesheet" href="../css/styles.css"></head>
+<body><div class="wrap" style="padding:20px"><div id="root" class="stack"></div></div>
+<script type="module">
+import { el } from "../js/ui.js";
+import { examView, loadInteractive } from "../js/bank/exam.js";
+import { READING_BANK } from "../js/data/bank-reading.js";
+import { LISTENING_BANK, LISTENING_SECTIONS } from "../js/data/bank-listening.js";
+const all = [...READING_BANK, ...LISTENING_BANK, ...LISTENING_SECTIONS];
+const root = document.getElementById("root");
+const id = new URLSearchParams(location.search).get("id") || "forecast-02-s3";
+const item = all.find((x) => x.id === id);
+const data = await loadInteractive(id);
+const answers = {};
+const out = el("div", { class: "tiny muted" });
+const ex = examView(data, item, answers, () => { out.textContent = JSON.stringify(answers); });
+const sheet = el("div", { class: "bank-sheet cdi" }, ex.sheet);
+root.append(el("h1", {}, item.title), data.passage
+  ? el("div", { class: "bank-split cdi-split" }, ex.paper, sheet)
+  : el("div", { class: "stack cdi-one" }, sheet), ex.nav, out);
+window._ex = ex; window._answers = answers; window._item = item;
+</script></body></html>

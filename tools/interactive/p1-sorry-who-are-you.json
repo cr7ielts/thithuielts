@@ -1,0 +1,138 @@
+{
+ "id": "p1-sorry-who-are-you",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 1,
+   "to": 7,
+   "kind": "tfng",
+   "instruction": "Do the following statements agree with the information given in Reading Passage 1? TRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVEN if there is no information on this",
+   "questions": [
+    {
+     "n": 1,
+     "text": "Before attending college, Jacob was capable of recognising people he knew well."
+    },
+    {
+     "n": 2,
+     "text": "Researchers believe that prosopagnosia may be a growing problem."
+    },
+    {
+     "n": 3,
+     "text": "It is harder to identify developmental prosopagnosia in babies than in young children."
+    },
+    {
+     "n": 4,
+     "text": "A German study seems to support the Harvard and UCL research findings."
+    },
+    {
+     "n": 5,
+     "text": "In general, prosopagnosics are aware that other people can recognise faces more easily than they can."
+    },
+    {
+     "n": 6,
+     "text": "In most cases, prosopagnosics have developed ways to deal with their problem."
+    },
+    {
+     "n": 7,
+     "text": "The study of prosopagnosia may help neuroscientists to treat different kinds of brain injury."
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "to": 13,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Differences in prosopagnosics As well as being unable to recognise facial features, prosopagnosics may also have problems recognising"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "commonly seen {{8}} and objects."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "the {{9}} on someone else's face."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Some prosopagnosics can recognise that people are regarded as attractive by others."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Causes of prosopagnosia Prosopagnosia may be caused by"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "just one {{10}}, according to Martina Gruter"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "a defect in the {{11}} eye, according to Brad Duchaine"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Treatment for prosopagnosia Joseph DeGutis's patient proved he had been successfully trained to recognise faces inside the {{12}} and in the outside world."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Duchaine's training may allow prosopagnosics to recognise faces belonging to family and workmates."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Thomas Gruter doubts that the training will work and mentions that {{13}} by some subjects can affect research results."
+    }
+   ],
+   "noteTitle": "The challenges for prosopagnosia researchers"
+  }
+ ],
+ "passage": {
+  "title": "Sorry--who are you?",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Prosopagnosia is a medical condition that stops people from recognizing people's faces, but how common is it and why does it happen?"
+   },
+   {
+    "mark": "",
+    "text": "It was Jacob Hodes's first day at college. He can still recall spending an enjoyable afternoon being shown around campus by a second-year student named Daniel Byrne, who happened to be from his home town. Jacob then spent the rest of the year ignoring him. `I never saw him again,' he says. `Well, I'm sure I walked past him plenty of times, but I just didn't see him.' This behaviour wasn't intentional. Jacob just couldn't recollect what his fellow student looked like. He had had the same trouble all his life. Friends and relatives would greet him and he would have no idea who they were."
+   },
+   {
+    "mark": "",
+    "text": "It wasn't until five years ago that it all made sense. That was when Hodes was diagnosed with prosopagnosia, a condition that means he is unable to recognise faces. According to researchers, he is far from alone. In fact, the condition is not that uncommon, but until a few years ago only a few dozen cases had ever been described, and all of these had been caused by brain injury. Recently, though, researchers identified a second form of face blindness, developmental prosopagnosia, which is either present from birth or develops very early in life."
+   },
+   {
+    "mark": "",
+    "text": "In May a team from Harvard University in the US and University College London (UCL) announced the results of a web survey of 1,600 people, suggesting that up to 2 per cent of people have some degree of face blindness. Then in August, Martina Gruter and colleagues at the Institute for Human Genetics in Munster, Germany, similarly reported that 2.5 per cent of 700 secondary-school pupils they had tested had trouble recognising faces. The results of the surveys took everyone by surprise."
+   },
+   {
+    "mark": "",
+    "text": "It seems that if you have never known what it is to recognise a face, you don't necessarily know that you are supposed to be able to. Prosopagnosics almost always know that they have trouble recognising people, but they often don't realise that other people have better recognition skills than they do, says Brad Duchaine, a researcher at UCL. Despite these issues, the majority of developmental prosopagnosics possess strategies that allow them to get around their difficulty--for instance, by recognising hair, clothing, or a person's way of speaking--so, unless they see a familiar person out of context, with a new hairstyle or in different clothes, they can recognise people just fine. Even so, the discovery of developmental prosopagnosia has attracted attention from neuroscientists keen to discover what is different about the brain of face-blind people. This difference, they believe, could help solve the problem of how the brain deals with information in general, not just visual data. In other words, it may show whether the brain has specialised parts for specific tasks or is more of a general-purpose information processor."
+   },
+   {
+    "mark": "",
+    "text": "One issue, however, that will present challenges for researchers is that no two prosopagnosics are the same. Some have problems only with faces, while others have trouble with ordinary everyday objects and, so it turns out, animals which would normally be familiar as well. Some prosopagnosics can train themselves to recognise specific faces; others can't even recognise their own in a mirror. When some have been tested they could identify the emotion that was conveyed on another's face, even though the face itself seemed unfamiliar, while for other subjects this was an impossibility. Some cannot recognise the faces of old friends or fellow students but have no trouble telling whether a particular face from such groups would be attractive to most people. Because of this diversity, working out the cause of prosopagnosia will not be easy."
+   },
+   {
+    "mark": "",
+    "text": "In Martina Gruter's study, the prosopagnosics who agreed to have their parents and relatives tested reported at least one relative with the condition. Having looked at 38 cases in seven families, the German team believe they have good evidence that a single gene could be responsible. Duchaine also has some evidence that face blindness could be inherited but thinks other factors might be more significant. He refers to studies of babies born with a condition which means the eye's lens is not clear, and when it's the left one, being unable to see through this eye during the first two months of life is a major risk factor for prosopagnosia."
+   },
+   {
+    "mark": "",
+    "text": "Whatever the cause, what most prosopagnosics want to know is whether they can do anything to improve their face-recognition skills. Joseph DeGutis, a graduate student at the University of California, recently reported successfully training a severe developmental prosopagnosic to recognise faces during tests carried out in the laboratory. The subject also reported that recognising faces in everyday life became easier due to the training. Duchaine now plans to attempt to train sufferers to recognise the five people they most need to know--maybe their immediate family, for example, and essential colleagues. Thomas Gruter, Martina Gruter's husband, who also works on her team, however, is not convinced it will work. `I don't know how you can have more training than you have already had,' he says. `Humans already spend all day looking at faces.' He also points out that cheating is a possibility during tests and provides an example. One person we studied said that when she was doing the face-recognition test, she memorised the distance between nose and upper lip. She wasn't the only one. So you can perform well in the test and not do so well in real life."
+   }
+  ]
+ }
+}

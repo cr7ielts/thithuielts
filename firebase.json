@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "xamenglish-d8ebd",
+    "public": ".",
+    "ignore": [
+      "firebase.json", "firestore.rules", "firestore.indexes.json", "storage.rules",
+      "README.md", "bank-report.md", "deploy.cmd", "tools/**", "**/*.log", "**/.*", "**/node_modules/**"
+    ],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      }
+    ]
+  },
+  "firestore": { "rules": "firestore.rules", "indexes": "firestore.indexes.json" },
+  "storage": { "rules": "storage.rules" }
+}

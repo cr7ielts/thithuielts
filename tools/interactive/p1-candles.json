@@ -1,0 +1,141 @@
+{
+ "id": "p1-candles",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 1,
+   "to": 5,
+   "kind": "tfng",
+   "instruction": "Do the following statements agree with the information given in Reading Passage 1? TRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVEN if there is no information on this",
+   "questions": [
+    {
+     "n": 1,
+     "text": "Artwork from ancient Egypt indicates that the use of candles was limited to royalty."
+    },
+    {
+     "n": 2,
+     "text": "Tallow was produced exclusively for candlemaking."
+    },
+    {
+     "n": 3,
+     "text": "In the Middle Ages, candles made from beeswax were more popular than those made from other substances."
+    },
+    {
+     "n": 4,
+     "text": "Keeping time at auctions in the 15th century involved marking lines on the surface of a candle."
+    },
+    {
+     "n": 5,
+     "text": "The candles used at auctions had to be of good quality."
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "to": 13,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Advantages of the various types of wax used in candlemaking"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "beeswax made less {{6:...}} than animal fats"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "spermaceti wax produced a stronger {{7:...}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "ozokerite did not melt when the {{8:...}} was hot"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "paraffin blend made good quality candles which were inexpensive"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The candlemaking process"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "in the dipping method, wicks were made from rushes"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "in the pouring method, melted beeswax was poured over a wick that was made of {{9:...}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Candlemaking today"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "wax can be obtained from the stem of a {{10:...}} called candelilla"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "bayberry wax, used in decorative candles, comes from the plant's {{11:...}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "the {{12:...}} of a decorative candle is made from wax which can resist heat"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "{{13:...}} is often used to keep the wick of a candle upright"
+    }
+   ],
+   "noteTitle": "Candlemaking"
+  }
+ ],
+ "passage": {
+  "title": "Candles",
+  "paras": [
+   {
+    "mark": "",
+    "text": "One of the earliest forms of portable illumination, candles have served vital functions for humankind throughout history, a fact chronicled through the use of candles or candle-like objects in virtually every society. Historians believe the original candle may have been invented by early humans who dipped dried branches from trees into animal fat, thus producing a slow-burning and reliable source of light. Ancient Egyptian artworks depict the use of candles by writers and philosophers who worked long after sundown. These early candles were most likely developed from tapers that were made of fibrous materials mixed with wax or with tallow, the white, nearly tasteless fat of cattle or sheep also used to make soap."
+   },
+   {
+    "mark": "",
+    "text": "A major improvement in candlemaking materials came in the Middle Ages, when beeswax was preferred over animal or vegetable fats candles were introduced to Europe. Beeswax was preferred over animal or vegetable fats because it smelled pleasant and did not produce as much mess as other fats. During this time, candles were primarily used as a source of illumination. However, this was not their only purpose. In the 15th century, for example, candles were used as a means of keeping time. At auctions, the bidding time was limited by inserting a pin into a candle and letting the wax melt until the pin dropped, thus concluding the period in which a bid could be made."
+   },
+   {
+    "mark": "",
+    "text": "The growth of the whaling industry in the late 18th century brought another major change in candlemaking materials, as spermaceti wax, which was extracted from the oil of the sperm whale, became more widely available. Spermaceti wax was popular because it provided a significantly brighter light and burned evenly."
+   },
+   {
+    "mark": "",
+    "text": "Ozokerite, a colorless mineral hydrocarbon wax, was also popular in the 17th and 18th centuries, particularly in warmer weather, when its relatively high melting point meant it remained firm. Paraffin, a wax crystallized from petroleum, became popular during the 1860s. It was eventually blended with spermaceti and ceresin -- a byproduct of refined petroleum oil. This created a more durable wax, and, thanks to the fact that it resulted in inexpensive candles of reasonably high quality, its use was widespread by the end of the 19th century. The candle wick, the length of soft material which runs through the middle of the candle, was made from a variety of natural fibers. In 1824, Frenchman Jean- Jacques Cambaceres introduced an important refinement to wick technology with the plaited wick, which consisted of several strands of material woven together. This burned more evenly than unplaited wicks."
+   },
+   {
+    "mark": "",
+    "text": "Although candlemaking materials have changed through the years, the art of candlemaking has remained surprisingly similar to the original production process. Originally, candles were produced by hand using an approach known as the dipping method. Dating back to the Middle Ages, the method involved the use of wicks made from rushes. These were repeatedly dipped into molten fat until the desired thickness of fat had stuck to them. In the pouring method, which was introduced later, melted beeswax was poured over a suspended cotton wick while the wick was manually twirled. After a sufficient amount of wax had gathered at the bottom of the wick, the candle was reversed and wax was poured from the other end."
+   },
+   {
+    "mark": "",
+    "text": "It was not until the 1830s that the large-scale manufacture of candles became a reality, when British manufacturer Joseph Morgan introduced the first mass- production candlemaking machine. Today's modern machines are strikingly similar to Morgan's original machine, with speed and the quality of the finished product being the only major differences."
+   },
+   {
+    "mark": "",
+    "text": "In today's manufacturing process, different substances are often mixed together to create stronger candles with higher melting points. In the United States, for example, standard commercial candles are made of paraffin, stearic acid, and beeswax. Some candles also contain small amounts of candelilla, which comes from the stem of the candelilla shrub, or carnauba wax, which is from the leaves of the carnauba palm. In the many decorative candles that are made, waxes other than beeswax and paraffin are used. One example is bayberry wax, which is derived from the fruit of the bayberry bush and has a distinctive aroma. In decorative candles, non-burning wax is used to make the casing, which is not intended to melt. Today's wicks are made of a high grade of cotton or linen. The material is woven (or plaited) so that it will burn in one direction and will curl so that its end remains in the candle flame's oxidizing zone for even and intense burning. Often, these wicks have a center made of wire that allows them to burn slightly hotter than cotton and remain erect in the melted wax."
+   }
+  ]
+ }
+}

@@ -1,0 +1,439 @@
+# Bóc nội dung đề (bài đọc, đề bài từng nhóm, từng câu, phương án) từ PDF -> JSON để làm bài tương tác.
+#   python extract_interactive.py <id>            # in JSON ra màn hình để kiểm tra
+#   python extract_interactive.py <id> --save      # ghi vào interactive/<id>.json
+# Đáp án vẫn lấy từ js/data/bank-*.js nên file này chỉ lo phần hiển thị.
+import json, os, re, subprocess, sys, unicodedata
+
+T = os.path.dirname(os.path.abspath(__file__))
+PROJ = os.path.dirname(T)
+RROOT = r'C:\Users\Admin\OneDrive\2. IELTS\5. READING IN PASSAGES'
+LROOT = r'C:\Users\Admin\OneDrive\2. IELTS\2. LISTENING'
+ROMAN = r'(?:xv|xiv|xiii|xii|xi|x|ix|viii|vii|vi|v|iv|iii|ii|i)'
+DASH = r'[-–—]'
+nfc = lambda s: unicodedata.normalize('NFC', s)
+
+
+def js_items(name, const):
+    """đọc mảng trong js/data/bank-*.js"""
+    s = open(os.path.join(PROJ, 'js', 'data', name), encoding='utf8').read()
+    body = s.split(f'export const {const} = [')[1]
+    return [json.loads(l.strip().rstrip(',')) for l in body.splitlines() if l.strip().startswith('{')]
+
+
+def pdftext(path, pages=None):
+    cmd = ['pdftotext', '-layout']
+    if pages: cmd += ['-f', str(pages[0]), '-l', str(pages[1])]
+    return subprocess.run(cmd + [path, '-'], capture_output=True).stdout.decode('utf8', 'replace')
+
+
+# dòng đầu/cuối trang do PDF chèn vào (không thuộc đề)
+JUNK = re.compile(r'(?i)^\s*(?:'
+                  r'trang\s*\d+\s*/\s*\d+'
+                  r'|page\s*\d+(\s*of\s*\d+)?'
+                  r'|ielts\s+(listening|reading)\b.*'
+                  r'|test\s*\d+\s*$'
+                  r'|\d{1,3}\s*$'
+                  r')\s*$')
+
+
+def drop_junk(text):
+    """bỏ header/footer của từng trang PDF để chúng không dính vào câu hỏi"""
+    out = []
+    for ln in text.split('\n'):
+        t = ln.replace('\x0c', ' ')
+        if JUNK.match(t): continue
+        # footer nằm cuối dòng nội dung: "... work together. Test 2 Trang 4 / 7 IELTS LISTENING TEST"
+        t = re.sub(r'(?i)\s*Test\s*\d+\s+Trang\s*\d+\s*/\s*\d+.*$', '', t)
+        t = re.sub(r'(?i)\s*Trang\s*\d+\s*/\s*\d+.*$', '', t)
+        out.append(t)
+    return '\n'.join(out)
+
+
+SMALL = {'a', 'an', 'the', 'of', 'to', 'and', 'in', 'on', 'for', 'at', 'by', 'with'}
+DIRECTIVE = re.compile(r'(?i)\b(choose|write|complete|label|match|answer|letter|words?|numbers?|boxes?|list)\b')
+
+
+def is_title_line(ln):
+    """dòng tiêu đề bài nghe/bài đọc lẫn vào phần đề bài"""
+    w = ln.split()
+    if len(w) < 3 or DIRECTIVE.search(ln) or ln.rstrip().endswith(('.', ':', ',')): return False
+    big = [x for x in w if x.lower() not in SMALL]
+    return big and sum(x[:1].isupper() for x in big) / len(big) >= 0.7
+
+
+def real(root, rel):
+    d = root
+    for part in rel.split('/'):
+        d = os.path.join(d, next(x for x in os.listdir(d) if nfc(x) == nfc(part)))
+    return d
+
+
+def clean(s):
+    return re.sub(r'\s+', ' ', s.replace('\u00a0', ' ')).strip()
+
+
+def gapify(s):
+    s = re.sub(r'[.·…]{3,}|_{3,}', ' ____ ', s)
+    s = clean(s)
+    s = re.sub(r'\s+([.,;:?!])', r'\1', s)          # ' .' -> '.'
+    return re.sub(r'([.?!])\s*[.?!]+$', r'\1', s)   # '. .' thừa ở cuối câu
+
+
+# ---------------- tách khối theo từng nhóm câu hỏi ----------------
+def blocks(text, want):
+    """[(from, to, text)] theo thứ tự xuất hiện, chỉ giữ nhóm nằm trong danh sách want"""
+    hits = []
+    for m in re.finditer(r'(?im)^[^\S\n]*Questions?\s+(\d{1,2})\s*(?:' + DASH + r'|to|and|&)\s*(\d{1,2})\b.*$', text):
+        a, b = int(m.group(1)), int(m.group(2))
+        if (a, b) in want: hits.append((m.start(), m.end(), a, b))
+    out = []
+    for i, (s0, e0, a, b) in enumerate(hits):
+        end = hits[i + 1][0] if i + 1 < len(hits) else len(text)
+        out.append((a, b, text[s0:end]))
+    return out
+
+
+def numbered(block, lo, hi):
+    """dòng '14 Nội dung câu' (gồm cả dòng xuống hàng) -> {n: text}"""
+    lines = block.split('\n')
+    cur, out = None, {}
+    for ln in lines:
+        m = re.match(r'^[^\S\n]*(\d{1,2})[.)]?\s+(\S.*)$', ln)
+        if m and lo <= int(m.group(1)) <= hi:
+            cur = int(m.group(1)); out[cur] = m.group(2)
+        elif cur is not None:
+            if re.match(r'^[^\S\n]*[A-H]\s+\S', ln) or re.match(r'(?i)^[^\S\n]*(questions?|choose|write|complete)\b', ln): cur = None
+            elif is_title_line(ln.strip()): cur = None   # tiêu đề bài đọc lẫn giữa các câu
+            elif ln.strip(): out[cur] += ' ' + ln.strip()
+    # số câu nằm giữa câu văn (sơ đồ, bảng, flow-chart): "Seracini used 25 ....... to ..."
+    for n in range(lo, hi + 1):
+        if out.get(n): continue
+        t = inline_question(lines, n, lo, hi)
+        if t: out[n] = t
+    return {n: gapify(v) for n, v in out.items() if v.strip()}
+
+
+GAP = r'[.·…]{3,}'
+
+
+def inline_question(lines, n, lo, hi):
+    """câu có số nằm giữa dòng; ghép thêm dòng trước/sau nếu câu bị xuống dòng"""
+    others = [str(x) for x in range(lo, hi + 1) if x != n]
+    has_other = lambda ln: any(re.search(r'\b' + o + r'\s*' + GAP, ln) for o in others)
+    idx = next((i for i, ln in enumerate(lines)
+                if re.search(r'\b' + str(n) + r'\s*' + GAP, ln) or re.search(r'\b' + str(n) + r'\s*$', ln) and i + 1 < len(lines) and re.match(r'^\s*' + GAP, lines[i + 1])), None)
+    if idx is None: return ''
+    parts = [lines[idx]]
+    prev = lines[idx - 1] if idx else ''
+    if prev.strip() and not has_other(prev) and not prev.rstrip().endswith('.') \
+       and not re.match(r'(?i)^\s*(questions?|choose|write|complete|section|part)\b', prev):
+        parts.insert(0, prev)
+    nxt = lines[idx + 1] if idx + 1 < len(lines) else ''
+    if nxt.strip() and not has_other(nxt) and not re.match(r'(?i)^\s*(questions?|choose|write|complete|section|part|test)\b', nxt) \
+       and (re.match(r'^\s*' + GAP, nxt) or not parts[-1].rstrip().endswith('.')):
+        parts.append(nxt)
+    text = ' '.join(x.strip() for x in parts)
+    return re.sub(r'\b' + str(n) + r'\s*(?=' + GAP + r')', '', text)
+
+
+# "6 ______", "8 $ ______", "10 ....." — ký hiệu giữa số câu và chỗ trống được giữ lại
+BLANK = r'(\d{1,2})[^\S\n]*([^\w\s]{0,3})[^\S\n]*(?:_{3,}|[.·…]{3,})'
+BULLET = r'[\u2022\ufffd\u25aa\u25cf\u00b7*\u2212\-\u2013\u2014]'
+LEADIN = re.compile(r'(?i)^(complete|choose|write|read|questions?)\b')
+
+
+def is_bank_line(ln, bank):
+    """dòng in khung đáp án: 'A America  B Philippines  C Australia'"""
+    if not bank: return False
+    texts = {o['v']: o['t'].lower() for o in bank}
+    hits = 0
+    for m in re.finditer(r'(?:^|\s{2,})([A-Z])[.)]?\s{1,6}(\S[^\n]*?)(?=\s{2,}[A-Z][.)]?\s|$)', ln):
+        want = texts.get(m.group(1))
+        if want and (want.startswith(clean(m.group(2)).lower()[:20]) or clean(m.group(2)).lower().startswith(want[:20])): hits += 1
+    return hits >= 1 and not re.search(BLANK, ln)
+
+
+def notes_of(blk, lo, hi, bank=None):
+    """dạng điền vào ghi chú / bảng / sơ đồ: giữ nguyên bố cục, chỗ trống ghi {{số câu}}"""
+    items, title, started = [], '', False
+    for raw in blk.split('\n')[1:]:
+        if not raw.strip(): continue
+        t = raw.strip()
+        indent = len(raw) - len(raw.lstrip())
+        m = re.match('^(' + BULLET + r')\s+(.*)$', t)
+        bullet, body = ('•', m.group(2)) if m else ('', t)
+        if not body: continue
+        if is_bank_line(t, bank): continue        # dòng của khung đáp án, không phải nội dung
+        blank = re.search(BLANK, body)
+        if not started:
+            if LEADIN.match(body) or re.match(r'(?i)^(your answers|answer sheet)', body): continue
+            if not bullet and not blank and len(body) < 90 and not title:
+                title = body; continue          # tiêu đề khối ghi chú
+        started = True
+        lvl = 0 if indent < 6 else 1 if indent < 12 else 2
+        prev = items[-1] if items else None
+        # dòng tiêu đề nhỏ trong ghi chú: ngắn, viết hoa, nằm ngay sau một gạch đầu dòng
+        heading = (not blank and len(body) < 60 and body[:1].isupper()
+                   and bool(prev) and prev['bullet'] and indent <= prev['ind'])
+        new = (bullet or not prev
+               or prev['text'].rstrip().endswith(('.', '?', '!', ':'))
+               or heading)
+        if new: items.append({'level': lvl, 'bullet': '•' if bullet else '', 'text': body, 'ind': indent})
+        else: prev['text'] += ' ' + body
+    got = set()
+
+    def slot(m):
+        got.add(int(m.group(1)))
+        pre = m.group(2).strip()
+        return '{{' + m.group(1) + (':' + pre if pre else '') + '}}'
+
+    for it in items:
+        it['text'] = clean(re.sub(BLANK, slot, it['text']))
+        it.pop('ind', None)
+    items = [it for it in items if it['text']]
+    if got != set(range(lo, hi + 1)) or not items: return None
+    return {'title': title, 'items': items}
+
+
+def per_question_options(block, lo, hi):
+    """trắc nghiệm có phương án riêng dưới từng câu -> {n: [{v,t}]}"""
+    out, cur = {}, None
+    for ln in block.split('\n'):
+        m = re.match(r'^[^\S\n]*(\d{1,2})[.)]?\s+\S', ln)
+        if m and lo <= int(m.group(1)) <= hi:
+            cur = int(m.group(1)); out.setdefault(cur, []); continue
+        m2 = re.match(r'^\s{3,}([A-J])[.)]?\s+(\S.*)$', ln)
+        if m2 and cur is not None:
+            opts = out[cur]
+            if not opts or ord(m2.group(1)) == ord(opts[-1]['v']) + 1: opts.append({'v': m2.group(1), 't': clean(m2.group(2))})
+            elif opts: opts[-1]['t'] += ' ' + clean(ln)
+        elif cur is not None and out.get(cur) and ln.strip() and not re.match(r'(?i)^[^\S\n]*(questions?|choose|write|complete)\b', ln):
+            out[cur][-1]['t'] += ' ' + clean(ln)
+    return {k: v for k, v in out.items() if len(v) >= 2}
+
+
+def lettered(block, upto='H'):
+    """dòng 'A nội dung phương án' -> [{v,t}] (bỏ qua dòng bắt đầu bằng số câu)"""
+    out, cur = [], None
+    for ln in block.split('\n'):
+        m = re.match(r'^[^\S\n]*([A-' + upto + r'])[.)]?\s+(\S.*)$', ln)
+        if m and (not out or ord(m.group(1)) == ord(out[-1]['v']) + 1):
+            cur = {'v': m.group(1), 't': clean(m.group(2))}; out.append(cur)
+        elif cur is not None and ln.strip() and not re.match(r'^[^\S\n]*\d{1,2}[.) ]', ln):
+            cur['t'] += ' ' + clean(ln)
+        elif not ln.strip():
+            cur = None
+    return out
+
+
+def lettered_cols(block, upto):
+    """khung đáp án in thành nhiều cột: 'A America   B Philippines   C Australia'"""
+    pat = re.compile(r'(?:^|\s{2,})([A-' + upto + r'])[.)]?\s{1,6}(\S.*?)(?=\s{2,}[A-' + upto + r'][.)]?\s|$)')
+    out = []
+    for ln in block.split('\n'):
+        if len(pat.findall(ln)) < 2: continue
+        for v, t in pat.findall(ln):
+            if not out or ord(v) == ord(out[-1]['v']) + 1: out.append({'v': v, 't': clean(t)})
+    return out
+
+
+def headings(block):
+    out = []
+    for ln in block.split('\n'):
+        m = re.match(r'^[^\S\n]*(' + ROMAN + r')\s+(\S.*)$', ln)
+        if m: out.append({'v': m.group(1), 't': clean(m.group(2))})
+    return out
+
+
+def instruction(block, lo):
+    """các dòng đề bài trước câu đầu tiên"""
+    keep = []
+    for ln in block.split('\n')[1:]:
+        if re.match(r'^[^\S\n]*(' + str(lo) + r')\b', ln): break
+        if re.match(r'^[^\S\n]*(' + ROMAN + r'|[A-H])\s+\S', ln): break
+        # đã sang phần ghi chú/bảng/sơ đồ thì dừng
+        if re.search(BLANK, ln) or re.match(r'^[^\S\n]*' + BULLET + r'\s', ln): break
+        if re.search(r'(?i)answer sheet|^\s*Test \d|Trang \d', ln): continue
+        if is_title_line(ln.strip()): continue
+        if ln.strip(): keep.append(clean(ln))
+    return ' '.join(keep).strip()
+
+
+# ---------------- bài đọc (Reading) ----------------
+def passage_of(text):
+    marks = list(re.finditer(r'(?m)^[^\S\n]*([A-J])\s{1,4}(?=[A-Z“"])', text))
+    seq = [m for m in marks if m.group(1) == 'A']
+    if not marks or not seq: return None
+    start = seq[0].start()
+    chain, expect = [], 'A'
+    for m in marks:
+        if m.start() < start: continue
+        if m.group(1) == expect:
+            chain.append(m); expect = chr(ord(expect) + 1)
+    if len(chain) < 3: return None
+    end = len(text)
+    m = re.search(r'(?im)^[^\S\n]*Questions?\s+\d', text[chain[-1].end():])
+    if m: end = chain[-1].end() + m.start()
+    paras = []
+    for i, m in enumerate(chain):
+        stop = chain[i + 1].start() if i + 1 < len(chain) else end
+        paras.append({'mark': m.group(1), 'text': clean(text[m.end():stop])})
+    head = [l for l in text[:start].split('\n') if l.strip()]
+    title = clean(head[-1]) if head else ''
+    if re.match(r'(?i)^\d|questions?|paragraph', title): title = ''
+    return {'title': title, 'paras': paras}
+
+
+SKIP_PARA = re.compile(r'(?i)^\s*(reading passage\s*\d|you should spend about|read the (text|passage)|the reading passage has)')
+
+
+def plain_passage(text):
+    """bài đọc không đánh dấu đoạn A, B, C -> tách đoạn theo dòng trống"""
+    end = len(text)
+    m = re.search(r'(?im)^[^\S\n]*Questions?\s+\d', text)
+    if m: end = m.start()
+    blocks = [clean(b) for b in re.split(r'\n[^\S\n]*\n', text[:end])]
+    blocks = [b for b in blocks if b and not SKIP_PARA.match(b)]
+    if not blocks: return None
+    title = ''
+    paras = []
+    for b in blocks:
+        if len(b) < 90 and not paras and not title and not b.endswith(('.', '!', ',', ';', ':')):
+            title = b; continue
+        if len(b) < 40 and not paras: continue          # dòng lẻ trước bài đọc
+        paras.append({'mark': '', 'text': b})
+    # đoạn quá ngắn ở cuối thường là chú thích/đề bài lẫn vào
+    while paras and len(paras[-1]['text']) < 40: paras.pop()
+    if len(paras) < 3 or sum(len(x['text']) for x in paras) < 1200: return None
+    return {'title': title, 'paras': paras}
+
+
+def build(item, kind, text):
+    want = {(g['from'], g['to']) for g in item['groups']}
+    groups = []
+    for a, b, blk in blocks(text, want):
+        g = next(x for x in item['groups'] if (x['from'], x['to']) == (a, b))
+        out = {'from': a, 'to': b, 'kind': g['kind'], 'instruction': instruction(blk, a)}
+        if g['kind'] == 'heading':
+            out['bank'] = headings(blk)
+        per_q = per_question_options(blk, a, b) if g['kind'] == 'letter' else {}
+        if g['kind'] in ('letter', 'multi') and len(per_q) < (b - a + 1) / 2:
+            ab = g.get('letters') or 'AH'
+            need = ord(ab[1]) - ord(ab[0]) + 1
+            opts = lettered(blk, ab[1])
+            if len(opts) < need:
+                cols = lettered_cols(blk, ab[1])
+                if len(cols) > len(opts): opts = cols
+            # nhóm "matching"/heading: phương án nằm chung một khung
+            if opts: out['options' if g['kind'] == 'multi' else 'bank'] = opts
+            per_q = {}
+        # đoạn tóm tắt có chỗ trống: điền từ, hoặc chọn chữ cái từ khung đáp án
+        notes = notes_of(blk, a, b, out.get('bank')) if g['kind'] in ('gap', 'other', 'letter', 'heading') else None
+        if notes and g['kind'] in ('letter', 'heading') and not out.get('bank'): notes = None
+        if notes:
+            out['notes'] = notes['items']
+            if notes['title']: out['noteTitle'] = notes['title']
+            # dòng dẫn vào bảng/ghi chú đã nằm trong phần nội dung -> bỏ khỏi đề bài
+            for _ in range(2):
+                for dup in (notes['items'][0]['text'], notes['title']):
+                    if dup and out['instruction'].endswith(dup):
+                        out['instruction'] = out['instruction'][:-len(dup)].strip()
+            groups.append(out)
+            continue
+        qs = numbered(blk, a, b)
+        if g['kind'] != 'multi':
+            out['questions'] = [{'n': n, 'text': qs.get(n, ''), **({'options': per_q[n]} if per_q.get(n) else {})}
+                                for n in range(a, b + 1)]
+        groups.append(out)
+    data = {'id': item['id'], 'kind': kind, 'groups': groups}
+    if kind == 'reading':
+        p, q = passage_of(text), plain_passage(text)
+        size = lambda x: sum(len(i['text']) for i in x['paras']) if x else 0
+        # đánh dấu đoạn A, B, C chỉ dùng khi lấy được gần đủ bài; nếu không thì tách theo dòng trống
+        data['passage'] = p if p and size(p) >= max(1200, 0.6 * size(q)) else (q or p)
+        if not data['passage']: del data['passage']
+    # tiêu đề bài in lại ở đầu/cuối mỗi trang, hay dính vào câu hỏi -> bỏ đi
+    titles = [t for t in (item.get('title'), (data.get('passage') or {}).get('title')) if t]
+    for g in groups:
+        g['instruction'] = strip_titles(g.get('instruction', ''), titles)
+        for it in g.get('notes', []): it['text'] = strip_titles(it['text'], titles)
+        for q in g.get('questions', []):
+            q['text'] = strip_titles(q['text'], titles)
+            for o in q.get('options', []): o['t'] = strip_titles(o['t'], titles)
+        for o in g.get('options', []) + g.get('bank', []): o['t'] = strip_titles(o['t'], titles)
+    return data
+
+
+def strip_titles(t, titles):
+    """bỏ tiêu đề bài khi nó bị in lẫn vào đầu/cuối câu (không đụng từ nằm giữa câu)"""
+    for ti in titles:
+        ti = ti.strip()
+        if not ti: continue
+        if clean(t).lower() == ti.lower(): return ""
+        if len(ti.split()) < 2: continue        # tiêu đề một từ dễ trùng từ trong câu
+        m = re.match(r'\s*' + re.escape(ti) + r'\s+', t, re.I)
+        # chỉ cắt khi phần còn lại bắt đầu một câu mới (chữ hoa)
+        if m and t[m.end():m.end() + 1].isupper(): t = t[m.end():]
+        m = re.search(r'\s+' + re.escape(ti) + r'\s*$', t, re.I)
+        if m: t = t[:m.start()]
+    return clean(t)
+
+
+def para_matching(g, item, marks):
+    """nhóm 'chọn đoạn văn chứa thông tin' — phương án chính là các đoạn A, B, C… nên không có khung riêng"""
+    src = next((x for x in item['groups'] if (x['from'], x['to']) == (g['from'], g['to'])), {})
+    ab = src.get('letters') or ''
+    if len(ab) != 2: return False
+    need = {chr(c) for c in range(ord(ab[0]), ord(ab[1]) + 1)}
+    if marks and need <= marks: return True
+    return bool(re.search(r'(?i)which (paragraph|section)', g.get('instruction', '')))
+
+
+def check(data, item):
+    bad = []
+    marks = {p['mark'] for p in (data.get('passage') or {}).get('paras', []) if p['mark']}
+    nums = {q['n'] for g in data['groups'] for q in g.get('questions', [])}
+    for g in data['groups']:
+        if g.get('notes'):
+            nums |= {int(n) for it in g['notes'] for n in re.findall(r'{{(\d+)', it['text'])}
+    want = {n for g in item['groups'] for n in range(g['from'], g['to'] + 1)}
+    if data['kind'] == 'reading' and 'passage' not in data: bad.append('không tách được bài đọc')
+    for g in data['groups']:
+        if g['kind'] == 'heading' and len(g.get('bank', [])) < (g['to'] - g['from'] + 1): bad.append(f"{g['from']}-{g['to']}: thiếu danh sách heading")
+        if g['kind'] == 'multi' and len(g.get('options', [])) < 4: bad.append(f"{g['from']}-{g['to']}: thiếu phương án")
+        if g['kind'] == 'letter' and not g.get('bank') and not all(q.get('options') for q in g.get('questions', [])) \
+           and not para_matching(g, item, marks):
+            bad.append(f"{g['from']}-{g['to']}: thiếu phương án A/B/C")
+        for q in g.get('questions', []):
+            if not q['text']: bad.append(f"câu {q['n']}: trống")
+    miss = sorted(want - nums - {n for g in data['groups'] if g['kind'] == 'multi' for n in range(g['from'], g['to'] + 1)})
+    if miss: bad.append(f'thiếu câu {miss}')
+    return bad
+
+
+def main():
+    iid = sys.argv[1]
+    reading = js_items('bank-reading.js', 'READING_BANK')
+    listening = js_items('bank-listening.js', 'LISTENING_BANK')
+    sections = js_items('bank-listening.js', 'LISTENING_SECTIONS')
+    item = next((x for x in reading if x['id'] == iid), None)
+    if item:
+        kind, text = 'reading', drop_junk(pdftext(real(RROOT, item['src'])))
+    else:
+        item = next((x for x in listening + sections if x['id'] == iid), None)
+        if not item: raise SystemExit('không có bài id này')
+        kind = 'section' if 'section' in item else 'listening'
+        f = item['files'][0]
+        text = drop_junk(pdftext(real(LROOT, f['src']), f.get('pages')))
+    data = build(item, kind, text)
+    bad = check(data, item)
+    print(json.dumps(data, ensure_ascii=False, indent=1))
+    print('\n--- kiểm tra:', 'ĐẠT' if not bad else bad, file=sys.stderr)
+    if '--save' in sys.argv and not bad:
+        os.makedirs(os.path.join(T, 'interactive'), exist_ok=True)
+        json.dump(data, open(os.path.join(T, 'interactive', iid + '.json'), 'w', encoding='utf8'), ensure_ascii=False, indent=1)
+        print('đã ghi interactive/' + iid + '.json', file=sys.stderr)
+
+
+if __name__ == '__main__':
+    main()

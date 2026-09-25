@@ -1,0 +1,142 @@
+{
+ "id": "p1-investing-in-the-future",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 1,
+   "to": 8,
+   "kind": "tfng",
+   "instruction": "Do the following statements agree with the information in Reading Passage 1? TRUE if the statement agrees with the information FALSE if the statement contradicts the information NOT GIVEN if there is no information about this",
+   "questions": [
+    {
+     "n": 1,
+     "text": "Harvard and Yale were the first universities to benefit from philanthropy."
+    },
+    {
+     "n": 2,
+     "text": "Merchants liked to donate to the same universities they attended themselves."
+    },
+    {
+     "n": 3,
+     "text": "The first gift to the University of Auckland came in 1884."
+    },
+    {
+     "n": 4,
+     "text": "The University of Otago often received larger gifts than Gillies' gift to Auckland."
+    },
+    {
+     "n": 5,
+     "text": "In the 1930s the government wanted to close Auckland's engineering school."
+    },
+    {
+     "n": 6,
+     "text": "After raising $6,500, Crookes returned to academic life."
+    },
+    {
+     "n": 7,
+     "text": "In the 1950s the best lecturers chose to work in Britain or Australia rather than Auckland."
+    },
+    {
+     "n": 8,
+     "text": "A single philanthropist was responsible for the new Medical School."
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "to": 13,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The first modern appeals"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "an appeal was made in the 1960s to help build the Student Union buildings"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Henry Cooper's campaign marked the {{9}} of the University"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "modern campaigns have focused on raising money from businesses and individuals `Leading the Way'"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "this appeal is raising money to invest in the University's {{10}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "gifts are being sought from graduates who are located {{11}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "John Taylor believes research at the University helps the whole country"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Financial matters"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "some donations had not been {{12}} by the University"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "there is a new financial {{13}} for the campaign"
+    }
+   ],
+   "noteTitle": "Fund-raising campaigns"
+  }
+ ],
+ "passage": {
+  "title": "Investing in the Future",
+  "paras": [
+   {
+    "mark": "",
+    "text": "History has shown the value of giving money to the University of Auckland"
+   },
+   {
+    "mark": "",
+    "text": "The founding and development of many universities has been dependent on philanthropy*. This has been true from some of the oldest universities such as Bologna, Oxford and Cambridge in the twelfth century, to relative newcomers like the universities of Harvard and Yale in the seventeenth century. Wealthy merchants gave young institutions money, land, libraries and rare items. Their belief in the value of higher learning is echoed by the growing number of philanthropists whose gifts have helped transform the University of Auckland, the largest university in New Zealand."
+   },
+   {
+    "mark": "",
+    "text": "In 1884 Mr Justice Gillies made history when he gave $3,000 to the then very young University of Auckland, and so became its original philanthropist. Gillies' gift was more generous even than those regularly given to New Zealand's older University of Otago, and was exceptional because Auckland had a smaller population and was less wealthy than the other university cities at that time. However, from the 1930s privately funded prizes and scholarships began to be seen more frequently in Auckland. In that decade a local engineer and former lecturer in engineering, Samuel Crookes, launched a fund to save the engineering school in Auckland, which the state was determined to see discontinued, and raised over $6,500 in three years. Another significant philanthropist, Sir William Goodfellow, made his initial gift to the University in 1947--$50,000 to build the Maclaurin Chapel. Since then, he and succeeding generations of the family have given numerous scholarships and fellowships and established a school within the University bearing the family's name."
+   },
+   {
+    "mark": "",
+    "text": "The University had a difficult decade in the 1950s as it was short of equipment, buildings and money. It also had its first taste of international rivalry, when universities in many parts of the world competed to attract first-class lecturers. In Auckland the problem largely resulted from the fact that academic salaries had slipped well behind those available in Britain and Australia, so the strongest candidates tended to be recruited to those countries. But when the new Medical School opened in 1968, it attracted significant gifts for academic positions and equipment from an unusually wide range of donors, including individuals, trusts, charitable foundations, societies and community groups. It also became the permanent home of the Philson Library, which by then consisted of some 8,000 books."
+   },
+   {
+    "mark": "",
+    "text": "*philanthropy: giving money or resources to good causes The first of the modern public appeals for funds took place in the 1960s, when Alan Highet built the Student Union complex. This was followed by another appeal in 1983 under the then Chancellor Henry Cooper, who raised $800,000 to celebrate the University's centenary. These modern campaigns built on the successful campaigns of the past but included a number of new features. There was, of course, the familiar emphasis on donations from individuals, but the modern approach also stressed the importance of bringing the University and business closer together and specifically seeking donations from that sector."
+   },
+   {
+    "mark": "",
+    "text": "Building on this success, the current \"Leading the Way\" campaign was launched. It is intended as a drive to secure support for the whole University, with a focus on generating funds to recruit, support and retain the very best staff for the University. The current campaign has raised the whole process of philanthropy to a new level, and changed expectations. The University is investing considerable time and energy in devising new methods of fund-raising both within its local communities and--remembering that New Zealanders love to travel--by looking at campaigns in other parts of the world, and targeting alumni, or former students now living overseas."
+   },
+   {
+    "mark": "",
+    "text": "\"What it taught us,\" says John Taylor, Director of External Relations, \"was that the campaign had to fit into the Strategic Plan of the University ... As we kept talking we realised that we could have a transformative effect on the future of New Zealand by highlighting the potential benefits of high-quality research.\" The example Taylor gives is the $4.5 million gift to establish an information centre at the University's Marine Science laboratory on the coast at Leigh. He stresses that the fund-raising drive was so successful in part because the publicity used at the time highlighted the public benefit from the project."
+   },
+   {
+    "mark": "",
+    "text": "On the financial side, the University's Vice-Chancellor, Stuart McCutcheon, explains that a fault they found in their campaigns actually turned out to be a stroke of good fortune. \"In the course of developing these new fund-raising systems,\" he says, \"we have come to realise that there has been considerable giving to the University that has not been previously recorded through our Advancement Office ... This has been in the order of $10 million per year over the campaign period.\" The good news from this error is that at the recent Chancellor's dinner it was announced that the campaign target was now being increased from $100 million to $150 million, and would recognise all sources of philanthropic support. It's a long way from Gillies' first $3,000 gift."
+   }
+  ]
+ }
+}

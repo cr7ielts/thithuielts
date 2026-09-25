@@ -1,0 +1,13 @@
+[
+  {
+    "origin": [
+      "https://xamenglish-d8ebd.web.app",
+      "https://xamenglish-d8ebd.firebaseapp.com",
+      "http://localhost:8000",
+      "http://127.0.0.1:8000"
+    ],
+    "method": ["GET", "HEAD"],
+    "responseHeader": ["Content-Type", "Content-Length", "Content-Range", "Accept-Ranges", "Range", "ETag"],
+    "maxAgeSeconds": 3600
+  }
+]

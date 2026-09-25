@@ -1,0 +1,13 @@
+# Firebase
+.firebase/
+firebase-debug.log*
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# File trung gian khi bóc đề (sinh lại được bằng tools/dump_*.py)
+tools/ls/
+tools/wav/
+tools/docx/

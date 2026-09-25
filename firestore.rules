@@ -1,0 +1,90 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ĐỔI email này thành email của giáo viên (trùng ADMIN_EMAILS trong js/config.js).
+    // email_verified: chặn người lạ đăng ký tài khoản email/mật khẩu trùng email giáo viên.
+    function isAdmin() {
+      return request.auth != null &&
+             request.auth.token.email_verified == true &&
+             request.auth.token.email in ['nguyennhatkha812@gmail.com'];
+    }
+
+    // Hồ sơ học sinh
+    match /students/{uid} {
+      allow read:   if request.auth != null && (request.auth.uid == uid || isAdmin());
+      allow create, update: if request.auth != null && request.auth.uid == uid;
+      allow delete: if false;
+    }
+
+    // Tiến độ từ vựng (lịch ôn, sổ từ, XP): mỗi học sinh chỉ đọc/ghi của mình
+    match /vocab/{uid} {
+      allow read:  if request.auth != null && (request.auth.uid == uid || isAdmin());
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Bảng xếp hạng: ai đăng nhập cũng xem được; chỉ ghi dòng của chính mình, không chứa email
+    match /leaderboard/{uid} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == uid
+                   && !('email' in request.resource.data);
+    }
+
+    // ================= HOMEWORK =================
+    // Bài tập: học sinh chỉ thấy bài đã "published"; chỉ giáo viên tạo/sửa/xoá
+    match /assignments/{aid} {
+      allow read:  if request.auth != null && (resource.data.published == true || isAdmin());
+      allow write: if isAdmin();
+    }
+
+    // Đáp án: giáo viên đọc được; học sinh chỉ đọc SAU KHI đã có bài nộp của mình
+    match /assignmentKeys/{aid} {
+      allow read: if isAdmin() || (request.auth != null &&
+        exists(/databases/$(database)/documents/hwSubmissions/$(aid + '_' + request.auth.uid)));
+      allow write: if isAdmin();
+    }
+
+    // Bài nộp homework: id = <assignmentId>_<uid>, mỗi học sinh một bản mỗi bài
+    match /hwSubmissions/{sid} {
+      function asg(aid) { return get(/databases/$(database)/documents/assignments/$(aid)).data; }
+      function studentFieldsOk() {
+        return request.resource.data.uid == request.auth.uid
+          && sid == request.resource.data.assignmentId + '_' + request.auth.uid
+          && request.resource.data.submittedAt == request.time
+          && request.resource.data.get('teacherScore', null) == null
+          && request.resource.data.get('teacherComment', null) == null
+          && request.resource.data.get('gradedAt', null) == null
+          && request.resource.data.get('teacherCriteria', null) == null
+          && asg(request.resource.data.assignmentId).published == true
+          && request.resource.data.type == asg(request.resource.data.assignmentId).type
+          && (request.time <= asg(request.resource.data.assignmentId).dueAt
+              || asg(request.resource.data.assignmentId).allowLate == true);
+      }
+
+      // resource == null: cho phép hỏi "mình đã nộp bài này chưa?" khi chưa có bài nộp
+      allow read: if request.auth != null && (isAdmin() || resource == null || resource.data.uid == request.auth.uid);
+      allow create: if request.auth != null && studentFieldsOk();
+      // Nộp lại: chỉ Writing / Speaking / nộp file, trước khi giáo viên chấm; Reading/Listening nộp một lần
+      allow update: if isAdmin() || (request.auth != null
+        && resource.data.uid == request.auth.uid
+        && resource.data.type in ['writing', 'upload', 'speaking']
+        && resource.data.get('gradedAt', null) == null
+        && studentFieldsOk());
+      allow delete: if false;
+    }
+
+    // Bài nộp: học sinh chỉ tạo & đọc bài của chính mình, không sửa/xoá được sau khi nộp
+    match /submissions/{id} {
+      allow read:   if request.auth != null &&
+                    (isAdmin() || resource.data.uid == request.auth.uid);
+      // Học sinh không được tự điền điểm chấm của giáo viên khi nộp
+      allow create: if request.auth != null &&
+                    request.resource.data.uid == request.auth.uid &&
+                    request.resource.data.submittedAt == request.time &&
+                    request.resource.data.get('teacherBand', null) == null &&
+                    !('graderEmail' in request.resource.data);
+      allow update: if isAdmin();   // giáo viên chấm Writing/Speaking
+      allow delete: if false;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+// =====================================================================
+//  CHƠI CHỮ (PUNS)
+//  Mỗi mục: text (câu đùa), key (từ/cụm tạo ra chơi chữ, phải xuất hiện
+//  nguyên văn trong text), decoys (3 từ khác trong câu để làm đáp án nhiễu),
+//  type: "double" (một từ hai nghĩa) | "sound" (đồng âm) | "blend" (ghép từ),
+//  meanings: [nghĩa 1, nghĩa 2] tiếng Anh, vi: giải thích tiếng Việt
+// =====================================================================
+
+export const PUNS = [
+  {
+    text: "I used to be a banker, but I lost interest.",
+    key: "interest", decoys: ["banker", "used", "lost"], type: "double",
+    meanings: ["money a bank pays you on your savings", "the feeling of wanting to do something"],
+    vi: "“interest” vừa là tiền lãi ngân hàng, vừa là sự hứng thú — mất lãi cũng là mất hứng.",
+  },
+  {
+    text: "I'm reading a book about anti-gravity. It's impossible to put down.",
+    key: "put down", decoys: ["reading", "impossible", "book"], type: "double",
+    meanings: ["stop reading because a book is so exciting", "place something on a surface (hard without gravity!)"],
+    vi: "“put down” vừa là không rời mắt khỏi sách được, vừa là đặt xuống — sách chống trọng lực thì làm sao đặt xuống.",
+  },
+  {
+    text: "Don't trust atoms. They make up everything.",
+    key: "make up", decoys: ["trust", "atoms", "everything"], type: "double",
+    meanings: ["form all the parts of something", "invent a story that is not true"],
+    vi: "“make up” vừa là cấu tạo nên, vừa là bịa chuyện.",
+  },
+  {
+    text: "What do you call a fake noodle? An impasta.",
+    key: "impasta", decoys: ["fake", "noodle", "call"], type: "blend",
+    meanings: ["impostor: someone pretending to be another person", "pasta: Italian noodles"],
+    vi: "“impasta” ghép từ impostor (kẻ mạo danh) và pasta (mì Ý).",
+  },
+  {
+    text: "I'm on a seafood diet. I see food and I eat it.",
+    key: "see food", decoys: ["diet", "eat", "seafood"], type: "sound",
+    meanings: ["seafood: fish and shellfish", "see food: notice food with your eyes"],
+    vi: "“seafood” (hải sản) đọc giống hệt “see food” (thấy đồ ăn).",
+  },
+  {
+    text: "The teacher wore sunglasses because her class was so bright.",
+    key: "bright", decoys: ["teacher", "sunglasses", "class"], type: "double",
+    meanings: ["clever and intelligent", "full of light"],
+    vi: "“bright” vừa là thông minh, vừa là chói sáng.",
+  },
+  {
+    text: "Why was the maths book sad? It had too many problems.",
+    key: "problems", decoys: ["maths", "sad", "book"], type: "double",
+    meanings: ["questions you have to solve", "troubles and worries"],
+    vi: "“problems” vừa là bài toán, vừa là rắc rối.",
+  },
+  {
+    text: "I told ten jokes to make my friend laugh, but no pun in ten did.",
+    key: "no pun in ten", decoys: ["jokes", "laugh", "friend"], type: "sound",
+    meanings: ["no pun intended: I didn't mean to make a joke", "no pun in ten: none of the ten jokes worked"],
+    vi: "“no pun in ten” đọc giống “no pun intended” (không cố ý chơi chữ đâu).",
+  },
+  {
+    text: "Why don't skeletons fight each other? They don't have the guts.",
+    key: "guts", decoys: ["skeletons", "fight", "other"], type: "double",
+    meanings: ["courage", "the stomach and intestines"],
+    vi: "“guts” vừa là lòng can đảm, vừa là ruột gan — bộ xương thì làm gì có ruột.",
+  },
+  {
+    text: "The past, the present and the future walked into a bar. It was tense.",
+    key: "tense", decoys: ["future", "walked", "present"], type: "double",
+    meanings: ["nervous and uncomfortable", "the verb form that shows time: past, present or future"],
+    vi: "“tense” vừa là căng thẳng, vừa là thì của động từ.",
+  },
+  {
+    text: "Why did the scarecrow win an award? He was outstanding in his field.",
+    key: "outstanding in his field", decoys: ["scarecrow", "award", "win"], type: "double",
+    meanings: ["excellent at his job", "standing out there in a farm field"],
+    vi: "“outstanding in his field” vừa là xuất sắc trong lĩnh vực của mình, vừa là đứng ngoài cánh đồng.",
+  },
+  {
+    text: "I got fired from the calendar factory. All I did was take a day off.",
+    key: "take a day off", decoys: ["fired", "factory", "calendar"], type: "double",
+    meanings: ["have a day's holiday from work", "tear one day's page off a calendar"],
+    vi: "“take a day off” vừa là nghỉ làm một ngày, vừa là xé đi một tờ lịch.",
+  },
+  {
+    text: "When a clock is hungry, it goes back four seconds.",
+    key: "four seconds", decoys: ["clock", "hungry", "back"], type: "sound",
+    meanings: ["for seconds: to get a second plate of food", "four seconds: moving its hands back four seconds"],
+    vi: "“four seconds” đọc giống “for seconds” (quay lại lấy thêm suất ăn).",
+  },
+  {
+    text: "A boiled egg in the morning is hard to beat.",
+    key: "hard to beat", decoys: ["boiled", "morning", "egg"], type: "double",
+    meanings: ["very difficult to improve on", "impossible to whisk, because the egg is hard-boiled"],
+    vi: "“hard to beat” vừa là khó có gì hơn được, vừa là (trứng luộc chín) khó mà đánh tan.",
+  },
+  {
+    text: "I'm friends with 25 letters of the alphabet. I don't know Y.",
+    key: "Y", decoys: ["friends", "letters", "alphabet"], type: "sound",
+    meanings: ["the letter Y", "why"],
+    vi: "“Y” đọc giống “why” — tôi không quen chữ Y / tôi không biết tại sao.",
+  },
+  {
+    text: "Reading while sunbathing makes you well red.",
+    key: "well red", decoys: ["sunbathing", "reading", "makes"], type: "sound",
+    meanings: ["well read: having read a lot of books", "well red: badly sunburnt"],
+    vi: "“well red” (cháy nắng đỏ rực) đọc giống “well read” (đọc nhiều, hiểu biết rộng).",
+  },
+  {
+    text: "Mochi naps in the sun all afternoon and is always feline good.",
+    key: "feline", decoys: ["naps", "afternoon", "always"], type: "sound",
+    meanings: ["feline: relating to cats", "feeling good: happy and healthy"],
+    vi: "“feline” (thuộc loài mèo) nghe giống “feeling” — Mochi lúc nào cũng thấy khoẻ re.",
+  },
+  {
+    text: "My cat keeps rearranging her toys. She's a real purr-fectionist.",
+    key: "purr-fectionist", decoys: ["rearranging", "toys", "real"], type: "blend",
+    meanings: ["purr: the sound a happy cat makes", "perfectionist: someone who wants everything to be perfect"],
+    vi: "“purr-fectionist” ghép purr (tiếng mèo gừ gừ) với perfectionist (người cầu toàn).",
+  },
+  {
+    text: "Geology rocks, but geography is where it's at.",
+    key: "rocks", decoys: ["geology", "geography", "where"], type: "double",
+    meanings: ["is great (informal)", "stones — exactly what geology studies"],
+    vi: "“rocks” vừa là (tiếng lóng) tuyệt vời, vừa là đá — thứ môn địa chất nghiên cứu.",
+  },
+  {
+    text: "What's the best thing about Switzerland? I don't know, but the flag is a big plus.",
+    key: "plus", decoys: ["best", "Switzerland", "flag"], type: "double",
+    meanings: ["an advantage", "the + sign on the Swiss flag"],
+    vi: "“plus” vừa là điểm cộng, vừa là dấu cộng trên quốc kỳ Thuỵ Sĩ.",
+  },
+  {
+    text: "I tried to write an essay about glue, but I couldn't stick to the topic.",
+    key: "stick to", decoys: ["essay", "write", "topic"], type: "double",
+    meanings: ["keep talking or writing about one subject", "be glued to something"],
+    vi: "“stick to” vừa là bám sát chủ đề, vừa là dính vào — viết về keo dán mà.",
+  },
+  {
+    text: "I wasn't going to get a brain transplant, but then I changed my mind.",
+    key: "changed my mind", decoys: ["transplant", "brain", "going"], type: "double",
+    meanings: ["made a different decision", "swapped my brain for a new one"],
+    vi: "“change my mind” vừa là đổi ý, vừa là thay bộ não.",
+  },
+  // ===== Bổ sung 09/2026 =====
+  {
+    text: "Why did the recycling bin get a low band for vocabulary? It kept reusing the same words.",
+    key: "reusing", decoys: ["recycling", "band", "vocabulary"], type: "double",
+    meanings: ["using things again instead of throwing them away", "repeating the same words — which lowers your Lexical Resource score"],
+    vi: "“reusing” vừa là tái sử dụng (việc của thùng rác tái chế), vừa là lặp từ — lỗi làm tụt điểm Lexical Resource trong IELTS.",
+  },
+  {
+    text: "Why did the computer go to the doctor? It had a virus.",
+    key: "virus", decoys: ["computer", "doctor", "go"], type: "double",
+    meanings: ["a tiny organism that makes people ill", "a harmful program that damages computers"],
+    vi: "“virus” vừa là vi-rút gây bệnh, vừa là vi-rút máy tính.",
+  },
+  {
+    text: "Why did the cat join the online class? To use the mouse.",
+    key: "mouse", decoys: ["cat", "online", "class"], type: "double",
+    meanings: ["the device you move to control a computer", "a small animal that cats love to chase"],
+    vi: "“mouse” vừa là chuột máy tính, vừa là con chuột — mèo thì mê chuột rồi.",
+  },
+  {
+    text: "The Wi-Fi went down during my online lesson, so I lost my connection with the teacher.",
+    key: "connection", decoys: ["lesson", "teacher", "online"], type: "double",
+    meanings: ["a link to the internet", "a friendly relationship with someone"],
+    vi: "“connection” vừa là kết nối mạng, vừa là sự gắn kết giữa người với người.",
+  },
+  {
+    text: "Why did the influencer bring a ladder to work? To take her followers to the next level.",
+    key: "next level", decoys: ["influencer", "ladder", "followers"], type: "double",
+    meanings: ["a much better standard", "a higher floor or step"],
+    vi: "“next level” vừa là đẳng cấp cao hơn, vừa là tầng/bậc tiếp theo — nên mới mang thang.",
+  },
+  {
+    text: "Why did the cloud stay home from school? It was feeling under the weather.",
+    key: "under the weather", decoys: ["cloud", "school", "home"], type: "double",
+    meanings: ["feeling slightly ill", "physically below the weather — where a cloud actually is"],
+    vi: "“under the weather” là thành ngữ “hơi mệt”, nhưng đám mây thì đúng là nằm “dưới thời tiết”.",
+  },
+  {
+    text: "Did you hear about the astronaut who hated small rooms? He just needed a little space.",
+    key: "space", decoys: ["astronaut", "rooms", "needed"], type: "double",
+    meanings: ["time and freedom alone", "outer space, where astronauts go"],
+    vi: "“space” vừa là không gian riêng, vừa là vũ trụ.",
+  },
+  {
+    text: "I stayed up all night wondering where the sun had gone. Then it dawned on me.",
+    key: "dawned on me", decoys: ["night", "sun", "wondering"], type: "double",
+    meanings: ["I suddenly realised", "the sun rose (dawn) and shone on me"],
+    vi: "“it dawned on me” vừa là chợt nhận ra, vừa là bình minh lên (dawn) chiếu vào mình.",
+  },
+  {
+    text: "I'm afraid of lifts, so I'm taking steps to avoid them.",
+    key: "taking steps", decoys: ["afraid", "lifts", "avoid"], type: "double",
+    meanings: ["doing things to deal with a problem", "using the stairs"],
+    vi: "“taking steps” vừa là thực hiện biện pháp, vừa là đi cầu thang bộ.",
+  },
+  {
+    text: "I'd tell you a joke about construction, but I'm still working on it.",
+    key: "working on it", decoys: ["joke", "construction", "tell"], type: "double",
+    meanings: ["still improving the joke", "still building it"],
+    vi: "“working on it” vừa là đang hoàn thiện (câu đùa), vừa là đang xây (công trình).",
+  },
+  {
+    text: "I don't trust stairs. They're always up to something.",
+    key: "up to something", decoys: ["trust", "stairs", "always"], type: "double",
+    meanings: ["secretly planning something bad", "going up to a higher place"],
+    vi: "“up to something” vừa là đang âm mưu gì đó, vừa là dẫn lên tới đâu đó.",
+  },
+  {
+    text: "A bicycle can't stand up on its own because it's two-tired.",
+    key: "two-tired", decoys: ["bicycle", "stand", "own"], type: "sound",
+    meanings: ["too tired: very tired", "two tyres: a bicycle has two tyres"],
+    vi: "“two-tired” (hai lốp) đọc giống “too tired” (quá mệt).",
+  },
+  {
+    text: "I was going to make a joke about sodium, but Na.",
+    key: "Na", decoys: ["joke", "sodium", "going"], type: "sound",
+    meanings: ["Na: the chemical symbol for sodium", "nah: an informal way of saying no"],
+    vi: "“Na” là ký hiệu hoá học của natri, đọc giống “nah” (thôi, không).",
+  },
+  {
+    text: "The two antennas got married. The ceremony was dull, but the reception was excellent.",
+    key: "reception", decoys: ["antennas", "ceremony", "married"], type: "double",
+    meanings: ["a party after a wedding", "the quality of a radio or TV signal"],
+    vi: "“reception” vừa là tiệc cưới, vừa là chất lượng thu sóng — ăng-ten thì sóng phải tốt.",
+  },
+  {
+    text: "Time flies like an arrow. Fruit flies like a banana.",
+    key: "Fruit flies", decoys: ["Time", "arrow", "banana"], type: "double",
+    meanings: ["flies (verb): time moves fast, like an arrow", "fruit flies (noun): small insects that like bananas"],
+    vi: "Câu 1: “flies” là động từ (bay). Câu 2: “fruit flies” là ruồi giấm, “like” là thích — ruồi giấm thích chuối.",
+  },
+  {
+    text: "What do you call a pile of cats? A meowtain.",
+    key: "meowtain", decoys: ["pile", "cats", "call"], type: "blend",
+    meanings: ["meow: the sound a cat makes", "mountain: a very large pile or hill"],
+    vi: "“meowtain” ghép meow (tiếng mèo kêu) với mountain (núi) — cả núi mèo.",
+  },
+  {
+    text: "Mochi never doubts she is right about where her food bowl should be. She's absolutely paws-itive.",
+    key: "paws-itive", decoys: ["doubts", "food", "absolutely"], type: "blend",
+    meanings: ["paws: a cat's feet", "positive: sure and confident"],
+    vi: "“paws-itive” ghép paws (chân mèo) với positive (tự tin, chắc chắn).",
+  },
+  {
+    text: "I used to hate facial hair, but then it grew on me.",
+    key: "grew on me", decoys: ["hate", "facial", "used"], type: "double",
+    meanings: ["I slowly started to like it", "it literally grew on my face"],
+    vi: "“grew on me” vừa là dần dần thấy thích, vừa là (râu) mọc trên mặt mình.",
+  },
+].map((p, i) => ({ id: `pun-${i + 1}`, ...p }));
