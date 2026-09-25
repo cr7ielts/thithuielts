@@ -12,6 +12,8 @@ import {
 import { speakingFormSection, speakingWorkArea, recordingsList, aiReport, speakingTurns } from "./speaking.js";
 import { CRITERIA, overallBand, aiAvailable } from "./speaking-ai.js";
 import { bankPicker, findBankItem } from "../bank/bank.js";
+import { myClasses, hasClass, listAllClasses, countMembers, listMembers } from "../classes/clstore.js";
+import { noClassView, joinPromptCard } from "../classes/views.js";
 
 const TYPES = {
   reading:   { icon: "reading",   color: "var(--c-reading)",   label: "Reading" },
@@ -36,7 +38,7 @@ function dueInfo(a) {
 }
 
 /** todo | late-ok | missed | submitted | late | graded */
-function statusOf(a, sub) {
+export function statusOf(a, sub) {
   if (sub) {
     if (sub.gradedAt || sub.teacherScore) return "graded";
     return sub.submittedAt && sub.submittedAt > a.dueAt ? "late" : "submitted";
@@ -115,6 +117,7 @@ function fileList(files) {
 /* ======================= HỌC SINH: danh sách ======================= */
 export function renderHomework(ctx) {
   if (isAdmin(ctx.user)) return renderTeacherHomework(ctx);
+  if (!hasClass()) return noClassView(ctx);   // chưa vào lớp nào thì không có bài tập
 
   const wrap = el("div", { class: "stack-lg" });
   const cat = createCat({ size: 120, mood: "idle", bubbleSide: "left" });
@@ -127,7 +130,7 @@ export function renderHomework(ctx) {
   const body = loading();
   wrap.append(body);
 
-  Promise.all([listAssignments({ admin: false }), listMyHomework(ctx.user.uid)]).then(([list, mine]) => {
+  Promise.all([listAssignments({ admin: false, classIds: myClasses().map((c) => c.id) }), listMyHomework(ctx.user.uid)]).then(([list, mine]) => {
     body.replaceWith(studentLists(ctx, list, mine));
     const todo = list.filter((a) => ["todo", "late-ok"].includes(statusOf(a, mine.get(a.id))));
     const soon = todo.filter((a) => a.dueAt - Date.now() < 48 * HOUR);
@@ -140,7 +143,7 @@ export function renderHomework(ctx) {
   return wrap;
 }
 
-function studentLists(ctx, list, mine) {
+export function studentLists(ctx, list, mine) {
   const groups = { todo: [], done: [], missed: [] };
   for (const a of list) {
     const st = statusOf(a, mine.get(a.id));
@@ -156,12 +159,14 @@ function studentLists(ctx, list, mine) {
     groups.missed.length ? section(L("Đã lỡ hạn", "Missed"), groups.missed, "") : null);
 }
 
-function hwCard(ctx, a, sub) {
+export function hwCard(ctx, a, sub) {
   const st = statusOf(a, sub);
   const due = dueInfo(a);
+  const cls = myClasses().length > 1 ? myClasses().find((c) => c.id === a.classId) : null;
   return el("button", { class: `hw-card due-${due.state}`, style: `--t:${TYPES[a.type]?.color}`, onclick: () => ctx.go(`homework/${a.id}`) },
     el("div", { class: "row", style: "justify-content:space-between" }, typeTag(a.type), el("span", { class: STATUS[st].cls }, STATUS[st].label)),
     el("h3", {}, a.title),
+    cls ? el("div", { class: "tiny muted strong" }, icon("users"), " ", cls.name) : null,
     el("div", { class: "hw-due" }, icon("clock"), due.text),
     sub?.teacherScore ? el("div", { class: "small strong" }, `${L("Điểm", "Mark")}: ${sub.teacherScore}`) : null);
 }
@@ -505,36 +510,61 @@ function renderTeacherHomework(ctx) {
   const body = loading();
   wrap.append(body);
 
-  Promise.all([listAssignments({ admin: true }), countSubmissions(), listStudents().catch(() => [])]).then(([list, counts, students]) => {
-    if (!list.length) {
-      body.replaceWith(el("div", { class: "card muted" }, L("Chưa có bài tập nào. Bấm “Tạo bài tập mới” để bắt đầu.", "No assignments yet. Tap “New assignment” to start.")));
+  Promise.all([listAssignments({ admin: true }), countSubmissions(), listAllClasses(), countMembers()]).then(([list, counts, classes, sizes]) => {
+    if (!classes.length) {
+      body.replaceWith(el("div", { class: "notice notice-info row wrap", style: "gap:10px" },
+        el("span", { style: "flex:1" }, L("Bài tập giờ được giao theo lớp. Hãy tạo lớp trước, rồi gửi mã lớp cho học sinh.",
+          "Homework is now set per class. Create a class first, then share its code with students.")),
+        el("button", { class: "btn btn-primary btn-sm", onclick: () => ctx.go("classes") }, icon("users"), L("Đến Lớp học", "Go to Classes"))));
       return;
     }
-    const table = el("table");
-    table.append(el("thead", {}, el("tr", {},
-      el("th", {}, L("Bài tập", "Assignment")), el("th", {}, L("Loại", "Type")), el("th", {}, L("Hạn nộp", "Due")),
-      el("th", {}, L("Đã nộp", "Submitted")), el("th", {}, ""))));
-    const tbody = el("tbody");
-    for (const a of list) {
-      const n = counts.get(a.id) || 0;
-      tbody.append(el("tr", {},
-        el("td", {}, el("div", { class: "strong" }, a.title),
-          a.published ? null : el("span", { class: "chip chip-warn tiny" }, L("Bản nháp — học sinh chưa thấy", "Draft — hidden from students"))),
-        el("td", {}, typeTag(a.type)),
-        el("td", { class: dueInfo(a).state === "overdue" ? "dim" : "" }, fmtDateTime(a.dueAt).replace(/:\d\d$/, "")),
-        el("td", {}, `${n}${students.length ? ` / ${students.length}` : ""}`),
-        el("td", { class: "nowrap" },
-          el("button", { class: "btn btn-sm btn-primary", onclick: () => ctx.go(`homework/review/${a.id}`) }, L("Chấm bài", "Review")),
-          " ",
-          el("button", { class: "btn btn-sm", onclick: () => ctx.go(`homework/edit/${a.id}`) }, L("Sửa", "Edit")),
-          " ",
-          el("button", { class: "btn btn-sm btn-ghost", title: L("Xem như học sinh", "Preview as student"), onclick: () => ctx.go(`homework/${a.id}`) }, icon("eye")))));
-    }
-    table.append(tbody);
-    body.replaceWith(el("div", { class: "card card-flush" }, el("div", { class: "table-wrap", style: "border:0" }, table)));
+    const names = new Map(classes.map((c) => [c.id, c.name]));
+    let pick = "all";
+    const out = el("div");
+    const filters = el("div", { class: "tabs" });
+    const paint = () => {
+      filters.innerHTML = "";
+      const opts = [["all", L("Tất cả lớp", "All classes")], ...classes.filter((c) => !c.archived).map((c) => [c.id, c.name])];
+      if (list.some((a) => !a.classId)) opts.push(["none", L("Chưa có lớp", "No class")]);
+      for (const [v, t] of opts) filters.append(el("button", { class: "chip-btn" + (pick === v ? " on" : ""), onclick: () => { pick = v; paint(); } }, t));
+      const shown = list.filter((a) => pick === "all" || (pick === "none" ? !a.classId : a.classId === pick));
+      out.replaceChildren(shown.length ? teacherTable(ctx, shown, counts, (a) => sizes.get(a.classId) || 0, pick === "all" ? names : null)
+        : el("div", { class: "card muted" }, L("Chưa có bài tập nào. Bấm “Tạo bài tập mới” để bắt đầu.", "No assignments yet. Tap “New assignment” to start.")));
+    };
+    paint();
+    body.replaceWith(el("div", { class: "stack" }, filters, out));
   }).catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
 
   return wrap;
+}
+
+/** Bảng bài tập cho giáo viên. sizeOf(a): sĩ số lớp của bài · names: Map id lớp -> tên (null thì ẩn cột Lớp) */
+export function teacherTable(ctx, list, counts, sizeOf, names = null) {
+  const table = el("table");
+  table.append(el("thead", {}, el("tr", {},
+    el("th", {}, L("Bài tập", "Assignment")), names ? el("th", {}, L("Lớp", "Class")) : null,
+    el("th", {}, L("Loại", "Type")), el("th", {}, L("Hạn nộp", "Due")),
+    el("th", {}, L("Đã nộp", "Submitted")), el("th", {}, ""))));
+  const tbody = el("tbody");
+  for (const a of list) {
+    const n = counts.get(a.id) || 0;
+    const size = sizeOf(a);
+    tbody.append(el("tr", {},
+      el("td", {}, el("div", { class: "strong" }, a.title),
+        a.published ? null : el("span", { class: "chip chip-warn tiny" }, L("Bản nháp — học sinh chưa thấy", "Draft — hidden from students"))),
+      names ? el("td", { class: "small" }, names.get(a.classId) || el("span", { class: "chip chip-warn tiny" }, L("Chưa có lớp", "No class"))) : null,
+      el("td", {}, typeTag(a.type)),
+      el("td", { class: dueInfo(a).state === "overdue" ? "dim" : "" }, fmtDateTime(a.dueAt).replace(/:\d\d$/, "")),
+      el("td", {}, `${n}${size ? ` / ${size}` : ""}`),
+      el("td", { class: "nowrap" },
+        el("button", { class: "btn btn-sm btn-primary", onclick: () => ctx.go(`homework/review/${a.id}`) }, L("Chấm bài", "Review")),
+        " ",
+        el("button", { class: "btn btn-sm", onclick: () => ctx.go(`homework/edit/${a.id}`) }, L("Sửa", "Edit")),
+        " ",
+        el("button", { class: "btn btn-sm btn-ghost", title: L("Xem như học sinh", "Preview as student"), onclick: () => ctx.go(`homework/${a.id}`) }, icon("eye")))));
+  }
+  table.append(tbody);
+  return el("div", { class: "card card-flush" }, el("div", { class: "table-wrap", style: "border:0" }, table));
 }
 
 /* ======================= GIÁO VIÊN: tạo / sửa ======================= */
@@ -548,6 +578,8 @@ export function renderHomeworkForm(ctx, id) {
   (async () => {
     const a = id ? await getAssignment(id) : null;
     const key = id ? await getKey(id) : [];
+    const classes = (await listAllClasses()).filter((c) => !c.archived || c.id === a?.classId);
+    const classField = classPicker(classes, a, ctx.data?.classId);
     const materials = [...(a?.materials || [])];
     const pending = [];
     const links = [...(a?.links || [])];
@@ -627,6 +659,8 @@ export function renderHomeworkForm(ctx, id) {
       const dueDate = new Date(due.value);
       if (Number.isNaN(dueDate.getTime())) { toast(L("Hạn nộp chưa hợp lệ.", "The deadline isn't valid."), "err"); return; }
       if (answers && !answers.length) { toast(L("Bài Reading/Listening cần có đáp án.", "Reading/Listening homework needs an answer key."), "err"); keyBox.focus(); return; }
+      const classIds = classField.read();
+      if (!classIds.length) { toast(L("Chọn ít nhất một lớp để giao bài.", "Pick at least one class."), "err"); return; }
       let speaking = null, bank = null;
       if (t === "bank") {
         bank = bankField.read();
@@ -640,7 +674,7 @@ export function renderHomeworkForm(ctx, id) {
         // Cần id trước khi upload file → tạo bản ghi trước nếu là bài mới
         let aid = id;
         const data = { title: title.value.trim(), type: t, instructions: instructions.value.trim(), dueAt: dueDate,
-          allowLate: allowLate.checked, published: published.checked, materials, links, speaking, bank };
+          allowLate: allowLate.checked, published: published.checked, materials, links, speaking, bank, classId: classIds[0] };
         if (!aid) aid = await saveAssignment(null, { ...data, published: false }, answers, ctx.user);
         if (pending.length) {
           progress.classList.remove("hidden");
@@ -659,8 +693,15 @@ export function renderHomeworkForm(ctx, id) {
         }
         status.textContent = L("Đang lưu…", "Saving…");
         await saveAssignment(aid, { ...data, materials }, answers, ctx.user);
-        toast(id ? L("Đã lưu bài tập", "Assignment saved") : L("Đã tạo bài tập", "Assignment created"), "ok");
-        ctx.go("homework");
+        // giao cho nhiều lớp: mỗi lớp một bản riêng (như Google Classroom), dùng chung file đề
+        for (const cid of classIds.slice(1)) {
+          status.textContent = L("Đang giao cho lớp khác…", "Posting to other classes…");
+          await saveAssignment(null, { ...data, materials, classId: cid }, answers, ctx.user);
+        }
+        toast(id ? L("Đã lưu bài tập", "Assignment saved")
+          : classIds.length > 1 ? L(`Đã giao bài cho ${classIds.length} lớp`, `Posted to ${classIds.length} classes`)
+          : L("Đã tạo bài tập", "Assignment created"), "ok");
+        ctx.go(ctx.data?.classId ? `class/${ctx.data.classId}` : "homework");
       } catch (err) {
         saveBtn.disabled = false;
         status.textContent = "";
@@ -681,6 +722,7 @@ export function renderHomeworkForm(ctx, id) {
     body.replaceWith(el("div", { class: "card stack" },
       el("h1", { class: "mb-0" }, id ? L("Sửa bài tập", "Edit assignment") : L("Bài tập mới", "New assignment")),
       el("div", {}, el("label", { class: "field-label", for: "hw-title" }, L("Tên bài tập", "Title")), title),
+      classField,
       el("div", { class: "grid grid-2" },
         el("div", {}, el("label", { class: "field-label", for: "hw-type-sel" }, L("Loại bài", "Type")), type),
         el("div", {}, el("label", { class: "field-label", for: "hw-due" }, L("Hạn nộp", "Deadline")), due)),
@@ -703,6 +745,37 @@ export function renderHomeworkForm(ctx, id) {
   return wrap;
 }
 
+/**
+ * Chọn lớp cho bài tập. Bài mới: tick nhiều lớp (mỗi lớp một bản). Sửa bài: chuyển sang một lớp khác.
+ * read() -> [classId…]
+ */
+function classPicker(classes, a, preset) {
+  const box = el("div", { class: "stack-sm" }, el("span", { class: "field-label mb-0" }, L("Giao cho lớp", "Assign to")));
+  if (!classes.length) {
+    box.append(el("div", { class: "notice notice-warn small" },
+      L("Chưa có lớp nào. Vào mục Lớp học để tạo lớp trước.", "No classes yet. Create one under Classes first.")));
+    box.read = () => [];
+    return box;
+  }
+  if (a) {
+    const sel = el("select", { class: "pick", id: "hw-class" },
+      a.classId ? null : el("option", { value: "" }, L("— Chưa có lớp —", "— No class —")),
+      classes.map((c) => el("option", { value: c.id, selected: c.id === a.classId ? "" : null }, c.name)));
+    box.append(sel);
+    box.read = () => (sel.value ? [sel.value] : []);
+    return box;
+  }
+  const only = classes.length === 1 ? classes[0].id : null;
+  const checks = classes.map((c) => ({ id: c.id,
+    input: el("input", { type: "checkbox", checked: c.id === preset || c.id === only ? "" : null }), name: c.name, section: c.section }));
+  box.append(el("div", { class: "row wrap", style: "gap:8px 18px" },
+    checks.map((x) => el("label", { class: "check" }, x.input, x.name, x.section ? el("span", { class: "tiny muted" }, ` · ${x.section}`) : null))));
+  if (classes.length > 1) box.append(el("div", { class: "tiny muted" },
+    L("Chọn nhiều lớp thì mỗi lớp nhận một bản riêng, chấm riêng.", "Each class you tick gets its own copy, marked separately.")));
+  box.read = () => checks.filter((x) => x.input.checked).map((x) => x.id);
+  return box;
+}
+
 /* ======================= GIÁO VIÊN: chấm bài ======================= */
 export function renderHomeworkReview(ctx, id) {
   const wrap = el("div", { class: "stack-lg" });
@@ -714,7 +787,8 @@ export function renderHomeworkReview(ctx, id) {
   (async () => {
     const a = await getAssignment(id);
     if (!a) throw new Error(L("Không tìm thấy bài tập.", "Assignment not found."));
-    const [subs, students, key] = await Promise.all([listSubmissionsFor(id), listStudents().catch(() => []),
+    const [subs, students, key] = await Promise.all([listSubmissionsFor(id),
+      (a.classId ? listMembers(a.classId) : listStudents()).catch(() => []),
       ["reading", "listening"].includes(a.type) ? getKey(id) : Promise.resolve([])]);
     const byUid = new Map(subs.map((s) => [s.uid, s]));
     const autoScore = (s) => {
@@ -863,7 +937,8 @@ function reviewRow(ctx, a, r, key, autoScore) {
 export function homeworkWidget(ctx) {
   const box = el("div", { class: "hw-widget" });
   if (isAdmin(ctx.user)) return box; // giáo viên xem ở tab Homework
-  Promise.all([listAssignments({ admin: false }), listMyHomework(ctx.user.uid)]).then(([list, mine]) => {
+  if (!hasClass()) { box.append(joinPromptCard(ctx)); return box; }
+  Promise.all([listAssignments({ admin: false, classIds: myClasses().map((c) => c.id) }), listMyHomework(ctx.user.uid)]).then(([list, mine]) => {
     const todo = list.filter((a) => ["todo", "late-ok"].includes(statusOf(a, mine.get(a.id)))).slice(0, 3);
     if (!todo.length) return;
     box.append(el("div", { class: "section-head" },

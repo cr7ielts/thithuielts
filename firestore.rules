@@ -30,10 +30,45 @@ service cloud.firestore {
                    && !('email' in request.resource.data);
     }
 
+    // ================= LỚP HỌC =================
+    // Học sinh là thành viên lớp khi có classMembers/<classId>_<uid>
+    function isMember(cid) {
+      return request.auth != null &&
+             exists(/databases/$(database)/documents/classMembers/$(cid + '_' + request.auth.uid));
+    }
+
+    // Lớp: giáo viên tạo/sửa; học sinh chỉ đọc lớp mình đã vào
+    match /classes/{cid} {
+      allow read:  if isAdmin() || isMember(cid);
+      allow write: if isAdmin();
+    }
+
+    // Mã lớp -> id lớp. Chỉ tra đúng một mã (get), không liệt kê được mọi mã (list)
+    match /classCodes/{code} {
+      allow get:   if request.auth != null;
+      allow list:  if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Thành viên lớp: học sinh tự vào bằng mã đúng, lớp phải đang mở và chưa lưu trữ
+    match /classMembers/{mid} {
+      function cls(cid) { return get(/databases/$(database)/documents/classes/$(cid)).data; }
+      allow read:   if isAdmin() || (request.auth != null && resource.data.uid == request.auth.uid);
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && mid == request.resource.data.classId + '_' + request.auth.uid
+        && request.resource.data.joinedAt == request.time
+        && get(/databases/$(database)/documents/classCodes/$(request.resource.data.code)).data.classId == request.resource.data.classId
+        && cls(request.resource.data.classId).joinOpen == true
+        && cls(request.resource.data.classId).archived != true;
+      allow update: if false;
+      allow delete: if isAdmin() || (request.auth != null && resource.data.uid == request.auth.uid);   // giáo viên xoá / học sinh tự rời lớp
+    }
+
     // ================= HOMEWORK =================
-    // Bài tập: học sinh chỉ thấy bài đã "published"; chỉ giáo viên tạo/sửa/xoá
+    // Bài tập thuộc đúng một lớp (classId). Học sinh chỉ thấy bài đã "published" của lớp mình
     match /assignments/{aid} {
-      allow read:  if request.auth != null && (resource.data.published == true || isAdmin());
+      allow read:  if isAdmin() || (resource.data.published == true && isMember(resource.data.classId));
       allow write: if isAdmin();
     }
 
@@ -56,6 +91,7 @@ service cloud.firestore {
           && request.resource.data.get('gradedAt', null) == null
           && request.resource.data.get('teacherCriteria', null) == null
           && asg(request.resource.data.assignmentId).published == true
+          && isMember(asg(request.resource.data.assignmentId).classId)
           && request.resource.data.type == asg(request.resource.data.assignmentId).type
           && (request.time <= asg(request.resource.data.assignmentId).dueAt
               || asg(request.resource.data.assignmentId).allowLate == true);

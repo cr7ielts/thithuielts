@@ -1,7 +1,7 @@
 // =====================================================================
 //  HOMEWORK — lưu trữ bài tập, đáp án và bài nộp
 //  Firestore:
-//    assignments/{id}        đề bài (học sinh chỉ đọc bài đã "published")
+//    assignments/{id}        đề bài, thuộc một lớp (classId); học sinh chỉ đọc bài "published" của lớp mình
 //    assignmentKeys/{id}     đáp án — học sinh chỉ đọc được SAU KHI đã nộp
 //    hwSubmissions/{id_uid}  bài nộp, mỗi học sinh một bản cho mỗi bài tập
 //  Storage:
@@ -40,18 +40,30 @@ export function parseKey(text) {
 export const keyToText = (answers = []) => answers.map((alts, i) => `${i + 1}. ${alts.join(" / ")}`).join("\n");
 
 /* ---------------- Bài tập ---------------- */
-export async function listAssignments({ admin }) {
+/**
+ * Giáo viên: mọi bài (classId: lọc theo một lớp).
+ * Học sinh: bài đã "published" của các lớp mình học — truyền classIds (luật Firestore chặn lớp khác).
+ */
+export async function listAssignments({ admin, classIds = [], classId = null }) {
+  const byDue = (list, dir) => list.sort((x, y) => dir * (x.dueAt - y.dueAt));
   if (!isConfigured) {
     const all = lsGet(LS.a, []).map((a) => normAssignment(a.id, a));
-    return (admin ? all : all.filter((a) => a.published)).sort((x, y) => x.dueAt - y.dueAt);
+    if (admin) return byDue(all.filter((a) => !classId || a.classId === classId), -1);
+    return byDue(all.filter((a) => a.published && classIds.includes(a.classId)), 1);
   }
   const { db, dbMod } = await initFirebase();
   const col = dbMod.collection(db, "assignments");
-  const q = admin
-    ? dbMod.query(col, dbMod.orderBy("dueAt", "desc"), dbMod.limit(200))
-    : dbMod.query(col, dbMod.where("published", "==", true), dbMod.orderBy("dueAt", "asc"), dbMod.limit(200));
-  const snap = await dbMod.getDocs(q);
-  return snap.docs.map((d) => normAssignment(d.id, d.data()));
+  if (admin) {
+    const q = classId ? dbMod.query(col, dbMod.where("classId", "==", classId))
+      : dbMod.query(col, dbMod.orderBy("dueAt", "desc"), dbMod.limit(300));
+    const snap = await dbMod.getDocs(q);
+    return byDue(snap.docs.map((d) => normAssignment(d.id, d.data())), -1);
+  }
+  // mỗi lớp một truy vấn (chỉ lọc bằng dấu "==" nên không cần tạo index)
+  const snaps = await Promise.all(classIds.map((cid) =>
+    dbMod.getDocs(dbMod.query(col, dbMod.where("classId", "==", cid), dbMod.where("published", "==", true)))
+      .catch(() => ({ docs: [] }))));   // vừa bị xoá khỏi lớp: bỏ qua lớp đó, không làm hỏng cả trang
+  return byDue(snaps.flatMap((s) => s.docs.map((d) => normAssignment(d.id, d.data()))), 1);
 }
 
 export async function getAssignment(id) {
@@ -67,7 +79,7 @@ export async function getAssignment(id) {
 /** Tạo / sửa bài tập. data.dueAt là Date. answers là mảng đáp án (chỉ Reading/Listening). */
 export async function saveAssignment(id, data, answers, user) {
   const body = {
-    title: data.title, type: data.type, instructions: data.instructions || "",
+    title: data.title, type: data.type, instructions: data.instructions || "", classId: data.classId || null,
     dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published,
     materials: data.materials || [], links: data.links || [],
     questionCount: answers ? answers.length : (data.type === "bank" ? data.bank?.count || 0 : 0),

@@ -17,6 +17,8 @@ import { renderIdioms, renderIdiomGame } from "./wordplay/idioms.js";
 import { renderPuns, renderPunGame } from "./wordplay/puns.js";
 import { renderHomework, renderHomeworkDetail, renderHomeworkForm, renderHomeworkReview, homeworkWidget } from "./homework/views.js";
 import { renderBank, renderBankPractice, renderBankImport } from "./bank/bank.js";
+import { loadMyClasses, hasClass, normCode } from "./classes/clstore.js";
+import { renderClasses, renderClass, renderJoin, tryJoin } from "./classes/views.js";
 
 const app = document.getElementById("app");
 let user = null;
@@ -44,13 +46,30 @@ const SKILLS = [
     desc: L("Trả lời và ghi âm từng câu để giáo viên nghe, chấm điểm.", "Answer and record each question so your teacher can listen and mark.") },
 ];
 
+/* ===================== Mã lớp chờ vào ===================== */
+const PENDING = "ielts:pendingClass";
+const pendingCode = {
+  get() { try { return sessionStorage.getItem(PENDING) || ""; } catch { return ""; } },
+  set(v) { try { v ? sessionStorage.setItem(PENDING, normCode(v)) : sessionStorage.removeItem(PENDING); } catch { /* chế độ riêng tư */ } },
+};
+
+/** Sau khi đăng nhập: nạp lớp của học sinh, rồi vào lớp bằng mã đang chờ (nếu có) */
+async function afterSignIn(u) {
+  await loadMyClasses(isAdmin(u) ? null : u);
+  const code = pendingCode.get();
+  if (!code || isAdmin(u)) { pendingCode.set(""); return; }
+  pendingCode.set("");
+  if (route.startsWith("join/")) { route = "home"; history.replaceState(null, "", "#home"); }
+  setTimeout(() => tryJoin(ctx, code), 0);
+}
+
 /* ===================== Khởi động ===================== */
 async function init() {
   if (!isConfigured) {
     const demo = localStorage.getItem("ielts:demoUser");
     user = demo ? JSON.parse(demo) : null;
     signOutFn = async () => { localStorage.removeItem("ielts:demoUser"); user = null; render(); };
-    if (user) await initProgress(user);
+    if (user) { await initProgress(user); await loadMyClasses(isAdmin(user) ? null : user); }
     render();
     return;
   }
@@ -67,6 +86,7 @@ async function init() {
     if (u) {
       try { await ensureStudentProfile(u); } catch (e) { console.warn(e); }
       await initProgress(u);
+      await afterSignIn(u);
     }
     render();
   });
@@ -200,6 +220,7 @@ async function demoSignIn(name, teacher = false) {
   localStorage.setItem("ielts:demoUser", JSON.stringify(u));
   user = u;
   await initProgress(u);
+  await afterSignIn(u);
   render();
 }
 
@@ -228,7 +249,11 @@ function render() {
   document.body.classList.remove("hl-on", "hl-erasing");   // tắt bút highlight khi đổi trang
   window.speechSynthesis?.cancel();
   app.innerHTML = "";
-  if (!user) { app.append(loginView()); return; }
+  if (!user) {
+    if (route.startsWith("join/")) pendingCode.set(route.split("/")[1]);   // link mời: đăng nhập xong tự vào lớp
+    app.append(loginView());
+    return;
+  }
 
   const [page, a, b, c, d] = route.split("/");
   app.append(topbar(page));
@@ -261,6 +286,9 @@ function render() {
         : a ? renderHomeworkDetail(ctx, a)
         : renderHomework(ctx));
       break;
+    case "classes":   main.append(renderClasses(ctx)); break;
+    case "class":     main.append(renderClass(ctx, a, b || "work")); break;       // #class/<id> · #class/<id>/people
+    case "join":      main.append(renderJoin(ctx, a || "")); break;              // #join/<MÃ> — link mời
     case "history":   main.append(renderHistory(ctx)); break;
     case "admin":
       if (isAdmin(user)) main.append(renderAdmin(ctx));
@@ -308,7 +336,8 @@ function loginView() {
     el("h1", {}, L("Chào mừng bạn", "Welcome")),
     el("p", { class: "muted", style: "margin-bottom:22px" },
       L("Đăng nhập để làm đề thi thử, ôn từ vựng và lưu lại tiến độ của bạn.",
-        "Sign in to take mock tests, practise vocabulary and keep track of your progress.")));
+        "Sign in to take mock tests, practise vocabulary and keep track of your progress.")),
+    classCodeField());
 
   if (isConfigured) {
     body.append(
@@ -354,6 +383,18 @@ function loginView() {
 
 const feat = (ic, t) => el("span", { class: "feat" }, icon(ic), t);
 
+/** Ô mã lớp ở trang đăng nhập: đăng nhập / tạo tài khoản xong thì tự vào lớp */
+function classCodeField() {
+  const inp = el("input", { id: "auth-class", type: "text", class: "mono cl-code-input", maxlength: 12, autocomplete: "off",
+    value: pendingCode.get(), placeholder: "ABC234", style: "width:100%", oninput: () => pendingCode.set(inp.value) });
+  return el("div", { class: "cl-login-code" },
+    el("label", { class: "field-label", for: "auth-class" }, L("Mã lớp (nếu giáo viên đã gửi)", "Class code (if your teacher gave you one)")),
+    inp,
+    el("div", { class: "tiny muted", style: "margin-top:4px" },
+      L("Có mã lớp mới thấy được Bài tập về nhà. Không có thì bỏ trống — vẫn dùng được Từ vựng, Ngân hàng đề, Idioms, Puns.",
+        "You need a class code to see Homework. No code? Leave it blank — Vocabulary, the Practice bank, Idioms and Puns still work.")));
+}
+
 function googleIcon() {
   const span = el("span", { class: "i" });
   span.innerHTML = `<svg viewBox="0 0 48 48" aria-hidden="true">
@@ -371,11 +412,12 @@ function topbar(page) {
     home: "home", exams: "exams", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
     vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
     idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
+    classes: "classes", class: "classes", join: "classes",
   }[page] || "home";
 
   // Mỗi mục một màu, xếp theo dải cầu vồng dịu từ trái sang phải
   const NAV_COLOR = {
-    home: "#e0892a", homework: "#e46f6a", exams: "#d9669b", bank: "#a47ad8", vocab: "#6f82e8",
+    home: "#e0892a", classes: "#e5793f", homework: "#e46f6a", exams: "#d9669b", bank: "#a47ad8", vocab: "#6f82e8",
     idioms: "#4a9fd8", puns: "#3fa7a0", games: "#4fb58c", history: "#86a83c", admin: "#8f9aa6",
   };
   const pill = (r, ic, label) =>
@@ -393,7 +435,9 @@ function topbar(page) {
       el("span", { class: "brand-name" }, BRAND.name)),
     el("nav", { class: "nav" },
       pill("home", "home", L("Trang chủ", "Home")),
-      pill("homework", "homework", L("Bài tập", "Homework")),
+      pill("classes", "users", L("Lớp học", "Classes")),
+      // Homework chỉ hiện khi đã vào ít nhất một lớp (giáo viên luôn thấy)
+      isAdmin(user) || hasClass() ? pill("homework", "homework", L("Bài tập", "Homework")) : null,
       pill("exams", "exam", L("Thi thử", "Tests")),
       pill("bank", "file", L("Ngân hàng đề", "Practice bank")),
       pill("vocab", "cards", L("Từ vựng", "Vocabulary")),

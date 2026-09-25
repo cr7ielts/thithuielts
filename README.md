@@ -45,6 +45,27 @@ và nghĩa tiếng Việt ở chế độ VI (bên còn lại hiện nhỏ bên 
 
 Thêm câu chơi chữ: `key` phải xuất hiện nguyên văn trong `text`, và `decoys` là 3 từ khác cũng có trong câu.
 
+## Lớp học (kiểu Google Classroom)
+
+Menu **Lớp học / Classes**. Bài tập về nhà giờ giao **theo lớp**: học sinh chỉ thấy bài của lớp mình đã vào.
+
+| Ai | Làm được gì |
+|---|---|
+| **Giáo viên** (email trong `ADMIN_EMAILS`) | Tạo lớp (tên + phần/khoá), mỗi lớp có **mã 6 ký tự** và **link mời**. Trong trang lớp: tab **Bài tập** (giao bài cho lớp, chấm bài) và **Thành viên** (danh sách học sinh, xoá khỏi lớp). Đổi tên lớp, **đặt lại mã** (mã/link cũ hết dùng được), **khoá** không nhận thêm học sinh, **lưu trữ** lớp (giữ nguyên bài và điểm, khôi phục được) |
+| **Học sinh** | Nhập mã lớp ở trang đăng nhập / tạo tài khoản, hoặc sau này bấm **Tham gia lớp**; mở link mời `…/#join/<MÃ>` thì mã tự điền, đăng nhập xong tự vào lớp. Vào được nhiều lớp, tự rời lớp được |
+| **Học sinh chưa vào lớp nào** | Không có mục **Bài tập** trên thanh menu; vẫn dùng Từ vựng, Ngân hàng đề, Thi thử, Idioms, Puns, Trò chơi, Lịch sử |
+
+- Giao một bài cho nhiều lớp: tick nhiều lớp khi tạo bài — **mỗi lớp nhận một bản riêng**, chấm riêng (như Google Classroom), dùng chung file đề.
+- Trang Homework của giáo viên có bộ lọc theo lớp; cột "Đã nộp" tính trên sĩ số của đúng lớp đó.
+- **Bài tập cũ** (tạo trước khi có lớp): lần đầu vào **Lớp học**, trang hiện khung vàng "Có N bài tập cũ chưa thuộc lớp nào" →
+  chọn lớp (hoặc để tạo lớp mới "Lớp hiện tại") → **Chuyển vào**. Bài nộp và điểm cũ giữ nguyên.
+  Sau đó gửi mã lớp cho học sinh cũ để các em vào lại lớp — chưa vào lớp thì không thấy bài.
+- Việc chặn nằm ở **luật Firestore**, không chỉ ẩn trên giao diện: học sinh ngoài lớp gọi thẳng API cũng không đọc, không nộp được
+  bài của lớp đó, không liệt kê được mã lớp hay danh sách thành viên. Mã lớp gõ không phân biệt hoa thường
+  (bỏ các ký tự dễ nhầm 0/O, 1/I/L).
+- Firestore: `classes/{id}`, `classCodes/{MÃ}` (mã → lớp), `classMembers/{lớp}_{uid}`; bài tập có thêm trường `classId`.
+- **Nhớ deploy cả luật** (`deploy.cmd` đã gồm `firestore`), nếu không web mới sẽ bị luật cũ từ chối.
+
 ## Homework (bài tập về nhà)
 
 Tab **Homework** — giáo viên giao bài có hạn nộp, học sinh nộp ngay trên web.
@@ -261,6 +282,7 @@ Firestore cho 50.000 lượt đọc và 20.000 lượt ghi mỗi ngày — đủ
 
 ### Lưu ý bảo mật
 - Học sinh chỉ đọc được bài của chính mình, không sửa/xoá bài đã nộp, không tự điền điểm giáo viên.
+- Học sinh chỉ đọc/nộp được bài tập của lớp mình đã vào (bằng đúng mã, khi lớp đang mở).
 - Điểm Listening/Reading và XP được tính trên trình duyệt, nên một học sinh rành kỹ thuật vẫn có thể gửi điểm giả
   qua API. Với thi thử trong lớp thường không đáng lo; nếu cần chấm chống gian lận tuyệt đối phải chuyển phần chấm
   sang Cloud Functions (gói Blaze).
@@ -286,6 +308,7 @@ js/data/puns.js         😹 CHƠI CHỮ
 js/wordplay/*.js        trang Idioms & Puns + 3 trò chơi chữ
 js/i18n.js              chuyển ngôn ngữ EN / VI
 js/homework/*.js        tab Homework: giao bài, nộp bài, chấm bài
+js/classes/*.js         Lớp học: tạo lớp, mã lớp, vào lớp, thành viên
 js/results.js           trang kết quả, lịch sử, bảng điều khiển giáo viên
 js/skills/*.js          4 kỹ năng
 js/data/test01.js       📄 NỘI DUNG ĐỀ THI
