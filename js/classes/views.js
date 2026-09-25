@@ -1,18 +1,28 @@
-// LỚP HỌC — kiểu Google Classroom: danh sách lớp, trang lớp (Bài tập · Thành viên), vào lớp bằng mã
+// LỚP HỌC — kiểu Google Classroom: danh sách lớp, trang lớp (Bài tập · Thành viên · Cài đặt), vào lớp bằng mã
 import { el, icon, toast, confirmDialog, fmtDateTime } from "../ui.js";
 import { createCat } from "../cat.js";
 import { isAdmin } from "../firebase.js";
 import { L } from "../i18n.js";
 import {
-  myClasses, loadMyClasses, listAllClasses, getClass, createClass, updateClass, resetCode,
-  listMembers, countMembers, removeMember, lookupCode, joinClass, normCode, orphanAssignments, adoptAssignments,
+  myClasses, myPending, loadMyClasses, listAllClasses, getClass, createClass, updateClass, resetCode,
+  listMembers, countMembers, approveMember, removeMember, lookupCode, joinClass, normCode, orphanAssignments, adoptAssignments,
+  setClassAvatar, clearClassAvatar,
 } from "./clstore.js";
+import { THEMES, themeOf } from "./themes.js";
 import { listAssignments, listMyHomework, countSubmissions } from "../homework/hwstore.js";
 import { studentLists, teacherTable } from "../homework/views.js";
 
 // màu dải đầu thẻ lớp (chọn theo id để mỗi lớp giữ một màu)
 const BANNERS = ["#4fb58c", "#7c8cf0", "#e0892a", "#d9669b", "#3fa7a0", "#a47ad8", "#e46f6a", "#4a9fd8"];
 const colorOf = (id) => BANNERS[[...String(id)].reduce((s, ch) => s + ch.charCodeAt(0), 0) % BANNERS.length];
+// dải đầu lớp: theo tâm trạng lớp giáo viên chọn, chưa chọn thì một màu cố định theo id
+const bannerBg = (c) => themeOf(c)?.bg || colorOf(c.id);
+/** ảnh đại diện lớp (tròn); chưa có ảnh thì chữ cái đầu tên lớp */
+function classAvatar(c, size = 56) {
+  const st = `width:${size}px;height:${size}px;font-size:${Math.round(size * 0.42)}px`;
+  return c.avatarUrl ? el("img", { class: "cl-avatar", src: c.avatarUrl, alt: "", style: st })
+    : el("div", { class: "cl-avatar cl-avatar-letter", style: st }, (c.name || "?").trim().slice(0, 1).toUpperCase());
+}
 const inviteLink = (code) => `${location.origin}${location.pathname}#join/${code}`;
 const loading = () => el("div", { class: "card muted" }, L("Đang tải…", "Loading…"));
 const errBox = (err) => el("div", { class: "notice notice-error" }, err.message || String(err));
@@ -57,7 +67,13 @@ function joinError(err) {
 /** Vào lớp bằng mã; xong thì mở trang lớp. Trả về true nếu vào được */
 export async function tryJoin(ctx, code, { quiet = false } = {}) {
   try {
-    const { cls, already } = await joinClass(code, ctx.user);
+    const { cls, already, pending } = await joinClass(code, ctx.user);
+    if (pending) {
+      toast(already ? L(`Bạn đã gửi yêu cầu vào lớp ${cls.name}, đang chờ giáo viên duyệt.`, `You've already asked to join ${cls.name} — waiting for your teacher.`)
+        : L(`Đã gửi yêu cầu vào lớp ${cls.name}. Giáo viên duyệt xong là bạn thấy bài tập.`, `Request sent to ${cls.name}. You'll see its homework once your teacher accepts you.`), "ok", 6000);
+      ctx.go("classes");
+      return true;
+    }
     toast(already ? L(`Bạn đã ở trong lớp ${cls.name}`, `You're already in ${cls.name}`) : L(`Đã vào lớp ${cls.name}`, `Joined ${cls.name}`), "ok", 4000);
     ctx.go(`class/${cls.id}`);
     return true;
@@ -92,12 +108,24 @@ export function noClassView(ctx) {
         el("h1", {}, L("Vào lớp để nhận bài tập", "Join a class to get homework")),
         el("p", { class: "lead" }, L("Bài tập về nhà do giáo viên giao theo lớp. Nhập mã lớp giáo viên gửi để thấy bài tập. Trong lúc chờ, bạn vẫn dùng được Từ vựng, Ngân hàng đề, Thi thử, Idioms và Puns.",
           "Homework is set per class. Enter the class code from your teacher to see it. Meanwhile, Vocabulary, the Practice bank, Tests, Idioms and Puns are all open to you.")),
+        myPending().length ? el("div", { class: "notice notice-info", style: "margin-bottom:12px" },
+          L(`Bạn đang chờ giáo viên duyệt vào: ${myPending().map((c) => c.name).join(", ")}.`, `Waiting for your teacher to accept you into: ${myPending().map((c) => c.name).join(", ")}.`)) : null,
         el("button", { class: "btn btn-primary btn-lg", onclick: () => joinDialog(ctx) }, icon("users"), L("Nhập mã lớp", "Enter class code"))),
       el("div", { class: "games-hero-cat" }, cat)));
 }
 
 /** Thẻ nhỏ ở trang chủ mời học sinh vào lớp */
 export function joinPromptCard(ctx) {
+  const wait = myPending();
+  if (wait.length) {
+    return el("div", { class: "card cl-prompt row wrap" },
+      el("span", { class: "cl-prompt-ic" }, icon("clock")),
+      el("div", { style: "flex:1;min-width:200px" },
+        el("strong", {}, L("Đang chờ giáo viên duyệt", "Waiting for your teacher")),
+        el("div", { class: "small muted" }, L(`Bạn đã xin vào: ${wait.map((c) => c.name).join(", ")}. Được duyệt là bài tập hiện ở đây.`,
+          `You asked to join: ${wait.map((c) => c.name).join(", ")}. Homework appears here once you're accepted.`))),
+      el("button", { class: "btn", onclick: () => joinDialog(ctx) }, L("Nhập mã lớp khác", "Enter another code")));
+  }
   return el("div", { class: "card cl-prompt row wrap" },
     el("span", { class: "cl-prompt-ic" }, icon("users")),
     el("div", { style: "flex:1;min-width:200px" },
@@ -117,20 +145,27 @@ export function renderJoin(ctx, code) {
     if (!hit) { body.replaceWith(el("div", { class: "notice notice-error" }, joinError({ code: "bad-code" }))); return; }
     const already = myClasses().find((c) => c.id === hit.classId);
     if (already) { ctx.go(`class/${already.id}`); return; }
+    const waitingFor = myPending().find((c) => c.id === hit.classId);
+    const needApproval = hit.requireApproval !== false;
     body.replaceWith(el("div", { class: "card stack center" },
       el("div", { class: "cl-banner", style: `--cl:${colorOf(hit.classId)}` }, el("h2", {}, hit.name),
         hit.teacherName ? el("div", {}, hit.teacherName) : null),
-      el("p", { class: "muted" }, L("Bạn được mời vào lớp này. Vào lớp để nhận bài tập giáo viên giao.", "You've been invited to this class. Join to receive its homework.")),
-      el("button", { class: "btn btn-primary btn-lg", onclick: (e) => { e.target.disabled = true; tryJoin(ctx, code).then((ok) => { e.target.disabled = ok; }); } },
-        icon("users"), L("Tham gia lớp", "Join class"))));
+      waitingFor
+        ? el("div", { class: "notice notice-info" }, L("Bạn đã gửi yêu cầu vào lớp này — đang chờ giáo viên duyệt.", "You've already asked to join — waiting for your teacher to accept."))
+        : el("p", { class: "muted" }, needApproval
+          ? L("Bạn được mời vào lớp này. Bấm Tham gia để gửi yêu cầu — giáo viên duyệt xong là bạn thấy bài tập.", "You've been invited to this class. Tap Join to send a request — you'll see homework once your teacher accepts.")
+          : L("Bạn được mời vào lớp này. Vào lớp để nhận bài tập giáo viên giao.", "You've been invited to this class. Join to receive its homework.")),
+      waitingFor ? null : el("button", { class: "btn btn-primary btn-lg", onclick: (e) => { e.target.disabled = true; tryJoin(ctx, code).then((ok) => { e.target.disabled = ok; }); } },
+        icon("users"), needApproval ? L("Gửi yêu cầu vào lớp", "Ask to join") : L("Tham gia lớp", "Join class"))));
   })().catch((err) => body.replaceWith(errBox(err)));
   return wrap;
 }
 
 /* ======================= Danh sách lớp ======================= */
-function classCard(ctx, c, teacher, size) {
-  return el("button", { class: "cl-card" + (c.archived ? " archived" : ""), style: `--cl:${colorOf(c.id)}`, onclick: () => ctx.go(`class/${c.id}`) },
+function classCard(ctx, c, teacher, size, pend = 0) {
+  return el("button", { class: "cl-card" + (c.archived ? " archived" : ""), style: `--cl:${bannerBg(c)}`, onclick: () => ctx.go(pend ? `class/${c.id}/people` : `class/${c.id}`) },
     el("div", { class: "cl-card-top" },
+      el("div", { class: "cl-card-av" }, classAvatar(c, 52)),
       el("h3", {}, c.name),
       c.section ? el("div", { class: "cl-sec" }, c.section) : null,
       !teacher && c.teacherName ? el("div", { class: "cl-sec" }, c.teacherName) : null),
@@ -139,7 +174,8 @@ function classCard(ctx, c, teacher, size) {
         el("span", { class: "chip" }, icon("users"), L(`${size || 0} học sinh`, `${size || 0} student${size === 1 ? "" : "s"}`)),
         c.archived ? el("span", { class: "chip" }, L("Đã lưu trữ", "Archived"))
         : el("span", { class: "chip mono" }, c.code),
-        !c.archived && !c.joinOpen ? el("span", { class: "chip chip-warn" }, L("Đang khoá", "Closed")) : null)
+        !c.archived && !c.joinOpen ? el("span", { class: "chip chip-warn" }, L("Đang khoá", "Closed")) : null,
+        pend ? el("span", { class: "chip chip-new" }, icon("clock"), L(`${pend} chờ duyệt`, `${pend} waiting`)) : null)
       : el("span", { class: "small muted" }, L("Mở lớp", "Open class"), " ", icon("arrow"))));
 }
 
@@ -164,22 +200,43 @@ export function renderClasses(ctx) {
   (async () => {
     if (!teacher) {
       const list = await loadMyClasses(ctx.user);
-      body.replaceWith(list.length
-        ? el("div", { class: "cl-grid" }, list.map((c) => classCard(ctx, c, false)))
-        : el("div", { class: "card muted" }, L("Bạn chưa ở trong lớp nào. Bấm “Tham gia lớp” và nhập mã giáo viên gửi.", "You're not in any class yet. Tap “Join class” and enter the code from your teacher.")));
+      const wait = myPending();
+      body.replaceWith(el("div", { class: "stack-lg" },
+        wait.length ? el("div", { class: "stack" },
+          el("div", { class: "section-head" }, el("h2", {}, L("Đang chờ duyệt", "Waiting for approval"))),
+          el("div", { class: "cl-grid" }, wait.map((c) => pendingCard(ctx, c)))) : null,
+        list.length ? el("div", { class: "cl-grid" }, list.map((c) => classCard(ctx, c, false)))
+          : wait.length ? null
+          : el("div", { class: "card muted" }, L("Bạn chưa ở trong lớp nào. Bấm “Tham gia lớp” và nhập mã giáo viên gửi.", "You're not in any class yet. Tap “Join class” and enter the code from your teacher."))));
       return;
     }
-    const [list, sizes, orphans] = await Promise.all([listAllClasses(), countMembers(), orphanAssignments().catch(() => [])]);
+    const pend = new Map();
+    const [list, sizes, orphans] = await Promise.all([listAllClasses(), countMembers(pend), orphanAssignments().catch(() => [])]);
     const active = list.filter((c) => !c.archived), archived = list.filter((c) => c.archived);
     body.replaceWith(el("div", { class: "stack-lg" },
       orphans.length ? migrateBanner(ctx, orphans, active) : null,
-      active.length ? el("div", { class: "cl-grid" }, active.map((c) => classCard(ctx, c, true, sizes.get(c.id))))
+      active.length ? el("div", { class: "cl-grid" }, active.map((c) => classCard(ctx, c, true, sizes.get(c.id), pend.get(c.id))))
         : el("div", { class: "card muted" }, L("Chưa có lớp nào. Bấm “Tạo lớp” để bắt đầu.", "No classes yet. Tap “Create class” to start.")),
       archived.length ? el("details", { class: "cl-archived" },
         el("summary", {}, L(`Lớp đã lưu trữ (${archived.length})`, `Archived classes (${archived.length})`)),
         el("div", { class: "cl-grid", style: "margin-top:12px" }, archived.map((c) => classCard(ctx, c, true, sizes.get(c.id))))) : null));
   })().catch((err) => body.replaceWith(errBox(err)));
   return wrap;
+}
+
+/** Thẻ lớp học sinh đã xin vào nhưng chưa được duyệt */
+function pendingCard(ctx, c) {
+  return el("div", { class: "cl-card archived", style: `--cl:${colorOf(c.id)}` },
+    el("div", { class: "cl-card-top" }, el("h3", {}, c.name), c.teacherName ? el("div", { class: "cl-sec" }, c.teacherName) : null),
+    el("div", { class: "cl-card-body row wrap", style: "gap:8px;justify-content:space-between" },
+      el("span", { class: "chip chip-warn" }, icon("clock"), L("Chờ giáo viên duyệt", "Waiting for teacher")),
+      el("button", { class: "btn btn-sm btn-ghost", onclick: async () => {
+        const ok = await confirmDialog({ title: L("Huỷ yêu cầu vào lớp?", "Cancel your request?"), body: L("Muốn vào lại bạn cần nhập mã lớp lần nữa.", "You'll need the class code to ask again."), okText: L("Huỷ yêu cầu", "Cancel request"), danger: true });
+        if (!ok) return;
+        await removeMember(c.id, ctx.user.uid);
+        await loadMyClasses(ctx.user);
+        ctx.go("classes");
+      } }, L("Huỷ yêu cầu", "Cancel request"))));
 }
 
 async function newClass(ctx) {
@@ -234,64 +291,48 @@ export function renderClass(ctx, id, tab = "work") {
   (async () => {
     const c = await getClass(id).catch(() => null);
     if (!c) { body.replaceWith(el("div", { class: "notice notice-error" }, L("Không mở được lớp này (lớp không tồn tại hoặc bạn không ở trong lớp).", "Can't open this class (it doesn't exist or you're not in it)."))); return; }
+    if (!teacher && tab === "settings") tab = "work";
+    const pend = teacher ? (await listMembers(c.id)).filter((m) => m.status === "pending").length : 0;
+    const tabList = [["work", L("Bài tập", "Classwork")], ["people", L("Thành viên", "People")]];
+    if (teacher) tabList.push(["settings", L("Cài đặt", "Settings")]);
     const tabs = el("div", { class: "cl-tabs", role: "tablist" },
-      [["work", L("Bài tập", "Classwork")], ["people", L("Thành viên", "People")]].map(([k, t]) =>
-        el("button", { class: tab === k ? "on" : "", role: "tab", "aria-selected": String(tab === k), onclick: () => ctx.go(k === "work" ? `class/${id}` : `class/${id}/people`) }, t)));
+      tabList.map(([k, t]) =>
+        el("button", { class: tab === k ? "on" : "", role: "tab", "aria-selected": String(tab === k), onclick: () => ctx.go(k === "work" ? `class/${id}` : `class/${id}/${k}`) },
+          t, k === "people" && pend ? el("span", { class: "cl-tab-badge" }, pend) : null)));
     const content = loading();
     body.replaceWith(el("div", { class: "stack-lg" }, classHeader(ctx, c, teacher), tabs, content));
-    const view = tab === "people" ? await peopleTab(ctx, c, teacher) : await workTab(ctx, c, teacher);
+    const view = tab === "people" ? await peopleTab(ctx, c, teacher)
+      : tab === "settings" ? settingsTab(ctx, c)
+      : await workTab(ctx, c, teacher);
     content.replaceWith(view);
   })().catch((err) => body.replaceWith(errBox(err)));
   return wrap;
 }
 
 function classHeader(ctx, c, teacher) {
-  const head = el("section", { class: "cl-banner cl-banner-lg", style: `--cl:${colorOf(c.id)}` },
-    el("h1", {}, c.name),
-    c.section ? el("div", { class: "cl-sec" }, c.section) : null,
-    !teacher && c.teacherName ? el("div", { class: "cl-sec" }, L("Giáo viên: ", "Teacher: "), c.teacherName) : null,
-    c.archived ? el("span", { class: "chip", style: "margin-top:8px" }, L("Đã lưu trữ", "Archived")) : null);
+  const th = themeOf(c);
+  const head = el("section", { class: "cl-banner cl-banner-lg", style: `--cl:${bannerBg(c)}` },
+    el("div", { class: "cl-banner-row" },
+      classAvatar(c, 72),
+      el("div", { style: "flex:1;min-width:0" },
+        el("h1", {}, c.name),
+        c.section ? el("div", { class: "cl-sec" }, c.section) : null,
+        !teacher && c.teacherName ? el("div", { class: "cl-sec" }, L("Giáo viên: ", "Teacher: "), c.teacherName) : null,
+        th ? el("span", { class: "cl-mood-chip" }, L("Tâm trạng lớp: ", "Class mood: "), th.label) : null,
+        c.archived ? el("span", { class: "chip", style: "margin-top:8px" }, L("Đã lưu trữ", "Archived")) : null),
+      th ? el("div", { class: "cl-banner-cat" }, createCat({ size: 110, mood: th.mood, say: th.say, bubbleSide: "left" })) : null));
   if (!teacher) return head;
 
-  const act = (ic, text, fn, cls = "btn btn-sm") => el("button", { class: cls, onclick: fn }, icon(ic), text);
-  const reload = () => ctx.go(location.hash.replace("#", "") || `class/${c.id}`);
+  const act = (ic, text, fn) => el("button", { class: "btn btn-sm", onclick: fn }, icon(ic), text);
   const codeBox = c.archived ? null : el("div", { class: "card cl-code-card" },
     el("div", { class: "field-label mb-0" }, L("Mã lớp", "Class code")),
     el("div", { class: "cl-code mono" + (c.joinOpen ? "" : " off") }, c.code),
     c.joinOpen ? null : el("div", { class: "chip chip-warn" }, L("Đang khoá — học sinh mới không vào được", "Closed — new students can't join")),
+    c.joinOpen && c.requireApproval ? el("div", { class: "tiny muted" }, L("Học sinh vào bằng mã/link cần bạn duyệt", "Students joining by code/link need your approval")) : null,
     el("div", { class: "row wrap", style: "gap:6px;justify-content:center" },
       act("file", L("Chép mã", "Copy code"), () => copy(c.code, L("mã lớp", "Class code"))),
       act("link", L("Chép link mời", "Copy invite link"), () => copy(inviteLink(c.code), L("link mời", "Invite link")))));
-
-  const tools = el("div", { class: "row wrap", style: "gap:6px" },
-    act("writing", L("Đổi tên", "Rename"), async () => {
-      const v = await formDialog({ title: L("Sửa thông tin lớp", "Edit class"), okText: L("Lưu", "Save"), fields: [
-        { id: "name", label: L("Tên lớp", "Class name"), value: c.name }, { id: "section", label: L("Phần / khoá", "Section"), value: c.section }] });
-      if (!v || !v.name) return;
-      await updateClass(c, { name: v.name, section: v.section });
-      toast(L("Đã lưu", "Saved"), "ok"); reload();
-    }),
-    c.archived ? null : act("refresh", L("Đặt lại mã", "Reset code"), async () => {
-      const ok = await confirmDialog({ title: L("Đặt lại mã lớp?", "Reset the class code?"),
-        body: L("Mã cũ và link mời cũ sẽ hết dùng được. Học sinh đã vào lớp vẫn ở lại.", "The old code and invite link stop working. Students already in the class stay."),
-        okText: L("Đặt lại", "Reset") });
-      if (!ok) return;
-      await resetCode(c); toast(L("Đã đổi mã lớp", "Class code changed"), "ok"); reload();
-    }),
-    c.archived ? null : act(c.joinOpen ? "x" : "check", c.joinOpen ? L("Khoá, không nhận thêm", "Stop new joins") : L("Mở lại cho vào lớp", "Allow new joins"), async () => {
-      await updateClass(c, { joinOpen: !c.joinOpen }); reload();
-    }),
-    act(c.archived ? "refresh" : "download", c.archived ? L("Khôi phục lớp", "Restore class") : L("Lưu trữ lớp", "Archive class"), async () => {
-      if (!c.archived) {
-        const ok = await confirmDialog({ title: L("Lưu trữ lớp này?", "Archive this class?"),
-          body: L("Lớp chuyển xuống mục Đã lưu trữ và không nhận thêm học sinh. Bài tập, bài nộp và điểm vẫn giữ nguyên, học sinh vẫn xem lại được. Có thể khôi phục bất cứ lúc nào.",
-            "The class moves to Archived and stops accepting students. Homework, submissions and marks are kept, and students can still view them. You can restore it anytime."),
-          okText: L("Lưu trữ", "Archive") });
-        if (!ok) return;
-      }
-      await updateClass(c, { archived: !c.archived }); reload();
-    }, "btn btn-sm btn-ghost"));
-  return el("div", { class: "cl-head-grid" }, el("div", { class: "stack" }, head, tools), codeBox);
+  return el("div", { class: "cl-head-grid" }, head, codeBox);
 }
 
 async function workTab(ctx, c, teacher) {
@@ -328,7 +369,37 @@ async function peopleTab(ctx, c, teacher) {
         } }, L("Rời lớp", "Leave class"))));
   }
 
-  const members = await listMembers(c.id);
+  const all = await listMembers(c.id);
+  const members = all.filter((m) => m.status !== "pending");
+  const waiting = all.filter((m) => m.status === "pending");
+  const avatarOf = (m) => (m.photoURL ? el("img", { class: "avatar", src: m.photoURL, alt: "", referrerpolicy: "no-referrer" })
+    : el("div", { class: "avatar avatar-letter" }, (m.name || "?").slice(0, 1).toUpperCase()));
+  const again = () => ctx.go(`class/${c.id}/people`);
+  const pendingBox = waiting.length ? el("div", { class: "card stack cl-pending" },
+    el("div", { class: "row wrap", style: "gap:10px" },
+      el("h2", { class: "cl-people-h", style: "flex:1;border:0;margin:0;padding:0" }, L(`Chờ duyệt (${waiting.length})`, `Waiting to join (${waiting.length})`)),
+      waiting.length > 1 ? el("button", { class: "btn btn-sm btn-primary", onclick: async (e) => {
+        e.target.disabled = true;
+        for (const m of waiting) await approveMember(c.id, m.uid);
+        toast(L(`Đã duyệt ${waiting.length} học sinh`, `Accepted ${waiting.length} students`), "ok"); again();
+      } }, icon("check"), L("Duyệt tất cả", "Accept all")) : null),
+    el("div", { class: "tiny muted" }, L("Học sinh đã nhập mã hoặc mở link mời. Chưa duyệt thì các em chưa thấy bài tập của lớp.",
+      "These students used the code or invite link. Until you accept them they can't see the class's homework.")),
+    waiting.map((m) => el("div", { class: "cl-person" }, avatarOf(m),
+      el("div", { style: "flex:1;min-width:0" }, el("div", { class: "strong" }, m.name || "—"), el("div", { class: "tiny muted" }, m.email || "")),
+      m.joinedAt ? el("span", { class: "tiny muted nowrap" }, fmtDateTime(m.joinedAt).replace(/:\d\d$/, "")) : null,
+      el("button", { class: "btn btn-sm btn-primary", onclick: async (e) => {
+        e.target.disabled = true; await approveMember(c.id, m.uid);
+        toast(L(`Đã nhận ${m.name || "học sinh"} vào lớp`, `${m.name || "Student"} accepted`), "ok"); again();
+      } }, icon("check"), L("Chấp nhận", "Accept")),
+      el("button", { class: "btn btn-sm btn-ghost", onclick: async (e) => {
+        const ok = await confirmDialog({ title: L(`Từ chối ${m.name || "học sinh"}?`, `Decline ${m.name || "this student"}?`),
+          body: L("Yêu cầu bị xoá. Học sinh vẫn có thể gửi lại bằng mã lớp — muốn chặn hẳn thì đặt lại mã.", "The request is removed. They could ask again with the code — reset the code to stop that."),
+          okText: L("Từ chối", "Decline"), danger: true });
+        if (!ok) return;
+        e.target.disabled = true; await removeMember(c.id, m.uid);
+        toast(L("Đã từ chối", "Declined"), "ok"); again();
+      } }, L("Từ chối", "Decline"))))) : null;
   const list = el("div", { class: "stack-sm" });
   if (!members.length) list.append(el("p", { class: "muted small" }, L("Chưa có học sinh. Gửi mã lớp hoặc link mời để học sinh tự vào.", "No students yet. Share the class code or invite link so students can join.")));
   for (const m of members) {
@@ -348,7 +419,95 @@ async function peopleTab(ctx, c, teacher) {
         ctx.go(`class/${c.id}/people`);
       } }, icon("x"))));
   }
-  return el("div", { class: "card stack" }, teacherRow,
-    el("h2", { class: "cl-people-h" }, L(`Học sinh (${members.length})`, `Students (${members.length})`)), list);
+  return el("div", { class: "stack-lg" }, pendingBox, el("div", { class: "card stack" }, teacherRow,
+    el("h2", { class: "cl-people-h" }, L(`Học sinh (${members.length})`, `Students (${members.length})`)), list));
+}
+
+/* ======================= Cài đặt lớp (giáo viên) ======================= */
+function settingsTab(ctx, c) {
+  const again = () => ctx.go(`class/${c.id}/settings`);
+  const saveTo = async (patch, msg = L("Đã lưu", "Saved")) => {
+    try { await updateClass(c, patch); toast(msg, "ok"); again(); } catch (err) { toast(err.message, "err", 6000); }
+  };
+  const section = (title, hint, ...body) => el("div", { class: "card stack-sm" },
+    el("h2", { class: "cl-set-h" }, title), hint ? el("div", { class: "small muted" }, hint) : null, ...body);
+
+  // Thông tin chung
+  const name = el("input", { type: "text", id: "cl-name", value: c.name, maxlength: 80, style: "width:100%" });
+  const sec = el("input", { type: "text", id: "cl-section", value: c.section || "", maxlength: 80, style: "width:100%", placeholder: L("Ví dụ: Khoá 09/2026", "e.g. Sept 2026 intake") });
+  const info = section(L("Thông tin lớp", "Class details"), null,
+    el("div", { class: "grid grid-2" },
+      el("div", {}, el("label", { class: "field-label", for: "cl-name" }, L("Tên lớp", "Class name")), name),
+      el("div", {}, el("label", { class: "field-label", for: "cl-section" }, L("Phần / khoá", "Section")), sec)),
+    el("div", {}, el("button", { class: "btn btn-primary btn-sm", onclick: () => {
+      if (!name.value.trim()) { toast(L("Lớp cần có tên.", "The class needs a name."), "err"); return; }
+      saveTo({ name: name.value.trim(), section: sec.value.trim() });
+    } }, icon("check"), L("Lưu", "Save"))));
+
+  // Ảnh đại diện
+  const picker = el("input", { type: "file", accept: "image/*", class: "hidden" });
+  const status = el("span", { class: "small muted" });
+  picker.onchange = async () => {
+    const f = picker.files[0];
+    if (!f) return;
+    if (!/^image\//.test(f.type)) { toast(L("Chỉ nhận file ảnh.", "Please choose an image."), "err"); return; }
+    status.textContent = L("Đang tải ảnh lên…", "Uploading…");
+    try { await setClassAvatar(c, f); toast(L("Đã đổi ảnh lớp", "Class picture updated"), "ok"); again(); }
+    catch (err) { status.textContent = ""; toast(err.message, "err", 6000); }
+  };
+  const avatar = section(L("Ảnh đại diện lớp", "Class picture"), L("Hiện trên thẻ lớp và đầu trang lớp. Ảnh được thu nhỏ tự động.", "Shown on the class card and header. Images are resized automatically."),
+    el("div", { class: "row wrap", style: "gap:14px;align-items:center" },
+      classAvatar(c, 84),
+      el("button", { class: "btn btn-sm", onclick: () => picker.click() }, icon("upload"), c.avatarUrl ? L("Đổi ảnh", "Change picture") : L("Chọn ảnh", "Choose picture")),
+      c.avatarUrl ? el("button", { class: "btn btn-sm btn-ghost", onclick: async () => { await clearClassAvatar(c); toast(L("Đã bỏ ảnh", "Picture removed"), "ok"); again(); } }, L("Bỏ ảnh", "Remove")) : null,
+      status, picker));
+
+  // Tâm trạng / giao diện lớp
+  const moods = el("div", { class: "cl-theme-grid" },
+    THEMES.map((t) => el("button", { class: "cl-theme" + (c.theme === t.id ? " on" : ""), style: `--cl:${t.bg}`, "aria-pressed": String(c.theme === t.id),
+      onclick: () => saveTo({ theme: t.id }, L(`Tâm trạng lớp: ${t.label}`, `Class mood: ${t.label}`)) },
+      el("div", { class: "cl-theme-sw" }, createCat({ size: 64, mood: t.mood })),
+      el("span", {}, t.label))));
+  const theme = section(L("Tâm trạng lớp", "Class mood"),
+    L("Chọn theo không khí của lớp — màu đầu trang lớp và biểu cảm, câu nói của Mochi đổi theo. Học sinh thấy ngay khi mở lớp.",
+      "Pick the class's vibe — the header colours and Mochi's face and message change to match. Students see it when they open the class."),
+    moods);
+
+  // Vào lớp
+  const toggle = (label, hint, on, fn) => el("label", { class: "cl-switch-row" },
+    el("div", { style: "flex:1" }, el("div", { class: "strong" }, label), el("div", { class: "small muted" }, hint)),
+    el("input", { type: "checkbox", class: "cl-switch", checked: on ? "" : null, onchange: (e) => fn(e.target.checked) }));
+  const join = section(L("Vào lớp", "Joining"), null,
+    toggle(L("Duyệt học sinh trước khi vào lớp", "Approve students before they join"),
+      L("Bật: học sinh nhập mã hoặc mở link mời sẽ nằm ở mục Chờ duyệt, bạn bấm Chấp nhận thì các em mới thấy bài tập. Tắt: vào thẳng.",
+        "On: students who use the code or invite link wait under People until you accept them. Off: they join straight away."),
+      c.requireApproval, (v) => saveTo({ requireApproval: v })),
+    toggle(L("Cho vào lớp bằng mã / link mời", "Allow joining with the code / invite link"),
+      L("Tắt để khoá lớp: mã và link vẫn giữ nhưng không ai vào thêm được.", "Turn off to lock the class: nobody new can join, but the code is kept."),
+      c.joinOpen, (v) => saveTo({ joinOpen: v })),
+    el("div", { class: "row wrap", style: "gap:8px;align-items:center" },
+      el("span", { class: "small muted", style: "flex:1" }, L(`Mã hiện tại: ${c.code}. Đặt lại mã khi mã bị lộ — mã và link cũ hết dùng được, học sinh đã vào vẫn ở lại.`,
+        `Current code: ${c.code}. Reset it if it leaks — the old code and link stop working; students already in stay.`)),
+      el("button", { class: "btn btn-sm", onclick: async () => {
+        const ok = await confirmDialog({ title: L("Đặt lại mã lớp?", "Reset the class code?"),
+          body: L("Mã cũ và link mời cũ sẽ hết dùng được. Học sinh đã vào lớp vẫn ở lại.", "The old code and invite link stop working. Students already in the class stay."), okText: L("Đặt lại", "Reset") });
+        if (!ok) return;
+        await resetCode(c); toast(L("Đã đổi mã lớp", "Class code changed"), "ok"); again();
+      } }, icon("refresh"), L("Đặt lại mã", "Reset code"))));
+
+  // Lưu trữ
+  const archive = section(c.archived ? L("Lớp đang lưu trữ", "This class is archived") : L("Lưu trữ lớp", "Archive class"),
+    c.archived ? L("Khôi phục để lớp hoạt động lại và nhận học sinh.", "Restore it to make the class active again.")
+      : L("Lớp chuyển xuống mục Đã lưu trữ và không nhận thêm học sinh. Bài tập, bài nộp và điểm giữ nguyên, học sinh vẫn xem lại được.",
+        "The class moves to Archived and stops accepting students. Homework, submissions and marks are kept, and students can still view them."),
+    el("div", {}, el("button", { class: "btn btn-sm" + (c.archived ? " btn-primary" : " btn-ghost"), onclick: async () => {
+      if (!c.archived) {
+        const ok = await confirmDialog({ title: L("Lưu trữ lớp này?", "Archive this class?"), body: L("Có thể khôi phục bất cứ lúc nào.", "You can restore it anytime."), okText: L("Lưu trữ", "Archive") });
+        if (!ok) return;
+      }
+      saveTo({ archived: !c.archived });
+    } }, icon(c.archived ? "refresh" : "download"), c.archived ? L("Khôi phục lớp", "Restore class") : L("Lưu trữ lớp", "Archive class"))));
+
+  return el("div", { class: "stack-lg" }, info, avatar, theme, join, archive);
 }
 

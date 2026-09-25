@@ -53,6 +53,8 @@ Menu **Lớp học / Classes**. Bài tập về nhà giờ giao **theo lớp**: 
 |---|---|
 | **Giáo viên** (email trong `ADMIN_EMAILS`) | Tạo lớp (tên + phần/khoá), mỗi lớp có **mã 6 ký tự** và **link mời**. Trong trang lớp: tab **Bài tập** (giao bài cho lớp, chấm bài) và **Thành viên** (danh sách học sinh, xoá khỏi lớp). Đổi tên lớp, **đặt lại mã** (mã/link cũ hết dùng được), **khoá** không nhận thêm học sinh, **lưu trữ** lớp (giữ nguyên bài và điểm, khôi phục được) |
 | **Học sinh** | Nhập mã lớp ở trang đăng nhập / tạo tài khoản, hoặc sau này bấm **Tham gia lớp**; mở link mời `…/#join/<MÃ>` thì mã tự điền, đăng nhập xong tự vào lớp. Vào được nhiều lớp, tự rời lớp được |
+| **Duyệt học sinh** | Mặc định bật cho mọi lớp: học sinh nhập mã hoặc mở link mời thì vào mục **Chờ duyệt** (tab Thành viên, thẻ lớp có nhãn "N chờ duyệt"). Giáo viên bấm **Chấp nhận** / **Từ chối** (hoặc **Duyệt tất cả**). Chưa được duyệt thì học sinh chưa thấy bài tập, chưa đọc được lớp — luật Firestore chặn, không chỉ ẩn giao diện. Tắt duyệt ở Cài đặt thì học sinh vào thẳng |
+| **Cài đặt lớp** (tab thứ 3, chỉ giáo viên) | Tên, phần/khoá · **ảnh đại diện lớp** (tự thu nhỏ còn 320 px, lưu ở Storage `classes/<id>/`) · **tâm trạng lớp**: Vui vẻ, Phấn khích, Quyết tâm, Tập trung, Bình yên, Mệt mỏi, Buồn, Thất vọng — đổi màu đầu trang lớp, biểu cảm và câu nói của Mochi (sửa danh sách ở `js/classes/themes.js`) · bật/tắt duyệt · khoá không nhận thêm · đặt lại mã · lưu trữ |
 | **Học sinh chưa vào lớp nào** | Không có mục **Bài tập** trên thanh menu; vẫn dùng Từ vựng, Ngân hàng đề, Thi thử, Idioms, Puns, Trò chơi, Lịch sử |
 
 - Giao một bài cho nhiều lớp: tick nhiều lớp khi tạo bài — **mỗi lớp nhận một bản riêng**, chấm riêng (như Google Classroom), dùng chung file đề.
@@ -63,8 +65,8 @@ Menu **Lớp học / Classes**. Bài tập về nhà giờ giao **theo lớp**: 
 - Việc chặn nằm ở **luật Firestore**, không chỉ ẩn trên giao diện: học sinh ngoài lớp gọi thẳng API cũng không đọc, không nộp được
   bài của lớp đó, không liệt kê được mã lớp hay danh sách thành viên. Mã lớp gõ không phân biệt hoa thường
   (bỏ các ký tự dễ nhầm 0/O, 1/I/L).
-- Firestore: `classes/{id}`, `classCodes/{MÃ}` (mã → lớp), `classMembers/{lớp}_{uid}`; bài tập có thêm trường `classId`.
-- **Nhớ deploy cả luật** (`deploy.cmd` đã gồm `firestore`), nếu không web mới sẽ bị luật cũ từ chối.
+- Firestore: `classes/{id}`, `classCodes/{MÃ}` (mã → lớp), `classMembers/{lớp}_{uid}` (`status`: `pending` chờ duyệt / `active`); bài tập có thêm trường `classId`.
+- **Nhớ deploy cả luật** (`deploy.cmd` đã gồm `firestore` và `storage`), nếu không web mới sẽ bị luật cũ từ chối.
 
 ## Homework (bài tập về nhà)
 

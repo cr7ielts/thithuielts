@@ -31,10 +31,13 @@ service cloud.firestore {
     }
 
     // ================= LỚP HỌC =================
-    // Học sinh là thành viên lớp khi có classMembers/<classId>_<uid>
+    // Học sinh là thành viên lớp khi có classMembers/<classId>_<uid> với status "active"
+    // (thẻ tạo trước khi có tính năng duyệt không có status -> coi như đã duyệt).
+    // Thẻ "pending" = đang chờ giáo viên duyệt: chưa đọc được lớp, chưa thấy bài tập.
+    function memberPath(cid) { return /databases/$(database)/documents/classMembers/$(cid + '_' + request.auth.uid); }
     function isMember(cid) {
-      return request.auth != null &&
-             exists(/databases/$(database)/documents/classMembers/$(cid + '_' + request.auth.uid));
+      return request.auth != null && exists(memberPath(cid))
+             && get(memberPath(cid)).data.get('status', 'active') == 'active';
     }
 
     // Lớp: giáo viên tạo/sửa; học sinh chỉ đọc lớp mình đã vào
@@ -50,7 +53,8 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // Thành viên lớp: học sinh tự vào bằng mã đúng, lớp phải đang mở và chưa lưu trữ
+    // Thành viên lớp: học sinh tự vào bằng mã đúng, lớp phải đang mở và chưa lưu trữ.
+    // Lớp bật "duyệt học sinh" (mặc định bật) thì thẻ mới phải là "pending"; giáo viên chuyển sang "active".
     match /classMembers/{mid} {
       function cls(cid) { return get(/databases/$(database)/documents/classes/$(cid)).data; }
       allow read:   if isAdmin() || (request.auth != null && resource.data.uid == request.auth.uid);
@@ -60,8 +64,10 @@ service cloud.firestore {
         && request.resource.data.joinedAt == request.time
         && get(/databases/$(database)/documents/classCodes/$(request.resource.data.code)).data.classId == request.resource.data.classId
         && cls(request.resource.data.classId).joinOpen == true
-        && cls(request.resource.data.classId).archived != true;
-      allow update: if false;
+        && cls(request.resource.data.classId).archived != true
+        && (request.resource.data.status == 'pending'
+            || (request.resource.data.status == 'active' && cls(request.resource.data.classId).get('requireApproval', true) == false));
+      allow update: if isAdmin();   // giáo viên duyệt: pending -> active
       allow delete: if isAdmin() || (request.auth != null && resource.data.uid == request.auth.uid);   // giáo viên xoá / học sinh tự rời lớp
     }
 

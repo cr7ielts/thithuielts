@@ -1284,3 +1284,33 @@ body.hl-on .textLayer span { cursor: text; }
   .cl-head-grid { grid-template-columns: 1fr; }
   .cl-banner-lg h1 { font-size: 1.5rem; }
 }
+
+/* ---- Lớp học: ảnh lớp, tâm trạng, chờ duyệt, cài đặt ---- */
+.cl-avatar { border-radius: 50%; object-fit: cover; flex: none; border: 3px solid rgba(255,255,255,.85); background: #fff; }
+.cl-avatar-letter { display: grid; place-items: center; font-weight: 800; color: var(--ink); background: rgba(255,255,255,.9); }
+.cl-card-top { position: relative; }
+.cl-card-av { position: absolute; right: 14px; bottom: -26px; }
+.cl-card-top h3, .cl-card-top .cl-sec { padding-right: 60px; }
+.cl-card-body { padding-top: 16px; }
+.cl-banner-row { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.cl-banner-cat { margin: -10px 0 -20px auto; }
+.cl-banner-cat .bubble, .cl-banner-cat [class*="bubble"] { color: var(--ink); }
+.cl-mood-chip { display: inline-block; margin-top: 8px; padding: 3px 10px; border-radius: 999px; background: rgba(255,255,255,.25); font-size: .8rem; font-weight: 800; }
+.cl-banner-lg { justify-content: center; }
+.cl-tab-badge { display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 6px; margin-left: 6px; border-radius: 999px; background: var(--red); color: #fff; font-size: .72rem; }
+.cl-pending { border: 2px solid #f0d49a; background: var(--amber-soft); }
+.cl-pending .cl-person + .cl-person { border-top-color: #f0d49a; }
+.cl-set-h { font-size: 1.15rem; margin: 0; }
+.cl-theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 10px; }
+.cl-theme { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding: 6px 6px 8px; border-radius: 16px; cursor: pointer;
+  font: inherit; font-weight: 800; color: var(--ink); background: var(--surface); border: 2px solid var(--line); }
+.cl-theme:hover { border-color: var(--line-strong); }
+.cl-theme.on { border-color: var(--ink); box-shadow: 0 0 0 2px var(--ink) inset; }
+.cl-theme-sw { background: var(--cl); border-radius: 12px; height: 78px; display: grid; place-items: center; overflow: hidden; }
+.cl-switch-row { display: flex; gap: 14px; align-items: center; padding: 10px 0; cursor: pointer; }
+.cl-switch-row + .cl-switch-row { border-top: 1px solid var(--line); }
+.cl-switch { appearance: none; width: 44px; height: 26px; border-radius: 999px; background: var(--line-strong); position: relative; cursor: pointer; flex: none; transition: background .15s; }
+.cl-switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; transition: transform .15s; box-shadow: var(--shadow-sm); }
+.cl-switch:checked { background: var(--mint); }
+.cl-switch:checked::after { transform: translateX(18px); }
+@media (max-width: 720px) { .cl-banner-cat { display: none; } }
