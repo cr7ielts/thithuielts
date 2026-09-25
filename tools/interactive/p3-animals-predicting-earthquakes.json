@@ -1,0 +1,187 @@
+{
+ "id": "p3-animals-predicting-earthquakes",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "ynng",
+   "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3? YES if the statement agrees with the views of the writer NO if the statement contradicts with the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this",
+   "questions": [
+    {
+     "n": 27,
+     "text": "There is historical scientific evidence to support stories of animals predicting earthquakes."
+    },
+    {
+     "n": 28,
+     "text": "Coren's decision to investigate the possibility that dogs can anticipate an earthquake was based on some archive information."
+    },
+    {
+     "n": 29,
+     "text": "Dogs may be more sensitive to changes in the Earth's electrical field than other animals."
+    },
+    {
+     "n": 30,
+     "text": "Coren's findings from his original study of dogs clearly prove they can hear high frequencies which signal earthquakes."
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 35,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "The strength of the next earthquake along the San Andreas fault is"
+    },
+    {
+     "v": "B",
+     "t": "It is not the first time that the theory of animal prediction has been"
+    },
+    {
+     "v": "C",
+     "t": "Experts have never identified any reliable predictors for earthquakes."
+    },
+    {
+     "v": "D",
+     "t": "The Parkfield project depended on unreliable methods for earthquake"
+    }
+   ],
+   "questions": [
+    {
+     "n": 31,
+     "text": "What is the writer's main point in paragraph 4?"
+    },
+    {
+     "n": 32,
+     "text": "When Coren re-analysed his data for 27 February he found that on that day"
+    },
+    {
+     "n": 33,
+     "text": "Seismologist Andy Michael refers to Alfred Wegener in order to"
+    },
+    {
+     "n": 34,
+     "text": "What is the writer doing in the penultimate paragraph?"
+    },
+    {
+     "n": 35,
+     "text": "What point is the writer making by using the phrase `what have we got to lose' in the final paragraph?"
+    }
+   ]
+  },
+  {
+   "from": 36,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Complete each sentence with the correct ending, A-H, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "is released during earthquakes."
+    },
+    {
+     "v": "B",
+     "t": "showed little variation during the tsunami."
+    },
+    {
+     "v": "C",
+     "t": "would have an effect on most dogs."
+    },
+    {
+     "v": "D",
+     "t": "could be linked to their ability to detect movement in the ground."
+    },
+    {
+     "v": "E",
+     "t": "was based on Chinese data-collection methods."
+    },
+    {
+     "v": "F",
+     "t": "could be explained by extra-sensory perception."
+    },
+    {
+     "v": "G",
+     "t": "dates back to before modern civilisation."
+    },
+    {
+     "v": "H",
+     "t": "derived from poorly conducted research."
+    }
+   ],
+   "questions": [
+    {
+     "n": 36,
+     "text": "The belief in the ability of animals to predict earthquakes"
+    },
+    {
+     "n": 37,
+     "text": "Experts think it is unlikely that gas"
+    },
+    {
+     "n": 38,
+     "text": "Sheldrake says that an animal's ability to predict disasters"
+    },
+    {
+     "n": 39,
+     "text": "Coren speculated that a dog's ability to predict earthquakes"
+    },
+    {
+     "n": 40,
+     "text": "The behaviour of the elephant herds in Wikramanayake's study"
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "Animals predicting earthquakes?",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Surely it is too much to believe that animals can predict earthquakes when we haven't worked out how to do it ourselves?"
+   },
+   {
+    "mark": "",
+    "text": "On 26 December 2004, villagers from Bang Koey in Thailand noticed buffalo on the beach lift their heads, look out to sea, then stampede to the top of a nearby hill. Minutes later, the tsunami* struck. Could these creatures have been sensing early warning signs of the earthquake that triggered the Asian tsunami? It is a strange assertion, but the possibility that animals might hold the answer cannot be ignored, as a warning system could save many lives."
+   },
+   {
+    "mark": "",
+    "text": "The idea that animals can predict earthquakes has ancient origins. From 373 BC there are stories of rats, dogs and snakes deserting the Greek city of Helice before an earthquake hit. It was the first in a long line of such anecdotes. What has been lacking is any real scientific data linking animal behaviour with earthquakes."
+   },
+   {
+    "mark": "",
+    "text": "In late 2000, however, Stanley Coren from the University of British Columbia started a study to discover whether dogs suffer from `seasonal affective disorder'**. Twice weekly, he emailed 200 dog owners in Vancouver, asking them to rate their pets' activity and anxiety levels using a nine-point scale. In general, there was little daily variability; Coren's initial analysis of many months' worth of information strongly refuted his suspicion that dogs become depressed during winter, and he abandoned the project. When he finally went through the figures in detail several years later, however, he noticed that on 27 February 2001, nearly 50 per cent were well above their usual baseline for activity and anxiety. The likelihood of such a difference was remote and Coren searched through newspaper archives for a cause. He found that on 28 February a quake of magnitude 6.8 shook the Pacific Northwest, with an epicentre at Nisqually about 240 kilometres south of Vancouver. Coren wondered what the dogs could have sensed. There was little to guide him."
+   },
+   {
+    "mark": "",
+    "text": "Even the most comprehensive earthquake research project in the world, the Parkfield experiment in California, couldn't help. Since 1985, researchers from the US Geological Survey (USGS) have monitored a section of the San Andreas fault near the town of Parkfield. They have analysed every tremor, and measured tiny movements of the fault at ten-minute intervals, but to date the project has revealed nothing that would reliably indicate that an earthquake is imminent."
+   },
+   {
+    "mark": "",
+    "text": "There is still much speculation about animals predicting earthquakes. For example, one idea is that some animals detect changes in the Earth's electrical field. Another theory is that animals are responding to gas such as radon released from rocks before a quake, despite the fact that few experts accept such gas is produced. Rupert Sheldrake, a British researcher, suggests that `people notice unusual animal behaviour before disasters. I think animals are picking up on something that we can't, perhaps by using a sixth sense."
+   },
+   {
+    "mark": "",
+    "text": "______________________ * tsunami: large, destructive wave caused by earthquakes Coren, however, had read about rescue dogs hearing avalanche victims under the snow, and suspected the dogs in his study might also be hearing vibrations. So he returned to his data to search for supporting evidence. He discovered that only one of the 14 hearing- impaired dogs in his study had shown any significant increase in anxiety on 27 February, and it was living with a hearing dog that had become anxious. Dogs with floppy ears showed only half the change in activity and one-third the change in anxiety level of dogs with pricked ears. Not only would an ear flap reduce the amount of sound reaching the inner ear; Coren also realised that it would weaken high-frequency sounds more than low-frequency ones. Further, dogs with smaller heads were significantly more likely to behave strangely than those with larger heads, which was interesting, given that smaller-headed dogs are more sensitive to higher frequencies."
+   },
+   {
+    "mark": "",
+    "text": "Taken together, Coren's results present an alluring hypothesis. He suggests that the kind of high-frequency sounds that many dogs can hear are emitted before an earthquake, perhaps from rocks scraping underground. Admittedly this is only one study. Even if Coren is right, is it still possible that other animals could predict quakes in different ways? Eric Wikramanayake, a conservation scientist who used radio collars and happened to be studying elephants in Sri Lanka when the tsunami struck, is entirely sceptical. What he found was precisely nothing. One herd was only 100 metres away from the beach when the tsunami arrived and they just took cover behind a large sand dune when the wave came in sight. The other herd was safely located about five kilometres inland and did not show any unusual movements."
+   },
+   {
+    "mark": "",
+    "text": "Even if some quakes are preceded by high-frequency vibrations, is it feasible that dogs in Vancouver could detect sounds emitted near Nisqually? USGS seismologist Andy Michael points out that the epicentre was over 240 kilometres south of Vancouver. `It is physically implausible for seismic waves in the kilohertz range to travel that far,' he says. Although unconvinced by Coren's ideas, Michael adds a cautionary tale. `When Alfred Wegener presented his theory of continental drift, his core ideas about tectonics were right but nobody listened because the mechanisms were wrong.'"
+   },
+   {
+    "mark": "",
+    "text": "So if animals are able to foretell earthquakes, does it matter how? In fact, while western society has been reluctant to use animals as earthquake predictors, China has already embraced the idea. Experts there use a video link to keep a 24-hour watch on snakes in farms nationwide. If they try to escape from their enclosure, observers raise a warning. Other governments may not be willing to go that far just yet, but Coren believes that a centre that people could call when they see unusual things would be useful. `We would be able to collect much more data and give warnings when we get hundreds of calls from a single area,' he says. It could cost little more than the price of setting up a phone line. Put that way, what have we got to lose?"
+   },
+   {
+    "mark": "",
+    "text": "______________________ ** seasonal affective disorder: emotional and psychological changes created by changes in the amount of daylight in winter"
+   }
+  ]
+ }
+}

@@ -1,0 +1,211 @@
+{
+ "id": "p3-music-soothes-and-awes-and-may-help-us-heal",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 32,
+   "kind": "ynng",
+   "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3? YES if the statement agrees with the views of the writer NO if the statement contradicts the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this",
+   "questions": [
+    {
+     "n": 27,
+     "text": "Dan Ellsey has been able to communicate through music since he was very young."
+    },
+    {
+     "n": 28,
+     "text": "Armies respond to music that is loud and rhythmic."
+    },
+    {
+     "n": 29,
+     "text": "Researchers have determined why people react so emotionally to music."
+    },
+    {
+     "n": 30,
+     "text": "Both music and speech are composed of sound segments."
+    },
+    {
+     "n": 31,
+     "text": "It is clear that song developed more quickly than speech."
+    },
+    {
+     "n": 32,
+     "text": "Emotional reactions to music have been scientifically demonstrated."
+    }
+   ]
+  },
+  {
+   "from": 33,
+   "to": 35,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 33,
+     "text": "According to the article, music stimulates higher brain activity when it",
+     "options": [
+      {
+       "v": "A",
+       "t": "provokes hunger."
+      },
+      {
+       "v": "B",
+       "t": "requires thought."
+      },
+      {
+       "v": "C",
+       "t": "is soothing."
+      },
+      {
+       "v": "D",
+       "t": "is pleasing."
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "text": "According to Dr Schlaug's research, some stroke patients may regain speech if",
+     "options": [
+      {
+       "v": "A",
+       "t": "they practise making sounds that are close together."
+      },
+      {
+       "v": "B",
+       "t": "they reactivate the left side of the brain."
+      },
+      {
+       "v": "C",
+       "t": "they receive music therapy daily."
+      },
+      {
+       "v": "D",
+       "t": "they listen to tunes in groups."
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "text": "According to the Cochrane Collaboration review, some research into the link between music and pain relief suggests",
+     "options": [
+      {
+       "v": "A",
+       "t": "the value of music is underestimated."
+      },
+      {
+       "v": "B",
+       "t": "the value of music may be limited."
+      },
+      {
+       "v": "C",
+       "t": "more studies are needed in these areas."
+      },
+      {
+       "v": "D",
+       "t": "patients welcome this research."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 36,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Complete each sentence with the correct ending, A-H, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "rely less on drugs."
+    },
+    {
+     "v": "B",
+     "t": "get heavier."
+    },
+    {
+     "v": "C",
+     "t": "exhibit improved social interaction."
+    },
+    {
+     "v": "D",
+     "t": "experience psychological benefits."
+    },
+    {
+     "v": "E",
+     "t": "sleep more soundly."
+    },
+    {
+     "v": "F",
+     "t": "suffer less discomfort."
+    },
+    {
+     "v": "G",
+     "t": "accept their situation more easily."
+    },
+    {
+     "v": "H",
+     "t": "have stronger resistance to disease."
+    }
+   ],
+   "questions": [
+    {
+     "n": 36,
+     "text": "Burn victims who receive music therapy"
+    },
+    {
+     "n": 37,
+     "text": "People with schizophrenia who receive music therapy"
+    },
+    {
+     "n": 38,
+     "text": "Autistic children who receive music therapy"
+    },
+    {
+     "n": 39,
+     "text": "Premature babies who receive music therapy"
+    },
+    {
+     "n": 40,
+     "text": "Hospitalised children who receive music therapy"
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "Music soothes and awes - and may help us heal",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Tapping into the brain's ability to process music, researchers are using songs and sounds in novel ways"
+   },
+   {
+    "mark": "",
+    "text": "Dan Ellsey, 33, was sitting in his wheelchair, his virtually useless arms and weak torso strapped to the chair for safety. As we were introduced, he arched his back, grinned broadly and aimed the power of his dark brown eyes at me, as if eye contact were his only means of transcending the prison of his body."
+   },
+   {
+    "mark": "",
+    "text": "But it isn't. In the last few years, Ellsey, who was born with cerebral palsy, has discovered another, almost miraculous way of expressing himself: composing music with a special computerized system called Hyperscore. For Ellsey, as for most human beings, music has almost inexplicable power. It can rouse armies to battle, soothe babies to sleep, communicate peaks of joy and depths of sorrow that mere words cannot."
+   },
+   {
+    "mark": "",
+    "text": "Why evolution would have endowed our brains with the neural machinery to make music is a mystery. `It's unclear why humans are so uniquely sensitive to music. Certainly, music shares many features with spoken language, and our brains are particularly developed to process the rapid tones and segments of sound that are common to both,' said neurologist and author Dr Oliver Sacks, whose latest book is Musicophilia: Tales of Music and the Brain. `Some researchers,' he added in an e-mail interview, `think that in primitive cultures, music and speech were not distinct. Other researchers debate which came first in evolution, speech or song.' What is clear is that the brain is abundantly wired to process music."
+   },
+   {
+    "mark": "",
+    "text": "Scientists at the Montreal Neurological Institute and Hospital, for instance, have found dramatic evidence on brain scans that the chills, or visceral feelings of awe, that people report when listening to their favorite music are real. Reactions to music appear to vary greatly. Music that a person likes, but not music that is disliked, activates the higher thinking centers in the brain's cortex and, perhaps more importantly, the `ancient circuitry, the motivation and reward system,' according to experimental psychologist Robert Zatorre, a member of the Montreal team. This primeval part of the brain also governs basic drives such as hunger, thirst and sex, suggesting that the brain may consider music on a par with them. Music has the power not just to awe but also to heal. If a person has a stroke on the left side of the brain, where the speech centers in most people are, that `wipes out a major part of communication,' said Dr Gottfried Schlaug, chief of the Cerebrovascular Disorders Division and Stroke Recovery Laboratory at Beth Israel Deaconess Medical Center. But if the right side, where a lot of music is processed, is intact, some stroke patients can use melodic intonation therapy, which involves singing using two tones relatively close in pitch, to communicate. Schlaug's research suggests that with intensive therapy, some patients can even move from this two-tone singing back to actual speech."
+   },
+   {
+    "mark": "",
+    "text": "Stroke patients with gait problems also profit from music therapy. At the Center for Biomedical Research in Music at Colorado State University in Fort Collins, director Michael Thaut and his team have shown that people who are partially paralyzed on one side of the body can be retrained to walk faster and in a more coordinated way if they practice walking rhythmically, cued by music or a metronome. Combining rhythmic training with physical therapy also helps stroke patients recover gait faster. `Music helps us organize our movement,' said Kathleen Howland, a music therapist who teaches at Lesley University in Cambridge in the USA. In fact, researchers have found that auditory signals are more powerful than visual signals in coordinating movement in healthy people."
+   },
+   {
+    "mark": "",
+    "text": "Patients undergoing colonoscopy seem to feel less pain and need fewer sedative drugs if they listen to music during the procedure, according to several studies. But not all studies have been so clear-cut. A 2007 review by the Cochrane Collaboration, a nonprofit, international organization that evaluates medical research, pooled data from 51 pain studies and concluded that, although listening to music can reduce the intensity of pain and the need for narcotic drugs, the benefit, overall, was small."
+   },
+   {
+    "mark": "",
+    "text": "A number of studies, however, show that music therapy can reduce pain, such as a 2001 study on burn patients, whose burns must be frequently scraped to reduce dead tissue. Music therapy may improve mental state and functioning in people with schizophrenia, and communication in children with autistic spectrum disorders, according to Cochrane reviews. Babies, as any parent knows, clearly respond to music. Premature infants who listen to lullabies learn to suck better and gain more weight than those who don't get music therapy. Deforia Lane, director of music therapy at the University Hospitals Ireland Cancer Center in Cleveland, has found an improvement in immune response among hospitalized children who played, sang and created music, compared with children who did not get music therapy. Indeed, the list of potential benefits from music therapy seems long. And for people such as Ellsey, the benefits can be nothing short of liberating."
+   }
+  ]
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "id": "p2-flood-control-in-the-usa",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 14,
+   "to": 19,
+   "kind": "heading",
+   "instruction": "Reading Passage 2 has seven paragraphs, A-F. Choose the correct heading for each paragraph from the list of headings below. List of Headings",
+   "bank": [
+    {
+     "v": "i",
+     "t": "Official recognition of the importance of natural flood protection"
+    },
+    {
+     "v": "ii",
+     "t": "Understanding the positive side of flooding"
+    },
+    {
+     "v": "iii",
+     "t": "The consequences of man-made climate change on flooding"
+    },
+    {
+     "v": "iv",
+     "t": "The economic implications of flooding"
+    },
+    {
+     "v": "v",
+     "t": "Nature's rapid powers of recovery"
+    },
+    {
+     "v": "vi",
+     "t": "Bureaucratic obstacles to natural flood controls"
+    },
+    {
+     "v": "vii",
+     "t": "Science leads the way in flood prevention"
+    },
+    {
+     "v": "viii",
+     "t": "The only natural defence against flood damage"
+    }
+   ],
+   "questions": [
+    {
+     "n": 14,
+     "text": "Paragraph A"
+    },
+    {
+     "n": 15,
+     "text": "Paragraph B"
+    },
+    {
+     "n": 16,
+     "text": "Paragraph C"
+    },
+    {
+     "n": 17,
+     "text": "Paragraph D"
+    },
+    {
+     "n": 18,
+     "text": "Paragraph E"
+    },
+    {
+     "n": 19,
+     "text": "Paragraph F"
+    }
+   ]
+  },
+  {
+   "from": 20,
+   "to": 24,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer.",
+   "questions": [
+    {
+     "n": 20,
+     "text": "The costs of flood prevention measures in the USA have exceeded all ____ payments due to flooding during much of the 1990s."
+    },
+    {
+     "n": 21,
+     "text": "Flooding encourages a healthy degree of ____ among the various types of wildlife found in and around rivers."
+    },
+    {
+     "n": 22,
+     "text": "Flooding replaces ____ in the soil, which are important for arable farming."
+    },
+    {
+     "n": 23,
+     "text": "Land around river mouths and nearby coasts is protected from erosion by the ____ carried in floodwater."
+    },
+    {
+     "n": 24,
+     "text": "Missouri's flood ____ were unable to cope with the huge floods of the early 1990s."
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 26,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO opinions on US floodplain management policy are expressed in the text?",
+   "options": [
+    {
+     "v": "A",
+     "t": "Decision making is currently too concentrated at national level."
+    },
+    {
+     "v": "B",
+     "t": "Local authorities must bear responsibility for past episodes of flooding."
+    },
+    {
+     "v": "C",
+     "t": "Those responsible need to make choices about the allocation of financial"
+    },
+    {
+     "v": "D",
+     "t": "Expert advice should be the deciding factor in any decisions."
+    },
+    {
+     "v": "E",
+     "t": "Disagreements over land use are the main area of controversy."
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "Flood control in the USA",
+  "paras": [
+   {
+    "mark": "A",
+    "text": "Americans have always feared floods, and with good reason. Floods are the most common and costly of the large natural disturbances affecting the United States. Approximately 9 of every 10 presidential disaster declarations are associated with them and, after total insurance losses from a series of devastating floods between 1990 and 1997 reached nearly $34 billion, government policy changed. The USA has subsequently spent even more than that trying to control floods by building structures such as levees and dams to modify the ways rivers flow."
+   },
+   {
+    "mark": "B",
+    "text": "However, although we are well aware of the damage floods do, we have not, until recently, fully appreciated the many beneficial aspects of flooding. Floods are critical for maintaining and restoring many of the important services provided to humans by ecosystems. Among other things, regular flooding ensures high levels of diversity in the riverine environment by providing a critical habitat for fish, waterfowl, animals, insects, and plants. Floodwaters also replenish agricultural land with key nutrients vital to crop production, and transport the sediment that is necessary to maintain downstream delta and coastal land and prevent erosion. As our knowledge of floods has deepened, it has become apparent that floods present us with a paradox. On the one hand, we want to prevent them, because they threaten our lives and ways of life. On the other hand, we find ourselves searching for ways to allow or even reintroduce flooding, because it supports the biological infrastructure that makes valued aspects of our lives possible."
+   },
+   {
+    "mark": "C",
+    "text": "The focus of policy began to change dramatically in the wake of massive flooding in the upper Mississippi and lower Missouri river basins from June to August of 1993. Many of the flood defenses failed during this episode. In response, the President ordered a special committee to investigate causes, explore how human actions might have exacerbated the situation, and determine what the nation should do to prevent a repeat event. Known as the Galloway Report, the committee's findings and recommendations marked the first time that the crucial ecological protections provided by wetlands and upland forests were explicitly acknowledged. This included their ability to store water, slow its entry into the river system, and absorb excess nutrients. The committee pointed out that losing these protections through changes in land use significantly increases runoff from farmland with serious consequences for water quality. Above all, the report acknowledged that floods are recurring phenomena that must be accepted and anticipated."
+   },
+   {
+    "mark": "D",
+    "text": "A common theme in the findings from analyzing a range of flood episodes is the importance of connections between riverine ecosystems, their floodplains, and the broader landscapes through which they flow. It is worth noting that efforts to prevent rivers from reclaiming their floodplains rarely pay off in the long run. On the contrary, most of the flood costs over the past decade have been associated with damage to structures in those floodplains. We have also learned that building on floodplains harms wetlands by reducing their ability to hold water and retain nitrogen, phosphorus, and other contaminants. Floodplains are the sole safeguard the environment has against these and other harmful effects of floods. The aftermath of flooding caused by storm Alberto in Georgia in 1994 highlighted the important role they play in minimizing destruction. When floodwaters eroded agricultural fields, picking up soil particles contaminated with herbicides, pesticides, and fungicides, the large, forested floodplains in the area filtered out those particles. They never entered rivers to cause harm."
+   },
+   {
+    "mark": "E",
+    "text": "Fortunately, although the mechanics of re-establishing floodplains are daunting, it is not impossible; their ecosystems are resilient, as studies on recurrent floods in the lower Missouri River have shown. Annual spring floods have long been controlled in this portion of the river, which stretches from Sioux City, Iowa, to St. Louis, Missouri. As a result, it was almost totally disconnected from its floodplain and, by 1990, state or federal agencies had classified 16 fish species, 7 plant species, 6 insect species, 2 mussel species, 4 reptile species, 14 bird species, and 3 mammal species within the floodplain complex as endangered, threatened, or rare. But the situation began to change with the great Midwest floods of 1993, 1995, and 1996. Post-flood studies have demonstrated that plants, zooplankton, aquatic insects, fish, turtles, and other animals immediately exploited the reconnection with the floodplain."
+   },
+   {
+    "mark": "F",
+    "text": "Ensuring that the necessary changes in the landscape are actually made requires a good deal of thought, however. In particular, the fragmentation and lack of coordination that has characterized policy concerning floodplains in the United States must be addressed. Decisions on developments such as construction that could affect floodplains are made primarily at county and municipal levels, yet the current policy structure gives the federal government the most responsibility for floodplain management. It provides little incentive and few mechanisms for the county and municipal governments to help. Nor do individual states have much opportunity to become involved, even though they may be best situated to coordinate the diverse actions and decisions that are needed. In the end, all such policy decisions and the accompanying management actions must be based on people weighing up the costs and benefits of different spending priorities. In other words, they are political. Scientists alone will not, and should not, select which options are appropriate. Rather, their contribution will be to spell out the implications and the trade-offs of different policy options and management scenarios."
+   }
+  ]
+ }
+}

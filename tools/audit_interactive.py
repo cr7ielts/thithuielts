@@ -4,7 +4,7 @@ import re, sys, collections
 import extract_interactive as E
 from batch_interactive import items_of, one
 
-STOP = re.compile(r'(?i)(answer sheet|you should spend|^questions?\s+\d|write your answers|reading passage \d)')
+STOP = re.compile(r'(?i)(answer sheet|you should spend|^questions?\s+\d|write your answers|reading passage \d|disclaimer|reading walks)')
 
 
 def warn(data, item):
@@ -15,7 +15,7 @@ def warn(data, item):
         if len(ps) < 4: w.append(f'bài đọc chỉ {len(ps)} đoạn')
         if chars < 2000: w.append(f'bài đọc ngắn bất thường ({chars} ký tự)')
         if any(STOP.search(p['text']) for p in ps): w.append('bài đọc lẫn dòng đề bài')
-        if not (data.get('passage') or {}).get('title'): w.append('không có tiêu đề bài đọc')
+        if not (data.get('passage') or {}).get('title'): w.append('không có tiêu đề bài đọc (web dùng tên bài)')
     for g in data['groups']:
         tag = f"{g['from']}-{g['to']}"
         ins = g.get('instruction', '')
@@ -25,10 +25,11 @@ def warn(data, item):
             if STOP.search(it['text']): w.append(f'{tag}: ghi chú lẫn dòng đề bài')
         for q in g.get('questions', []):
             t = q['text']
-            if len(t) < 15: w.append(f"câu {q['n']}: quá ngắn “{t}”")
+            # dạng heading: câu hỏi chỉ là "Paragraph A" / "Section B"
+            if len(t) < 15 and not (g['kind'] == 'heading' and re.match(r'(?i)^(paragraph|section) [A-Z]$', t)): w.append(f"câu {q['n']}: quá ngắn “{t}”")
             elif STOP.search(t): w.append(f"câu {q['n']}: lẫn dòng đề bài")
-            # "Answer the questions below" là dạng trả lời ngắn, không có chỗ trống
-            if g['kind'] == 'gap' and '____' not in t and not re.match(r'(?i)answer the question', g.get('instruction', '')):
+            # "Answer the/these questions below" là dạng trả lời ngắn, không có chỗ trống
+            if g['kind'] == 'gap' and '____' not in t and not re.match(r'(?i)answer (the|these) questions?', g.get('instruction', '')):
                 w.append(f"câu {q['n']}: không thấy chỗ trống")
             for o in q.get('options', []):
                 if len(o['t']) < 2: w.append(f"câu {q['n']}: phương án {o['v']} trống")

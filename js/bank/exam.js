@@ -36,7 +36,7 @@ export function examView(data, item, answers, onChange) {
   const paper = el("div", { class: "cdi-paper" });
   if (data.passage) {
     paper.append(el("div", { class: "cdi-passage" },
-      data.passage.title ? el("h2", {}, data.passage.title) : null,
+      data.passage.title || item?.title ? el("h2", {}, data.passage.title || item.title) : null,
       data.passage.paras.map((p) => el("div", { class: "cdi-para" + (p.mark ? "" : " plain") },
         p.mark ? el("span", { class: "cdi-mark" }, p.mark) : null, el("div", {}, p.text)))));
   }
@@ -81,7 +81,7 @@ export function examView(data, item, answers, onChange) {
 function groupBlock(g, item, answers, change, flags, qNodes, repaint) {
   const box = el("div", { class: "cdi-group" },
     el("div", { class: "cdi-group-head" },
-      el("strong", {}, `${L("Câu", "Questions")} ${g.from}${g.to > g.from ? `–${g.to}` : ""}`),
+      el("strong", {}, `${L("Câu", g.to > g.from ? "Questions" : "Question")} ${g.from}${g.to > g.from ? `–${g.to}` : ""}`),
       g.instruction ? el("div", { class: "cdi-instr" }, g.instruction) : null));
 
   // khung đáp án dùng chung (heading / matching)

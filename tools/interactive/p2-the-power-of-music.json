@@ -1,0 +1,127 @@
+{
+ "id": "p2-the-power-of-music",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 14,
+   "to": 18,
+   "kind": "letter",
+   "instruction": "Reading Passage 2 has nine paragraphs, A-I. Which paragraph contains the following information?",
+   "questions": [
+    {
+     "n": 14,
+     "text": "a reference to studies involving children"
+    },
+    {
+     "n": 15,
+     "text": "a mention of the discovery of significant artefacts"
+    },
+    {
+     "n": 16,
+     "text": "reasons why a particular aspect of music has not been researched"
+    },
+    {
+     "n": 17,
+     "text": "a mention of an unexpected discovery involving two different areas of the brain"
+    },
+    {
+     "n": 18,
+     "text": "a comparison of tone variations produced by certain animals and humans"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 22,
+   "kind": "gap",
+   "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "participants in this study led by Dr Chen were chosen because they were not musicians, and they demonstrated a good state of {{19}}. The participants were given {{20}} while music with a very noticeable rhythm was being played. Previous research had indicated that listening to this type of music seemed to be of assistance to some {{21}} people. By listening to it, their {{22}} ability had definitely got better. The findings of Dr Chen's study proved most informative."
+    }
+   ],
+   "noteTitle": "A study involving collaboration between researchers in Oxford and Montreal. The"
+  },
+  {
+   "from": 23,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Look at the following statements (Questions 23-26) and the list of researchers below. Match each statement with the correct researcher, A, B or C. NB You may use any letter more than once.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "Professor Norman Cook"
+    },
+    {
+     "v": "B",
+     "t": "Professor Robert Zatorre"
+    },
+    {
+     "v": "C",
+     "t": "Dr Joyce Chen"
+    }
+   ],
+   "questions": [
+    {
+     "n": 23,
+     "text": "Research into the brain activity set off by music may help people with speech defects."
+    },
+    {
+     "n": 24,
+     "text": "It may be possible in time to improve a person's ability to recognise certain musical characteristics."
+    },
+    {
+     "n": 25,
+     "text": "The way listeners react to certain musical combinations may be similar to the way they react to other noises."
+    },
+    {
+     "n": 26,
+     "text": "When a person reacts positively to music, the same parts of the brain are stimulated as when certain animals react to a positive outcome."
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "The power of music",
+  "paras": [
+   {
+    "mark": "A",
+    "text": "Robert Matthews looks at research into the effects of music. Music is becoming ever more popular electronically. To meet our craving for music, internet sites are using increasingly sophisticated ways of putting us in touch with artists we may not even know we like. Most work by trawling our existing files or online listening habits and looking for patterns so they can recommend new artists for their subscribers to listen to. The search often turns up surprises. But is it possible to tease apart our likes and dislikes to identify precisely what it is about some music that thrills us or leaves us cold?"
+   },
+   {
+    "mark": "B",
+    "text": "For centuries composers have sought to create unforgettable music using accepted notions about the emotional appeal of certain combinations of sounds, yet only now are scientists starting to uncover what it is about these combinations that can have such a dramatic effect on our minds. Given that archaeologists have found musical instruments played by Neanderthals at least 50,000 years ago, why have scientists taken so long to investigate such a source of pleasure?"
+   },
+   {
+    "mark": "C",
+    "text": "`For psychologists, who are always desperate to show that their work is rigorous, there's an image problem in tackling the emotionality of music,' says Professor Norman Cook of Kansai University in Osaka, Japan, one of the pioneers of the new science of music. `Emotion is such a slippery topic.' The other problem, says Cook, is the long- standing principle among psychologists that our response to music is an acquired one, rather than something that is stimulated by the effect of sound on our brain cells. Yet one of the first insights to emerge from this new branch of psychology is that music affects our brains at a very basic level."
+   },
+   {
+    "mark": "D",
+    "text": "Together with his colleague, Professor Takefumi Hayashi, Cook has been investigating one of the best-known examples of the emotional impact of music: the difference between major and minor chords. For centuries, composers have known that notes arranged to form major chords sound happy and upbeat, while those in minor chords sound mournful. In tests, even three-year-olds have been shown to link music in a major mode to happy faces and minor modes to sad faces."
+   },
+   {
+    "mark": "E",
+    "text": "According to Cook, analysis of how people respond to notes suggests a link with how our brains interpret certain sounds in everyday life. He points out that sad-sounding minor chords can be formed by raising the pitch of any of a set of notes, while dropping the pitch produces a major chord. The same change in pitch works as an emotional telltale in communication between some mammals, where rising pitch is used to communicate weakness or defeat, while falling pitch signals social dominance. It's also present in our speech. `A rising inflection is used to denote questions, politeness or deference, whereas a falling inflection signals dominance,' says Cook."
+   },
+   {
+    "mark": "F",
+    "text": "This suggests that music in major and minor modes taps into some very basic features of how we relate to the world and each other - perhaps dating back millions of years. Could music in general be doing something similar? Quite possibly, according to research into how music triggers certain types of brain activity. At McGill University in Canada, Professor Robert Zatorre and his colleagues have carried out studies in which volunteers listen to different types of music while their brain activity is monitored. The biggest surprise was the evidence that pleasurable music activates brain circuitry which has been in existence in the human brain for thousands of years, says Zatorre. `We share it with rats and other distant relatives on the evolutionary tree - and it's typically associated with biological rewards, like food, for example.'"
+   },
+   {
+    "mark": "G",
+    "text": "At the University of Oxford, Dr Joyce Chen has been looking into another celebrated feature of music - the irresistibility of rhythm. Her interest was sparked by studies involving patients with movement difficulties. If music that had a strong rhythm - say, a marching band - was played to these patients, they were able to improve their walking ability, says Chen. In an attempt to find out why the simple act of listening to music might help disabled patients, Dr Chen and colleagues from the International Laboratory for Brain, Music and Sound Research in Montreal carried out brain scans on volunteers who were listening to rhythmic sounds. The criteria for selecting these volunteers were that they should be in first-rate physical health but musically untrained. The results have been another revelation. Chen and her colleagues found the rhythms triggered activity in parts of the brain linked to hearing, but something even more surprising was that the rhythms also triggered activity in the motor regions of the brain, linked to active movement."
+   },
+   {
+    "mark": "H",
+    "text": "`Somehow, the mere act of just listening triggers motor-neural activity. Maybe this is one reason why we often tap our feet, move or dance when hearing music,' says Chen. She believes the discovery of this deep connection between music and movement may cast light on why disabled patients can benefit from listening to music - and could also prove useful with other impairments such as those involved in sound production. `It's been shown that people who talk with a stutter might have problems in this auditory- motor loop.'"
+   },
+   {
+    "mark": "I",
+    "text": "For researchers working in this new area of science, these early discoveries hold the promise of much more to come. Zatorre and his colleagues are investigating whether some people have more musical brains than others. `We can see certain subtle brain features that can tell us how well somebody can do things like identify a slight change in a melody,' explains Zatorre. `This ability could be enhanced by training - just like someone born with a predisposition to building strong muscles can enhance them by taking up weightlifting.'"
+   }
+  ]
+ }
+}

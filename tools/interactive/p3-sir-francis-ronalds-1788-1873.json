@@ -1,0 +1,153 @@
+{
+ "id": "p3-sir-francis-ronalds-1788-1873",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 31,
+   "kind": "letter",
+   "instruction": "Look at the following events (Questions 27-31) and the list of dates below. Match each event with the correct date, A-H.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "1806"
+    },
+    {
+     "v": "B",
+     "t": "1814"
+    },
+    {
+     "v": "C",
+     "t": "1816"
+    },
+    {
+     "v": "D",
+     "t": "1823"
+    },
+    {
+     "v": "E",
+     "t": "1837"
+    },
+    {
+     "v": "F",
+     "t": "1843"
+    },
+    {
+     "v": "G",
+     "t": "1852"
+    },
+    {
+     "v": "H",
+     "t": "1870"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "The first electric telegraph system was submitted to the Admiralty."
+    },
+    {
+     "n": 28,
+     "text": "Ronalds received official recognition of his contribution to telegraphy."
+    },
+    {
+     "n": 29,
+     "text": "The first electric telegraph was patented."
+    },
+    {
+     "n": 30,
+     "text": "Ronalds began to experiment with electricity."
+    },
+    {
+     "n": 31,
+     "text": "Ronalds informed the public about the possible uses of his telegraph."
+    }
+   ]
+  },
+  {
+   "from": 32,
+   "to": 35,
+   "kind": "gap",
+   "instruction": "Answer the questions below. Choose NO MORE THAN THREE WORDS AND/OR A NUMBER from the passage for each answer.",
+   "questions": [
+    {
+     "n": 32,
+     "text": "What was marked on the dials on Ronalds's garden telegraph?"
+    },
+    {
+     "n": 33,
+     "text": "What did Ronalds use to enclose the wires on his later version of the garden telegraph?"
+    },
+    {
+     "n": 34,
+     "text": "How far did Ronalds believe his telegraph could transmit information?"
+    },
+    {
+     "n": 35,
+     "text": "What did the communication system invented by Ralph Wedgwood use?"
+    }
+   ]
+  },
+  {
+   "from": 36,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Reading Passage 3 has seven paragraphs, A-G. Which paragraph contains the following information?",
+   "questions": [
+    {
+     "n": 36,
+     "text": "a description of a commercial application for the electric telegraph"
+    },
+    {
+     "n": 37,
+     "text": "a rejection of Ronalds's invention"
+    },
+    {
+     "n": 38,
+     "text": "a drawback of Ronalds's invention"
+    },
+    {
+     "n": 39,
+     "text": "reference to the positive influence on Ronalds of a fellow scientist"
+    },
+    {
+     "n": 40,
+     "text": "reference to the adoption of one of Ronalds's procedures in preference to that of another scientist"
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "An early pioneer in the story of long-distance communication",
+  "paras": [
+   {
+    "mark": "A",
+    "text": "Francis Ronalds was born in London in 1788, the second of eleven children. When he was nineteen his father died, and as the eldest son, the young Ronalds had to assume the responsibility of running the family's cheese business. He combined this occupation with his passions for chemical experiments and for meteorology, the study of the Earth's atmosphere and its changes. This brought him into contact with the elderly Swiss meteorologist Jean Andr� de Luc, who was also an inspired inventor in the field of electricity. In 1814, de Luc encouraged Ronalds to start work on this new discipline."
+   },
+   {
+    "mark": "B",
+    "text": "For the next few years, Ronalds experimented enthusiastically with various kinds of electrostatic clockwork devices. He was particularly interested in the idea of electric telegraphy: transmitting messages over distance, using electrical impulses carried along metal wires. In the best traditions of nineteenth-century scientists, these investigations were carried out at home. In early 1816, Ronalds gutted the family home in Hammersmith, West London, and covered its rooms, halls, and staircases with electric wire. This experiment involved the use of current to produce movement in small corks at the ends of circuits."
+   },
+   {
+    "mark": "C",
+    "text": "Some months later, Ronalds built two large wooden frames accommodating 8 miles (12.9 km) of electrically charged iron wire in his back garden. At either end of the wire was a revolving disc, on which letters and numbers were engraved. These dials were kept revolving by means of a clockwork mechanism. When somebody wanted to send a message, he would wait until the dial at his end was showing the desired number or letter, and then interrupt the charge on the wire. This would cause two balls suspended on the wire to fall together. The person at the opposite end would then note down what was indicated by the dial at his end at the moment when the balls made contact. Ronalds soon developed a modified version of his invention in which the wire was encased in glass tubes and buried in the ground. The system was slow and depended on the two dials staying in step, but it worked."
+   },
+   {
+    "mark": "D",
+    "text": "Ronalds immediately contacted the Admiralty, the department of the British government which had control over the nation's naval affairs. He was not the first to propose a system of this nature to them. Some ten years earlier, in 1806, the inventor Ralph Wedgwood had offered the Admiralty a similar type of telegraph based on frictional electricity, which it had rejected. The Admiralty had its home in London, whereas its naval fleets were based over 130 km away in Portsmouth. With communication between these two cities in mind, Ronalds wrote to Lord Melville, the then First Lord of the Admiralty, to offer him his telegraphic system."
+   },
+   {
+    "mark": "E",
+    "text": "Ronalds believed that his invention was capable of carrying messages some 800 km, and in his letter to Lord Melville written on 11 July 1816 he spoke of the 'mode of conveying telegraphic intelligence with great rapidity, accuracy, and certainty, in all states of the atmosphere, either at night or in the day, and at small expense.' In 1816, the Admiralty had at its disposal only the late eighteenth-century telegraphic system of semaphore, whereby a mechanical device was used to control a mast with two arms. The disadvantage of this system was that it was only usable in daylight and in clear weather conditions. Nevertheless, John Barrow, Secretary to the Admiralty, wrote back to Ronalds on 5 August, saying that 'telegraphs of any kind are wholly unnecessary; and NO other than the one now in use will be adopted.'"
+   },
+   {
+    "mark": "F",
+    "text": "Ronalds did not pursue the matter further or attempt to patent his telegraph. However, in a small pamphlet published in 1823, he described his invention and listed some of its potential uses: 'Why should not government govern at Portsmouth almost as promptly as in Downing Street? Why should our defaulters escape by default of our foggy climate? Let us have Electrical Conversazione offices communicating with each other all over the kingdom if we can.' Although Ronalds lived long enough to see his prophecies come to fruition, he made NO further contribution to the progress of telegraphic communication. In 1843, he was appointed the first Honorary Director and Superintendent of the Observatory at Kew, where he devised an accurate, automatic system for registering meteorological data using photography. A similar system was developed independently by Charles Brooke, but the British Association of Meteorologists confirmed Ronalds's priority. His system remained in use for many decades."
+   },
+   {
+    "mark": "G",
+    "text": "Meanwhile, the people who benefited most directly from Ronalds's telegraphic work were the physicist Charles Wheatstone and his business partner William Cooke. They saw the potential of a rapid communication system for the growing number of private railway companies, and in 1837 they developed the Wheatstone-Cooke five-needle telegraph. The pair patented their design in the same year, the first of its kind to be officially registered, and reaped considerable financial gain as a result. Ronalds himself retired in 1852 and devoted his later years to collecting and cataloguing a vast library of published material on electricity and magnetism. In 1870, three years before he died, he was knighted by Queen Victoria, a belated honour in recognition of his 'early and remarkable labours in telegraphic investigations.'"
+   }
+  ]
+ }
+}

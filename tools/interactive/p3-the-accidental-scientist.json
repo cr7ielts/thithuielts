@@ -1,0 +1,247 @@
+{
+ "id": "p3-the-accidental-scientist",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 32,
+   "kind": "heading",
+   "instruction": "Reading Passage 3 has seven paragraphs, A-G. Choose the correct heading for paragraphs A and C-G from the list of headings below. List of Headings",
+   "bank": [
+    {
+     "v": "i",
+     "t": "How serendipity was wrongly understood"
+    },
+    {
+     "v": "ii",
+     "t": "Resolving a contradiction"
+    },
+    {
+     "v": "iii",
+     "t": "A recent scientific discovery"
+    },
+    {
+     "v": "iv",
+     "t": "Views on serendipity from the business sector"
+    },
+    {
+     "v": "v",
+     "t": "Stating the basic contradiction in scientific research"
+    },
+    {
+     "v": "vi",
+     "t": "How the word 'serendipity' came into being"
+    },
+    {
+     "v": "vii",
+     "t": "How reality does not always match expectations"
+    },
+    {
+     "v": "viii",
+     "t": "Illustrating serendipity in scientific research"
+    },
+    {
+     "v": "ix",
+     "t": "A possible reason for a publishing success"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Paragraph A"
+    },
+    {
+     "n": 28,
+     "text": "Paragraph C"
+    },
+    {
+     "n": 29,
+     "text": "Paragraph D"
+    },
+    {
+     "n": 30,
+     "text": "Paragraph E"
+    },
+    {
+     "n": 31,
+     "text": "Paragraph F"
+    },
+    {
+     "n": 32,
+     "text": "Paragraph G"
+    }
+   ]
+  },
+  {
+   "from": 33,
+   "to": 37,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 33,
+     "text": "The concept of inductivism mentioned in paragraph A",
+     "options": [
+      {
+       "v": "A",
+       "t": "means being ready to accept chance results."
+      },
+      {
+       "v": "B",
+       "t": "evolved out of the idea of serendipity."
+      },
+      {
+       "v": "C",
+       "t": "is very similar to deductivism."
+      },
+      {
+       "v": "D",
+       "t": "means planning research thoroughly."
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "text": "In paragraph D, Medawar's statement that 'There is no such thing as the Scientific Method' meant that he",
+     "options": [
+      {
+       "v": "A",
+       "t": "felt that scientific research was useless."
+      },
+      {
+       "v": "B",
+       "t": "wanted scientists to be more methodical."
+      },
+      {
+       "v": "C",
+       "t": "believed in the concept of serendipity."
+      },
+      {
+       "v": "D",
+       "t": "doubted the usefulness of serendipity in science."
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "text": "According to the writer, some scientists disliked the concept of serendipity because they",
+     "options": [
+      {
+       "v": "A",
+       "t": "felt it devalued their scientific expertise."
+      },
+      {
+       "v": "B",
+       "t": "believed it would make research unnecessary."
+      },
+      {
+       "v": "C",
+       "t": "did not believe accidents could be useful."
+      },
+      {
+       "v": "D",
+       "t": "thought it would lead to mistakes in science."
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "text": "Irving Langmuir believed that acceptance of uncertainty",
+     "options": [
+      {
+       "v": "A",
+       "t": "would be useless in the industrial field."
+      },
+      {
+       "v": "B",
+       "t": "could not be a part of research planning."
+      },
+      {
+       "v": "C",
+       "t": "would improve the chances of research success."
+      },
+      {
+       "v": "D",
+       "t": "would attract more support from business."
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "text": "The example of Yosemite Valley is used to demonstrate that",
+     "options": [
+      {
+       "v": "A",
+       "t": "natural places are often very overcrowded."
+      },
+      {
+       "v": "B",
+       "t": "it is difficult to be sure about the outcome of plans."
+      },
+      {
+       "v": "C",
+       "t": "history provides a good model when planning for the future."
+      },
+      {
+       "v": "D",
+       "t": "human knowledge of nature is inadequate."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 38,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+   "questions": [
+    {
+     "n": 38,
+     "text": "The word 'serendipity' appeared for the first time in the writings of ____."
+    },
+    {
+     "n": 39,
+     "text": "The story from which the word 'serendipity' was taken was a ____."
+    },
+    {
+     "n": 40,
+     "text": "The word 'serendipity' derives from the former name of a place now called ____."
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "The role of chance in scientific discovery",
+  "paras": [
+   {
+    "mark": "A",
+    "text": "A paradox lies within the heart of scientific discovery. If you know just what you are looking for, finding it can hardly count as a discovery, since it was fully anticipated. But if, on the other hand, you have no notion of what you are looking for, you cannot know when you have found it, and discovery, as such, is out of the question. In the philosophy of science, these two extremes are known as deductivism and inductivism. In the former, the outcome is supposed to be logically contained in the premises you start with; in the latter you are recommended to start with no expectations and see what turns up."
+   },
+   {
+    "mark": "B",
+    "text": "As in so many things, the ideal position resides somewhere between these two extremes. You want to have a good enough idea of what you are looking for to be surprised when you find something else of value, and you want to be ignorant enough of your aim to entertain alternative outcomes. Scientific discovery should, therefore, have an accidental aspect, but not too much of one. `Serendipity' is a word that expresses a position something like that. It is such a fascinating word that the late Robert King Merton - `the father of the sociology of science' - liked it enough to write a book about it, assisted by the French cultural historian Elinor Barber. Merton and Barber's book was finished in 1958, but did not appear for many years, perhaps because, in the intervening period, American academic sociology was taking a radically different direction from that represented in the book. It tended to be more rationalistic and less willing to attend to voices speaking of unanticipated consequences, complexities, and indeed, serendipity."
+   },
+   {
+    "mark": "C",
+    "text": "The word `serendipity', meaning a discovery made in the course of looking for something quite different, was first used by the English writer Horace Walpole in 1754. He explained that he took it from a book called The Three Princes of Serendip, a fairy tale, in which the princes were always making discoveries of things they were not actually looking for. `Serendip' was an old name for the island of Sri Lanka (formerly known as Ceylon)."
+   },
+   {
+    "mark": "D",
+    "text": "The word `serendipity' was next used by antiquarians in the early 19th century, and in the following century came into common use among scientists. Many of the latter, including Harvard physiologist Walter Cannon (1871-1945) and British immunologist Peter Medawar (1915-1987), liked to emphasise how much of scientific discovery was unplanned, and even accidental. One example was the discovery by Hans Christian �rsted (1777-1851) of electromagnetism, when he unintentionally brought a wire carrying an electric current parallel to a magnetic needle; such instances led Medawar to insist, `There is no such thing as the Scientific Method' - no way of systematising the process of discovery. Important discoveries seemed to appear when no-one was looking for them."
+   },
+   {
+    "mark": "E",
+    "text": "Yet what Cannon and Medawar believed, other scientists found infuriating, perhaps because they misinterpreted the original concept. If scientific discovery were accidental, then what was the special basis of expert authority? In this connection, they were opposed by no less an authority than Louis Pasteur: `Chance favours the prepared mind,' he stated. Accidents may happen, and things may turn up as one is looking for something else, but the ability to notice such events and make use of them - these are the results of systematic mental preparation. What seems like an accident is just another form of expertise. But the conjunction of accident and expertise was part of Walpole's original definition. The three princes made their discoveries by `accident and sagacity (wisdom)'. There is no agreement among scientists on the term and its use. Some scientists using the word `serendipity' meant to stress those accidents belonging to the situation; others treated serendipity as a personal capacity, and many others exploited the ambiguity of the notion."
+   },
+   {
+    "mark": "F",
+    "text": "The context in which scientific serendipity was most contested was the idea of planned science. Those who thought that scientific research could be confidently planned, as did some corporate capitalists and government functionaries, were betting against serendipity. Those who, on the other hand, considered that attempts to organise and plan science were ill-advised could recruit the idea of serendipity to their cause. The `serendipitists' were not all academics; as authors Merton and Barber note, two of the great early 20th-century pioneers of industrial research, Willis Whitney and Irving Langmuir, both of General Electric, made much of serendipity as they argued against overly rigid research planning. Langmuir thought that misconceptions about the rationality of the research process did much harm, and that an acceptance of uncertainty was much more likely to result in productive research policies. So from the centre of the corporate world came powerful arguments for scientific spontaneity and autonomy."
+   },
+   {
+    "mark": "G",
+    "text": "For Merton, the concept was central to his work in the social sciences. In 1936 he wrote an essay in which he argued that it is the nature of social action that what one intends is seldom what one gets; people wanting to be alone with nature go to national parks like the Yosemite Valley, and end up crowding each other. We do not know enough, and can never know enough, to ensure that the past is an adequate guide to the future. Eventually, he believes, all social action, including that formulated according to the most rational criteria, is uncertain in its consequences."
+   }
+  ]
+ }
+}

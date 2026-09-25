@@ -1,0 +1,246 @@
+{
+ "id": "p3-some-views-on-the-use-of-headphones",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 31,
+   "kind": "ynng",
+   "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? YES if the statement agrees with the claims of the writer NO if the statement contradicts the claims of the writer NOT GIVEN if it is impossible to say what the writer thinks about this",
+   "questions": [
+    {
+     "n": 27,
+     "text": "Young people are easily persuaded by surveys that listening to music is beneficial."
+    },
+    {
+     "n": 28,
+     "text": "Different studies share the same conclusions about the desirability of working in silence."
+    },
+    {
+     "n": 29,
+     "text": "Some doctors recommend wearing headphones to lower blood pressure."
+    },
+    {
+     "n": 30,
+     "text": "Nathaniel Baldwin was a respected government researcher."
+    },
+    {
+     "n": 31,
+     "text": "The effect of the invention of headphones is comparable to the effect of the invention of writing."
+    }
+   ]
+  },
+  {
+   "from": 32,
+   "to": 36,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 32,
+     "text": "What does the writer suggest about a service economy?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The work is mentally demanding"
+      },
+      {
+       "v": "B",
+       "t": "It provides employment for younger workers"
+      },
+      {
+       "v": "C",
+       "t": "It is a small part of a country's economy"
+      },
+      {
+       "v": "D",
+       "t": "Workers have to live in urban centres"
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "text": "When the writer mentions the historical evidence for early music, he is",
+     "options": [
+      {
+       "v": "A",
+       "t": "emphasizing the diversity of musical forms"
+      },
+      {
+       "v": "B",
+       "t": "expressing his frustration with the limited archaeological evidence uncovered"
+      },
+      {
+       "v": "C",
+       "t": "lending support to the view that music has been important in human history"
+      },
+      {
+       "v": "D",
+       "t": "creating a geographical map of the evolution of music"
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "text": "What does the writer say about the social effects of listening to music through headphones?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It has caused a reduction in the number of people who listen to music"
+      },
+      {
+       "v": "B",
+       "t": "It has increased people's participation in music events"
+      },
+      {
+       "v": "C",
+       "t": "It has reduced the global variation of music styles"
+      },
+      {
+       "v": "D",
+       "t": "It has changed the traditional role of music in society"
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "text": "What does the writer say about personal independence?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Americans are unique in their desire for personal independence"
+      },
+      {
+       "v": "B",
+       "t": "Personal independence is something that can be purchased"
+      },
+      {
+       "v": "C",
+       "t": "Striving for personal independence is a recent phenomenon"
+      },
+      {
+       "v": "D",
+       "t": "Personal independence destroys social connections"
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "text": "Why does the writer quote Jonah Lehrer in the last paragraph?",
+     "options": [
+      {
+       "v": "A",
+       "t": "To support the writer's own view"
+      },
+      {
+       "v": "B",
+       "t": "To draw attention to an authoritative book about music"
+      },
+      {
+       "v": "C",
+       "t": "To raise awareness of people's loss of listening skills"
+      },
+      {
+       "v": "D",
+       "t": "To illustrate how music brings people closer to each other"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 37,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Complete the summary using the list of words, A-I, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "courtesy"
+    },
+    {
+     "v": "B",
+     "t": "relationship"
+    },
+    {
+     "v": "C",
+     "t": "difficulty"
+    },
+    {
+     "v": "D",
+     "t": "countryside"
+    },
+    {
+     "v": "E",
+     "t": "suburbs"
+    },
+    {
+     "v": "F",
+     "t": "language"
+    },
+    {
+     "v": "G",
+     "t": "barriers"
+    },
+    {
+     "v": "H",
+     "t": "obstacles"
+    },
+    {
+     "v": "I",
+     "t": "disapproval"
+    }
+   ],
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Dr Michael Bull believes that listening to music through headphones has changed the {{37}} the wearers of headphones have with public spaces. Living in the centre of cities is becoming popular, as people become less keen on living in the {{38}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "In densely populated city centres, headphones form {{39}} that isolate people from fellow citizens and from their environment. Wearers of headphones are treated with {{40}} that other people do not receive. This is because if we see someone wearing headphones, we believe they must be occupied in some way and should not be interrupted."
+    }
+   ],
+   "noteTitle": "Headphones and city living"
+  }
+ ],
+ "passage": {
+  "title": "Some views on the use of headphones",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Whether wearing headphones at work, or in other areas of everyday life, is a good thing or a bad thing has generated a lot of research and opinion"
+   },
+   {
+    "mark": "",
+    "text": "To visit a typical modern office today is to walk into a room with possibly a dozen songs playing simultaneously but to hear none of them. Up to half of younger workers listen to music on their headphones, and nearly all of them think it makes them better at their jobs. In survey after survey, people report with confidence that music makes them happier, better at concentrating, and more productive."
+   },
+   {
+    "mark": "",
+    "text": "Scientists do not share this belief; they maintain that listening to music hurts people's ability to recall other things they should be doing, and any pop song, loud or soft, reduces overall performance for both extroverts and introverts. A Taiwanese study linked music that has lyrics to lower marks on concentration tests for college students, and other research has shown music with lyrics scrambles our brains' verbal-processing skills. \"As silence has the best overall performance, it would still be advisable that people work in silence,\" another reporter dryly concluded."
+   },
+   {
+    "mark": "",
+    "text": "The question is therefore: if headphones are so bad for productivity, why do so many people at work have them? One factor to consider is that countries like the USA have moved from a farming and manufacturing economy to a service economy, with an emphasis on jobs in offices that require higher levels of concentration, reflection and creativity. As an estimated 70 percent of office workers work in open-plan office spaces, it is more important to create one's own enclosing bubble of sound. Lending strength to the argument for headphones at work is evidence that music relaxes our muscles, improves our mood, and may even moderately reduce blood pressure, heart rate and anxiety."
+   },
+   {
+    "mark": "",
+    "text": "The story of headphones began in 1910, when the US Navy received an odd letter written in purple ink on blue-and-pink paper. The letter writer, an eccentric inventor and repairman named Nathaniel Baldwin, from the US state of Utah, made what at the time was an astonishing claim: he had built, in his kitchen, a new kind of headset that could amplify sound. This was an opportune invention for the Navy, which asked for a sound test and then enthusiastically adopted the headsets, later called headphones, and used them in World War I for naval radio communication. The purpose of headphones is to concentrate a quiet and private sound in the ear of the listener, which is a radical departure from music's social purpose in history. \"Music, together with dance, co-evolved biologically and culturally to serve as a technology of social bonding,\" Nils L. Wallin and Bj�rn Merker wrote in The Origins of Music. Songs don't leave behind bones, but evidence of musical notation dates back to Sumeria, 3,500 years ago, and in 1995 archaeologists discovered a bone flute in southern Europe estimated to be 44,000 years old. If music evolved as a social glue for the species, as a way to make groups and keep them together, headphones have done what writing and literacy did for language - they made music private."
+   },
+   {
+    "mark": "",
+    "text": "Author and columnist Stephen Marche wrote that separation from other people is one of the first things ordinary Americans spend their money achieving. It is \"a by-product of a long- standing national appetite for independence,\" he said. Americans are not alone in their desire for personal independence and privacy. Marche is right; wealth can buy - and modern technology can deliver - personal independence, and it is this that people have always sought."
+   },
+   {
+    "mark": "",
+    "text": "Dr Michael Bull, an expert on personal music devices from the University of Sussex in the UK, has repeatedly made the larger point that personal music devices change how we relate to public spaces. Controlling our public spaces is more important now that more people are moving from the edges of cities to live in urban centres. \"With the urban space, the more it's inhabited, the safer you feel,\" Bull says. \"You feel safe if you can feel people there, but you don't want to interact with them.\" Headphones create shields for wearers, separating them from other people and their surroundings. Headphones have their own rules of good manners; they are like wearing a \"Do not disturb\" sign. We assume that people wearing them are busy and we should respect their privacy, so now people wear them to appear busy. In fact, it is now becoming quite common for people not to listen to anything at all, but just to wear headphones."
+   },
+   {
+    "mark": "",
+    "text": "However, as pointed out at the beginning of this piece, although scientists have stated that headphones are bad for productivity, people still wear them at work. It is not just that headphones create privacy out of public areas, but also that music causes people to relax and reflect and pause. The outcome of relaxation, reflection and pausing at work won't be captured in minute-to-minute productivity metrics. What must be considered is that in moments of extreme focus, our attention radiates outward, toward the problem, rather than inward, on how to solve the problem. However, with music \"When our minds are at ease, we're more likely to direct the spotlight of attention inward,\" Jonah Lehrer wrote in his book Imagine: How Creativity Works. \"The answers have been there all along. We just weren't listening.\" In a crowded world, real estate is the ultimate scarce resource, and a headphone is a small invisible fence around our minds - making space, creating separation, and helping us listen to ourselves."
+   }
+  ]
+ }
+}

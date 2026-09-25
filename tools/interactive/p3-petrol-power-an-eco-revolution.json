@@ -1,0 +1,223 @@
+{
+ "id": "p3-petrol-power-an-eco-revolution",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 27,
+     "text": "Why were the inhabitants of De Smet in danger of starvation?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The trains were unable to operate normally."
+      },
+      {
+       "v": "B",
+       "t": "The harvest had been completely destroyed."
+      },
+      {
+       "v": "C",
+       "t": "The roads to the town had not yet been built."
+      },
+      {
+       "v": "D",
+       "t": "The farmers were reluctant to sell their produce."
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "text": "What problem did subsistence farmers have in the past?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They had no effective means of storing food."
+      },
+      {
+       "v": "B",
+       "t": "Food was expensive because of high shipping costs."
+      },
+      {
+       "v": "C",
+       "t": "Their access to food was limited at certain times."
+      },
+      {
+       "v": "D",
+       "t": "Food could not be transported for long distances by road."
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "text": "The writer says that the use of coal to power railways and steamships",
+     "options": [
+      {
+       "v": "A",
+       "t": "led to a greater range of fresh vegetables being available in urban areas."
+      },
+      {
+       "v": "B",
+       "t": "was less efficient than the use of petroleum-derived products."
+      },
+      {
+       "v": "C",
+       "t": "allowed farmers to be more self-sufficient than they were previously."
+      },
+      {
+       "v": "D",
+       "t": "was better for the environment than using petroleum-derived products."
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "text": "The writer refers to an urban-planning conference held in 1898 in order to",
+     "options": [
+      {
+       "v": "A",
+       "t": "illustrate a problem that was later solved by modern technology."
+      },
+      {
+       "v": "B",
+       "t": "give an example of poor decisions made about urban planning."
+      },
+      {
+       "v": "C",
+       "t": "show that urban issues were misunderstood in the past."
+      },
+      {
+       "v": "D",
+       "t": "indicate the disregard at the time for public health concerns."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 35,
+   "kind": "letter",
+   "instruction": "Complete the summary using the list of words, A-J, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "rich landowners"
+    },
+    {
+     "v": "B",
+     "t": "injuries"
+    },
+    {
+     "v": "C",
+     "t": "food"
+    },
+    {
+     "v": "D",
+     "t": "accidental falls"
+    },
+    {
+     "v": "E",
+     "t": "environment"
+    },
+    {
+     "v": "F",
+     "t": "dangerous area"
+    },
+    {
+     "v": "G",
+     "t": "use of irrigation"
+    },
+    {
+     "v": "H",
+     "t": "unpleasant smells"
+    },
+    {
+     "v": "I",
+     "t": "treatment"
+    },
+    {
+     "v": "J",
+     "t": "diseases"
+    }
+   ],
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "In cities, the large amounts of horse manure led to {{31}} in the streets and were also linked to the spread of {{32}}. In certain situations, the horses might even cause {{33}} to passers-by. There were also the problems of noise and congestion caused by horse-drawn vehicles. In the countryside, there were problems too. The {{34}} was damaged because of the need to provide {{35}} for urban workhorses."
+    }
+   ],
+   "noteTitle": "Problems caused by urban workhorses"
+  },
+  {
+   "from": 36,
+   "to": 40,
+   "kind": "ynng",
+   "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3? YES if the statement agrees with the views of the writer NO if the statement contradicts the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this",
+   "questions": [
+    {
+     "n": 36,
+     "text": "Farmers whose land was poor failed to benefit from modern forms of transport."
+    },
+    {
+     "n": 37,
+     "text": "Between 1830 and 1960 there were positive effects associated with changing patterns of agriculture in France."
+    },
+    {
+     "n": 38,
+     "text": "A fairer distribution of the world's water resources is needed."
+    },
+    {
+     "n": 39,
+     "text": "Living in the countryside does less harm to the environment than living in a city."
+    },
+    {
+     "n": 40,
+     "text": "lt is possible that modern developments in transportation have had an beneficial impact on the world."
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "Petrol power: an eco-revolution?",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Laura Ingalls Wilder's semi-autobiographical novel The Long Winter describes how the inhabitants of a small town called De Smet in the American Midwest narrowly avoided starvation during the severe winter of 1880-1881. Over three metres of snow fell on the northern plains, immobilising the railways and cutting off the settlers from the rest of the world. Laura and her neighbours were only saved when her fianc� and his friend trudged 30 kilometres through the snow to fetch food, risking their lives in the process. The story is a reminder of how lethal geographical isolation and crop failures could be before the advent of modern farming and transportation technologies. Not long ago, subsistence farmers in many countries had to cope with the `lean season' - the period of greatest scarcity before new crops became available. In England, late spring was once referred to as the `hungry gap'. The situation was made worse by the cost of moving heavy things over muddy dirt roads; three centuries ago, moving goods 50 kilometres on land between, say, Liverpool and Manchester was as expensive as shipping them across the North Atlantic."
+   },
+   {
+    "mark": "",
+    "text": "The development of coal-powered railways and steamships in the 19th century revolutionized the lives of farmers. Instead of having to grow everything they needed, they could now specialise in what they did best and rely on other producers for their remaining needs. The result was not only food and ever-cheaper prices, but the end of widespread famine and starvation, as the surplus from regions with good harvests could now be transported to those that had experienced mediocre ones. Since then, petroleum-derived fuels have largely displaced coal because of their higher energy density, cleaner combustion and greater ease of extraction, further improving road and rail transportation systems."
+   },
+   {
+    "mark": "",
+    "text": "While the convenience of modern methods of transportation is obvious, few people grasp their historical significance in terms of their beneficial impact on large cities and the health of residents. In 1898, delegates gathered in New York City for the world's first international urban-planning conference."
+   },
+   {
+    "mark": "",
+    "text": "The topic that dominated discussions was not infrastructure or housing, but horse manure. The problem was that as the populations of cities like New York and London grew, the number of horses there also grew, and in New York these produced nearly two million kilograms of manure each day. If this problem continued, it was estimated that by 1950 every street in London would be buried three metres deep in horse manure. Unable to think of any solution, the delegates concluded that urban living was inherently unsustainable. Paradoxically, much of the urban manure problem was related to the growth of the railways. The ability to deliver perishable goods, such as meat and dairy products, from locations that benefited from better soil and climate, put many farms located near cities out of business. As these had relied on manure from city workhorses for fertiliser, the demand for this was greatly reduced."
+   },
+   {
+    "mark": "",
+    "text": "The impact of urban workhorses was felt both in the cities and in the countryside. In cities, apart from their overpowering stench, the manure piles were prime breeding grounds for house flies, perhaps three billion of which hatched each day in US cities in the early 20th century. With flies came outbreaks of typhoid, cholera and diphtheria. Workhorses sometimes panicked in heavy traffic and kicked or bit bystanders. The clatter of wagon wheels on cobblestone pavement could be deafening, and since a horse and wagon occupied more street space than a modern truck, they also created significant traffic congestion, while a horse that collapsed on the road created an obstruction that was difficult to remove. The countryside also suffered. To supply the workhorses with oats and hay, additional land had to be cleared of its natural animal life and vegetation, and sometimes water had to be diverted to irrigate it, with considerable negative effects on the whole area."
+   },
+   {
+    "mark": "",
+    "text": "So, while the trains, cars and trucks of the early 20th century were noisy and polluting by today's standards, they were regarded as a significant improvement on what had gone before. Before they were available, poor soils often meant that a large amount of land was required to sustain a household, and much environmental damage, primarily in the form of soil erosion, was caused by trying to farm these soils. It could be argued that modern transportation allowed the development of remote regions like the Canadian Prairies and allowed more suitable crops to be grown in the poorer soils in Europe before being sold elsewhere."
+   },
+   {
+    "mark": "",
+    "text": "Over time, the concentration of food production in the world's best locations allowed some agricultural land to revert to a wild state. For instance, France benefited from an expansion of its forest area by one third between 1830 and 1960. This so-called `forest transition' occurred in the context of a doubling of the French population and a dramatic increase in standards of living."
+   },
+   {
+    "mark": "",
+    "text": "Improvements in logistics also allowed the production and export of food from locations where water was abundant to regions where it was scarce, thus preventing the depletion of water resources there. It also made possible a drastic increase in the size of our cities. Contrary to what most people believe, the growth in cities is a positive development. In the words of economist Ed Glaeser: `Residing in a forest might seem to be a good way of showing one's love of nature, but living in a concrete jungle is actually far more ecologically friendly... If you love nature, stay away from it.' It could be argued that modern transportation technologies have been a major contributor to a wealthier, cleaner and more sustainable world."
+   }
+  ]
+ }
+}

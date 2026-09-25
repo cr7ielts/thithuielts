@@ -85,7 +85,9 @@ hoặc **từng section Listening** (10 câu, 10 phút — xếp theo Section 1�
 
 Bài nào đã được **bóc nội dung** (có tên trong `js/data/bank-interactive.js`, nội dung ở `js/data/interactive/<id>.json`)
 thì học sinh làm thẳng trên web như thi máy thật (giống British Council / IDP computer-delivered), **không cần mở PDF**.
-Hiện đã chuyển: **toàn bộ 84 bài Reading Passage 1**, 1 bài Reading Passage 2 và 1 section Listening.
+Hiện đã chuyển **262/273 bài Reading** (Passage 1: 83/84 · Passage 2: 85/89 · Passage 3: 94/100) và 1 section Listening.
+11 bài Reading còn lại vẫn làm bằng PDF vì đề gốc có lỗi không bóc an toàn được: sơ đồ chỉ là ảnh không có chữ,
+số câu in trùng hoặc lệch so với đáp án, bài đọc in 2 cột.
 
 - Reading: bài đọc cột trái (cuộn riêng, đánh dấu đoạn A, B, C…), câu hỏi cột phải.
 - Listening: audio ghim trên đầu, câu hỏi chạy hết bề ngang.
@@ -116,7 +118,10 @@ Khi thêm đề mới vào ngân hàng, chạy `python dump_text.py` ở máy c�
 (`--force` để xuất lại hết). Bảy bài `forecast-06*`, `forecast-08-s4`, `forecast-10-s1` là PDF scan
 nên không rút được chữ — những bài này luôn ở chế độ PDF.
 
-Chỉ lưu khi dòng kiểm tra báo **ĐẠT** (đủ câu, đủ phương án, số câu khớp đáp án, đáp án đúng nằm trong các lựa chọn hiện ra).
+Chỉ lưu khi dòng kiểm tra báo **ĐẠT**: đủ câu, đủ phương án, không có phương án trống, số câu khớp đáp án,
+đáp án đúng nằm trong các lựa chọn hiện ra, không có câu hỏi lọt vào phần đề bài, đề không in thừa câu mà đáp án không có,
+đoạn văn không nuốt mốc đoạn sau, bài đọc không in 2 cột. `batch_interactive.py --save` chỉ ghi bài đạt, **không xoá**
+bài cũ đã lưu mà nay không đạt — xoá tay `tools/interactive/<id>.json` rồi chạy lại `gen_interactive.py`.
 `audit_interactive.py` là cảnh báo mềm — đọc để biết bài nào nên xem lại bằng mắt.
 Xem thử giao diện không cần đăng nhập: chạy một web server tĩnh ở thư mục gốc rồi mở
 `tools/examtest.html?id=<id-bài>`.

@@ -1,0 +1,212 @@
+{
+ "id": "p3-the-hazards-of-multitasking",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 31,
+   "kind": "letter",
+   "instruction": "Look at the following theories (Questions 27-31) and the list of people below. Match each theory with the correct person or people, A, B, C or D. NB You may use any letter more than once.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "John Ridley Stroop"
+    },
+    {
+     "v": "B",
+     "t": "Ernst P�ppel"
+    },
+    {
+     "v": "C",
+     "t": "David E. Meyer"
+    },
+    {
+     "v": "D",
+     "t": "Edward Hallowell & John Ratey"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Less attention will be paid to each task when more than one task is attempted at the same time."
+    },
+    {
+     "n": 28,
+     "text": "Repeated changes of task mean that the brain will take a while to adjust."
+    },
+    {
+     "n": 29,
+     "text": "Using the skills required for one task may make performing another one more difficult."
+    },
+    {
+     "n": 30,
+     "text": "When multitasking, the brain can only focus on single tasks for very short periods."
+    },
+    {
+     "n": 31,
+     "text": "Multitasking can lead to a medical problem."
+    }
+   ]
+  },
+  {
+   "from": 32,
+   "to": 34,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 32,
+     "text": "What is suggested about the worker in the opening paragraph?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Anxiety deprived him of sleep the previous night."
+      },
+      {
+       "v": "B",
+       "t": "He feels overwhelmed by his workload."
+      },
+      {
+       "v": "C",
+       "t": "His manager has expressed disapproval."
+      },
+      {
+       "v": "D",
+       "t": "He finds his work dull and uninteresting."
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "text": "Drivers and air-traffic controllers are mentioned in the passage because they",
+     "options": [
+      {
+       "v": "A",
+       "t": "need to perform several tasks at once."
+      },
+      {
+       "v": "B",
+       "t": "are unable to maintain concentration."
+      },
+      {
+       "v": "C",
+       "t": "use their time efficiently."
+      },
+      {
+       "v": "D",
+       "t": "cannot afford to make mistakes."
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "text": "In John Ridley Stroop's experiment, participants found it difficult to",
+     "options": [
+      {
+       "v": "A",
+       "t": "tell one colour from another."
+      },
+      {
+       "v": "B",
+       "t": "match up pairs of similar colours."
+      },
+      {
+       "v": "C",
+       "t": "read out the name of one colour printed in another colour."
+      },
+      {
+       "v": "D",
+       "t": "decide what colour looks appropriate for a particular word."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 35,
+   "to": 39,
+   "kind": "gap",
+   "instruction": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The stressful nature of multitasking has been shown to affect parts of the brain. The area most affected is the prefrontal cortex, which is found to the rear of the {{35}}. It is the part of the brain which judges tasks, then puts them in order of importance and allocates {{36}}; it also enables a worker to resume a task which has been put to one side."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A second area, the hippocampus, may also be affected by the stress of multitasking. If any {{37}} in the hippocampus are affected, people may have problems with storing {{38}}, as well as learning {{39}}."
+    }
+   ],
+   "noteTitle": "Multitasking and its effects on the brain"
+  },
+  {
+   "from": 40,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 40,
+     "text": "The main aim of this passage is to",
+     "options": [
+      {
+       "v": "A",
+       "t": "describe areas where multitasking is useful."
+      },
+      {
+       "v": "B",
+       "t": "challenge widely held opinions on multitasking."
+      },
+      {
+       "v": "C",
+       "t": "show the physical damage that multitasking can cause."
+      },
+      {
+       "v": "D",
+       "t": "call for better psychological experiments on multitasking."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "The hazards of multitasking",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Doing more than one thing at once - is it always a good idea?"
+   },
+   {
+    "mark": "",
+    "text": "You arrive at the office, review your to-do list and start to feel a headache coming on. You resolve to tackle the items as quickly as possible. While you return calls, you sort e-mail and other letters. You begin keying in slides for tomorrow's presentation. Then your manager comes in wanting an immediate update on sales figures. You have just opened the spreadsheet when a very important customer calls. With the receiver held between your shoulder and your ear, you continue adding up the sales totals until, 15 minutes later, you finally manage, politely, to get rid of the client. You've been multitasking again."
+   },
+   {
+    "mark": "",
+    "text": "You may believe that anyone who wants to get ahead today should master the art of multitasking. However, a recent study by the Families and Work Institute in New York City has found that 45 per cent of US workers believe that they are asked or expected to work on too many tasks at once. Managers may be surprised to learn that they are actually wasting their workers' time. As it turns out, the human brain cannot really master the computer's art of crunching data in the background while moving between process windows. Instead, a growing number of studies show that trying to juggle jobs rather than completing them sequentially can take longer and leave workers with a reduced ability to perform each task. In addition, the stress associated with multitasking may contribute to short-term memory difficulties. The combination results in inefficiency, careless thinking and mistakes - not to mention the possible dangers of divided attention for drivers, air-traffic controllers and others who handle machinery."
+   },
+   {
+    "mark": "",
+    "text": "How can a time-management strategy that has become part of the common wisdom actually be so wrong? Exploring that question requires a closer look at an area of consciousness research that examines how the brain focuses attention. One of the modern foundations of current knowledge of multitasking was laid in 1935, when the American psychologist John Ridley Stroop reported that processing information from one task could cause interference with another. Stroop noticed that when study participants were asked to name the colour of a word - such as `green' - printed in a different colour - red, for example - they experienced difficulty saying the name of the colour. This phenomenon is thought to occur when two tasks get tangled: the brain must suppress one that has been learned so well that it has become automatic (reading) to attend to a second task that requires concentration (naming the colour). During the past couple of decades, psychologists have probed more deeply into the nature and limitations of multitasking. Psychologist and brain-researcher Ernst P�ppel, of the Ludwig-Maximilian University in Munich, believes that it is impossible to carry out two or three different tasks simultaneously with the same degree of concentration. He says that seemingly simultaneous awareness and processing of information actually take place in `three-second windows'."
+   },
+   {
+    "mark": "",
+    "text": "In these three-second segments, the brain takes in, as a block, all the data about the environment streaming in from the sensory systems; subsequent events are processed in the next window. So a person can concentrate on a conversation for three seconds, then for three seconds on a crying child, and three seconds on a computer screen. While one subject at a time occupies the foreground of consciousness, the others stay in the background until they, in turn, are given access to the central processor."
+   },
+   {
+    "mark": "",
+    "text": "Another experiment by psychologist David E. Meyer, of the University of Michigan, quantified just how much time we can lose when we shuttle between tasks. The researchers asked test participants to write a report and check their e-mail at the same time. Those individuals who constantly jumped back and forth between the two tasks took about one and a half times as long to finish as those who completed one job before turning to the other. Each switchover from one task to another meant re-thinking and thus involved additional neural resources. In effect, the brain needs time to shut off the rules for one task and to turn on the rules for another. `Multitasking saves time only when it is a matter of relaxed, routine tasks,' Meyer says. It also takes the brain longer to adapt when switching rapidly back to an interrupted task rather than waiting longer before switching back."
+   },
+   {
+    "mark": "",
+    "text": "By its nature multitasking is stressful, and the area in the brain most involved with multitasking is also most affected by the resulting stress. Located behind the forehead, the prefrontal cortex - which neuroscientists call the `executive' part of the brain - helps us to assess tasks, prioritise them and assign mental resources. It also `marks' the spot at which a task has been interrupted, so that we can return to it later. This stress can also affect brain cells in another region, the hippocampus, which is important for forming new memories; damage in that area also makes it difficult for a person to acquire new skills."
+   },
+   {
+    "mark": "",
+    "text": "Psychiatrists Edward Hallowell and John Ratey, of Harvard University, say that multitasking can bring about a brain condition that causes sufferers to constantly seek new information while having difficulties concentrating on its content. All in all, it may be wise to let the e- mail wait while you work on your presentation. You will save time and perform each task better."
+   }
+  ]
+ }
+}

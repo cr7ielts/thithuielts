@@ -1,0 +1,230 @@
+{
+ "id": "p3-charles-darwin",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 31,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 27,
+     "text": "The writer's purpose in the first paragraph is to",
+     "options": [
+      {
+       "v": "A",
+       "t": "oppose the views of Charles Darwin."
+      },
+      {
+       "v": "B",
+       "t": "compare experts' opinions of Darwin's theory."
+      },
+      {
+       "v": "C",
+       "t": "explain the theory of evolutionary psychology."
+      },
+      {
+       "v": "D",
+       "t": "name experts in the field of evolutionary psychology."
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "text": "In the third paragraph, which view about evolutionary psychology matches Nicholson's opinion?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Our characters determine our career choices."
+      },
+      {
+       "v": "B",
+       "t": "We begin life without any preconceived notions."
+      },
+      {
+       "v": "C",
+       "t": "Our interests and skills depend on our environment."
+      },
+      {
+       "v": "D",
+       "t": "We inherit ideas and characteristics from our ancestors."
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "text": "The writer discusses the key element of emotion in order to",
+     "options": [
+      {
+       "v": "A",
+       "t": "criticise primitive survival strategies."
+      },
+      {
+       "v": "B",
+       "t": "explain attitudes and actions at work."
+      },
+      {
+       "v": "C",
+       "t": "demonstrate the slowness of evolution."
+      },
+      {
+       "v": "D",
+       "t": "suggest companies today are poorly structured."
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "text": "Which of the following does Nicholson predict will happen in the business world?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Companies will remain in city centres."
+      },
+      {
+       "v": "B",
+       "t": "Promotion will no longer motivate people."
+      },
+      {
+       "v": "C",
+       "t": "Employees will be less independent than now."
+      },
+      {
+       "v": "D",
+       "t": "Social interaction will remain important to workers."
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "text": "Which of the following is the most suitable title for Reading Passage 3?",
+     "options": [
+      {
+       "v": "A",
+       "t": "How successful companies manage change."
+      },
+      {
+       "v": "B",
+       "t": "Understanding the origins of workplace behaviour."
+      },
+      {
+       "v": "C",
+       "t": "Darwin's theories rejected by modern management."
+      },
+      {
+       "v": "D",
+       "t": "Why post-industrial organisations need to evolve more quickly."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 32,
+   "to": 35,
+   "kind": "ynng",
+   "instruction": "Do the following statements agree with the information given in Reading Passage 3? YES if the statement agrees with the views of the writer NO if the statement contradicts the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this",
+   "questions": [
+    {
+     "n": 32,
+     "text": "Nicholson makes a persuasive argument in his book."
+    },
+    {
+     "n": 33,
+     "text": "Tooby and Cosmides believe natural selection through the generations has prepared us for modern times."
+    },
+    {
+     "n": 34,
+     "text": "Our reliance on technology causes emotional problems in the workplace."
+    },
+    {
+     "n": 35,
+     "text": "People today are more trusting than they used to be."
+    }
+   ]
+  },
+  {
+   "from": 36,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Complete the summary using the list of words, A-I, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "business leaders"
+    },
+    {
+     "v": "B",
+     "t": "MBA graduates"
+    },
+    {
+     "v": "C",
+     "t": "promotion structures"
+    },
+    {
+     "v": "D",
+     "t": "reward strategy"
+    },
+    {
+     "v": "E",
+     "t": "magic formula"
+    },
+    {
+     "v": "F",
+     "t": "strategic planning"
+    },
+    {
+     "v": "G",
+     "t": "back-to-front thinking"
+    },
+    {
+     "v": "H",
+     "t": "business environments"
+    },
+    {
+     "v": "I",
+     "t": "human nature"
+    }
+   ],
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Nicholson believes that if we know why people act the way they do, we can change {{36}} so employees will work more efficiently. Nicholson's ideas are unwelcome to {{37}}, but some executives are more open to what evolutionary psychology says."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "However, these executives still believe that there is a {{38}} that will make employees act according to the company's practices. According to Nicholson, these senior executives are engaging in {{39}}, and we should not try to change {{40}} but instead we should change our business structures."
+    }
+   ],
+   "noteTitle": "Nicholson's advice to the corporate world"
+  }
+ ],
+ "passage": {
+  "title": "",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Charles Darwin, the brilliant anthropologist and creator of the theory of evolution, is not normally associated with the modern business world. Nevertheless, Darwinian evolutionary theory is the foundation of a new wave of ideas about human behaviour in general and particularly the way people behave in the workplace; these ideas have given the title of `evolutionary psychology'. Evolutionary psychology revolves around the notion that our brains, like our bodies, have an inherited evolutionary design that has scarcely changed for 10,000 years. As respected evolutionary psychology experts Leda Cosmides and John Tooby comment, `our modern skulls house a Stone Age mind'. The US biologist Edward O. Wilson sees evolutionary psychology as being a discipline which is based on both sociobiology, which is the study of the biological basis of social behaviour, and psychology, which is the systematic study of human behaviour."
+   },
+   {
+    "mark": "",
+    "text": "Nigel Nicholson, an organisational psychologist from the London Business School, is a strong supporter of evolutionary psychology and on this subject has published Managing the Human Animal. His book takes the reader on a journey from the Stone Age plains of the savannah to the modern office, and includes a discussion of Darwinism and behavioural psychology, together with a dissection of dysfunctional organisational behaviour. It is an effective approach explaining why people behave as they do, particularly at work. Evolutionary psychology is increasingly being cited in management circles, where managers are trying to understand puzzling aspects of human behaviour and, by doing so, improve the workplace. Nicholson believes that evolutionary psychology can help managers understand what goes wrong in organisational life and what they can do about it."
+   },
+   {
+    "mark": "",
+    "text": "Nicholson maintains that evolutionary psychology dismisses the long-held assumption that our minds are like blank pages just waiting for culture and experience to write on them and shape our nature. He points out that sophisticated research shows the brain actually houses a store of knowledge when we are born, and now genetic research is establishing there are certain genes that account for abilities, tastes and tendencies. The stored knowledge in the human brain has not changed much since the Stone Age. As Tooby and Cosmides stress, there have not been enough generations for a brain that is well-adapted to our post-industrial life to evolve through natural selection. The evolutionary psychology version of human nature revolves around some key elements which we have inherited from our hunter-gatherer minds. One key element is emotion. Emotion was originally essential to keep early man alive and safe from predators. Emotion was, and continues to be, our radar, guiding us throughout today's techno-defined business world. Despite this, the business world emphasises rational, not emotional, behaviour, and does not admit the importance of emotion. We still use the emotional part of our minds to make sense of other people's behaviour and to create an impression, so we can often be taken in by appearances. This mental predisposition actually works best in small communities (the tribe), not in much larger environments filled with people we barely know (the modern workplace). Our minds naturally try to re-create our ancestral communities with networks of no more than 150 people, where there are clear hierarchies and leaders. As a consequence, it takes very little to trigger people's innate distrust of others because our safety in antiquity depended on supporting our near family and friends, whom we valued more than other people."
+   },
+   {
+    "mark": "",
+    "text": "So what advice does Nicholson have for the corporate world? He thinks that by knowing the reasons for people's behaviour it is possible to mould corporate environments into places that have more chance of working efficiently and being pleasant places to work in. Nicholson admits that not everybody in the business world agrees with his belief in the effectiveness of evolutionary psychology in the workplace. One group that resists the theory of evolutionary psychology is young MBA graduates who are just beginning their careers and feel that evolutionary psychology will make their lives at work more difficult. Older and wiser executives point out that they still tend to cling to the idea of a magic formula to bring people into line with corporate strategy. But that is back-to-front thinking, according to Nicholson, who contends that we should be reinventing our business structures, not our fundamental human nature."
+   },
+   {
+    "mark": "",
+    "text": "At the end of his book, Nicholson gives his forecast of what will and will not change in the business world. He believes that most people will still prefer more traditional forms of work and throughout their lives will continue to aim at lifelong status advancement. He also maintains that the line between work and home will be less defined, but that people will prefer traditional working patterns if working from home leaves them isolated from their work community. He doubts that the high-tech ideas of virtual companies will ever be very successful because people will still want to meet each other face-to-face. Nicholson describes his ideal organisation in the future: it would be decentralised, with small sub- units; the staff would be from diverse backgrounds and be allowed a high degree of self- determination. New endeavours and creativity would replace systems and rationality. Nicholson acknowledges that there is a long way to go in terms of the translation of his ideas of evolutionary psychology into practical propositions, but he is confident more and more people will come round to his way of thinking."
+   }
+  ]
+ }
+}

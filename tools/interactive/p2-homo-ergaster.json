@@ -1,0 +1,169 @@
+{
+ "id": "p2-homo-ergaster",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 14,
+   "to": 20,
+   "kind": "heading",
+   "instruction": "Reading Passage 2 has seven paragraphs, A-G. Choose the correct heading for each paragraph from the list of headings below. List of Headings",
+   "bank": [
+    {
+     "v": "i",
+     "t": "Assumptions about language and nutrition"
+    },
+    {
+     "v": "ii",
+     "t": "A series of developments involving bone structure"
+    },
+    {
+     "v": "iii",
+     "t": "Conflicting theories about Homo ergaster's ancestry"
+    },
+    {
+     "v": "iv",
+     "t": "The earliest occurrence of a human-like species"
+    },
+    {
+     "v": "v",
+     "t": "The beginnings of human migration"
+    },
+    {
+     "v": "vi",
+     "t": "Evidence of conflict between populations"
+    },
+    {
+     "v": "vii",
+     "t": "Physical features adapted for climate"
+    },
+    {
+     "v": "viii",
+     "t": "The social behaviour linked to human reproductive features"
+    },
+    {
+     "v": "ix",
+     "t": "Technical advances in the analysis of human remains"
+    },
+    {
+     "v": "x",
+     "t": "The valuable discovery of a specimen"
+    }
+   ],
+   "questions": [
+    {
+     "n": 14,
+     "text": "Paragraph A"
+    },
+    {
+     "n": 15,
+     "text": "Paragraph B"
+    },
+    {
+     "n": 16,
+     "text": "Paragraph C"
+    },
+    {
+     "n": 17,
+     "text": "Paragraph D"
+    },
+    {
+     "n": 18,
+     "text": "Paragraph E"
+    },
+    {
+     "n": 19,
+     "text": "Paragraph F"
+    },
+    {
+     "n": 20,
+     "text": "Paragraph G"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 22,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E Which TWO physical features did adult Homo ergaster have?",
+   "options": [
+    {
+     "v": "A",
+     "t": "two protruding teeth"
+    },
+    {
+     "v": "B",
+     "t": "wide hips"
+    },
+    {
+     "v": "C",
+     "t": "a small brain"
+    },
+    {
+     "v": "D",
+     "t": "short limbs"
+    },
+    {
+     "v": "E",
+     "t": "a wide upper rib cage"
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "to": 26,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+   "questions": [
+    {
+     "n": 23,
+     "text": "Evidence of a large ____ in Nariokotome Boy's jaw indicates a possible cause of death."
+    },
+    {
+     "n": 24,
+     "text": "Nariokotome Boy's body shape was similar to that of the present-day ____ people."
+    },
+    {
+     "n": 25,
+     "text": "Unlike earlier hominids, Homo ergaster was probably able to keep cool by ____."
+    },
+    {
+     "n": 26,
+     "text": "Early humans adapted to their narrow pelvis by giving birth to infants whose brain was still ____."
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "Homo ergaster",
+  "paras": [
+   {
+    "mark": "A",
+    "text": "A huge debate rages about human origins, but the broad consensus among scientists is that all the different species of human (hominids) that have ever existed were descended from ape-like creatures that walked upright in Africa more than six million years ago. These creatures had many descendants, most of which became extinct, but the first creature we would recognise as human first appeared in Africa almost two million years ago. Homo ergaster, meaning 'working human', evolved during an accelerated period of global cooling and drying that cleared more and more tropical rainforest from Africa, and created desert in the northern half of the continent."
+   },
+   {
+    "mark": "B",
+    "text": "One of the best sources of information about Homo ergaster is a skeleton found in 1984 by Alan Walker and Kamoya Kimeu at Nariokotome in West Turkana, Kenya. The remains turned out to be those of a young boy, who was between the ages of 11 and 13 when he died. Around 1.5 million years ago, the boy's body sank into the marsh where he died, and became fossilised. His teeth show signs of a sizeable abscess where his milk teeth fell out, indicating that he may have died from blood poisoning."
+   },
+   {
+    "mark": "C",
+    "text": "This hominid was probably the first to regulate its temperature through sweating. For creatures that must remain active at midday in a sunny, dry habitat, sweating is the most effective mechanism for maintaining safe body and brain temperatures. Homo ergaster's body was probably smooth and largely hairless, since heat loss through sweating occurs most efficiently through naked skin. Its skin was almost certainly dark, to protect it from the sun's harmful rays."
+   },
+   {
+    "mark": "D",
+    "text": "Homo ergaster travelled long distances on foot, as it worked hard to scavenge enough meat to feed its body and brain. In order to increase the energy efficiency of muscles involved in upright walking, Homo ergaster developed a narrower pelvis. But its slim hips came at a price. Firstly, the narrowing of the pelvis caused the lower part of the rib cage to narrow. In order to prevent constriction of the lungs, the upper part of Homo ergaster's rib cage expanded, giving its chest a human barrel shape. Secondly, and more importantly, the narrowing of the pelvis constricted the female birth canal. This single anatomical change seems to have had profound consequences for human society."
+   },
+   {
+    "mark": "E",
+    "text": "As brains increased in size, mothers had to push increasingly big-brained infants through an already tight pelvis, and that caused problems. The eventual solution was a trade-off. While chimpanzees are born with their brains almost fully mature, humans are born with a comparatively immature brain. This makes human babies helpless and vulnerable during their first year of life as their brains make vital neural connections. As a result, human mothers need to be well nourished to keep up with the demands of their babies, making them increasingly reliant on the support of their male partner and other members of their group. Many experts regard this shift as the beginning of the family with its distinctively human pattern of sharing and cooperation between males and females."
+   },
+   {
+    "mark": "F",
+    "text": "Nariokotome Boy had a thick, bony ridge across his eyes. A pair of front teeth stuck out at an angle from a large, projecting mouth below a long, wide nose. His anatomy does not seem developed enough to have given him the control over his breathing needed for complex speech, so Homo ergaster probably communicated using hand movements, supplemented by a limited range of sounds. The other relatively small teeth of Nariokotome Boy suggest that Homo ergaster relied more than his ancestors on stone tools for cutting up meat before eating. To begin with, Homo ergaster used primitive implements, which were little more than chipped rocks with sharp edges. But by around 1.6 million years ago, Homo ergaster developed symmetrical, heart-shaped handaxes, which gave the hominid greater control over the butchering of meat."
+   },
+   {
+    "mark": "G",
+    "text": "Shortly after Homo ergaster appeared 1.9 million years ago, humans began to leave Africa for the first time and move to other continents. Archaeological records show they spread over an area ranging from Turkey into Asia, although the population may not have been very large. This newfound desire to travel may have been dictated by an increasing reliance on meat for food. Carnivores generally need much larger home ranges than similar-sized herbivores, because carnivores have fewer total calories, in the form of animal prey, available to them per unit area of their territory."
+   }
+  ]
+ }
+}

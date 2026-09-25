@@ -1,0 +1,246 @@
+{
+ "id": "p3-the-peopling-of-patagonia",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 31,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 27,
+     "text": "In the first paragraph, what is the writer's main point about migration to Patagonia?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It started earlier than previously thought."
+      },
+      {
+       "v": "B",
+       "t": "Historians have overlooked its importance."
+      },
+      {
+       "v": "C",
+       "t": "It impacts on research into the wider region."
+      },
+      {
+       "v": "D",
+       "t": "Researchers have calculated its effects on the environment."
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "text": "In the second paragraph, what is the writer's purpose?",
+     "options": [
+      {
+       "v": "A",
+       "t": "to challenge previous research"
+      },
+      {
+       "v": "B",
+       "t": "to propose new areas to investigate"
+      },
+      {
+       "v": "C",
+       "t": "to summarise a scholarly debate"
+      },
+      {
+       "v": "D",
+       "t": "to suggest reasons for human migration"
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "text": "The writer refers to the `late' model in order to",
+     "options": [
+      {
+       "v": "A",
+       "t": "compare it with another theory of migration."
+      },
+      {
+       "v": "B",
+       "t": "evaluate the success of American migration."
+      },
+      {
+       "v": "C",
+       "t": "criticise the speed of research into migration."
+      },
+      {
+       "v": "D",
+       "t": "compare migration in different parts of the world."
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "text": "What is the writer's main point about the `early' model?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Scholars support the idea of fast migrations."
+      },
+      {
+       "v": "B",
+       "t": "It is too random to be a convincing theory."
+      },
+      {
+       "v": "C",
+       "t": "South America was more habitable at an earlier time."
+      },
+      {
+       "v": "D",
+       "t": "It is more consistent with the physical conditions of the land."
+      }
+     ]
+    },
+    {
+     "n": 31,
+     "text": "What does the writer suggest about the Monte Verde site?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is much younger than researchers once estimated."
+      },
+      {
+       "v": "B",
+       "t": "It provides supporting evidence for relatively early settlement."
+      },
+      {
+       "v": "C",
+       "t": "Archaeologists believe the site is of questionable value."
+      },
+      {
+       "v": "D",
+       "t": "Streams exposed the site, making new research possible."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 32,
+   "to": 35,
+   "kind": "ynng",
+   "instruction": "Do the following statements agree with the claims of the writer in Reading Passage 3? YES if the statement agrees with the claims of the writer NO if the statement contradicts the claims of the writer NOT GIVEN if it is impossible to say what the writer thinks about this",
+   "questions": [
+    {
+     "n": 32,
+     "text": "The conditions encountered by the first migrants to Patagonia were unique."
+    },
+    {
+     "n": 33,
+     "text": "In the high country the first migrants hunted wild animals for food."
+    },
+    {
+     "n": 34,
+     "text": "Archaeologists have failed to draw conclusions from the evidence found at rock shelters in Argentina and Chile."
+    },
+    {
+     "n": 35,
+     "text": "Archaeological evidence can be moved from place to place in a variety of ways."
+    }
+   ]
+  },
+  {
+   "from": 36,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Complete the summary using the list of words and phrases, A-J, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "fixed date"
+    },
+    {
+     "v": "B",
+     "t": "random collection"
+    },
+    {
+     "v": "C",
+     "t": "similar properties"
+    },
+    {
+     "v": "D",
+     "t": "good condition"
+    },
+    {
+     "v": "E",
+     "t": "scientific evaluation"
+    },
+    {
+     "v": "F",
+     "t": "huge quantities"
+    },
+    {
+     "v": "G",
+     "t": "new samples"
+    },
+    {
+     "v": "H",
+     "t": "reliable connection"
+    },
+    {
+     "v": "I",
+     "t": "skilled preservation"
+    },
+    {
+     "v": "J",
+     "t": "immediate surroundings"
+    }
+   ],
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Building remains and other evidence have been found in {{36}} at the Chinchihuapi Creek site, and because of this it has been possible to date them to around 12,500 years ago. However, the {{37}} of the samples taken from Los Toldos means that this site is of doubtful value. El Ceibo is a more promising dig, where the examination of artefacts would be beneficial in order to confirm the usefulness of discoveries there. The remains found at the Arroyo Eeo site show {{38}} and date from around 9,000 years ago."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Unfortunately, no {{39}} can be made between the samples taken from Las Buitreras and human presence. The findings of the work carried out at Cueva Fell cannot provide useful information beyond the {{40}}. In conclusion, though the evidence is mixed, it is believed that the human population of Patagonia began about 11,000 years ago."
+    }
+   ],
+   "noteTitle": "The archaeological evidence from Patagonia"
+  }
+ ],
+ "passage": {
+  "title": "The Peopling of Patagonia",
+  "paras": [
+   {
+    "mark": "",
+    "text": "Anthropologists continue to investigate human migration to Patagonia at the southern tip of South America"
+   },
+   {
+    "mark": "",
+    "text": "The human settlement of the southern extremity of the Americas has always fascinated prehistorians. Viewed from a global perspective, this was the last major continental land mass to be reached by human beings. The earliest occupation of Patagonia carries obvious implications for understanding when the North and South American continents were peopled, because it gives a baseline that all calculations regarding the rate of dispersion of humans throughout both continents must take into account."
+   },
+   {
+    "mark": "",
+    "text": "For many years the human settlement of North and South America has been conceived of as beginning in the far north and travelling progressively southwards to Patagonia. However, fundamental disagreements developed concerning the length of time involved. Some scholars accepted a human presence in the Americas as early as 20,000 years ago, while others proposed that it could date no earlier than 8,000 years ago, and the debate is still with us today."
+   },
+   {
+    "mark": "",
+    "text": "The idea of a relatively `late' settlement of the Americas (around 8,000 years ago) implies that a rapid process of migration took place. Herein lies a second debate, which revolves around the question of how migration is to be understood. The `late' model demands a hypothetical migration conceived of as a single, continually advancing wave of settlement. This has always been difficult to take seriously, and many scholars now support the idea of an `early' model that sees the migration as a less ordered migration, and this is surely the most realistic scenario as migrants slowly adapted to the diverse natural habitats they would have met while travelling through the continent."
+   },
+   {
+    "mark": "",
+    "text": "Those who argue for an earlier settlement, however, must contend with the lack of unequivocal evidence for archaeological sites older than around 14,000 years. Nevertheless, evidence for human occupation of the centre of South America is now securely dated to around 12,500 years ago at the Monte Verde site, which casts doubt on the `late' model. The lack of archaeological evidence further south for this time period may be explained by the obstacle to humans on foot posed by the huge glacial streams that were present at that time. We can speculate then that the retreat of the Patagonian glaciers around 14,000 years ago allowed the initial human intrusion into a pristine environment, which was similar to that of early post-glacial Europe. Human settlement of the vast horizontal expanse of treeless high country must have been tenuous at best, and the evidence for this occupation remains relatively scant, most of it coming from rock shelters in Argentina and Chile. There is, however, reliable evidence from these sites to confirm the presence of humans by around 11,000 years ago in different habitats, and some hints of an even older occupation. However, some other sites where evidence for even earlier human occupation was initially posited have recently come under fresh scrutiny. This is because anthropologists have come to recognise that bones or other evidence may be deposited in caves by natural agency--in other words, by other forces such as floods or predators--and not necessarily by humans."
+   },
+   {
+    "mark": "",
+    "text": "We shall turn now to a more detailed discussion of the archaeological evidence found in various parts of Patagonia. At the site located beside Chinchihuapi Creek, excavations have produced convincing evidence of human occupation, including hut foundations and wooden artefacts. They were buried in layers of peat, which has the property of preserving wood remarkably well, and as a result, radiocarbon dating tests have shown these artefacts to date from around 12,500 years ago. One of the most famous Patagonian sites is a cave known as Los Toldos. However, the evidence from this site has recently been called into question, because dispersed flecks of carbon used in the test process were taken unsystematically from many different places at the site. As a result, the association of this material with the artefacts is not at all clear. About 150 kilometres to the south is the site called El Ceibo, where a similar collection of artefacts to that found at Los Toldos has been discovered from the lowest levels of the dig, but as yet no radiocarbon dates are available, and this sort of analysis of the existing evidence is required before the site's value can be confirmed."
+   },
+   {
+    "mark": "",
+    "text": "The Arroyo Eeo site is located very close to the high plateau. The artefacts from the earliest occupations were found at the same depth and have the same origins as those from Los Toldos, and have been securely dated to around 9,000 years ago. Another site that is mentioned in the debate is at Las Buitreras, where a number of stone flakes associated with bone remains of various animals have been discovered. However, anthropologists now believe that presumed cut marks on the bones are somewhat dubious, and despite detailed testing there is no way of securely relating any of these remains to human occupation. Finally, some 50 kilometres to the south is the site at Cueva Fell, which was the first Patagonian site to be systematically studied by modern archaeological methods. However, it is now recognised that the utility of this site must be restricted to its direct vicinity, given changes to the nearby area caused by flooding, and findings cannot be freely extrapolated further afield."
+   },
+   {
+    "mark": "",
+    "text": "In conclusion, based on the evidence from a number of reliable sites, it seems probable that human populations reached Patagonia around 11,000 years ago."
+   }
+  ]
+ }
+}

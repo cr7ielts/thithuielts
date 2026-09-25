@@ -1,0 +1,211 @@
+{
+ "id": "p3-the-placebo-effect",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 31,
+   "kind": "letter",
+   "instruction": "Complete each sentence with the correct ending, A-H, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "should be easy to understand"
+    },
+    {
+     "v": "B",
+     "t": "can improve without treatment"
+    },
+    {
+     "v": "C",
+     "t": "can cost the patient less"
+    },
+    {
+     "v": "D",
+     "t": "ought to last a minimum length of time"
+    },
+    {
+     "v": "E",
+     "t": "can require a range of different products"
+    },
+    {
+     "v": "F",
+     "t": "can be described as serious"
+    },
+    {
+     "v": "G",
+     "t": "should give it greater recognition"
+    },
+    {
+     "v": "H",
+     "t": "should be able to get a high income"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "An appointment with an alternative practitioner"
+    },
+    {
+     "n": 28,
+     "text": "An alternative practitioner's explanation of their treatment"
+    },
+    {
+     "n": 29,
+     "text": "If alternative practitioners have faith in their treatment, they"
+    },
+    {
+     "n": 30,
+     "text": "Quite often, a patient's illness"
+    },
+    {
+     "n": 31,
+     "text": "Conventional doctors are aware of the placebo effect and they"
+    }
+   ]
+  },
+  {
+   "from": 32,
+   "to": 34,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B, C or D.",
+   "questions": [
+    {
+     "n": 32,
+     "text": "In the third paragraph, the writer says that",
+     "options": [
+      {
+       "v": "A",
+       "t": "works best in tablet form."
+      },
+      {
+       "v": "B",
+       "t": "is a new type of medical treatment."
+      },
+      {
+       "v": "C",
+       "t": "is trusted more by some patients than by others."
+      },
+      {
+       "v": "D",
+       "t": "has a significant role in both alternative and conventional medicine."
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "text": "A reference is made to anger and sadness in order to show that",
+     "options": [
+      {
+       "v": "A",
+       "t": "personal feelings can alter our physical condition."
+      },
+      {
+       "v": "B",
+       "t": "some human behaviour has no clear explanation."
+      },
+      {
+       "v": "C",
+       "t": "placebos, like emotions, are experienced by everyone."
+      },
+      {
+       "v": "D",
+       "t": "people find some physical reactions hard to control."
+      }
+     ]
+    },
+    {
+     "n": 34,
+     "text": "Research on pain control attracts most of the attention because",
+     "options": [
+      {
+       "v": "A",
+       "t": "Only a limited amount of research has been conducted so far."
+      },
+      {
+       "v": "B",
+       "t": "Scientists have discovered that endorphins can help to reduce pain."
+      },
+      {
+       "v": "C",
+       "t": "Pain-reducing agents might also be involved in the placebo effect."
+      },
+      {
+       "v": "D",
+       "t": "Patients often experience pain and like to complain about it."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 35,
+   "to": 40,
+   "kind": "ynng",
+   "instruction": "Do the following statements agree with the views of the writer in Reading Passage 3? YES if the statement agrees with the views of the writer NO if the statement contradicts the views of the writer NOT GIVEN if it is impossible to say what the writer thinks about this",
+   "questions": [
+    {
+     "n": 35,
+     "text": "Scientists now have enough information to understand how the placebo effect becomes active in people."
+    },
+    {
+     "n": 36,
+     "text": "As a result of experiments, some painkillers have been taken off the market."
+    },
+    {
+     "n": 37,
+     "text": "Individual preference can have an impact on the effectiveness of different brands of headache tablets."
+    },
+    {
+     "n": 38,
+     "text": "Doctors expressed a range of views on the drug chlorpromazine when it was first introduced."
+    },
+    {
+     "n": 39,
+     "text": "Ernst's study had a big influence on doctors' behaviour with patients."
+    },
+    {
+     "n": 40,
+     "text": "Alternative practitioners work in a way that is likely to trigger the placebo effect."
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "The Placebo Effect",
+  "paras": [
+   {
+    "mark": "",
+    "text": "With the right encouragement, your mind can convince the body to heal itself. What is the mysterious force that can do this?"
+   },
+   {
+    "mark": "",
+    "text": "Want to devise a new form of alternative medical treatment? No problem. Here's the recipe. As a practitioner, be warm, sympathetic, reassuring and enthusiastic. Your treatment should involve physical contact, and each session with your patients should take at least half an hour. Encourage your patients to take an active part in their treatment and understand how their disorders relate to the rest of their lives. Tell them that their own bodies possess the true power to heal. Get them to pay you well. Describe your treatment in familiar words, but embroidered with a hint of mysticism: energy fields, energy flows, energy blocks, meridians, forces, auras, rhythms and the like. Refer to the knowledge of an earlier age: wisdom carelessly swept aside by the rise of blind mechanistic science. Oh, come off it, you're saying. Something like that couldn't possibly work, could it?"
+   },
+   {
+    "mark": "",
+    "text": "Well, yes, it could and often well enough to earn you a living. And a very good living if you are sufficiently convincing or, better still, really believe in your therapy. Many illnesses get better on their own, so if you are lucky and administer your treatment at just the right time you'll get the credit. But that's only part of it. Some of the improvement really would be down to you. Not necessarily because you'd recommended ginseng rather than chamomile tea or used this crystal as opposed to that pressure point. Nothing so specific. Your healing power would be the outcome of a paradoxical force that conventional medicine recognizes but remains oddly ambivalent about: the placebo effect."
+   },
+   {
+    "mark": "",
+    "text": "Placebos are treatments that have no direct effect on the body, yet still work because the patient has faith in their power to heal. Most often the term refers to a dummy pill, but it applies just as much to any device or procedure, from a sticking plaster to a crystal. The existence of the placebo effect implies that even a complete fraud could make a difference to someone's health, which is why some practitioners of alternative medicine are sensitive about any mention of the subject. In fact, the placebo is a powerful part of all medical care, orthodox or otherwise, though its role is often neglected and misunderstood. At one level, it should come as no surprise that our state of mind can influence our physiology: anger opens the superficial blood vessels of the face; sadness pumps the tear glands. But exactly how placebos work their medical magic is still largely unknown. Most of the scant research to date has focused on the control of pain, because it's one of the commonest complaints and lends itself to experimental study. Here, attention has turned to the endorphins, natural substances produced in the brain that are known to help control pain. Any of the neurochemicals involved in transmitting pain impulses or modulating them might also be involved in generating the placebo response, says Don Price, an oral surgeon at the University of Florida."
+   },
+   {
+    "mark": "",
+    "text": "That case has been strengthened by the recent work of Fabrizio Benedetti of the University of Turin, who showed that the placebo effect can be abolished by a drug, naloxone, which blocks the effects of endorphins. Benedetti induced pain in a pressure cuff on the forearm. He did this several times a day for several days, using morphine each time to control the pain. On the final day, without saying anything, he replaced the morphine with a saline solution. This still relieved the subjects' pain: a placebo effect. But when he added naloxone to the saline, and blocked the endorphins, the pain relief disappeared. Here was direct proof that the relief of pain by a placebo is carried out, at least in part, by these natural opiates."
+   },
+   {
+    "mark": "",
+    "text": "Though scientists don't know exactly how placebos work, they have accumulated a fair bit of knowledge about how to trigger the effect. A London rheumatologist found, for example, that red dummy capsules made more effective painkillers than blue, green or yellow ones. Research on American students revealed that blue pills make better tranquillisers than pink, a colour more suitable for stimulants. Even branding can make a difference: if Aspro or Tylenol are what you like to take for a headache; their chemically identical generic equivalents may be less effective."
+   },
+   {
+    "mark": "",
+    "text": "It matters too how the treatment is delivered. Decades ago, when the major tranquilliser chlorpromazine was being introduced, a doctor in Kansas categorised his colleagues according to whether they were keen on it, openly sceptical of its benefits, or took a let's- try-and-see attitude. His conclusion: the more enthusiastic the doctor, the better the drug performed. A recent survey by Ernst on doctors' bedside manners turned up one consistent finding: physicians who adopt a warm, friendly, reassuring manner are more effective than those whose consultations are formal and do not offer reassurance."
+   },
+   {
+    "mark": "",
+    "text": "Warm, friendly and reassuring are precisely what alternative treatment is all about, of course. Many of the ingredients of that opening recipe -- the physical contact, the generous swaths of time, the strong hints of supernormal healing power -- are just the kind of thing likely to impress patients. It's hardly surprising then, that complementary practitioners are generally best at mobilising the placebo effect, says Arthur Kleinman, professor of social anthropology at Harvard University."
+   }
+  ]
+ }
+}
