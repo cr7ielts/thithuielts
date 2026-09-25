@@ -1,0 +1,196 @@
+READING PASSAGE 3
+
+You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3
+below.
+
+            How can we make good decisions?
+
+In 1670, French philosopher Pascal wrote that, when faced with a choice, you should assess
+the positive or negative values of every outcome alongside each outcome's probability. Later,
+in 1738, mathematician Daniel Bernoulli noted two additional considerations -- the decision-
+maker's attitude to risk, and the utility of a given payoff depending on their preferences or
+needs. For example, a small monetary gain would be of greater utility to a poor person than a
+rich person, and thus their decisions in the same gamble could be entirely different but equally
+sensible.
+
+Historically, the science of decision-making was the province of economists, and their basic
+assumption was that people are essentially rational. The problem is we systematically make
+choices that go against what an economist would predict or advocate.
+
+Then, in the 1970s, psychological scientists Daniel Kahneman and Amos Tversky overturned
+these assumptions. One keystone of their theory is loss aversion, or the discovery that winning
+$100 is approximately half as appealing as losing $100 is unappealing. Another is the idea that
+the context and phrasing of a problem can influence a person's choice. In studies focusing on
+medical treatments, they showed that people seek a sure solution if a problem is phrased in
+terms of benefit, but accept risk when the problem is phrased in terms of potentially averting a
+negative outcome.
+
+Real-world problems are often complicated, and our brains are naturally wired to use mental
+shortcuts called heuristics. One important heuristic is representativeness -- the tendency to
+ignore statistics and focus on stereotypes. For example, someone is described as a helpful but
+shy and withdrawn man who loves structure and detail. When faced with a list of possible
+occupations including farmer and librarian, people tend to guess that he is a librarian because
+this fits a common stereotype. They ignore an obvious truth -- there are many more farmers in
+the world than there are librarians.
+
+People also assess the chance of an event occurring based on the ease with which it comes to
+mind, or its availability. For example, because dramatic events such as swimmers being
+attacked by sharks are frequently reported on TV and in the press, people invariably
+overestimate the probability of these rare outcomes. Another is the `affect heuristic' -- the
+tendency to assess probabilities based on how we feel towards particular options. Those
+feelings may not correspond to real-world risks. For example, people tend to fear radiation
+from nuclear power plants more than radiation from medical X-rays, yet it is actually X-rays
+that pose a greater risk to health.
+
+Psychological scientists who study decision-making often draw a distinction between two types
+of mental processing. A fast, unconscious, often emotion-driven system that relies on personal
+experience, referred to as System 1, is contrasted with System 2, a slower, more analytical
+system that rationally balances benefits against costs. Both systems may be involved in
+making a choice, with System 2 monitoring the quality of the snap System 1 judgment and
+adjusting a decision accordingly. For experts in high-stakes domains, the 'gut reaction' of
+System 1 may lead to better real-world choices. In a study at Cornell University, expert
+cardiologists took fewer facts into account than younger doctors did when deciding whether to
+hospitalize emergency patients with chest pain. Experts also tended to process that
+information in an all-or-none fashion (a patient was either at risk of a heart attack or not) rather
+than wasting time dealing with shades of grey.
+
+The fact that our gist-processing centers and our ability to use System 1 don't fully mature until
+our 20s may help explain the risky choices that younger decision-makers commonly make.
+Adolescents do risky things because their brains get bogged down in calculating odds.
+Youngsters are bombarded by warning statistics, yet risks of undesirable outcomes remain
+objectively small, and this may actually encourage young people to take those risks rather than
+avoid them. Adults, in contrast, make their choices more like expert doctors: making an
+immediate black-and-white judgment. They just say no to risky activities because, however
+objectively unlikely the risks, there's too much at stake to warrant even considering them.
+
+So how can we help people make better decisions in the absence of immediate danger?
+System 2 is the obvious approach -- analyze all known variables and quantify the different
+choices. This has significantly improved decisions in contexts such as academic admissions
+and hiring. Having decision-makers adopt an outsider's perspective on decisions can also
+reduce overconfidence in their knowledge. Considering multiple options simultaneously -- as
+opposed to separately -- can optimize outcomes and increase an individual's willpower in
+carrying out a choice. Decision-making by committee rather than individually can improve
+decisions in group contexts, as can making individuals more accountable for their decisions.
+Analogical reasoning can reduce System 1 errors by highlighting how a particular task shares
+underlying principles with another unrelated one, thereby helping people to see past surface
+details to more fully understand a problem.
+
+In some domains, such as preventative healthcare, a better approach may be to work with,
+rather than against, our tendency to make gut System 1 decisions. Doctors and the media
+bombard patients with numerical data, and consumers tend to overestimate the risks involved.
+But when they learn their risk for a particular disease is lower than they initially thought, they
+become more complacent -- for instance, by not undergoing screening. Instead,
+communicating the gist, 'You're at (some) risk; you should get screened because it detects
+disease early,' may be a more powerful motivator to make the right decision than the raw
+numbers would be.
+Questions 27 - 31
+Complete each sentence with the correct ending, A-G, below.
+Write the correct letter, A-G, in boxes 27-31 on your answer sheet.
+27 Pascal's approach to decision-making focused solely on
+28 Bernoulli observed that the value of a given outcome may vary according to
+29 Historically, the science of decision-making was based on
+30 Kahneman and Tversky's studies showed that decisions can depend on
+31 With the representativeness heuristic, decisions are affected by
+
+A  the supposition that people make logical choices.
+
+B  the likelihood and desirability of the consequences of one's choice.
+
+C  the views of people whose opinions are trusted.
+
+D  commonplace assumptions rather than facts and figures.
+
+E  the manner in which the possible results are presented.
+
+F  the level of confidence a person has in their own judgment.
+
+G  people's individual desires and requirements.
+Questions 32 - 35
+
+Choose the correct letter, A, B, C or D.
+
+Write the correct letter in boxes 32-35 on your answer sheet.
+
+32 The writer mentions shark attacks as an example of an occurrence which
+
+A                  the public are justified in being afraid of.
+
+B                  happens when people take unnecessary risks.
+
+C                  ought to be given less prominence in the media.
+
+D                  is perceived as being more likely than it actually is.
+
+33 What consequence of the affect heuristic does the writer mention?
+
+A                  The fear of health risks may cause people to become unduly emotional.
+
+B                  People may underestimate the level of risk associated with some
+
+                   undertakings.
+
+C                  Members of the public may pay too much attention to statistics about
+
+                   possible risks.
+
+D                  Medical professionals may downplay the risks of certain procedures
+
+                   when describing them to patients.
+
+34 What is suggested by the Cornell University study?
+
+A                  It is important to be aware that some key facts may not be readily
+
+                   accessible.
+
+B                  Lack of time can cause less experienced professionals to make poor
+
+                   judgments.
+
+C                  In certain situations, it is necessary to ignore some apparently
+
+                   relevant facts.
+
+D                  Experts tend to work better under pressure than when they have
+
+                   time to consider their decisions.
+
+35 What does the writer suggest about differences between young people and adults
+          with regard to risk?
+
+A                  Young people are unable to envisage the results of risky endeavors.
+
+B                  Adults make instinctive decisions not to take part in dangerous
+
+                   activities.
+
+C                  Young people deliberately ignore warnings about potentially
+
+                   hazardous situations.
+
+D                  Adults base their judgments on the real-world likelihood of negative
+
+                   outcomes.
+Questions 36 - 40
+
+Do the following statements agree with the claims of the writer in Reading Passage 3?
+
+In boxes 36-40 on your answer sheet, write
+
+YES                if the statement agrees with the claims of the writer
+NO                 if the statement contradicts with the claims of the writer
+NOT GIVEN          if it is impossible to say what the writer thinks about this
+
+36 Decision-makers involved in academic admissions and hiring are more likely to make instant
+      judgments than other professionals.
+
+37 We make better decisions when we assess alternatives one by one rather than
+      simultaneously.
+
+38 A joint decision can be more reliable than an individual one in certain situations.
+
+39 Analogical reasoning is only effective when used in combination with System 1 processing.
+
+40 Providing at-risk patients with statistical data improves their chances of making good
+      decisions.
+

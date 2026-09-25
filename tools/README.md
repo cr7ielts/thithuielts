@@ -23,3 +23,16 @@ Tiêu đề section đặt tay: `section_titles.json`.
 Đáp án Listening được chép tay trong `listening_keys.py` (nhiều file đáp án là ảnh).
 Thêm đề mới: thêm đáp án vào `listening_keys.py` và một dòng trong danh sách TESTS của `gen_listening.py`.
 Sau khi sinh lại: deploy, rồi vào Ngân hàng đề → Tải file đề lên để tải file mới.
+
+## Bóc đề sang dạng làm bài tương tác
+
+| Script | Việc |
+|---|---|
+| `extract_interactive.py <id> [--save]` | bóc một bài, in JSON và dòng "kiểm tra: ĐẠT/không đạt" |
+| `batch_interactive.py <reading\|listening\|section> [part] [--save]` | bóc cả nhóm, liệt kê bài không đạt |
+| `audit_interactive.py <kind> [part]` | cảnh báo mềm về chất lượng nội dung đã bóc |
+| `gen_interactive.py` | `interactive/*.json` -> `js/data/interactive/*.json` + danh sách id |
+| `dump_text.py [--force]` | xuất văn bản mọi đề ra `txt/<id>.txt` để máy không có tài liệu gốc vẫn bóc được |
+| `examtest.html?id=<id>` | xem thử giao diện làm bài, không cần đăng nhập |
+
+Thứ tự lấy văn bản đề: file gốc trong `2. IELTS\…` → nếu máy không có thì `txt/<id>.txt`.

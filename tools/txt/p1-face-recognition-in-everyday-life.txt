@@ -1,0 +1,127 @@
+READING PASSAGE 1
+
+You should spend about 20 minutes on Questions 1-13, which are based on Reading Passage 1
+below.
+
+               Face recognition in everyday life
+
+A Remembering faces is a skill that is in daily use, but in real life we are not often called
+       on to recognise people by their faces alone. Information about a person's identity is
+       supplied by body build, clothes, gait, voice and the context in which the person is
+       encountered, as well as the face. We know very little about the relative contribution of
+       these different aspects of personal identity to the recognition process, but mistakes in,
+       and difficulties of, identification suggest they are Important cues. Clothes and context
+       are both liable to change, and therefore ought to be less reliable as cues, but
+       experience suggests that we do rely on them to a considerable extent.
+
+B In contrast to the real-life situation, many of the experiments that test face-recognition
+       ability use still photographs of Isolated faces, taken out of context, and stripped of all
+       the additional Information that normally accompanies a face. Unlike photographs, real
+       faces are three-dimensional and dynamic and these characteristics yield a great deal
+       of additional information. Face recognition in natural situations can exploit a much
+       wider and richer range of cues and is therefore more likely to be successful.
+
+C We know from our own experience that people seem to vary in face memory ability
+       quite considerably, so that it is difficult to say what level of performance should be
+       considered normal. The incidence of errors varies with the degree of familiarity.
+       Identification failures for faces that are well known do sometimes occur, but they are
+       usually temporary errors due to misleading circumstances, such as changes of
+       appearance, seeing someone in an unusual context or poor visibility. Confusions may
+       happen if a person is very similar in appearance to someone else, but such errors do
+       not usually persist with prolonged inspection. With less well-known faces, identification
+       failures are more common. It is quite easy to forget the face of someone you have only
+       met casually, seldom or a long time ago.
+
+D When we need to describe a person to someone else, with the Intention of enabling
+       the hearer to identify that person, we do not usually supply much detail about the face.
+       We generally describe age, height, build and any very distinctive features (e.g. 'curly
+       red hair', 'beard' or 'glasses') rather than giving a comprehensive description of the
+       face. However, more complete and accurate recall is sometimes required, as when
+       witnesses are asked to describe suspects to the police or to construct a photofit
+       picture. Not all faces are equally easy to recognise. Experiments have shown that face
+       memory is superior if a face is seen in a variety of different poses rather than in
+       repeated exposures of the same pose. In everyday life, faces that are familiar are ones
+       that have been seen from many different viewpoints.
+
+E The everyday intuition that highly distinctive faces are easier to remember than faces
+       that are ordinary and typical has also been experimentally confirmed. The effects of
+       attractiveness are less clear-cut. Some researchers have reported that attractive faces
+       are easier to remember and others have reported the opposite result. There is also
+       some evidence that memory representations of faces are influenced by stereotypes. It
+      appears that people do believe that facial appearance is linked to personality traits and
+      this means that judgements may be biased by the physical appearance of a person.
+
+F There is a growing body of evidence that suggests that faces are represented
+      holistically, or configurally (that is, by their overall shape or structure, rather than as a
+      list of features). Tanaka and Farah (1993) argued in their studies that if facial features
+      are represented separately, then memory for a particular feature should be as good
+      when it is seen in isolation as when it is seen in the context of the whole face. If faces
+      are represented configurally, then it should be more difficult to recognise Isolated
+      features. Their results showed that features learned in the context of a whole normal
+      face were better recognised when seen in a whole normal face, although this
+      advantage did not hold for scrambled faces or when the faces were upside down. The
+      conclusion Is that normal faces are represented configurally in memory but the
+      representation of scrambled or inverted faces is different. By contrast, object
+      recognition seems to involve specific parts or features being represented and
+      processed separately and is not so much affected by inversion.
+
+G Despite the evidence that faces are represented configurally, features also seem to
+      play some part in face recognition. There is evidence, for example, that some features
+      are more salient than others. Subjects spend more time looking at some features when
+      memorising a face; recognition is more disrupted by changing some features than by
+      changing others; and a face with a highly distinctive feature is more easily recognised.
+      Experiments suggest that features in the inner part of the face (eyes, nose, and mouth)
+      are more Important than features in the outer part (hair and face shape).
+
+H On the whole, current research has little to say about why some people are better than
+      others at remembering faces, and little to offer in the way of suggestions as to how we
+      could train people to Improve their face-recognition skills. Laboratory experiments
+      using artificial material, such as photographs presenting disembodied faces divorced
+      from any social or situational context, are posing problems that are very different from
+      those encountered In the real world.
+Questions 1 - 4
+
+Do the following statements agree with the information given in Reading Passage 1?
+
+In boxes 1-4 on your answer sheet, write
+
+TRUE             if the statement agrees with the information
+FALSE            if the statement contradicts the information
+NOT GIVEN        if there is no information on this
+
+1 People may be temporarily confused when attempting to identify a person who looks like
+    someone else.
+
+2 When describing someone, people generally describe the person's whole face.
+
+3 The best remembered faces are those that have been seen frequently in the same pose.
+
+4 Face recognition improves in situations where observers are shown a very expressive
+    face.
+
+Questions 5 - 10
+Reading Passage 1 has eight paragraphs, A-H.
+Which paragraph contains the following information?
+Write the correct letter, A-H, in boxes 5-10 on your answer sheet.
+5 how certain types of face suggest ideas about the person's character
+6 a reference to the variability in the factors used to identify a person
+7 a reservation about the future usefulness of face recognition studies
+8 situations in which remembering a face can be vitally important
+9 the fact that some parts of the face may receive more attention than others
+10 examples of how mistakes may arise when identifying a person
+Questions 11 - 13
+
+Choose THREE letters, A-G.
+
+Write the correct letters in boxes 11-13 on your answer sheet
+
+Which THREE of the following problems are mentioned by the writer of the passage?
+
+          A the poor results obtained from the face recognition studies
+          B the difficulty of finding sufficiently well-known faces for research purposes
+          C the effect of age on the reliability of face recognition data
+          D the contradictory findings of some studies
+          E the difficulty in judging results from studies due to the variety of methods used
+          F an inability to assess the exact reasons for success in identifying faces
+          G a difficulty in applying information obtained from tests to everyday situations
+

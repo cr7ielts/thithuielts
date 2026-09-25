@@ -109,6 +109,13 @@ python audit_interactive.py reading 1           # soi nội dung: câu cụt, đ
 python gen_interactive.py                       # -> js/data/interactive/*.json + danh sách id
 ```
 
+Các script trên đọc văn bản đề theo thứ tự: **file gốc** trong `2. IELTS\…` nếu máy có, **không có thì lấy
+`tools/txt/<id>.txt`** — bản văn bản đã xuất sẵn và commit kèm repo (454 bài, 3.9 MB). Nhờ vậy máy khác
+(máy thứ hai, cloud session) vẫn bóc và sửa đề được dù không có thư mục tài liệu gốc.
+Khi thêm đề mới vào ngân hàng, chạy `python dump_text.py` ở máy có tài liệu để xuất thêm văn bản
+(`--force` để xuất lại hết). Bảy bài `forecast-06*`, `forecast-08-s4`, `forecast-10-s1` là PDF scan
+nên không rút được chữ — những bài này luôn ở chế độ PDF.
+
 Chỉ lưu khi dòng kiểm tra báo **ĐẠT** (đủ câu, đủ phương án, số câu khớp đáp án, đáp án đúng nằm trong các lựa chọn hiện ra).
 `audit_interactive.py` là cảnh báo mềm — đọc để biết bài nào nên xem lại bằng mắt.
 Xem thử giao diện không cần đăng nhập: chạy một web server tĩnh ở thư mục gốc rồi mở

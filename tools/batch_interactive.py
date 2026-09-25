@@ -18,12 +18,7 @@ def items_of(kind, part):
 
 
 def one(kind, item):
-    if kind == 'reading':
-        text = E.drop_junk(E.pdftext(E.real(E.RROOT, item['src'])))
-    else:
-        f = item['files'][0]
-        text = E.drop_junk(E.pdftext(E.real(E.LROOT, f['src']), f.get('pages')))
-    data = E.build(item, kind, text)
+    data = E.build(item, kind, E.raw_text(kind, item))
     return data, E.check(data, item)
 
 

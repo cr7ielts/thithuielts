@@ -61,6 +61,22 @@ def is_title_line(ln):
     return big and sum(x[:1].isupper() for x in big) / len(big) >= 0.7
 
 
+TXT = os.path.join(T, 'txt')
+
+
+def raw_text(kind, item):
+    """Văn bản đề: đọc thẳng từ tài liệu gốc; máy nào không có tài liệu thì dùng bản
+    đã xuất sẵn ở tools/txt/<id>.txt (sinh bằng dump_text.py)."""
+    try:
+        if kind == 'reading': return drop_junk(pdftext(real(RROOT, item['src'])))
+        f = next((x for x in item['files'] if x['type'] == 'pdf'), item['files'][0])
+        return drop_junk(pdftext(real(LROOT, f['src']), f.get('pages')))
+    except (FileNotFoundError, NotADirectoryError, StopIteration, OSError):
+        cache = os.path.join(TXT, item['id'] + '.txt')
+        if not os.path.exists(cache): raise
+        return drop_junk(open(cache, encoding='utf8').read())
+
+
 def real(root, rel):
     d = root
     for part in rel.split('/'):
@@ -418,13 +434,12 @@ def main():
     sections = js_items('bank-listening.js', 'LISTENING_SECTIONS')
     item = next((x for x in reading if x['id'] == iid), None)
     if item:
-        kind, text = 'reading', drop_junk(pdftext(real(RROOT, item['src'])))
+        kind = 'reading'
     else:
         item = next((x for x in listening + sections if x['id'] == iid), None)
         if not item: raise SystemExit('không có bài id này')
         kind = 'section' if 'section' in item else 'listening'
-        f = item['files'][0]
-        text = drop_junk(pdftext(real(LROOT, f['src']), f.get('pages')))
+    text = raw_text(kind, item)
     data = build(item, kind, text)
     bad = check(data, item)
     print(json.dumps(data, ensure_ascii=False, indent=1))

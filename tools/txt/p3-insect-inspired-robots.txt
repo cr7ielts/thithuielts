@@ -1,0 +1,119 @@
+    READING PASSAGE 3
+
+     You should spend about 20 minutes on Questions 27-40, which are based on Reading Passage 3
+     below.
+
+                       Insect-inspired robots
+
+               A recent conference reports on developments in biorobotics
+
+A A tiny insect navigates its way across featureless salt-pans. A cockroach successfully works out how to
+     scramble over an obstacle. The mantis shrimp scans its aquatic world through hyperspectral eyes.
+     Using the most basic of equipment and brains tinier than a pinhead, insects constantly solve complex
+     problems of movement vision and navigation-processing data that would challenge a supercomputer.
+     How they do it is driving one of the most exciting new fields of technology - biomimetics and biorobotics,
+     the imitation of insect ystems to control man-made machines. Delegates at a recent conference
+     presented some outcomes of their work in this area.
+
+B Dr Alex Zelinsky suggested that the method by which wasps use landmarks to find their way back to the
+     nest may one day be part of a system for navigating cars that 'know where to go. A research team led
+     by Dr Zelinsky has shown that a robot can navigate its way among 50 different landmarks by
+     recognising them individualiy using a panoramic camera. 'The inspiration came from biology, where
+     wasps use a practice called "turn back and look to orient themselves as they emerge from the nest. By
+     flying to and fro, they lock in images of the nest from different angles and perspectives, so they can
+     recognise it again,' he explained. The robot's panoramic camera logs the surrounding area and its key
+     landmarks, which are then sorted in its computer according to how reliable they are as navigational
+     aids. The landmarks are then scaled, from small to large, so that the robot can recognise whether it is
+     getting closer to or further away from them. Their location is built into a map in its 'mind' which operates
+     at different scales and instructs the robot whether to turn left or right at a particular mark. The
+     technology provides a general way for a machine to navigate an unknown landscape.
+
+C For three decades, Professor Ruediger Wehner has journeyed from Switzerland to the Sahara desert
+     where Cataglyphis, a tiny ant with a brain weighing just 0.1 mg, performs acts of navigational genius
+     when it leaves its nest, forages for food and returns successfully. Cataglyphis uses polarised light,
+     caused when air molecules scatter light, to orient and steer itself. Wehner's team found the ant has a
+     set of specialised photoreceptors along the upper rim of its eyes that detect polarised light, while other
+     receptors per form different navigational tasks. As the sun moves, the ant notes its direction each time it
+     leaves the nest and updates its internal compass. Using other eye receptors, it stores a 'snapshot'
+     image of landmarks close to the nest entrance in its eyes and compares this with what it sees as it
+     returns. The ant also has a way of measuring distance travelled, while a 'path integrator' periodically
+     informs the ant of its curent position relative to its point of departure. Rather than integrate all the
+     information it receives in its brain, the ant actually performs a number of complex calculations in
+     different organs. Like a supercomputer, the ant has many separate subroutines going on
+     simultaneously. Using the ant's ablllity to steer by polarised light and to stare and reuse landscape
+     images, Wehner and colleagues have built 'Sahabot', a small vehicle that uses polarisers and a digital
+     CCD camera ta store360� images of its surroundings. It navigates by using polarised sunlight and
+     comparing the cuirent images of landmarks to the ones in its memory.
+
+D Professor Robert Michelson had a different desert challenge - to design a flying robot that can not only
+     navigate but also stay aloft and hover in the thin atmosphere of Mars. Drawing inspiration from insect
+     flight, he has gone beyond nature to devise a completely new concept for a flying machine. The
+     'Entomopter' is a soit of double-ended dragonfly whose wings beat reciprocally. Michelson says that the
+     flapping-wing design gives the craft unusually high lift compared with a fixed-wing flyer, enabling it to fly
+     slowly or hover in the thin Martian air-whereas a fixed-wing craft would have to move at more than 400
+     km h and could not stop to explore.
+
+E Engineer Roger Quinn and entomologist Professor Roy Ritzmann are taking their inspiration from
+     cockroaches. According to Quinn and Ritzmann, the ability of cockroaches to run very fast over rough
+     terrain may one day give rise to a completely new all-terrain vehicle with six legs, or maybe even wheel-
+     like legs called 'whegs'. The key to the cockroach's remarkable cross-country performance lies partly in
+     the fact that its legs do a lot of the 'thinking' without having to consult te brain. Quinn and Ritzmann are
+     drawing on cockroach skills to create robotic walkers and control strategies that capture the remarkable
+     capacity of these insects to traverse complex terrain and navigate safely toward goals while avoiding
+     obstacles. The team has already designed a series of robots that run on six legs or on whegs. enabling
+     them to handle surprisingly rugged teirain.
+
+F International experts believe there are tremendous opportunities in biorobotics. However, delegates at
+     the conference had differing visions for the future of the science. While some were concerned that the
+     initial applications of blorobotics may be military, others such as Dr Barbara Webb, predicted swarms of
+     tiny, cheap, insect-like robots as society's cleaners and collectors. Sonja Kleiniogel hoped the study of
+     the hyperspectral eyes of the mantis shrimp might yield remote sensors that keep watch over the
+     environmental health of our oceans. Several delegates concerned about the ethical implications of
+     borobotics, and urged that close attention be paid to this as the science and technologies develop.
+Question 27-32
+Reading Passage 2 has six paragraphs, A-F.
+Which paragraph contains the following information?
+Write the correct letter, A-F, in boxes 27-32 on your answer sheet.
+
+ 27 positive and negative possibilities for the use of insect-inspired robots
+ 28 how perceived size is used as an aid to navigation
+ 29 an example of decision-making taking place in the limbs
+ 30 a description of a potential aid in space exploration
+ 31 the range of skills that have inspired biorobotics
+ 32 how a variety of navigational methods operate at the same time
+
+Questions 33-36
+Answer these questions below
+Choose NO MORE THAN THREE WORDS from the passage for each answer.
+Write your answer in boxes 33-36 on your answer sheet
+
+ 33 Which creatures see particularly well underwater?
+ 34 In addition to a computer, what technical equipment is fitted in Dr Zelinsky's robot?
+ 35 Where is the Cataglyphis ant found?
+ 36 What atmospheric effect helps the Catalyphis ant to know its direction?
+Questions 37-40
+Look at the following people (Questions 37-40) and the list of robots below.
+Match each people with the correct robot, A-G.
+Write the correct letter, A-G, in boxes 37-40 on your answer sheet.
+
+37 Dr Alex Zelinsky
+
+38 Professor Ruediger Wehner
+
+39 Professor Robert Michelson
+
+40 Roger Quinn and Professor Roy Ritzmann
+
+                                                List of Robots
+      A a robot that makes use of light as well as stored images for navigational
+
+             purposes
+      B a robot that can contribute to enviromental health
+      C a robot that can move over difficult surfaces
+      D a robot that categorises information from the environment according to its
+
+             usefulness
+      E a robot that can be used to clean surfaces and collect rubbish
+      F a robot that has improved on the ability of the insect on which it is based
+      G a robot that can replace soldiers in war
+

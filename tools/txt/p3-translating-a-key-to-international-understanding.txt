@@ -1,0 +1,132 @@
+READING PASSAGE 3
+
+You should spend about 20 minutes on Questions 27-40, which are based on Reading
+Passage 3 below.
+
+    Translating: a key to international understanding?
+
+A The term `translation' is used for all cases where the meaning of expressions in one
+     language (the `source' language) is turned into the meaning in another (the target
+     language), whether the medium is spoken, written, or signed. In specific professional
+     contexts, however, a distinction is drawn between work with the spoken or signed
+     language (interpreting), and work with the written language (translating), although
+     certain tasks blur this distinction.
+
+B It is sometimes said that there is no task more complex than translation - a claim that
+     can be readily believed when all the variables involved are taken into account.
+     Translators not only need to know their source language well; they must also have a
+     thorough understanding of the field of knowledge covered by the source text, and of
+     any social, cultural, or emotional connotations that need to be specified in the target
+     language if the intended effect is to be conveyed. The same special awareness needs
+     to be present for the target language, so that points of special phrasing, contemporary
+     fashions in expression, local expectations, and so on, can all be taken into account. On
+     the whole, translators work into their mother tongue (or language of habitual use), to
+     ensure a result that sounds as natural as possible - though some translators have
+     argued that, for certain types of text (e.g., scientific material) where translation accuracy
+     is more crucial than naturalness, it makes more sense for the translators to be more
+     fluent in the source language.
+
+C The aim of translation is to provide semantic equivalence between source and target
+     languages. This is what makes translation different from other linguistic activities, such
+     as adapting, pr�cis writing, and abstracting. However, there are many problems hidden
+     within this apparently simple statement, all to do with what standards of `equivalence'
+     should be expected and accepted.
+
+D Exact equivalence is of course impossible: no translator could provide a translation that
+     was a perfect parallel to the source text, in such respects as rhythm, puns and cultural
+     allusions. Such a parallel is not even possible when paraphrasing within a single
+     language: there is always some loss of information.
+E On the other hand, there are many kinds of inexact equivalence, any of which can be
+     successful at a certain level of practical functioning. It therefore follows that there is no
+     such thing as a `best' translation. The success of translation depends on the purpose
+     for which it was made, which in turn reflects the needs of the people for whom it was
+     made. A rough-and-ready translation of a letter can suffice to inform a firm of the nature
+     of an enquiry. A translation of a scientific article requires careful attention to meaning,
+     but little attention to stylistic features. The provision of a dubbed film script will warrant
+     scrupulous care over the synchronisation of lip movements, often at the expense of
+     content. Literary work requires a sensitive consideration of form as well as content, and
+     may prompt several translations, each of which emphasises a different aspect of the
+     original. It is easy to see that what might be `best' for one set of circumstances may be
+     entirely unsuitable for another.
+
+F Several different kinds of translation have been proposed to allow for this range of
+     possibilities. A pragmatic translation emphasises accuracy and knowledge of the
+     subject, as required for instruction manuals and much scientific research. In an
+     aesthetic translation, important for literary material, the focus is on preserving the
+     emotional as well as the cognitive content of the work, and on maintaining some level
+     of stylistic equivalence. Ethnographic or sociolinguistic translations aim to pay full
+     attention to the cultural backgrounds of the authors and the recipients, and take into
+     account differences between source and target languages, and the ways of life in which
+     they are embedded. And there are various kinds of linguistic translation, where the aim
+     is to convey the structural flavour of the original text, often in quite a literal manner,
+     emphasising such features as archaisms, dialectisms, and levels of formality. Most
+     translations, of course, are mixtures of these theoretical types, reflecting the complex
+     reality of language in use.
+
+G At another level, in a word-for-word translation each word in the source language is
+     translated by a word in the target language. The result often makes no sense,
+     especially when idiomatic constructions are used. In a literal translation, the linguistic
+     structure of the source text is followed, but is normalised according to the rules of the
+     target language. In a free translation, the linguistic structure of the source language is
+     ignored, and an equivalent is found based on the meaning it conveys.
+
+H Translators aim to produce a text that is as faithful to the original as circumstances
+     require or permit, and yet that reads as if it were written originally in the target
+     language. They aim to be `invisible people' - transferring content without drawing
+     attention to the considerable artistic and technical skills involved in the process. The
+     complexity of the task is apparent, but its importance is often underestimated, and its
+     practitioners' social status and legal rights undervalued. Some countries view
+     translation as a menial, clerical task, and pay their translators accordingly, while others
+     regard it as a major intellectual discipline in its own right. The question of status is
+     currently much debated, particularly in Europe, where demand for translators is
+     rocketing, especially in relation to the European Union.
+Questions 27-29
+Reading Passage 3 has eight paragraphs, A-H.
+Which paragraph contains the following information?
+Write the correct letter, A-H, in boxes 27-29 on your answer sheet.
+27 the effect that a client's requirements have on the nature of a translation
+28 contrasting attitudes towards translators
+29 a list of the areas of knowledge studied by translators
+
+Questions 30-33
+Complete the summary below.
+Choose NO MORE THAN TWO WORDS from paragraphs C, D and E for each answer.
+Write your answers in boxes 30-33 on your answer sheet.
+
+                                    The goal of translation
+
+Translation is an attempt to create a text in the target language which displays 30 ______
+with a source text. It is inevitable that not all information can be conveyed, however, so
+translations are best judged according to their 31 ______; for example, the translator of a
+business letter or scientific text does not need to consider its 32 ______ aspects, while
+someone dubbing a film may give a relatively low value to 33 ______.
+Questions 34-37
+Look at the following features of translating (Questions 34-37) and the types of translation
+below.
+Match each feature with the correct type of translation, A-F.
+Write the correct letter, A-F, in boxes 34-37 on your answer sheet.
+34 focuses on reproducing the content accurately
+35 looks at important cultural aspects of language use
+36 follows the original grammatical structures as required by the target language
+37 focuses on meaning without necessarily using the original grammatical structures
+
+                                              Types of Translation
+                                              A aesthetic
+                                              B ethnographic
+                                              C free
+                                              D literal
+                                              E pragmatic
+                                              F word-for-word
+
+Questions 38-40
+Choose THREE letters, A-F.
+Write the correct letters in boxes 38-40 on your answer sheet.
+Which THREE of the following points are mentioned by the writer of the passage?
+
+     A The objectives of translating are always clearly different from those of interpreting.
+     B A translator may need to consider the culture of the target language.
+     C Translation is an activity which requires professional training.
+     D It is difficult to specify what constitutes a very good translation.
+     E The skill required for translation is increasingly gaining recognition.
+     F A translation should give the impression of being an original work.
+

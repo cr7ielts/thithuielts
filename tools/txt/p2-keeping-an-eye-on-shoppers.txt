@@ -1,0 +1,144 @@
+READING PASSAGE 2
+
+You should spend about 20 minutes on Questions 14-26, which are based on Reading Passage 2
+below.
+
+Keeping an eye on shoppers
+
+Big shops are using elaborate technology to monitor and influence the
+                           behaviour of their customers
+
+A Several large retail chains utilise various         data on where their customers go, how
+    technologies to monitor customer habits,          long they slow down to look at different
+    increase profit margins, and enhance              products, and how they react to them.
+    product delivery. Retailers, it seems, are        This information can then be compared
+    buying the idea that by watching                  with the store's transaction log to
+    customers while they shop - what might            determine the effectiveness of store
+    be called `retail surveillance' - and             layout, product fixtures and other
+    redesigning their shops accordingly, they         variables. In-store designs and marketing
+    can get people to spend more.                     campaigns that work can be identified and
+                                                      worked on, and those that do not work can
+B One system, called Smartlane, has been              be replaced with something more
+    successfully trialled by several major            profitable.
+    retailers. It has two elements: sensors by
+    the doors count the number of people          D One of the largest customer-monitoring
+    entering and leaving the shop, and                projects undertaken so far is PRISM (or
+    sensors by the tills work out how fast the        `Pioneering Research for an In-Store
+    queues are moving and how many                    Metric'). The project involved the use of
+    `shopping units' - groups of people, such         sensors at the entrances and exits and in
+    as families or couples, that make                 some of the aisles of 160 stores across
+    one transaction between them - are                the US. These sensors recorded data on
+    standing in each queue. All this                  customer-traffic patterns, to which was
+    information can then be used to predict           added further information recorded by
+    how many tills will be needed up to an            human observers. By comparing the
+    hour in advance and monitor average               resulting data with sales information, it
+    waiting times and queue lengths. In some          was then possible to gain insight into
+    cases, a queue longer than one shopping           shoppers' behaviour. For example, when
+    unit triggers the opening of another till.        observational data on the number of
+    One British retailer said last year that the      children present during a shopping trip
+    monitoring system had reduced waiting             was taken into account, the results were
+    time for customers and helped to boost the        even more detailed: the PRISM results
+    firm's revenue.                                   showed that although children took part in
+                                                      only 13 per cent of food-shopping trips,
+C This is not the only technology keeping             shoppers bought more when accompanied
+    tabs on shoppers. Another supplier of             by them. Purchase of seasonal items was
+    customer-monitoring systems uses dual-            two and a half times more likely with
+    lens cameras, which are more accurate             children in tow but surprisingly there was
+    than single-lens cameras, in tracking and         no correlation found between the presence
+    counting. Rather than monitoring queue            of children on a shopping trip and higher
+    lengths, however, the system, called              spending on sweets.
+    BehaviorIQ, is used by retailers to gather
+E A further adaptation of this technology is           notify customers explicitly that their
+    VideoMining, which uses a combination of           conversations are being recorded.
+    video cameras and software to capture and
+    analyse thousands of hours of footage of       G As useful as customer-tracking systems
+    customer behaviour. As well as providing           may be for protecting harassed staff or
+    information about customer behaviour, the          minimising shoplifting, however, their
+    firm's software can also determine each            primary objectives are clear. In an age
+    shopper's sex, age range and ethnic group          when traditional `bricks and mortar'
+    with an accuracy of around 80 per cent,            retailers face stiff competition from online
+    says Jeff Hershey of VideoMining. The              merchants, any means they can use to get
+    system can even be programmed to detect            customers into their shops and buying as
+    the characteristic behaviour of shoplifters        much as possible is seen as a worthwhile
+    as they steal goods from places in the             investment.
+    store. Inevitably, all this raises doubts
+    about privacy. Counting customers with
+    motion sensors as they enter a supermarket
+    is one thing, but sorting them into social or
+    racial groups using video analysis is
+    another. Retailers respond that none of the
+    footage or information about individual
+    shoppers is stored and that customers are
+    generally willing to give up some personal
+    information if they feel they are getting
+    some benefit in return.
+
+F Shoppers are not just being monitored by
+    cameras and heat sensors, however;
+    sometimes their speech is being recorded,
+    too. Recordant, an in-store monitoring
+    system operated by a company based in
+    Atlanta, provides shop assistants with
+    digital-audio recorders, to be hung around
+    their necks, which record all their
+    conversations with shoppers. At the end of
+    each day the recording devices are
+    plugged into special docking stations and
+    the recordings are uploaded to Recordant's
+    headquarters for analysis. Its software
+    scans the recorded dialogue for particular
+    words or phrases without the need for any
+    human input, in order to provide accurate
+    information on employee performance and
+    customer behaviour. By providing precise
+    measurements, the technology allows
+    retailers to refine their employee training
+    programmes. They can even programme
+    the system to search for any mention of
+    their competitors. Unlike systems based on
+    video cameras or sensors, users of
+    Recordant's technology are required to
+Questions 14 - 17
+Reading Passage 2 has seven paragraphs, A-G.
+Which paragraph contains the following information?
+Write the correct letter, A-G, in boxes 14-17 on your answer sheet.
+14 a mention of the influence certain technology has on professional development of staff
+15 how technology can identify the profile of individual customers
+16 a mention of a significant current challenge to conventional shops
+17 how retailers use the data to evaluate the way their products are presented
+
+Questions 18 - 23
+Look at the following statements (Questions 19-23) and the list of researchers below.
+Match each statement with the correct researcher, A-E.
+Write the correct letter, A-E, in boxes 18-23 on your answer sheet.
+NB You may use any letter more than once.
+18 Computers search for specific language used in the store.
+19 Feedback is collected from people who watch customer activity.
+20 Staff wear the monitoring technology.
+21 It is possible to identify criminal behaviour in a store.
+22 Only customer arrivals, departures and lines are monitored.
+23 Cameras focus on the way customers move around the store and the places they stop.
+
+                       List of Technologies
+
+                   A Smartlane
+                   B BehaviorIQ
+                   C PRISM
+                   D VideoMining
+                   E Recordant
+
+Questions 24 - 26
+Complete the sentences below.
+
+Choose NO MORE THAN TWO WORDS from the passage for each answer.
+
+Write your answers in boxes 24-26 on your answer sheet.
+
+24 In the Smartlane system, people who shop together are referred to as ............ .
+
+25 The PRISM project identified increased spending when shoppers had ............ with
+      them.
+
+26 The Recordant technology looks at customer behaviour and employee problems, and
+      can even check whether shoppers talk about the shop's ............ .
+
