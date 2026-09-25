@@ -61,7 +61,7 @@ export const DURATION = {
 
 // Tên hiển thị trên logo, thanh trên cùng và trang đăng nhập
 export const BRAND = {
-  name: "IELTS Mock",   // tên đầy đủ — chữ sau dấu cách cuối được tô màu olive
-  short: "IM",          // 2 chữ trong ô logo
-  tagline: "Thi thử IELTS 4 kỹ năng",
+  name: "IELTSCD",      // tên đầy đủ — chữ sau dấu cách cuối được tô màu olive
+  short: "ICD",         // chữ trong ô logo
+  tagline: "IELTS4L",
 };
