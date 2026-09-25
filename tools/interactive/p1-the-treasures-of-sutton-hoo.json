@@ -38,17 +38,22 @@
    "from": 7,
    "to": 13,
    "kind": "gap",
-   "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer. England circular shape",
+   "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
    "notes": [
     {
      "level": 2,
      "bullet": "",
-     "text": "England circular shape Shield gold, gemstones and {{7:...}} and a form of copper bird Helmet iron {{8:...}} and England found in many bird pieces Dish silver {{9:...}} of a {{10:...}} has handles female Purse lid gold images of Frankish contained 37 coins {{11:...}}"
+     "text": "England circular shape"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Bowls silver Crosses probably ten were found {{12:...}} along with some {{13:...}}"
+     "text": "Shield gold, gemstones and {{7}} and a form of copper bird Helmet iron {{8}} and England found in many bird pieces Dish silver {{9}} of a {{10}} has handles female Purse lid gold images of Frankish contained 37 coins {{11}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Bowls silver Crosses probably ten were found {{12}} along with some {{13}}"
     }
    ],
    "noteTitle": "Artefact        Material(s)  Decoration                Origin         Other details"

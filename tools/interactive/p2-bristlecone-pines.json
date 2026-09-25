@@ -114,17 +114,17 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "making new needles requires {{21:...}}"
+     "text": "making new needles requires {{21}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "trees damaged by weather or fire can exist with only small areas of {{22:...}}"
+     "text": "trees damaged by weather or fire can exist with only small areas of {{22}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "bristlecone wood is very {{23:...}}"
+     "text": "bristlecone wood is very {{23}}"
     },
     {
      "level": 0,
@@ -134,12 +134,12 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "trees don't decay because of the {{24:...}}"
+     "text": "trees don't decay because of the {{24}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "fires don't spread easily because of the {{25:...}} between trees and absence of {{26:...}}"
+     "text": "fires don't spread easily because of the {{25}} between trees and absence of {{26}}"
     }
    ],
    "noteTitle": "Factors in the survival of bristlecone pines"

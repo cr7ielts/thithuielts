@@ -16,12 +16,12 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "The larvae of a type of {{1:...}} were a serious pest in sugar cane fields."
+     "text": "The larvae of a type of {{1}} were a serious pest in sugar cane fields."
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "Its larvae ate the {{2:...}} of the plant."
+     "text": "Its larvae ate the {{2}} of the plant."
     },
     {
      "level": 0,
@@ -36,7 +36,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "{{3:...}}"
+     "text": "{{3}}"
     },
     {
      "level": 0,
@@ -56,22 +56,22 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "In the 19th century French {{4:...}} used toads."
+     "text": "In the 19th century French {{4}} used toads."
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "In Australia a {{5:...}} stopped the spread of prickly-pear cactus."
+     "text": "In Australia a {{5}} stopped the spread of prickly-pear cactus."
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "Cane toads were brought to Australia from {{6:...}}"
+     "text": "Cane toads were brought to Australia from {{6}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "Cane toads proved to be a {{7:...}} as pest control."
+     "text": "Cane toads proved to be a {{7}} as pest control."
     }
    ],
    "noteTitle": "Pest control"

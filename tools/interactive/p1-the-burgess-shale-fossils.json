@@ -34,12 +34,17 @@
    "from": 6,
    "to": 9,
    "kind": "gap",
-   "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each",
+   "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Burgess Shale Formation",
    "notes": [
     {
      "level": 2,
      "bullet": "",
-     "text": "Burgess Shale Formation"
+     "text": "Burgess Shale"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Formation"
     },
     {
      "level": 0,
@@ -93,12 +98,22 @@
    "from": 10,
    "to": 13,
    "kind": "gap",
-   "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+   "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer. Opabinia Feature Nectocaris",
    "notes": [
     {
      "level": 0,
      "bullet": "",
-     "text": "Opabinia Feature Nectocaris"
+     "text": "Opabinia"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "Feature"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Nectocaris"
     },
     {
      "level": 2,

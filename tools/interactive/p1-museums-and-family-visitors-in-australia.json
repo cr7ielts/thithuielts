@@ -16,17 +16,22 @@
     {
      "level": 2,
      "bullet": "•",
-     "text": "3 - 8 years old � present {{1:...}} topics in National � Children's interesting ways"
+     "text": "3 - 8 years old � present {{1}} topics in National � Children's interesting ways"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Museum of Gallery � Australia � stimulate children's senses Australian � � Children National � Maritime � KSpace � Museum � Our Place � use {{2:...}} to imagine the"
+     "text": "Museum of Gallery �"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Australia � stimulate children's senses Australian � � Children National � Maritime � KSpace � Museum � Our Place � use {{2}} to imagine the"
     },
     {
      "level": 2,
      "bullet": "•",
-     "text": "Children of future {{4:...}} � school age"
+     "text": "Children of future {{4}} � school age"
     },
     {
      "level": 0,
@@ -36,7 +41,7 @@
     {
      "level": 2,
      "bullet": "•",
-     "text": "Pirates � {{3:...}}"
+     "text": "Pirates � {{3}}"
     },
     {
      "level": 2,
@@ -51,7 +56,7 @@
     {
      "level": 2,
      "bullet": "•",
-     "text": "Zoe's � Pre-schoolers House � use play to encourage {{5:...}} between children"
+     "text": "Zoe's � Pre-schoolers House � use play to encourage {{5}} between children"
     }
    ],
    "noteTitle": "Dedicated museum spaces for families with children"
@@ -60,12 +65,17 @@
    "from": 6,
    "to": 9,
    "kind": "gap",
-   "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each",
+   "instruction": "Complete the notes below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. Family visits to museums When families visit museums, they usually:",
    "notes": [
     {
      "level": 2,
      "bullet": "",
-     "text": "Family visits to museums When families visit museums, they usually:"
+     "text": "Family visits to museums"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "When families visit museums, they usually:"
     },
     {
      "level": 0,
@@ -75,7 +85,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "prefer exhibits that are {{6:...}}"
+     "text": "prefer exhibits that are {{6}}"
     },
     {
      "level": 0,
@@ -90,7 +100,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "enjoy seeing their {{7:...}} a second time"
+     "text": "enjoy seeing their {{7}} a second time"
     },
     {
      "level": 0,
@@ -100,12 +110,12 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "sit or take a {{8:...}}"
+     "text": "sit or take a {{8}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "stay for a maximum of {{9:...}}"
+     "text": "stay for a maximum of {{9}}"
     }
    ],
    "noteTitle": "answer."

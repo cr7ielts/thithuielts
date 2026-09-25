@@ -39,7 +39,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "FitzRoy received weather reports produced by ships using reliable {{6:...}}"
+     "text": "FitzRoy received weather reports produced by ships using reliable {{6}}"
     },
     {
      "level": 0,
@@ -49,17 +49,17 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "storm warnings were telegraphed to {{7:...}} along the shore"
+     "text": "storm warnings were telegraphed to {{7}} along the shore"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "signals for ships were displayed using raised {{8:...}}"
+     "text": "signals for ships were displayed using raised {{8}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "the storm warning service was the greatest development in sea safety since the {{9:...}} was introduced August 1861: Public weather forecasting service"
+     "text": "the storm warning service was the greatest development in sea safety since the {{9}} was introduced August 1861: Public weather forecasting service"
     },
     {
      "level": 0,
@@ -69,22 +69,22 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "frequently used by the English Queen for safe trips to a favourite {{10:...}}"
+     "text": "frequently used by the English Queen for safe trips to a favourite {{10}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "FitzRoy's forecasts were popular with fishermen but not with boat {{11:...}}"
+     "text": "FitzRoy's forecasts were popular with fishermen but not with boat {{11}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "in modern times FitzRoy's {{12:...}} is used for a marine area"
+     "text": "in modern times FitzRoy's {{12}} is used for a marine area"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "FitzRoy produced a {{13:...}} which was respected by the scientific community"
+     "text": "FitzRoy produced a {{13}} which was respected by the scientific community"
     }
    ],
    "noteTitle": "February 1861: Storm warning service"

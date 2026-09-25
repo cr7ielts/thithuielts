@@ -131,7 +131,12 @@
     {
      "level": 2,
      "bullet": "",
-     "text": "Stress: its effects and how to reduce it Statistics on workers' compensation show that people take more time off work due to stress than for any other {{22}} at work. On average, workers who take time off because of stress stay away for {{23}}. This absence comes at a high price -- while the number of insurance claims due to stress amount to only {{24}} of the total, they account for a much higher proportion of the cost of claim payments."
+     "text": "Stress: its effects and how to reduce it"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Statistics on workers' compensation show that people take more time off work due to stress than for any other {{22}} at work. On average, workers who take time off because of stress stay away for {{23}}. This absence comes at a high price -- while the number of insurance claims due to stress amount to only {{24}} of the total, they account for a much higher proportion of the cost of claim payments."
     },
     {
      "level": 0,

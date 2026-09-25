@@ -101,14 +101,25 @@ def gapify(s):
 
 # ---------------- tách khối theo từng nhóm câu hỏi ----------------
 def blocks(text, want):
-    """[(from, to, text)] theo thứ tự xuất hiện, chỉ giữ nhóm nằm trong danh sách want"""
-    hits = []
+    """[(from, to, text)] theo thứ tự xuất hiện, chỉ giữ nhóm nằm trong danh sách want.
+    Một số đề in sai dải câu ("Questions 1-7" nhưng có tới câu 8, "Questions 36-40" nhưng
+    câu bắt đầu từ 37) — dải trong bank-*.js mới đúng, nên khi không khớp cả cặp thì
+    khớp theo số câu đầu, rồi tới số câu cuối."""
+    heads = []
     # "Questions 14-18" hoặc nhóm một câu "Question 40"
     for m in re.finditer(r'(?im)^[^\S\n]*Questions?\s+(\d{1,2})(?:\s*(?:' + DASH + r'|to|and|&)\s*(\d{1,2}))?\b.*$', text):
-        a = int(m.group(1)); b = int(m.group(2) or a)
-        if (a, b) in want: hits.append((m.start(), m.end(), a, b))
+        if re.search(r'(?i)which are based on|should spend', m.group(0)): continue   # dòng dẫn cả bài
+        heads.append((m.start(), m.end(), int(m.group(1)), int(m.group(2) or m.group(1))))
+    hits, used = [], set()
+    for a, b in sorted(want):
+        h = (next((h for h in heads if (h[2], h[3]) == (a, b) and h[0] not in used), None)
+             or next((h for h in heads if h[2] == a and h[0] not in used), None)
+             or next((h for h in heads if h[3] == b and h[0] not in used), None))
+        if not h: continue
+        used.add(h[0]); hits.append((h[0], a, b))
+    hits.sort()
     out = []
-    for i, (s0, e0, a, b) in enumerate(hits):
+    for i, (s0, a, b) in enumerate(hits):
         end = hits[i + 1][0] if i + 1 < len(hits) else len(text)
         out.append((a, b, text[s0:end]))
     return out
@@ -171,7 +182,7 @@ def inline_question(lines, n, lo, hi):
 
 
 # "6 ______", "8 $ ______", "10 ....." — ký hiệu giữa số câu và chỗ trống được giữ lại
-BLANK = r'(\d{1,2})[^\S\n]*([^\w\s]{0,3})[^\S\n]*(?:_{3,}|[.·…]{3,})'
+BLANK = r'(\d{1,2})[^\S\n]*([^\w\s._·…]{0,3})[^\S\n]*(?:_{3,}|[.·…]{3,})'
 BULLET = r'[\u2022\ufffd\u25aa\u25cf\u00b7*\u2212\-\u2013\u2014]'
 LEADIN = re.compile(r'(?i)^(complete|choose|write|read|questions?)\b')
 
@@ -206,13 +217,13 @@ def notes_of(blk, lo, hi, bank=None):
         started = True
         lvl = 0 if indent < 6 else 1 if indent < 12 else 2
         prev = items[-1] if items else None
-        # dòng tiêu đề nhỏ trong ghi chú: ngắn, viết hoa, nằm ngay sau một gạch đầu dòng
-        heading = (not blank and len(body) < 60 and body[:1].isupper()
-                   and bool(prev) and prev['bullet'] and indent <= prev['ind'])
+        # tiêu đề nhỏ trong ghi chú: dòng ngắn, viết hoa, không có chỗ trống
+        head = not bullet and not blank and len(body) < 60 and body[:1].isupper()
+        heading = head and bool(prev) and prev['bullet'] and indent <= prev['ind']
         new = (bullet or not prev
                or prev['text'].rstrip().endswith(('.', '?', '!', ':'))
-               or heading)
-        if new: items.append({'level': lvl, 'bullet': '•' if bullet else '', 'text': body, 'ind': indent})
+               or heading or prev['head'])
+        if new: items.append({'level': lvl, 'bullet': '•' if bullet else '', 'text': body, 'ind': indent, 'head': head})
         else: prev['text'] += ' ' + body
     got = set()
 
@@ -223,7 +234,7 @@ def notes_of(blk, lo, hi, bank=None):
 
     for it in items:
         it['text'] = clean(re.sub(BLANK, slot, it['text']))
-        it.pop('ind', None)
+        it.pop('ind', None); it.pop('head', None)
     items = [it for it in items if it['text']]
     if got != set(range(lo, hi + 1)) or not items: return None
     return {'title': title, 'items': items}

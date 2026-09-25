@@ -11,7 +11,17 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "Celluloid 1860s Country Properties of origin USA can be soften and � billiard balls reshaped by heat (original use) {{2}} 1907 USA can't be softened after � cutlery {{4}} setting; good insulator; � clothing Polythene 1930s resistant to water and � {{1}} acid"
+     "text": "Celluloid 1860s"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "Country Properties"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "of origin USA can be soften and � billiard balls reshaped by heat (original use) {{2}} 1907 USA can't be softened after � cutlery {{4}} setting; good insulator; � clothing Polythene 1930s resistant to water and � {{1}} acid"
     },
     {
      "level": 2,
@@ -56,7 +66,12 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "Polystyrene 1930s Germany resembles {{6}} � food containers"
+     "text": "Polystyrene"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "1930s Germany resembles {{6}} � food containers"
     },
     {
      "level": 2,

@@ -53,12 +53,12 @@
     {
      "level": 1,
      "bullet": "•",
-     "text": "trees may be falling down because of {{7:...}} from nearby fields"
+     "text": "trees may be falling down because of {{7}} from nearby fields"
     },
     {
      "level": 1,
      "bullet": "•",
-     "text": "lone trees are at risk from {{8:...}}"
+     "text": "lone trees are at risk from {{8}}"
     },
     {
      "level": 0,
@@ -73,17 +73,17 @@
     {
      "level": 1,
      "bullet": "•",
-     "text": "carried out to create space for {{9:...}} activity"
+     "text": "carried out to create space for {{9}} activity"
     },
     {
      "level": 1,
      "bullet": "•",
-     "text": "practice of {{10:...}} makes seed germination difficult"
+     "text": "practice of {{10}} makes seed germination difficult"
     },
     {
      "level": 1,
      "bullet": "•",
-     "text": "disappearance of certain {{11:...}} which dispersed baobab seeds"
+     "text": "disappearance of certain {{11}} which dispersed baobab seeds"
     },
     {
      "level": 0,
@@ -93,12 +93,12 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "making {{12:...}} of areas of relatively undamaged baobab forest"
+     "text": "making {{12}} of areas of relatively undamaged baobab forest"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "producing a {{13:...}} showing importance of baobab in local culture"
+     "text": "producing a {{13}} showing importance of baobab in local culture"
     }
    ],
    "noteTitle": "Baobabs under threat"

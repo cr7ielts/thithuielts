@@ -11,6 +11,35 @@ def slug(s):
     return re.sub(r'[^a-z0-9]+', '-', s).strip('-')[:60]
 
 
+# Sửa tay 10 bài dò lại ngày 2026-09-25: đề PDF gốc ghi sai dải "Questions a-b"
+# (thiếu câu cuối của nhóm, hoặc lặp số câu sang nhóm sau), nên bộ sinh cắt sai nhóm.
+# Đáp án bổ sung lấy từ key.docx của chính bài đó. 'nhóm cũ': 'nhóm đúng' (None = bỏ nhóm).
+FIXES = {
+    'p1-tunnelling-under-the-thames': ({'1-7': '1-8'}, {8: 'TRUE', 9: 'worm'}),
+    'p2-ideal-homes': ({'24-26': '23-26'}, {23: 'FALSE'}),
+    'p2-keeping-an-eye-on-shoppers': ({'19-23': None}, {}),          # câu dẫn, không phải nhóm
+    'p2-the-impact-of-invasive-species': ({'14-18': '14-19'}, {19: 'D'}),
+    'p3-images-and-places': ({'27-31': '27-32'}, {32: 'ii'}),
+    'p3-looking-at-daily-life-in-ancient-rome': ({'31-35': '31-36'}, {36: 'NO'}),
+    'p3-research-into-the-effects-of-different-teaching-styles': ({'27-31': '27-33'}, {32: 'H', 33: 'E'}),
+    'p3-science-in-the-kitchen': ({'27-30': '27-31'}, {31: 'NOT GIVEN'}),
+    'p3-sea-change-for-salinity': ({'36-40': '37-40'}, {}),          # câu bắt đầu từ 37
+    'p3-when-people-are-deaf-to-music': ({'32-36': '32-35'}, {}),    # câu 36 thuộc nhóm sau
+}
+
+
+def apply_fix(sid, groups, key):
+    moves, adds = FIXES[sid]
+    for old, new in moves.items():
+        a, b = (int(x) for x in old.split('-'))
+        g = next((g for g in groups if (g['from'], g['to']) == (a, b)), None)
+        if g is None: raise SystemExit(f'{sid}: không thấy nhóm {old} để sửa')
+        if new is None: groups.remove(g)
+        else: g['from'], g['to'] = (int(x) for x in new.split('-'))
+    for n, v in adds.items(): key[n] = [v]
+    groups.sort(key=lambda g: g['from'])
+
+
 out, seen = [], set()
 for r in P:
     if not r['ok']: continue
@@ -41,6 +70,7 @@ for r in P:
         r['ok'] = False
         r['problems'].append('answer letter outside the range given in the question (groups may be misread)')
         continue
+    if sid in FIXES: apply_fix(sid, r['groups'], key)
     out.append({
         'id': sid, 'part': int(r['part']), 'title': r['title'],
         'src': f"Passage {r['part']}/{r['folder']}/{r['pdf']}",

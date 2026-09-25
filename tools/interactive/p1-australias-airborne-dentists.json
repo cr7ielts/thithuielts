@@ -47,17 +47,17 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "need to bring equipment including {{8:...}} for records"
+     "text": "need to bring equipment including {{8}} for records"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "aircraft used to carry equipment have restricted {{9:...}}"
+     "text": "aircraft used to carry equipment have restricted {{9}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "problems offering some services, e.g., fitting {{10:...}}"
+     "text": "problems offering some services, e.g., fitting {{10}}"
     },
     {
      "level": 0,
@@ -77,7 +77,7 @@
     {
      "level": 2,
      "bullet": "",
-     "text": "{{11:...}} and {{12:...}} for regular use {{13:...}} to protect teeth of sports players"
+     "text": "{{11}} and {{12}} for regular use {{13}} to protect teeth of sports players"
     }
    ],
    "noteTitle": "Challenges faced by RFDS dentists"

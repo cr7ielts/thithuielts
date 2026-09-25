@@ -91,12 +91,22 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "Over-the-counter drugs First, a proposal is written by the {{33}}. Then several designs are produced by the {{34}}. Finally, selected designs are shown to {{35}}."
+     "text": "Over-the-counter drugs"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Prescription-only drugs The {{36}} create the design. The design is then passed to {{37}}."
+     "text": "First, a proposal is written by the {{33}}. Then several designs are produced by the {{34}}. Finally, selected designs are shown to {{35}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Prescription-only drugs"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The {{36}} create the design. The design is then passed to {{37}}."
     }
    ],
    "noteTitle": "Packaging design in the pharmaceutical industry"

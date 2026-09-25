@@ -90,7 +90,12 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "Once extracted, the limestone is made into {{12}}. or, through a {{13}} process, can be used to make quicklime."
+     "text": "Once extracted, the limestone"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "is made into {{12}}. or, through a {{13}} process, can be used to make quicklime."
     }
    ],
    "noteTitle": "How the limestone is extracted and used"

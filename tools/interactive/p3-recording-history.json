@@ -203,12 +203,12 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "The Internet Archive is making regular scans so that future generations will be able to tell what the internet was like in the past. A lot of material is already available, including records of important {{37:...}} events. However, some {{38:...}} of the internet remain unavailable to {{39:...}} people."
+     "text": "The Internet Archive is making regular scans so that future generations will be able to tell what the internet was like in the past. A lot of material is already available, including records of important {{37}} events. However, some {{38}} of the internet remain unavailable to {{39}} people."
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "The data will be copied regularly so that it remains {{40:...}} in the future. But information from before 1996 is already almost impossible to find."
+     "text": "The data will be copied regularly so that it remains {{40}} in the future. But information from before 1996 is already almost impossible to find."
     }
    ],
    "noteTitle": "Internet Archive"

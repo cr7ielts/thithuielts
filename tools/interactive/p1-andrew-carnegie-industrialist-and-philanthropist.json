@@ -16,12 +16,12 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "found employment in the same workplace as his {{1:...}}"
+     "text": "found employment in the same workplace as his {{1}}"
     },
     {
      "level": 0,
      "bullet": "•",
-     "text": "educated himself through books, theatrical performances and {{2:...}}"
+     "text": "educated himself through books, theatrical performances and {{2}}"
     },
     {
      "level": 0,
@@ -36,7 +36,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "became {{3:...}} to Thomas A Scott at Pennsylvania Railroad 1865 - 1870"
+     "text": "became {{3}} to Thomas A Scott at Pennsylvania Railroad 1865 - 1870"
     },
     {
      "level": 0,
@@ -46,7 +46,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "realised that changing engineering needs would require a greater demand for {{4:...}}"
+     "text": "realised that changing engineering needs would require a greater demand for {{4}}"
     },
     {
      "level": 0,
@@ -56,7 +56,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "- reducing {{5:...}}"
+     "text": "- reducing {{5}}"
     },
     {
      "level": 1,
@@ -66,7 +66,7 @@
     {
      "level": 1,
      "bullet": "•",
-     "text": "reinvesting profit and sometimes borrowing money from {{6:...}}"
+     "text": "reinvesting profit and sometimes borrowing money from {{6}}"
     },
     {
      "level": 0,
@@ -86,7 +86,7 @@
     {
      "level": 2,
      "bullet": "•",
-     "text": "arranging future {{7:...}} and innovations for factories"
+     "text": "arranging future {{7}} and innovations for factories"
     },
     {
      "level": 0,

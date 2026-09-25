@@ -30,17 +30,22 @@
    "from": 5,
    "to": 9,
    "kind": "gap",
-   "instruction": "Complete the flow-chart below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each",
+   "instruction": "Complete the flow-chart below. Choose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer. The events after the river flooded Tobin found a human skull.",
    "notes": [
     {
      "level": 2,
      "bullet": "",
-     "text": "The events after the river flooded Tobin found a human skull."
+     "text": "The events after the river flooded"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "Tobin found a human skull."
     },
     {
      "level": 1,
      "bullet": "",
-     "text": "The {{5:...}} were initially involved in trying to explain the presence of the skull."
+     "text": "The {{5}} were initially involved in trying to explain the presence of the skull."
     },
     {
      "level": 2,
@@ -50,22 +55,22 @@
     {
      "level": 2,
      "bullet": "",
-     "text": "Dr Koelmeyer suggested it was a {{6:...}} skull."
+     "text": "Dr Koelmeyer suggested it was a {{6}} skull."
     },
     {
      "level": 2,
      "bullet": "",
-     "text": "Dr Watt recommended {{7:...}} to establish the skull's age."
+     "text": "Dr Watt recommended {{7}} to establish the skull's age."
     },
     {
      "level": 2,
      "bullet": "",
-     "text": "A bone {{8:...}} was sent to the GNS."
+     "text": "A bone {{8}} was sent to the GNS."
     },
     {
      "level": 2,
      "bullet": "",
-     "text": "The age of the skull was about {{9:...}} years."
+     "text": "The age of the skull was about {{9}} years."
     }
    ],
    "noteTitle": "answer."
@@ -99,7 +104,7 @@
     {
      "level": 1,
      "bullet": "•",
-     "text": "{{10:...}}"
+     "text": "{{10}}"
     },
     {
      "level": 1,
@@ -124,7 +129,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "evidence of this expedition found elsewhere by {{11:...}}"
+     "text": "evidence of this expedition found elsewhere by {{11}}"
     },
     {
      "level": 0,
@@ -139,7 +144,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "Hagerty and Edgar arrived in 1806 from {{12:...}}, where they had been imprisoned"
+     "text": "Hagerty and Edgar arrived in 1806 from {{12}}, where they had been imprisoned"
     },
     {
      "level": 0,
@@ -149,7 +154,7 @@
     {
      "level": 0,
      "bullet": "•",
-     "text": "Ruamahanga skull may have reached New Zealand in 17th century after a {{13:...}}"
+     "text": "Ruamahanga skull may have reached New Zealand in 17th century after a {{13}}"
     }
    ],
    "noteTitle": "Problem of the skull's origins"
