@@ -8,7 +8,8 @@ import extract_interactive as E
 
 def items_of(kind, part):
     if kind == 'reading':
-        return [x for x in E.js_items('bank-reading.js', 'READING_BANK') if not part or x['part'] == int(part)]
+        xs = E.js_items('bank-reading.js', 'READING_BANK') + E.js_items('bank-vol9.js', 'VOL9_READING')
+        return [x for x in xs if not part or x['part'] == int(part)]
     if kind == 'listening':
         return E.js_items('bank-listening.js', 'LISTENING_BANK')
     if kind == 'section':

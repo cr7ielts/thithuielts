@@ -109,7 +109,7 @@ Menu **Ngân hàng đề / Practice bank**: học sinh làm **từng passage Rea
 hoặc **từng section Listening** (10 câu, 10 phút — xếp theo Section 1–4 và theo tiêu đề bài nghe),
 đề PDF hiện bên trái, phiếu trả lời bên phải, chấm ngay và lưu vào Lịch sử. Listening đủ 40 câu thì quy ra band.
 
-- Đáp án nằm trong `js/data/bank-reading.js` (273 bài) và `js/data/bank-listening.js` (39 đề, 149 section — gồm Actual Test Vol 8, 9) — sinh tự động từ thư mục tài liệu,
+- Đáp án nằm trong `js/data/bank-reading.js` (273 bài) và `js/data/bank-vol9.js` (10 bài Actual Test Vol 9) và `js/data/bank-listening.js` (39 đề, 149 section — gồm Actual Test Vol 8, 9) — sinh tự động từ thư mục tài liệu,
   bài nào đáp án có vấn đề được liệt kê trong `bank-report.md`.
 - File đề/audio nằm trên Firebase Storage (`bank/…`, chỉ người đã đăng nhập mới xem được).
   Giáo viên tải lên **một lần**: Ngân hàng đề → **Tải file đề lên** → chọn thư mục `5. READING IN PASSAGES`, bấm Tải lên;
@@ -136,6 +136,12 @@ số câu in trùng hoặc lệch so với đáp án, bài đọc in 2 cột.
 
 Bài chưa bóc nội dung vẫn giữ cách cũ (PDF + phiếu trả lời), nên có thể chuyển dần từng bài.
 
+**Actual Test Vol 9** (`js/data/bank-vol9.js`, sinh bởi `tools/gen_vol9.py`) là 10 passage lấy từ
+"VOL 1-9 2/VOL 9 - ORIGINAL EXAMS/READING" — đề và đáp án đều là .docx chữ thật. Những bài này
+**không có file PDF** (`files: []`) nên chỉ chạy ở chế độ tương tác; giáo viên không phải tải file nào lên.
+Trong 24 passage của VOL 9: 11 bài ngân hàng đã có sẵn, 2 bài bỏ vì file gốc mất nhãn A/B/C của
+phương án hoặc thiếu một đáp án, 1 bài (Test 3 Passage 3) thiếu đáp án câu 40 trong file key.
+
 **Bóc một bài mới:**
 
 ```bash
@@ -144,6 +150,7 @@ python extract_interactive.py <id-bài> --save   # một bài: in JSON + dòng "
 python batch_interactive.py reading 1 --save    # cả nhóm: reading 1|2|3, listening, section 1-4
 python audit_interactive.py reading 1           # soi nội dung: câu cụt, đề bài lẫn nội dung, bài đọc thiếu…
 python gen_interactive.py                       # -> js/data/interactive/*.json + danh sách id
+python gen_vol9.py [--save]                     # riêng Actual Test Vol 9 (.docx -> bank-vol9.js)
 ```
 
 Các script trên đọc văn bản đề theo thứ tự: **file gốc** trong `2. IELTS\…` nếu máy có, **không có thì lấy

@@ -35,40 +35,94 @@
    "to": 9,
    "kind": "letter",
    "instruction": "Choose the correct letter, A, B, C or D.",
-   "bank": [
-    {
-     "v": "A",
-     "t": "have a pleasant-smelling fragrance."
-    },
-    {
-     "v": "B",
-     "t": "be a multi-purpose cleaner."
-    },
-    {
-     "v": "C",
-     "t": "have fewer ingredients than other cleaners."
-    },
-    {
-     "v": "D",
-     "t": "cause less damage to the natural surroundings."
-    }
-   ],
    "questions": [
     {
      "n": 6,
-     "text": "Ozkeen wanted Shower Power to"
+     "text": "Ozkeen wanted Shower Power to",
+     "options": [
+      {
+       "v": "A",
+       "t": "have a pleasant-smelling fragrance."
+      },
+      {
+       "v": "B",
+       "t": "be a multi-purpose cleaner."
+      },
+      {
+       "v": "C",
+       "t": "have fewer ingredients than other cleaners."
+      },
+      {
+       "v": "D",
+       "t": "cause less damage to the natural surroundings."
+      }
+     ]
     },
     {
      "n": 7,
-     "text": "A decision was made to sell Shower Power in 750ml bottles because this size"
+     "text": "A decision was made to sell Shower Power in 750ml bottles because this size",
+     "options": [
+      {
+       "v": "A",
+       "t": "was easy to transport."
+      },
+      {
+       "v": "B",
+       "t": "would appeal to individual buyers."
+      },
+      {
+       "v": "C",
+       "t": "was simple to produce."
+      },
+      {
+       "v": "D",
+       "t": "would be cheap to produce."
+      }
+     ]
     },
     {
      "n": 8,
-     "text": "What action did OzKleen take in 1997 to move the company forward?"
+     "text": "What action did OzKleen take in 1997 to move the company forward?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It focused on making one product."
+      },
+      {
+       "v": "B",
+       "t": "It employed more staff to work in production."
+      },
+      {
+       "v": "C",
+       "t": "It opened its own chain of stores."
+      },
+      {
+       "v": "D",
+       "t": "It borrowed more money to finance production costs."
+      }
+     ]
     },
     {
      "n": 9,
-     "text": "Tom Quinn would like the OzKleen company to"
+     "text": "Tom Quinn would like the OzKleen company to",
+     "options": [
+      {
+       "v": "A",
+       "t": "cease to be a family-owned company."
+      },
+      {
+       "v": "B",
+       "t": "spend less on research and more on marketing overseas."
+      },
+      {
+       "v": "C",
+       "t": "maintain its current position."
+      },
+      {
+       "v": "D",
+       "t": "test a greater range of products in the future."
+      }
+     ]
     }
    ]
   },

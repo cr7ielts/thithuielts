@@ -71,12 +71,14 @@ TXT = os.path.join(T, 'txt')
 def raw_text(kind, item):
     """Văn bản đề: đọc thẳng từ tài liệu gốc; máy nào không có tài liệu thì dùng bản
     đã xuất sẵn ở tools/txt/<id>.txt (sinh bằng dump_text.py)."""
+    cache = os.path.join(TXT, item['id'] + '.txt')
+    if not item.get('src') and not item.get('files'):     # bài chỉ có bản chữ (VOL 9)
+        return drop_junk(open(cache, encoding='utf8').read())
     try:
         if kind == 'reading': return drop_junk(pdftext(real(RROOT, item['src'])))
         f = next((x for x in item['files'] if x['type'] == 'pdf'), item['files'][0])
         return drop_junk(pdftext(real(LROOT, f['src']), f.get('pages')))
     except (FileNotFoundError, NotADirectoryError, StopIteration, OSError):
-        cache = os.path.join(TXT, item['id'] + '.txt')
         if not os.path.exists(cache): raise
         return drop_junk(open(cache, encoding='utf8').read())
 
@@ -240,6 +242,39 @@ def notes_of(blk, lo, hi, bank=None):
     return {'title': title, 'items': items}
 
 
+def per_question_options_plain(block, lo, hi):
+    """Trắc nghiệm bị mất nhãn A/B/C khi chuyển PDF sang .docx: các phương án nằm
+    thành dòng riêng ngay dưới câu hỏi -> đánh lại nhãn theo đúng thứ tự."""
+    lines = [l.strip() for l in block.split('\n')]
+    pos = {}
+    for i, ln in enumerate(lines):
+        m = re.match(r'^(\d{1,2})[.)]?\s+(\S.*)$', ln)
+        if m and lo <= int(m.group(1)) <= hi: pos.setdefault(int(m.group(1)), i)
+    if len(pos) != hi - lo + 1: return {}
+    order = sorted(pos)
+    out = {}
+    for k, n in enumerate(order):
+        end = pos[order[k + 1]] if k + 1 < len(order) else len(lines)
+        opts = [l for l in lines[pos[n] + 1:end]
+                if l and not re.match(r'(?i)^(questions?|choose|write|complete)\b', l)]
+        if not 2 <= len(opts) <= 5: return {}
+        # dòng có thể đã kèm nhãn 'A ...' -> bỏ nhãn cũ để khỏi in hai lần
+        out[n] = [{'v': chr(65 + i), 't': clean(re.sub(r'^[A-L][.)]?\s+', '', t))} for i, t in enumerate(opts)]
+    return out if len({len(v) for v in out.values()}) == 1 else {}
+
+
+def plain_options(block, lo, hi):
+    """Nhóm chọn nhiều đáp án mất nhãn A/B/C: lấy các dòng sau câu hỏi làm phương án."""
+    lines = [l.strip() for l in block.split('\n')]
+    start = None
+    for i, ln in enumerate(lines):
+        if re.match(r'^' + str(lo) + r'\s*(?:[-–—]\s*' + str(hi) + r')?[.):]?\s+\S', ln): start = i
+    if start is None: return []
+    opts = [l for l in lines[start + 1:]
+            if l and not re.match(r'(?i)^(questions?|choose|write|complete)\b', l)]
+    return [{'v': chr(65 + i), 't': clean(re.sub(r'^[A-L][.)]?\s+', '', t))} for i, t in enumerate(opts)] if 3 <= len(opts) <= 10 else []
+
+
 def per_question_options(block, lo, hi):
     """trắc nghiệm có phương án riêng dưới từng câu -> {n: [{v,t}]}"""
     out, cur = {}, None
@@ -316,7 +351,7 @@ def lettered_grid(block, upto):
 def headings(block):
     out = []
     for ln in block.split('\n'):
-        m = re.match(r'^[^\S\n]*(' + ROMAN + r')\s+(\S.*)$', ln)
+        m = re.match(r'^[^\S\n]*(' + ROMAN + r')[.)]?\s+(\S.*)$', ln)
         if m: out.append({'v': m.group(1), 't': clean(m.group(2))})
     return out
 
@@ -372,7 +407,7 @@ def passage_of(text):
     return {'title': title, 'paras': paras}
 
 
-SKIP_PARA = re.compile(r'(?i)^\s*(reading passage\s*\d|you should spend about|read the (text|passage)|the reading passage has)')
+SKIP_PARA = re.compile(r'(?i)^\s*(reading passage\s*\d|passage\s*\d\s*:?\s*$|you should spend about|read the (text|passage)|the reading passage has)')
 
 
 def plain_passage(text):
@@ -380,7 +415,11 @@ def plain_passage(text):
     end = len(text)
     m = re.search(r'(?im)^[^\S\n]*Questions?\s+\d', text)
     if m: end = m.start()
-    blocks = [clean(b) for b in re.split(r'\n[^\S\n]*\n', text[:end])]
+    head = text[:end]
+    # bản .docx: mỗi đoạn một dòng dài (pdftotext thì ngắt dòng ~80-100 ký tự)
+    lines = head.split('\n')
+    raw = lines if sum(1 for l in lines if len(l) > 200) >= 2 else re.split(r'\n[^\S\n]*\n', head)
+    blocks = [clean(b) for b in raw]
     blocks = [b for b in blocks if b and not SKIP_PARA.match(b)]
     if not blocks: return None
     title = ''
@@ -405,7 +444,7 @@ def build(item, kind, text):
         out = {'from': a, 'to': b, 'kind': g['kind'], 'instruction': instruction(blk, a)}
         if g['kind'] == 'heading':
             out['bank'] = headings(blk)
-        per_q = per_question_options(blk, a, b) if g['kind'] == 'letter' else {}
+        per_q = (per_question_options(blk, a, b) or per_question_options_plain(blk, a, b)) if g['kind'] == 'letter' else {}
         if g['kind'] in ('letter', 'multi') and len(per_q) < (b - a + 1) / 2:
             ab = g.get('letters') or 'AH'
             need = ord(ab[1]) - ord(ab[0]) + 1
@@ -416,6 +455,7 @@ def build(item, kind, text):
             if len(opts) != need and ab[0] == 'A':
                 grid = lettered_grid(blk, ab[1])
                 if grid: opts = grid
+            if not opts and g['kind'] == 'multi': opts = plain_options(blk, a, b)
             # nhóm "matching"/heading: phương án nằm chung một khung
             if opts: out['options' if g['kind'] == 'multi' else 'bank'] = opts
             per_q = {}
@@ -439,6 +479,12 @@ def build(item, kind, text):
         if g['kind'] != 'multi':
             out['questions'] = [{'n': n, 'text': qs.get(n, ''), **({'options': per_q[n]} if per_q.get(n) else {})}
                                 for n in range(a, b + 1)]
+        # chọn heading mà số câu đánh ngay trong bài đọc ("14 ………" trước mỗi đoạn)
+        if g['kind'] == 'heading' and not any(q['text'] for q in out.get('questions', [])):
+            marks = [n for n in range(a, b + 1)
+                     if re.search(r'(?m)^[^\S\n]*' + str(n) + r'\s*(?:[….·]{2,}|_{3,})', text)]
+            if len(marks) == b - a + 1:
+                out['questions'] = [{'n': n, 'text': f'Paragraph {i + 1}'} for i, n in enumerate(range(a, b + 1))]
         groups.append(out)
     data = {'id': item['id'], 'kind': kind, 'groups': groups}
     if kind == 'reading':

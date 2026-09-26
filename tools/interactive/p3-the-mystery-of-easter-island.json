@@ -1,0 +1,217 @@
+{
+ "id": "p3-the-mystery-of-easter-island",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Complete the summary using the list of words and phrases, A-D, below.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "poverty"
+    },
+    {
+     "v": "B",
+     "t": "agriculture"
+    },
+    {
+     "v": "C",
+     "t": "boats"
+    },
+    {
+     "v": "D",
+     "t": "wood"
+    }
+   ],
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "When Dutchman Jacob Roggeveen sailed to Easter Island in 1722, he was amazed by the stone statues he saw for a number of reasons. Firstly, it was clear that they were immensely heavy, and there was no {{27}} around, which would have helped with their construction. Roggeveen did not think the inhabitants had any metal tools, or animals for heavy labour either. Another mystery was the poor quality of the local inhabitants' {{28}}; Roggeveen wondered how the people had managed to survive long trips. At the time of Roggeveen's visit, he observed that the people were living in {{29}} and there was no evidence of successful {{30}} on the island."
+    }
+   ],
+   "noteTitle": "Early European reaction to the discovery of Easter Island"
+  },
+  {
+   "from": 31,
+   "to": 35,
+   "kind": "ynng",
+   "instruction": "Choose YES if the statement agrees with the claims of the writer, choose NO if the statement contradicts the claims of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+   "questions": [
+    {
+     "n": 31,
+     "text": "Erich von Däniken's claims were briefly accepted by some sections of society."
+    },
+    {
+     "n": 32,
+     "text": "Archaeologists removed valuable artefacts from the island."
+    },
+    {
+     "n": 33,
+     "text": "Smallpox continued to affect Easter Island's inhabitants for centuries."
+    },
+    {
+     "n": 34,
+     "text": "It remains open to question whether Easter Island was once covered in forest."
+    },
+    {
+     "n": 35,
+     "text": "The way that rats arrived on Easter Island is still to be established."
+    }
+   ]
+  },
+  {
+   "from": 36,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Choose the correct answer.",
+   "questions": [
+    {
+     "n": 36,
+     "text": "What does Jared Diamond blame for the lack of vegetation on Easter Island? The construction of stone statues Climate change over a long period",
+     "options": [
+      {
+       "v": "A",
+       "t": "The construction of stone statues"
+      },
+      {
+       "v": "B",
+       "t": "Climate change over a long period"
+      },
+      {
+       "v": "C",
+       "t": "method of transportation"
+      },
+      {
+       "v": "D",
+       "t": "The arrival of Europeans"
+      }
+     ]
+    },
+    {
+     "n": 37,
+     "text": "What do Hunt and Lipo suggest about the population of Easter Island? It collapsed before European contact The first settlers arrived much later than is widely accepted It never exceeded a few thousand inhabitants It declined mainly because of disease",
+     "options": [
+      {
+       "v": "A",
+       "t": "It collapsed before European contact"
+      },
+      {
+       "v": "B",
+       "t": "The first settlers arrived much later than is widely accepted"
+      },
+      {
+       "v": "C",
+       "t": "It never exceeded a few thousand inhabitants"
+      },
+      {
+       "v": "D",
+       "t": "It declined mainly because of disease"
+      }
+     ]
+    },
+    {
+     "n": 38,
+     "text": "What is suggested about rats on Easter Island in the fifth paragraph? They were a likely cause of deforestation They arrived after the forests had disappeared They had no effect on plant regeneration They were introduced by Europeans",
+     "options": [
+      {
+       "v": "A",
+       "t": "They were a likely cause of deforestation"
+      },
+      {
+       "v": "B",
+       "t": "They arrived after the forests had disappeared"
+      },
+      {
+       "v": "C",
+       "t": "They had no effect on plant regeneration"
+      },
+      {
+       "v": "D",
+       "t": "They were introduced by Europeans"
+      }
+     ]
+    },
+    {
+     "n": 39,
+     "text": "Flenley responds to Hunt and Lipo’s theory by dismissing it partially supporting it expanding on their arguments avoiding direct criticism",
+     "options": [
+      {
+       "v": "A",
+       "t": "dismissing it"
+      },
+      {
+       "v": "B",
+       "t": "partially supporting it"
+      },
+      {
+       "v": "C",
+       "t": "expanding on their arguments"
+      },
+      {
+       "v": "D",
+       "t": "avoiding direct criticism"
+      }
+     ]
+    },
+    {
+     "n": 40,
+     "text": "The writer’s purpose in this article is to argue in favour of Diamond’s interpretation provide an overview of a series of arguments prove that rats were the main cause of deforestation criticise modern archaeological methods",
+     "options": [
+      {
+       "v": "A",
+       "t": "argue in favour of Diamond’s interpretation"
+      },
+      {
+       "v": "B",
+       "t": "provide an overview of a series of arguments"
+      },
+      {
+       "v": "C",
+       "t": "prove that rats were the main cause of deforestation"
+      },
+      {
+       "v": "D",
+       "t": "criticise modern archaeological methods"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "passage": {
+  "title": "",
+  "paras": [
+   {
+    "mark": "",
+    "text": "The mystery of Easter IslandWhat could possibly explain the lack of vegetation on Easter Island?"
+   },
+   {
+    "mark": "",
+    "text": "The giant stone statues of Easter Island in the Pacific Ocean have perplexed archaeologists ever since European explorers first witnessed them three centuries ago. Jacob Roggeveen, the Dutch seaman who gave the island its name in 1722, was amazed by the statues, each of which clearly weighed several tonnes. But as there were no forests on the island, he could not comprehend how people devoid of heavy timber could build and erect something that size. It was also remarkable considering the absence of metal objects for carving and cutting, and the reliance on mere human strength as no draught animals could be seen either. Roggeveen was equally amazed as to how the islanders could have come to colonise such a remote place. Their canoes were leaky and frail, not the sort of ocean-going craft that could survive a three-week sea journey. At the time of his visit, it seemed evident the islanders were living in extremely poor conditions and that there was no cultivation of crops."
+   },
+   {
+    "mark": "",
+    "text": "What was the mystery behind the statues? In the 1970s, the author Erich von Däniken suggested the statues were the work of extraterrestrial beings. It was hard to believe the stones were the work of humans who were more than 2,000 miles from the nearest mainland, so for a short period of time his theory appealed to those fascinated with space travel. But for serious academics, the puzzle of the statues has caused a deep divide. Some archaeologists see Easter Island as an example of what can happen when the lust for material splendour - ever bigger stone carvings in this case is satisfied at the expense of the environment. Others, meanwhile, take a different view. The island, these scholars argue, suffered at the hands of introduced diseases, notably smallpox, and a slave trade that stole a huge proportion of its indigenous population. At the heart of the debate is the issue of the island's deforestation. There is no doubt that the island was once covered in palm trees. There is also no doubt that something happened that caused the island to become completely denuded over a short period of time. But was it the islanders who triggered this environmental degradation or another event beyond their control, such as the introduction of rats? It is an indisputable fact that rats found their way to the island, although exactly how is a matter of debate."
+   },
+   {
+    "mark": "",
+    "text": "In 2005, the anthropologist Jared Diamond claimed the islanders started building ceremonial statues in an atmosphere of rivalry between the many clans. To move the statues from the island's quarry in the south-east, they needed to cut large logs for the construction of long 'canoe ladders' to carry them to the coast. For its transport alone, each statue would have required several trees to be cut down. As a result of the deforestation, Diamond believes food production fell dramatically. Consequently the population collapsed from perhaps as many as 15,000 to the few thousand that were eking out a living by the time Roggeveen arrived. Smallpox and slavery killed off those who remained, but the islanders were on the way to total collapse even without any European contact, says Diamond."
+   },
+   {
+    "mark": "",
+    "text": "But not everyone is convinced. Professor Terry Hunt, an anthropologist at the University of Hawaii, says: 'There is no evidence that a population collapse occurred before European contact.' He is supported by Professor Carl Lipo of California State University. They argue that Easter Island was colonised by the first Polynesian seafarers nowhere near as early as supposed. They say the first people to arrive came around AD1200, about 400 years later than other scientists have suggested from radio-carbon dating. This makes it implausible for the population to have reached the 15,000 figure that would have caused such a fast ecocide. They also believe the deforestation occurred over a longer period as a result of climate change, and rats probably also played a part. The islanders did not go through a population collapse until after the arrival of Europeans, they say."
+   },
+   {
+    "mark": "",
+    "text": "Hunt has examined new data from the Hawaiian and other Pacific islands that shows that by early historic times the deforestation of Easter Island was already complete, or nearly so. A dense forest of palm trees and shrubs had mostly disappeared and as a result, as many as six land bird species had also become extinct. Crucially, much of the forest damage appears to have been done before evidence of fires on the island. However, almost all of the palm seed shells discovered on the island were found to have been gnawed by rats which would have made them unable to germinate. Evidence from other Pacific islands also confirms how destructive rats can be. However, John Flenley of New Zealand's Massey University, who carried out much of the radio-carbon work on Easter Island, says there is ample evidence for a much earlier arrival of Polynesian settlers. He refutes the arguments of the sceptics: whilst admitting that the Europeans did bring certain disasters, he maintains that Hunt and Lipo are ignoring archaeological, botanical and sedimentological evidence proving the island was transformed from a subtropical rainforest to a treeless landscape. The radio-carbon dating points to an initial colonisation before AD900, Flenley argues. This was ample time for the rapid deforestation, environmental collapse and a population crash, he insists."
+   },
+   {
+    "mark": "",
+    "text": "Why all this is important today is not, of course, lost in the age of globalisation, climate change and a rapidly growing world population in the billions. As Diamond says: 'The parallels between Easter Island and the whole of the modern world are chillingly obvious.'"
+   }
+  ]
+ }
+}
