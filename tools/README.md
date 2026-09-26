@@ -36,3 +36,12 @@ Sau khi sinh lại: deploy, rồi vào Ngân hàng đề → Tải file đề l�
 | `examtest.html?id=<id>` | xem thử giao diện làm bài, không cần đăng nhập |
 
 Thứ tự lấy văn bản đề: file gốc trong `2. IELTS\…` → nếu máy không có thì `txt/<id>.txt`.
+
+## Full test Reading từ VOL 1-9 (ORIGINAL EXAMS)
+
+Bước 1 (máy có thư mục `2. IELTS\VOL 1-9 2`):
+
+    python dump_vol_reading.py      # -> vol_reading/manifest.json + vol_reading/txt/…  (văn bản đề + đáp án Reading)
+
+Rồi commit + push `tools/vol_reading`. File OneDrive "chỉ trên mạng" sẽ tự tải về khi script đọc tới (chỉ file Word/PDF Reading).
+File `.doc` đời cũ được liệt kê cuối bảng kết quả — mở bằng Word, Save As `.docx` rồi chạy lại.
