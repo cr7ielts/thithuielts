@@ -316,7 +316,7 @@ function recorderArea(ctx, a, turns, teacher, resubmit) {
             onProgress: (step, total) => {
               bar.style.width = `${40 + Math.round((step / total) * 55)}%`;
               status.textContent = step < total - 1
-                ? L(`Mochi đang nghe câu ${step + 1}/${total - 1}…`, `Mochi is listening to answer ${step + 1}/${total - 1}…`)
+                ? L(`i-melts đang nghe câu ${step + 1}/${total - 1}…`, `i-melts is listening to answer ${step + 1}/${total - 1}…`)
                 : L("Đang chấm 4 tiêu chí…", "Scoring the four criteria…");
             },
           });

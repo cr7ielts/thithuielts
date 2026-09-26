@@ -33,7 +33,7 @@ export function renderVocabHub(ctx) {
     el("section", { class: "vocab-hero" },
       el("div", { class: "vocab-hero-text" },
         el("div", { class: "eyebrow" }, L("Từ vựng IELTS", "IELTS vocabulary")),
-        el("h1", {}, L("Học từ, Mochi nhắc ôn đúng lúc", "Learn words, Mochi reminds you on time")),
+        el("h1", {}, L("Học từ, i-melts nhắc ôn đúng lúc", "Learn words, i-melts reminds you on time")),
         el("p", { class: "lead" },
           L("Mỗi từ quay lại ngay trước khi bạn kịp quên: nhớ tốt thì cách vài ngày, quên thì hỏi lại sau 1 phút.",
             "Each word comes back just before you forget it: remember it well and it waits a few days; forget it and it's back in a minute.")),
@@ -207,10 +207,10 @@ export function renderReview(ctx, source) {
 
   const wrap = el("div", { class: "review" });
   if (!queue.length) {
-    const cat = createCat({ size: 170, mood: "sleep", say: L("Hết từ để ôn rồi, Mochi đi ngủ đây…", "Nothing left to review — Mochi's taking a nap…") });
+    const cat = createCat({ size: 170, mood: "sleep", say: L("Hết từ để ôn rồi, i-melts đi ngủ đây…", "Nothing left to review — i-melts's taking a nap…") });
     wrap.append(el("div", { class: "empty-state" }, cat,
       el("h2", {}, L("Không còn từ nào cần ôn", "Nothing to review")),
-      el("p", { class: "muted" }, L("Quay lại sau nhé — Mochi sẽ nhắc khi có từ đến hạn.", "Come back later — Mochi will tell you when words are due.")),
+      el("p", { class: "muted" }, L("Quay lại sau nhé — i-melts sẽ nhắc khi có từ đến hạn.", "Come back later — i-melts will tell you when words are due.")),
       el("button", { class: "btn btn-primary", onclick: () => ctx.go(backTo) }, L("Quay lại", "Go back"))));
     return wrap;
   }
@@ -325,7 +325,7 @@ export function renderReview(ctx, source) {
     stage.innerHTML = "";
     window.removeEventListener("keydown", onKey);
     cat.setMood("happy");
-    cat.say(L("Xong phiên ôn! Mochi tự hào về bạn", "Session done! Mochi is proud of you"), 0);
+    cat.say(L("Xong phiên ôn! i-melts tự hào về bạn", "Session done! i-melts is proud of you"), 0);
     progress.firstChild.style.width = "100%";
     stage.append(
       el("div", { class: "review-done" },

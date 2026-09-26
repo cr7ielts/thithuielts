@@ -469,8 +469,8 @@ function settingsTab(ctx, c) {
       el("div", { class: "cl-theme-sw" }, createCat({ size: 64, mood: t.mood })),
       el("span", {}, t.label))));
   const theme = section(L("Tâm trạng lớp", "Class mood"),
-    L("Chọn theo không khí của lớp — màu đầu trang lớp và biểu cảm, câu nói của Mochi đổi theo. Học sinh thấy ngay khi mở lớp.",
-      "Pick the class's vibe — the header colours and Mochi's face and message change to match. Students see it when they open the class."),
+    L("Chọn theo không khí của lớp — màu đầu trang lớp và biểu cảm, câu nói của i-melts đổi theo. Học sinh thấy ngay khi mở lớp.",
+      "Pick the class's vibe — the header colours and i-melts' face and message change to match. Students see it when they open the class."),
     moods);
 
   // Vào lớp

@@ -6,6 +6,7 @@ import { DURATION, BRAND, ALLOW_EMAIL_SIGNUP } from "./config.js";
 import { createCat, catLogoSVG } from "./cat.js";
 import { L, getLang, setLang } from "./i18n.js";
 import { currentTheme, toggleTheme } from "./theme.js";
+import { mountBackground } from "./bgfloat.js";
 import { renderListening } from "./skills/listening.js";
 import { renderReading } from "./skills/reading.js";
 import { renderWriting } from "./skills/writing.js";
@@ -330,7 +331,7 @@ function loginView() {
   };
   const demoTeacher = el("input", { type: "checkbox", id: "demo-teacher" });
 
-  const cat = createCat({ size: 170, mood: "idle", say: L("Meo! Mình là Mochi", "Meow! I'm Mochi") });
+  const cat = createCat({ size: 170, mood: "idle", say: L("Meo! Mình là i-melts", "Meow! I'm i-melts") });
   nameInput.addEventListener("focus", () => cat.setMood("wow", 1200));
 
   const body = el("div", { class: "login-body" },
@@ -363,7 +364,7 @@ function loginView() {
       nameInput,
       el("label", { class: "check", style: "margin-top:10px" }, demoTeacher, L("Vào với vai giáo viên (chỉ ở chế độ thử)", "Enter as a teacher (demo only)")),
       el("button", { class: "btn btn-primary btn-lg btn-block", style: "margin-top:16px", onclick: submitDemo },
-        L("Vào học cùng Mochi", "Start learning with Mochi"), icon("arrow")));
+        L("Vào học cùng i-melts", "Start learning with i-melts"), icon("arrow")));
   }
 
   return el("div", { class: "login-wrap" },
@@ -519,7 +520,7 @@ function homeView() {
 
   const line = s.due
     ? L(`Có ${s.due} từ sắp quên, ôn ngay nhé!`, `${s.due} words are slipping away — review them now!`)
-    : s.doneToday ? L("Hôm nay bạn chăm quá, Mochi thưởng một cái nháy mắt!", "You've studied today — Mochi gives you a slow blink!")
+    : s.doneToday ? L("Hôm nay bạn chăm quá, i-melts thưởng một cái nháy mắt!", "You've studied today — i-melts gives you a slow blink!")
     : s.streak ? L(`Giữ chuỗi ${s.streak} ngày nào!`, `Keep your ${s.streak}-day streak going!`)
     : L("Học một chút mỗi ngày là nhớ lâu lắm đó.", "A little every day goes a long way.");
   const cat = createCat({ size: 250, mood: s.due ? "wow" : s.doneToday ? "happy" : "idle", say: line, bubbleSide: "left" });
@@ -618,7 +619,7 @@ function skillGrid() {
 }
 
 function examsView() {
-  const cat = createCat({ size: 130, mood: "think", say: L("Chọn kỹ năng, Mochi bấm giờ cho!", "Pick a skill — Mochi will keep time!"), bubbleSide: "left" });
+  const cat = createCat({ size: 130, mood: "think", say: L("Chọn kỹ năng, i-melts bấm giờ cho!", "Pick a skill — i-melts will keep time!"), bubbleSide: "left" });
   return el("div", { class: "stack-lg" },
     el("section", { class: "games-hero" },
       el("div", { style: "flex:1;min-width:260px" },
@@ -646,4 +647,5 @@ function firstName(full) {
 }
 
 /* Chạy sau cùng, khi mọi biến trong module đã sẵn sàng */
+mountBackground();
 init();

@@ -12,17 +12,19 @@ Trang thi thử IELTS Academic chạy hoàn toàn bằng HTML/CSS/JavaScript thu
 
 ## Giao diện
 
-- **Màu**: xanh navy là màu thương hiệu (menu, tiêu đề, trạng thái đang chọn), cam Mochi cho nút hành động.
+- **Màu**: xanh navy là màu thương hiệu (menu, tiêu đề, trạng thái đang chọn), cam cho nút hành động.
   Mọi màu khai báo thành token ở đầu [`css/styles.css`](css/styles.css) — thêm màu mới thì khai báo cho cả giao diện sáng và tối.
 - **Chữ**: Lexend (tiêu đề) + Be Vietnam Pro (nội dung), đều hỗ trợ tiếng Việt đầy đủ.
 - **Bố cục**: máy tính có menu bên trái chia nhóm (Học tập · Luyện thi · Từ vựng · Giáo viên); máy tính bảng thu gọn còn biểu tượng;
   điện thoại dùng thanh 5 nút dưới đáy, nút **Thêm** mở đủ các mục, đổi ngôn ngữ, giao diện, đăng xuất.
 - **Giao diện tối**: tự theo cài đặt sáng/tối của máy; nút mặt trăng / mặt trời trên thanh trên cùng để chọn tay
   (lưu trong trình duyệt, [`js/theme.js`](js/theme.js)). Tờ đề PDF và biểu đồ Writing Task 1 luôn giữ nền trắng như giấy.
+- **Nền động**: vài hình mờ (bong bóng chữ A/B/C, sách, tai nghe, bút, dấu tick, dấu chân mèo…) trôi chậm phía sau nội dung
+  ([`js/bgfloat.js`](js/bgfloat.js)). Tự ẩn khi đang làm bài thi có bấm giờ, đứng yên nếu máy bật "giảm chuyển động".
 
-## Mochi & từ vựng
+## i-melts & từ vựng
 
-Linh vật **Mochi** là mèo Anh lông ngắn màu xám, vẽ bằng SVG trong [`js/cat.js`](js/cat.js). Mochi chớp mắt, vẫy
+Linh vật **i-melts** là mèo Anh lông ngắn màu xám dáng bánh mochi — đầu tròn bóng như vỏ mochi, thân "tan chảy" loang thành vũng tròn dưới chân — vẽ bằng SVG trong [`js/cat.js`](js/cat.js) (tên đặt ở hằng `MASCOT`). i-melts chớp mắt, vẫy
 đuôi, nhìn theo con trỏ và đổi cảm xúc (`idle`, `happy`, `sad`, `think`, `sleep`, `wow`) khi học sinh trả lời.
 
 | Phần | Nội dung |
@@ -311,7 +313,8 @@ js/engine.js            dựng câu hỏi + chấm điểm + quy đổi band
 js/ui.js                nút, modal, toast, đồng hồ đếm ngược, biểu đồ SVG
 js/theme.js             giao diện sáng / tối
 js/app.js               đăng nhập, điều hướng, trang chủ
-js/cat.js               🐱 linh vật Mochi (SVG + hoạt ảnh)
+js/cat.js               🐱 linh vật i-melts (SVG + hoạt ảnh)
+js/bgfloat.js           nền động: hình mờ trôi chậm phía sau nội dung
 js/vocab/progress.js    lịch ôn ngắt quãng, sổ từ, XP, chuỗi ngày
 js/vocab/views.js       trang Từ vựng, chi tiết bộ từ, flashcard
 js/vocab/games.js       5 trò chơi từ vựng

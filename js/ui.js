@@ -140,6 +140,7 @@ export class Countdown {
 let guardOn = false;
 const guardHandler = (e) => { e.preventDefault(); e.returnValue = ""; };
 export function setExamGuard(on) {
+  document.body.classList.toggle("exam-on", !!on);   // nền động ẩn khi đang làm bài
   if (on === guardOn) return;
   guardOn = on;
   if (on) window.addEventListener("beforeunload", guardHandler);

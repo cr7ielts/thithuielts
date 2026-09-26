@@ -32,7 +32,7 @@ function explanation(p) {
 export function renderPuns(ctx) {
   const cat = createCat({
     size: 140, mood: "idle", bubbleSide: "left",
-    say: L("Mochi là chuyên gia “purr-fect” đó!", "I'm a purr-fect pun expert!"),
+    say: L("i-melts là chuyên gia “purr-fect” đó!", "I'm a purr-fect pun expert!"),
   });
   const game = WORDPLAY_GAMES.find((g) => g.id === "pun-detective");
 

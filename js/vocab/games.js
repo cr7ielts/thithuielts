@@ -14,11 +14,11 @@ export const GAMES = [
     desc: L("Nghĩa rơi xuống — gõ đúng từ tiếng Anh trước khi nó chạm đất. Có 3 mạng.",
             "Meanings fall from the sky — type the English word before they land. You have 3 lives.") },
   { id: "spell", name: L("Đánh vần", "Spelling Bee"), icon: "volume", color: "#4fb58c",
-    desc: L("Nghe Mochi đọc rồi gõ lại từ cho đúng chính tả. 10 lượt, dùng gợi ý sẽ bị trừ điểm.",
-            "Listen to Mochi and type the word with perfect spelling. 10 rounds; hints cost points.") },
+    desc: L("Nghe i-melts đọc rồi gõ lại từ cho đúng chính tả. 10 lượt, dùng gợi ý sẽ bị trừ điểm.",
+            "Listen to i-melts and type the word with perfect spelling. 10 rounds; hints cost points.") },
   { id: "quiz", name: L("Trắc nghiệm tốc độ", "Speed Quiz"), icon: "bolt", color: "#e0a24a",
-    desc: L("Chọn nghĩa đúng trước khi cuộn len lăn tới chỗ Mochi. Trả lời liên tiếp để nhân điểm.",
-            "Pick the right meaning before the ball of yarn reaches Mochi. Answer in a row to multiply points.") },
+    desc: L("Chọn nghĩa đúng trước khi cuộn len lăn tới chỗ i-melts. Trả lời liên tiếp để nhân điểm.",
+            "Pick the right meaning before the ball of yarn reaches i-melts. Answer in a row to multiply points.") },
   { id: "guess", name: L("Đoán chữ", "Word Guess"), icon: "puzzle", color: "#a98bd8",
     desc: L("Đọc nghĩa, đoán từ trong 6 lần với gợi ý màu: xanh đúng chỗ, vàng có trong từ.",
             "Read the meaning and guess the word in 6 tries: green is the right spot, yellow is in the word.") },
@@ -326,7 +326,7 @@ function playSpell(g, pool) {
 
   if (!("speechSynthesis" in window)) {
     g.arena.append(el("div", { class: "notice notice-warn" },
-      L("Trình duyệt này không hỗ trợ đọc tự động — Mochi sẽ hiện nghĩa để bạn đoán.", "This browser can't read words aloud — use the meaning as your clue.")));
+      L("Trình duyệt này không hỗ trợ đọc tự động — i-melts sẽ hiện nghĩa để bạn đoán.", "This browser can't read words aloud — use the meaning as your clue.")));
   }
 
   const box = el("div", { class: "spell" });

@@ -1,5 +1,5 @@
-// Tâm trạng lớp: đổi màu dải đầu lớp, biểu cảm và câu nói của Mochi trong trang lớp.
-// mood: một trong các biểu cảm của Mochi (js/cat.js): idle, happy, sad, think, sleep, wow
+// Tâm trạng lớp: đổi màu dải đầu lớp, biểu cảm và câu nói của i-melts trong trang lớp.
+// mood: một trong các biểu cảm của i-melts (js/cat.js): idle, happy, sad, think, sleep, wow
 import { L } from "../i18n.js";
 
 export const THEMES = [

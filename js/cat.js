@@ -1,6 +1,8 @@
 // =====================================================================
-//  "Mochi" — linh vật mèo Anh lông ngắn màu xám (British Shorthair)
-//  SVG tự vẽ, hoạt ảnh bằng CSS (xem mục .cat trong styles.css)
+//  "i-melts" — linh vật mèo Anh lông ngắn màu xám (British Shorthair), dáng bánh mochi:
+//  đầu tròn bóng như vỏ mochi, thân "tan chảy" loang thành vũng tròn dưới chân.
+//  SVG tự vẽ, hoạt ảnh bằng CSS (xem mục .cat trong styles.css) — giữ nguyên tên class
+//  (cat-head, cat-tail, cat-lid, cat-pupil…) vì CSS dựa vào chúng để tạo 6 biểu cảm.
 //
 //  const cat = createCat({ size: 180, mood: "idle", say: "Xin chào!" });
 //  cat.setMood("happy", 1500);   // idle | happy | sad | think | sleep | wow
@@ -9,118 +11,127 @@
 import { el } from "./ui.js";
 import { L } from "./i18n.js";
 
-const FUR = "#8f9aa6";
-const FUR_DARK = "#76828f";
-const FUR_LIGHT = "#b3bcc6";
-const LINE = "#3b4550";
-const COPPER = "#e8962b";
-const PINK = "#eea2ab";
+export const MASCOT = "i-melts";
+
+const FUR = "#9aa6b6";
+const FUR_DARK = "#7b8899";
+const FUR_LIGHT = "#cfd6e0";
+const LINE = "#33404f";
+const COPPER = "#f09a2e";
+const PINK = "#f4a7b3";
 
 const SVG = `
 <svg class="cat-svg" viewBox="0 0 220 220" aria-hidden="true">
   <!-- bóng dưới chân -->
-  <ellipse class="cat-shadow" cx="110" cy="208" rx="62" ry="8" fill="rgba(40,52,64,.14)"/>
+  <ellipse class="cat-shadow" cx="110" cy="209" rx="72" ry="7" fill="rgba(30,40,60,.14)"/>
 
-  <!-- đuôi -->
+  <!-- đuôi cuộn bên phải -->
   <g class="cat-tail">
-    <path d="M150 188 C196 190 206 150 188 128 C180 118 170 124 176 134 C186 150 176 170 146 172 Z"
+    <path d="M160 188 C202 188 210 150 193 131 C185 122 172 127 178 138 C189 154 179 173 152 173 Z"
           fill="${FUR_DARK}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M186 136 C190 142 191 150 188 158" fill="none" stroke="${FUR_LIGHT}" stroke-width="3" stroke-linecap="round" opacity=".6"/>
   </g>
 
-  <!-- thân -->
+  <!-- thân mochi đang "tan chảy": đáy loang thành vũng, vài giọt nhỏ bên cạnh -->
   <g class="cat-body">
-    <path d="M58 196 C50 150 70 118 110 118 C150 118 170 150 162 196 Z"
+    <path d="M50 168 C50 139 78 124 110 124 C142 124 170 139 170 168 C172 182 187 186 185 196 C183 205 167 206 157 202 C146 207 128 208 110 207 C92 208 74 207 63 202 C53 206 37 205 35 196 C33 186 48 182 50 168 Z"
           fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
-    <path d="M86 196 C84 164 94 146 110 146 C126 146 136 164 134 196 Z" fill="${FUR_LIGHT}" opacity=".75"/>
-    <!-- chân trước -->
+    <path d="M82 200 C80 172 92 154 110 154 C128 154 140 172 138 200 Z" fill="${FUR_LIGHT}" opacity=".75"/>
+    <circle cx="25" cy="203" r="3.6" fill="${FUR}" stroke="${LINE}" stroke-width="2"/>
+    <circle cx="197" cy="204" r="2.8" fill="${FUR}" stroke="${LINE}" stroke-width="2"/>
     <g class="cat-paw cat-paw-l">
-      <path d="M78 150 C74 170 76 190 80 200 L100 200 C102 186 100 166 96 152 Z" fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
-      <path d="M85 196 v4 M92 196 v4" stroke="${LINE}" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="90" cy="198" rx="13" ry="8" fill="${FUR}" stroke="${LINE}" stroke-width="2.6"/>
+      <path d="M86 195 v5 M93 195 v5" stroke="${LINE}" stroke-width="2" stroke-linecap="round"/>
     </g>
     <g class="cat-paw cat-paw-r">
-      <path d="M142 150 C146 170 144 190 140 200 L120 200 C118 186 120 166 124 152 Z" fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
-      <path d="M128 196 v4 M135 196 v4" stroke="${LINE}" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="130" cy="198" rx="13" ry="8" fill="${FUR}" stroke="${LINE}" stroke-width="2.6"/>
+      <path d="M127 195 v5 M134 195 v5" stroke="${LINE}" stroke-width="2" stroke-linecap="round"/>
     </g>
   </g>
 
-  <!-- đầu: tròn, má bầu — nét đặc trưng của mèo Anh -->
+  <!-- đầu: tròn to, má bầu, bóng như vỏ bánh mochi -->
   <g class="cat-head">
     <g class="cat-ear cat-ear-l">
-      <path d="M50 78 C44 50 50 34 58 30 C68 34 82 46 90 58 Z" fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
-      <path d="M58 64 C56 50 58 42 61 40 C67 44 74 50 79 57 Z" fill="${PINK}" opacity=".8"/>
+      <path d="M50 78 C43 51 49 34 58 31 C69 35 83 46 91 58 Z" fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M58 65 C56 51 58 43 61 41 C68 45 75 51 80 57 Z" fill="${PINK}" opacity=".85"/>
     </g>
     <g class="cat-ear cat-ear-r">
-      <path d="M170 78 C176 50 170 34 162 30 C152 34 138 46 130 58 Z" fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
-      <path d="M162 64 C164 50 162 42 159 40 C153 44 146 50 141 57 Z" fill="${PINK}" opacity=".8"/>
+      <path d="M170 78 C177 51 171 34 162 31 C151 35 137 46 129 58 Z" fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M162 65 C164 51 162 43 159 41 C152 45 145 51 140 57 Z" fill="${PINK}" opacity=".85"/>
     </g>
 
-    <path d="M110 44 C160 44 182 72 182 100 C182 132 152 150 110 150 C68 150 38 132 38 100 C38 72 60 44 110 44 Z"
+    <path d="M110 40 C166 40 192 70 192 104 C192 138 160 156 110 156 C60 156 28 138 28 104 C28 70 54 40 110 40 Z"
           fill="${FUR}" stroke="${LINE}" stroke-width="3" stroke-linejoin="round"/>
-    <!-- mõm sáng màu -->
-    <ellipse cx="110" cy="122" rx="30" ry="20" fill="${FUR_LIGHT}"/>
+    <!-- ánh bóng mochi -->
+    <ellipse cx="70" cy="64" rx="21" ry="8.5" transform="rotate(-30 70 64)" fill="#fff" opacity=".38"/>
+    <circle cx="94" cy="50" r="3.2" fill="#fff" opacity=".45"/>
     <!-- vệt lông mờ trên trán -->
-    <path d="M100 56 q2 8 0 14 M110 54 q2 9 0 16 M120 56 q2 8 0 14" stroke="${FUR_DARK}" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".55"/>
+    <path d="M100 52 q2 8 0 14 M110 50 q2 9 0 16 M120 52 q2 8 0 14" stroke="${FUR_DARK}" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".5"/>
+    <!-- mõm sáng màu -->
+    <ellipse cx="110" cy="127" rx="32" ry="20" fill="${FUR_LIGHT}"/>
 
     <!-- má hồng -->
     <g class="cat-blush">
-      <ellipse cx="62" cy="120" rx="11" ry="6" fill="${PINK}" opacity=".55"/>
-      <ellipse cx="158" cy="120" rx="11" ry="6" fill="${PINK}" opacity=".55"/>
+      <ellipse cx="57" cy="125" rx="13" ry="7" fill="${PINK}" opacity=".6"/>
+      <ellipse cx="163" cy="125" rx="13" ry="7" fill="${PINK}" opacity=".6"/>
     </g>
 
-    <!-- mắt tròn màu đồng -->
+    <!-- mắt tròn to màu đồng -->
     <g class="cat-eyes">
       <g class="cat-eye">
-        <circle cx="80" cy="98" r="15" fill="${COPPER}" stroke="${LINE}" stroke-width="3"/>
-        <circle cx="80" cy="98" r="10" fill="#f5b24e" opacity=".55"/>
-        <g class="cat-pupil"><ellipse cx="80" cy="98" rx="5.5" ry="9.5" fill="#1c2127"/></g>
-        <circle cx="75" cy="92" r="3.4" fill="#fff"/>
-        <rect class="cat-lid" x="63" y="81" width="34" height="34" rx="17" fill="${FUR}"/>
+        <circle cx="80" cy="102" r="17" fill="${COPPER}" stroke="${LINE}" stroke-width="3"/>
+        <circle cx="80" cy="102" r="11" fill="#f9c263" opacity=".55"/>
+        <g class="cat-pupil"><ellipse cx="80" cy="102" rx="6" ry="10.5" fill="#1a1f27"/></g>
+        <circle cx="74" cy="95" r="4" fill="#fff"/>
+        <circle cx="85.5" cy="108" r="1.8" fill="#fff" opacity=".85"/>
+        <rect class="cat-lid" x="62" y="84" width="36" height="36" rx="18" fill="${FUR}"/>
       </g>
       <g class="cat-eye">
-        <circle cx="140" cy="98" r="15" fill="${COPPER}" stroke="${LINE}" stroke-width="3"/>
-        <circle cx="140" cy="98" r="10" fill="#f5b24e" opacity=".55"/>
-        <g class="cat-pupil"><ellipse cx="140" cy="98" rx="5.5" ry="9.5" fill="#1c2127"/></g>
-        <circle cx="135" cy="92" r="3.4" fill="#fff"/>
-        <rect class="cat-lid" x="123" y="81" width="34" height="34" rx="17" fill="${FUR}"/>
+        <circle cx="140" cy="102" r="17" fill="${COPPER}" stroke="${LINE}" stroke-width="3"/>
+        <circle cx="140" cy="102" r="11" fill="#f9c263" opacity=".55"/>
+        <g class="cat-pupil"><ellipse cx="140" cy="102" rx="6" ry="10.5" fill="#1a1f27"/></g>
+        <circle cx="134" cy="95" r="4" fill="#fff"/>
+        <circle cx="145.5" cy="108" r="1.8" fill="#fff" opacity=".85"/>
+        <rect class="cat-lid" x="122" y="84" width="36" height="36" rx="18" fill="${FUR}"/>
       </g>
     </g>
     <!-- mắt cười ^^ -->
     <g class="cat-eyes-happy" fill="none" stroke="${LINE}" stroke-width="4" stroke-linecap="round">
-      <path d="M67 102 Q80 86 93 102"/>
-      <path d="M127 102 Q140 86 153 102"/>
+      <path d="M65 106 Q80 88 95 106"/>
+      <path d="M125 106 Q140 88 155 106"/>
     </g>
     <!-- mắt ngủ -->
     <g class="cat-eyes-sleep" fill="none" stroke="${LINE}" stroke-width="4" stroke-linecap="round">
-      <path d="M67 98 Q80 108 93 98"/>
-      <path d="M127 98 Q140 108 153 98"/>
+      <path d="M65 102 Q80 112 95 102"/>
+      <path d="M125 102 Q140 112 155 102"/>
     </g>
 
     <!-- mũi + miệng -->
-    <path d="M103 113 L117 113 L110 121 Z" fill="${PINK}" stroke="${LINE}" stroke-width="2" stroke-linejoin="round"/>
-    <path class="cat-mouth" d="M110 121 v4 M98 124 Q104 132 110 125 Q116 132 122 124" fill="none" stroke="${LINE}" stroke-width="2.6" stroke-linecap="round"/>
-    <path class="cat-mouth-open" d="M100 126 Q110 142 120 126 Z" fill="#c9606d" stroke="${LINE}" stroke-width="2.6" stroke-linejoin="round"/>
-    <path class="cat-mouth-sad" d="M100 131 Q110 123 120 131" fill="none" stroke="${LINE}" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M103 118 L117 118 L110 126 Z" fill="${PINK}" stroke="${LINE}" stroke-width="2" stroke-linejoin="round"/>
+    <path class="cat-mouth" d="M110 126 v4 M98 129 Q104 137 110 130 Q116 137 122 129" fill="none" stroke="${LINE}" stroke-width="2.6" stroke-linecap="round"/>
+    <path class="cat-mouth-open" d="M100 131 Q110 148 120 131 Z" fill="#cf6473" stroke="${LINE}" stroke-width="2.6" stroke-linejoin="round"/>
+    <path class="cat-mouth-sad" d="M100 136 Q110 128 120 136" fill="none" stroke="${LINE}" stroke-width="2.6" stroke-linecap="round"/>
 
     <!-- ria -->
-    <g stroke="${LINE}" stroke-width="2" stroke-linecap="round" opacity=".55">
-      <path d="M78 122 L44 116 M78 128 L44 132"/>
-      <path d="M142 122 L176 116 M142 128 L176 132"/>
+    <g stroke="${LINE}" stroke-width="2" stroke-linecap="round" opacity=".5">
+      <path d="M76 127 L40 121 M76 133 L40 137"/>
+      <path d="M144 127 L180 121 M144 133 L180 137"/>
     </g>
 
     <!-- giọt nước mắt -->
-    <path class="cat-tear" d="M92 108 C88 116 88 120 92 122 C96 120 96 116 92 108 Z" fill="#8fd0f2" stroke="${LINE}" stroke-width="1.5"/>
+    <path class="cat-tear" d="M92 113 C88 121 88 125 92 127 C96 125 96 121 92 113 Z" fill="#8fd0f2" stroke="${LINE}" stroke-width="1.5"/>
   </g>
 
   <!-- dấu hỏi / zzz / lấp lánh -->
-  <text class="cat-q" x="176" y="44" font-size="34" font-weight="800" fill="${COPPER}" stroke="${LINE}" stroke-width="1.5" font-family="Baloo 2, sans-serif">?</text>
-  <g class="cat-zzz" font-family="Baloo 2, sans-serif" font-weight="800" fill="${FUR_DARK}">
-    <text x="168" y="54" font-size="20">z</text>
-    <text x="182" y="36" font-size="15">z</text>
-    <text x="194" y="22" font-size="11">z</text>
+  <text class="cat-q" x="178" y="42" font-size="34" font-weight="700" fill="${COPPER}" stroke="${LINE}" stroke-width="1.5" font-family="Lexend, sans-serif">?</text>
+  <g class="cat-zzz" font-family="Lexend, sans-serif" font-weight="700" fill="${FUR_DARK}">
+    <text x="170" y="52" font-size="20">z</text>
+    <text x="184" y="34" font-size="15">z</text>
+    <text x="196" y="20" font-size="11">z</text>
   </g>
   <g class="cat-spark" fill="${COPPER}">
-    <path d="M30 40 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4 Z"/>
-    <path d="M190 70 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3 Z"/>
+    <path d="M28 38 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4 Z"/>
+    <path d="M192 70 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3 Z"/>
   </g>
 </svg>`;
 
@@ -151,7 +162,7 @@ export function createCat({ size = 180, mood = "idle", say = "", track = true, b
     class: `cat mood-${mood}`,
     style: `--cat-size:${size}px`,
     role: "img",
-    "aria-label": L("Mèo Mochi", "Mochi the cat"),
+    "aria-label": L(`Mèo ${MASCOT}`, `${MASCOT} the cat`),
   });
   root.innerHTML = SVG;
   root.append(bubble);
@@ -199,18 +210,23 @@ const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
 export const praise = () => pick(PRAISE);
 export const comfort = () => pick(COMFORT);
 
-/** Logo nhỏ: mặt mèo tĩnh (dùng trên thanh điều hướng) */
+/** Logo nhỏ: mặt i-melts tĩnh (dùng ở góc menu) */
 export function catLogoSVG() {
   return `<svg viewBox="0 0 64 64" aria-hidden="true">
-    <path d="M12 26 C9 14 12 7 16 5 C21 7 27 12 30 17 Z" fill="${FUR}" stroke="${LINE}" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="M52 26 C55 14 52 7 48 5 C43 7 37 12 34 17 Z" fill="${FUR}" stroke="${LINE}" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="M32 13 C50 13 58 23 58 35 C58 49 47 56 32 56 C17 56 6 49 6 35 C6 23 14 13 32 13 Z" fill="${FUR}" stroke="${LINE}" stroke-width="2.5"/>
-    <ellipse cx="32" cy="44" rx="11" ry="7" fill="${FUR_LIGHT}"/>
-    <circle cx="23" cy="33" r="5.5" fill="${COPPER}" stroke="${LINE}" stroke-width="2"/>
-    <circle cx="41" cy="33" r="5.5" fill="${COPPER}" stroke="${LINE}" stroke-width="2"/>
-    <ellipse cx="23" cy="33" rx="1.8" ry="3.4" fill="#1c2127"/>
-    <ellipse cx="41" cy="33" rx="1.8" ry="3.4" fill="#1c2127"/>
-    <path d="M29.5 40 h5 l-2.5 3 Z" fill="${PINK}" stroke="${LINE}" stroke-width="1.2" stroke-linejoin="round"/>
-    <path d="M27 45 q2.5 3 5 0 q2.5 3 5 0" fill="none" stroke="${LINE}" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M11 27 C8 14 11 7 15.5 5 C21 7 27 12 30.5 17 Z" fill="${FUR}" stroke="${LINE}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M53 27 C56 14 53 7 48.5 5 C43 7 37 12 33.5 17 Z" fill="${FUR}" stroke="${LINE}" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M32 13 C51 13 60 23 60 36 C60 50 48 57 32 57 C16 57 4 50 4 36 C4 23 13 13 32 13 Z" fill="${FUR}" stroke="${LINE}" stroke-width="2.5"/>
+    <ellipse cx="18" cy="22" rx="7" ry="3" transform="rotate(-30 18 22)" fill="#fff" opacity=".45"/>
+    <ellipse cx="32" cy="45" rx="11" ry="7" fill="${FUR_LIGHT}"/>
+    <ellipse cx="14" cy="44" rx="4.5" ry="2.6" fill="${PINK}" opacity=".7"/>
+    <ellipse cx="50" cy="44" rx="4.5" ry="2.6" fill="${PINK}" opacity=".7"/>
+    <circle cx="22.5" cy="34" r="6" fill="${COPPER}" stroke="${LINE}" stroke-width="2"/>
+    <circle cx="41.5" cy="34" r="6" fill="${COPPER}" stroke="${LINE}" stroke-width="2"/>
+    <ellipse cx="22.5" cy="34" rx="2" ry="3.6" fill="#1a1f27"/>
+    <ellipse cx="41.5" cy="34" rx="2" ry="3.6" fill="#1a1f27"/>
+    <circle cx="20.5" cy="31.5" r="1.4" fill="#fff"/>
+    <circle cx="39.5" cy="31.5" r="1.4" fill="#fff"/>
+    <path d="M29.5 41 h5 l-2.5 3 Z" fill="${PINK}" stroke="${LINE}" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M27 46 q2.5 3 5 0 q2.5 3 5 0" fill="none" stroke="${LINE}" stroke-width="1.6" stroke-linecap="round"/>
   </svg>`;
 }

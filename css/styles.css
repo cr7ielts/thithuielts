@@ -1,6 +1,6 @@
 /* ==========================================================================
-   IELTSCD x Mochi — giao diện tươi vui, navy + cam
-   Màu chủ đạo: xanh navy (khung, điều hướng, tiêu đề) · cam Mochi (nút hành động).
+   IELTSCD x i-melts — giao diện tươi vui, navy + cam
+   Màu chủ đạo: xanh navy (khung, điều hướng, tiêu đề) · cam (nút hành động).
    Font: Lexend (tiêu đề) · Be Vietnam Pro (nội dung) · Noto Sans (phiên âm IPA)
    Hai giao diện: sáng (mặc định) và tối — theo máy, hoặc chọn tay (html[data-theme]).
    Mọi màu dùng token bên dưới; thêm màu mới thì khai báo cho cả hai giao diện.
@@ -380,7 +380,7 @@ button { font: inherit; }
 .progress > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--copper), #ffb35c); transition: width .4s ease; }
 
 /* ==========================================================================
-   MOCHI — linh vật mèo
+   I-MELTS — linh vật mèo mochi
    ========================================================================== */
 .cat { position: relative; width: var(--cat-size, 180px); height: var(--cat-size, 180px); flex: 0 0 auto; }
 .cat-svg { width: 100%; height: 100%; display: block; overflow: visible; }
@@ -397,7 +397,8 @@ button { font: inherit; }
 .cat-shadow { transform-origin: 110px 208px; animation: cat-shadow 3.4s ease-in-out infinite; }
 
 .cat-eyes-happy, .cat-eyes-sleep, .cat-mouth-open, .cat-mouth-sad,
-.cat-tear, .cat-q, .cat-zzz, .cat-spark, .cat-blush { opacity: 0; transition: opacity .2s ease; }
+.cat-tear, .cat-q, .cat-zzz, .cat-spark { opacity: 0; transition: opacity .2s ease; }
+.cat-blush { opacity: .5; transition: opacity .2s ease; }   /* má hồng mochi, đậm lên khi vui */
 .cat-eyes, .cat-mouth { transition: opacity .2s ease; }
 
 @keyframes cat-breathe { 50% { transform: scale(1.025, .985); } }
@@ -1505,3 +1506,28 @@ body.hl-on .textLayer span { cursor: text; }
   .exam-bar .progress-dots .qdot { flex: none; }
   .exam-bar .hl-toolbar { order: 4; }
 }
+
+/* ===================== Nền động: hình mờ trôi chậm phía sau nội dung ===================== */
+.bg-float { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.bg-item {
+  position: absolute; width: var(--s); height: var(--s); opacity: .13;
+  animation: bg-drift var(--d) ease-in-out var(--dl) infinite alternate;
+}
+.bg-item svg { width: 100%; height: 100%; display: block; }
+.bg-item.c-navy   { color: var(--navy-3); }
+.bg-item.c-copper { color: var(--copper); }
+.bg-item.c-mint   { color: var(--mint); }
+.bg-item.c-fur    { color: var(--fur); }
+@keyframes bg-drift {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(calc(var(--r) * 18px), -26px) rotate(calc(var(--r) * 9deg)); }
+  100% { transform: translate(calc(var(--r) * -10px), 14px) rotate(calc(var(--r) * -6deg)); }
+}
+:root[data-theme="dark"] .bg-item { opacity: .16; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .bg-item { opacity: .16; } }
+/* trang đăng nhập nền navy: hình màu trắng */
+body:has(.login-stack) .bg-item { color: #fff; opacity: .1; }
+/* đang làm bài thi: ẩn hẳn cho học sinh tập trung */
+body.exam-on .bg-float { display: none; }
+@media (prefers-reduced-motion: reduce) { .bg-item { animation: none; } }
+@media print { .bg-float { display: none; } }

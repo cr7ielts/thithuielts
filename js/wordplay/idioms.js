@@ -192,7 +192,7 @@ function playMeaning(g) {
 }
 
 function playMissing(g) {
-  g.cat.say(L("Thiếu mất một từ, tìm giúp Mochi!", "A word went missing — help Mochi find it!"), 1800);
+  g.cat.say(L("Thiếu mất một từ, tìm giúp i-melts!", "A word went missing — help i-melts find it!"), 1800);
   quizLoop(g, 10, (item) => {
     const wrong = shuffle([...new Set(IDIOMS.filter((x) => x.blank !== item.blank).map((x) => x.blank))]).slice(0, 3);
     return {

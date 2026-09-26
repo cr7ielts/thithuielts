@@ -98,7 +98,7 @@ function resultCat(sub) {
       ? L(`Band ${b.toFixed(1)}! Meo tuyệt vời!`, `Band ${b.toFixed(1)}! Meow-velous!`)
       : L(`${sub.raw}/${sub.total}! Meo tuyệt vời!`, `${sub.raw}/${sub.total}! Meow-velous!`) });
     if (b >= 5) return createCat({ ...opts, mood: "idle", say: L("Khá lắm, luyện thêm chút nữa nhé!", "Nice work — a little more practice!") });
-    return createCat({ ...opts, mood: "sad", say: L("Không sao, xem lại lỗi sai cùng Mochi nha", "No worries — let's review the mistakes together") });
+    return createCat({ ...opts, mood: "sad", say: L("Không sao, xem lại lỗi sai cùng i-melts nha", "No worries — let's review the mistakes together") });
   }
   return sub.teacherBand != null
     ? createCat({ ...opts, mood: "happy", say: L("Giáo viên chấm rồi nè!", "Your teacher has marked it!") })

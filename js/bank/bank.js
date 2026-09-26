@@ -55,7 +55,7 @@ const sourceLabel = (item) => `${item.set} · ${item.testTitle}`;
 export function renderBank(ctx, kind = "reading") {
   if (!KINDS.includes(kind)) kind = "reading";
   const wrap = el("div", { class: "stack-lg" });
-  const cat = createCat({ size: 120, mood: "think", bubbleSide: "left", say: L("Chọn một bài, Mochi bấm giờ cho!", "Pick one — Mochi will keep time!") });
+  const cat = createCat({ size: 120, mood: "think", bubbleSide: "left", say: L("Chọn một bài, i-melts bấm giờ cho!", "Pick one — i-melts will keep time!") });
   wrap.append(el("section", { class: "games-hero" },
     el("div", { style: "flex:1;min-width:240px" },
       el("div", { class: "eyebrow" }, L("Ngân hàng đề", "Question bank")),
