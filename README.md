@@ -10,6 +10,16 @@ Trang thi thử IELTS Academic chạy hoàn toàn bằng HTML/CSS/JavaScript thu
 | ✍️ Writing | Task 1 (biểu đồ) + Task 2 · 60 phút | Giáo viên chấm |
 | 🎙️ Speaking | Part 1/2/3 · 12 lượt nói, có ghi âm | Giáo viên chấm |
 
+## Giao diện
+
+- **Màu**: xanh navy là màu thương hiệu (menu, tiêu đề, trạng thái đang chọn), cam Mochi cho nút hành động.
+  Mọi màu khai báo thành token ở đầu [`css/styles.css`](css/styles.css) — thêm màu mới thì khai báo cho cả giao diện sáng và tối.
+- **Chữ**: Lexend (tiêu đề) + Be Vietnam Pro (nội dung), đều hỗ trợ tiếng Việt đầy đủ.
+- **Bố cục**: máy tính có menu bên trái chia nhóm (Học tập · Luyện thi · Từ vựng · Giáo viên); máy tính bảng thu gọn còn biểu tượng;
+  điện thoại dùng thanh 5 nút dưới đáy, nút **Thêm** mở đủ các mục, đổi ngôn ngữ, giao diện, đăng xuất.
+- **Giao diện tối**: tự theo cài đặt sáng/tối của máy; nút mặt trăng / mặt trời trên thanh trên cùng để chọn tay
+  (lưu trong trình duyệt, [`js/theme.js`](js/theme.js)). Tờ đề PDF và biểu đồ Writing Task 1 luôn giữ nền trắng như giấy.
+
 ## Mochi & từ vựng
 
 Linh vật **Mochi** là mèo Anh lông ngắn màu xám, vẽ bằng SVG trong [`js/cat.js`](js/cat.js). Mochi chớp mắt, vẫy
@@ -299,6 +309,7 @@ js/firebase.js          nạp Firebase SDK từ CDN, kiểm tra quyền giáo vi
 js/store.js             ghi/đọc bài nộp, upload file ghi âm
 js/engine.js            dựng câu hỏi + chấm điểm + quy đổi band
 js/ui.js                nút, modal, toast, đồng hồ đếm ngược, biểu đồ SVG
+js/theme.js             giao diện sáng / tối
 js/app.js               đăng nhập, điều hướng, trang chủ
 js/cat.js               🐱 linh vật Mochi (SVG + hoạt ảnh)
 js/vocab/progress.js    lịch ôn ngắt quãng, sổ từ, XP, chuỗi ngày

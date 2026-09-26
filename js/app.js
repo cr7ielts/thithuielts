@@ -5,6 +5,7 @@ import { ensureStudentProfile, listMySubmissions } from "./store.js";
 import { DURATION, BRAND, ALLOW_EMAIL_SIGNUP } from "./config.js";
 import { createCat, catLogoSVG } from "./cat.js";
 import { L, getLang, setLang } from "./i18n.js";
+import { currentTheme, toggleTheme } from "./theme.js";
 import { renderListening } from "./skills/listening.js";
 import { renderReading } from "./skills/reading.js";
 import { renderWriting } from "./skills/writing.js";
@@ -256,9 +257,9 @@ function render() {
   }
 
   const [page, a, b, c, d] = route.split("/");
-  app.append(topbar(page));
-  const main = el("main", { class: "main" });
-  app.append(main);
+  const main = el("main", { class: "main", id: "main" });
+  const { sidebar, header, bottom } = chrome(page);
+  app.append(el("div", { class: "shell" }, sidebar, el("div", { class: "shell-body" }, header, main), bottom));
 
   switch (page) {
     case "listening": main.append(renderListening(ctx)); break;
@@ -406,55 +407,108 @@ function googleIcon() {
   return span;
 }
 
-/* ===================== Thanh trên cùng ===================== */
-function topbar(page) {
-  const section = {
-    home: "home", exams: "exams", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
-    vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
-    idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
-    classes: "classes", class: "classes", join: "classes",
-  }[page] || "home";
+/* ===================== Khung trang: menu bên trái · thanh trên · thanh đáy (điện thoại) ===================== */
+const SECTION_OF = {
+  home: "home", exams: "exams", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
+  vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
+  idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
+  classes: "classes", class: "classes", join: "classes",
+};
 
-  // Mỗi mục một màu, xếp theo dải cầu vồng dịu từ trái sang phải
-  const NAV_COLOR = {
-    home: "#e0892a", classes: "#e5793f", homework: "#e46f6a", exams: "#d9669b", bank: "#a47ad8", vocab: "#6f82e8",
-    idioms: "#4a9fd8", puns: "#3fa7a0", games: "#4fb58c", history: "#86a83c", admin: "#8f9aa6",
-  };
-  const pill = (r, ic, label) =>
-    el("button", { class: "nav-pill" + (section === r ? " active" : ""), style: `--nav:${NAV_COLOR[r] || "var(--copper)"}`, title: label, onclick: () => go(r) },
-      icon(ic), el("span", { class: "nav-label" }, label));
+/** Các mục menu, chia nhóm. Homework chỉ hiện khi đã vào lớp (giáo viên luôn thấy) */
+function navGroups() {
+  const teacher = isAdmin(user);
+  return [
+    { items: [["home", "home", L("Trang chủ", "Home")]] },
+    { title: L("Học tập", "Learn"), items: [
+      ["classes", "users", L("Lớp học", "Classes")],
+      teacher || hasClass() ? ["homework", "homework", L("Bài tập", "Homework")] : null] },
+    { title: L("Luyện thi", "Practice"), items: [
+      ["exams", "exam", L("Thi thử", "Mock tests")],
+      ["bank", "file", L("Ngân hàng đề", "Practice bank")],
+      ["history", "history", L("Lịch sử làm bài", "History")]] },
+    { title: L("Từ vựng", "Words"), items: [
+      ["vocab", "cards", L("Từ vựng", "Vocabulary")],
+      ["games", "game", L("Trò chơi", "Games")],
+      ["idioms", "quote", "Idioms"],
+      ["puns", "laugh", "Puns"]] },
+    teacher ? { title: L("Giáo viên", "Teacher"), items: [["admin", "chart", L("Quản lý", "Admin")]] } : null,
+  ].filter(Boolean).map((g) => ({ ...g, items: g.items.filter(Boolean) }));
+}
 
+function chrome(page) {
+  const section = SECTION_OF[page] || "home";
   const s = getStats();
-  const avatar = user.photoURL
+  const name = user.displayName || user.email || L("Học viên", "Student");
+  const avatar = () => (user.photoURL
     ? el("img", { class: "avatar", src: user.photoURL, alt: "", referrerpolicy: "no-referrer" })
-    : el("div", { class: "avatar avatar-letter" }, (user.displayName || "?").slice(0, 1).toUpperCase());
+    : el("div", { class: "avatar avatar-letter" }, (user.displayName || "?").slice(0, 1).toUpperCase()));
+  const groups = navGroups();
+  const labelOf = Object.fromEntries(groups.flatMap((g) => g.items).map(([r, , t]) => [r, t]));
 
-  return el("header", { class: "topbar" },
+  const link = (r, ic, label) => el("a", {
+    class: "side-link" + (section === r ? " active" : ""), href: `#${r}`, title: label, "aria-current": section === r ? "page" : null,
+    onclick: (e) => { e.preventDefault(); go(r); },
+  }, el("span", { class: "side-ico" }, icon(ic)), el("span", { class: "side-label" }, label));
+
+  const sidebar = el("aside", { class: "sidebar", "aria-label": L("Menu chính", "Main menu") },
     el("a", { class: "brand", href: "#home", onclick: (e) => { e.preventDefault(); go("home"); } },
       el("span", { class: "logo", html: catLogoSVG() }),
       el("span", { class: "brand-name" }, BRAND.name)),
-    el("nav", { class: "nav" },
-      pill("home", "home", L("Trang chủ", "Home")),
-      pill("classes", "users", L("Lớp học", "Classes")),
-      // Homework chỉ hiện khi đã vào ít nhất một lớp (giáo viên luôn thấy)
-      isAdmin(user) || hasClass() ? pill("homework", "homework", L("Bài tập", "Homework")) : null,
-      pill("exams", "exam", L("Thi thử", "Tests")),
-      pill("bank", "file", L("Ngân hàng đề", "Practice bank")),
-      pill("vocab", "cards", L("Từ vựng", "Vocabulary")),
-      pill("idioms", "quote", "Idioms"),
-      pill("puns", "laugh", "Puns"),
-      pill("games", "game", L("Trò chơi", "Games")),
-      pill("history", "history", L("Lịch sử", "History")),
-      isAdmin(user) ? pill("admin", "chart", L("Quản lý", "Admin")) : null),
+    el("nav", { class: "side-nav" },
+      groups.map((g) => el("div", { class: "side-group" },
+        g.title ? el("div", { class: "side-title" }, g.title) : null,
+        g.items.map(([r, ic, t]) => link(r, ic, t))))),
+    el("div", { class: "side-foot" },
+      el("div", { class: "side-level" },
+        el("div", { class: "row", style: "justify-content:space-between" },
+          el("span", {}, `${L("Cấp", "Level")} ${s.level}`), el("span", { class: "side-xp" }, `${s.xp} XP`)),
+        el("div", { class: "side-bar" }, el("span", { style: `width:${s.pct ?? 0}%` })))));
+
+  const themeBtn = el("button", { class: "icon-btn theme-btn", title: currentTheme() === "dark" ? L("Giao diện sáng", "Light mode") : L("Giao diện tối", "Dark mode"),
+    "aria-label": L("Đổi giao diện sáng / tối", "Toggle light / dark mode"),
+    onclick: () => { toggleTheme(); render(); } }, icon(currentTheme() === "dark" ? "sun" : "moon"));
+
+  const header = el("header", { class: "topbar" },
+    el("a", { class: "brand brand-mobile", href: "#home", onclick: (e) => { e.preventDefault(); go("home"); } },
+      el("span", { class: "logo", html: catLogoSVG() }), el("span", { class: "brand-name" }, BRAND.name)),
+    el("div", { class: "topbar-title" }, labelOf[section] || ""),
     el("div", { class: "spacer" }),
-    langToggle(),
     el("span", { class: "streak-pill", title: L("Chuỗi ngày học liên tiếp", "Day streak") }, icon("flame"), s.streak),
+    langToggle(),
+    themeBtn,
     el("div", { class: "user-chip" },
-      avatar,
+      avatar(),
       el("div", { class: "meta" },
-        el("div", { class: "name" }, user.displayName || user.email || L("Học viên", "Student")),
-        el("div", { class: "role" }, `${L("Cấp", "Level")} ${s.level} · ${s.xp} XP`))),
-    el("button", { class: "nav-pill icon-only", title: L("Đăng xuất", "Sign out"), "aria-label": L("Đăng xuất", "Sign out"), onclick: () => signOutFn?.() }, icon("logout")));
+        el("div", { class: "name" }, name),
+        el("div", { class: "role" }, isAdmin(user) ? L("Giáo viên", "Teacher") : `${L("Cấp", "Level")} ${s.level} · ${s.xp} XP`))),
+    el("button", { class: "icon-btn", title: L("Đăng xuất", "Sign out"), "aria-label": L("Đăng xuất", "Sign out"), onclick: () => signOutFn?.() }, icon("logout")));
+
+  // Điện thoại: 4 mục chính + "Thêm" mở bảng đủ các mục
+  const main4 = [["home", "home", L("Trang chủ", "Home")],
+    isAdmin(user) || hasClass() ? ["homework", "homework", L("Bài tập", "Homework")] : ["classes", "users", L("Lớp học", "Classes")],
+    ["bank", "file", L("Luyện đề", "Practice")], ["vocab", "cards", L("Từ vựng", "Words")]];
+  const moreOn = !main4.some(([r]) => r === section);
+  const sheet = el("div", { class: "more-sheet hidden", role: "dialog", "aria-label": L("Tất cả mục", "All sections") });
+  const closeSheet = () => sheet.classList.add("hidden");
+  sheet.addEventListener("click", (e) => { if (e.target === sheet) closeSheet(); });
+  sheet.append(el("div", { class: "more-panel" },
+    el("div", { class: "more-grab" }),
+    groups.map((g) => el("div", { class: "side-group" },
+      g.title ? el("div", { class: "side-title" }, g.title) : null,
+      el("div", { class: "more-grid" }, g.items.map(([r, ic, t]) => el("button", { class: "more-item" + (section === r ? " active" : ""),
+        onclick: () => { closeSheet(); go(r); } }, el("span", { class: "side-ico" }, icon(ic)), t))))),
+    el("div", { class: "row wrap", style: "gap:8px;margin-top:14px" }, langToggle(),
+      el("button", { class: "btn btn-sm", onclick: () => { toggleTheme(); render(); } }, icon(currentTheme() === "dark" ? "sun" : "moon"),
+        currentTheme() === "dark" ? L("Giao diện sáng", "Light mode") : L("Giao diện tối", "Dark mode")),
+      el("div", { class: "spacer" }),
+      el("button", { class: "btn btn-sm btn-ghost", onclick: () => signOutFn?.() }, icon("logout"), L("Đăng xuất", "Sign out")))));
+  const bottom = el("nav", { class: "bottombar", "aria-label": L("Menu", "Menu") },
+    main4.map(([r, ic, t]) => el("button", { class: "bb-item" + (section === r ? " active" : ""), onclick: () => go(r) }, icon(ic), el("span", {}, t))),
+    el("button", { class: "bb-item" + (moreOn ? " active" : ""), onclick: () => sheet.classList.remove("hidden") }, icon("grid"), el("span", {}, L("Thêm", "More"))),
+    sheet);
+
+  return { sidebar, header, bottom };
 }
 
 /* ===================== Trang chủ ===================== */
