@@ -29,7 +29,7 @@ Linh vật **i-melts** là mèo Anh lông ngắn màu xám dáng bánh mochi —
 
 | Phần | Nội dung |
 |---|---|
-| Bộ từ | 14 bộ, 210 từ có phiên âm (gồm AI & đời sống số, Khí hậu, Công việc thời nay, Đô thị, Du lịch, Sức khoẻ tinh thần, ngôn ngữ Writing Task 2, cụm từ nói Speaking), nghĩa, câu ví dụ, phát âm — [`js/data/vocab.js`](js/data/vocab.js) |
+| Bộ từ | 21 bộ, 342 từ có phiên âm, nghĩa Việt, định nghĩa Anh–Anh, câu ví dụ, phát âm — [`js/data/vocab.js`](js/data/vocab.js). 14 bộ đầu theo chủ đề IELTS (AI & đời sống số, Khí hậu, Công việc thời nay, Đô thị, Du lịch, Sức khoẻ tinh thần, ngôn ngữ Writing Task 2, cụm từ nói Speaking); 7 bộ sau lọc từ **Oxford Word Skills Intermediate** (Tội phạm & pháp luật, Xã hội & thiện nguyện, Đời sống đại học, Nghề nghiệp & nơi làm việc, Tiền bạc & kinh doanh, Từ nối ý, Khí hậu & môi trường) |
 | Flashcard | Ôn ngắt quãng: Quên → hỏi lại sau 1 phút, Khó → 10 phút, Nhớ → 1 ngày, Dễ → 4 ngày, khoảng cách tăng dần. Phím tắt Space / 1–4 / P |
 | Sổ từ | Lưu từ bất kỳ để ôn hoặc chơi riêng |
 | Trò chơi | Ghép cặp · Mưa chữ · Đánh vần · Trắc nghiệm tốc độ · Đoán chữ — chọn chơi với tất cả từ, sổ từ, từ đang học hoặc từng bộ |
@@ -39,7 +39,13 @@ Tiến độ từ vựng lưu trong trình duyệt; khi đã cấu hình Firebas
 xếp hạng (`leaderboard/{uid}` — chỉ có tên, ảnh, XP, không có email).
 
 Thêm bộ từ: mở `js/data/vocab.js`, copy một khối `{ id, title, en, icon, color, words: [...] }`. Icon dùng được:
-`cap`, `leaf`, `chip`, `heart`, `briefcase`, `chart`, `star`, `paw`.
+`cap`, `leaf`, `chip`, `heart`, `briefcase`, `chart`, `star`, `paw`, `shield`, `users`, `link`.
+Tiến độ ôn lưu theo `id` của bộ và của từ, nên **thêm bộ mới hay thêm từ vào cuối bộ cũ đều không mất tiến độ**;
+đừng đổi `id` của bộ đã có học sinh học.
+
+7 bộ lấy từ sách giấy được lọc thủ công: sách là bản scan nên không rút chữ tự động được, phải đọc từng trang.
+Danh sách từ lấy theo khung GLOSSARY của sách, còn phiên âm, nghĩa tiếng Việt, định nghĩa và câu ví dụ đều tự soạn
+theo văn phong các bộ có sẵn — không chép nguyên văn phần giải nghĩa của sách.
 
 ## Ngôn ngữ giao diện (EN / VI)
 
