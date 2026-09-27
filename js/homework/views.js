@@ -823,8 +823,29 @@ export function renderHomeworkReview(ctx, id) {
     const scoreTotal = a.type === "bank" ? (a.questionCount || subs.find((s) => s.score)?.score.total || 0) : key.length;
     const avg = scores.length ? (scores.reduce((p, c) => p + c, 0) / scores.length).toFixed(1) : null;
 
+    // Sắp xếp: mặc định ai nộp trước đứng trước; học sinh chưa nộp luôn ở cuối (theo tên)
+    const SORTS = {
+      early:  { label: L("Nộp sớm trước", "Earliest first"), cmp: (x, y) => x.sub.submittedAt - y.sub.submittedAt },
+      late:   { label: L("Nộp mới nhất trước", "Latest first"), cmp: (x, y) => y.sub.submittedAt - x.sub.submittedAt },
+      marking:{ label: L("Chưa chấm trước", "Unmarked first"),
+        cmp: (x, y) => (!!(x.sub.gradedAt || x.sub.teacherScore) - !!(y.sub.gradedAt || y.sub.teacherScore)) || (x.sub.submittedAt - y.sub.submittedAt) },
+      name:   { label: L("Tên A–Z", "Name A–Z"), cmp: (x, y) => byName(x, y) },
+    };
+    const byName = (x, y) => String(x.name || "").localeCompare(String(y.name || ""), "vi");
+    let sortBy = "early";
+    try { sortBy = SORTS[localStorage.getItem("ielts:hwSort")] ? localStorage.getItem("ielts:hwSort") : "early"; } catch { /* riêng tư */ }
     const list = el("div", { class: "stack" });
-    for (const r of rows) list.append(reviewRow(ctx, a, r, key, autoScore));
+    const sortBar = el("div", { class: "row wrap", style: "gap:8px" });
+    const paintList = () => {
+      sortBar.replaceChildren(el("span", { class: "small muted strong" }, L("Sắp xếp:", "Sort:")),
+        ...Object.entries(SORTS).map(([k, o]) => el("button", { class: "chip-btn" + (k === sortBy ? " on" : ""), onclick: () => {
+          sortBy = k; try { localStorage.setItem("ielts:hwSort", k); } catch { /* riêng tư */ } paintList();
+        } }, o.label)));
+      const done = rows.filter((r) => r.sub).sort((x, y) => SORTS[sortBy].cmp(x, y) || byName(x, y));
+      const none = rows.filter((r) => !r.sub).sort(byName);
+      list.replaceChildren(...[...done, ...none].map((r) => reviewRow(ctx, a, r, key, autoScore)));
+    };
+    paintList();
 
     body.replaceWith(el("div", { class: "stack-lg" },
       el("section", { class: "card hw-head", style: `--t:${TYPES[a.type]?.color}` },
@@ -837,6 +858,7 @@ export function renderHomeworkReview(ctx, id) {
           stat(L("Đã chấm", "Marked"), String(subs.filter((s) => s.gradedAt || s.teacherScore).length)),
           stat(avg != null ? L("Điểm TB", "Average") : L("Chưa nộp", "Not submitted"),
             avg != null ? `${avg}/${scoreTotal}` : String(Math.max(0, students.length - subs.length))))),
+      rows.some((r) => r.sub) ? sortBar : null,
       list));
   })().catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
 
