@@ -29,7 +29,7 @@ Linh vật **i-melts** là mèo Anh lông ngắn màu xám dáng bánh mochi —
 
 | Phần | Nội dung |
 |---|---|
-| Bộ từ | 21 bộ, 342 từ có phiên âm, nghĩa Việt, định nghĩa Anh–Anh, câu ví dụ, phát âm — [`js/data/vocab.js`](js/data/vocab.js). 14 bộ đầu theo chủ đề IELTS (AI & đời sống số, Khí hậu, Công việc thời nay, Đô thị, Du lịch, Sức khoẻ tinh thần, ngôn ngữ Writing Task 2, cụm từ nói Speaking); 7 bộ sau lọc từ **Oxford Word Skills Intermediate** (Tội phạm & pháp luật, Xã hội & thiện nguyện, Đời sống đại học, Nghề nghiệp & nơi làm việc, Tiền bạc & kinh doanh, Từ nối ý, Khí hậu & môi trường) |
+| Bộ từ | 31 bộ, 469 từ có phiên âm, nghĩa Việt, định nghĩa Anh–Anh, câu ví dụ, phát âm — [`js/data/vocab.js`](js/data/vocab.js). 14 bộ theo chủ đề IELTS · 7 bộ lọc từ **Oxford Word Skills Intermediate** · 10 bộ lấy từ khoá **12 buổi Reading & Vocab** của thầy (tính cách, trái đất & năng lượng, thay đổi & thời kỳ, khoa học & chất liệu, quảng cáo, động lực nghề nghiệp, tiêu dùng & xu hướng, đổi mới & giải quyết vấn đề, truyền thông, thành thị & nông thôn) |
 | Flashcard | Ôn ngắt quãng: Quên → hỏi lại sau 1 phút, Khó → 10 phút, Nhớ → 1 ngày, Dễ → 4 ngày, khoảng cách tăng dần. Phím tắt Space / 1–4 / P |
 | Sổ từ | Lưu từ bất kỳ để ôn hoặc chơi riêng |
 | Trò chơi | Ghép cặp · Mưa chữ · Đánh vần · Trắc nghiệm tốc độ · Đoán chữ — chọn chơi với tất cả từ, sổ từ, từ đang học hoặc từng bộ |
