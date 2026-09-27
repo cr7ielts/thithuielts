@@ -1,0 +1,174 @@
+{
+ "id": "p1-the-importance-of-icebergs-to-ocean-life",
+ "kind": "reading",
+ "groups": [
+  {
+   "from": 1,
+   "to": 5,
+   "kind": "tfng",
+   "instruction": "Choose TRUE if the statement agrees with the information given in the text, choose FALSE if the statement contradicts the information, or choose NOT GIVEN if there is no information on this.",
+   "questions": [
+    {
+     "n": 1,
+     "text": "In Robert FitzRoy's time, weather forecasting was a respected skill"
+    },
+    {
+     "n": 2,
+     "text": "When FitzRoy retired from the navy, he had already had a successful career at sea"
+    },
+    {
+     "n": 3,
+     "text": "FitzRoy faced competition from other applicants for the chief statistician's job"
+    },
+    {
+     "n": 4,
+     "text": "The British Parliament supported the idea of regular weather forecasts in 1854"
+    },
+    {
+     "n": 5,
+     "text": "Progress in technology made it a good time for publicly available weather forecasting to begin"
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "to": 13,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY from the passage for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "FitzRoy received weather reports produced by ships using reliable ({{6:)}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "simultaneous weather reports were taken daily"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "storm warnings were telegraphed to ({{7:)}} along the shore"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "signals for ships were displayed using raised ({{8:)}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "the storm warning service was the greatest development in sea safety since the ({{9:)}} was introduced"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "August 1861: Public weather forecasting service"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "very popular in The Times newspaper"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "frequently used by the English Queen for safe trips to a favourite ({{10:)}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "FitzRoy's forecasts were popular with fishermen but not with boat ({{11:)}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "in modern times FitzRoy's ({{12:)}} is used for a marine area"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "FitzRoy produced a ({{13:)}} which was respected by the scientific community The importance of icebergs to ocean life A The word iceberg refers to pieces of ice larger than five meters across. The waters surrounding Antarctica are home to most of the icebergs on Earth, although they can also be found in the Arctic region. The water surrounding icebergs teems with life including a range of fish and, consequently, the seals which prey on them. Seabirds such as gulls, fulmars and other birds often visit as well. Some fishermen in Arctic regions claim that the fishing is often best in the immediate vicinity of icebergs. Recent research is beginning to shed light on what it is about icebergs that is attractive to wildlife."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "B Ken Smith, senior scientist at the Monterey Bay Aquarium Research Institute, explains that \"free-drifting icebergs are hot spots of chemical and biological enrichment. His studies in the Weddell Sea off Antarctica confirmed high concentrations of chlorophyll, krill, and seabirds in the water surrounding the icebergs he sampled, extending out to about two miles around each berg. While he wouldn't speculate about whether the same results would be found around Arctic icebergs, other scientists say that the evidence suggests it may well be the case."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "C During their first expedition, Smith and his research team deployed a series of oceanographic instruments, fishing nets, and video cameras attached to remotely operated vehicles around a small iceberg with a surface area of 0.12 square kilometers, as well as around another much larger example. Their results revealed how important icebergs are to the marine environment."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "D Perhaps their most significant finding was that as icebergs melt, accumulated dust, pulverized rocks, and other terrestrial materials are dispersed into the water. These were all incorporated into the ice millions of years ago when it was part of glaciers which scraped up debris from the surface of the soil while moving across huge areas of land. Once in the water, these materials act as ocean fertilizer to nourish microscopic marine organisms such as plankton, upon which the entire food chain ultimately depends. These icebergs can be compared to river estuaries that supply surrounding coastal regions with nutrients as they enter the ocean,' Smith and his team wrote."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "E Oceanographer Greg Stone had a more hands-on approach to studying the productivity around icebergs. A vice president at Conservation International, one of the world's largest biodiversity conservation organizations, he led a team of scuba divers and scientists on a rare and dangerous expedition to study iceberg ecology around B-15, the largest iceberg ever known, which broke away from the Ross Ice Shelf in Antarctica in 2000. Nearly the size of the US state of Connecticut and containing enough fresh water to supply the entire US for five years, the berg had begun to break up by the time Stone's team arrived several months later, and the shifting pack ice made it impossible for them to reach it. But Stone and his colleagues still conducted about ninety dives around icebergs of various sizes. What they found was an unexpected bonanza of marine life in and around the ice."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "F Greg Stone noted that the water of Antarctica where his team undertook dives was several degrees below freezing. Like Smith's team, they recorded higher concentrations of jellyfish and krill within a mile or so around the icebergs. They also frequently saw juvenile ice fish living in burrows in the ice, though they were uncertain whether the fish excavated these themselves to hide from predators or simply took advantage of natural features of the ice. In an especially dangerous dive, they swam 300 meters into a cave inside another iceberg that had been grounded for several years and found a spectacular garden of invertebrates - feather duster worms, starfish, colorful sponges, sea cucumbers, and more - living on the seafloor at the farthest reaches of the cave."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "G According to Stone, most Antarctic icebergs get pushed around continuously by the wind and currents. As they move, their keel will rub along the seafloor, disturbing the benthic ecosystem. But because this particular iceberg had been grounded for several years, it served to protect bottom-dwelling creatures from the ravages of moving icebergs and nurtured this underwater garden."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "H Stone agrees with Smith's conclusion that the big picture of iceberg ecology is the vital role they play in fertilizing the Southern Ocean, thereby creating the largest biomass on Earth. The whole food chain gets fired up around one of these things,' Stone explains. 'The ice is the biological engine that drives the ecosystem, fueled further by the Antarctic's twenty-four-hour summer sunshine. There's no doubt that if you're an ocean animal, you're going to be attracted to an iceberg because it's generally a better place to be.\" I If you're not an ocean animal, on the other hand, it's probably best to keep your distance from icebergs, because one thing they are not is safe. Just hours after Stone's dive team emerged from exploring the cave within the grounded iceberg, the entire berg completely crumbled and disintegrated, leaving in its place what Stone described as 'two square miles of shattered crystal'. The pressures caused by the continuous melting and re-freezing of water throughout these mountainous structures ultimately lead to their destruction. As frightening as it was to Stone and his team of scientists, who decided then and there never to dive in an iceberg cave again, it also may have been the first time anyone had witnessed such an event."
+    }
+   ],
+   "noteTitle": "February 1861: Storm warning service"
+  }
+ ],
+ "passage": {
+  "title": "The importance of icebergs to ocean life",
+  "paras": [
+   {
+    "mark": "A",
+    "text": "The word iceberg refers to pieces of ice larger than five meters across. The waters surrounding Antarctica are home to most of the icebergs on Earth, although they can also be found in the Arctic region. The water surrounding icebergs teems with life including a range of fish and, consequently, the seals which prey on them. Seabirds such as gulls, fulmars and other birds often visit as well. Some fishermen in Arctic regions claim that the fishing is often best in the immediate vicinity of icebergs. Recent research is beginning to shed light on what it is about icebergs that is attractive to wildlife."
+   },
+   {
+    "mark": "B",
+    "text": "Ken Smith, senior scientist at the Monterey Bay Aquarium Research Institute, explains that \"free-drifting icebergs are hot spots of chemical and biological enrichment. His studies in the Weddell Sea off Antarctica confirmed high concentrations of chlorophyll, krill, and seabirds in the water surrounding the icebergs he sampled, extending out to about two miles around each berg. While he wouldn't speculate about whether the same results would be found around Arctic icebergs, other scientists say that the evidence suggests it may well be the case."
+   },
+   {
+    "mark": "C",
+    "text": "During their first expedition, Smith and his research team deployed a series of oceanographic instruments, fishing nets, and video cameras attached to remotely operated vehicles around a small iceberg with a surface area of 0.12 square kilometers, as well as around another much larger example. Their results revealed how important icebergs are to the marine environment."
+   },
+   {
+    "mark": "D",
+    "text": "Perhaps their most significant finding was that as icebergs melt, accumulated dust, pulverized rocks, and other terrestrial materials are dispersed into the water. These were all incorporated into the ice millions of years ago when it was part of glaciers which scraped up debris from the surface of the soil while moving across huge areas of land. Once in the water, these materials act as ocean fertilizer to nourish microscopic marine organisms such as plankton, upon which the entire food chain ultimately depends. These icebergs can be compared to river estuaries that supply surrounding coastal regions with nutrients as they enter the ocean,' Smith and his team wrote."
+   },
+   {
+    "mark": "E",
+    "text": "Oceanographer Greg Stone had a more hands-on approach to studying the productivity around icebergs. A vice president at Conservation International, one of the world's largest biodiversity conservation organizations, he led a team of scuba divers and scientists on a rare and dangerous expedition to study iceberg ecology around B-15, the largest iceberg ever known, which broke away from the Ross Ice Shelf in Antarctica in 2000. Nearly the size of the US state of Connecticut and containing enough fresh water to supply the entire US for five years, the berg had begun to break up by the time Stone's team arrived several months later, and the shifting pack ice made it impossible for them to reach it. But Stone and his colleagues still conducted about ninety dives around icebergs of various sizes. What they found was an unexpected bonanza of marine life in and around the ice."
+   },
+   {
+    "mark": "F",
+    "text": "Greg Stone noted that the water of Antarctica where his team undertook dives was several degrees below freezing. Like Smith's team, they recorded higher concentrations of jellyfish and krill within a mile or so around the icebergs. They also frequently saw juvenile ice fish living in burrows in the ice, though they were uncertain whether the fish excavated these themselves to hide from predators or simply took advantage of natural features of the ice. In an especially dangerous dive, they swam 300 meters into a cave inside another iceberg that had been grounded for several years and found a spectacular garden of invertebrates - feather duster worms, starfish, colorful sponges, sea cucumbers, and more - living on the seafloor at the farthest reaches of the cave."
+   },
+   {
+    "mark": "G",
+    "text": "According to Stone, most Antarctic icebergs get pushed around continuously by the wind and currents. As they move, their keel will rub along the seafloor, disturbing the benthic ecosystem. But because this particular iceberg had been grounded for several years, it served to protect bottom-dwelling creatures from the ravages of moving icebergs and nurtured this underwater garden."
+   },
+   {
+    "mark": "H",
+    "text": "Stone agrees with Smith's conclusion that the big picture of iceberg ecology is the vital role they play in fertilizing the Southern Ocean, thereby creating the largest biomass on Earth. The whole food chain gets fired up around one of these things,' Stone explains. 'The ice is the biological engine that drives the ecosystem, fueled further by the Antarctic's twenty-four-hour summer sunshine. There's no doubt that if you're an ocean animal, you're going to be attracted to an iceberg because it's generally a better place to be.\""
+   },
+   {
+    "mark": "I",
+    "text": "If you're not an ocean animal, on the other hand, it's probably best to keep your distance from icebergs, because one thing they are not is safe. Just hours after Stone's dive team emerged from exploring the cave within the grounded iceberg, the entire berg completely crumbled and disintegrated, leaving in its place what Stone described as 'two square miles of shattered crystal'. The pressures caused by the continuous melting and re-freezing of water throughout these mountainous structures ultimately lead to their destruction. As frightening as it was to Stone and his team of scientists, who decided then and there never to dive in an iceberg cave again, it also may have been the first time anyone had witnessed such an event."
+   }
+  ]
+ }
+}

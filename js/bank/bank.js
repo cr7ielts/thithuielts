@@ -26,13 +26,14 @@ const TAB_LABEL = { reading: "Reading", listening: L("Listening · cả đề", 
 let _banks = null;
 async function loadBanks() {
   if (_banks) return _banks;
-  const [r, v9, l] = await Promise.all([
+  const [r, v9, v8, l] = await Promise.all([
     import("../data/bank-reading.js").then((m) => m.READING_BANK).catch(() => []),
     import("../data/bank-vol9.js").then((m) => m.VOL9_READING).catch(() => []),
+    import("../data/bank-vol8.js").then((m) => m.VOL8_READING).catch(() => []),
     import("../data/bank-listening.js").catch(() => ({})),
   ]);
-  // Actual Test Vol 9 không có file PDF: làm thẳng trên web, xếp cùng danh sách Reading
-  const reading = [...r, ...v9].sort((a, b) => a.part - b.part || a.title.localeCompare(b.title));
+  // Actual Test Vol 8/9 không có file PDF: làm thẳng trên web, xếp cùng danh sách Reading
+  const reading = [...r, ...v9, ...v8].sort((a, b) => a.part - b.part || a.title.localeCompare(b.title));
   _banks = { reading, listening: l.LISTENING_BANK || [], section: l.LISTENING_SECTIONS || [] };
   return _banks;
 }

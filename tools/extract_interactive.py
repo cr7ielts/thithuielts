@@ -15,7 +15,9 @@ nfc = lambda s: unicodedata.normalize('NFC', s)
 
 def js_items(name, const):
     """đọc mảng trong js/data/bank-*.js"""
-    s = open(os.path.join(PROJ, 'js', 'data', name), encoding='utf8').read()
+    f = os.path.join(PROJ, 'js', 'data', name)
+    if not os.path.exists(f): return []      # ngân hàng phụ chưa sinh
+    s = open(f, encoding='utf8').read()
     body = s.split(f'export const {const} = [')[1]
     return [json.loads(l.strip().rstrip(',')) for l in body.splitlines() if l.strip().startswith('{')]
 
