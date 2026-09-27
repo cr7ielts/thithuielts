@@ -194,19 +194,21 @@ export async function listSubmissionsFor(aid) {
   return snap.docs.map((d) => normSub(d.id, d.data()));
 }
 
-/** Đếm số bài nộp theo từng bài tập (cho giáo viên) */
+/**
+ * Đếm số bài nộp theo từng bài tập (cho giáo viên): Map assignmentId -> số bài nộp.
+ * Map trả về có thêm .graded: Map assignmentId -> số bài giáo viên đã chấm.
+ */
 export async function countSubmissions() {
-  if (!isConfigured) {
-    const m = new Map();
-    for (const s of Object.values(lsGet(LS.s, {}))) m.set(s.assignmentId, (m.get(s.assignmentId) || 0) + 1);
-    return m;
-  }
-  const { db, dbMod } = await initFirebase();
-  const snap = await dbMod.getDocs(dbMod.collection(db, "hwSubmissions"));
+  const rows = !isConfigured ? Object.values(lsGet(LS.s, {}))
+    : await (async () => {
+      const { db, dbMod } = await initFirebase();
+      return (await dbMod.getDocs(dbMod.collection(db, "hwSubmissions"))).docs.map((d) => d.data());
+    })();
   const m = new Map();
-  for (const d of snap.docs) {
-    const a = d.data().assignmentId;
-    m.set(a, (m.get(a) || 0) + 1);
+  m.graded = new Map();
+  for (const s of rows) {
+    m.set(s.assignmentId, (m.get(s.assignmentId) || 0) + 1);
+    if (s.gradedAt || s.teacherScore) m.graded.set(s.assignmentId, (m.graded.get(s.assignmentId) || 0) + 1);
   }
   return m;
 }

@@ -544,7 +544,7 @@ export function teacherTable(ctx, list, counts, sizeOf, names = null) {
   table.append(el("thead", {}, el("tr", {},
     el("th", {}, L("Bài tập", "Assignment")), names ? el("th", {}, L("Lớp", "Class")) : null,
     el("th", {}, L("Loại", "Type")), el("th", {}, L("Hạn nộp", "Due")),
-    el("th", {}, L("Đã nộp", "Submitted")), el("th", {}, ""))));
+    el("th", {}, L("Đã nộp", "Submitted")), el("th", {}, L("Đã chấm", "Marked")), el("th", {}, ""))));
   const tbody = el("tbody");
   for (const a of list) {
     const n = counts.get(a.id) || 0;
@@ -556,6 +556,7 @@ export function teacherTable(ctx, list, counts, sizeOf, names = null) {
       el("td", {}, typeTag(a.type)),
       el("td", { class: dueInfo(a).state === "overdue" ? "dim" : "" }, fmtDateTime(a.dueAt).replace(/:\d\d$/, "")),
       el("td", {}, `${n}${size ? ` / ${size}` : ""}`),
+      el("td", {}, markedCell(a, n, counts.graded?.get(a.id) || 0)),
       el("td", { class: "nowrap" },
         el("button", { class: "btn btn-sm btn-primary", onclick: () => ctx.go(`homework/review/${a.id}`) }, L("Chấm bài", "Review")),
         " ",
@@ -565,6 +566,21 @@ export function teacherTable(ctx, list, counts, sizeOf, names = null) {
   }
   table.append(tbody);
   return el("div", { class: "card card-flush" }, el("div", { class: "table-wrap", style: "border:0" }, table));
+}
+
+/**
+ * Ô "Đã chấm": Reading / Listening / Ngân hàng đề chấm tự động; Writing / Speaking / nộp file
+ * cho biết còn bao nhiêu bài chờ giáo viên chấm.
+ */
+function markedCell(a, submitted, graded) {
+  if (["reading", "listening", "bank"].includes(a.type)) {
+    return el("span", { class: "chip", title: L("Chấm tự động khi học sinh nộp", "Marked automatically on submission") }, icon("bolt"), L("Tự động", "Auto"));
+  }
+  if (!submitted) return el("span", { class: "dim" }, "—");
+  if (graded >= submitted) return el("span", { class: "chip chip-ok" }, icon("check"), L(`Xong ${graded}/${submitted}`, `Done ${graded}/${submitted}`));
+  const left = submitted - graded;
+  return el("span", { class: "chip chip-warn", title: L(`Đã chấm ${graded}/${submitted}`, `${graded}/${submitted} marked`) },
+    icon("clock"), L(`Còn ${left} chưa chấm`, `${left} to mark`));
 }
 
 /* ======================= GIÁO VIÊN: tạo / sửa ======================= */
