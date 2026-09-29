@@ -1,0 +1,31 @@
+{
+ "id": "p2-healthy-buildings-productive-people",
+ "q": {
+  "14": {"ev": ["but builders in general have paid little attention to the health aspects of indoor spaces, instead focusing on superficial design features and on meeting minimum environmental standards to keep costs down"],
+         "why": "Đoạn A: người xây dựng ít quan tâm tới sức khoẻ trong không gian trong nhà, chỉ chú ý thiết kế bề ngoài và tiêu chuẩn tối thiểu → iv (The low priority given to making buildings healthy for users)."},
+  "15": {"ev": ["about $40 per person, per year, compared with a $6,500 increase in employee productivity"],
+         "why": "Đoạn B: chi phí cải thiện không khí chỉ khoảng 40 đô/người/năm nhưng năng suất tăng tương đương 6.500 đô → viii (The financial benefits of efficient workplaces)."},
+  "16": {"ev": ["24 office workers with administrative, technical, professional or managerial jobs came to the lab and performed their regular work under minimal supervision"],
+         "why": "Đoạn C: nhân viên văn phòng tới phòng thí nghiệm để làm công việc thường ngày và làm bài kiểm tra nhận thức → được đánh giá bên ngoài nơi làm việc thường ngày → vi (Workers were assessed outside of their usual workplace)."},
+  "17": {"ev": ["they compared test scores of 109 people working in 10 buildings - about 12 people per site - in two buildings in each of five cities"],
+         "why": "Đoạn D: nghiên cứu thứ hai so sánh 10 toà nhà ở năm thành phố → iii (The assessment of workplaces in several locations)."},
+  "18": {"ev": ["Results showed that people were more likely to take part in spontaneous collaborations in the new space than in the older ones, and to be physically active."],
+         "why": "Đoạn E: toà Hillman Hall thân thiện môi trường khiến người dùng hợp tác và vận động nhiều hơn → i (The effects of a new environmentally friendly building on the people)."},
+  "19": {"ev": ["Like other researchers in this growing field, Eyler sees multidisciplinary collaboration as the key to success."],
+         "why": "Đoạn F: hợp tác liên ngành giữa quản lý, y tế công cộng và kiến trúc sư là chìa khoá thành công → v (Achieving design efficiency by involving a range of specialists)."},
+  "20": {"ev": ["`If these findings are replicated in other labs and in real-world work environments,' he says, `they could lead to designs that provide much more outside air"],
+         "why": "Nghiên cứu thêm sẽ cải thiện sức khoẻ và hiệu suất: Zimring nói nếu kết quả được lặp lại ở nơi khác, nó có thể dẫn tới thiết kế tốt hơn, thúc đẩy sức khoẻ và hiệu suất → B."},
+  "21": {"ev": ["other factors, such as how someone feels about their working environment, may also play a part, notes Harvard research fellow Piers MacNaughton"],
+         "why": "Cảm nhận về nơi làm việc có thể ảnh hưởng hiệu suất: MacNaughton cho rằng cảm nhận của người lao động về môi trường làm việc cũng có vai trò → C."},
+  "22": {"ev": ["Results showed that people were more likely to take part in spontaneous collaborations in the new space than in the older ones"],
+         "why": "Thiết kế nơi làm việc ảnh hưởng tới mức độ hợp tác giữa đồng nghiệp: nghiên cứu của Amy Eyler cho thấy người ta hợp tác nhiều hơn trong toà nhà mới → D."},
+  "23": {"ev": ["indoor air quality can significantly lower cognitive performance in buildings that would otherwise meet current building standards, notes environmental psychologist Craig Zimring"],
+         "why": "Năng lực trí tuệ có thể giảm đáng kể do môi trường làm việc: Zimring nhận xét chất lượng không khí trong nhà có thể làm giảm đáng kể hiệu suất nhận thức → B."},
+  "24": {"ev": ["a US research organization devoted to studying and developing sustainability"],
+         "why": "Tóm tắt: trung tâm Syracuse tập trung nghiên cứu ___. Bài: tổ chức chuyên nghiên cứu và phát triển tính bền vững (sustainability) → sustainability."},
+  "25": {"ev": ["performed their regular work under minimal supervision"],
+         "why": "Tóm tắt: nhân viên làm việc bình thường mà không có nhiều ___. Bài: 'under minimal supervision' (giám sát tối thiểu) → supervision."},
+  "26": {"ev": ["such as running a city as a mayor"],
+         "why": "Tóm tắt: người tham gia đóng vai, ví dụ làm ___ xử lý các vấn đề thực tế. Bài: điều hành một thành phố trong vai thị trưởng (mayor) → mayor."}
+ }
+}
