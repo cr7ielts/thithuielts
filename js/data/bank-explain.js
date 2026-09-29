@@ -265,4 +265,6 @@ export const EXPLAIN_IDS = new Set([
   "p3-what-is-social-history",
   "p3-what-makes-a-musical-expert",
   "p3-when-people-are-deaf-to-music",
+  "p3-who-looks-after-the-children-in-todays-britain",
+  "p3-yawning",
 ]);

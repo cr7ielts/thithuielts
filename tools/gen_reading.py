@@ -53,6 +53,7 @@ FIXES = {
     'p3-translating-a-key-to-international-understanding': ({}, {31: 'purpose / purposes'}),
     'p3-whale-culture': ({}, {33: 'physical environment / environment', 34: "mother / maternal pod / mother's"}),
     'p3-what-count-as-knowledge': ({}, {31: 'friends and family / family and friends', 32: 'holistic medicine / holistic'}),
+    'p3-who-looks-after-the-children-in-todays-britain': ({}, {38: 'empathetic / empathic'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
