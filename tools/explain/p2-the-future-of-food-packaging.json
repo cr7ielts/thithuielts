@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-future-of-food-packaging",
+ "q": {
+  "14": {"ev": ["Food companies spend a lot of time thinking about packaging as a way to represent their brand and make consumers love their products."],
+         "why": "Section A: bao bì thể hiện thương hiệu, gợi sự vui tươi, ý thức môi trường, công nghệ cao, và khiến khách hàng yêu sản phẩm → ix (Using packaging to communicate ideas and attract customers)."},
+  "15": {"ev": ["Consumers are growing ever more obsessed with sleek technology, reducing food waste, and minimizing health risks to themselves and the environment"],
+         "why": "Section B: nhiều lý do khiến bao bì thay đổi — công nghệ, giảm lãng phí, giảm rủi ro sức khoẻ và môi trường → ii (The many reasons for changes in packaging)."},
+  "16": {"ev": ["Edible packaging has been proposed as one solution to consumers' environmental concerns because it leaves no waste."],
+         "why": "Section C: bao bì ăn được — cốc bánh quy của KFC, vỏ sữa chua, cốc gelatin → iv (Packaging that can be consumed with its contents). Bẫy: iii sai vì vỏ sữa chua giúp bỏ thìa nhựa, không phải có kèm thìa."},
+  "17": {"ev": ["Another development has been nonstick packaging, which can eliminate the 3 to 15 percent of sauces left inside traditional bottles"],
+         "why": "Section D: bao bì chống dính giúp dùng hết 3–15% nước sốt thường còn sót trong chai → i (Packaging that allows consumers to use more of the product)."},
+  "18": {"ev": ["scientists are working on food packaging like plastic wrap that is 'active and intelligent' with tiny embedded sensors to first detect and later prevent food from spoiling"],
+         "why": "Section E: màng bọc 'thông minh' có cảm biến phát hiện thực phẩm bắt đầu hỏng → vii (Packaging that indicates when food is beginning to go rotten)."},
+  "19": {"ev": ["Another emerging technology is packaging that disappears."],
+         "why": "Section F: bao bì tan trong nước sôi, chai dầu bằng đường, hộp nước ép bằng rong biển tự phân huỷ → x (Packaging that vanishes or decomposes quickly)."},
+  "20": {"ev": ["Super-compressed packaging serves the increasing number of city dwellers who generally have tiny kitchens and no storage room."],
+         "why": "Section G: bao bì siêu nén cho người thành phố bếp nhỏ, không có chỗ chứa → v (Packaging that doesn't take up a lot of space)."},
+  "21": {"ev": ["The fried chicken chain KFC, for example, is experimenting with an edible coffee-cup. Made from a hard cookie lined with heat- resistant white chocolate"],
+         "why": "KFC thử nghiệm cốc cà phê ăn được làm từ bánh quy lót sô-cô-la trắng chịu nhiệt → vỏ đựng ngọt cho đồ uống nóng → E."},
+  "22": {"ev": ["the company introduced edible cupcake wrappers made from potato starch"],
+         "why": "Loliware ra mắt giấy gói bánh cupcake ăn được làm từ tinh bột khoai tây → bao bì từ một sản phẩm rau củ → D."},
+  "23": {"ev": ["Tomorrow Machine is also working on a compressed tiny package that expands into a full-size bowl when hot water is added"],
+         "why": "Tomorrow Machine làm gói nhỏ nén nở thành bát khi thêm nước nóng → đồ đựng to ra trong điều kiện nhất định → A. Bẫy: B (tan trong nước nóng) là của MonoSol."},
+  "24": {"ev": ["the clear paper used to wrap Japanese Botan Rice Candy"],
+         "why": "Câu: ở Nhật Bản, ___ đã được dùng làm bao bì ăn được nhiều năm. Bài: giấy (paper) trong suốt gói kẹo gạo Botan → paper."},
+  "25": {"ev": ["which can eliminate the 3 to 15 percent of sauces left inside traditional bottles"],
+         "why": "Câu: Liquiglide giảm lãng phí, nhất là với các chai đựng nhiều loại ___. Bài: nước sốt (sauces) như tương cà, sốt mayonnaise → sauces."},
+  "26": {"ev": ["an oil bottle made from hardened sugar that cracks open like an egg"],
+         "why": "Câu: Tomorrow Machine định dùng ___ cứng làm chai dầu. Bài: chai dầu làm từ đường (sugar) đông cứng → sugar."}
+ }
+}

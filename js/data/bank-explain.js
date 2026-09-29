@@ -139,4 +139,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-the-dingo-debate",
   "p2-the-economic-effect-of-climate",
   "p2-the-el-ni-o-effect",
+  "p2-the-fascinating-world-of-attine-ants",
+  "p2-the-fashion-industry",
+  "p2-the-future-of-food-packaging",
 ]);
