@@ -214,4 +214,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-psychological-responses-to-mirror-images",
   "p3-rebranding-art-museums",
   "p3-recording-history",
+  "p3-research-into-the-effects-of-different-teaching-styles",
+  "p3-risk-taking",
+  "p3-robert-louis-stevenson",
 ]);
