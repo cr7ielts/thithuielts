@@ -1,0 +1,31 @@
+{
+ "id": "p2-mind-music",
+ "q": {
+  "14": {"ev": ["Songs with earworm potential appear to share certain features: a repeating pattern of ups and downs in pitch, and irregular musical intervals."],
+         "why": "Thông tin: đặc điểm chung của các bài hát gây 'earworm'. Đoạn G: cao độ lên xuống lặp lại và quãng nhạc không đều → G."},
+  "15": {"ev": ["Some neuroscientists and cognitive psychologists are studying earworms to explore the mysteries of memory and the part of the brain that is beyond our conscious control."],
+         "why": "Thông tin: lý do nghiên cứu earworm. Đoạn A: nghiên cứu để khám phá bí ẩn của trí nhớ và phần não nằm ngoài ý thức → A."},
+  "16": {"ev": ["when subjects listened to the first few notes of familiar music, areas in the right frontal and superior temporal portions of the brain became activated", "When the same subjects listened to unfamiliar music and were asked to recall it, there was activity in the left frontal portions of the brain instead."],
+         "why": "Thông tin: phản ứng của não với bài hát quen và lạ. Đoạn F: nhạc quen kích hoạt vùng trán phải và thái dương trên; nhạc lạ kích hoạt vùng trán trái → F."},
+  "17": {"ev": ["Drs Stewart and Halpern are now working together to recruit survey participants for a study looking at whether people at different stages of life experience earworms differently."],
+         "why": "Thông tin: nghiên cứu dự kiến về tần suất earworm ở các nhóm tuổi. Đoạn H: Stewart và Halpern tuyển người tham gia để xem người ở các giai đoạn đời khác nhau trải nghiệm earworm thế nào → H."},
+  "18": {"ev": ["while a device attached to their wrist recorded their movements"],
+         "why": "Tóm tắt: tình nguyện viên ghi nhịp nhạc bằng thiết bị trên ___. Bài: thiết bị gắn ở cổ tay (wrist) → wrist."},
+  "19": {"ev": ["with more gray matter in areas associated with processing emotions"],
+         "why": "Tóm tắt: người hay bị earworm có não xử lý ___ khác người khác. Bài: nhiều chất xám hơn ở vùng xử lý cảm xúc (emotions) → emotions."},
+  "20": {"ev": ["Dr Stewart likens earworms to `sonic screen savers' that keep the mind entertained while it is otherwise unoccupied."],
+         "why": "Tóm tắt: não được earworm làm cho ___ khi không tập trung vào việc gì. Bài: earworm như 'trình bảo vệ màn hình âm thanh' giữ cho tâm trí được giải trí (entertained) → entertained."},
+  "21": {"ev": ["Dr Stewart observed that the more challenging the activity, the less likely the volunteers were to hear the music."],
+         "why": "Tóm tắt: earworm giảm liên quan trực tiếp tới mức độ ___ của nhiệm vụ. Bài: hoạt động càng khó (challenging) thì càng ít nghe thấy nhạc → challenging."},
+  "22": {"ev": ["about how producers pump pop songs full of aural `hooks', the punchy melodic phrases designed to target the brain and leave it wanting more"],
+         "why": "Một số người làm nhạc cố ý tạo ra nhạc dễ nhớ: Seabrook viết về việc nhà sản xuất nhồi 'hook' vào bài pop để nhắm vào não người nghe → D."},
+  "23": {"ev": ["`The idea that we have full control over our thought processes is an illusion,' says psychologist Lauren Stewart"],
+         "why": "Con người không thể hoàn toàn kiểm soát suy nghĩ: Stewart nói ý nghĩ rằng ta kiểm soát hoàn toàn quá trình suy nghĩ là ảo tưởng → A."},
+  "24": {"ev": ["Even tunes you may have heard but didn't pay attention to can worm their way into your subconscious, says Ira Hyman"],
+         "why": "Ta có thể nhớ bài hát mà không biết mình đã nghe: Hyman nói cả những giai điệu nghe mà không để ý cũng có thể len vào tiềm thức → B."},
+  "25": {"ev": ["Imaging studies by Andrea Halpern at Bucknell University, in Lewisburg, USA, have shown that deliberately imagining music and actually listening to music activate many of the same neurological networks."],
+         "why": "Nghĩ về nhạc tác động lên não giống như nghe nhạc: nghiên cứu của Halpern cho thấy tưởng tượng và nghe nhạc kích hoạt nhiều mạng thần kinh giống nhau → C."},
+  "26": {"ev": ["So, when the mind hits a part of a song it can't remember, it loops back rather than moving on. That could make an earworm even more entrenched, Dr Hyman says."],
+         "why": "Earworm dai dẳng hơn khi chỉ một đoạn ngắn lặp lại: Hyman nói khi não quay lại đoạn nhớ được thay vì đi tiếp, earworm càng bám chặt → B."}
+ }
+}

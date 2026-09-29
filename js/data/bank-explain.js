@@ -119,4 +119,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-investment-in-shares-vs-investment-in-other-assets-which-giv",
   "p2-keeping-the-water-away",
   "p2-lean-production",
+  "p2-learning-from-the-romans",
+  "p2-mammoth-kill",
+  "p2-mind-music",
 ]);
