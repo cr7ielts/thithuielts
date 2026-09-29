@@ -1,0 +1,31 @@
+{
+ "id": "p2-stress-less",
+ "q": {
+  "14": {"ev": ["Jan Elsner, a psychologist who specialises in executive coaching, says that doing well on a demanding workload is typical of senior executives."],
+         "why": "Người làm việc cấp cao thường phản ứng tích cực với căng thẳng: Elsner nói làm tốt khi khối lượng công việc nặng là điều điển hình ở lãnh đạo cấp cao → C."},
+  "15": {"ev": ["`I'll promise a client that I'll do something tomorrow, and then I'll promise another client that I'll do the same thing, when I know it's not going to happen."],
+         "why": "Căng thẳng tăng do cố làm hài lòng khách hàng: Plumridge hứa hẹn với khách những điều không thực tế → A."},
+  "16": {"ev": ["He also relies on the advice of colleagues, saying that his peers coach each other on business problems"],
+         "why": "Sự hỗ trợ của đồng nghiệp có thể giảm căng thẳng: Plumridge dựa vào lời khuyên của đồng nghiệp, 'một đôi mắt mới' giúp ích → A."},
+  "17": {"ev": ["His recent research shows that the major predictor of stress is the level of job control a person has."],
+         "why": "Thiếu tự chủ trong công việc thường gây căng thẳng: LaMontagne cho thấy yếu tố dự báo chính là mức kiểm soát công việc; việc khó mà ít tự chủ là tệ nhất → D."},
+  "18": {"ev": ["A study in the Journal of Experimental Psychology shows that people always believe that they will be less busy in the future."],
+         "why": "Người lao động thường nghĩ khối lượng công việc sẽ giảm theo thời gian: Zauberman và Lynch chỉ ra người ta luôn tin tương lai sẽ bớt bận → B."},
+  "19": {"ev": ["He knows he is doing too much when he gets less than six hours' sleep for three consecutive nights, when he is constantly having to reschedule appointments, and when he misses a family birthday or anniversary."],
+         "why": "Câu hỏi tìm dấu hiệu KHÔNG được nhắc: Plumridge nêu thiếu ngủ (D), phải dời lịch liên tục (A), lỡ sinh nhật, kỷ niệm của gia đình (B). Thiếu tập trung vào công việc không được nhắc → C."},
+  "20": {"ev": ["Experts say the key to dealing with stress is not to focus on relief -- a game of golf or a massage -- but to reassess workloads.", "that might mean allocating extra staff to a job, allowing more time, or changing expectations"],
+         "why": "Câu hỏi tìm cách KHÔNG được Plumridge gợi ý: ông nêu thêm người (C), thêm thời gian (B), thay đổi kỳ vọng (A). Nghỉ ngơi chơi thể thao không phải cách của ông — chuyên gia còn nói không nên tập trung vào đó → D."},
+  "21": {"ev": ["She points to research showing that meditation can alter the biochemistry of the brain and the way that brains and bodies react to stress."],
+         "why": "Theo Elsner, thiền có thể thay đổi hoá sinh của não và cách não, cơ thể phản ứng với căng thẳng → thay đổi phản ứng thể chất → B."},
+  "22": {"ev": ["stress causes the most loss of time of any workplace injury"],
+         "why": "Tóm tắt: người ta nghỉ làm vì căng thẳng nhiều hơn bất kỳ ___ nào khác. Bài: căng thẳng gây mất nhiều thời gian nhất so với mọi chấn thương nghề nghiệp (workplace injury) → workplace injury."},
+  "23": {"ev": ["employees suffering stress are absent from work for an average of 16.6 weeks"],
+         "why": "Tóm tắt: trung bình người nghỉ vì căng thẳng vắng mặt ___. Bài: trung bình 16,6 tuần → 16.6 weeks."},
+  "24": {"ev": ["claims for stress-related psychological injury accounted for 7% of insurance claims, but almost 27% of the amount paid out in claim payments"],
+         "why": "Tóm tắt: số đơn bảo hiểm do căng thẳng chỉ chiếm ___ tổng số. Bài: 7% số đơn nhưng gần 27% số tiền chi trả → 7%."},
+  "25": {"ev": ["the key to dealing with stress is not to focus on relief -- a game of golf or a massage"],
+         "why": "Tóm tắt: giảm căng thẳng bằng liệu pháp thể chất như thể thao hoặc ___ có thể kém hiệu quả. Bài: chơi golf hay xoa bóp (massage) → massage."},
+  "26": {"ev": ["but to reassess workloads"],
+         "why": "Tóm tắt: … so với việc xem xét lại ___ của mình. Bài: đánh giá lại khối lượng công việc (workloads) → workloads."}
+ }
+}

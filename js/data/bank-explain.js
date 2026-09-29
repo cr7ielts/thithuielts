@@ -130,4 +130,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-should-space-be-explored-by-robots-or-by-humans",
   "p2-should-we-stop-eating-meat",
   "p2-skyscraper-farming",
+  "p2-solving-the-problem-of-waste-disposal",
+  "p2-speaking-of-nothing",
+  "p2-stress-less",
 ]);
