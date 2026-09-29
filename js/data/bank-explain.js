@@ -175,4 +175,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-architecture-in-britain",
   "p3-art-based-training-for-engineers",
   "p3-asian-space-return-of-an-asian-invention",
+  "p3-australias-megafauna-controversy",
+  "p3-book-review-the-discovery-of-slowness",
+  "p3-charles-darwin",
 ]);
