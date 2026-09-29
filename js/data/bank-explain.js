@@ -262,4 +262,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-video-games-unexpected-benefits-to-the-human-brain",
   "p3-whale-culture",
   "p3-what-count-as-knowledge",
+  "p3-what-is-social-history",
+  "p3-what-makes-a-musical-expert",
+  "p3-when-people-are-deaf-to-music",
 ]);
