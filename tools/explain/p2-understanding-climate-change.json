@@ -1,0 +1,31 @@
+{
+ "id": "p2-understanding-climate-change",
+ "q": {
+  "14": {"ev": ["then that strengthens the case that human activity is responsible for the rapid changes we are seeing today"],
+         "why": "Tóm tắt: Wheeler muốn xác định ___ đang làm thay đổi khí hậu tới mức nào. Bài: hoạt động của con người (human activity) có phải nguyên nhân của thay đổi nhanh hiện nay → human activity."},
+  "15": {"ev": ["While tree rings and ice cores chart annual changes in climate going back millennia, they cannot show what happened on a month-to- month basis."],
+         "why": "Tóm tắt: vân gỗ, lõi băng không cho biết thay đổi từ ___ này sang ___ khác. Bài: không cho thấy diễn biến theo từng tháng (month) → month."},
+  "16": {"ev": ["but systematic records of air movements over the oceans -- which govern most of our weather -- were almost non-existent before the mid- 19th century"],
+         "why": "Tóm tắt: cần báo cáo hằng ngày về khí quyển trên các ___ của thế giới. Bài: dữ liệu luồng khí trên các đại dương (oceans) hầu như không có trước giữa thế kỷ 19 → oceans."},
+  "17": {"ev": ["by which time the Industrial Revolution was already well under way, and factory chimneys were pouring carbon dioxide into the atmosphere"],
+         "why": "Tóm tắt: báo cáo phải có từ trước ___, thứ đã gây ô nhiễm vào giữa thế kỷ 19. Bài: Cách mạng Công nghiệp (Industrial Revolution) đã diễn ra, ống khói nhà máy thải CO2 → Industrial Revolution."},
+  "18": {"ev": ["In 1731, it became obligatory for British naval vessels to keep a detailed logbook"],
+         "why": "Bảng: năm việc ghi nhật ký hải trình trở thành bắt buộc trên tàu hải quân Anh. Bài: năm 1731 ('obligatory' = compulsory) → 1731."},
+  "19": {"ev": ["Before 1752, the year began on 25 March, and until September of that year the English calendar lagged 10 days behind the one used in the rest of Europe."],
+         "why": "Bảng: năm hệ thống ngày tháng được thống nhất trên toàn châu Âu. Bài: tới tháng 9/1752 lịch Anh mới hết lệch 10 ngày so với phần còn lại của châu Âu → 1752."},
+  "20": {"ev": ["Until 1805, even a day wasn't a day as we know it, but a nautical day, which started at noon."],
+         "why": "Bảng: năm nhật ký tàu thôi tính ngày bắt đầu từ giữa trưa. Bài: cho tới 1805 vẫn dùng 'ngày hàng hải' bắt đầu lúc giữa trưa → 1805."},
+  "21": {"ev": ["as the numerical Beaufort scale of wind strength did not become official until 1838"],
+         "why": "Bảng: năm một thang đo sức gió chính thức được áp dụng. Bài: thang Beaufort trở thành chính thức năm 1838 → 1838."},
+  "22": {"ev": ["most of the logbooks in Wheeler's archives describe weather conditions using words alone"],
+         "why": "Đáp án C và E (không theo thứ tự). C — mô tả sức gió không bằng số: thang Beaufort chưa chính thức nên nhật ký chỉ dùng từ ngữ, thường cổ hoặc lạ."},
+  "23": {"ev": ["Toughest of all was unravelling the terms used aboard trading ships. These had their own complex vocabulary of gales, trade winds, and monsoons"],
+         "why": "Đáp án C và E. E — thuật ngữ khác nhau giữa các nghề đi biển: tàu buôn có bộ từ vựng riêng khác tàu hải quân. Bẫy: D — hướng gió khó xác định (từ bắc hay bắc từ), bài không nói là lỗi ghi chép."},
+  "24": {"ev": ["There are some long-running chronicles of temperature and air pressure over land dating back to the 17th century"],
+         "why": "Câu hỏi: hồ sơ thời tiết quy mô lớn cổ nhất còn lại có từ thế kỷ 19. Bài: đã có ghi chép dài hạn về nhiệt độ, áp suất trên đất liền từ thế kỷ 17, và nhật ký tàu từ thế kỷ 18 → FALSE."},
+  "25": {"ev": ["The speed a sailing ship travelled was directly linked to the force of the wind", "`That gives a measure of the relative wind strength.'"],
+         "why": "Tốc độ tàu buồm gắn trực tiếp với sức gió; kiểm tra số hải lý đi được giúp hiểu các từ mô tả gió → TRUE."},
+  "26": {"ev": ["Pairs of ships in convoy, or squadrons in the same locality, should have the same records, so allowing the researchers to check for consistency."],
+         "why": "Các cặp tàu đi cùng đoàn hoặc hải đội cùng khu vực phải có ghi chép giống nhau, nhờ đó các nhà nghiên cứu đối chiếu → có so sánh giữa các tàu cùng vùng → TRUE."}
+ }
+}

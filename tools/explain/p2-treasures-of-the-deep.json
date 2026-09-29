@@ -1,0 +1,31 @@
+{
+ "id": "p2-treasures-of-the-deep",
+ "q": {
+  "14": {"ev": ["it is imperative that the mining industry seeks out these new deposits, in order to meet the growing demand for these minerals"],
+         "why": "Thông tin: sự cần thiết phải bắt đầu khai khoáng dưới biển sâu. Đoạn E: Heydon nói ngành khai khoáng bắt buộc phải tìm mỏ mới để đáp ứng nhu cầu ngày càng tăng → E."},
+  "15": {"ev": ["where you have acid damage, huge holes in the ground and piles of rock"],
+         "why": "Thông tin: ví dụ nhược điểm của khai mỏ truyền thống. Đoạn F: trên cạn tốn điện làm mát mỏ, gây hại axit, hố lớn, đống đá thải → F."},
+  "16": {"ev": ["Water enters cracks in the seabed in an area of high volcanic activity, becomes superheated, and draws out the minerals from the rock."],
+         "why": "Thông tin: quá trình hình thành mỏ khoáng dưới biển sâu. Đoạn D: nước thấm vào khe nứt, bị nung siêu nóng, hút khoáng chất, rồi gặp nước lạnh thì kết tinh ngay → D."},
+  "17": {"ev": ["I find it profoundly objectionable to set about mining when we haven't even described all of the species down there"],
+         "why": "Thông tin: cần hiểu biết thêm trước khi khai mỏ. Đoạn G: Johnston phản đối khai mỏ khi chưa mô tả hết các loài; Fisher nói cần biết phân bố loài trước → G."},
+  "18": {"ev": ["At the base of the food chain are bacteria that use the sulphide compounds to provide the energy they need"],
+         "why": "Tóm tắt: tầng thấp nhất của chuỗi thức ăn là ___. Bài: vi khuẩn (bacteria) ở đáy chuỗi thức ăn → bacteria."},
+  "19": {"ev": ["to provide the energy they need to produce sugars and proteins"],
+         "why": "Tóm tắt: chúng tạo ra ___ và … từ hợp chất sulphide. Bài: vi khuẩn tạo đường (sugars) và protein → sugars."},
+  "20": {"ev": ["These ecosystems are the only known communities whose immediate energy source is not sunlight."],
+         "why": "Tóm tắt: các sinh vật sống mà không cần năng lượng từ ___. Bài: đây là hệ sinh thái duy nhất có nguồn năng lượng trực tiếp không phải ánh nắng (sunlight) → sunlight."},
+  "21": {"ev": ["`Oxygen levels are low or non-existent and the environment is toxic"],
+         "why": "Tóm tắt: ở đây thiếu trầm trọng ___. Bài: lượng oxy (oxygen) thấp hoặc không có → oxygen."},
+  "22": {"ev": ["The variations in temperature are also extraordinary, even across just one centimetre."],
+         "why": "Tóm tắt: nhiệt độ thay đổi cực đoan ngay cả trong vùng rất nhỏ. Bài: chênh lệch nhiệt độ (temperature) lớn chỉ trong một centimet → temperature."},
+  "23": {"ev": ["Chuck Fisher is of the same opinion. `Until we know about the real distribution of species, you could potentially endanger a site by wiping out a vent with a mass excavation."],
+         "why": "Chuck Fisher đồng quan điểm với Johnston — phản đối vì khai mỏ có thể xoá sổ cả một khu miệng phun → B (phản đối)."},
+  "24": {"ev": ["it is imperative that the mining industry seeks out these new deposits"],
+         "why": "David Heydon (chủ tịch Nautilus) cho rằng bắt buộc phải khai thác mỏ mới dưới biển → A (ủng hộ)."},
+  "25": {"ev": ["He recognises that there will inevitably be environmental damage, but believes that it will be a vast improvement on underground or open-cast mining."],
+         "why": "Steve Scott thấy lợi ích (dễ khai thác, ít hại hơn trên cạn) nhưng thừa nhận chắc chắn sẽ gây hại môi trường → C (thấy cả lợi và hại)."},
+  "26": {"ev": ["As a marine scientist, I find it profoundly objectionable to set about mining"],
+         "why": "Paul Johnston (Greenpeace) thấy việc khai mỏ là hoàn toàn không thể chấp nhận → B (phản đối)."}
+ }
+}

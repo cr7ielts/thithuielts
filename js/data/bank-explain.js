@@ -154,4 +154,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-the-power-of-smell",
   "p2-the-problem-of-graffiti",
   "p2-the-purpose-of-facial-expressions",
+  "p2-the-return-of-monkey-life",
+  "p2-treasures-of-the-deep",
+  "p2-understanding-climate-change",
 ]);

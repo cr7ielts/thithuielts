@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-return-of-monkey-life",
+ "q": {
+  "14": {"ev": ["In younger forests, trees put most of their limited energy into growing wood, leaves and fruit, so they produce much lower levels of toxin than do well-established, old-growth trees."],
+         "why": "Thông tin: lý do rừng non cho khỉ hú nguồn thức ăn tốt hơn rừng già. Đoạn C: cây rừng non dồn năng lượng để lớn nên tạo ít độc tố hơn cây già → C."},
+  "15": {"ev": ["He hopes that farmers will begin to see the advantages of associating with wild monkeys"],
+         "why": "Thông tin: thay đổi thái độ của nông dân với động vật hoang dã. Đoạn G: Estrada mong nông dân thấy lợi ích của việc sống chung với khỉ, chuyển từ xung đột sang hợp tác → G."},
+  "16": {"ev": ["the monkeys keep their systems primed by sampling a variety of plants and then focusing on a small number of the most nutritious food items"],
+         "why": "Thông tin: cách khỉ hú chọn chế độ ăn tốt nhất. Đoạn C: chúng thử nhiều loại cây rồi tập trung vào số ít thức ăn bổ dưỡng nhất → C (dùng lần hai)."},
+  "17": {"ev": ["In the 18th century, tropical dry forests once covered most of Central America, but by the 1980s less than two percent remained undisturbed"],
+         "why": "Thông tin: số liệu về việc môi trường sống tự nhiên bị thu hẹp theo thời gian. Đoạn B: từ phủ gần hết Trung Mỹ thế kỷ 18, tới thập niên 1980 chỉ còn dưới 2% rừng nguyên vẹn → B."},
+  "18": {"ev": ["Howler reproduction is faster than that of other native monkey species."],
+         "why": "Tóm tắt: khỉ hú có tốc độ ___ nhanh hơn khỉ capuchin và khỉ nhện. Bài: sinh sản (reproduction) nhanh hơn các loài bản địa khác → reproduction."},
+  "19": {"ev": ["They eat fruit when it is available but, unlike capuchin and spider monkeys, do not depend on large areas of fruiting trees."],
+         "why": "Tóm tắt: khỉ hú sống được mà không cần ăn ___ nên chỉ cần vùng sống nhỏ. Bài: chúng không phụ thuộc vào những vùng rộng có cây ăn quả (fruit) → fruit."},
+  "20": {"ev": ["Glander is particularly interested in howlers' ability to thrive on leaves loaded with toxins"],
+         "why": "Tóm tắt: chúng chịu được lá có nhiều ___. Bài: khỉ hú phát triển tốt với lá chứa nhiều độc tố (toxins) → toxins."},
+  "21": {"ev": ["This ability gives them a real advantage over capuchin and spider monkeys, which have suffered during the long, ongoing drought in the area."],
+         "why": "Tóm tắt: khỉ hú chịu được thời kỳ ___ tốt hơn loài khác. Bài: lá chúng ăn nhiều nước nên chúng có lợi thế trong đợt hạn hán (drought) kéo dài → drought."},
+  "22": {"ev": ["species of indigenous trees which had been absent for decades began to invade the abandoned pastures"],
+         "why": "Nơi có các loài cây bản địa quay trở lại: sau khi thành vườn quốc gia, cây bản địa vắng bóng nhiều thập kỷ mọc lại trên đồng cỏ ở Santa Rosa → B."},
+  "23": {"ev": ["Other native primates--white-faced capuchin monkeys and spider monkeys--were once common in this area too, but vanished"],
+         "why": "Nơi chỉ còn một loài khỉ bản địa: ở Hacienda La Pacifica, khỉ capuchin và khỉ nhện đã biến mất, chỉ còn khỉ hú → A."},
+  "24": {"ev": ["Estrada believes the monkeys bring under-appreciated benefits to such plantations, dispersing the seeds of fruits such as fig and other shade trees, and fertilising the soil."],
+         "why": "Khỉ giúp ích cho nông nghiệp: ở trang trại cacao Cholula, khỉ phát tán hạt cây che bóng và bón đất → C."},
+  "25": {"ev": ["Capuchins were the first to begin using the reborn forests, followed by howlers. Eventually, even spider monkeys"],
+         "why": "Nơi có cả ba loài khỉ địa phương: ở Santa Rosa, khỉ capuchin, khỉ hú rồi cả khỉ nhện đều quay lại → B."},
+  "26": {"ev": ["but vanished after the Pan-American Highway was built nearby in the 1950s"],
+         "why": "Cảnh quan bị thay đổi do xây một tuyến giao thông: ở La Pacifica, khỉ biến mất sau khi đường cao tốc Liên Mỹ được xây gần đó → A."}
+ }
+}

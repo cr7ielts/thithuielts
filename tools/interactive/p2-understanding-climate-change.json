@@ -25,55 +25,35 @@
    "from": 18,
    "to": 21,
    "kind": "other",
-   "instruction": "Complete the table below. Choose ONE YEAR from the passage for each answer. The keeping of logbooks was made Year",
+   "instruction": "Complete the table below. Choose ONE YEAR from the passage for each answer.",
    "notes": [
     {
      "level": 0,
      "bullet": "",
-     "text": "compulsory on British naval ships. {{18}}"
-    },
-    {
-     "level": 2,
-     "bullet": "",
-     "text": "{{19}}"
+     "text": "The keeping of logbooks was made compulsory on British naval ships. {{18}}"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "The system of dates was standardised {{20}}"
+     "text": "The system of dates was standardised across Europe. {{19}}"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "across Europe. {{21}}"
-    },
-    {
-     "level": 2,
-     "bullet": "",
-     "text": "stopped vic 1850 Ships' logbooks ceased the practice of starting each day's record at midday."
+     "text": "Ships' logbooks ceased the practice of starting each day's record at midday. {{20}}"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "A definitive scale of recording wind"
+     "text": "A definitive scale of recording wind force was adopted. {{21}}"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "force was adopted."
-    },
-    {
-     "level": 0,
-     "bullet": "",
-     "text": "Most ships had been equipped with reliable"
-    },
-    {
-     "level": 0,
-     "bullet": "",
-     "text": "weather-recording instruments."
+     "text": "Most ships had been equipped with reliable weather-recording instruments. 1850"
     }
    ],
-   "noteTitle": "The keeping of logbooks was made                               Year"
+   "noteTitle": "Event — Year"
   },
   {
    "from": 22,
@@ -133,99 +113,15 @@
    },
    {
     "mark": "",
-    "text": "Are the climatic changes the world is seeing now really unprecedented, or have there been"
+    "text": "Are the climatic changes the world is seeing now really unprecedented, or have there been other times when change was just as swift? `If we go back to the past and find there really hasn't been anything like this before, then that strengthens the case that human activity is responsible for the rapid changes we are seeing today,' says climatologist Dennis Wheeler of the University of Sunderland, UK."
    },
    {
     "mark": "",
-    "text": "other times when change was just as swift? `If we go back to the past and find there really"
+    "text": "But the past is tricky territory for climatologists. While tree rings and ice cores chart annual changes in climate going back millennia, they cannot show what happened on a month-to- month basis. There are some long-running chronicles of temperature and air pressure over land dating back to the 17th century, but systematic records of air movements over the oceans -- which govern most of our weather -- were almost non-existent before the mid- 19th century, by which time the Industrial Revolution was already well under way, and factory chimneys were pouring carbon dioxide into the atmosphere. In order to establish whether today's climate changes indeed had any precedent in the past, what Wheeler needed was detailed information from earlier times, and he soon became convinced that the multitude of jottings in old ships' records could provide just that."
    },
    {
     "mark": "",
-    "text": "hasn't been anything like this before, then that strengthens the case that human activity is"
-   },
-   {
-    "mark": "",
-    "text": "responsible for the rapid changes we are seeing today,' says climatologist Dennis Wheeler"
-   },
-   {
-    "mark": "",
-    "text": "of the University of Sunderland, UK. chronic disease"
-   },
-   {
-    "mark": "",
-    "text": "But the past is tricky territory for climatologists. While tree rings and ice cores chart annual"
-   },
-   {
-    "mark": "",
-    "text": "changes in climate going back millennia, they cannot show what happened on a month-to-"
-   },
-   {
-    "mark": "",
-    "text": "month basis. There are some long-running chronicles of temperature and air pressure over"
-   },
-   {
-    "mark": "",
-    "text": "land dating back to the 17th century, but systematic records of air movements over the"
-   },
-   {
-    "mark": "",
-    "text": "oceans -- which govern most of our weather -- were almost non-existent before the mid-"
-   },
-   {
-    "mark": "",
-    "text": "19th century, by which time the Industrial Revolution was already well under way, and"
-   },
-   {
-    "mark": "",
-    "text": "factory chimneys were pouring carbon dioxide into the atmosphere. In order to establish"
-   },
-   {
-    "mark": "",
-    "text": "whether today's climate changes indeed had any precedent in the past, what Wheeler"
-   },
-   {
-    "mark": "",
-    "text": "needed was detailed information from earlier times, and he soon became convinced that"
-   },
-   {
-    "mark": "",
-    "text": "the multitude of jottings in old ships' records could provide just that. many"
-   },
-   {
-    "mark": "",
-    "text": "By the late 17th century, the seafaring nations of Europe had fleets of ships criss-crossing"
-   },
-   {
-    "mark": "",
-    "text": "the seas, all keeping meticulous accounts of their voyages, including regular observations"
-   },
-   {
-    "mark": "",
-    "text": "of weather conditions. In 1731, it became obligatory for British naval vessels to keep a"
-   },
-   {
-    "mark": "",
-    "text": "detailed logbook, and by 1750 the practice was universal. A vast number of such records"
-   },
-   {
-    "mark": "",
-    "text": "survive to this day. Despite initial reluctance among climatologists to use these historical"
-   },
-   {
-    "mark": "",
-    "text": "documents for scientific research, Wheeler and his team secured funding for a project to sift"
-   },
-   {
-    "mark": "",
-    "text": "through two thousand old logbooks. They pored over records of English, Dutch, French and"
-   },
-   {
-    "mark": "",
-    "text": "Spanish fleets, with the aim of creating a climatological database for the world's oceans"
-   },
-   {
-    "mark": "",
-    "text": "between 1750 and 1850. mandatory"
+    "text": "By the late 17th century, the seafaring nations of Europe had fleets of ships criss-crossing the seas, all keeping meticulous accounts of their voyages, including regular observations of weather conditions. In 1731, it became obligatory for British naval vessels to keep a detailed logbook, and by 1750 the practice was universal. A vast number of such records survive to this day. Despite initial reluctance among climatologists to use these historical documents for scientific research, Wheeler and his team secured funding for a project to sift through two thousand old logbooks. They pored over records of English, Dutch, French and Spanish fleets, with the aim of creating a climatological database for the world's oceans between 1750 and 1850."
    },
    {
     "mark": "",
@@ -233,7 +129,7 @@
    },
    {
     "mark": "",
-    "text": "ADJ + AS + S + be = although Even the wind's direction posed a problem. It took a long time to work out if the direction noted in the log was based on magnetic north or true north. Get it wrong and the data could be out by as much as 30 degrees. `On British vessels, most observations were magnetic. Once a day, officers would convert the readings to true north -- but the logbooks don't tell you that,' says Wheeler. `It took some detective work to find out what was going on.'"
+    "text": "Even the wind's direction posed a problem. It took a long time to work out if the direction noted in the log was based on magnetic north or true north. Get it wrong and the data could be out by as much as 30 degrees. `On British vessels, most observations were magnetic. Once a day, officers would convert the readings to true north -- but the logbooks don't tell you that,' says Wheeler. `It took some detective work to find out what was going on.'"
    },
    {
     "mark": "",
