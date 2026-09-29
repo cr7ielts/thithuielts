@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-tuatara-of-new-zealand",
+ "q": {
+  "1": {"ev": ["Although the two species appear similar, they have genetic differences."],
+        "why": "Hai loài tuatara còn sống trông giống nhau ('appear similar' = 'look alike'), chỉ khác về gen → TRUE."},
+  "2": {"ev": ["where dated, they are usually a few hundred to 5,000 years old"],
+        "why": "Câu hỏi: nhiều xương tuatara được phát hiện có tuổi hàng triệu năm. Bài: xương thường chỉ có tuổi từ vài trăm tới 5.000 năm → FALSE. Bẫy: con số 250 triệu năm là tuổi của dòng Sphenodontia, không phải của xương tìm được."},
+  "3": {"ev": ["Males are larger than females and have more developed spines in the crest along the neck, back and tail."],
+        "why": "Bài chỉ nói con đực lớn hơn và có gai phát triển hơn dọc cổ, lưng, đuôi. Không nhắc tới màu sắc đuôi → NOT GIVEN."},
+  "4": {"ev": ["the female usually lays 6-10 eggs the following spring in a shallow ground-level nest"],
+        "why": "Câu hỏi: con cái đẻ trứng trong hang. Bài: con cái đẻ trứng trong một tổ nông ngang mặt đất, rồi mới quay về hang dưới đất của mình → FALSE."},
+  "5": {"ev": ["warmer eggs are more likely to produce males, while cooler eggs tend to produce females"],
+        "why": "Bài chỉ nói trứng ấm dễ nở con đực, trứng mát dễ nở con cái. Không so sánh số con non đực và cái → NOT GIVEN."},
+  "6": {"ev": ["The hatchlings receive no parental care and must find their own food."],
+        "why": "Tuatara non không được bố mẹ chăm sóc và phải tự kiếm ăn → phải tự lo cho bản thân → TRUE."},
+  "7": {"ev": ["many individuals have lived to 80 years while still looking vigorous and healthy"],
+        "why": "Ghi chú: nhiều con sống ít nhất ___ năm. Bài: nhiều cá thể đã sống tới 80 năm mà vẫn khoẻ mạnh → 80."},
+  "8": {"ev": ["Their teeth are their chief weapons, and a bite can cause serious injury."],
+        "why": "Ghi chú: tấn công sinh vật khác bằng ___. Bài: răng (teeth) là vũ khí chính của chúng → teeth."},
+  "9": {"ev": ["feeding on invertebrates, lizards and the baby seabirds with which they often share burrows"],
+        "why": "Ghi chú: ăn ___ non ở chung hang, cùng động vật không xương sống và bò sát. Bài: ăn chim biển non (baby seabirds) thường ở chung hang với chúng → seabirds."},
+  "10": {"ev": ["but when Polynesian settlers arrived (about 1250-1300 AD) they brought Pacific rats, which killed tuatara"],
+         "why": "Ghi chú: nhiều cho tới khi chuột được người ___ đưa tới. Bài: người định cư Polynesia (Polynesian) mang theo chuột Thái Bình Dương → Polynesian."},
+  "11": {"ev": ["By the time of European settlement in the 1840s, tuatara were almost extinct on the mainland."],
+         "why": "Ghi chú: đến thập niên 1840, hầu như không còn tuatara trên ___. Bài: tuatara gần như tuyệt chủng trên đất liền (mainland) → mainland."},
+  "12": {"ev": ["A few, such as the Poor Knights Islands off the north- eastern coast of New Zealand and some islands in Cook Strait, still support the common tuatara."],
+         "why": "Ghi chú: các đảo ngoài bờ đông bắc và ở eo biển Cook là nơi sống của loài tuatara ___. Bài: vẫn còn loài tuatara thường (common tuatara) → common."},
+  "13": {"ev": ["The largest population is on Stephens Island, where numbers reach up to 2,500 per hectare in some areas"],
+         "why": "Ghi chú: mật độ tuatara trên đảo Stephens lên tới ___ con mỗi hecta. Bài: có nơi đạt tới 2.500 con/hecta → 2,500."}
+ }
+}

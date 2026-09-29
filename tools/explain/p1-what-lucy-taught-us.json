@@ -1,0 +1,31 @@
+{
+ "id": "p1-what-lucy-taught-us",
+ "q": {
+  "1": {"ev": ["Straight away, he recognised that it came from the elbow of a human ancestor."],
+        "why": "Câu hỏi: Johanson không chắc mẩu xương khuỷu tay là gì. Bài: ông nhận ra ngay đó là khuỷu tay của tổ tiên loài người → FALSE."},
+  "2": {"ev": ["I saw bits of the skull, a chunk of jaw, a couple of vertebrae"],
+        "why": "Johanson thấy thêm nhiều mảnh xương ở cùng chỗ: sọ, hàm, đốt sống ('And there were plenty more') → TRUE."},
+  "3": {"ev": ["It was immediately obvious that the skeleton was a significant find"],
+        "why": "Ngay lập tức họ thấy rõ đây là một phát hiện quan trọng vì lớp trầm tích có tuổi 3,5 triệu năm → TRUE."},
+  "4": {"ev": ["40% of the skeleton had been preserved"],
+        "why": "Bài chỉ nói 40% bộ xương được bảo tồn, không nói phần trên của bộ xương ít hư hại nhất → NOT GIVEN."},
+  "5": {"ev": ["as the feeling was that the skeleton was female due to its size"],
+        "why": "Nhóm cho rằng bộ xương là nữ dựa vào kích thước của nó ('measurements' ≈ 'size') → TRUE."},
+  "6": {"ev": ["It may be that upright walking evolved in the trees, as a way to walk along branches that would otherwise be too flexible."],
+        "why": "Ghi chú: việc đi thẳng có thể bắt đầu trên ___ cây. Bài: đi thẳng có thể tiến hoá trên cây, như một cách đi dọc các cành (branches) mềm → branches."},
+  "7": {"ev": ["But hunting for food may have been the real reason for heading to the ground"],
+        "why": "Ghi chú: có lẽ xuống ___ để tìm thức ăn. Bài: đi tìm thức ăn có thể là lý do thực sự khiến Lucy xuống mặt đất (ground) → ground."},
+  "8": {"ev": ["Studies of the remains of food trapped on preserved human teeth indicate that several species, including Lucy's, were expanding their diet"],
+        "why": "Ghi chú: phân tích thức ăn trên ___ của bộ xương người sơ khai cho thấy chế độ ăn thay đổi. Bài: thức ăn còn mắc trên răng (teeth) → teeth."},
+  "9": {"ev": ["Instead of mostly eating fruit from trees, they began to include grasses and possibly meat."],
+        "why": "Ghi chú: có lẽ thịt và cỏ đã thay cho ___. Bài: thay vì chủ yếu ăn trái cây (fruit), họ bắt đầu ăn cỏ và có thể cả thịt → fruit."},
+  "10": {"ev": ["Fossilised crocodile and turtle eggs were found near her skeleton"],
+         "why": "Ghi chú: ___ tìm thấy gần Lucy cho thấy chúng cũng là thức ăn của bà. Bài: trứng (eggs) cá sấu và rùa hoá thạch được tìm thấy gần bộ xương → eggs."},
+  "11": {"ev": ["in 2010 archaeologists uncovered animal bones with scratches that seem to have been made by stone tools"],
+         "why": "Ghi chú: ___ được tìm thấy có vết, có thể do công cụ ăn uống. Bài: xương (bones) động vật có vết xước dường như do công cụ đá tạo ra → bones."},
+  "12": {"ev": ["It also seems that Lucy's childhood was much briefer than ours"],
+         "why": "Ghi chú: người hiện đại có ___ dài hơn Lucy. Bài: tuổi thơ (childhood) của Lucy ngắn hơn nhiều so với chúng ta → childhood."},
+  "13": {"ev": ["a recent study of a 3-year-old early human suggested that their brains matured much earlier than ours do"],
+         "why": "Ghi chú: ___ của người hiện đại phát triển muộn hơn của Lucy. Bài: não (brains) người sơ khai trưởng thành sớm hơn nhiều so với não chúng ta → brains."}
+ }
+}

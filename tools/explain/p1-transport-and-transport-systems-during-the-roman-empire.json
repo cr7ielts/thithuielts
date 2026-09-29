@@ -1,0 +1,31 @@
+{
+ "id": "p1-transport-and-transport-systems-during-the-roman-empire",
+ "q": {
+  "1": {"ev": ["with more than 120,000 kilometres of this being of the type known as 'public roads' and a second system classified as 'military roads', both constructed by soldiers"],
+        "why": "Cả 'đường công cộng' và 'đường quân sự' đều do binh lính xây dựng → quân đội chịu trách nhiệm xây đường công cộng → TRUE."},
+  "2": {"ev": ["Therefore, the existence of these roads reduced the number of large and costly garrisons"],
+        "why": "Câu hỏi: mạng lưới đường khiến cần lập thêm đồn trú. Bài: nhờ đường sá, quân đội di chuyển nhanh nên số đồn trú lớn, tốn kém GIẢM đi → FALSE."},
+  "3": {"ev": ["The raeda was the equivalent of the bus today."],
+        "why": "Bài chỉ mô tả xe raeda như xe buýt ngày nay, không nói nó thường chỉ dùng cho quãng đường ngắn → NOT GIVEN."},
+  "4": {"ev": ["was built incorporating a form of suspension to make the ride less bumpy and disagreeable"],
+        "why": "Xe carpentum có hệ thống giảm xóc giúp chuyến đi bớt xóc và khó chịu → có tính tới sự thoải mái của hành khách → TRUE."},
+  "5": {"ev": ["A certificate issued by the emperor was required in order to use the service."],
+        "why": "Muốn dùng cursus publicus cần giấy chứng nhận do hoàng đế cấp → cần sự cho phép chính thức → TRUE."},
+  "6": {"ev": ["The stations were built by the government at regular intervals of 25 to 30 kilometres."],
+        "why": "Bài chỉ nói trạm mansiones được xây cách đều 25–30 km, không nói chúng nằm ở nơi giao nhau của các đường lớn → NOT GIVEN."},
+  "7": {"ev": ["The stations were built by the government at regular intervals of 25 to 30 kilometres."],
+        "why": "Câu hỏi: doanh nhân tư nhân xây mansiones. Bài: các trạm do chính quyền (the government) xây → FALSE."},
+  "8": {"ev": ["Tourists had to find a ship, get the captain's approval and negotiate a price with him."],
+        "why": "Ghi chú: hành khách phải thoả thuận ___ với thuyền trưởng. Bài: du khách phải thương lượng giá (price) với thuyền trưởng → price."},
+  "9": {"ev": ["there were many merchant ships going back and forth regularly along established routes in the Mediterranean"],
+        "why": "Ghi chú: tàu thường xuyên chạy trên các ___ cố định. Bài: tàu buôn qua lại đều đặn trên các tuyến (routes) đã định sẵn ('fixed' ≈ 'established') → routes."},
+  "10": {"ev": ["Most Roman tourists would travel on the open deck of the ship"],
+         "why": "Ghi chú: hành khách thường ở trên ___. Bài: phần lớn du khách đi trên boong (deck) lộ thiên → deck."},
+  "11": {"ev": ["Certain merchant ships provided cabins at the rear that could accommodate the richer passengers."],
+         "why": "Ghi chú: một số tàu có ___ cho hành khách có tiền. Bài: một số tàu buôn có cabin (cabins) ở đuôi cho khách giàu → cabins."},
+  "12": {"ev": ["the wealthiest Romans had their own ships and employed a crew to sail them"],
+         "why": "Ghi chú: người rất giàu thuê ___ cho tàu riêng. Bài: họ có tàu riêng và thuê thuỷ thủ đoàn (crew) → crew."},
+  "13": {"ev": ["Commercial navigation was suspended during particularly bad storms"],
+         "why": "Ghi chú: ___ đôi khi khiến chuyến đi bị huỷ. Bài: hàng hải thương mại bị tạm ngừng khi có bão (storms) lớn → storms."}
+ }
+}

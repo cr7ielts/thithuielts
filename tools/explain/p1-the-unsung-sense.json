@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-unsung-sense",
+ "q": {
+  "1": {"ev": ["while marine mammals and primates, including humans, are microsmatic - the organ with which they smell is small and functionally redundant"],
+        "why": "Ghi chú: Broca xếp con người cùng các ___ khác và thú biển vào nhóm có cơ quan khứu giác nhỏ. Bài: thú biển và linh trưởng (primates), gồm cả con người, thuộc nhóm microsmatic → primates."},
+  "2": {"ev": ["who only possess four hundred or so different types"],
+        "why": "Ghi chú: con người có khoảng ___ loại thụ thể mùi. Bài: con người chỉ có khoảng bốn trăm loại → 400."},
+  "3": {"ev": ["In fact, a person can smell just one drop of a chemical in a large swimming pool."],
+        "why": "Ghi chú: con người phát hiện được một ___ của chất nào đó trong lượng chất lỏng khổng lồ. Bài: ngửi được chỉ một giọt (drop) hoá chất trong bể bơi lớn → drop."},
+  "4": {"ev": ["when the smell of orange, seawater or peppermint was pumped through a nightclub"],
+        "why": "Ghi chú: nghiên cứu tác động của việc đưa mùi hương vào một ___. Bài: mùi cam, nước biển, bạc hà được bơm vào hộp đêm (nightclub) → nightclub."},
+  "5": {"ev": ["and even thought the music was better than when there was no added scent"],
+        "why": "Ghi chú: một số mùi thay đổi cảm nhận của người dự tiệc Hà Lan về ___. Bài: họ thậm chí thấy âm nhạc (music) hay hơn → music."},
+  "6": {"ev": ["The surprising thing about such studies is that up to 95% of subjects altered their behaviour"],
+        "why": "Ghi chú: có tới ___ người tham gia phản ứng với mùi được đưa vào. Bài: tới 95% người tham gia thay đổi hành vi, dù chỉ 5% nhận ra mùi → 95%."},
+  "7": {"ev": ["This makes the sense of smell fundamentally different to vision or hearing, which are built to identify sights and sounds with precision."],
+        "why": "Thị giác và thính giác được 'thiết kế' để xác định chính xác hình ảnh, âm thanh — khác với khứu giác, vốn không định vị được nguồn mùi → TRUE."},
+  "8": {"ev": ["It's for this reason that we can only ever pick out around four smells from a complex mixture."],
+        "why": "Trong một hỗn hợp mùi phức tạp, ta chỉ nhận ra được khoảng bốn mùi ('only a few individual odours') → TRUE."},
+  "9": {"ev": ["Nevertheless, we all have the capacity to train our sense of smell, but it needs to be worked at."],
+        "why": "Bài nói ai cũng có thể luyện khứu giác nhưng cần luyện tập; ví dụ các chuyên gia nước hoa luyện nhiều năm. Không nói cần sự giúp đỡ chuyên môn → NOT GIVEN."},
+  "10": {"ev": ["These memories are neither more accurate nor more detailed, but they are unique in that they are more emotional."],
+         "why": "Câu hỏi: mùi gợi ký ức chính xác hơn hình ảnh hay âm thanh. Bài: ký ức từ mùi không chính xác hơn, không chi tiết hơn — chỉ giàu cảm xúc hơn → FALSE."},
+  "11": {"ev": ["The link between a memory and a smell is stronger if the smell is an unpleasant rather than a pleasant one"],
+         "why": "Câu hỏi: mùi dễ chịu tạo ký ức mạnh nhất. Bài: liên kết ký ức mạnh hơn khi mùi khó chịu chứ không phải dễ chịu → FALSE."},
+  "12": {"ev": ["the very first time we associate a smell with an object, it evokes a much greater response in our brains than for any encounter with the smell or object in later life"],
+         "why": "Bài chỉ nói lần đầu gắn mùi với đồ vật tạo phản ứng mạnh hơn những lần sau. Không nói độ nhạy với mùi mới giảm khi trưởng thành → NOT GIVEN."},
+  "13": {"ev": ["this might explain why smells often carry us back to our childhood"],
+         "why": "Vì phần lớn lần đầu gặp một mùi xảy ra khi còn nhỏ, mùi thường đưa ta trở về tuổi thơ ('often' = 'frequently') → TRUE."}
+ }
+}

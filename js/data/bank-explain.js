@@ -73,4 +73,10 @@ export const EXPLAIN_IDS = new Set([
   "p1-the-rise-and-fall-of-detective-stories",
   "p1-the-slow-food-organization",
   "p1-the-treasures-of-sutton-hoo",
+  "p1-the-tuatara-of-new-zealand",
+  "p1-the-unsung-sense",
+  "p1-the-whale-goes-to-court",
+  "p1-think-small",
+  "p1-transport-and-transport-systems-during-the-roman-empire",
+  "p1-what-lucy-taught-us",
 ]);
