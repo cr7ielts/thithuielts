@@ -1,0 +1,15 @@
+{"id":"p3-the-voynich-manuscript","q":{
+"27":{"ev":["containing 240-odd pages of drawings and text of unknown age and authorship"],"why":"Bản thảo có niên đại và tác giả không rõ, nên TRUE."},
+"28":{"ev":[],"why":"Bài chỉ nói Voynich mua bản thảo năm 1912, không nói ông tặng nó cho thư viện Beinecke, nên NOT GIVEN."},
+"29":{"ev":["the manuscript has attracted the attention of everyone from amateur dabblers to top code-breakers"],"why":"Bản thảo thu hút cả người nghiệp dư lẫn chuyên gia giải mã, nên TRUE."},
+"30":{"ev":["it is possible to make out more than 70 distinct symbols"],"why":"Có thể nhận ra hơn 70 ký hiệu khác nhau, không phải dưới 70, nên FALSE."},
+"31":{"ev":["Friedman discovered that some words and phrases appeared more often than expected in a standard language, casting doubt on claims that the manuscript concealed a real language"],"why":"William Friedman (D): một số từ xuất hiện nhiều bất thường, khiến khó tin bản thảo dùng ngôn ngữ thật."},
+"32":{"ev":["\"Most other mysteries involve second-hand reports,\" says Dr Gordon Rugg","\"But this is one that you can see for yourself.\""],"why":"Gordon Rugg (A): khác các bí ẩn khác, ai cũng có thể tự xem bản thảo này."},
+"33":{"ev":["Others, such as Churchill, have suggested that the sheer weirdness of the illustrations and text hints at an author who had lost touch with reality."],"why":"Rob Churchill (E): sự kỳ quặc của bản thảo gợi ý tác giả đã mất liên hệ với thực tế."},
+"34":{"ev":["In 1921 Voynich's view that Bacon was the writer appeared to win support from the work of William Newbold"],"why":"William Newbold (C) ủng hộ quan điểm của Voynich rằng Roger Bacon là tác giả."},
+"35":{"ev":["the manuscript proved that Bacon had access to a microscope centuries before they were supposedly first invented"],"why":"Newbold tin tác giả đã quan sát tế bào qua kính hiển vi (microscope)."},
+"36":{"ev":["whose words are devised from concepts rather than linguistics"],"why":"Friedman kết luận ngôn ngữ nhân tạo dựa trên khái niệm (concepts)."},
+"37":{"ev":["he suspected that major insights would come from using the device that had already transformed code-breaking: the computer"],"why":"Friedman tin máy tính (computer) sẽ mang lại đột phá cho giải mã."},
+"38":{"ev":["using a pattern-detecting method called spectral analysis"],"why":"Landini dùng phương pháp phân tích phổ (spectral analysis)."},
+"39":{"ev":["in which a specially constructed grille is used to pick out symbols from a table"],"why":"Rugg dùng tấm lưới đặc biệt để chọn ký hiệu từ một bảng (table)."},
+"40":{"ev":["The Voynich manuscript has continued to defy the efforts of world-class experts."],"why":"Bài mô tả nhiều nỗ lực giải mã bản thảo của Newbold, Friedman, Landini, Zandbergen, Rugg (C)."}}}
