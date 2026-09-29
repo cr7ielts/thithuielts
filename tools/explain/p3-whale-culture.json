@@ -1,0 +1,15 @@
+{"id":"p3-whale-culture","q":{
+"27":{"ev":["Calves stay with their mothers throughout adulthood, and in many years of observation no one has ever seen a whale switch pods."],"why":"Cá voi con ở với mẹ suốt đời, chưa ai thấy cá voi đổi đàn, nên YES."},
+"28":{"ev":["Residents have a much more extensive repertoire"],"why":"Cá voi định cư có vốn tiếng kêu phong phú hơn nhiều so với cá voi di cư, nên NO."},
+"29":{"ev":["Transients have only a few such calls, and all transient societies share the same ones."],"why":"Mọi nhóm cá voi di cư dùng chung một số tiếng kêu, nên YES."},
+"30":{"ev":["Despite regular interaction between them, each resident pod sticks firmly to its own dialect."],"why":"Mỗi đàn định cư giữ nguyên phương ngữ riêng dù tiếp xúc thường xuyên, không dùng chung, nên NO."},
+"31":{"ev":[],"why":"Bài chỉ nói phương ngữ của cá voi định cư được duy trì ít nhất 40 năm, không nói về cá voi di cư, nên NOT GIVEN."},
+"32":{"ev":["Residents live in stable groups, or `pods'"],"why":"Cá voi định cư sống trong các nhóm gia đình cố định gọi là 'pods'."},
+"33":{"ev":["Animals with different dialects share the same waters, so the variation can't be a product of physical environment."],"why":"Các nhóm có phương ngữ khác nhau sống cùng vùng biển, nên khác biệt không do môi trường vật lý (physical environment)."},
+"34":{"ev":["`A calf uses the calls of its maternal pod very precisely. There's no input from the father,'"],"why":"Cá voi con dùng đúng tiếng kêu của đàn bên mẹ (mother), không có ảnh hưởng từ cha."},
+"35":{"ev":["Apart from their advanced mental abilities"],"why":"Đáp án A, C và D (không theo thứ tự). A: cá voi có khả năng trí tuệ cao (intelligence)."},
+"36":{"ev":["they are adept at recognising sounds"],"why":"Đáp án A, C và D (không theo thứ tự). C: cá voi giỏi nhận biết âm thanh (sensitivity to sound)."},
+"37":{"ev":["Female killer whales, like humans, are very unusual in that they live up to a quarter of a century after they have had their descendants."],"why":"Đáp án A, C và D (không theo thứ tự). D: cá voi cái sống thêm tới 25 năm sau khi sinh con, tuổi thọ dài. E sai vì đây là thời gian sau khi hết sinh sản."},
+"38":{"ev":["enabling them to share information about food hot spots"],"why":"Đoạn G: phương ngữ giúp cá voi chia sẻ thông tin về nơi có nhiều thức ăn."},
+"39":{"ev":["Transients have only a few such calls, and all transient societies share the same ones. Residents have a much more extensive repertoire"],"why":"Đoạn D so sánh cách giao tiếp khác nhau giữa hai nền văn hóa (định cư và di cư) trong cùng loài cá voi sát thủ."},
+"40":{"ev":["Whales have several biological attributes that give them an advantage in social learning."],"why":"Đoạn F nêu các đặc điểm (trí tuệ, nhận biết âm thanh, nuôi con lâu) thuận lợi cho sự phát triển văn hóa."}}}

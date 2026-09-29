@@ -51,6 +51,8 @@ FIXES = {
     'p3-the-robbers-cave-study': ({}, {29: 'sporting events / sports events', 35: 'food fights / food fight', 36: 'watching films / films', 37: 'common goal', 38: 'solving problems / problem-solving / problem solving'}),
     'p3-the-science-of-sleep': ({}, {33: 'breathing or eating / eating or breathing / breathing and eating / eating and breathing / breathing, eating / breathing / eating', 38: 'scanning techniques / scanning technique'}),
     'p3-translating-a-key-to-international-understanding': ({}, {31: 'purpose / purposes'}),
+    'p3-whale-culture': ({}, {33: 'physical environment / environment', 34: "mother / maternal pod / mother's"}),
+    'p3-what-count-as-knowledge': ({}, {31: 'friends and family / family and friends', 32: 'holistic medicine / holistic'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }

@@ -259,4 +259,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-translating-a-key-to-international-understanding",
   "p3-travelling-plants",
   "p3-unlocking-the-mystery-of-dreams",
+  "p3-video-games-unexpected-benefits-to-the-human-brain",
+  "p3-whale-culture",
+  "p3-what-count-as-knowledge",
 ]);
