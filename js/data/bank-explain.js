@@ -24,5 +24,11 @@ export const EXPLAIN_IDS = new Set([
   "p1-dolls-through-the-ages",
   "p1-dust-and-the-american-west",
   "p1-dyes-and-fabric-dyeing",
+  "p1-effect-and-cause",
+  "p1-face-recognition-in-everyday-life",
+  "p1-fungi-a-new-sustainable-alternative",
+  "p1-how-to-find-your-way-out-of-a-food-desert",
+  "p1-in-deep-water",
+  "p1-investing-in-the-future",
   "p1-salt",
 ]);

@@ -1,0 +1,31 @@
+{
+ "id": "p1-how-to-find-your-way-out-of-a-food-desert",
+ "q": {
+  "1": {"ev": ["which display the specific location of each of the food stores", "Clicking on a dot will show you the store's name and whether it carries fresh fruit and vegetables"],
+        "why": "Ghi chú: bản đồ cung cấp tên cửa hàng, ___ và thông tin sản phẩm. Bài: các chấm màu cho biết vị trí cụ thể (specific location) của từng cửa hàng; bấm vào sẽ thấy tên và các mặt hàng → location."},
+  "2": {"ev": ["and in forming future policies about what kind of food should be sold and where"],
+        "why": "Ghi chú: một mục tiêu là giúp xây dựng ___ mới về thực phẩm. Bài: hỗ trợ chính quyền 'in forming future policies' ('develop new' ≈ 'forming future') → policies."},
+  "3": {"ev": ["citizen map makers may make maps because there is no good government map"],
+        "why": "Ghi chú: người dân tự làm bản đồ khi bản đồ ___ không tốt. Bài: 'there is no good government map' ('unsatisfactory' ≈ 'no good') → government."},
+  "4": {"ev": ["people at higher risk of chronic disease and who receive minimal incomes for the work they do frequently live in neighborhoods located in food deserts"],
+        "why": "Ghi chú: người sống ở 'sa mạc thực phẩm' thường có ___ thấp. Bài: họ 'receive minimal incomes' (minimal ≈ low) → incomes."},
+  "5": {"ev": ["supermarkets often can't afford the amount of land required for their stores in cities"],
+        "why": "Ghi chú: một số siêu thị không mua được đủ ___ trong thành phố. Bài: siêu thị không đủ tiền mua lượng đất (land) cần cho cửa hàng trong thành phố → land."},
+  "6": {"ev": ["smaller urban groceries tend to close due to competition from suburban supermarkets"],
+        "why": "Ghi chú: cửa hàng tạp hoá nhỏ không chống đỡ nổi ___ từ siêu thị. Bài: đóng cửa vì cạnh tranh (competition) từ siêu thị ngoại ô → competition."},
+  "7": {"ev": ["it's run by a local core of five volunteers who have worked on the project for the past year, rather than trained, academic researchers"],
+        "why": "Câu hỏi: một nhóm nhà nghiên cứu chuyên nghiệp phụ trách dự án. Bài: dự án do năm tình nguyện viên địa phương điều hành, không phải nhà nghiên cứu học thuật được đào tạo → FALSE."},
+  "8": {"ev": ["once the storekeeper's permission has been obtained, check off boxes on their list"],
+        "why": "Câu hỏi: nhóm khảo sát cửa hàng mà chủ không biết. Bài: họ chỉ đánh dấu danh sách sau khi được chủ cửa hàng cho phép → FALSE."},
+  "9": {"ev": ["It was launched only recently, but its creators haven't yet set up systems to see who's looking at it."],
+        "why": "Bài chỉ nói website mới ra mắt và chưa có hệ thống theo dõi lượt xem. Không có thông tin về khó khăn kỹ thuật khi xây dựng website → NOT GIVEN."},
+  "10": {"ev": ["Their website hasn't caught them much local or official attention yet, however."],
+         "why": "Câu hỏi: chính quyền thành phố rất quan tâm tới website. Bài: website chưa thu hút nhiều sự chú ý của người dân hay giới chức → FALSE."},
+  "11": {"ev": ["To make the map more helpful to both residents and policy makers, she would like to see price data for healthy products, too."],
+         "why": "Ver Ploeg muốn website có thêm dữ liệu giá của thực phẩm lành mạnh — tức là thông tin bổ sung (additional information) → TRUE."},
+  "12": {"ev": ["a significant proportion of Brooklyn residents don't have internet access at home and 8 percent rely on dial-up service"],
+         "why": "Bài chỉ nêu tình hình truy cập internet hiện tại ở Brooklyn, không dự đoán tỷ lệ này có tăng trong thời gian tới hay không → NOT GIVEN."},
+  "13": {"ev": ["He also hopes warmer days in the spring will draw out fresh volunteers to spread awareness and to finish surveying"],
+         "why": "Heehs hy vọng mùa xuân sẽ có thêm tình nguyện viên mới giúp khảo sát nốt — tức ông muốn có thêm người hỗ trợ → TRUE."}
+ }
+}

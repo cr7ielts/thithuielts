@@ -1,0 +1,31 @@
+{
+ "id": "p1-in-deep-water",
+ "q": {
+  "1": {"ev": ["nearly every submarine dive or research trawl (pulling up specimens from the seabed) brings new knowledge of genuine significance to oceanographers"],
+        "why": "Gần như mọi lần lặn hay kéo lưới nghiên cứu đều mang lại kiến thức mới thực sự quan trọng ('genuine significance' = 'important findings') → TRUE."},
+  "2": {"ev": ["Our present knowledge of land biodiversity (all animal and plant life) compared with ocean biodiversity is one measure of how early we are in the task of researching the deep sea."],
+        "why": "Bài so sánh mức độ hiểu biết về đa dạng sinh học trên cạn và dưới biển, nhưng không nói gì về kinh phí (funding) → NOT GIVEN."},
+  "3": {"ev": ["a small population of takahe, a flightless bird which at that time was thought to be extinct, was found living in New Zealand's mountains"],
+        "why": "Câu hỏi: chim takahe được ghi nhận là một loài lần đầu năm 1948. Bài: năm 1948 người ta TÁI phát hiện (rediscovery) loài chim từng được cho là đã tuyệt chủng — tức loài này đã được biết đến từ trước → FALSE."},
+  "4": {"ev": ["Just because an animal has been given a scientific name and shelf space in a museum doesn't necessarily mean that we know anything at all about its lifestyle and ecology."],
+        "why": "Bài chỉ nói việc có tên khoa học và được đặt trong bảo tàng không có nghĩa là ta hiểu loài đó. Không nói bảo tàng trưng bày ít hay nhiều mẫu vật → NOT GIVEN."},
+  "5": {"ev": ["the few that have were almost certainly acting unnaturally in the glare of lights from the submarine camera with which they were observed"],
+        "why": "Câu hỏi: quay phim mẫu vật cho thông tin chính xác về hành vi bình thường. Bài: số ít con vật được thấy còn sống hầu như chắc chắn đã cư xử không tự nhiên dưới ánh đèn máy quay → FALSE."},
+  "6": {"ev": ["Fierce debate continues among scientists over such details as how fast a giant squid can swim"],
+        "why": "Giới khoa học vẫn tranh cãi gay gắt về việc mực khổng lồ bơi nhanh cỡ nào ('fierce debate' = 'disagree') → TRUE."},
+  "7": {"ev": ["In some respects, deep-sea biology parallels the way that detectives hunt for criminals, requiring comparable problem-solving and clue-finding skills."],
+        "why": "Sinh học biển sâu giống cách thám tử truy tìm tội phạm ('parallels' = 'is similar to', 'detectives hunt for criminals' ≈ 'police investigations') → TRUE."},
+  "8": {"ev": ["It rises more than three kilometres above the surrounding seabed, and measures two hundred kilometres across, making it a remarkable size, and therefore of particular interest."],
+        "why": "Ghi chú: núi ngầm Bollons đặc biệt vì ___ của nó. Bài: cao hơn 3 km, rộng 200 km, 'a remarkable size' → size."},
+  "9": {"ev": ["they are not completely draped with the fine mud that covers just about everything else in the deep sea"],
+        "why": "Ghi chú: núi ngầm có nhiều loài sinh sống, có lẽ vì nhiều thức ăn hơn và ít ___ hơn. Bài: chúng không bị phủ kín bởi lớp bùn mịn như phần còn lại của đáy biển → mud."},
+  "10": {"ev": ["They come fishing here because a valuable species called orange roughy seasonally migrates to these shallow waters to spawn."],
+         "why": "Ghi chú: người dân địa phương coi Chatham Rise là nơi tốt để ___. Bài: cư dân quần đảo Chatham đến đây câu cá vì loài cá orange roughy di cư tới đẻ trứng → fishing."},
+  "11": {"ev": ["every year thousands of people come to see the whales just off the coast, helping local tourism"],
+         "why": "Ghi chú: cá voi ở Goose Bay giúp phát triển ___. Bài: hàng nghìn người đến ngắm cá voi, 'helping local tourism' → tourism."},
+  "12": {"ev": ["Among these was a population of button-sized coral"],
+         "why": "Ghi chú: một loài ___ được phát hiện gần Dunedin. Bài: tàu Munida phát hiện một quần thể san hô cỡ chiếc cúc áo (button-sized coral) → coral."},
+  "13": {"ev": ["a significant earthquake in Canadian waters triggered an underwater current"],
+         "why": "Ghi chú: một hẻm vực gần Canada hình thành khi một ___ lớn tạo ra dòng chảy năm 1929. Bài: trận động đất lớn ở vùng biển Canada 'triggered an underwater current' → earthquake."}
+ }
+}

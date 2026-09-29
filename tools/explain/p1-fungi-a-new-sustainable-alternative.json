@@ -1,0 +1,83 @@
+{
+ "id": "p1-fungi-a-new-sustainable-alternative",
+ "q": {
+  "1": {
+   "ev": [
+    "Neither plant nor animal, they have their own kingdom"
+   ],
+   "why": "Câu hỏi: nấm thuộc giới thực vật. Bài: nấm không phải thực vật cũng không phải động vật, mà có giới riêng → FALSE."
+  },
+  "2": {
+   "ev": [
+    "There is a widespread perception that fungi, such as mildews, yeasts and mushrooms, are dangerous"
+   ],
+   "why": "Bài chỉ nói nhiều người nghĩ nấm (nấm mốc, men, nấm ăn) nguy hiểm, không so sánh loại nào nguy hiểm nhất → NOT GIVEN."
+  },
+  "3": {
+   "ev": [
+    "Not only are fungi readily available in nature"
+   ],
+   "why": "Nấm 'readily available in nature' — có sẵn trong tự nhiên, dễ tìm (easy to find) → TRUE."
+  },
+  "4": {
+   "ev": [
+    "With a goal of sharing their work with the public, they decided to stage an exhibition"
+   ],
+   "why": "Mục đích triển lãm là chia sẻ công trình với công chúng. Bài không nói họ bán đồ vật cho khách tham quan → NOT GIVEN."
+  },
+  "5": {
+   "ev": [
+    "their hope was that people would walk away with a better understanding of fungi's potential as a sustainable material"
+   ],
+   "why": "Khách được cầm thử đồ vật, thấy chúng vừa chắc vừa nhẹ, và hiểu hơn về tiềm năng của nấm như một vật liệu bền vững. Tức là công chúng có cơ hội tìm hiểu các đặc tính hữu ích của nấm → TRUE."
+  },
+  "6": {
+   "ev": [
+    "The vegetative part of fungi is called mycelium, and it consists of multiple long, thread-like fibers."
+   ],
+   "why": "Ghi chú: mycelium là tập hợp các ___ mảnh. Bài: sợi nấm gồm nhiều 'long, thread-like fibers' → fibers."
+  },
+  "7": {
+   "ev": [
+    "mycelium breaks down organic matter along with toxic substances, such as pesticides, and also filters water"
+   ],
+   "why": "Ghi chú: mycelium có ích cho hệ sinh thái nhờ phân huỷ các chất hữu cơ và ___. Bài: phân huỷ 'organic matter along with toxic substances' → toxic."
+  },
+  "8": {
+   "ev": [
+    "This results in mycelium that is similar in strength to plastic."
+   ],
+   "why": "Ghi chú: tạo ra mycelium chắc gần bằng ___. Bài: 'similar in strength to plastic' (= about as strong as) → plastic."
+  },
+  "9": {
+   "ev": [
+    "develops and produces sustainable packaging and building materials using mycelium"
+   ],
+   "why": "Ghi chú: Ecovative dùng mycelium để làm ___ và vật liệu xây dựng. Bài: 'sustainable packaging and building materials' → packaging."
+  },
+  "10": {
+   "ev": [
+    "Bayer began working with mycelium in order to find a replacement for the harmful adhesive used in building manufacturing."
+   ],
+   "why": "Ghi chú: phát triển sản phẩm thay thế cho một loại ___ nguy hại. Bài: tìm chất thay thế cho keo dán độc hại ('harmful adhesive'; 'dangerous' ≈ 'harmful') → adhesive."
+  },
+  "11": {
+   "ev": [
+    "even going so far as to market grow-it-yourself kits that consumers can use at home"
+   ],
+   "why": "Ghi chú: tạo ra ___ để dùng tại nhà. Bài: bán bộ 'tự trồng' (grow-it-yourself kits) cho người tiêu dùng dùng ở nhà → kits."
+  },
+  "12": {
+   "ev": [
+    "such as a shift in humidity or an increase or decrease in temperature"
+   ],
+   "why": "Ghi chú: thay đổi ___ và độ ẩm có thể rút ngắn tuổi thọ sản phẩm. Bài: vật phân huỷ khi độ ẩm thay đổi hoặc nhiệt độ tăng/giảm → temperature."
+  },
+  "13": {
+   "ev": [
+    "are trying to find a coating that can be applied to objects near the end of production"
+   ],
+   "why": "Ghi chú: giải pháp là dùng một ___ phủ lên sản phẩm. Bài: họ đang tìm một lớp phủ (coating) có thể phủ lên đồ vật gần cuối quá trình sản xuất → coating."
+  }
+ }
+}
