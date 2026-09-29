@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-conquest-of-malaria-in-italy",
+ "q": {
+  "14": {"ev": ["Others made a link between swamps, water and malaria, but did not make the further leap towards insects."],
+         "why": "Tóm tắt: tới cuối thế kỷ 19, giới chuyên gia chưa liên hệ được sốt rét với ___. Bài: họ liên hệ với đầm lầy, nước nhưng chưa nghĩ tới côn trùng (insects) → insects."},
+  "15": {"ev": ["But in the 19th century most experts subscribed to the theory of `miasma' or `poisoning of the air'."],
+         "why": "Tóm tắt: niềm tin phổ biến nhất lúc đó là thuyết ___ — bệnh do không khí bẩn. Bài: thuyết 'miasma' (không khí độc) → miasma."},
+  "16": {"ev": ["given the widespread belief that malaria was hereditary"],
+         "why": "Tóm tắt: người ta cũng nghĩ sốt rét là bệnh ___, nên đổ lỗi cho người từ một số vùng. Bài: niềm tin phổ biến rằng sốt rét là bệnh di truyền (hereditary) → hereditary."},
+  "17": {"ev": ["In warm, damp, malarial zones, the life expectancy of land workers was a terrifying 22.5 years."],
+         "why": "Tóm tắt: ở nông thôn, ___ có thể cực kỳ ngắn. Bài: tuổi thọ (life expectancy) của nông dân chỉ 22,5 năm → life expectancy."},
+  "18": {"ev": ["By releasing mosquitoes into rooms to drink the blood of healthy human volunteers"],
+         "why": "Bài chỉ nói Grassi dùng tình nguyện viên khoẻ mạnh, không nói họ đến từ những vùng nào của Ý → NOT GIVEN."},
+  "19": {"ev": ["where healthy people were introduced into malarial zones but kept free of mosquito bites - and remained well"],
+         "why": "Thí nghiệm ở Ý cho thấy người khoẻ đưa vào vùng sốt rét nhưng không bị muỗi đốt thì vẫn khoẻ → TRUE."},
+  "20": {"ev": ["However, peasants were often suspicious of medicine being forced upon them, and doctors were frequently met with hostility and stubborn refusal to accept the treatment offered."],
+         "why": "Câu hỏi: quinine được phát thành công cho mọi cư dân vùng nguy cơ. Bài: ban đầu định phát cho tất cả, nhưng nông dân nghi ngờ và kiên quyết từ chối → không phải ai cũng nhận → FALSE."},
+  "21": {"ev": ["Deaths from malaria fell by some 80% in the first decade of the 20th century"],
+         "why": "Thông tin: con số cho thấy kết quả ấn tượng của chương trình thuốc chống sốt rét. Đoạn E: tử vong do sốt rét giảm khoảng 80% trong thập kỷ đầu thế kỷ 20 → E."},
+  "22": {"ev": ["Giovanni Battista Grassi demonstrated that the micro-organisms causing the disease were carried in the digestive tract of the mosquito"],
+         "why": "Thông tin: phát hiện quan trọng về cách sốt rét lây lan. Đoạn C: Grassi chứng minh vi sinh vật gây bệnh nằm trong ống tiêu hoá của muỗi → C."},
+  "23": {"ev": ["Yet the country's leading malariologist Alberto Missiroli refused to order the distribution of quinine, so allowing the epidemic to spread unchecked."],
+         "why": "Thông tin: một chuyên gia quyết định không ngăn dịch lan rộng. Đoạn F: Missiroli từ chối phát quinine, để dịch lan tràn → F."},
+  "24": {"ev": ["As there are still more than 1m deaths every year from malaria worldwide, Snowden's book also has contemporary relevance."],
+         "why": "Thông tin: ý nghĩa của câu chuyện sốt rét với độc giả ngày nay. Đoạn H: mỗi năm vẫn hơn 1 triệu người chết vì sốt rét, nên cuốn sách vẫn có giá trị thời sự → H."},
+  "25": {"ev": ["But in the 19th century most experts subscribed to the theory of `miasma'"],
+         "why": "Thông tin: những giả định sai cản trở hiểu biết khoa học về sốt rét. Đoạn B: thuyết không khí độc, bệnh di truyền — vì vậy trước cuối thế kỷ 19 hầu như không làm gì để chống bệnh → B."},
+  "26": {"ev": ["Italy introduced a quinine law and a quinine tax in 1904"],
+         "why": "Thông tin: luật pháp hỗ trợ cuộc chiến chống sốt rét. Đoạn D: năm 1904 Ý ban hành luật quinine và thuế quinine → D."}
+ }
+}

@@ -133,4 +133,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-solving-the-problem-of-waste-disposal",
   "p2-speaking-of-nothing",
   "p2-stress-less",
+  "p2-surviving-city-life",
+  "p2-the-conquest-of-malaria-in-italy",
+  "p2-the-constant-evolution-of-the-humble-tomato",
 ]);
