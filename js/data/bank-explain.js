@@ -235,4 +235,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-the-benefits-of-learning-an-instrument",
   "p3-the-causes-of-linguistic-change",
   "p3-the-costs-of-brand-loyalty",
+  "p3-the-exploration-of-mars",
+  "p3-the-fluoridation-controversy",
+  "p3-the-fruit-book",
 ]);

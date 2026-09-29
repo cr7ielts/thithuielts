@@ -42,23 +42,28 @@
    "notes": [
     {
      "level": 0,
+     "bullet": "",
+     "text": "Forest fire has caused local villagers to consume less:"
+    },
+    {
+     "level": 1,
      "bullet": "•",
      "text": "{{33}}"
     },
     {
-     "level": 0,
+     "level": 1,
      "bullet": "•",
      "text": "{{34}}"
     },
     {
-     "level": 0,
+     "level": 1,
      "bullet": "•",
-     "text": "game There is the least amount of game hunted under {{35}}; yield is also {{36}}."
+     "text": "game"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Thus, it is more reasonable to keep {{37}}."
+     "text": "There is the least amount of game hunted under {{35}}; yield is also {{36}}. Thus, it is more reasonable to keep {{37}}."
     },
     {
      "level": 0,
@@ -71,7 +76,7 @@
      "text": "The purpose of the book:"
     },
     {
-     "level": 0,
+     "level": 1,
      "bullet": "•",
      "text": "To give information about {{40}}."
     }
