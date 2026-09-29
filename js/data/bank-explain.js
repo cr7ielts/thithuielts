@@ -172,4 +172,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-a-closer-examination-of-a-study-on-verbal-and-non-verbal-mes",
   "p3-all-in-the-family",
   "p3-animals-predicting-earthquakes",
+  "p3-architecture-in-britain",
+  "p3-art-based-training-for-engineers",
+  "p3-asian-space-return-of-an-asian-invention",
 ]);

@@ -35,6 +35,7 @@ FIXES = {
     'p2-urban-regeneration-an-award-winning-redevelopment-project-in': ({}, {22: 'A,D', 23: 'A,D', 24: 'meadow', 25: 'museum'}),  # key lệch dòng từ câu 22
     'p2-why-do-we-need-sleep': ({}, {26: 'B,E', 27: 'B,E', 28: 'fatigue', 29: 'insomnia'}),  # key lệch chữ cái
     'p2-why-do-we-need-the-arts': ({}, {25: 'A,C', 26: 'A,C'}),
+    'p3-architecture-in-britain': ({}, {34: 'status and wealth / wealth and status / status wealth / wealth status', 37: 'furniture and textiles / textiles and furniture / furniture textiles / textiles furniture', 38: 'Edwin Lutyens / Lutyens'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
