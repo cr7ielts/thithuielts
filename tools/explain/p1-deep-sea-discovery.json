@@ -1,0 +1,31 @@
+{
+ "id": "p1-deep-sea-discovery",
+ "q": {
+  "1": {"ev": ["In theory, once he reached about 15 metres, he should have been plunged into darkness."],
+        "why": "Theo lý thuyết, khi xuống khoảng 15 m, ông lẽ ra phải chìm trong bóng tối — tức Michiels đã dự đoán sẽ tối hoàn toàn ở độ sâu đó → TRUE."},
+  "2": {"ev": ["Even with the red filter removed, Michiels could pick them out without much trouble once his eyes grew accustomed to the gloom."],
+        "why": "Kể cả khi tháo kính lọc đỏ, Michiels vẫn nhận ra các đốm đỏ không mấy khó khăn sau khi mắt quen với bóng tối ('without the aid of the red filter' = 'with the red filter removed') → TRUE."},
+  "3": {"ev": ["no one saw it because no one expected to see it"],
+        "why": "Câu hỏi: các thợ lặn khác đã đoán trước sẽ thấy cá có vệt đỏ. Bài: không ai thấy vì không ai nghĩ sẽ thấy. Trái ngược → FALSE."},
+  "4": {"ev": ["On that one dive, Michiels discovered three fish species with prominent red markings, and has found many others since."],
+        "why": "Bài nói ông tìm thêm nhiều loài khác kể từ đó, nhưng không cho biết tất cả chúng có đến từ Biển Đỏ hay không → NOT GIVEN."},
+  "5": {"ev": ["He suspected fluorescence."],
+        "why": "Câu hỏi: Michiels nghĩ tới khả năng cá phát huỳnh quang khi đang ở Đức. Bài: ông đã nghi ngờ huỳnh quang ngay khi lặn ở Biển Đỏ (Ai Cập); về Đức ông chỉ xác nhận lại. Sai địa điểm → FALSE."},
+  "6": {"ev": ["However, Michiels says they are still not sure exactly what is fluorescing."],
+        "why": "Michiels nói họ vẫn chưa chắc chính xác cái gì phát huỳnh quang (có thể là protein, có thể do vi khuẩn tạo ra) → TRUE."},
+  "7": {"ev": ["The most common markings tend to be on the body towards the head"],
+        "why": "Ghi chú: vệt đỏ chủ yếu ở gần ___. Bài: vệt phổ biến nhất nằm trên thân, về phía đầu → head."},
+  "8": {"ev": ["red fluorescence has a very particular function: communication with other members of the species"],
+        "why": "Ghi chú: huỳnh quang đỏ dùng riêng cho mục đích ___. Bài: 'a very particular function: communication' ('specifically' ≈ 'very particular') → communication."},
+  "9": {"ev": ["a whole range of animals employ fluorescence as a natural highlighter to boost the visibility of body parts they use to signal, for example to ward off enemies"],
+        "why": "Ghi chú: cá, giống một số động vật, dùng huỳnh quang để đẩy ___ ra xa. Bài: 'to ward off enemies' (ward off = keep away) → enemies."},
+  "10": {"ev": ["Michiels suspects that red-eyed gobies use signals to indicate their location and keep their group together"],
+         "why": "Ghi chú: cá bống dựa vào huỳnh quang đỏ để cho thấy ___ của chúng. Bài: 'to indicate their location' ('show' = 'indicate') → location."},
+  "11": {"ev": ["And closely related species do not have completely identical markings"],
+         "why": "Ghi chú: vệt đỏ khác nhau giữa những ___ rất giống nhau. Bài: các loài có họ hàng gần (closely related species) không có vệt hoàn toàn giống nhau → species."},
+  "12": {"ev": ["During his first dive with the red filter, he noticed corals glow a dark but faint red too."],
+         "why": "Ghi chú: cá khó bị nhìn thấy trên nền ___ phát ánh sáng đỏ. Bài: san hô (corals) cũng phát ánh đỏ mờ, nên cá phát đỏ khó bị phân biệt trên nền đó → corals."},
+  "13": {"ev": ["One exception is the seahorse, whose eyes are sensitive to red."],
+         "why": "Ghi chú: loài cá duy nhất được chứng minh có khả năng thấy màu đỏ. Bài: hầu hết cá biển được cho là không thấy màu đỏ; ngoại lệ là cá ngựa (seahorse) → seahorse."}
+ }
+}

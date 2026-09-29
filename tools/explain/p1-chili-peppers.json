@@ -1,0 +1,31 @@
+{
+ "id": "p1-chili-peppers",
+ "q": {
+  "1": {"ev": ["Based on her examination of ancient pieces of pottery, Ms Perry concludes that people in the Americas began cultivating chilies more than 6,000 years ago."],
+        "why": "Dựa trên mảnh gốm cổ (pots = pottery), Perry kết luận người châu Mỹ bắt đầu trồng ớt hơn 6.000 năm trước. Bằng chứng khảo cổ từ đồ gốm giúp xác định thời điểm bắt đầu trồng ớt → TRUE."},
+  "2": {"ev": ["`Chilies were domesticated early and spread very quickly, just because people liked them,' she says."],
+        "why": "Perry cho rằng ớt lan nhanh đơn giản vì người ta thích ăn. Ý 'giữ thực phẩm không hỏng' là quan điểm của Billing và Sherman, không phải Perry. Gán sai người → FALSE."},
+  "3": {"ev": ["When Columbus took chilies back to Spain, they were initially not popular, but soon became widely accepted throughout Europe."],
+        "why": "Bài chỉ nói Columbus mang ớt về Tây Ban Nha và ban đầu ớt không được ưa chuộng. Bài không nói bản thân Columbus có thích ăn đồ có ớt hay không → NOT GIVEN."},
+  "4": {"ev": ["The Portuguese first encountered chilies in Brazil and carried them, along with tobacco and cotton, to Africa."],
+        "why": "Câu hỏi: người Bồ Đào Nha biết đến ớt ở châu Phi. Bài: họ gặp ớt lần đầu ở Brazil, rồi mới mang sang châu Phi → FALSE."},
+  "5": {"ev": ["When people call chilies hot, they are not just speaking metaphorically. Capsaicin stimulates the neural sensors in the tongue and skin that also detect rising temperatures."],
+        "why": "Câu hỏi: cảm giác nóng hoàn toàn là tâm lý, không phải thể chất. Bài: nói ớt 'nóng' không chỉ là ẩn dụ — capsaicin kích thích thụ thể thần kinh, tim đập nhanh, adrenaline tăng. Đây là phản ứng thể chất → FALSE."},
+  "6": {"ev": ["He diluted a chili extract in sugar water until the heat was no longer detectable to a panel of trained tasters; that threshold is the basis of the Scoville rating."],
+        "why": "Thang Scoville dựa vào ngưỡng mà một nhóm người nếm được huấn luyện (a panel of trained tasters) không còn cảm nhận được độ cay — tức là dựa trên đánh giá chung của một nhóm người → TRUE."},
+  "7": {"ev": ["that crush seeds and make germination impossible"],
+        "why": "Ghi chú: một số động vật phá hạt, ngăn cản ___. Bài: loài gặm nhấm nghiền hạt và 'make germination impossible' (= preventing germination) → germination."},
+  "8": {"ev": ["In chilies, however, capsaicin is found just in the fruit"],
+        "why": "Ghi chú: khác nhiều loài cây, ớt chỉ chứa hoá chất khó chịu trong ___. Bài: capsaicin 'is found just in the fruit' (just = only) → fruit."},
+  "9": {"ev": ["and becomes much stronger with ripening"],
+        "why": "Ghi chú: ___ của quả ớt làm lượng capsaicin tăng. Bài: capsaicin mạnh hơn nhiều khi quả chín (with ripening) → ripening."},
+  "10": {"ev": ["they ate the mild chilies but avoided the ones with a strong concentration of capsaicin"],
+         "why": "Ghi chú: loài gặm nhấm tránh ớt có ___ capsaicin cao. Bài: 'a strong concentration of capsaicin' ('high' ≈ 'strong') → concentration."},
+  "11": {"ev": ["which helps some seeds germinate, possibly by softening the seed coat"],
+         "why": "Ghi chú: điều này có thể làm ___ của hạt mềm hơn. Bài: 'softening the seed coat' → coat (vỏ hạt)."},
+  "12": {"ev": ["he thinks that a chili's heat protects it from disease that a certain fungus can trigger"],
+         "why": "Ghi chú: capsaicin giảm nhiễm bệnh do một ___ gây ra. Bài: độ cay bảo vệ ớt khỏi bệnh do một loại nấm (fungus) gây ra; càng nhiều capsaicin, càng ít nhiễm nấm → fungus."},
+  "13": {"ev": ["`Capsaicin demonstrates the incredible elegance of evolution,' says Tewksbury."],
+         "why": "Ghi chú: Tewksbury coi capsaicin là ví dụ về vẻ đẹp của ___. Bài: 'the incredible elegance of evolution' ('beauty' ≈ 'elegance') → evolution."}
+ }
+}

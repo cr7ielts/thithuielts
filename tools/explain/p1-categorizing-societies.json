@@ -1,0 +1,31 @@
+{
+ "id": "p1-categorizing-societies",
+ "q": {
+  "1": {"ev": ["Bands lack formal leaders, so there are no clear economic differences or other differences in status among the members."],
+        "why": "Trong 'band' không có khác biệt kinh tế rõ ràng giữa các thành viên ('no clear economic differences' = 'little difference in wealth') → TRUE."},
+  "2": {"ev": ["whose diet is mainly based on plants or domestic animals. Typically, these people are settled farmers"],
+        "why": "Bài chỉ nói chế độ ăn của 'tribe' chủ yếu dựa vào thực vật hoặc vật nuôi và họ thường là nông dân định cư. Không nói họ trồng nhiều loại cây lương thực (a wide range) hay không → NOT GIVEN."},
+  "3": {"ev": ["Characteristically, no one settlement dominates any of the others in the region."],
+        "why": "Câu hỏi: một bộ lạc điển hình có một khu định cư quan trọng hơn các khu khác. Bài: không có khu nào lấn át các khu khác. Trái ngược → FALSE."},
+  "4": {"ev": ["Prestige and rank are determined by how closely related one is to the chief"],
+        "why": "Câu hỏi: địa vị phụ thuộc vào lượng đất sở hữu. Bài: uy tín và thứ bậc được quyết định bởi mức độ họ hàng gần với tù trưởng, không phải đất đai → FALSE."},
+  "5": {"ev": ["Often, there is local specialisation in craft products such as pottery, cloth and leatherware"],
+        "why": "Trong chiefdom thường có chuyên môn hoá thủ công (gốm, vải, đồ da) — tức có những người làm ra hàng hoá ('workers engaged in making goods') → TRUE."},
+  "6": {"ev": ["has explicit authority to establish laws and to enforce them by means of a standing army"],
+        "why": "Người cai trị nhà nước sơ khai ban hành luật và thực thi luật bằng quân đội thường trực ('military power' = 'standing army', 'maintain law and order' = 'enforce laws') → TRUE."},
+  "7": {"ev": ["The central capital houses the officials of a bureaucratic administration."],
+        "why": "Bài có nhắc tới các quan chức bộ máy hành chính và nhiệm vụ thu thuế, nhưng không nói gì về lương của họ so với người khác → NOT GIVEN."},
+  "8": {"ev": ["such as work sites, where tools are made or other specific activities are carried out"],
+        "why": "Câu hỏi: band làm ra thứ gì ở nơi làm việc (work sites)? Bài: 'work sites, where tools are made' → tools."},
+  "9": {"ev": ["but for some groups life is nomadic, with a mobile economy based on herds of animals"],
+        "why": "Ngoài làm nông định cư, một số nhóm trong tribe sống du mục ('life is nomadic') → nomadic."},
+  "10": {"ev": ["or their houses may be grouped together, as in the pueblos of the American Southwest, or the early farming village of Catalhoyuk"],
+         "why": "Nhà ở làng Catalhoyuk được sắp xếp thế nào? Bài: nhà có thể 'grouped together', như ở pueblo hay làng Catalhoyuk → grouped together."},
+  "11": {"ev": ["any surplus of these and of foodstuffs is periodically paid to the chief. He uses these to pay his retainers and may also redistribute them to his subjects as rewards."],
+         "why": "Ngoài hàng thủ công, tù trưởng có thể phân phát lại cho thần dân thứ gì? Phần dư thừa gồm hàng thủ công và lương thực (foodstuffs), rồi tù trưởng 'redistribute them to his subjects' → foodstuffs."},
+  "12": {"ev": ["Chiefdoms vary greatly in size, but the range is generally between 5,000 and 20,000 persons."],
+         "why": "Số người tối đa thường thấy trong một chiefdom: khoảng từ 5.000 đến 20.000 người → mức tối đa là 20,000."},
+  "13": {"ev": ["Agricultural workers and the poorer urban dwellers make up the base of the pyramid"],
+         "why": "Ngoài dân nghèo thành thị ('less wealthy inhabitants of cities' = 'poorer urban dwellers'), nhóm ở đáy kim tự tháp xã hội là người làm nông → Agricultural workers."}
+ }
+}

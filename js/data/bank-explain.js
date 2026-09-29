@@ -16,5 +16,13 @@ export const EXPLAIN_IDS = new Set([
   "p1-bovids",
   "p1-candles",
   "p1-caral-an-ancient-south-american-city",
+  "p1-carnivorous-plants",
+  "p1-categorizing-societies",
+  "p1-chili-peppers",
+  "p1-conquering-the-south-pole",
+  "p1-deep-sea-discovery",
+  "p1-dolls-through-the-ages",
+  "p1-dust-and-the-american-west",
+  "p1-dyes-and-fabric-dyeing",
   "p1-salt",
 ]);

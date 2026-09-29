@@ -1,0 +1,31 @@
+{
+ "id": "p1-conquering-the-south-pole",
+ "q": {
+  "1": {"ev": ["had become famous for being the first to sail the Arctic's legendary Northwest Passage from the Atlantic to the Pacific"],
+        "why": "Câu hỏi: Amundsen nổi tiếng vì đi bộ từ Đại Tây Dương sang Thái Bình Dương. Bài: ông nổi tiếng vì là người đầu tiên đi thuyền (sail) qua Northwest Passage. 'on foot' ≠ 'sail' → FALSE."},
+  "2": {"ev": ["Amundsen was keenly conscious of his rival"],
+        "why": "Bài chỉ nói Amundsen rất để ý tới đối thủ Scott. Không có thông tin hai người từng gặp nhau trong một chuyến thám hiểm trước → NOT GIVEN."},
+  "3": {"ev": ["starting off with his team in September 1911, before the arrival of polar springtime and manageable weather"],
+        "why": "Câu hỏi: tháng 9 khởi hành, thời tiết tốt. Bài: họ xuất phát trước khi mùa xuân vùng cực và thời tiết dễ chịu đến; kết quả là người bị tê cóng chân. Thời tiết không tốt → FALSE."},
+  "4": {"ev": ["Amundsen assessed his party's situation dispassionately, and made the decision to return and wait for a time so as not to risk lives"],
+        "why": "Bốn ngày sau khi khởi hành sớm, Amundsen đánh giá tình hình và quyết định quay về chờ để không liều mạng. Tức là ông nhận ra đi tiếp vào tháng 9 là không khôn ngoan → TRUE."},
+  "5": {"ev": ["They began the journey for a second time on October 20."],
+        "why": "Bài mô tả chặng đường lần thứ hai (qua khe nứt, dãy Queen Maud, cao nguyên Polar) nhưng không so sánh với tuyến đường lần đầu → NOT GIVEN."},
+  "6": {"ev": ["Amundsen left a letter for Norway's King Haakon VII on special notepaper he had brought, which also contained 'a few words to Scott"],
+        "why": "Câu hỏi: lá thư chỉ dành cho Scott. Bài: thư gửi Vua Haakon VII của Na Uy, trong đó có thêm vài dòng cho Scott. Không phải 'only for Scott' → FALSE."},
+  "7": {"ev": ["the men abandoned surplus food, some of which was gratefully collected by Scott's party"],
+        "why": "Đội của Scott đã nhặt một phần thức ăn thừa mà nhóm Amundsen bỏ lại và 'gratefully' (biết ơn) — tức là có ích cho họ → TRUE."},
+  "8": {"ev": ["He and his four companions traveled behind the sledges on skis, a skill at which the Norwegians were adept."],
+        "why": "Bảng: Amundsen dùng ___ để tự di chuyển. Bài: Amundsen và bốn bạn đồng hành đi ván trượt tuyết (on skis) sau xe trượt → skis."},
+  "9": {"ev": ["it soon became apparent that the team were unable to carry out the necessary maintenance to fix them when they broke down"],
+        "why": "Bảng: Scott dùng xe trượt có động cơ, cần nhiên liệu và ___. Bài: xe cần nhiên liệu, và đội không tự bảo dưỡng (maintenance) được khi xe hỏng → maintenance."},
+  "10": {"ev": ["He used lines of flags at regular intervals together with piles of stones so there was no danger of missing the food depots."],
+         "why": "Bảng: nhiều kho lương, được đánh dấu rõ bằng đá và ___. Bài: dùng hàng cờ (flags) cùng các đống đá để không bỏ sót kho lương → flags."},
+  "11": {"ev": ["the rations provided were deficient in vitamins B and C"],
+         "why": "Bảng: kho của Scott thiếu calo và thiếu ___ quan trọng. Bài: khẩu phần 'deficient in vitamins B and C' (deficient = lacking) → vitamins."},
+  "12": {"ev": ["'In Norway there is very little tolerance for failure in expeditions,' one historian says."],
+         "why": "Bảng (Amundsen): ___ không được coi là lựa chọn chấp nhận được. Bài: ở Na Uy rất ít chấp nhận thất bại trong thám hiểm → failure."},
+  "13": {"ev": ["believing that character, not skill, would win out in the end"],
+         "why": "Bảng (Scott): ___ được coi là phẩm chất cá nhân quan trọng nhất. Bài: người Anh tin rằng tính cách (character), chứ không phải kỹ năng, mới quyết định thành công → character."}
+ }
+}

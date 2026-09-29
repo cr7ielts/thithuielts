@@ -1,0 +1,31 @@
+{
+ "id": "p1-dolls-through-the-ages",
+ "q": {
+  "1": {"ev": ["Dolls constructed of flat pieces of wood, painted with various designs, and with `hair' made of clay"],
+        "why": "Ghi chú (Ai Cập, 2000 TCN): thân búp bê bằng gỗ, ___ dùng làm tóc. Bài: 'hair' made of clay → clay (đất sét)."},
+  "2": {"ev": ["Girls from ancient Greece and Rome offered their wooden dolls to goddesses after they were too `grown-up' to play with dolls."],
+        "why": "Ghi chú: búp bê được các cô gái lớn tuổi hơn dâng cho ___. Bài: khi đã quá lớn để chơi, các cô gái Hy Lạp và La Mã dâng búp bê gỗ cho các nữ thần (goddesses) → goddesses."},
+  "3": {"ev": ["That ideal led to the creation of dolls with movable limbs and removable garments, dating back to 600 BC."],
+        "why": "Ghi chú: búp bê giống thật có quần áo rời và ___ có thể đặt ở các tư thế khác nhau. Bài: 'movable limbs and removable garments' (limbs = tay chân cử động được) → limbs."},
+  "4": {"ev": ["In addition to wooden dolls, wax dolls grew in popularity in the 17th and 18th centuries."],
+        "why": "Ghi chú (thế kỷ 17–18): búp bê làm bằng ___ trở nên phổ biến hơn. Bài: 'wax dolls grew in popularity' ('became more common') → wax."},
+  "5": {"ev": ["and then cover it with plaster to create a mould"],
+        "why": "Ghi chú: khuôn làm bằng ___. Bài: người làm búp bê sáp phủ thạch cao (plaster) lên đầu mẫu để tạo khuôn → plaster."},
+  "6": {"ev": ["`Composition' is a collective term for mixtures of pulped wood or paper that were used to make doll heads and bodies."],
+        "why": "Ghi chú (thế kỷ 19): nhóm hỗn hợp mới gọi là ___, công thức được giữ bí mật. Bài: 'Composition' là tên gọi chung cho các hỗn hợp bột gỗ/giấy; nhà sản xuất 'closely guarded the recipes' → composition."},
+  "7": {"ev": ["Bisque, which is porcelain fired twice with colour added to it after the first firing, looked more like skin than china did."],
+        "why": "Câu hỏi: búp bê bisque trông kém thật hơn búp bê sứ tráng men (china). Bài: bisque trông giống da người hơn china. Ngược lại → FALSE."},
+  "8": {"ev": ["German bisque dolls became quite popular because they were not as expensive"],
+        "why": "Búp bê bisque của Đức được ưa chuộng vì không đắt bằng búp bê Pháp — tức búp bê Pháp đắt hơn → TRUE."},
+  "9": {"ev": ["For many centuries, rag dolls were made by mothers for their children.", "Commercially produced rag dolls were first introduced in the 1850s"],
+        "why": "Câu hỏi: búp bê vải đầu tiên được làm vào thập niên 1850. Bài: các bà mẹ đã làm búp bê vải cho con 'for many centuries'; 1850 chỉ là mốc búp bê vải được sản xuất thương mại. Vậy búp bê vải đầu tiên có từ lâu trước đó → FALSE."},
+  "10": {"ev": ["`Cloth doll' refers to a subset of rag dolls made of linen or cotton."],
+         "why": "'Cloth doll' chỉ nhóm búp bê vải làm từ vải lanh hoặc cotton — đúng với định nghĩa 'chỉ những búp bê làm bằng cotton hoặc lanh' → TRUE."},
+  "11": {"ev": ["celluloid fell out of favour because of its extreme flammability and propensity to fade in bright light"],
+         "why": "Celluloid dễ bị phai màu dưới ánh sáng mạnh ('propensity to fade' = 'tended to lose their colour') → TRUE."},
+  "12": {"ev": ["Hard plastic dolls were manufactured in the 1940s. They resembled composition dolls, but they were much more durable."],
+         "why": "Câu hỏi: búp bê composition bền hơn búp bê nhựa thập niên 1940. Bài: búp bê nhựa cứng 'much more durable' (bền hơn nhiều) so với composition. Ngược lại → FALSE."},
+  "13": {"ev": [],
+         "why": "Bài chỉ nói nhiều nghệ nhân hiện đại vẫn dùng vật liệu truyền thống để làm búp bê sưu tầm. Không có thông tin nào về việc người sưu tầm thích búp bê còn mặc quần áo gốc → NOT GIVEN."}
+ }
+}
