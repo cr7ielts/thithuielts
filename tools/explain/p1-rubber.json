@@ -1,0 +1,31 @@
+{
+ "id": "p1-rubber",
+ "q": {
+  "1": {"ev": ["The plants that produce rubber are spread right across the globe, and grow in many different habitats."],
+        "why": "Câu hỏi: cây cao su chỉ mọc ở một số vùng. Bài: cây cho cao su có mặt khắp thế giới, mọc ở nhiều môi trường sống khác nhau → FALSE."},
+  "2": {"ev": ["the Aztecs of what is now Mexico were the first to be recorded using the substance; a wall painting dating back to the sixth century depicts a scene of a tribute offering of crude rubber"],
+        "why": "Người Aztec ở vùng nay là Mexico được ghi nhận dùng cao su; một bức bích hoạ từ thế kỷ 6 vẽ cảnh dâng cống cao su thô. Vậy cao su đã được khai thác ở Mexico từ thế kỷ 6 → TRUE."},
+  "3": {"ev": ["all of which must have been made from the indigenous Castilla elastica, as the Para rubber plant now favoured for rubber cultivation does not grow in the Mexican region"],
+        "why": "Bài chỉ nói cây Para hiện được ưa chuộng để trồng lấy mủ và không mọc ở Mexico. Không so sánh chất lượng cao su từ Castilla elastica và Para → NOT GIVEN."},
+  "4": {"ev": ["However, no real interest in rubber was shown by any European until Charles de la Condamine, a French mathematician, published an account of his journey to South America in 1735."],
+        "why": "Người châu Âu không thực sự quan tâm tới cao su cho tới khi nhà toán học Pháp Condamine công bố bài viết về chuyến đi Nam Mỹ → ông là người khơi dậy sự quan tâm → TRUE."},
+  "5": {"ev": ["Then in 1839 the American Charles Goodyear discovered that it was possible to stabilise rubber by mixing it with sulphur while exposing it to heat"],
+        "why": "Bài chỉ nói Goodyear phát hiện cách ổn định cao su bằng lưu huỳnh và nhiệt. Không nói phát hiện này là tình cờ hay không → NOT GIVEN."},
+  "6": {"ev": ["In 1830 Britain had imported just 211 kg of crude rubber. This had risen to 10,000 kg in 1857"],
+        "why": "Câu hỏi: lượng cao su thô nhập vào Anh giảm trong thế kỷ 19. Bài: từ 211 kg (1830) lên 10.000 kg (1857), đến 1874 còn gần gấp sáu lần nữa → tăng mạnh → FALSE."},
+  "7": {"ev": ["In 1818 a British medical student named James Syme first used rubber to make waterproof cloth."],
+        "why": "Tóm tắt: năm 1818, ___ được làm bằng cao su. Bài: James Syme dùng cao su làm vải chống thấm (waterproof cloth) → waterproof cloth."},
+  "8": {"ev": ["invented a machine he called the `masticator', which chewed up waste strips for re- use"],
+        "why": "Tóm tắt: năm 1820, một chiếc máy được phát minh để tái chế ___ cao su. Bài: máy 'masticator' nghiền các dải cao su thừa (waste strips) để dùng lại ('recycling' = 're-use') → waste strips."},
+  "9": {"ev": ["They also became pliant when warm and rigid when cold."],
+        "why": "Tóm tắt: cao su có thể trở nên mềm hoặc ___ tuỳ nhiệt độ. Bài: mềm (pliant) khi ấm, cứng (rigid) khi lạnh → rigid."},
+  "10": {"ev": ["it was possible to stabilise rubber by mixing it with sulphur while exposing it to heat"],
+         "why": "Tóm tắt: năm 1839, một quy trình mới để ___ chất này làm tăng tiềm năng của nó. Bài: Goodyear phát hiện cách làm ổn định (stabilise) cao su — quá trình lưu hoá → stabilise."},
+  "11": {"ev": ["It played an important role in the Industrial Revolution, being employed in the steam engines found in factories, mills, mines and railways."],
+         "why": "Tóm tắt: cao su được dùng trong ___. Bài: cao su đóng vai trò quan trọng trong Cách mạng Công nghiệp (Industrial Revolution), dùng trong động cơ hơi nước ở nhà máy, hầm mỏ, đường sắt → Industrial Revolution."},
+  "12": {"ev": ["John Boyd Dunlop produced the first pneumatic tyre"],
+         "why": "Tóm tắt: năm 1888, ___ được phát triển. Bài: Dunlop làm ra chiếc lốp hơi (pneumatic tyre) đầu tiên → pneumatic tyre."},
+  "13": {"ev": ["with the mass production of cars just over the horizon"],
+         "why": "Tóm tắt: vài năm sau, ___ ô tô bắt đầu. Bài: năm 1895 lốp Dunlop được dùng cho ô tô, và việc sản xuất hàng loạt ô tô (mass production) đã cận kề → mass production."}
+ }
+}
