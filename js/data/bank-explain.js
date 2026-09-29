@@ -148,4 +148,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-the-importance-of-being-playful",
   "p2-the-importance-of-law",
   "p2-the-myth-of-the-eight-hour-sleep",
+  "p2-the-origin-and-development-of-applause",
+  "p2-the-plan-to-bring-an-asteroid-to-earth",
+  "p2-the-power-of-music",
 ]);

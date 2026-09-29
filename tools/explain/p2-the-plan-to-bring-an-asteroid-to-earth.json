@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-plan-to-bring-an-asteroid-to-earth",
+ "q": {
+  "14": {"ev": ["This is not something the scientists are imagining could be done someday in the future. It is possible with the technology we have today and could be accomplished within a decade."],
+         "why": "Section A: bắt tiểu hành tinh không phải chuyện viễn tưởng mà làm được với công nghệ hiện nay, trong vòng một thập kỷ → v (An achievable goal, not an impossible dream)."},
+  "15": {"ev": ["Though rearranging the heavens may seem an excessive undertaking, this US mission has its merits."],
+         "why": "Section B: các lý do biện minh — thực tế (căn cứ phóng tàu), kinh tế (khai thác kim loại, nước), nghiên cứu (dữ liệu khoa học) → viii (Practical, economic and research justifications)."},
+  "16": {"ev": ["Engineers would need to be absolutely certain they could control such a potentially dangerous object."],
+         "why": "Section C: di chuyển vật thể khổng lồ không dễ; kỹ sư phải chắc chắn kiểm soát được, sai sót có thể gây thảm hoạ → i (The need for skill and care)."},
+  "17": {"ev": ["And if the challenges posed by a large asteroid seem too daunting, researchers could always start with a smaller asteroid"],
+         "why": "Section D: có thể bắt đầu với tiểu hành tinh nhỏ, 2–10 m, bắt bằng một cái túi lớn → vii (Beginning with a less challenging task)."},
+  "18": {"ev": ["Convincing taxpayers to foot such a bill could be difficult. However, private industry might be interested in getting involved."],
+         "why": "Section E: dự án cần đầu tư lớn; khó thuyết phục người nộp thuế, có thể kêu gọi doanh nghiệp tư nhân → iv (Obtaining support for the project)."},
+  "19": {"ev": ["the mission would teach engineers how to capture an unco-operative target, which could be useful practice for planetary-defence missions in the event of a threat from a meteoroid or comet"],
+         "why": "Louis Friedman: nhiệm vụ dạy kỹ sư cách bắt mục tiêu 'không hợp tác', hữu ích cho việc bảo vệ Trái Đất trước thiên thạch, sao chổi → kỹ năng có thể cứu Trái Đất → E."},
+  "20": {"ev": ["shifting such a hefty and substantial target would not be easy: `You're moving the largest mother-lode imaginable,'"],
+         "why": "Rusty Schweickart: di chuyển một vật thể nặng và lớn như vậy không hề dễ → trọng lượng khiến dự án cực kỳ khó khăn → D. Bẫy: A (sai lầm gây hậu quả nghiêm trọng) là ý của Tantardini."},
+  "21": {"ev": ["`NASA isn't going to want to go to something that is smaller than our spaceships,'"],
+         "why": "Dan Mazanek: NASA sẽ không muốn tới một thứ nhỏ hơn cả tàu vũ trụ → khó gây hứng thú với tiểu hành tinh nhỏ → B."},
+  "22": {"ev": ["Investigations of asteroids can be done much more cheaply with an unmanned spacecraft, says chemist Joseph A. Nuth"],
+         "why": "Joseph Nuth: nghiên cứu tiểu hành tinh bằng tàu không người lái rẻ hơn nhiều → bắt tiểu hành tinh không phải cách nghiên cứu hiệu quả → G."},
+  "23": {"ev": ["An asteroid would provide a stationary base from which to launch missions further into space."],
+         "why": "Tóm tắt: tiểu hành tinh có thể làm một ___ cho các chuyến thám hiểm xa hơn. Bài: một căn cứ (base) cố định để phóng các nhiệm vụ → base."},
+  "24": {"ev": ["Since this would be far weaker on an asteroid, materials mined there could be more easily taken off the asteroid"],
+         "why": "Tóm tắt: tiểu hành tinh có ___ yếu hơn nên dễ vận chuyển tài nguyên. Bài: lực hấp dẫn (gravity) yếu hơn nhiều so với Trái Đất → gravity."},
+  "25": {"ev": ["Some are rich in metals, which can be mined and used to build space-based habitats, or brought back to Earth."],
+         "why": "Tóm tắt: tài nguyên gồm ___ dùng được trong không gian hoặc trên Trái Đất. Bài: kim loại (metals) dùng xây nơi ở ngoài không gian hoặc mang về Trái Đất → metals."},
+  "26": {"ev": ["Others are up to one-quarter water, which could be used for life-support or broken down into hydrogen and oxygen to make fuel."],
+         "why": "Tóm tắt: … và ___ có thể dùng để sống hoặc làm nguồn năng lượng. Bài: nước (water) dùng duy trì sự sống hoặc tách thành hydro, oxy làm nhiên liệu → water."}
+ }
+}
