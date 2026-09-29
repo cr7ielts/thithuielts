@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-importance-of-law",
+ "q": {
+  "14": {"ev": ["It affects us from the embryo onwards."],
+         "why": "Đoạn A: luật chi phối hầu hết mọi mặt đời sống, từ lúc còn là phôi thai tới khi chết → iv (The law applies throughout our lives)."},
+  "15": {"ev": ["it is becoming easier for people to take an interest in law, and for the general population to help actually shape the law in many countries"],
+         "why": "Đoạn B: ngày nay nhiều người biết đọc hơn, dễ quan tâm tới luật và góp phần định hình luật → vii (The public's increasing ability to influence the law)."},
+  "16": {"ev": ["In our rapidly developing world, all sorts of skills and knowledge are valuable."],
+         "why": "Đoạn C so sánh các lĩnh vực chuyên môn: kỹ năng CNTT và hiểu biết pháp luật đều thiết yếu → i (Different areas of professional expertise)."},
+  "17": {"ev": ["The number of laws has never been greater."],
+         "why": "Đoạn D: số lượng luật chưa bao giờ nhiều như vậy — mỗi năm ở Anh có khoảng 35 đạo luật mới, số trang tăng gấp đôi → viii (Growth in laws)."},
+  "18": {"ev": ["However, despite their important role in developing the rules, lawyers are not universally admired."],
+         "why": "Đoạn E: luật sư không được mọi người ngưỡng mộ, có cả truyện cười chế giễu luật sư từ thời Hy Lạp → vi (A negative regard for lawyers)."},
+  "19": {"ev": ["But, in general, it is no more just to say that lawyers are bad because they make a living from people's problems than it is to make the same accusation in respect of nurses or IT consultants."],
+         "why": "Đoạn F: lý do chỉ trích luật sư là không công bằng — nhiều người làm luật công với thu nhập thấp, nhiều việc chỉ là soạn thảo văn bản → ii (Reasons why it is unfair to criticise lawyers)."},
+  "20": {"ev": ["But legal understanding is just as vital and as universally needed."],
+         "why": "Đáp án C và D (không theo thứ tự). C — hiểu biết pháp luật quan trọng như kỹ năng máy tính: tác giả nói hiểu biết pháp luật cũng thiết yếu và cần thiết ở mọi nơi như CNTT."},
+  "21": {"ev": ["In other words, the lawyer is the only person who has read and made sense of the rules."],
+         "why": "Đáp án C và D. D — xã hội không vận hành hiệu quả nếu thiếu chuyên gia pháp lý: luật sư là người duy nhất hiểu 'luật chơi' khi có vấn đề. Bẫy: A — việc có người trong mọi bệnh viện là nói về chuyên viên CNTT."},
+  "22": {"ev": ["People sometimes make comments that characterise lawyers as professionals whose concerns put personal reward above truth"],
+         "why": "Tóm tắt: người ta nói luật sư ít quan tâm tới ___, chỉ lo kiếm tiền. Bài: đặt lợi ích cá nhân lên trên sự thật (truth) → truth."},
+  "23": {"ev": ["just as there are some scientists, journalists and others in that category"],
+         "why": "Tóm tắt: giống như một số ___ hay nhà khoa học cũng chỉ vì tiền. Bài: một số nhà khoa học, nhà báo (journalists) cũng vậy → journalists."},
+  "24": {"ev": ["than it is to make the same accusation in respect of nurses or IT consultants"],
+         "why": "Tóm tắt: chỉ trích luật sư như vậy giống như chỉ trích nhân viên CNTT hoặc ___. Bài: y tá (nurses) → nurses."},
+  "25": {"ev": ["the quality of the service provided by these lawyers relies on considerable professional dedication"],
+         "why": "Tóm tắt: công việc về nhà ở, quyền công dân đòi hỏi họ phải có ___ với nghề. Bài: sự tận tâm (dedication) nghề nghiệp lớn → dedication."},
+  "26": {"ev": ["but is primarily concerned with drafting documents"],
+         "why": "Tóm tắt: nhiều thời gian của luật sư dành cho việc viết ___. Bài: chủ yếu là soạn thảo văn bản (documents) → documents."}
+ }
+}

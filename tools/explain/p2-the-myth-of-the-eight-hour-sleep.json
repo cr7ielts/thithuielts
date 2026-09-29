@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-myth-of-the-eight-hour-sleep",
+ "q": {
+  "14": {"ev": ["First, they slept for four hours, then woke for one or two hours before falling into a second four-hour sleep."],
+         "why": "Section A: thí nghiệm của Wehr — người trong phòng tối tự nhiên ngủ thành hai giấc → bằng chứng khoa học rằng ngủ chia đôi là tự nhiên → vii (Scientific evidence that divided sleep is a natural phenomenon)."},
+  "15": {"ev": ["Ekirch's research found more than 500 references to a segmented sleeping pattern--in diaries, court records, medical books and literature"],
+         "why": "Section B: Ekirch phân tích hơn 500 tài liệu cổ (nhật ký, hồ sơ toà án, sách y khoa) để tìm hiểu cách ngủ xưa → v (An analysis of old documents to discover sleep patterns)."},
+  "16": {"ev": ["Ekirch attributes the initial shift to improvements in street and home lighting."],
+         "why": "Section C: những lý do lịch sử khiến ngủ hai giấc biến mất — đèn đường, quán cà phê, Cách mạng Công nghiệp → i (Historical reasons why interrupted sleep became uncommon)."},
+  "17": {"ev": ["many sleeping problems may have roots in the human body's natural preference for divided sleep, as well as in difficulties caused by extended exposure to artificial light"],
+         "why": "Section D: chứng mất ngủ giữa đêm có thể do cơ thể thích ngủ chia đôi (sinh học) và tiếp xúc ánh sáng nhân tạo (môi trường) → vi (Biological and environmental factors preventing people from falling asleep again). Bẫy: iv — văn học chỉ là nơi bệnh được nhắc tới."},
+  "18": {"ev": ["`Over 30% of the medical problems that doctors are faced with stem directly or indirectly from sleep."],
+         "why": "Section E: lo lắng về giấc ngủ gây hại, hơn 30% vấn đề y tế liên quan tới giấc ngủ → iii (Potential health issues related to sleep)."},
+  "19": {"ev": ["He goes on to explain that the streets of the cities and towns at night were often populated by thieves or worse."],
+         "why": "Ở một số thời kỳ, mối đe doạ tội phạm dẫn tới ngủ chia đôi: Koslofsky giải thích đường phố ban đêm đầy trộm cướp nên người ta ở nhà → C."},
+  "20": {"ev": ["But sleep has been ignored in medical training, and there are very few centres where sleep is studied,' Foster says. He feels this needs to change."],
+         "why": "Bác sĩ nên học thêm về điều trị rối loạn giấc ngủ: Foster nói giấc ngủ bị bỏ qua trong đào tạo y khoa và cần thay đổi → E."},
+  "21": {"ev": ["In many historic accounts, Ekirch found that people used the time that they were awake between periods of sleep to think about and attempt to analyse their dreams."],
+         "why": "Trong lịch sử, người ta dùng lúc thức giữa đêm cho nhiều hoạt động: Ekirch thấy họ đi lại, đọc, viết, ngẫm nghĩ về giấc mơ → B."},
+  "22": {"ev": ["Ekirch attributes the initial shift to improvements in street and home lighting."],
+         "why": "Thay đổi công nghệ ở châu Âu khiến người ta ngủ liền mạch hơn: Ekirch quy sự thay đổi ban đầu cho việc cải thiện chiếu sáng đường phố và nhà ở → B."},
+  "23": {"ev": ["says that the idea that we must sleep for an extended period of time could be damaging if it makes people who wake up in the night anxious"],
+         "why": "Niềm tin phải ngủ liền mạch có thể gây hại về tâm lý: Jacobs nói nó khiến người thức giấc giữa đêm lo lắng, và lo lắng càng khó ngủ → D."},
+  "24": {"ev": ["these references describe a first sleep which began not long following sunset"],
+         "why": "Tóm tắt: người ta thường đi ngủ sớm, ngay sau ___. Bài: giấc đầu bắt đầu không lâu sau hoàng hôn (sunset) → sunset."},
+  "25": {"ev": ["to think about and attempt to analyse their dreams"],
+         "why": "Tóm tắt: … hoặc để suy ngẫm ý nghĩa của ___. Bài: phân tích giấc mơ (dreams) của mình → dreams."},
+  "26": {"ev": ["the streets of the cities and towns at night were often populated by thieves or worse"],
+         "why": "Tóm tắt: người ta ở nhà ban đêm vì sợ ___ trên đường phố tối. Bài: đường phố đầy trộm cắp (thieves) → thieves."}
+ }
+}

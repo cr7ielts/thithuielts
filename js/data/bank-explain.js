@@ -145,4 +145,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-the-gender-gap-in-new-zealands-high-school-examination-resul",
   "p2-the-history-of-the-celtic-language",
   "p2-the-impact-of-invasive-species",
+  "p2-the-importance-of-being-playful",
+  "p2-the-importance-of-law",
+  "p2-the-myth-of-the-eight-hour-sleep",
 ]);
