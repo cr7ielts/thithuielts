@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-slow-food-organization",
+ "q": {
+  "1": {"ev": ["The Ark of Taste is the catalog of endangered food plant and animal species that Slow Food has resolved to protect"],
+        "why": "Ark of Taste là danh mục các loài cây lương thực và vật nuôi đang bị đe doạ ('endangered' = 'in danger of extinction') → TRUE."},
+  "2": {"ev": ["but according to Slow Food the biodiversity of the domesticated species people have depended on for centuries is no less important"],
+        "why": "Câu hỏi: Slow Food cho rằng 'đa dạng sinh học' chỉ nên dùng cho loài hoang dã. Bài: theo Slow Food, đa dạng sinh học của các loài thuần hoá cũng quan trọng không kém → FALSE."},
+  "3": {"ev": ["plant breeders will need the disease-resistant genes which can be obtained from heritage plant varieties"],
+        "why": "Khi giống lai mới không chống được bệnh, nhà tạo giống sẽ cần gen kháng bệnh từ giống cây di sản → gen này có thể cực kỳ quan trọng → TRUE."},
+  "4": {"ev": ["irreplaceable and possibly crucial sets of corn genes would have been lost forever"],
+        "why": "Bài nói về tầm quan trọng của gen giống cây di sản, nhưng không nhắc tới việc các nước bán gen ra quốc tế → NOT GIVEN."},
+  "5": {"ev": ["they also embody a set of social practices, and in some cases even a way of life of previous generations"],
+        "why": "Câu hỏi: Slow Food cho rằng thực phẩm và văn hoá tồn tại độc lập với nhau. Bài: mỗi loài thực phẩm còn thể hiện tập quán xã hội, lối sống của các thế hệ trước; mất giống là mất cả một lối sống → gắn chặt với nhau → FALSE."},
+  "6": {"ev": ["helping to preserve the specific cookery and religious uses that the corn has been selected to support"],
+        "why": "Bài nói Slow Food giúp giữ gìn cách nấu nướng gắn với ngô trắng Iroquois, nhưng không nói người bản địa mở lớp dạy nấu ăn → NOT GIVEN."},
+  "7": {"ev": ["the taste of a recognized Slow Food is unique to that food"],
+        "why": "Bảng (Slow food – hương vị): ___. Bài: hương vị của món Slow Food là độc nhất (unique) → unique."},
+  "8": {"ev": ["but the quantities of Slow Food products which are available for selling are limited"],
+        "why": "Bảng (Slow food – số lượng bán): ___. Bài: lượng sản phẩm Slow Food có thể bán ra bị hạn chế (limited) do cây, con quý hiếm → limited."},
+  "9": {"ev": ["global fast food companies aim to sell food that has an unchanging taste wherever in the world it is eaten"],
+        "why": "Bảng (Fast food – hương vị): ___. Bài: đồ ăn nhanh có hương vị không đổi (unchanging) ở bất kỳ đâu trên thế giới → unchanging."},
+  "10": {"ev": ["The farmers had to begin by hatching the eggs they had been supplied with"],
+         "why": "Nông dân Mỹ được cấp gì để nuôi gà tây quý hiếm? Bài: họ được cung cấp trứng (eggs) để ấp và nuôi thành gà trưởng thành → eggs."},
+  "11": {"ev": ["from eggs which had been selected from four varieties of endangered turkey"],
+         "why": "Bao nhiêu giống gà tây được hưởng lợi từ dự án? Bài: trứng được chọn từ bốn (four) giống gà tây đang bị đe doạ → four / 4."},
+  "12": {"ev": ["chefs in some restaurants where the turkeys were on the menu complained that the Slow Food turkeys were smaller"],
+         "why": "Ai không hài lòng với kích thước gà tây? Bài: các đầu bếp (chefs) ở một số nhà hàng phàn nàn gà nhỏ hơn gà công nghiệp → chefs."},
+  "13": {"ev": ["the distinctive flavors were very well received by consumers"],
+         "why": "Ai thích hương vị của gà tây quý hiếm? Bài: hương vị đặc biệt được người tiêu dùng (consumers) rất ưa chuộng → consumers."}
+ }
+}

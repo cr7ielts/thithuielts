@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-treasures-of-sutton-hoo",
+ "q": {
+  "1": {"ev": ["He discovered the outline of a boat which was 27 metres in length."],
+        "why": "Bài chỉ nói Brown phát hiện đường viền một con thuyền dài 27 m. Không nói ông có ngạc nhiên về kích thước hay không → NOT GIVEN."},
+  "2": {"ev": ["It became apparent that the robbers had for whatever reason stopped digging just centimetres away from a spectacular hoard of treasure."],
+        "why": "Câu hỏi: kẻ trộm đã làm hư hại nặng các hiện vật. Bài: kẻ trộm dừng đào chỉ cách kho báu vài xăng-ti-mét; hiện vật còn trong tình trạng rất tốt → FALSE."},
+  "3": {"ev": ["but also encouraged a major re- evaluation of the period, and a realisation that Anglo-Saxon culture was neither primitive nor lacking in sophistication"],
+        "why": "Phát hiện của Brown dẫn tới việc đánh giá lại lớn về thời kỳ Anglo-Saxon: văn hoá này không hề thô sơ → thái độ thay đổi đáng kể → TRUE."},
+  "4": {"ev": ["But historians now believe that robbing burial sites was a common occurrence during the period."],
+        "why": "Các nhà sử học cho rằng việc trộm mộ rất phổ biến thời đó ('common occurrence' = 'often stolen') → TRUE."},
+  "5": {"ev": ["Historians now believe the individual buried there may not have been royalty; he might have been any of the wealthy individuals in Anglo-Saxon society"],
+        "why": "Câu hỏi: sử gia hiện nay biết chính xác danh tính người được chôn. Bài: người đó có thể không phải hoàng tộc, mà có thể là bất kỳ ai giàu có → chưa xác định được → FALSE."},
+  "6": {"ev": ["Although the Anglo-Saxons left some manuscripts and coins, and a few examples of their architecture, compared with all subsequent eras there had not been much to see."],
+        "why": "Câu hỏi: kiến trúc còn sót lại cho thấy nhiều về văn hoá Anglo-Saxon hơn các hiện vật khác. Bài: kiến trúc chỉ còn vài ví dụ, trước Sutton Hoo 'không có nhiều để xem'; chính các hiện vật Sutton Hoo mới làm thay đổi hiểu biết → FALSE."},
+  "7": {"ev": ["The front of the shield has two striking designs - a large predatory bird and a flying dragon."],
+        "why": "Bảng (Khiên – hình trang trí): chim săn mồi và ___. Bài: mặt trước khiên có hình một con chim săn mồi và một con rồng (dragon) bay → dragon."},
+  "8": {"ev": ["The design features a long snake reaching down to touch the beak of a bird."],
+        "why": "Bảng (Mũ sắt – hình trang trí): ___ và chim. Bài: một con rắn (snake) dài vươn xuống chạm mỏ chim → snake."},
+  "9": {"ev": ["It features a woman's head"],
+        "why": "Bảng (Đĩa bạc – hình trang trí): ___ của một phụ nữ. Bài: đĩa có hình đầu (head) một người phụ nữ → head."},
+  "10": {"ev": ["This is made of pure silver and was almost certainly manufactured in Serbia."],
+         "why": "Bảng (Đĩa bạc – nơi sản xuất): ___. Bài: gần như chắc chắn được làm ở Serbia → Serbia."},
+  "11": {"ev": ["was adorned with artwork depicting wolves"],
+         "why": "Bảng (Nắp ví – hình trang trí): hình ___. Bài: trang trí hình những con sói (wolves) → wolves."},
+  "12": {"ev": ["It is thought that these were the work of craftsmen in Egypt in the 7th century AD."],
+         "why": "Bảng (Bát bạc – nơi sản xuất): có lẽ là ___. Bài: được cho là tác phẩm của thợ thủ công Ai Cập (Egypt) thế kỷ 7 ('It is thought' = 'probably') → Egypt."},
+  "13": {"ev": ["Spoons were found close to the bowls and have names inscribed on them."],
+         "why": "Bảng (Bát bạc): được tìm thấy cùng một số ___. Bài: những chiếc thìa (spoons) được tìm thấy gần các bát → spoons."}
+ }
+}

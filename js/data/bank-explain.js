@@ -67,4 +67,10 @@ export const EXPLAIN_IDS = new Set([
   "p1-the-nature-of-yawning",
   "p1-the-origin-of-paper",
   "p1-the-origins-of-tennis",
+  "p1-the-origins-of-weather-forecasting",
+  "p1-the-pearls",
+  "p1-the-pyramid-of-cestius",
+  "p1-the-rise-and-fall-of-detective-stories",
+  "p1-the-slow-food-organization",
+  "p1-the-treasures-of-sutton-hoo",
 ]);
