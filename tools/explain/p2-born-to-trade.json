@@ -1,0 +1,31 @@
+{
+ "id": "p2-born-to-trade",
+ "q": {
+  "14": {"ev": ["Humans are born to trade", "Evidence from modern hunter-gatherers leaves little doubt that the exchange of food and favours is innate"],
+         "why": "Section A: con người sinh ra đã biết trao đổi; khả năng 'có qua có lại' là bẩm sinh → iv (A natural human talent)."},
+  "15": {"ev": ["Clearly, the worth of such goods is not inherent but resides in certain intangible qualities that we invest in them. When did humans start holding these goods in such high esteem?"],
+         "why": "Section B: đặt câu hỏi vì sao giá trị hàng hoá chuyển từ đồ thiết yếu sang túi Gucci, xe BMW — giá trị không nằm ở bản thân món đồ → iii (Querying the changes in the value of traded items)."},
+  "16": {"ev": ["However, discoveries in Africa are pushing the origins of consumerism much further back into human prehistory."],
+         "why": "Section C: các phát hiện ở châu Phi (đất son Blombos hơn 100.000 năm) đẩy lùi mốc bắt đầu của văn hoá tiêu dùng → vi (Recent finds alter theories about when consumerism started)."},
+  "17": {"ev": ["all the beads display a pattern of wear suggesting friction from rubbing against thread, clothes or other beads"],
+         "why": "Section D: hạt cườm có lỗ đặt đều, dấu mòn do cọ vào dây, quần áo → bằng chứng chúng dùng để trang trí → ii (The clues that indicate ancient items were decorative). Bẫy: i nói trang sức đắt tiền — không có."},
+  "18": {"ev": ["The best way to do this would be through demonstrating possession of material items that are hard to fake."],
+         "why": "Section E: người giỏi khoe tài bằng cách sở hữu vật phẩm khó làm giả, từ đó có uy tín, địa vị → v (How status can be gained from ownership of goods)."},
+  "19": {"ev": ["allowing individuals to keep a running tally of their interactions with others", "the ability to keep track of the credits and debits that accrue as a result"],
+         "why": "'Reciprocity' là khả năng theo dõi sổ sách 'được – nợ' trong trao đổi với người khác → theo dõi cân bằng giữa hàng cho đi và nhận về → B. Bẫy: A sai vì là ghi nhớ trong đầu, không phải ghi chép."},
+  "20": {"ev": ["For a start, it is predominantly red--any of the other colours available would have done for curing"],
+         "why": "Đất son ở Blombos chủ yếu màu đỏ, dù màu nào cũng dùng được để thuộc da → nó được chọn vì màu sắc → D. Bẫy: A sai vì đất son không có sẵn ở Blombos."},
+  "21": {"ev": ["each cluster contains shells of a similar size and colour with consistently placed holes", "all the beads display a pattern of wear suggesting friction from rubbing against thread, clothes or other beads"],
+         "why": "Các hạt có lỗ đặt đều và dấu mòn do cọ vào dây, quần áo, hạt khác → cho thấy chúng được xâu lại với nhau → D. Bẫy: A sai (kích cỡ giống nhau), B chỉ là cách chúng được tìm thấy."},
+  "22": {"ev": ["In many animal species, individuals signal their genetic fitness by showing off with attention-grabbing adornment."],
+         "why": "Tóm tắt: ta có thể dùng đồ vật để thể hiện sức mạnh như các ___ khác dùng đặc điểm hấp dẫn. Bài: ở nhiều loài động vật (species), cá thể phô diễn vẻ ngoài để báo hiệu gen tốt → I (species)."},
+  "23": {"ev": ["would have brought respect--in other words, prestige"],
+         "why": "Tóm tắt: thời xưa người thành công nhận được ___ nhờ phô diễn. Bài: kỹ năng vượt trội mang lại sự tôn trọng (respect) → F (respect)."},
+  "24": {"ev": ["The benefits of prestige would also lead to competition to acquire it."],
+         "why": "Tóm tắt: khao khát địa vị dẫn tới ___ giữa những người muốn có nó. Bài: lợi ích của uy tín dẫn tới cạnh tranh (competition) → A (competitiveness)."},
+  "25": {"ev": ["They are arguably the first step on the road to modern civilisation, paving the way for agriculture and urbanisation."],
+         "why": "Tóm tắt: nhu cầu trao đổi tạo nền cho nông nghiệp và sự phát triển ___. Bài: 'agriculture and urbanisation' — đô thị hoá = phát triển thành phố → J (city)."},
+  "26": {"ev": ["We may not be impressed by beads any more, but their modern equivalents have the same fascination."],
+         "why": "Tóm tắt: các món đồ ngày nay mang lại địa vị giống như hạt cườm từng mang lại cho ___ của chúng ta. Bài nói về tổ tiên (ancestors) dùng hạt cườm, răng thú để khoe địa vị → H (ancestors)."}
+ }
+}

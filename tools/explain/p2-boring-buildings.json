@@ -1,0 +1,31 @@
+{
+ "id": "p2-boring-buildings",
+ "q": {
+  "14": {"ev": ["Few New Yorkers who pass by would find this building boring. And they're likely to be happier--maybe even nicer to each other--because of it."],
+         "why": "Thông tin: mô tả một toà nhà có tác động tích cực. Đoạn F: Hearst Tower khiến người đi qua bất ngờ, nhân viên hứng khởi, người dân có thể vui vẻ và tử tế hơn → F."},
+  "15": {"ev": ["help architects and urban planners understand how, exactly, people respond to their built surroundings, particularly at work"],
+         "why": "Thông tin: kiến trúc ảnh hưởng tới hiệu quả làm việc. Đoạn A: con người làm việc tốt nhất ở không gian phức tạp, không phải văn phòng 'to, trống, hình hộp' → A."},
+  "16": {"ev": ["Passing the monolithic Whole Foods Market, people's state of arousal plummeted.", "people measured high levels of excitement"],
+         "why": "Thông tin: ví dụ về mức độ phản ứng của con người ở hai khu đô thị. Đoạn B: đi qua Whole Foods thì mức hưng phấn giảm mạnh; ở dãy nhà hàng gần đó thì hưng phấn cao → B."},
+  "17": {"ev": ["After only a minute of virtual images, those who said they were awed also felt less pressed for time."],
+         "why": "Thông tin: nghiên cứu cho thấy xem một số hình ảnh làm giảm căng thẳng. Đoạn D: sau một phút xem thác nước, cá voi, phi hành gia, người thấy kinh ngạc cảm thấy bớt bị áp lực thời gian → D."},
+  "18": {"ev": ["`Complexity is thrilling whether in an amusement park or architecture.'"],
+         "why": "Thông tin: cảm xúc trải qua với cả kiến trúc lẫn nơi giải trí. Đoạn C: Walker nói sự phức tạp gây phấn khích dù ở công viên giải trí hay trong kiến trúc → C."},
+  "19": {"ev": ["Ellard explains that the main objective of urban design should be to produce some kind of novelty or change every few seconds"],
+         "why": "Mục tiêu của quy hoạch tốt là tạo sự đa dạng kiến trúc: Ellard nói thiết kế đô thị phải tạo cái mới hoặc sự thay đổi vài giây một lần → A."},
+  "20": {"ev": ["Pedestrians at active sites were nearly five times more likely to offer assistance than at inactive ones."],
+         "why": "Người ở khu bừa bộn giúp đỡ nhiều hơn: thí nghiệm của Montgomery cho thấy ở khu 'active' (lộn xộn) người đi đường sẵn lòng giúp gần gấp năm lần → D."},
+  "21": {"ev": ["the feeling of `awe' can make people more patient and less materialistic"],
+         "why": "Người vừa cảm thấy kinh ngạc ít coi trọng vật chất hơn: nghiên cứu của Rudd, Vohs và Aaker cho thấy cảm giác kinh ngạc khiến người ta bớt thực dụng, chọn trải nghiệm thay vì đồ vật → C."},
+  "22": {"ev": ["Some of the happiest blocks in New York City, he argues, are `kind of ugly and messy'."],
+         "why": "Nơi 'đẹp' chưa chắc là nơi dễ chịu nhất: Montgomery nói nhiều khu phố vui vẻ nhất New York lại khá xấu và bừa bộn → D."},
+  "23": {"ev": ["To describe this place, they used words like `bland' and `passionless'."],
+         "why": "Một toà nhà cụ thể không tạo được kích thích thị giác: nghiên cứu của Ellard về mặt tiền trơn dài của Whole Foods khiến người ta chán, gọi nó là 'nhạt nhẽo' → A."},
+  "24": {"ev": ["From the outside, the facade jolts city dwellers from their daily commutes, while energizing employees who enter it each morning."],
+         "why": "Tóm tắt: ___ của toà nhà tác động mạnh tới người đi làm và nhân viên. Bài: mặt tiền (facade) làm người đi làm giật mình, nhân viên phấn chấn → facade."},
+  "25": {"ev": ["Inside, workers travel upon diagonal escalators, up a three-story water sculpture"],
+         "why": "Tóm tắt: bên trong, ___ đưa nhân viên lên qua tác phẩm điêu khắc nước. Bài: thang cuốn (escalators) chéo → escalators."},
+  "26": {"ev": ["through the tower's historic atrium, flooded with light"],
+         "why": "Tóm tắt: trong ___ tràn ngập ánh sáng. Bài: giếng trời (atrium) lịch sử của toà tháp tràn ánh sáng → atrium."}
+ }
+}

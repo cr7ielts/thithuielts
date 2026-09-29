@@ -93,4 +93,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-biomimicry",
   "p2-biophilic-design",
   "p2-bird-migration",
+  "p2-boring-buildings",
+  "p2-born-to-trade",
+  "p2-bristlecone-pines",
 ]);
