@@ -181,4 +181,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-childrens-literature-studies-today",
   "p3-childs-play-in-medieval-england",
   "p3-conformity",
+  "p3-crossing-the-threshold",
+  "p3-decisions-decisions",
+  "p3-does-class-size-matter",
 ]);
