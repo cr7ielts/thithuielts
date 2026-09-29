@@ -250,4 +250,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-the-robbers-cave-study",
   "p3-the-science-of-sleep",
   "p3-the-search-for-extra-terrestrial-life",
+  "p3-the-significant-role-of-mother-tongue-in-education",
+  "p3-the-strange-world-of-sight",
+  "p3-the-tuatara-past-and-future",
 ]);
