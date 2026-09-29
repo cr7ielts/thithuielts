@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-history-of-colours-and-the-meanings-people-have-given-th",
+ "q": {
+  "1": {"ev": ["What was different about this new shade was that it was the result of a process involving a species of beetle."],
+        "why": "Bài chỉ nói sắc đỏ mới được làm từ một loài bọ cánh cứng. Không so sánh mức độ được ưa chuộng với màu đỏ từ bọ kermes → NOT GIVEN."},
+  "2": {"ev": ["patrons would state in the contract that painters were required to use expensive pigments"],
+        "why": "Câu hỏi: thời Phục Hưng, một số hoạ sĩ buộc phải dùng vật liệu rẻ tiền. Bài: người đặt tranh ghi trong hợp đồng rằng hoạ sĩ phải dùng chất màu ĐẮT tiền → FALSE."},
+  "3": {"ev": ["Without these new colours, Impressionism and other significant modern art developments would not have been possible."],
+        "why": "Không có màu tổng hợp mới của thế kỷ 19 thì trường phái Ấn tượng và các trào lưu hiện đại quan trọng khác đã không thể ra đời → dẫn tới các trào lưu nghệ thuật lớn → TRUE."},
+  "4": {"ev": ["This is a process that has gone on for much of human history and has not yet come to an end. Green being associated with environmental protection is a good example of this."],
+        "why": "Việc gán ý nghĩa cho màu sắc vẫn chưa kết thúc — ví dụ màu xanh lá gắn với bảo vệ môi trường → con người ngày nay vẫn tiếp tục gán ý nghĩa mới → TRUE."},
+  "5": {"ev": ["In Europe, the colour black has been used to express a variety of meanings, for example death and elegance, among many others."],
+        "why": "Bài chỉ nói màu đen ở châu Âu mang nhiều ý nghĩa (cái chết, sự thanh lịch…). Không đếm số ý nghĩa tích cực và tiêu cực → NOT GIVEN."},
+  "6": {"ev": ["said that preference for strong, pure colours is a basic human instinct, and therefore this preference is strongly present in children"],
+        "why": "Câu hỏi: Cohn tin trẻ em thích màu tối một cách tự nhiên. Bài: Cohn cho rằng trẻ thích màu mạnh, thuần (các màu cơ bản tươi sáng) → FALSE."},
+  "7": {"ev": ["Prehistoric paintings in caves were found to contain yellow and red earth, white chalk, and a black made from the soot of burned animal fat."],
+        "why": "Ghi chú: những loại sơn sớm nhất được phát hiện trong ___ làm từ sản phẩm động vật, phấn hoặc các loại đất. Bài: tranh thời tiền sử trong hang động (caves) chứa đất vàng/đỏ, phấn trắng và muội mỡ động vật → caves."},
+  "8": {"ev": ["What was different about this new shade was that it was the result of a process involving a species of beetle."],
+        "why": "Ghi chú: thời Trung Cổ, màu đỏ làm từ bọ kermes hoặc một loại ___. Bài: sắc đỏ mới từ châu Mỹ được làm từ một loài bọ cánh cứng (beetle) → beetle."},
+  "9": {"ev": ["purple became the colour of kings and emperors in ancient Persia and Rome, and was also worn by priests on ceremonial occasions"],
+        "why": "Ghi chú: màu tím chủ yếu được dùng bởi người cai trị và ___. Bài: màu của vua chúa, và các thầy tu (priests) cũng mặc trong nghi lễ → priests."},
+  "10": {"ev": ["which was made from the semi-precious gem called lapis lazuli"],
+         "why": "Ghi chú: thời Phục Hưng, màu ultramarine được làm từ một loại ___. Bài: làm từ loại đá bán quý (gem) lapis lazuli → gem."},
+  "11": {"ev": ["chemists began to develop synthetic paints, often from metals such as cobalt (cobalt blue), zinc (zinc white)"],
+         "why": "Ghi chú: thế kỷ 19, các nhà hoá học tạo màu bằng các loại ___ khác nhau. Bài: sơn tổng hợp thường làm từ kim loại (metals) như coban, kẽm → metals."},
+  "12": {"ev": ["By the mid 1800s, another development was the use of portable tubes to contain the paint and keep it fresh."],
+         "why": "Ghi chú: giữa thế kỷ 19, màu được cho vào ___ giúp dễ mang theo. Bài: dùng tuýp (tubes) mang theo được để đựng sơn ('portable' = easy to transport) → tubes."},
+  "13": {"ev": ["whereas it is red which is traditionally used for weddings. The same colour represents danger in many European countries."],
+         "why": "Ghi chú: màu đỏ được dùng trong ___ ở một số nước nhưng cũng dùng để cảnh báo nguy hiểm. Bài: ở Trung Quốc và một số nước châu Á, màu đỏ dùng cho đám cưới (weddings); ở châu Âu nó biểu thị nguy hiểm → weddings."}
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-development-of-art-appreciation-in-melbourne-australia",
+ "q": {
+  "1": {"ev": ["This was partly because there was a gold rush that was catching people's attention far more as it was bringing wealth to the people of Victoria."],
+        "why": "Mỹ thuật ít được coi trọng ở Victoria thập niên 1850, một phần vì cơn sốt vàng thu hút sự chú ý của mọi người nhiều hơn → TRUE."},
+  "2": {"ev": ["as it was bringing wealth to the people of Victoria"],
+        "why": "Bài chỉ nói cơn sốt vàng mang lại của cải cho người dân Victoria. Không so sánh Victoria với các vùng khác của Úc trước đó → NOT GIVEN."},
+  "3": {"ev": ["From the beginning, there were opposing views about the public art museum's role."],
+        "why": "Ngay từ đầu đã có những quan điểm trái ngược về vai trò của bảo tàng nghệ thuật công cộng ('opposing views' = 'disagreement', 'role' ≈ 'purpose') → TRUE."},
+  "4": {"ev": ["casts reproducing sculptures were obtained and grouped chronologically"],
+        "why": "Câu hỏi: bản đúc tượng được sắp xếp theo nơi xuất xứ. Bài: chúng được xếp theo trình tự thời gian (chronologically), từ cổ đại tới đương đại → FALSE."},
+  "5": {"ev": ["an Intercolonial Exhibition was held in a temporary exhibition building erected in the library's grounds"],
+        "why": "Câu hỏi: triển lãm được tổ chức ở một trung tâm triển lãm cố định có sẵn. Bài: nó diễn ra trong một toà nhà tạm dựng trong khuôn viên thư viện → FALSE."},
+  "6": {"ev": ["the opportunity to compare and evaluate the works of local artists enhanced art criticism"],
+        "why": "Cơ hội so sánh, đánh giá tác phẩm của nghệ sĩ địa phương tại triển lãm đã nâng cao chất lượng phê bình nghệ thuật ('enhanced art criticism' = 'critical comment was improved') → TRUE."},
+  "7": {"ev": ["he suggested placing a museum, focused on the education of citizens about art"],
+        "why": "Ghi chú: giáo sư McCoy ủng hộ ___ là mục đích chính của bảo tàng. Bài: ông đề xuất một bảo tàng tập trung vào việc giáo dục (education) người dân về nghệ thuật → education."},
+  "8": {"ev": ["The Sculpture Gallery, although crammed into a limited space in the Museum of Art"],
+        "why": "Ghi chú: phòng trưng bày điêu khắc mở trong bảo tàng, trong một ___ hạn chế. Bài: 'crammed into a limited space' ('restricted' = 'limited') → space."},
+  "9": {"ev": ["Visitors to the Museum of Art learned about individual works by reading the written information on cards accompanying each object."],
+        "why": "Ghi chú: ___ cung cấp thông tin về từng hiện vật. Bài: khách đọc thông tin viết trên các tấm thẻ (cards) đặt cạnh mỗi hiện vật → cards."},
+  "10": {"ev": ["in 1863 the government of Victoria gave one thousand pounds for the creation of a public picture gallery"],
+         "why": "Ghi chú: hỗ trợ tài chính từ ___ cho phòng tranh mới. Bài: chính quyền (government) Victoria cấp một nghìn bảng để lập phòng tranh công cộng → government."},
+  "11": {"ev": ["which was to display examples of contemporary art"],
+         "why": "Ghi chú: phong cách nghệ thuật — ___. Bài: phòng tranh trưng bày nghệ thuật đương đại (contemporary art) → contemporary."},
+  "12": {"ev": ["This new public picture gallery soon became known as the National Gallery and was free to visit."],
+         "why": "Ghi chú: vé vào cửa — ___. Bài: National Gallery 'was free to visit' → free."},
+  "13": {"ev": ["it was decided that the public's care and attention would safeguard it from theft and damage"],
+         "why": "Ghi chú: công chúng được kỳ vọng bảo vệ bộ sưu tập khỏi ___ và hư hại. Bài: sự quan tâm của công chúng sẽ bảo vệ tranh khỏi trộm cắp (theft) và hư hỏng ('harm' = 'damage') → theft."}
+ }
+}

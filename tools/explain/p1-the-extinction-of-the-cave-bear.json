@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-extinction-of-the-cave-bear",
+ "q": {
+  "1": {"ev": ["He dissolves 30,000-year-old animal bones in hydrochloric acid"],
+        "why": "Câu hỏi: nghiên cứu của Bocherens dựa trên việc đo chiều dài xương nguyên vẹn. Bài: ông hoà tan xương trong axit, nấu và sấy thành bột để phân tích thành phần hoá học → FALSE."},
+  "2": {"ev": ["Bocherens is at the forefront of research on the bear"],
+        "why": "Bài nói Bocherens đi đầu trong nghiên cứu gấu hang, nhưng không nói ông là người đầu tiên phân tích chúng trong phòng thí nghiệm → NOT GIVEN."},
+  "3": {"ev": ["a European species that died out 25,000 years ago"],
+        "why": "Gấu hang là loài ở châu Âu đã tuyệt chủng ('died out') 25.000 năm trước → TRUE."},
+  "4": {"ev": ["in the Middle Ages, the massive skulls were attributed to dragons"],
+        "why": "Thời Trung Cổ, người ta cho rằng những hộp sọ khổng lồ đào được là của rồng → TRUE."},
+  "5": {"ev": ["Males weighed up to 1,500 pounds, 50 per cent more than the largest modern grizzly bears."],
+        "why": "Câu hỏi: gấu xám hiện đại có kích thước tương tự gấu hang. Bài: gấu hang đực nặng hơn 50% so với gấu xám lớn nhất ngày nay → FALSE."},
+  "6": {"ev": ["Initially cave bears shared the continent of Europe, more than 100,000 years ago, with Neanderthals"],
+        "why": "Bài chỉ nói người Neanderthal từng sống chung châu Âu với gấu hang. Không so sánh mức độ hiểu hành vi của gấu giữa Neanderthal và người hiện đại → NOT GIVEN."},
+  "7": {"ev": ["the floor is covered with 150 cave bear skeletons, and its soft clay still holds paw prints"],
+        "why": "Ghi chú: hơn một trăm ___ gấu hang cùng dấu chân được tìm thấy trên sàn hang. Bài: sàn hang phủ 150 bộ xương (skeletons) gấu hang → skeletons."},
+  "8": {"ev": ["a cave bear skull was perched on a stone slab in the center of one chamber"],
+        "why": "Ghi chú: ___ của một con gấu hang được tìm thấy ở vị trí nổi bật. Bài: một hộp sọ (skull) được đặt trên phiến đá ở giữa một gian hang → skull."},
+  "9": {"ev": ["cave bears and human beings sought shelter here from winter weather"],
+        "why": "Ghi chú: xương và công cụ cho thấy hang là nơi ___ cho cả gấu và người. Bài: gấu và người cùng tìm chỗ trú (shelter) tránh mùa đông ở đây → shelter."},
+  "10": {"ev": ["Bocherens has found that cave bears ate mainly plants"],
+         "why": "Ghi chú: đồng vị trong xương cho thấy ___ là thức ăn ưa thích của gấu hang. Bài: gấu hang chủ yếu ăn thực vật (plants) → plants."},
+  "11": {"ev": ["This Ice Age shortened or eliminated growing seasons, and altered the distributions of plant species across Europe."],
+         "why": "Ghi chú: Kỷ Băng hà làm thay đổi sự phát triển của thực vật ở ___. Bài: thay đổi sự phân bố các loài cây trên khắp châu Âu (Europe) → Europe."},
+  "12": {"ev": ["according to a DNA analysis of teeth found near the Danube River"],
+         "why": "Ghi chú: bằng chứng đến từ nghiên cứu ADN trong ___ của quần thể gấu gần sông Danube. Bài: phân tích ADN từ răng (teeth) tìm thấy gần sông Danube → teeth."},
+  "13": {"ev": ["cave bears had fewer safe places to hibernate"],
+         "why": "Ghi chú: cạnh tranh hang động với Neanderthal và người hiện đại làm giảm cơ hội để gấu ___. Bài: gấu hang có ít chỗ an toàn hơn để ngủ đông (hibernate) → hibernate."}
+ }
+}

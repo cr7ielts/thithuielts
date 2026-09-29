@@ -50,4 +50,10 @@ export const EXPLAIN_IDS = new Set([
   "p1-the-burgess-shale-fossils",
   "p1-the-clipper-races-an-era-of-competition-between-cargo-ships",
   "p1-the-clipper-races",
+  "p1-the-development-of-art-appreciation-in-melbourne-australia",
+  "p1-the-development-of-plastics",
+  "p1-the-development-of-the-silk-industry",
+  "p1-the-early-history-of-olive-oil",
+  "p1-the-extinction-of-the-cave-bear",
+  "p1-the-history-of-colours-and-the-meanings-people-have-given-th",
 ]);

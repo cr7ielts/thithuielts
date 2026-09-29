@@ -28,6 +28,7 @@ FIXES = {
     # key.docx lấy nhầm tiêu đề mục ("The ships", "The races", "The rewards") làm đáp án;
     # đáp án đúng theo bài trùng "...an era of competition between cargo ships"
     'p1-the-clipper-races': ({}, {7: 'sails', 9: 'Challenger', 13: 'money'}),
+    'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
 
 
