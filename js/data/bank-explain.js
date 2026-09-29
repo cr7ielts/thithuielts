@@ -256,4 +256,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-the-value-of-literary-prizes",
   "p3-the-voynich-manuscript",
   "p3-toscanini-s-pursuit-of-perfection",
+  "p3-translating-a-key-to-international-understanding",
+  "p3-travelling-plants",
+  "p3-unlocking-the-mystery-of-dreams",
 ]);
