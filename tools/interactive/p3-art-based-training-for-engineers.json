@@ -93,40 +93,94 @@
    "to": 40,
    "kind": "letter",
    "instruction": "Choose the correct letter, A, B, C or D.",
-   "bank": [
-    {
-     "v": "A",
-     "t": "advising trainers on how they should incorporate the rules into"
-    },
-    {
-     "v": "B",
-     "t": "comparing how the young engineers reacted to the content of the"
-    },
-    {
-     "v": "C",
-     "t": "explaining the context in which the rules for effective training were"
-    },
-    {
-     "v": "D",
-     "t": "describing how trainers assessed the performance of workshop"
-    }
-   ],
    "questions": [
     {
      "n": 37,
-     "text": "What is the writer doing in the fifth paragraph?"
+     "text": "What is the writer doing in the fifth paragraph?",
+     "options": [
+      {
+       "v": "A",
+       "t": "advising trainers on how they should incorporate the rules into workshops."
+      },
+      {
+       "v": "B",
+       "t": "comparing how the young engineers reacted to the content of the workshops."
+      },
+      {
+       "v": "C",
+       "t": "explaining the context in which the rules for effective training were arrived at."
+      },
+      {
+       "v": "D",
+       "t": "describing how trainers assessed the performance of workshop participants."
+      }
+     ]
     },
     {
      "n": 38,
-     "text": "In the seventh paragraph, what does the writer say about activities such as 'passing a ball of energy'?"
+     "text": "In the seventh paragraph, what does the writer say about activities such as 'passing a ball of energy'?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The timing had to be adapted to make them suitable for the engineers."
+      },
+      {
+       "v": "B",
+       "t": "The point of them had to be explained to the engineers numerous times."
+      },
+      {
+       "v": "C",
+       "t": "The engineers were initially unconvinced of their value."
+      },
+      {
+       "v": "D",
+       "t": "The engineers misunderstood how they should be performed."
+      }
+     ]
     },
     {
      "n": 39,
-     "text": "What does the writer attribute the success of the demonstrative approach to?"
+     "text": "What does the writer attribute the success of the demonstrative approach to?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It complemented the way the technical graduates usually worked."
+      },
+      {
+       "v": "B",
+       "t": "It was a highly innovative method of working."
+      },
+      {
+       "v": "C",
+       "t": "It combined well with the two other approaches."
+      },
+      {
+       "v": "D",
+       "t": "It met the participants expectations about a workshop situation."
+      }
+     ]
     },
     {
      "n": 40,
-     "text": "What is the writer's main point in the final paragraph?"
+     "text": "What is the writer's main point in the final paragraph?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The differences between the facilitators and the trainees remained immense."
+      },
+      {
+       "v": "B",
+       "t": "The facilitators had to put into practice what they were attempting to teach."
+      },
+      {
+       "v": "C",
+       "t": "The program that has been developed is suitable for any technical audience."
+      },
+      {
+       "v": "D",
+       "t": "The facilitators on the program acknowledged they had learned very little"
+      }
+     ]
     }
    ]
   }

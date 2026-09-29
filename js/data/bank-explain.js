@@ -168,4 +168,8 @@ export const EXPLAIN_IDS = new Set([
   "p2-why-do-we-use-language",
   "p2-why-don-t-we-sleep",
   "p2-will-eating-less-make-you-live-longer",
+  "p3-200-years-of-australian-landscapes-at-the-royal-academy-in-l",
+  "p3-a-closer-examination-of-a-study-on-verbal-and-non-verbal-mes",
+  "p3-all-in-the-family",
+  "p3-animals-predicting-earthquakes",
 ]);

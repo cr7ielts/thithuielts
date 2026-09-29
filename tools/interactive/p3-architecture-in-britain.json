@@ -7,44 +7,116 @@
    "to": 31,
    "kind": "letter",
    "instruction": "Choose the correct letter, A, B, C or D.",
-   "bank": [
-    {
-     "v": "A",
-     "t": "their achievements were neglected."
-    },
-    {
-     "v": "B",
-     "t": "their cultural legacy endured."
-    },
-    {
-     "v": "C",
-     "t": "there was an abrupt cultural change."
-    },
-    {
-     "v": "D",
-     "t": "Anglo-Saxon building techniques declined."
-    }
-   ],
    "questions": [
     {
      "n": 27,
-     "text": "After the Romans left Britain,"
+     "text": "After the Romans left Britain,",
+     "options": [
+      {
+       "v": "A",
+       "t": "their achievements were neglected."
+      },
+      {
+       "v": "B",
+       "t": "their cultural legacy endured."
+      },
+      {
+       "v": "C",
+       "t": "there was an abrupt cultural change."
+      },
+      {
+       "v": "D",
+       "t": "Anglo-Saxon building techniques declined."
+      }
+     ]
     },
     {
      "n": 28,
-     "text": "Medieval architecture aspired above all to be"
+     "text": "Medieval architecture aspired above all to be",
+     "options": [
+      {
+       "v": "A",
+       "t": "immense."
+      },
+      {
+       "v": "B",
+       "t": "useful."
+      },
+      {
+       "v": "C",
+       "t": "decorative."
+      },
+      {
+       "v": "D",
+       "t": "durable."
+      }
+     ]
     },
     {
      "n": 29,
-     "text": "Which of the following architectural features generally characterised 16th century houses?"
+     "text": "Which of the following architectural features generally characterised 16th century houses?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They faced inwards."
+      },
+      {
+       "v": "B",
+       "t": "They had plain exteriors."
+      },
+      {
+       "v": "C",
+       "t": "They had small windows."
+      },
+      {
+       "v": "D",
+       "t": "They displayed symmetry in their architecture."
+      }
+     ]
     },
     {
      "n": 30,
-     "text": "How did 17th century British architecture come to be influenced by styles in continental Europe?"
+     "text": "How did 17th century British architecture come to be influenced by styles in continental Europe?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Fugitives brought ideas from continental Europe back to Britain."
+      },
+      {
+       "v": "B",
+       "t": "British craftsmen went to work in other countries."
+      },
+      {
+       "v": "C",
+       "t": "The monarch encouraged cultural contacts with other countries."
+      },
+      {
+       "v": "D",
+       "t": "Buildings were restored by architects from continental Europe."
+      }
+     ]
     },
     {
      "n": 31,
-     "text": "What drove building design immediately after the Second World War?"
+     "text": "What drove building design immediately after the Second World War?",
+     "options": [
+      {
+       "v": "A",
+       "t": "conservatism"
+      },
+      {
+       "v": "B",
+       "t": "a housing shortage"
+      },
+      {
+       "v": "C",
+       "t": "foreign architecture"
+      },
+      {
+       "v": "D",
+       "t": "wealthy patronage"
+      }
+     ]
     }
    ]
   },

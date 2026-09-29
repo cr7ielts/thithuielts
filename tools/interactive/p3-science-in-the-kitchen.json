@@ -35,40 +35,94 @@
    "to": 35,
    "kind": "letter",
    "instruction": "Choose the correct letter, A, B, C or D.",
-   "bank": [
-    {
-     "v": "A",
-     "t": "determine how chemistry has influenced modern cooking."
-    },
-    {
-     "v": "B",
-     "t": "provide a scientific basis for traditional cooking methods."
-    },
-    {
-     "v": "C",
-     "t": "show that long-held beliefs about cooking are wrong."
-    },
-    {
-     "v": "D",
-     "t": "offer practical advice to those who cook at home."
-    }
-   ],
    "questions": [
     {
      "n": 32,
-     "text": "The purpose of Herv� This's research is to"
+     "text": "The purpose of Hervé This's research is to",
+     "options": [
+      {
+       "v": "A",
+       "t": "determine how chemistry has influenced modern cooking."
+      },
+      {
+       "v": "B",
+       "t": "provide a scientific basis for traditional cooking methods."
+      },
+      {
+       "v": "C",
+       "t": "show that long-held beliefs about cooking are wrong."
+      },
+      {
+       "v": "D",
+       "t": "offer practical advice to those who cook at home."
+      }
+     ]
     },
     {
      "n": 33,
-     "text": "According to Peter Barham, one difference between cookery books and scientific papers is that"
+     "text": "According to Peter Barham, one difference between cookery books and scientific papers is that",
+     "options": [
+      {
+       "v": "A",
+       "t": "scientific papers are checked by more people."
+      },
+      {
+       "v": "B",
+       "t": "the writers of cookery books need not be qualified."
+      },
+      {
+       "v": "C",
+       "t": "the language used in scientific papers is more complicated."
+      },
+      {
+       "v": "D",
+       "t": "recipe writers can profit more financially than scientific writers."
+      }
+     ]
     },
     {
      "n": 34,
-     "text": "Nicholas Kurti referred to a souffl� in order to"
+     "text": "Nicholas Kurti referred to a soufflé in order to",
+     "options": [
+      {
+       "v": "A",
+       "t": "give an example of a dish that can easily be ruined by excess heat."
+      },
+      {
+       "v": "B",
+       "t": "highlight the inadequacy of scientific research into cooking."
+      },
+      {
+       "v": "C",
+       "t": "show that cooking is similar to other scientific processes."
+      },
+      {
+       "v": "D",
+       "t": "confess his own limitations as a cook."
+      }
+     ]
     },
     {
      "n": 35,
-     "text": "One aspect of Rachel Edwards-Stuart's research involves"
+     "text": "One aspect of Rachel Edwards-Stuart's research involves",
+     "options": [
+      {
+       "v": "A",
+       "t": "matching solid food to complementary liquids."
+      },
+      {
+       "v": "B",
+       "t": "determining which tastes appeal to young people."
+      },
+      {
+       "v": "C",
+       "t": "studying how food changes form in certain conditions."
+      },
+      {
+       "v": "D",
+       "t": "evaluating the risk of damage from using preservatives in food."
+      }
+     ]
     }
    ]
   },
@@ -118,11 +172,11 @@
     },
     {
      "n": 37,
-     "text": "Herv� This's research has led him to the view that"
+     "text": "Hervé This's research has led him to the view that"
     },
     {
      "n": 38,
-     "text": "Thanks to the joint effort of Nicholas Kurti and Herv� This,"
+     "text": "Thanks to the joint effort of Nicholas Kurti and Hervé This,"
     },
     {
      "n": 39,
@@ -152,7 +206,7 @@
    },
    {
     "mark": "",
-    "text": "Herv� This, director of the Molecular Gastronomy team at the French National Institute for Agricultural Research, spends much of his time trying to disprove culinary old wives' tales. He is empirically testing traditional beliefs about cooking and disproving the more absurd, tackling such questions as whether it's better to add vinaigrette to potato salad while the potatoes are still hot. `The first modern chemists used kitchen equipment to do their experiments,' Herv� This explains. `Since then, chemistry has undergone massive changes - but cooking methods have remained largely as they were in the Middle Ages.'"
+    "text": "Hervé This, director of the Molecular Gastronomy team at the French National Institute for Agricultural Research, spends much of his time trying to disprove culinary old wives' tales. He is empirically testing traditional beliefs about cooking and disproving the more absurd, tackling such questions as whether it's better to add vinaigrette to potato salad while the potatoes are still hot. `The first modern chemists used kitchen equipment to do their experiments,' Herv� This explains. `Since then, chemistry has undergone massive changes - but cooking methods have remained largely as they were in the Middle Ages.'"
    },
    {
     "mark": "",
@@ -164,11 +218,11 @@
    },
    {
     "mark": "",
-    "text": "Such restaurants are part of the movement known as `molecular gastronomy', an expression coined by physicist Nicholas Kurti, working in collaboration with Herv� This. Kurti once quipped that it is a sad reflection that we know the temperature inside the stars better than the temperature inside a souffl�*. Kurti and Herv� This devised the expression `molecular gastronomy' during the 1980s to denote the science of `culinary transformations and eating phenomena' and differentiate it from food science. `Twenty years ago, the worlds of science and cooking were neatly compartmentalised,' agrees author Harold McGee, a top food science writer. `There was food science: an applied science mainly concerned with understanding the materials and process of industrial manufacturing. And there was the world of domestic and restaurant cooking, traditional crafts that had never attracted much scientific attention.' A lot has changed in the two decades since he published his influential book on the topic. In a revised edition, McGee says the book was `riding a rising wave of general interest in food, a wave that grew and grew, and knocked down the barriers between science and cooking, especially in the last decade. Science has found its way into the kitchen, and cooking into laboratories.' So what does the future hold? Rachel Edwards-Stuart is a graduate PhD student who is studying some remarkable food additives, including modified cellulose gels that solidify on heating and melt again as they are cooled. The idea is to make dishes that develop different flavours as they are eaten. Her other project is creating drinks that change flavour. `The concept came from... Roald Dahl's children's book Charlie and the Chocolate Factory, where Willy Wonka makes a bubble gum that is a whole meal in one sweet,' she says. Unfortunately, Edwards-Stuart was unable to say more, due to a confidentiality agreement with the restaurant for which she conducts her research. While Herv� This, Blumenthal and Edwards-Stuart are the pioneers, the next phase will be to bring science into kitchens at home. Already there are books that provide an insight into the wondrous chemistry that turns humble ingredients into cuisine. And as the movement grows it will not be long before we see laboratory test tubes, flasks and maybe the odd centrifuge on sale next to carving knives, rolling pins and pressure cookers."
+    "text": "Such restaurants are part of the movement known as `molecular gastronomy', an expression coined by physicist Nicholas Kurti, working in collaboration with Hervé This. Kurti once quipped that it is a sad reflection that we know the temperature inside the stars better than the temperature inside a soufflé*. Kurti and Herv� This devised the expression `molecular gastronomy' during the 1980s to denote the science of `culinary transformations and eating phenomena' and differentiate it from food science. `Twenty years ago, the worlds of science and cooking were neatly compartmentalised,' agrees author Harold McGee, a top food science writer. `There was food science: an applied science mainly concerned with understanding the materials and process of industrial manufacturing. And there was the world of domestic and restaurant cooking, traditional crafts that had never attracted much scientific attention.' A lot has changed in the two decades since he published his influential book on the topic. In a revised edition, McGee says the book was `riding a rising wave of general interest in food, a wave that grew and grew, and knocked down the barriers between science and cooking, especially in the last decade. Science has found its way into the kitchen, and cooking into laboratories.' So what does the future hold? Rachel Edwards-Stuart is a graduate PhD student who is studying some remarkable food additives, including modified cellulose gels that solidify on heating and melt again as they are cooled. The idea is to make dishes that develop different flavours as they are eaten. Her other project is creating drinks that change flavour. `The concept came from... Roald Dahl's children's book Charlie and the Chocolate Factory, where Willy Wonka makes a bubble gum that is a whole meal in one sweet,' she says. Unfortunately, Edwards-Stuart was unable to say more, due to a confidentiality agreement with the restaurant for which she conducts her research. While Herv� This, Blumenthal and Edwards-Stuart are the pioneers, the next phase will be to bring science into kitchens at home. Already there are books that provide an insight into the wondrous chemistry that turns humble ingredients into cuisine. And as the movement grows it will not be long before we see laboratory test tubes, flasks and maybe the odd centrifuge on sale next to carving knives, rolling pins and pressure cookers."
    },
    {
     "mark": "",
-    "text": "_______________________ *souffl�: a French dish made using betten eggs"
+    "text": "_______________________ *soufflé: a French dish made using betten eggs"
    }
   ]
  }

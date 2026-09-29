@@ -31,44 +31,116 @@
    "to": 35,
    "kind": "letter",
    "instruction": "Choose the correct letter, A, B, C or D.",
-   "bank": [
-    {
-     "v": "A",
-     "t": "The strength of the next earthquake along the San Andreas fault is"
-    },
-    {
-     "v": "B",
-     "t": "It is not the first time that the theory of animal prediction has been"
-    },
-    {
-     "v": "C",
-     "t": "Experts have never identified any reliable predictors for earthquakes."
-    },
-    {
-     "v": "D",
-     "t": "The Parkfield project depended on unreliable methods for earthquake"
-    }
-   ],
    "questions": [
     {
      "n": 31,
-     "text": "What is the writer's main point in paragraph 4?"
+     "text": "What is the writer's main point in paragraph 4?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The strength of the next earthquake along the San Andreas fault is unpredictable."
+      },
+      {
+       "v": "B",
+       "t": "It is not the first time that the theory of animal prediction has been investigated."
+      },
+      {
+       "v": "C",
+       "t": "Experts have never identified any reliable predictors for earthquakes."
+      },
+      {
+       "v": "D",
+       "t": "The Parkfield project depended on unreliable methods for earthquake detection."
+      }
+     ]
     },
     {
      "n": 32,
-     "text": "When Coren re-analysed his data for 27 February he found that on that day"
+     "text": "When Coren re-analysed his data for 27 February he found that on that day",
+     "options": [
+      {
+       "v": "A",
+       "t": "dogs with either poor or good hearing were equally anxious."
+      },
+      {
+       "v": "B",
+       "t": "the shape of a dog's ear seemed to correlate with its behaviour."
+      },
+      {
+       "v": "C",
+       "t": "dogs with larger heads were the most sensitive to tremors."
+      },
+      {
+       "v": "D",
+       "t": "the level of activity amongst dogs reduced as the earthquake occurred."
+      }
+     ]
     },
     {
      "n": 33,
-     "text": "Seismologist Andy Michael refers to Alfred Wegener in order to"
+     "text": "Seismologist Andy Michael refers to Alfred Wegener in order to",
+     "options": [
+      {
+       "v": "A",
+       "t": "suggest there may be an aspect of Coren's theory which is correct."
+      },
+      {
+       "v": "B",
+       "t": "dismiss the idea that dogs are capable of sensing earthquakes."
+      },
+      {
+       "v": "C",
+       "t": "demonstrate how data can be falsified by subjective researchers."
+      },
+      {
+       "v": "D",
+       "t": "criticise certain scientists for not being careful in their research."
+      }
+     ]
     },
     {
      "n": 34,
-     "text": "What is the writer doing in the penultimate paragraph?"
+     "text": "What is the writer doing in the penultimate paragraph?",
+     "options": [
+      {
+       "v": "A",
+       "t": "explaining why western researchers do not trust animal behaviour."
+      },
+      {
+       "v": "B",
+       "t": "arguing how animal prediction is superior to science-based prediction."
+      },
+      {
+       "v": "C",
+       "t": "suggesting a more reliable animal than the dog for predictive purposes."
+      },
+      {
+       "v": "D",
+       "t": "illustrating how animal behaviour is already exploited by some researchers."
+      }
+     ]
     },
     {
      "n": 35,
-     "text": "What point is the writer making by using the phrase `what have we got to lose' in the final paragraph?"
+     "text": "What point is the writer making by using the phrase `what have we got to lose' in the final paragraph?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The cost of setting up a data collection centre needs to be considered."
+      },
+      {
+       "v": "B",
+       "t": "It is worth setting up a call centre to record animal behaviour."
+      },
+      {
+       "v": "C",
+       "t": "The pros and cons of different data collection methods must be weighed up."
+      },
+      {
+       "v": "D",
+       "t": "There is a danger that existing data may be lost if not stored carefully."
+      }
+     ]
     }
    ]
   },

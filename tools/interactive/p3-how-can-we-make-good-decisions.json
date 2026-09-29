@@ -65,40 +65,94 @@
    "to": 35,
    "kind": "letter",
    "instruction": "Choose the correct letter, A, B, C or D.",
-   "bank": [
-    {
-     "v": "A",
-     "t": "the public are justified in being afraid of."
-    },
-    {
-     "v": "B",
-     "t": "happens when people take unnecessary risks."
-    },
-    {
-     "v": "C",
-     "t": "ought to be given less prominence in the media."
-    },
-    {
-     "v": "D",
-     "t": "is perceived as being more likely than it actually is."
-    }
-   ],
    "questions": [
     {
      "n": 32,
-     "text": "The writer mentions shark attacks as an example of an occurrence which"
+     "text": "The writer mentions shark attacks as an example of an occurrence which",
+     "options": [
+      {
+       "v": "A",
+       "t": "the public are justified in being afraid of."
+      },
+      {
+       "v": "B",
+       "t": "happens when people take unnecessary risks."
+      },
+      {
+       "v": "C",
+       "t": "ought to be given less prominence in the media."
+      },
+      {
+       "v": "D",
+       "t": "is perceived as being more likely than it actually is."
+      }
+     ]
     },
     {
      "n": 33,
-     "text": "What consequence of the affect heuristic does the writer mention?"
+     "text": "What consequence of the affect heuristic does the writer mention?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The fear of health risks may cause people to become unduly emotional."
+      },
+      {
+       "v": "B",
+       "t": "People may underestimate the level of risk associated with some undertakings."
+      },
+      {
+       "v": "C",
+       "t": "Members of the public may pay too much attention to statistics about possible risks."
+      },
+      {
+       "v": "D",
+       "t": "Medical professionals may downplay the risks of certain procedures when describing them to patients."
+      }
+     ]
     },
     {
      "n": 34,
-     "text": "What is suggested by the Cornell University study?"
+     "text": "What is suggested by the Cornell University study?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is important to be aware that some key facts may not be readily accessible."
+      },
+      {
+       "v": "B",
+       "t": "Lack of time can cause less experienced professionals to make poor judgments."
+      },
+      {
+       "v": "C",
+       "t": "In certain situations, it is necessary to ignore some apparently relevant facts."
+      },
+      {
+       "v": "D",
+       "t": "Experts tend to work better under pressure than when they have time to consider their decisions."
+      }
+     ]
     },
     {
      "n": 35,
-     "text": "What does the writer suggest about differences between young people and adults with regard to risk?"
+     "text": "What does the writer suggest about differences between young people and adults with regard to risk?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Young people are unable to envisage the results of risky endeavors."
+      },
+      {
+       "v": "B",
+       "t": "Adults make instinctive decisions not to take part in dangerous activities."
+      },
+      {
+       "v": "C",
+       "t": "Young people deliberately ignore warnings about potentially hazardous situations."
+      },
+      {
+       "v": "D",
+       "t": "Adults base their judgments on the real-world likelihood of negative outcomes."
+      }
+     ]
     }
    ]
   },
