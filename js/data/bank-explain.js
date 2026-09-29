@@ -30,5 +30,11 @@ export const EXPLAIN_IDS = new Set([
   "p1-how-to-find-your-way-out-of-a-food-desert",
   "p1-in-deep-water",
   "p1-investing-in-the-future",
+  "p1-katherine-mansfield",
+  "p1-learning-by-example-evidence-from-studies-of-rats-and-birds",
+  "p1-listening-to-the-ocean",
+  "p1-maori-fish-hooks",
+  "p1-museums-and-family-visitors-in-australia",
+  "p1-new-understanding-of-giraffes-in-the-wild",
   "p1-salt",
 ]);

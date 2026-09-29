@@ -1,0 +1,31 @@
+{
+ "id": "p1-katherine-mansfield",
+ "q": {
+  "1": {"ev": ["Katherine Mansfield Beauchamp Murry was born in 1888", "using the pen name of Katherine Mansfield"],
+        "why": "Câu hỏi: tên Katherine Mansfield trên sách giống hệt tên thật. Bài: tên đầy đủ là Katherine Mansfield Beauchamp Murry; 'Katherine Mansfield' chỉ là bút danh (pen name) → FALSE."},
+  "2": {"ev": ["Her first published stories appeared in the High School Reporter and the Wellington Girls' High School magazine in 1898 and 1899."],
+        "why": "Bài chỉ nói những truyện đầu tiên của bà được đăng trên High School Reporter. Không nhắc tới giải thưởng nào → NOT GIVEN."},
+  "3": {"ev": ["who were often portrayed in a sympathetic light in her later stories, such as How Pearl Button Was Kidnapped"],
+        "why": "Người Maori thường được khắc hoạ một cách thiện cảm ('in a sympathetic light' = 'in a favourable way') trong các truyện như How Pearl Button Was Kidnapped → TRUE."},
+  "4": {"ev": ["Mansfield recommenced playing the cello, an occupation that she believed, during her time at Queen's, she would take up professionally."],
+        "why": "Câu hỏi: ở Queen's College bà định trở thành nhà văn chuyên nghiệp. Bài: lúc đó bà nghĩ sẽ theo nghề chơi cello chuyên nghiệp; mãi tới khi về New Zealand năm 1906 bà mới quyết tâm làm nhà văn → FALSE."},
+  "5": {"ev": ["she was appreciated amongst fellow students at Queen's for her lively and charismatic approach to life and work"],
+        "why": "Câu hỏi: bà không được các bạn ở Queen's ưa. Bài: bà được bạn học quý mến vì lối sống sôi nổi, cuốn hút → FALSE."},
+  "6": {"ev": ["Mansfield did not actively support the suffragette movement in the UK."],
+        "why": "Ở London, bà không tích cực ủng hộ phong trào đòi quyền bầu cử cho phụ nữ — một phong trào chính trị. Điều này khớp với 'showed little interest in politics' → TRUE."},
+  "7": {"ev": ["After finishing her schooling in England, she returned to her New Zealand home in 1906"],
+        "why": "Ghi chú: mốc năm ___ — chuyển từ Anh về New Zealand. Bài: học xong ở Anh, bà về New Zealand năm 1906 → 1906."},
+  "8": {"ev": ["She had several works published in Australia in a magazine called The Native Companion, which was her first paid writing work"],
+        "why": "Ghi chú: công việc viết có trả tiền đầu tiên là trên một ấn phẩm ở ___. Bài: tạp chí The Native Companion ở Úc (Australia) → Australia."},
+  "9": {"ev": ["Mansfield rapidly grew discontented with the provincial New Zealand lifestyle, and with her family."],
+        "why": "Ghi chú: ___ của bà và lối sống New Zealand khiến bà không hài lòng. Bài: bà nhanh chóng chán lối sống tỉnh lẻ ở New Zealand và chán cả gia đình ('discontented' = 'dissatisfied') → family."},
+  "10": {"ev": ["Their attempt to set up as writers in Paris was cut short by Murry's bankruptcy"],
+         "why": "Ghi chú: ___ khiến Mansfield và Murry không ở lại Paris được. Bài: kế hoạch lập nghiệp ở Paris bị cắt ngang vì Murry phá sản (bankruptcy) → bankruptcy."},
+  "11": {"ev": ["She and Murry developed close contact with other well-known writers of the time"],
+         "why": "Ghi chú: dành thời gian với các ___ nổi tiếng. Bài: bà và Murry thân thiết với các nhà văn nổi tiếng như D. H. Lawrence, Aldous Huxley ('distinguished' ≈ 'well-known') → writers."},
+  "12": {"ev": ["It was the publication of Bliss and Other Stories in 1920 that was to solidify Mansfield's reputation as a writer."],
+         "why": "Ghi chú: ___ của bà được củng cố khi Bliss and Other Stories ra đời. Bài: tập truyện năm 1920 'solidify Mansfield's reputation' ('consolidated' = 'solidify') → reputation."},
+  "13": {"ev": ["After her death, her husband, Murry, took on the task of editing and publishing her works."],
+         "why": "Ghi chú: ___ của Mansfield xuất bản thêm tác phẩm sau khi bà mất. Bài: chồng bà là Murry đảm nhận biên tập và xuất bản → husband."}
+ }
+}

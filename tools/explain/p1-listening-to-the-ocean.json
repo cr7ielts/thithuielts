@@ -1,0 +1,31 @@
+{
+ "id": "p1-listening-to-the-ocean",
+ "q": {
+  "1": {"ev": ["The Moon has been far more accessible to study because astronomers have long been able to look at its surface"],
+        "why": "Mặt Trăng dễ nghiên cứu hơn nhiều ('far more accessible') vì từ lâu đã quan sát được bằng mắt thường và kính thiên văn, còn đại dương thì chưa có công cụ → TRUE."},
+  "2": {"ev": ["light, which can travel trillions of kilometres through the vast vacuum of space, cannot penetrate very far in seawater", "It turns out that for penetrating water the best instrument is sound."],
+        "why": "Câu hỏi: kỹ thuật nghiên cứu Mặt Trăng giống kỹ thuật nghiên cứu đại dương. Bài: Mặt Trăng được nghiên cứu bằng dụng cụ hội tụ ánh sáng, nhưng ánh sáng không xuyên sâu vào nước biển; với đại dương, công cụ tốt nhất là âm thanh → FALSE."},
+  "3": {"ev": ["Thus, the travel time of a wave of sound between two points is a sensitive indicator of the average temperature along its path."],
+        "why": "Bài giải thích cách dùng âm thanh để đo nhiệt độ đại dương, nhưng không so sánh thời gian cần thiết với các phương pháp khác → NOT GIVEN."},
+  "4": {"ev": ["acoustically measuring not only the rainfall rate but also the rainfall type, ranging from drizzle to thunderstorms"],
+        "why": "Nystuen dùng hydrophone đo được cả lượng mưa lẫn loại mưa, từ mưa phùn tới giông bão → hydrophone phân biệt được các loại mưa → TRUE."},
+  "5": {"ev": ["A number of factors influence how far sound travels under water and how long it lasts, including particles, salinity, temperature and pressure."],
+        "why": "Thông tin: ví dụ về các yếu tố ảnh hưởng tới quãng đường âm thanh đi trong nước. Đoạn C liệt kê hạt, độ mặn, nhiệt độ, áp suất → C."},
+  "6": {"ev": ["The ocean plays an enormous role in determining air temperature"],
+        "why": "Thông tin: mối liên hệ giữa nhiệt độ đại dương và khí hậu. Đoạn F: đo nhiệt độ đại dương là chìa khoá để hiểu trao đổi nhiệt giữa đại dương và khí quyển; đại dương quyết định rất lớn tới nhiệt độ không khí → F."},
+  "7": {"ev": ["Particles in seawater can reflect, scatter and absorb certain frequencies of sound, just as certain wavelengths of light may be reflected, scattered and absorbed by specific types of particles in the atmosphere."],
+        "why": "Thông tin: điểm giống nhau giữa ánh sáng và âm thanh. Đoạn C: hạt trong nước biển phản xạ, tán xạ, hấp thụ âm thanh 'just as' hạt trong khí quyển làm vậy với ánh sáng → C."},
+  "8": {"ev": ["Since 1985, Nystuen has used hydrophones to listen to rain over the ocean"],
+        "why": "Thông tin: một nghiên cứu dài hạn về các kiểu thời tiết khác nhau. Đoạn G: từ năm 1985, Nystuen dùng hydrophone nghe mưa trên đại dương, đo nhiều loại mưa từ mưa phùn tới giông → G."},
+  "9": {"ev": ["It was not until 1826 that two scientists, Colladon and Sturm, accurately measured the speed of sound in water."],
+        "why": "Ai nghiên cứu tốc độ âm thanh trong nước? Colladon và Sturm đo chính xác tốc độ âm thanh trong nước năm 1826 ('rate' = 'speed') → B. Da Vinci chỉ quan sát rằng có thể nghe tàu ở xa."},
+  "10": {"ev": ["In 1943, Maurice Ewing and J. L. Worzel conducted an experiment to test the theory that low-frequency waves, which are less vulnerable than higher frequencies to scattering and absorption, should be able to travel great distances"],
+         "why": "Ai nghiên cứu quãng đường mà một số loại sóng âm đi được trong nước? Ewing và Worzel thử nghiệm sóng tần số thấp có đi được xa không → C."},
+  "11": {"ev": ["Moreover, they can track not just one whale at a time, but many creatures simultaneously."],
+         "why": "SOSUS cho phép theo dõi nhiều con cá voi cùng lúc ('simultaneously' = 'at the same time') → A. Các ý bảo vệ, bắt chước tiếng kêu hay đổi hướng cá voi không được nhắc tới."},
+  "12": {"ev": ["researchers have detected changes in the calls of finback whales as the seasons change"],
+         "why": "Tiếng kêu của cá voi vây thay đổi theo mùa ('as the seasons change' = 'at different times of year') → B."},
+  "13": {"ev": ["by repeating measurements along the same paths over time, scientists can track changes in temperature over months or years"],
+         "why": "SOSUS cho phép đo nhiệt độ đại dương và theo dõi sự thay đổi nhiệt độ qua nhiều tháng, nhiều năm ('variations in temperature') → D."}
+ }
+}

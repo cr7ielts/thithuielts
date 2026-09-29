@@ -1,0 +1,31 @@
+{
+ "id": "p1-museums-and-family-visitors-in-australia",
+ "q": {
+  "1": {"ev": ["has a mandate to encourage children to discover and explore within a range of science issues"],
+        "why": "Bảng (Children's Gallery, Melbourne Museum): trình bày các chủ đề ___ theo cách thú vị. Bài: khuyến khích trẻ khám phá một loạt vấn đề khoa học (science issues) → science."},
+  "2": {"ev": ["an interactive space where children 'design their own future' with the help of technology"],
+        "why": "Bảng (KSpace): dùng ___ để hình dung tương lai. Bài: trẻ 'design their own future' với sự hỗ trợ của công nghệ (technology) → technology."},
+  "3": {"ev": ["also needed more sophisticated exhibits to occupy their accompanying parents"],
+        "why": "Bảng (Pirates, Maritime Museum): đối tượng là trẻ tuổi đi học và ___. Bài: triển lãm cũng cần hiện vật phức tạp hơn để thu hút cha mẹ đi cùng → parents."},
+  "4": {"ev": ["The Powerhouse Museum in Sydney, while catering to varying tastes within families"],
+        "why": "Bảng: bảo tàng có khu Zoe's House là ___ Museum. Bài: Powerhouse Museum ở Sydney có khu Zoe's House dành cho trẻ 3–5 tuổi → Powerhouse."},
+  "5": {"ev": ["caters specifically for children aged three to five years, to facilitate cooperation in children through play"],
+        "why": "Bảng (Zoe's House): dùng trò chơi để khuyến khích ___ giữa trẻ. Bài: 'to facilitate cooperation in children through play' ('encourage' ≈ 'facilitate') → cooperation."},
+  "6": {"ev": ["are most attracted to interactive displays"],
+        "why": "Ghi chú: gia đình thích hiện vật ___. Bài: họ bị thu hút nhất bởi các hiện vật tương tác ('most attracted to' = 'prefer') → interactive."},
+  "7": {"ev": ["they like to revisit favourite displays"],
+        "why": "Ghi chú: thích xem lại ___ lần thứ hai. Bài: 'revisit favourite displays' ('revisit' = 'see a second time') → favourite displays."},
+  "8": {"ev": ["using the comfortable chairs provided or having a break after a little more than an hour"],
+        "why": "Ghi chú: ngồi ghế hoặc ___. Bài: dùng ghế êm hoặc nghỉ giải lao (having a break) sau hơn một giờ → break."},
+  "9": {"ev": ["and generally stay for two hours at most"],
+        "why": "Ghi chú: ở lại tối đa ___. Bài: 'two hours at most' (at most = maximum) → two hours."},
+  "10": {"ev": ["museum expert through explaining clarifying and correcting"],
+         "why": "Người lớn trong gia đình đóng vai 'chuyên gia bảo tàng' khi giải thích, làm rõ và sửa cho trẻ ('museum specialist' = 'museum expert') → TRUE."},
+  "11": {"ev": ["dependent on both the social context of the visit and the group composition, particularly the ages of any accompanying children"],
+         "why": "Bài chỉ nói vai trò của người lớn phụ thuộc vào tuổi của trẻ đi cùng. Không so sánh việc đi với nhóm trẻ cùng tuổi thì vui hơn hay không → NOT GIVEN."},
+  "12": {"ev": ["are generally considered good value for money"],
+         "why": "Câu hỏi: phụ huynh cho rằng đi bảo tàng quá tốn kém. Bài: bảo tàng thường được coi là đáng đồng tiền (good value for money) → FALSE."},
+  "13": {"ev": ["Parents value museum visits because they provide children with opportunities to learn in different ways through bringing concepts to life and enhancing school learning experiences."],
+         "why": "Bài nói bảo tàng giúp bổ trợ việc học ở trường, nhưng không nói trẻ muốn đi bảo tàng sau khi học một chủ đề ở trường → NOT GIVEN."}
+ }
+}

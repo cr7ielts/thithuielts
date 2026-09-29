@@ -1,0 +1,31 @@
+{
+ "id": "p1-new-understanding-of-giraffes-in-the-wild",
+ "q": {
+  "1": {"ev": ["All that is changing fast, as a growing number of researchers seek to understand the biology and complex behavior of this graceful giant in its native habitat."],
+        "why": "Trước đây hầu như không ai nghiên cứu hươu cao cổ ngoài tự nhiên, nhưng giờ ngày càng nhiều nhà nghiên cứu tìm hiểu chúng trong môi trường sống tự nhiên ('native habitat' = 'natural environment') → TRUE."},
+  "2": {"ev": ["Despite being a favorite in zoos, until recently almost nobody studied giraffes in the wild."],
+        "why": "Bài chỉ nói hươu cao cổ được yêu thích ở sở thú. Không có ý kiến nào của Strauss về việc nuôi chúng trong sở thú → NOT GIVEN."},
+  "3": {"ev": ["in the past 15 years, the population has fallen some 40 percent"],
+        "why": "Câu hỏi: số hươu cao cổ ở châu Phi gần như tăng gấp đôi. Bài: trong 15 năm qua, số lượng giảm khoảng 40% → FALSE."},
+  "4": {"ev": ["Female giraffes can live 20 years or more"],
+        "why": "Bài chỉ nói hươu cái có thể sống từ 20 năm trở lên, không nói tuổi thọ của hươu đực để so sánh → NOT GIVEN."},
+  "5": {"ev": ["though mothers will fight valiantly to keep their young alive -- kicking forward and backward"],
+        "why": "Hươu mẹ chiến đấu dũng cảm để bảo vệ con bằng cách đá ra trước và ra sau — tức là dùng chân → TRUE."},
+  "6": {"ev": ["But should a dominant older bull come into view, the younger males instantly try to make themselves look small and innocent."],
+        "why": "Câu hỏi: hươu đực trẻ ngẩng cổ cao hơn khi có con đực mạnh hơn. Bài: khi con đực lớn tuổi, thống trị xuất hiện, hươu trẻ lập tức cố tỏ ra nhỏ bé, vô hại. Ngẩng cao cổ chỉ xảy ra khi chúng ở riêng → FALSE."},
+  "7": {"ev": ["Clashes have been witnessed between adults when each bull repeatedly 'necks' the other"],
+        "why": "Người ta đã chứng kiến các cuộc đụng độ giữa hươu đực trưởng thành, dùng cổ quật đầu vào đối thủ ('clashes have been witnessed' = 'observed fighting') → TRUE."},
+  "8": {"ev": ["The coat has dark patches separated by light hair, which serves as camouflage, allowing them to blend in with the light and shade patterns of the acacia trees"],
+        "why": "Bảng (Da/lông): tạo ___ khi đứng gần cây. Bài: bộ lông đốm giúp nguỵ trang (camouflage), hoà vào bóng sáng tối của cây keo → camouflage."},
+  "9": {"ev": ["almost as humans would grab with their hands"],
+        "why": "Bảng (Miệng): có thể dùng như ___ để lấy lá. Bài: môi và lưỡi nắm cành và tuốt lá gần giống như con người dùng tay (hands) → hands."},
+  "10": {"ev": ["as giraffe mothers would have a difficult time giving birth to young with longer necks"],
+         "why": "Bảng (Cổ): độ dài phát triển trong thời thơ ấu để việc ___ dễ hơn cho hươu mẹ. Bài: hươu mẹ sẽ khó sinh (giving birth) nếu con có cổ dài hơn → birth."},
+  "11": {"ev": ["The outside of a giraffe's veins are extremely thick, to prevent blood leaking into surrounding tissue."],
+         "why": "Bảng (Tim mạch): ___ cực chắc giữ máu không tràn ra mô khác. Bài: thành ngoài tĩnh mạch (veins) rất dày để máu không rò ra mô xung quanh → veins."},
+  "12": {"ev": ["Researchers were also surprised to find that a giraffe does not have an unusually large heart."],
+         "why": "Bảng: ___ có kích thước bình thường. Bài: hươu cao cổ không có trái tim lớn bất thường — chỉ bằng 0,5% khối lượng cơ thể, như ở chuột → Heart."},
+  "13": {"ev": ["This is because signals from the nerves travel at about the same speed in giraffes as in rats or other mammals. Given the greater distance they have to travel in the giraffe to reach the brain"],
+         "why": "Bảng (Dây thần kinh): phản ứng chậm hơn vì ___ phải đi xa hơn tới não. Bài: tín hiệu thần kinh (signals) đi với tốc độ như ở chuột, nhưng quãng đường tới não của hươu dài hơn → signals."}
+ }
+}
