@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-power-of-smell",
+ "q": {
+  "14": {"ev": ["`We are also exceptionally gifted at telling smells apart, even in the case of two molecules whose only difference is that their structures are mirror images of one another."],
+         "why": "Thông tin: con người phân biệt được hai chất cực kỳ giống nhau. Đoạn D: ta phân biệt được hai phân tử chỉ khác nhau ở chỗ là ảnh gương của nhau → D."},
+  "15": {"ev": ["he suggested that mammals can be classed into two broad groups: macrosmatic mammals"],
+         "why": "Thông tin: phân loại các loài theo độ nhạy khứu giác. Đoạn B: Broca chia động vật có vú thành nhóm khứu giác nhạy (macrosmatic) và kém nhạy (microsmatic) → B."},
+  "16": {"ev": ["when men were subjected to a novel smell - either good or bad - during a task used to test decision-making skills, they performed significantly worse than normal"],
+         "why": "Thông tin: mùi làm giảm khả năng ra quyết định. Đoạn F: khi ngửi mùi lạ, đàn ông làm bài kiểm tra ra quyết định kém hơn hẳn → F."},
+  "17": {"ev": ["One study, for example, found that we can detect certain chemicals diluted in water to less than one part per billion."],
+         "why": "Thông tin: nghiên cứu chứng minh con người cảm nhận được lượng chất cực nhỏ. Đoạn C: ngửi được hoá chất pha loãng dưới một phần tỷ — vài giọt trong bể bơi Olympic → C."},
+  "18": {"ev": ["Noses have certainly never been at the forefront of sensory research, and were pushed aside until recently in favour of the seemingly more vital senses of vision and hearing."],
+         "why": "Thông tin: nghiên cứu về khứu giác bị xem nhẹ. Đoạn A: mũi chưa bao giờ được ưu tiên, bị gạt sang một bên để dành cho thị giác, thính giác → A."},
+  "19": {"ev": ["The power of smell will be no news to estate agents, who often advocate the smell of baking bread or brewing coffee to promote the sale of a house."],
+         "why": "Thông tin: dùng mùi để khuyến khích người ta mua thứ gì đó. Đoạn E: môi giới nhà đất dùng mùi bánh mì nướng, cà phê để bán nhà → E."},
+  "20": {"ev": ["Rob Holland, of the University of Utrecht in the Netherlands, found that the hint of aroma wafting out of a hidden bucket of citrus-scented cleaner was enough to persuade students in a hostel to clean up after themselves"],
+         "why": "Một mùi nhẹ có thể thúc đẩy người ta làm việc nhà: Holland thấy mùi chất tẩy rửa hương cam quýt khiến sinh viên tự dọn dẹp → E."},
+  "21": {"ev": ["Charles Greer at Yale University in the United States has shown that the human nose and brain are unusually well connected, with each group of receptors linking to many more neural regions than is the case in other animals"],
+         "why": "Con người có khả năng xử lý mùi tốt hơn loài khác: Greer chỉ ra mũi và não người kết nối đặc biệt tốt, mỗi nhóm thụ thể nối với nhiều vùng não hơn ở động vật khác → C."},
+  "22": {"ev": ["The researchers conclude the scent stimulated brain areas connected with emotion, making their decisions emotional rather than rational."],
+         "why": "Mùi gắn với cảm xúc hơn là phần logic của não: Overman và cộng sự kết luận mùi kích thích vùng não cảm xúc, khiến quyết định cảm tính thay vì lý trí → F."},
+  "23": {"ev": ["we, along with other primates and the marine mammals, are microsmatic - we have small olfactory organs that we only rely on to a small extent"],
+         "why": "Con người không cần khả năng ngửi tinh vi: Broca xếp người vào nhóm microsmatic — cơ quan khứu giác nhỏ, ít phụ thuộc vào nó → B."},
+  "24": {"ev": ["there are certain brain areas dedicated to both emotion and olfaction, such as the amygdala"],
+         "why": "Câu: ___ là phần não xử lý cả cảm xúc và mùi. Bài: hạch hạnh nhân (amygdala) → amygdala."},
+  "25": {"ev": ["the link between a memory and a smell is stronger if the smell is unpleasant rather than pleasant"],
+         "why": "Câu: mùi ___ tạo liên kết đặc biệt mạnh với ký ức. Bài: mùi khó chịu (unpleasant) tạo liên kết mạnh hơn mùi dễ chịu → unpleasant."},
+  "26": {"ev": ["this explains why smells often transport us back to our childhood"],
+         "why": "Câu: trong các giác quan, khứu giác có khả năng gợi ký ức về ___. Bài: mùi thường đưa ta trở về tuổi thơ (childhood) → childhood."}
+ }
+}

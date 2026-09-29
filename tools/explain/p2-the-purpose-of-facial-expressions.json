@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-purpose-of-facial-expressions",
+ "q": {
+  "14": {"ev": ["Others, including Ekman, argue that the face can display information about emotions, but they admit that it is not reliable one hundred percent of the time."],
+         "why": "Thông tin: thừa nhận nét mặt không phải lúc nào cũng phản ánh đúng cảm xúc. Đoạn E: Ekman thừa nhận khuôn mặt không đáng tin 100%; Camras nói có lúc có cảm xúc mà không có biểu cảm → E."},
+  "15": {"ev": ["So a smile may prompt people to approach, a scowl may warn them to stay away, and a look of sadness may elicit words of sympathy and reassurance."],
+         "why": "Thông tin: ví dụ nét mặt một người ảnh hưởng hành động của người khác. Đoạn B: nụ cười khiến người ta lại gần, cau mày khiến họ tránh xa → B."},
+  "16": {"ev": ["At times, though, it may be uncomfortable or inconvenient for us to let others know our emotions."],
+         "why": "Thông tin: lý do che giấu cảm xúc. Đoạn F: đôi khi để người khác biết cảm xúc của mình là khó chịu hoặc bất tiện; luật lệ văn hoá cũng ngăn biểu lộ → F."},
+  "17": {"ev": ["His studies find that expressions occur most often during pivotal points, the turning points in social interactions - during greetings, social crises, or times of appeasement"],
+         "why": "Thông tin: những lúc nét mặt được dùng đặc biệt nhiều. Đoạn C: khi chào hỏi, khủng hoảng xã hội, lúc làm lành → C."},
+  "18": {"ev": ["creating specific facial expressions and other physiological changes, such as increased or decreased heart rate or heightened blood pressure"],
+         "why": "Thông tin: ví dụ thay đổi bên trong cơ thể khi có cảm xúc. Đoạn A: nhịp tim tăng giảm, huyết áp tăng → A."},
+  "19": {"ev": ["to make it the center of study of the human being experiencing an emotion is like saying the only thing you need to study in a car is the transmission"],
+         "why": "Chỉ tập trung vào khuôn mặt khi nghiên cứu cảm xúc giống như chỉ nghiên cứu hộp số của một chiếc xe: Campos → E."},
+  "20": {"ev": ["Expressions evolved to set off certain behaviors in other people, says Fridlund."],
+         "why": "Nét mặt tiến hoá để khuyến khích người khác phản ứng theo cách nhất định: Fridlund → B."},
+  "21": {"ev": ["The area of dispute between Fridlund and Ekman draws attention away from their major areas of agreement, says Joseph Campos"],
+         "why": "Các nhà nghiên cứu bất đồng ở vài điểm nhưng có chung ý tưởng quan trọng: Campos nói tranh cãi giữa Fridlund và Ekman che mất những điểm họ đồng thuận → E."},
+  "22": {"ev": ["She believes there are many situations where emotion is experienced, yet no basic facial expression is displayed. And there are times when a facial expression appears with no corresponding emotion."],
+         "why": "Cảm xúc và biểu cảm có thể tồn tại độc lập: Camras nói có lúc có cảm xúc mà không có biểu cảm, và ngược lại → D."},
+  "23": {"ev": ["says there is very little evidence supporting such a connection"],
+         "why": "Không thể chứng minh có mối liên hệ giữa nét mặt và cảm xúc thật: Russell nói có rất ít bằng chứng ủng hộ mối liên hệ này → C."},
+  "24": {"ev": ["So a smile may prompt people to approach"],
+         "why": "Câu: theo Fridlund, ___ trên khuôn mặt có thể là lời mời lại gần. Bài: nụ cười (smile) khiến người khác tiến lại gần → smile."},
+  "25": {"ev": ["Even when people are alone they are holding a dialog with another person internally"],
+         "why": "Câu: khi ở một mình ta vẫn biểu cảm vì đang có một ___ với ai đó trong đầu. Bài: đang đối thoại (dialog) nội tâm với người khác → dialog."},
+  "26": {"ev": ["Thus Fridlund thinks of facial expressions as tools for influencing social interactions"],
+         "why": "Câu: Fridlund coi nét mặt là ___ có thể ảnh hưởng tới quan hệ với người khác. Bài: công cụ (tools) để tác động tới tương tác xã hội → tools."}
+ }
+}

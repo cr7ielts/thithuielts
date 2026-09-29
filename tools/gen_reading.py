@@ -31,6 +31,7 @@ FIXES = {
     # key.docx lặp đáp án chọn 3 chữ (C,E,F) sang câu 8-10; đáp án đúng lấy từ bài đọc
     'p1-building-a-castle': ({}, {8: 'masons', 9: 'holes', 10: 'metal wedges / wedges'}),
     'p2-the-origin-and-development-of-applause': ({}, {23: 'silence', 24: 'opera'}),  # key ghi chữ cái cho câu điền từ
+    'p2-the-problem-of-graffiti': ({}, {21: 'D,E', 22: 'D,E', 23: 'social history', 24: 'tag'}),  # key lệch dòng từ câu 21
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
 
