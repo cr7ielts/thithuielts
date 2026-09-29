@@ -187,4 +187,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-flower-power",
   "p3-game-theory",
   "p3-grimms-fairy-tales",
+  "p3-how-can-we-make-good-decisions",
+  "p3-how-did-music-begin",
+  "p3-images-and-places",
 ]);
