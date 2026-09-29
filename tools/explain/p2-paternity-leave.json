@@ -1,0 +1,31 @@
+{
+ "id": "p2-paternity-leave",
+ "q": {
+  "14": {"ev": ["The City Dads Group was founded when Matt Schneider and Lance Somerfeld became fathers", "which has spread to 17 cities in the USA, helping fathers who want to get involved from day one"],
+         "why": "Section A: ví dụ nhóm City Dads ở New York — minh hoạ xu hướng các ông bố muốn tham gia chăm con từ đầu ở Mỹ → ii (An illustration of a trend in one country)."},
+  "15": {"ev": ["But how many countries meet the ILO's guidelines on paternity leave? None, because no such guidelines exist."],
+         "why": "Section B: nghỉ thai sản cho mẹ được hỗ trợ rộng rãi, còn nghỉ cho bố hầu như không có hướng dẫn, ít nước áp dụng → vi (The contrast in attitudes towards leave for mothers and fathers)."},
+  "16": {"ev": ["But much of the demand for a shift in approaches to childcare has come from women, who have started to conclude that they are victims as well as beneficiaries of generous maternity-leave policies."],
+         "why": "Section C: đòi hỏi thay đổi lại đến từ chính phụ nữ — những người hưởng lợi từ chính sách nghỉ thai sản → nguồn áp lực bất ngờ → iv (Pressure for change from an unlikely source)."},
+  "17": {"ev": ["But it turns out that long maternity breaks have unintended consequences."],
+         "why": "Section D: nghỉ thai sản dài có hệ quả ngoài ý muốn — giảm thu nhập, khó thăng tiến → viii (The implications of maternity leave)."},
+  "18": {"ev": ["The problem is that dads tend not to take up the offer."],
+         "why": "Section E: chính phủ gộp chế độ nghỉ cho cả bố và mẹ, nhưng rất ít ông bố sử dụng vì lý do tài chính và văn hoá → iii (An explanation for the limited success of government initiatives)."},
+  "19": {"ev": ["To overcome these obstacles, some countries are giving fathers a firm nudge."],
+         "why": "Section F: các biện pháp như bắt buộc nghỉ (Chile, Ý, Bồ Đào Nha), thưởng cho gia đình chia sẻ (Thuỵ Điển, Đức), hạn ngạch (Ba Lan) → vii (A range of measures to encourage more equal responsibility)."},
+  "20": {"ev": ["Time away from the labour market reduces women's earning power, as their skills degrade and they miss chances to gain experience"],
+         "why": "Đáp án C và D (không theo thứ tự). C — phụ nữ có thể bị trả lương thấp hơn: rời thị trường lao động làm giảm khả năng kiếm tiền của họ."},
+  "21": {"ev": ["Moving into senior management becomes particularly hard"],
+         "why": "Đáp án C và D. D — cơ hội thăng tiến bị ảnh hưởng: rất khó lên vị trí quản lý cấp cao. Bẫy: B sai vì chính sách làm bán thời gian lại kéo phụ nữ quay lại làm việc."},
+  "22": {"ev": ["The main reason for low take-up by fathers is financial"],
+         "why": "Tóm tắt: ít ông bố dùng chế độ nghỉ, chủ yếu vì lý do ___. Bài: lý do chính là tài chính (financial) — lương mẹ thường thấp hơn → financial."},
+  "23": {"ev": ["But pressures related to culture also weigh heavily."],
+         "why": "Tóm tắt: các vấn đề liên quan tới ___, gồm quan niệm truyền thống về vai trò nam nữ, cũng có ảnh hưởng. Bài: áp lực văn hoá (culture) → culture."},
+  "24": {"ev": ["In a few, including Chile, Italy and Portugal, paternity leave is compulsory."],
+         "why": "Tóm tắt: một số nước như Chile đã khiến việc nghỉ của bố trở thành ___. Bài: nghỉ chăm con của bố là bắt buộc (compulsory) → compulsory."},
+  "25": {"ev": ["Poland has switched to gender-specific quotas, replacing the previous system of shared leave"],
+         "why": "Tóm tắt: ở Ba Lan, bố và mẹ mỗi người có ___ nghỉ riêng. Bài: hạn ngạch (quotas) theo giới → quotas."},
+  "26": {"ev": ["And shared involvement by parents stands to improve women's careers, children's development and perhaps even dads' life satisfaction."],
+         "why": "Tóm tắt: chia sẻ việc chăm con có thể hỗ trợ ___ của trẻ. Bài: cải thiện sự phát triển (development) của trẻ → development."}
+ }
+}
