@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-history-of-the-celtic-language",
+ "q": {
+  "14": {"ev": ["Specialists have long debated which country was the homeland of the Indo-Europeans"],
+         "why": "Thông tin: bất đồng về nơi xuất phát của một nhóm ngôn ngữ. Đoạn E: giới chuyên môn tranh luận quê hương của người Ấn – Âu là đâu → E."},
+  "15": {"ev": ["One was an imposing statue of Mars, the Roman god of war."],
+         "why": "Thông tin: nhắc tới một nhân vật thần thoại. Đoạn A: bức tượng thần Mars, thần chiến tranh La Mã → A."},
+  "16": {"ev": ["She had less confidence in the dating method, she said, because language changes in an irregular way"],
+         "why": "Thông tin: một người bày tỏ nghi ngờ về một phương pháp phân tích. Đoạn G: McMahon ít tin vào phương pháp xác định niên đại → G."},
+  "17": {"ev": ["and Breton, a Celtic tongue carried to Brittany in France by emigrants from Cornwall"],
+         "why": "Thông tin: một ngôn ngữ Celtic lan rộng nhờ con người di chuyển. Đoạn B: tiếng Breton được người di cư từ Cornwall mang tới Brittany ở Pháp → B."},
+  "18": {"ev": ["Because languages change so fast, historical linguists have little faith in language trees that go back more than a few thousand years."],
+         "why": "Thông tin: lý do một số chuyên gia không tin cây ngôn ngữ. Đoạn C: ngôn ngữ thay đổi quá nhanh nên cây ngôn ngữ quá vài nghìn năm khó tin → C."},
+  "19": {"ev": ["many of whom restrict their research to how words in only one single language have changed over time"],
+         "why": "Một cách tiếp cận phổ biến trong nghiên cứu ngôn ngữ quá hẹp: Forster và Toth nói nhiều nhà ngôn ngữ học chỉ giới hạn nghiên cứu trong một ngôn ngữ → A."},
+  "20": {"ev": ["because language changes in an irregular way based on social factors like the size of the speaker's group"],
+         "why": "Số người nói ảnh hưởng tới sự biến đổi của ngôn ngữ: McMahon nói ngôn ngữ thay đổi theo yếu tố xã hội như quy mô nhóm người nói → D."},
+  "21": {"ev": ["They say that Celtic became a language in its own right and entered the British Isles much earlier than supposed."],
+         "why": "Tiếng Celtic là một ngôn ngữ riêng biệt từ lâu hơn giới chuyên gia từng nghĩ: Forster và Toth nói Celtic thành ngôn ngữ độc lập sớm hơn nhiều so với giả định → A."},
+  "22": {"ev": ["The second theory, that it was spread by agriculture, has been advocated by archaeologist Dr Colin Renfrew."],
+         "why": "Một họ ngôn ngữ có thể lan rộng nhờ nông nghiệp: Renfrew ủng hộ thuyết ngôn ngữ Ấn – Âu lan truyền qua người làm nông → C."},
+  "23": {"ev": ["It bore numerals in Roman but the words were in Gaulish, a version of the Celtic language"],
+         "why": "Câu: chữ trên tấm đồng ở Coligny viết bằng một dạng Celtic gọi là ___. Bài: tiếng Gaulish → Gaulish."},
+  "24": {"ev": ["so decisively that their language, Latin, and its successor languages displaced Celtic over much of its former territory"],
+         "why": "Câu: sau khi La Mã chinh phục nhiều vùng châu Âu, ___ trở thành một trong những ngôn ngữ chủ đạo. Bài: tiếng Latin và các ngôn ngữ kế thừa thay thế Celtic → Latin."},
+  "25": {"ev": ["the divergence between the mainland European and British versions of Gaelic took place in 3200 BC"],
+         "why": "Câu: ___ giữa các phiên bản tiếng Gaelic xảy ra khoảng 3200 TCN. Bài: sự phân tách (divergence) giữa bản lục địa và bản Anh → Divergence."},
+  "26": {"ev": ["because language changes in an irregular way based on social factors"],
+         "why": "Câu: vì lý do xã hội, sự phát triển của ngôn ngữ là ___. Bài: ngôn ngữ thay đổi một cách không đều (irregular) → Irregular."}
+ }
+}
