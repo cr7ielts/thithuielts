@@ -205,4 +205,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-managing-the-language-barriers-in-international-business",
   "p3-marketing-and-the-information-age",
   "p3-mercator-the-map-maker",
+  "p3-motivating-employees",
+  "p3-music-soothes-and-awes-and-may-help-us-heal",
+  "p3-new-zealand-short-stories",
 ]);
