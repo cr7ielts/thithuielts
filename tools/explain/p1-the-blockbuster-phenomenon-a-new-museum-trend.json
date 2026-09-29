@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-blockbuster-phenomenon-a-new-museum-trend",
+ "q": {
+  "1": {"ev": ["Maintaining and increasing visitor levels is thus paramount and involves not only creating or hiring blockbuster exhibitions, but providing regular exhibition changes and innovations."],
+        "why": "Thông tin: lý do giám đốc bảo tàng phải liên tục thay đổi, cập nhật trưng bày. Đoạn C: vì bảo tàng sống nhờ một phần tiền vé, việc giữ và tăng lượng khách là tối quan trọng, nên phải thường xuyên đổi mới triển lãm → C."},
+  "2": {"ev": ["people who normally don't go to museums will stand in line for hours to see"],
+        "why": "Thông tin: nhắc tới thời gian người ta xếp hàng để xem một triển lãm bom tấn. Đoạn A: những người vốn không hay đi bảo tàng sẽ xếp hàng hàng giờ ('queue' = 'stand in line') → A."},
+  "3": {"ev": ["the words that are starting to appear in some descriptions of blockbusters are `less scholarly', `non-elitist' and `popularist'"],
+        "why": "Thông tin: những từ người ta dùng để nói về triển lãm bom tấn. Đoạn D liệt kê các từ 'less scholarly', 'non-elitist', 'popularist' → D."},
+  "4": {"ev": ["revenue raised through contributions by federal, state and/or local governments, combined with revenue raised through admission charges and other activities"],
+        "why": "Thông tin: các cách bảo tàng nhận hỗ trợ tài chính. Đoạn C mô tả hệ thống tài trợ đa nguồn: chính phủ liên bang, bang, địa phương, tiền vé và các hoạt động khác → C (được dùng lần hai)."},
+  "5": {"ev": ["the visiting public have become known as customers rather than visitors"],
+        "why": "Ngày nay khách tham quan được gọi là ___. Bài: công chúng được gọi là 'customers' (khách hàng) thay vì 'visitors' → customers."},
+  "6": {"ev": ["being a museum director no longer requires an Arts degree--but public relations skills are essential"],
+        "why": "Người quản lý bảo tàng giờ cần ___ hơn là bằng cấp học thuật. Bài: không cần bằng nghệ thuật, nhưng kỹ năng quan hệ công chúng (public relations skills) là thiết yếu → public relations skills."},
+  "7": {"ev": ["The convergence of museums, the heritage industry, tourism, profit-making and pleasure- giving has resulted in the new `museology'."],
+        "why": "Sự kết nối các thiết chế công giải trí cho công chúng được gọi là ___. Bài: sự hội tụ của bảo tàng, ngành di sản, du lịch, lợi nhuận và giải trí tạo ra 'the new museology' ('linking' ≈ 'convergence') → new museology."},
+  "8": {"ev": ["This has given rise to much debate about whether it is appropriate to see museums primarily as tourist attractions."],
+        "why": "Có tranh luận về việc có nên coi bảo tàng như các ___ khác. Bài: tranh luận xem có nên coi bảo tàng chủ yếu là điểm du lịch (tourist attractions) → tourist attractions."},
+  "9": {"ev": ["it may be the money that they require to replace parts of their collections or to fix buildings that are in need of attention"],
+        "why": "Đáp án A và C (không theo thứ tự). A — tiền thu được có thể dùng để sửa chữa công trình: đoạn E nói tiền từ triển lãm bom tấn có thể dùng để sửa các toà nhà cần tu bổ ('structural repairs' = 'fix buildings')."},
+  "10": {"ev": ["crowds are good for the local economy, providing increased trade for shops, hotels, restaurants, the transport industry and retailers"],
+         "why": "Đáp án A và C. C — dịch vụ địa phương hưởng lợi từ lượng khách tăng: đoạn E nói đám đông giúp kinh tế địa phương, tăng doanh thu cho cửa hàng, khách sạn, nhà hàng, vận tải. Các ý B, D, E không được nhắc tới."},
+  "11": {"ev": ["Everyone--from general labourers to building services, front-of-house, technical, promotional, educational and administrative staff--is required to perform additional tasks."],
+         "why": "Đáp án C, E, G (không theo thứ tự). C — tăng khối lượng công việc cho nhân sự: đoạn F nói mọi nhân viên, từ lao động phổ thông tới hành chính, đều phải làm thêm việc."},
+  "12": {"ev": ["Creating, mounting or hiring blockbusters is exhausting"],
+         "why": "Đáp án C, E, G. E — tổ chức triển lãm bom tấn rất mệt mỏi: đoạn G nói việc tạo, dựng hay thuê triển lãm bom tấn 'is exhausting' (= very tiring)."},
+  "13": {"ev": ["a pure concentration on the bottom line, can squeeze substance out of an exhibition"],
+         "why": "Đáp án C, E, G. G — áp lực tài chính có thể làm nội dung yếu đi: đoạn G nói chỉ chăm chăm vào lợi nhuận có thể 'vắt kiệt' nội dung của triển lãm ('squeeze substance out' = content weakened)."}
+ }
+}

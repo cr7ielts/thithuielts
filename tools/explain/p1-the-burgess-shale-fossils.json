@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-burgess-shale-fossils",
+ "q": {
+  "1": {"ev": ["was popularized in 1989 in a book, Wonderful Life, by Stephen Jay Gould"],
+        "why": "Burgess Shale được phổ biến rộng rãi năm 1989 nhờ cuốn sách Wonderful Life của Gould ('popularized' = 'became widely known to the public') → TRUE."},
+  "2": {"ev": ["is said to have tripped over a block of shale in 1909 that revealed the area's remarkable supply of specimens"],
+        "why": "Bài chỉ nói Walcott vấp phải một khối đá phiến năm 1909. Không nhắc gì tới việc xin phép chính quyền Canada → NOT GIVEN."},
+  "3": {"ev": ["it is one of the earliest fossil beds to contain impressions of soft body parts alongside the remains of bones and shells"],
+        "why": "Burgess Shale có dấu vết phần cơ thể mềm bên cạnh xương và vỏ (phần cứng) → có cả phần mềm lẫn phần cứng → TRUE."},
+  "4": {"ev": ["these animals originally existed below an ocean, the bed of which was later pushed up to create the Rockies"],
+        "why": "Câu hỏi: sinh vật Burgess Shale là động vật trên cạn. Bài: dù hoá thạch nằm trên núi, những con vật này vốn sống dưới đáy đại dương → FALSE."},
+  "5": {"ev": ["It is now thought to be an ancestor of the modern group of arthropods"],
+        "why": "Câu hỏi: nay các nhà nghiên cứu tin Hallucigenia không liên quan tới sinh vật hiện đại nào. Bài: Hallucigenia được cho là tổ tiên của nhóm chân khớp hiện đại (ruồi, bướm, rết, cua) → FALSE."},
+  "6": {"ev": ["The Burgess Shale began to form soon after a period known as the Cambrian explosion"],
+        "why": "Ghi chú: Burgess Shale hình thành sau thời kỳ gọi là ___. Bài: 'soon after a period known as the Cambrian explosion' → Cambrian explosion."},
+  "7": {"ev": ["following reports of fabulous fossil finds by construction workers on a Canadian railway"],
+        "why": "Ghi chú: Walcott biết tới các hoá thạch từ những người xây ___. Bài: công nhân xây đường sắt (railway) ở Canada báo tin tìm được hoá thạch → railway."},
+  "8": {"ev": ["described by paleontologist Simon Conway Morris, when he re-examined Walcott's specimens in 1979"],
+        "why": "Ghi chú: một nhà nghiên cứu xem lại phát hiện ở Burgess Shale vào năm ___. Bài: Simon Conway Morris xem xét lại mẫu vật của Walcott năm 1979 ('looked at again' = 're-examined') → 1979."},
+  "9": {"ev": ["This suggests that the evolution of such complex life went on uninterrupted."],
+        "why": "Ghi chú: Van Roy tin phát hiện ở Morocco cho thấy ___ của sự sống phức tạp vẫn tiếp diễn. Bài: sự tiến hoá (evolution) của sự sống phức tạp 'went on uninterrupted' → evolution."},
+  "10": {"ev": ["a tail in the shape of a fan"],
+         "why": "Bảng (Opabinia): đuôi giống một ___. Bài: đuôi có hình cái quạt ('in the shape of a fan' = 'resembling a fan') → fan."},
+  "11": {"ev": ["The proboscis had a set of grasping claws on the end, with which it grabbed food and stuffed it into its mouth."],
+         "why": "Bảng (Opabinia): móng vuốt dùng để giữ ___. Bài: vòi có móng vuốt ở đầu để tóm lấy thức ăn (food) rồi nhét vào miệng → food."},
+  "12": {"ev": ["Nectocaris, meanwhile, could be mistaken for a leech, but with fins and tentacles."],
+         "why": "Bảng (Nectocaris): trông giống một con ___. Bài: có thể bị nhầm là con đỉa (leech), nhưng có vây và xúc tu → leech."},
+  "13": {"ev": ["scientists hypothesized that the spines were legs that helped it move"],
+         "why": "Bảng (Hallucigenia): gai dùng để ___. Bài: các nhà khoa học cho rằng gai là chân giúp nó di chuyển (move) → move."}
+ }
+}

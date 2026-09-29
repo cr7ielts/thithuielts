@@ -1,0 +1,31 @@
+{
+ "id": "p1-sydney-opera-house",
+ "q": {
+  "1": {"ev": ["a relatively little-known architect from Denmark"],
+        "why": "Câu hỏi: Utzon đã nổi tiếng trước khi thiết kế Nhà hát. Bài: ông là một kiến trúc sư Đan Mạch 'relatively little-known' (khá ít tiếng tăm) → FALSE."},
+  "2": {"ev": ["He looked through their rejected entries and stopped at the Utzon design, declaring it to be outstanding."],
+        "why": "Câu hỏi: bốn giám khảo ưng thiết kế của Utzon ngay từ đầu. Bài: ba giám khảo chấm trước đã loại bản của Utzon; giám khảo Saarinen đến sau mới xem lại và khen xuất sắc → FALSE."},
+  "3": {"ev": ["His early exposure to shipbuilding provided the inspiration for the design of the roof"],
+        "why": "Kinh nghiệm đóng tàu từ sớm (và nền tảng hàng hải) đã gợi cảm hứng cho thiết kế mái hình cánh buồm → hiểu biết về thuyền giúp ông có ý tưởng cho một phần của Nhà hát → TRUE."},
+  "4": {"ev": ["From his travels to Mexico, he had the idea of placing his building on a wide horizontal platform."],
+        "why": "Bài chỉ nói chuyến đi Mexico cho ông ý tưởng đặt công trình trên một nền ngang rộng. Không nhắc tới nhà hát opera nào ở Mexico → NOT GIVEN."},
+  "5": {"ev": ["Construction of the platform began in 1959, and throughout the early 1960s Utzon amended his original designs"],
+        "why": "Công trình bắt đầu xây năm 1959, và suốt đầu thập niên 1960 Utzon điều chỉnh thiết kế gốc ('amended' = 'changed') → TRUE."},
+  "6": {"ev": ["there were protests through the streets led by prominent architect Harry Seidler and others, demanding that Utzon be reinstated as architect"],
+        "why": "Harry Seidler dẫn đầu biểu tình đòi phục chức kiến trúc sư trưởng cho Utzon → ông bênh vực vai trò của Utzon → TRUE."},
+  "7": {"ev": ["However, Utzon was not reinstated and left Australia in 1966. He never returned"],
+        "why": "Câu hỏi: Utzon quay lại Úc năm 1973 dự lễ khai trương. Bài: ông rời Úc năm 1966 và không bao giờ quay lại → FALSE."},
+  "8": {"ev": ["having cost $102 million"],
+        "why": "Ghi chú: chi phí cuối cùng là ___. Bài: Nhà hát hoàn thành năm 1973 với chi phí 102 triệu đô (dự toán ban đầu chỉ 7 triệu) → 102 million."},
+  "9": {"ev": ["The `shells' are covered with 1,056,006 white and cream-coloured tiles manufactured in a factory in Sweden"],
+        "why": "Ghi chú: hơn một triệu viên gạch từ ___. Bài: 1.056.006 viên gạch được sản xuất tại một nhà máy ở Thuỵ Điển (Sweden) → Sweden."},
+  "10": {"ev": ["the building's exterior is mostly clad with granite quarried in Australia"],
+         "why": "Ghi chú: ___ từ Úc phủ tường bên ngoài. Bài: mặt ngoài chủ yếu ốp đá granite khai thác ở Úc → granite."},
+  "11": {"ev": ["including the four resident companies"],
+         "why": "Ghi chú: ___ đoàn nghệ thuật đặt trụ sở tại Nhà hát. Bài: bốn đoàn thường trú (Opera Australia, Australian Ballet, Sydney Theatre Company, Sydney Symphony Orchestra) → four."},
+  "12": {"ev": ["There is a sizeable outdoor forecourt from which people ascend to the main entrance."],
+         "why": "Ghi chú: một ___ lớn ở chân cầu thang rộng. Bài: sân trước (forecourt) ngoài trời khá rộng, từ đó bậc thang dẫn lên lối vào chính → forecourt."},
+  "13": {"ev": ["enabled theatre patrons to see the harbour for the first time from the theatre foyers"],
+         "why": "Ghi chú: các ô mở giúp nhìn thấy ___ từ tiền sảnh. Bài: lần đầu tiên khán giả nhìn thấy bến cảng (harbour) từ tiền sảnh → harbour."}
+ }
+}

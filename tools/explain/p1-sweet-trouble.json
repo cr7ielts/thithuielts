@@ -1,0 +1,31 @@
+{
+ "id": "p1-sweet-trouble",
+ "q": {
+  "1": {"ev": ["But there's a formula for sustainable cane production and Mossman has nearly reached it."],
+        "why": "Ý kiến: cách trồng mía ở Mossman gần đạt mô hình thân thiện môi trường. Thị trưởng Mike Berwick nói có một công thức trồng mía bền vững và Mossman 'has nearly reached it' ('close to' = 'nearly reached') → B."},
+  "2": {"ev": ["`Economically, it [cane growing] doesn't make much sense. But there's more to life than money.'"],
+        "why": "Ý kiến: lợi nhuận tài chính không phải yếu tố quan trọng duy nhất. Doug Crees: trồng mía không có lợi về kinh tế, 'nhưng cuộc sống còn nhiều thứ hơn tiền' → F."},
+  "3": {"ev": ["`I'm less worried about the effect of cane on the environment than I am about other agriculture,'"],
+        "why": "Ý kiến: mía có thể ít hại môi trường hơn các loại cây trồng khác. Karen Benn: bà ít lo về tác động của mía hơn so với các ngành nông nghiệp khác → C."},
+  "4": {"ev": ["most people now employed by the industry would have to leave the area to find work"],
+        "why": "Ý kiến: dân số địa phương sẽ giảm nếu nhà máy đường đóng cửa. Bill Phillips-Turner: nếu mất nhà máy, phần lớn người làm trong ngành phải rời khu vực để tìm việc → A."},
+  "5": {"ev": ["For two years the mill used by all the farms has been close to bankruptcy."],
+        "why": "Thị trấn 'nín thở' vì nhà máy đường mà mọi trang trại dùng đã gần phá sản suốt hai năm — một cơ sở chế biến then chốt có thể đóng cửa → D."},
+  "6": {"ev": ["allowing those remaining to buy the vacated land and improve their economies of scale"],
+        "why": "Những người ở lại (không nhận hỗ trợ của Chính phủ) sẽ mua lại đất bỏ trống để tăng quy mô sản xuất → mở rộng trang trại → A."},
+  "7": {"ev": ["the hardest was slashing the mill workforce"],
+        "why": "Việc khó nhất với Bill là cắt giảm lực lượng lao động của nhà máy ('slashing the mill workforce' = cut the number of mill staff) → D. Bán tài sản (A) và giảm chi phí bảo trì (B) cũng được làm nhưng không phải khó nhất."},
+  "8": {"ev": ["it turns out that working away from the farm is the best diversification we could do. However, I still don't want to do that."],
+        "why": "Doug Crees thừa nhận làm việc ngoài trang trại là cách đa dạng hoá tốt nhất, nhưng anh vẫn không muốn làm vậy → anh muốn ở lại trang trại → B."},
+  "9": {"ev": ["resulting in a 25-year-low average price for Australian sugar of about $232 a tonne. Although figures vary widely across farms and regions, that was about what it cost to grow a tonne of sugar in Australia."],
+        "why": "Năm 2004, giá đường xuống khoảng 232 đô/tấn — xấp xỉ chi phí trồng một tấn đường ở Úc → chi phí sản xuất gần bằng giá bán → TRUE."},
+  "10": {"ev": ["By the end of the year, 21 farmers had taken up the offer to leave"],
+         "why": "Bài chỉ nói 21 nông dân đã nhận hỗ trợ để rời ngành. Không nói họ chuyển đi đâu, có lên thành phố hay không → NOT GIVEN."},
+  "11": {"ev": ["However, the most radical--but preferred--alternative is to create a future for the mill as a food factory"],
+         "why": "Câu hỏi: sản xuất nhiên liệu là phương án kinh doanh được ưa chuộng nhất. Bài: sản xuất ethanol chỉ 'có tiềm năng'; phương án được ưa chuộng (preferred) là biến nhà máy thành xưởng thực phẩm → FALSE."},
+  "12": {"ev": ["began exploring farming methods that cause minimal soil disturbance"],
+         "why": "Bài liệt kê việc Tom Watters trồng cây chắn, kè đá và thử cách canh tác ít xáo trộn đất. Không nhắc tới thuốc trừ sâu → NOT GIVEN."},
+  "13": {"ev": ["However, none of these costly initiatives has helped him get better cane prices."],
+         "why": "Câu hỏi: canh tác thân thiện môi trường mang lại lợi nhuận cho Tom Watters. Bài: những biện pháp tốn kém này không giúp ông bán mía được giá hơn → FALSE."}
+ }
+}

@@ -43,4 +43,11 @@ export const EXPLAIN_IDS = new Set([
   "p1-sleep-study-on-modern-day-hunter-gatherers-dispels-popular-n",
   "p1-sorry-who-are-you",
   "p1-sweet-scent-of-success",
+  "p1-sweet-trouble",
+  "p1-sydney-opera-house",
+  "p1-the-baobabs-of-madagascar",
+  "p1-the-blockbuster-phenomenon-a-new-museum-trend",
+  "p1-the-burgess-shale-fossils",
+  "p1-the-clipper-races-an-era-of-competition-between-cargo-ships",
+  "p1-the-clipper-races",
 ]);

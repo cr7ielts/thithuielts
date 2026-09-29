@@ -25,6 +25,9 @@ FIXES = {
     'p3-science-in-the-kitchen': ({'27-30': '27-31'}, {31: 'NOT GIVEN'}),
     'p3-sea-change-for-salinity': ({'36-40': '37-40'}, {}),          # câu bắt đầu từ 37
     'p3-when-people-are-deaf-to-music': ({'32-36': '32-35'}, {}),    # câu 36 thuộc nhóm sau
+    # key.docx lấy nhầm tiêu đề mục ("The ships", "The races", "The rewards") làm đáp án;
+    # đáp án đúng theo bài trùng "...an era of competition between cargo ships"
+    'p1-the-clipper-races': ({}, {7: 'sails', 9: 'Challenger', 13: 'money'}),
 }
 
 
