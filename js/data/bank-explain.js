@@ -178,4 +178,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-australias-megafauna-controversy",
   "p3-book-review-the-discovery-of-slowness",
   "p3-charles-darwin",
+  "p3-childrens-literature-studies-today",
+  "p3-childs-play-in-medieval-england",
+  "p3-conformity",
 ]);
