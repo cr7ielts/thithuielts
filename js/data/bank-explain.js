@@ -247,4 +247,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-the-pirah-people-of-brazil",
   "p3-the-placebo-effect",
   "p3-the-psychology-of-new-product-adoption",
+  "p3-the-robbers-cave-study",
+  "p3-the-science-of-sleep",
+  "p3-the-search-for-extra-terrestrial-life",
 ]);

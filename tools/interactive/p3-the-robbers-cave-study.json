@@ -67,10 +67,35 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "Conditions Type of situation Result Equal status eating {{35}} {{36}} enjoyed them but were not A {{37}} raising money sitting together {{38}}, e.g. stuck friendship groups truck"
+     "text": "Equal status"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "eating — {{35}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{36}} — enjoyed them but were not sitting together"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A {{37}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "raising money"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{38}}, e.g. stuck truck — friendship groups"
     }
    ],
-   "noteTitle": "Phase 3: Non-competitive contact"
+   "noteTitle": "Phase 3: Non-competitive contact (Conditions — Type of situation — Result)"
   },
   {
    "from": 39,
