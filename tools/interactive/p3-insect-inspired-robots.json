@@ -10,7 +10,7 @@
    "questions": [
     {
      "n": 27,
-     "text": "positive and negative possibilities for the use of"
+     "text": "positive and negative possibilities for the use of insect-inspired robots"
     },
     {
      "n": 28,
@@ -66,7 +66,7 @@
    "bank": [
     {
      "v": "A",
-     "t": "a robot that makes use of light as well as stored images for navigational"
+     "t": "a robot that makes use of light as well as stored images for navigational purposes"
     },
     {
      "v": "B",
@@ -78,7 +78,7 @@
     },
     {
      "v": "D",
-     "t": "a robot that categorises information from the environment according to its"
+     "t": "a robot that categorises information from the environment according to its usefulness"
     },
     {
      "v": "E",

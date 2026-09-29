@@ -190,4 +190,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-how-can-we-make-good-decisions",
   "p3-how-did-music-begin",
   "p3-images-and-places",
+  "p3-improving-patient-safety",
+  "p3-innovation-in-business",
+  "p3-insect-inspired-robots",
 ]);
