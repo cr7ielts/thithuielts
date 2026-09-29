@@ -202,4 +202,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-looking-at-daily-life-in-ancient-rome",
   "p3-looking-for-inspiration",
   "p3-manage-your-energy-not-your-time",
+  "p3-managing-the-language-barriers-in-international-business",
+  "p3-marketing-and-the-information-age",
+  "p3-mercator-the-map-maker",
 ]);

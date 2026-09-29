@@ -55,6 +55,18 @@
     {
      "v": "L",
      "t": "costly"
+    },
+    {
+     "v": "M",
+     "t": "outcomes"
+    },
+    {
+     "v": "N",
+     "t": "errors"
+    },
+    {
+     "v": "O",
+     "t": "specialists"
     }
    ],
    "notes": [
@@ -81,17 +93,7 @@
     {
      "level": 1,
      "bullet": "",
-     "text": "Finally, companies can invest in language training, but this has to be a {{34}}"
-    },
-    {
-     "level": 0,
-     "bullet": "",
-     "text": "strategy."
-    },
-    {
-     "level": 0,
-     "bullet": "",
-     "text": "M outcomes N errors O specialists"
+     "text": "Finally, companies can invest in language training, but this has to be a {{34}} strategy."
     }
    ],
    "noteTitle": "Managing language resources in multinational companies"

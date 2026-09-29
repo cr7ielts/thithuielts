@@ -1,0 +1,15 @@
+{"id":"p3-mercator-the-map-maker","q":{
+"27":{"ev":["Where his predecessors had adopted a piecemeal approach to cartography, Mercator sought to wrap the world in systematic overlapping maps."],"why":"Người đi trước làm bản đồ rời rạc, từng phần (piecemeal), tức là bản đồ riêng lẻ, nên TRUE."},
+"28":{"ev":[],"why":"Bài không nói Mercator phê bình công trình của người cùng thời, nên NOT GIVEN."},
+"29":{"ev":["His life was one of brilliant breakthroughs and abrupt reversals."],"why":"Cuộc đời ông có những đột phá rực rỡ xen lẫn những bước ngoặt đột ngột, từng bị bỏ tù rồi được hoàng đế bảo trợ, nên TRUE."},
+"30":{"ev":["together with examples of virtually all of his printed maps and globes"],"why":"Gần như mọi bản đồ và quả địa cầu đã in của ông vẫn còn, nên TRUE."},
+"31":{"ev":["Before he commenced the great work, Mercator produced in 1569 an enormous world map on a new projection."],"why":"Mercator làm phép chiếu trước khi bắt đầu công trình vũ trụ học, không phải sau, nên FALSE."},
+"32":{"ev":["it would be several decades before the map's true navigational value would be recognised"],"why":"Phải vài thập kỷ sau giá trị hàng hải của bản đồ mới được công nhận, không phải ngay lập tức, nên FALSE."},
+"33":{"ev":["Mercator knew that his projection was unsuitable as an areal description of the world"],"why":"Mercator biết phép chiếu của mình không phù hợp để mô tả diện tích thế giới (bị méo diện tích), nên FALSE."},
+"34":{"ev":["His sources were wide-ranging and multitudinous, including an imperial physician in Vienna and his competitor, the Viceroy of Holstein."],"why":"Ông dùng nguồn tư liệu từ rất nhiều người, kể cả bác sĩ hoàng gia và đối thủ, nên TRUE."},
+"35":{"ev":["Mercator also devised a new method - `a projection' - of converting the spherical world into a two-dimensional map."],"why":"Mercator muốn chuyển thế giới hình cầu thành bản đồ hai chiều (two-dimensional)."},
+"36":{"ev":["how could the course of a ship following a constant compass bearing be represented as a straight line on a map"],"why":"Vấn đề là không thể thể hiện hải trình theo hướng la bàn cố định thành một đường thẳng (straight line) trên bản đồ."},
+"37":{"ev":["Unfortunately, straightening the rhumbs caused areal* distortion"],"why":"Làm thẳng các đường rhumb gây méo diện tích (areal distortion)."},
+"38":{"ev":["the polar regions occupied the full width of the map"],"why":"Vùng cực (polar regions) chiếm toàn bộ chiều ngang bản đồ."},
+"39":{"ev":["despite the map's title explaining that it was intended `for use in navigation'"],"why":"Tên bản đồ ghi rõ nó dùng cho hàng hải (navigation)."},
+"40":{"ev":["Mercator's Projection had been adopted by state cartographers to map the land that he had named `North America'"],"why":"Các nhà bản đồ nhà nước dùng phép chiếu Mercator để vẽ bản đồ Bắc Mỹ (North America)."}}}

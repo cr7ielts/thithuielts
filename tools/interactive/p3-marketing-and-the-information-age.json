@@ -67,27 +67,42 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "{{37}} Find out their Developed through:"
+     "text": "{{37}}"
+    },
+    {
+     "level": 0,
+     "bullet": "↓",
+     "text": "Find out their {{38}}"
+    },
+    {
+     "level": 0,
+     "bullet": "↓",
+     "text": "Developed through:"
     },
     {
      "level": 1,
-     "bullet": "",
-     "text": "{{38}} � {{39}}"
+     "bullet": "•",
+     "text": "{{39}}"
     },
     {
-     "level": 2,
+     "level": 1,
      "bullet": "•",
      "text": "marketing intelligence activities"
     },
     {
      "level": 1,
-     "bullet": "",
-     "text": "Timely and � research process"
+     "bullet": "•",
+     "text": "research process"
     },
     {
-     "level": 1,
-     "bullet": "",
-     "text": "accurate data distribution Processed by the {{40}}"
+     "level": 0,
+     "bullet": "↓",
+     "text": "Processed by the {{40}}"
+    },
+    {
+     "level": 0,
+     "bullet": "↓",
+     "text": "Timely and accurate data distribution"
     }
    ],
    "noteTitle": "The Marketing Information System (MIS)"
