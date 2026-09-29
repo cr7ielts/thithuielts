@@ -90,4 +90,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-american-businesses-aim-to-support-employees-and-their-famil",
   "p2-antarctic-research",
   "p2-australias-camouflaged-creatures",
+  "p2-biomimicry",
+  "p2-biophilic-design",
+  "p2-bird-migration",
 ]);

@@ -1,0 +1,31 @@
+{
+ "id": "p2-biophilic-design",
+ "q": {
+  "14": {"ev": ["The rate of technological progress far exceeds the rate of psychological evolution, leaving us ill-equipped to cope with our lifestyles, which in turn leads to increased stress."],
+         "why": "Thông tin: thay đổi nhanh ảnh hưởng xấu tới con người. Đoạn C: công nghệ tiến nhanh hơn tâm lý con người tiến hoá, khiến ta căng thẳng hơn → C."},
+  "15": {"ev": ["arguably speaks to the human soul far more than the box-like blocks of flats designed by his contemporary Le Corbusier"],
+         "why": "Thông tin: một kiến trúc sư có thiết kế không mang tính biophilic. Đoạn B: Le Corbusier thiết kế những khối chung cư hình hộp, trái với tinh thần gần gũi thiên nhiên → B."},
+  "16": {"ev": ["The premise of biophilic design is to avoid or minimise harmful impacts on the natural environment and, equally importantly, to provide and restore beneficial contacts between people and nature"],
+         "why": "Thông tin: định nghĩa hai mục tiêu chính của biophilia. Đoạn A: giảm tác hại lên môi trường và khôi phục sự tiếp xúc có lợi giữa con người với thiên nhiên → A."},
+  "17": {"ev": ["They mimicked nature's forms, producing magnificent structures that still awe us"],
+         "why": "Thông tin: nhận xét tích cực về kiến trúc thời xưa. Đoạn H: kiến trúc sư cổ bắt chước hình dáng tự nhiên, tạo ra công trình tráng lệ đến nay vẫn khiến ta kinh ngạc → H."},
+  "18": {"ev": ["All too often, architects put creative originality before the needs of the people who must live and work in their futuristic constructions"],
+         "why": "Thông tin: nhiều kiến trúc sư quá chú trọng đổi mới. Đoạn B: kiến trúc sư thường đặt sự độc đáo sáng tạo lên trên nhu cầu con người → B (dùng lần hai)."},
+  "19": {"ev": ["It harnesses solar power, utilises both active and passive air systems, and monitors the weather to adapt to conditions."],
+         "why": "Thông tin: các đặc điểm tiết kiệm năng lượng trong một toà nhà. Đoạn F: Lewis Center dùng năng lượng mặt trời, hệ thống không khí chủ động và thụ động, theo dõi thời tiết, tái chế nước thải → F."},
+  "20": {"ev": ["The rate of technological progress far exceeds the rate of psychological evolution"],
+         "why": "Câu: các tiến bộ ___ diễn ra quá nhanh khiến con người không kịp thích nghi. Bài: tốc độ tiến bộ công nghệ vượt xa tiến hoá tâm lý → technological (cần tính từ trước 'advancements')."},
+  "21": {"ev": ["which in turn leads to increased stress"],
+         "why": "Câu: biophilia giúp ta đối phó với ___ do khó khăn của lối sống hiện nay. Bài: lối sống khó thích nghi dẫn tới căng thẳng (stress) → stress."},
+  "22": {"ev": ["We are evolutionarily programmed to respond positively to sunny areas over dark or overcast ones"],
+         "why": "Câu: con người theo bản năng thấy thoải mái hơn ở nơi có nhiều ___. Bài: ánh nắng (sunlight) là yếu tố tối quan trọng cho sức khoẻ, ta phản ứng tích cực với nơi nhiều nắng → sunlight."},
+  "23": {"ev": ["One group had a view of a tree", "The first group had shorter hospital stays"],
+         "why": "Câu: bệnh nhân nhìn thấy một ___ hồi phục nhanh hơn. Bài: nhóm nhìn ra một cái cây (tree) nằm viện ngắn hơn → tree."},
+  "24": {"ev": ["The wall purifies the air and has the potential to fulfil the building's fresh-air-intake requirements."],
+         "why": "Câu: bức tường xanh ở toà nhà Guelph-Humber cải thiện chất lượng ___. Bài: bức tường lọc sạch không khí (air) → air."},
+  "25": {"ev": ["In their design, Orr and his team of architects engineered a healthy and comfortable space for students while ensuring the surrounding environment was undamaged."],
+         "why": "Đáp án B và D (không theo thứ tự). B — có lợi cho cả sinh viên lẫn môi trường: không gian lành mạnh, thoải mái cho sinh viên mà vẫn không làm hại môi trường xung quanh."},
+  "26": {"ev": ["a building that would help to redefine the relationship between humankind and the environment--one that would expand our sense of ecological possibilities"],
+         "why": "Đáp án B và D. D — nhằm truyền cảm hứng cho cách nghĩ mới về môi trường: mục tiêu là định nghĩa lại quan hệ giữa con người và môi trường. Bẫy: A sai vì bài không nói đây là trường đầu tiên; E sai vì năng lượng mặt trời chỉ dùng cho chính toà nhà."}
+ }
+}

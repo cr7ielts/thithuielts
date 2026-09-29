@@ -1,0 +1,31 @@
+{
+ "id": "p2-bird-migration",
+ "q": {
+  "14": {"ev": ["They are equipped with lightweight, hollow bones, a finely-tuned navigation system and an ingenious heat-conserving design"],
+         "why": "Đoạn A mô tả đặc điểm cơ thể giúp chim di cư: xương rỗng nhẹ, hệ định vị, cách giữ nhiệt, hệ hô hấp hiệu quả → ii (The physical characteristics of birds that allow them to migrate)."},
+  "15": {"ev": ["Most of the explanation revolves around food."],
+         "why": "Đoạn B: lý do chủ yếu chim di cư là thức ăn — đi theo nguồn thức ăn dồi dào theo mùa → iv (The main reason why birds migrate)."},
+  "16": {"ev": ["Yet, en route to a final destination in southern latitudes, all these individuals overfly areas of seemingly suitable habitat spanning two hemispheres."],
+         "why": "Đoạn C: nhiều loài bay xa hơn mức cần thiết, bỏ qua những vùng có vẻ phù hợp, và ta không rõ lý do → x (The unexplained rejection of closer feeding grounds)."},
+  "17": {"ev": ["once grown, the young cuckoo makes its own way to ancestral wintering grounds in the tropics before returning single-handedly to northern Europe"],
+         "why": "Đoạn D: chim non, nhất là chim cu cu, tự di cư quãng đường dài mà không có bố mẹ dẫn → vi (Successful migration despite a lack of teaching)."},
+  "18": {"ev": ["Mounting evidence has confirmed that birds use the sun and stars to obtain compass directions"],
+         "why": "Đoạn E: các nghiên cứu cho thấy chim định hướng bằng mặt trời, sao, từ trường, ánh sáng phân cực → v (Research findings on how birds find their way)."},
+  "19": {"ev": ["part of the skill in arriving safely is setting off at the right time"],
+         "why": "Đoạn F: kỹ năng quan trọng là khởi hành đúng lúc — dự đoán thời tiết, tận dụng gió thuận → i (Choosing the best moment to migrate)."},
+  "20": {"ev": ["Each autumn a small number of North American birds are blown across the Atlantic by fast-moving westerly tail winds. Not only do they arrive safely in Europe"],
+         "why": "Đoạn G: gió mạnh làm nhiều chim bỏ mạng, nhưng một số chim Bắc Mỹ bị gió thổi sang châu Âu vẫn sống sót và quay về → ix (Success despite problems with wind during migration). Bẫy: viii nói chim lớn tận dụng gió — không có trong bài."},
+  "21": {"ev": ["One puzzling fact is that many birds journey much further than would be necessary to find food and good weather."],
+         "why": "Đáp án A và C (không theo thứ tự). A — nhiều loài bay xa hơn mức cần thiết: đoạn C nói nhiều chim đi xa hơn nhiều so với mức cần để tìm thức ăn và thời tiết tốt."},
+  "22": {"ev": ["the danger of meeting predators as well as the risk of dehydration due to flying for long periods in warm sunlit skies is reduced"],
+         "why": "Đáp án A và C. C — bay đêm giúp chim cần ít nước hơn: bay đêm giảm nguy cơ mất nước do bay lâu dưới nắng. Bẫy: B sai vì rất ít chim trưởng thành di cư cùng con."},
+  "23": {"ev": ["how do young birds migrate over vast distances without parental assistance?"],
+         "why": "Câu: chim cu cu di cư được dù không có sự hướng dẫn của ___. Bài: chim non di cư 'without parental assistance' (không có bố mẹ giúp) → parental."},
+  "24": {"ev": ["the danger of meeting predators as well as the risk of dehydration"],
+         "why": "Câu: bay đêm giúp chim tránh gặp ___. Bài: bay đêm giảm nguy cơ gặp kẻ săn mồi (predators) → predators."},
+  "25": {"ev": ["Often birds react to weather changes before there is any visible sign of them."],
+         "why": "Câu: một số loài đoán trước thời tiết thay đổi mà không cần dấu hiệu ___. Bài: chim phản ứng trước khi có dấu hiệu nhìn thấy được (visible) → visible."},
+  "26": {"ev": ["was, like a pilot without radar, hopelessly lost"],
+         "why": "Câu: trước đây người ta nghĩ chim bị ___ khi bay trong đêm tối. Bài: người ta từng cho rằng chim bay đêm không có điểm mốc sẽ bị lạc (lost) hoàn toàn → lost."}
+ }
+}
