@@ -19,6 +19,7 @@ import { renderIdioms, renderIdiomGame } from "./wordplay/idioms.js";
 import { renderPuns, renderPunGame } from "./wordplay/puns.js";
 import { renderHomework, renderHomeworkDetail, renderHomeworkForm, renderHomeworkReview, homeworkWidget } from "./homework/views.js";
 import { renderBank, renderBankPractice, renderBankImport } from "./bank/bank.js";
+import { renderBankReview } from "./bank/review.js";
 import { loadMyClasses, hasClass, normCode } from "./classes/clstore.js";
 import { renderClasses, renderClass, renderJoin, tryJoin } from "./classes/views.js";
 
@@ -270,6 +271,7 @@ function render() {
     case "exams":     main.append(examsView()); break;
     case "bank":
       if (a === "import") main.append(renderBankImport(ctx));
+      else if (b && c === "review") main.append(renderBankReview(ctx, a, b, routeData?.submission || null));   // #bank/<loại>/<id>/review
       else if (b) main.append(renderBankPractice(ctx, a, b, c === "hw" ? d : null));   // #bank/<loại>/<id>/hw/<bài tập>
       else main.append(renderBank(ctx, a || "reading"));
       break;

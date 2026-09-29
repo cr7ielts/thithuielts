@@ -42,6 +42,7 @@ export function renderResult(ctx, sub) {
         stat(L("Tỉ lệ đúng", "Accuracy"), `${Math.round((sub.raw / sub.total) * 100)}%`),
         stat(L("Bỏ trống", "Blank"), String(sub.details.filter((d) => !d.given).length))
       ),
+      reviewLink(ctx, sub),
       reviewCard(sub)
     );
   }
@@ -121,6 +122,19 @@ function bandRing(sub) {
 
 function stat(k, v) {
   return el("div", { class: "stat" }, el("div", { class: "k" }, k), el("div", { class: "v" }, v));
+}
+
+/** Bài Reading trong ngân hàng đề: mở trang xem lại có bài đọc, dẫn chứng, giải thích */
+function reviewLink(ctx, sub) {
+  const m = /^bank:(reading):(.+)$/.exec(sub.testId || "");
+  if (!m || !sub.details?.length) return null;
+  return el("div", { class: "card rv-cta row wrap" },
+    el("span", { class: "rv-cta-ic" }, icon("search")),
+    el("div", { style: "flex:1;min-width:220px" },
+      el("strong", {}, L("Xem lại chi tiết từng câu", "Review every question")),
+      el("div", { class: "small muted" }, L("Bài đọc tô sẵn câu dẫn chứng, đáp án đúng và giải thích vì sao.", "The passage with evidence highlighted, the right answers and why."))),
+    el("button", { class: "btn btn-primary", onclick: () => ctx.go(`bank/${m[1]}/${m[2]}/review`, { submission: sub }) },
+      L("Xem lại & giải thích", "Review & explanations"), icon("arrow")));
 }
 
 function reviewCard(sub) {

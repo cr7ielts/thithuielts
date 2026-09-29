@@ -1,0 +1,31 @@
+{
+ "id": "p1-salt",
+ "q": {
+  "1": {"ev": ["About 70% is utilized by the chemical industry, mostly as a source of chlorine."],
+        "why": "Câu hỏi: ngành hoá chất dùng phần lớn (majority) lượng muối sản xuất trên thế giới. Bài viết khoảng 70% muối được ngành hoá chất sử dụng — 70% là phần lớn, nên thông tin khớp → TRUE. Chú ý paraphrase: 'makes use of' = 'is utilized by', 'globally' = 'worldwide'."},
+  "2": {"ev": ["The earliest humans obtained their salt from natural salt concentrations, as well as from meat."],
+        "why": "Câu hỏi nói người xưa chỉ lấy được muối từ MỘT nguồn duy nhất. Bài liệt kê nhiều nguồn: mỏ muối tự nhiên, thịt, rong biển, nước biển bốc hơi… Có nhiều nguồn nên câu hỏi mâu thuẫn với bài → FALSE. Bẫy thường gặp: từ 'only / a single' trong câu hỏi."},
+  "3": {"ev": ["Solar evaporation was soon followed by the quarrying of exposed masses of rock salt"],
+        "why": "Câu hỏi: khai thác đá muối phổ biến TRƯỚC phương pháp phơi nắng. Bài nói phơi nắng (solar evaporation) có trước, rồi mới đến khai thác đá muối ('was soon followed by'). Thứ tự bị đảo ngược → FALSE."},
+  "4": {"ev": ["Two thousand years ago, the Chinese began using wells to reach underground pools of salt water, some of which were more than one kilometer deep."],
+        "why": "Bài chỉ nói người Trung Quốc bắt đầu dùng giếng để lấy nước muối dưới lòng đất, sâu hơn 1 km. Bài không nói họ phát triển thiết bị khai mỏ 'nhanh' (quick) hay không. Không có thông tin để xác nhận hay bác bỏ → NOT GIVEN."},
+  "5": {"ev": ["During the time of the Roman Empire, shallow lead pans were used to boil salt water over open fires to extract the salt."],
+        "why": "Thời La Mã, người ta đun nước muối trong chảo chì nông để lấy muối. Câu hỏi nói 'lấy muối bằng cách đun nước trong một loại chảo' — đúng ý bài ('a type of pan' = 'shallow lead pans') → TRUE."},
+  "6": {"ev": ["Then a machine resembling a gigantic chain saw is used to cut a long horizontal slot through the salt, in a procedure known as undercutting."],
+        "why": "Ghi chú: 'trong một quy trình gọi là ___, người ta dùng máy để cắt vào khối muối'. Bài: máy giống cưa xích khổng lồ cắt một rãnh ngang 'in a procedure known as undercutting'. 'a process called' = 'a procedure known as' → undercutting."},
+  "7": {"ev": ["Cutting and blasting are repeated in a pattern that leaves salt pillars standing to support the roof of the mining area."],
+        "why": "Ghi chú: sau khi nổ mìn, ___ muối được để lại để đỡ trần. Bài: để lại các cột muối (salt pillars) để 'support the roof' (= hold the roof up) → pillars (số nhiều vì trước chỗ trống không có a/an)."},
+  "8": {"ev": ["smaller pieces are collected via a metal grill"],
+        "why": "Ghi chú: ở khu nghiền dưới lòng đất, các mảnh đá muối nhỏ được gom lại bằng một ___. Bài: 'smaller pieces are collected via a metal grill' → grill (chỉ một từ nên không lấy 'metal')."},
+  "9": {"ev": ["Finally, redundant matter is extracted from the rock salt, in what is known as picking."],
+        "why": "Ghi chú: quy trình ___ loại bỏ phần không cần thiết khỏi đá muối. 'unwanted material' = 'redundant matter', 'removes' = 'is extracted' → picking."},
+  "10": {"ev": ["This device consists of three or more closed metal cylinders."],
+        "why": "Sơ đồ: các xi-lanh làm bằng ___ được đổ đầy nước muối. Bài: thiết bị gồm từ ba xi-lanh kim loại kín trở lên → metal."},
+  "11": {"ev": ["The brine in the first cylinder passes through tubes heated by steam."],
+        "why": "Sơ đồ: ___ làm nóng ống trong xi-lanh thứ nhất. Bài: nước muối trong xi-lanh đầu chảy qua các ống được hơi nước làm nóng ('heated by steam') → steam."},
+  "12": {"ev": ["In each cylinder, the condensation of steam causes the pressure inside to drop."],
+        "why": "Sơ đồ: ___ trong các xi-lanh giảm xuống do ngưng tụ. Bài: sự ngưng tụ hơi nước làm áp suất bên trong giảm ('causes the pressure inside to drop'; 'falls' = 'drop') → pressure."},
+  "13": {"ev": ["dried, and passed through screens to sort the salt particles according to how large they are."],
+        "why": "Sơ đồ: ___ được dùng để phân loại hạt muối theo kích cỡ. Bài: muối được cho qua các tấm sàng (screens) để phân loại theo độ lớn ('by size' = 'according to how large they are') → screens."}
+ }
+}

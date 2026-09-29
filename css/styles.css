@@ -1531,3 +1531,41 @@ body:has(.login-stack) .bg-item { color: #fff; opacity: .1; }
 body.exam-on .bg-float { display: none; }
 @media (prefers-reduced-motion: reduce) { .bg-item { animation: none; } }
 @media print { .bg-float { display: none; } }
+
+/* ===================== Xem lại bài Reading (kiểu Youpass) ===================== */
+.rv-cta { gap: 14px; align-items: center; border: 2px solid var(--copper-line); background: linear-gradient(135deg, var(--surface), var(--copper-soft)); }
+.rv-cta-ic { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: var(--copper); color: #fff; }
+.rv-score { display: flex; align-items: baseline; gap: 4px; padding: 10px 18px; border-radius: 18px; background: var(--navy-soft); color: var(--navy-ink); font-family: var(--font-display); }
+.rv-score .v { font-size: 2.4rem; font-weight: 700; line-height: 1; }
+.rv-score .t { font-size: 1.1rem; font-weight: 600; opacity: .8; }
+.rv-split { align-items: start; }
+.rv-paper { position: sticky; top: 78px; max-height: calc(100vh - 100px); overflow-y: auto; }
+.rv-side { min-width: 0; }
+.rv-list { display: flex; flex-direction: column; gap: 12px; }
+mark.ev { background: color-mix(in srgb, var(--copper) 16%, transparent); color: inherit; font-weight: inherit; padding: 1px 2px; border-radius: 4px;
+  border-bottom: 2px solid color-mix(in srgb, var(--copper) 55%, transparent); transition: background .3s, box-shadow .3s; }
+mark.ev .ev-n { font-size: .65em; font-weight: 700; color: #fff; background: var(--copper); border-radius: 999px; padding: 0 5px; margin-right: 3px; vertical-align: super; }
+mark.ev.flash { background: color-mix(in srgb, var(--copper) 38%, transparent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--copper) 35%, transparent); }
+.rv-q { padding: 14px 16px; border-radius: var(--r); background: var(--surface); border: 1px solid var(--line); border-left: 5px solid var(--line-strong);
+  box-shadow: var(--shadow-sm); display: flex; flex-direction: column; gap: 10px; cursor: pointer; }
+.rv-q.ok { border-left-color: var(--mint); }
+.rv-q.bad { border-left-color: var(--red); }
+.rv-q.blank { border-left-color: var(--amber); }
+.rv-q-top { display: flex; gap: 10px; align-items: flex-start; }
+.rv-num { flex: none; min-width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-weight: 700; font-size: .85rem; background: var(--navy-soft); color: var(--navy-ink); }
+.rv-q-text { flex: 1; font-weight: 600; }
+.rv-ans { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: .92rem; }
+.rv-lbl { display: inline-flex; align-items: center; gap: 5px; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); margin-right: 8px; }
+.rv-given { font-weight: 700; }
+.rv-q.bad .rv-given { color: var(--bad-ink); text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.rv-q.ok .rv-given { color: var(--ok-ink); }
+.rv-key { font-weight: 700; color: var(--ok-ink); }
+.rv-why { padding: 10px 12px; border-radius: 12px; background: var(--navy-soft); font-size: .93rem; line-height: 1.6; }
+.rv-why .rv-lbl { color: var(--navy-ink); margin-bottom: 4px; }
+.rv-ev { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.rv-ev blockquote { margin: 0; padding: 6px 12px; border-left: 3px solid var(--copper); background: var(--copper-soft); border-radius: 0 10px 10px 0; font-size: .9rem; font-style: italic; }
+@media (max-width: 760px) { .rv-paper { position: static; max-height: 55vh; } }
+@media (max-width: 900px) {
+  .rv-split { display: flex !important; flex-direction: column; gap: 14px; }
+  .rv-paper { position: static; max-height: 50vh; }
+}
