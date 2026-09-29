@@ -217,4 +217,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-research-into-the-effects-of-different-teaching-styles",
   "p3-risk-taking",
   "p3-robert-louis-stevenson",
+  "p3-saving-languages",
+  "p3-science-and-filmmaking",
+  "p3-science-in-the-kitchen",
 ]);
