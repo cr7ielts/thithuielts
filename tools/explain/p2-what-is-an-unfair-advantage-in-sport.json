@@ -1,0 +1,31 @@
+{
+ "id": "p2-what-is-an-unfair-advantage-in-sport",
+ "q": {
+  "14": {"ev": ["Clarke was the greatest distance runner in history", "He stumbled across the line in sixth place and collapsed."],
+         "why": "Đoạn A: vận động viên chạy cự ly dài vĩ đại nhất lịch sử lại loạng choạng về thứ sáu và ngã quỵ, dù cuộc đua diễn ra chậm → vii (The surprising outcome of a race)."},
+  "15": {"ev": ["Clarke had raised the issue himself, but had been told by the Australian sports authorities that complaining was regarded as bad sportsmanship. As it turned out, he had good reason to do so."],
+         "why": "Đoạn B: Clarke từng lo về độ cao của Mexico City, và nỗi lo đó hoàn toàn có cơ sở → vi (Well-founded concerns)."},
+  "16": {"ev": ["the start of an astonishing record of success by East Africans"],
+         "why": "Đoạn C: vận động viên Kenya, Ethiopia thống trị các cự ly dài — bảy người nhanh nhất 5.000 m đều từ hai nước này → ix (The runners who dominate)."},
+  "17": {"ev": ["At high altitudes, a number of physiological alterations occur, most importantly, more red blood cells and haemoglobin are produced."],
+         "why": "Đoạn D: ở độ cao lớn, cơ thể thay đổi sinh lý — tạo thêm hồng cầu và hemoglobin → iv (Changes in the body)."},
+  "18": {"ev": ["they could simulate the effects of high altitude and save an athlete at sea-level from the time and expense of travelling to higher ground"],
+         "why": "Đoạn E: lều mô phỏng độ cao giúp vận động viên thích nghi mà không cần lên núi — cách tiện lợi → ii (A convenient method of acclimatization)."},
+  "19": {"ev": ["In a 2009 ruling, FINA changed its mind, banning all suits made with this high-tech fabric."],
+         "why": "Đoạn F: FINA ban đầu cho phép đồ bơi LZR, sau đó đổi ý và cấm → viii (The reversal of a decision)."},
+  "20": {"ev": ["But whatever the outcome, rulings should not appear arbitrary: arguments have to be examined and weighed and the rules of logic ought to apply in every case."],
+         "why": "Đoạn G: quyết định cho phép hay cấm công nghệ mới không được tuỳ tiện, phải cân nhắc lý lẽ, áp dụng logic → iii (The need for a rational approach)."},
+  "21": {"ev": ["Clarke had raised the issue himself, but had been told by the Australian sports authorities that complaining was regarded as bad sportsmanship."],
+         "why": "Đáp án B và D (không theo thứ tự). B — nỗi lo của Clarke trước Thế vận hội không được xem xét: giới chức Úc bảo phàn nàn là thiếu tinh thần thể thao."},
+  "22": {"ev": ["With two laps to go, Clarke was in the leading pack."],
+         "why": "Đáp án B và D. D — có lúc Clarke ở gần tốp đầu: còn hai vòng anh vẫn trong nhóm dẫn đầu. Bẫy: C sai (nay hầu như bị lãng quên); E sai (nhiều vận động viên khác cũng gục)."},
+  "23": {"ev": ["it was ruled that they did not violate the spirit of distance running"],
+         "why": "Tóm tắt: WADA kết luận lều độ cao không trái với ___ của môn thể thao. Bài: không vi phạm tinh thần (spirit) của môn chạy cự ly dài → spirit."},
+  "24": {"ev": ["These suits use a high-tech fabric tested in Nasa's wind tunnels, which reduces drag and improves buoyancy."],
+         "why": "Tóm tắt: đồ bơi LZR làm từ vải đặc biệt giúp nổi và giảm ___. Bài: giảm lực cản (drag), tăng độ nổi → drag."},
+  "25": {"ev": ["Athletes believe they need records all the time."],
+         "why": "Tóm tắt: vận động viên nghĩ họ phải liên tục lập ___ mới. Bài: họ tin mình luôn cần kỷ lục (records) → records."},
+  "26": {"ev": ["But when a new technology is invented, the relevant sports authority has to consider whether to embrace or reject it."],
+         "why": "Tóm tắt: điều này có được nhờ ___ và luyện tập tốt hơn. Bài nói kỷ lục đạt được qua những cải tiến nhỏ, và mỗi khi có công nghệ (technology) mới thì cơ quan quản lý phải quyết định → technology."}
+ }
+}

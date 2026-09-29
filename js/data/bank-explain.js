@@ -160,4 +160,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-urban-regeneration-an-award-winning-redevelopment-project-in",
   "p2-war-of-the-plants",
   "p2-what-does-performance-involve",
+  "p2-what-is-an-unfair-advantage-in-sport",
+  "p2-who-wrote-shakespeare-s-plays",
+  "p2-why-do-singers-lose-their-voices",
 ]);
