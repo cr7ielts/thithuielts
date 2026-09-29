@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-history-of-tea",
+ "q": {
+  "1": {"ev": ["Containers for tea have been found in tombs dating from the Han Dynasty (206 BC-220 AD)"],
+        "why": "Câu: hộp đựng trà được phát hiện trong ___ thời nhà Hán. Bài: hộp đựng trà được tìm thấy trong các ngôi mộ (tombs) thời Hán → tombs."},
+  "2": {"ev": ["a writer called Lu Yu wrote the first book entirely about tea, the Ch'a Ching, or Tea Classic"],
+        "why": "Câu: Lục Vũ viết một ___ về trà trước bất kỳ ai. Bài: ông viết cuốn sách (book) đầu tiên hoàn toàn về trà ('first' = 'before anyone else') → book."},
+  "3": {"ev": ["by Japanese Buddhist monks who had travelled to China to study"],
+        "why": "Câu: chính ___ Nhật Bản mang trà từ Trung Quốc về nước. Bài: các nhà sư (monks) Phật giáo Nhật sang Trung Quốc học đã đưa trà về Nhật → monks."},
+  "4": {"ev": ["This was done by the Dutch", "in 1606 the first consignment of tea was shipped from China to Holland"],
+        "why": "Câu: trà được chở từ Trung Quốc tới châu Âu bởi ___. Bài: không phải người Bồ Đào Nha mà người Hà Lan (the Dutch) là những người đầu tiên chở trà về châu Âu như một mặt hàng thương mại → Dutch."},
+  "5": {"ev": ["By 1784, the government realised that enough was enough, and that heavy taxation was creating more problems than it was worth.", "Suddenly legal tea was affordable, and smuggling stopped virtually overnight."],
+        "why": "Câu: chính phủ Anh phải giảm thuế trà vì tội phạm ___ nghiêm trọng. Bài: thuế nặng khiến buôn lậu (smuggling) phát triển thành mạng lưới tội phạm có tổ chức; khi thuế giảm, buôn lậu gần như chấm dứt ngay → smuggling."},
+  "6": {"ev": ["which led to the increased cultivation of tea in India, beginning in Assam"],
+        "why": "Câu: thế kỷ 19, trà được trồng ở ___ ngoài Trung Quốc. Bài: công ty Đông Ấn tăng trồng trà ở Ấn Độ (India), bắt đầu từ Assam → India."},
+  "7": {"ev": ["using fast new clippers which had sleek lines, tall masts and huge sails"],
+        "why": "Câu: để cạnh tranh tốc độ, thương nhân dùng ___ trong cuộc đua. Bài: họ dùng những chiếc tàu clipper mới, nhanh (clippers) → clippers."},
+  "8": {"ev": ["In the latter half of the sixteenth century there are the first brief mentions of tea as a drink among Europeans"],
+        "why": "Câu hỏi: trà phổ biến ở Anh vào thế kỷ 16. Bài: nửa sau thế kỷ 16 mới chỉ có vài lời nhắc ngắn về trà ở châu Âu; ở Anh, đến giữa thế kỷ 17 trà vẫn còn là thứ lạ lẫm → FALSE."},
+  "9": {"ev": ["Tea soon became a fashionable drink among the Dutch"],
+        "why": "Bài có nói trà trở thành đồ uống thời thượng ở Hà Lan (từ đầu thế kỷ 17), nhưng không so sánh trà với cà phê ở châu Âu cuối thế kỷ 16 → NOT GIVEN."},
+  "10": {"ev": ["as yet tea was still too expensive to be widespread among the working classes"],
+         "why": "Câu hỏi: thế kỷ 17 mọi tầng lớp ở Anh đều uống trà. Bài: trà vẫn quá đắt nên chưa phổ biến trong tầng lớp lao động; quán cà phê cũng chỉ dành cho đàn ông trung lưu và thượng lưu → FALSE."},
+  "11": {"ev": ["taxation also encouraged the adulteration of tea", "By 1784, the government realised that enough was enough"],
+         "why": "Thuế cao gây ra cả buôn lậu lẫn pha trộn trà giả (adulteration); đến 1784 chính phủ thấy thuế nặng gây quá nhiều vấn đề và Pitt cắt thuế. Việc pha trộn trà là một trong những vấn đề đó → TRUE."},
+  "12": {"ev": ["There were a few false starts, including the destruction by cattle of one of the earliest tea nurseries"],
+         "why": "Khi công ty Đông Ấn trồng trà ngoài Trung Quốc, đã có vài khởi đầu thất bại, ví dụ một vườn ươm bị gia súc phá → có trục trặc ban đầu → TRUE."},
+  "13": {"ev": ["In particular, there was competition between British and American merchants, leading to the famous clipper races of the 1860s."],
+         "why": "Bài nói có sự cạnh tranh giữa thương nhân Anh và Mỹ, nhưng không nói tàu của bên nào nhanh nhất → NOT GIVEN."}
+ }
+}

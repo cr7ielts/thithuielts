@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-history-of-the-british-wool-industry",
+ "q": {
+  "1": {"ev": ["It was made into cloth there in the Bronze Age, which began about 1900 BC. By the time the Romans invaded in 55 BC the Britons had developed a wool industry"],
+        "why": "Câu hỏi: người La Mã đưa nghề dệt len vào Anh. Bài: len đã được dệt thành vải ở Anh từ thời đồ đồng, và khi người La Mã tới năm 55 TCN, người Anh đã có ngành len → FALSE."},
+  "2": {"ev": ["But the greatest wealth came from exports of raw wool."],
+        "why": "Thế kỷ 12, dệt vải phổ biến, nhưng nguồn của cải lớn nhất đến từ xuất khẩu len thô → xuất khẩu vải len kém lợi nhuận hơn len thô → TRUE."},
+  "3": {"ev": ["Kings and their ministers welcomed the revenue that resulted from exports and export taxes"],
+        "why": "Vua và các quan hoan nghênh nguồn thu từ xuất khẩu và thuế xuất khẩu len → người cai trị có lợi ích tài chính trong ngành len → TRUE."},
+  "4": {"ev": ["This led to an increase of the sheep flocks, for there were not enough people left to cultivate the land for arable crops."],
+        "why": "Câu hỏi: dịch hạch làm số cừu giảm mạnh. Bài: dịch hạch khiến đàn cừu tăng lên, vì không còn đủ người để trồng trọt → FALSE."},
+  "5": {"ev": ["East Anglia used the long, fine wool from its native sheep breeds to produce a cloth which did not require the fulling process"],
+        "why": "Bài chỉ nói vải worsted không cần công đoạn nén (fulling). Không so sánh chi phí sản xuất worsted với các loại vải len khác → NOT GIVEN."},
+  "6": {"ev": ["In the sixteenth century, French weavers, persecuted for their Protestant religion, sought refuge in England and took their skills with them."],
+        "why": "Ghi chú: thế kỷ 16, ___ lành nghề di cư sang Anh. Bài: thợ dệt (weavers) Pháp bị đàn áp tôn giáo đã sang Anh lánh nạn, mang theo tay nghề → weavers."},
+  "7": {"ev": ["by the end of the seventeenth century it comprised two-thirds of the value of its exports"],
+        "why": "Ghi chú: cuối thế kỷ 17, phần lớn ___ của Anh là sản phẩm len. Bài: len chiếm hai phần ba giá trị xuất khẩu (exports) ('majority' ≈ 'two-thirds') → exports."},
+  "8": {"ev": ["its cloth manufacturing district began to take shape with the expansion of major towns: Leeds, Bradford, Halifax, Huddersfield, and Wakefield"],
+        "why": "Ghi chú: thế kỷ 18, sự phát triển của năm ___ sản xuất chủ chốt. Bài: năm thị trấn lớn (towns) Leeds, Bradford, Halifax, Huddersfield, Wakefield mở rộng → towns."},
+  "9": {"ev": ["It led the way for new inventions stemming from the Lancashire cotton industry, to mechanize and speed dramatically the processes of spinning and weaving."],
+        "why": "Ghi chú: 1750–1850, máy móc mới được phát triển, ban đầu để sản xuất ___. Bài: các phát minh mới bắt nguồn từ ngành bông (cotton) ở Lancashire → cotton."},
+  "10": {"ev": ["The widespread unrest of 1812 led to the destruction of equipment by bands of rioters"],
+         "why": "Ghi chú: năm 1812, các cuộc phản đối dẫn tới việc ___ máy móc. Bài: bất ổn năm 1812 dẫn tới việc những nhóm bạo loạn phá huỷ (destruction) thiết bị → destruction."},
+  "11": {"ev": ["supported by abundant supplies of inexpensive coal to generate steam and, later, electrical power"],
+         "why": "Ghi chú: thế kỷ 19, Yorkshire cơ giới hoá nhanh nhờ có ___ giá rẻ. Bài: nguồn than (coal) dồi dào, rẻ ('inexpensive' = 'cheap') → coal."},
+  "12": {"ev": ["Other specialised types of manufacturing developed in Scotland, famed for its tweeds"],
+         "why": "Ghi chú: Scotland chuyên về ___. Bài: Scotland nổi tiếng với vải tweed (tweeds) → tweeds."},
+  "13": {"ev": ["the West Country, which focused on the production of high- quality, woven carpets"],
+         "why": "Ghi chú: West Country chuyên về ___. Bài: tập trung sản xuất thảm dệt (carpets) chất lượng cao → carpets."}
+ }
+}
