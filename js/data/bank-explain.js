@@ -116,4 +116,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-insect-decision-making",
   "p2-intelligent-behaviour-in-birds",
   "p2-introduction-to-a-book-about-the-assessment-of-carbon-footpr",
+  "p2-investment-in-shares-vs-investment-in-other-assets-which-giv",
+  "p2-keeping-the-water-away",
+  "p2-lean-production",
 ]);

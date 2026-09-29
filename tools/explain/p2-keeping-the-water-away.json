@@ -1,0 +1,31 @@
+{
+ "id": "p2-keeping-the-water-away",
+ "q": {
+  "14": {"ev": ["Tough new rules for new developments mean that drains will be prevented from becoming overloaded after heavy rains."],
+         "why": "Thông tin: luật buộc người thiết kế công trình cải thiện cách dùng nước. Đoạn F: quy định mới nghiêm ngặt ở Berlin; kiến trúc sư dẫn nước mưa dùng cho toilet, tưới vườn → F."},
+  "15": {"ev": ["The aim was partly to improve navigation, and partly to speed floodwaters out of the Alps and down to the North Sea."],
+         "why": "Thông tin: hai lý do một con sông bị tách khỏi bãi bồi. Đoạn C: sông Rhine bị tách để cải thiện giao thông thuỷ và để thoát lũ nhanh ra biển → C."},
+  "16": {"ev": ["Back in the days when rivers took a winding path to the sea, floodwaters lost force and volume while meandering across flood plains and inland deltas"],
+         "why": "Thông tin: dòng chảy tự nhiên ngày xưa giúp kiểm soát lũ. Đoạn B: sông uốn khúc khiến nước lũ yếu đi và giảm lượng khi chảy qua bãi bồi → B."},
+  "17": {"ev": ["protecting towns not only in Austria, but as far downstream as Slovenia and Croatia"],
+         "why": "Thông tin: kiểm soát lũ trên một con sông, ảnh hưởng tới ba nước. Đoạn D: phục hồi bãi bồi sông Drava bảo vệ thị trấn ở Áo, Slovenia và Croatia → D."},
+  "18": {"ev": ["the Dutch have broken one of their most enduring national stereotypes by allowing engineers to punch holes in dykes"],
+         "why": "Thông tin: một nước phá bỏ một phần đặc trưng tiêu biểu để kiểm soát nước. Đoạn E: người Hà Lan cho đục thủng đê — biểu tượng quốc gia của họ → E."},
+  "19": {"ev": ["It may sound expensive, until we realise how much is spent trying to drain cities and protect areas from flooding, and how little this method achieves."],
+         "why": "Thông tin: nhận xét của tác giả về hiệu quả chi phí giữa cách truyền thống và cách mới. Đoạn G: nghe có vẻ tốn kém cho đến khi thấy cách cũ tốn bao nhiêu mà hiệu quả ít ỏi → G."},
+  "20": {"ev": ["Engineers are now turning to a different plan: to sap the water's destructive strength by dispersing it into fields, forgotten lakes and flood plains. They are reviving river bends and marshes to curb the flow"],
+         "why": "Đáp án A và D (không theo thứ tự). A — làm chậm dòng nước ra biển: khôi phục khúc quanh, đầm lầy để hãm dòng chảy. Bẫy: B ngược lại với cách mới."},
+  "21": {"ev": ["They plan to return up to a sixth of the country to its former waterlogged state in order to better protect the rest."],
+         "why": "Đáp án A và D. D — mất một phần đất đai: Hà Lan định trả tới một phần sáu đất nước về trạng thái ngập nước. Bẫy: E sai vì cách mới còn được thử ở Anh, Áo, Mỹ."},
+  "22": {"ev": ["Recently, winter floods on the rivers of central Europe have been among the worst for 600 to 700 years"],
+         "why": "Câu: một số trận lũ tồi tệ nhất trong nhiều thế kỷ vừa xảy ra ở ___. Bài: trên các sông ở Trung Âu (central Europe) → central Europe."},
+  "23": {"ev": ["The same thing has happened in the US on the Mississippi River"],
+         "why": "Câu: sông Rhine và sông ___ gặp vấn đề tương tự. Bài: điều tương tự xảy ra với sông Mississippi → Mississippi."},
+  "24": {"ev": ["To help keep London's feet dry, the UK Environment Agency is reflooding 10 square kilometres of the ancient flood plain of the River Thames outside Oxford."],
+         "why": "Câu: một vùng gần Oxford sẽ được cho ngập để bảo vệ thành phố ___. Bài: để giữ London khô ráo → London."},
+  "25": {"ev": ["A new breed of `soft engineers' wants cities to be porous"],
+         "why": "Câu: người muốn nước thấm qua bề mặt đô thị dễ hơn được gọi là ___. Bài: 'soft engineers' muốn thành phố 'xốp' → soft engineers."},
+  "26": {"ev": ["Could this be expanded to protect a whole city? The test case could be Los Angeles."],
+         "why": "Câu: một đề xuất cho một phần thành phố ___ có thể cho thấy dự án nhỏ áp dụng được trên quy mô lớn không. Bài: trường hợp thử nghiệm có thể là Los Angeles (khu Sun Valley) → Los Angeles."}
+ }
+}
