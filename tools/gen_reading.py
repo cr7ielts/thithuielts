@@ -42,6 +42,7 @@ FIXES = {
     'p3-looking-for-inspiration': ({}, {33: 'scalp electrodes / electrodes', 34: 'inspiration / inspiration and elaboration', 35: 'alpha waves / alpha wave activity'}),
     'p3-mercator-the-map-maker': ({}, {35: 'two-dimensional / two dimensional / 2-dimensional', 39: 'navigation / navigational'}),
     'p3-managing-the-language-barriers-in-international-business': ({}, {35: 'unnecessary luxuries / luxuries', 37: 'six levels / 6 levels', 38: 'three years / 3 years'}),
+    'p3-sir-francis-ronalds-1788-1873': ({}, {32: 'letters and numbers / numbers and letters', 34: '800 km / 800 kilometres / 800 kilometers / some 800 km'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }

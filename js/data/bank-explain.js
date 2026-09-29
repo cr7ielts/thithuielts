@@ -220,4 +220,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-saving-languages",
   "p3-science-and-filmmaking",
   "p3-science-in-the-kitchen",
+  "p3-sea-change-for-salinity",
+  "p3-sign-baby-sign",
+  "p3-sir-francis-ronalds-1788-1873",
 ]);
