@@ -113,4 +113,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-how-the-petri-dish-supports-scientific-advances",
   "p2-how-well-do-people-concentrate",
   "p2-ideal-homes",
+  "p2-insect-decision-making",
+  "p2-intelligent-behaviour-in-birds",
+  "p2-introduction-to-a-book-about-the-assessment-of-carbon-footpr",
 ]);
