@@ -166,4 +166,6 @@ export const EXPLAIN_IDS = new Set([
   "p2-why-do-we-need-sleep",
   "p2-why-do-we-need-the-arts",
   "p2-why-do-we-use-language",
+  "p2-why-don-t-we-sleep",
+  "p2-will-eating-less-make-you-live-longer",
 ]);
