@@ -211,4 +211,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-on-art-and-artists",
   "p3-pacific-navigation-and-voyaging",
   "p3-petrol-power-an-eco-revolution",
+  "p3-psychological-responses-to-mirror-images",
+  "p3-rebranding-art-museums",
+  "p3-recording-history",
 ]);
