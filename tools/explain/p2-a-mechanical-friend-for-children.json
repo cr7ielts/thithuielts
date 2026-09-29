@@ -1,0 +1,31 @@
+{
+ "id": "p2-a-mechanical-friend-for-children",
+ "q": {
+  "14": {"ev": ["While hugging of QRIO increased, hugging of Robby decreased throughout the study."],
+         "why": "Thông tin: so sánh phản ứng của trẻ với các robot khác nhau. Đoạn D so sánh QRIO với Robby (robot đứng yên): trẻ ôm QRIO ngày càng nhiều, ôm Robby ngày càng ít → D."},
+  "15": {"ev": ["A robotic tutor could react on the spot to social cues and approximate social skills like facial expression and eye gaze, they said."],
+         "why": "Thông tin: suy đoán về cách robot có thể giao tiếp. Đoạn F: robot gia sư tương lai có thể phản ứng với tín hiệu xã hội, mô phỏng nét mặt và ánh mắt → F."},
+  "16": {"ev": ["At first, the toddlers would touch the robot on its face, but later on they would touch it only on its hands and arms"],
+         "why": "Thông tin: thay đổi trong cách trẻ chạm vào robot. Đoạn D: lúc đầu trẻ chạm vào mặt robot, về sau chỉ chạm vào tay và cánh tay như với người → D."},
+  "17": {"ev": ["This observation is in sharp contrast to the long- term interactions and bonding that commonly develop between humans and their pets."],
+         "why": "Thông tin: so sánh sự gắn bó của con người với động vật và với robot. Đoạn A: người dùng chán robot trước 10 giờ, trái ngược với sự gắn bó lâu dài giữa người và thú cưng → A."},
+  "18": {"ev": ["The researchers sent instructions to the robot about every two minutes to do things like giggle, dance, sit down, fall down, or walk in a certain direction."],
+         "why": "Thông tin: mô tả cách một robot được lập trình/điều khiển. Đoạn C: khoảng hai phút một lần, robot được ra lệnh cười khúc khích, nhảy, ngồi, ngã… → C."},
+  "19": {"ev": ["we are going to endow machines with something similar to emotion, not just traditional forms of intelligence"],
+         "why": "Ý: robot tương lai không chỉ phải suy nghĩ mà còn thể hiện cảm xúc. Movellan: phải trao cho máy thứ gì đó giống cảm xúc, không chỉ trí thông minh truyền thống → B."},
+  "20": {"ev": ["But he also cautioned that researchers do not yet understand the consequences of increased human/robot interaction."],
+         "why": "Ý: chưa chắc việc tiếp xúc nhiều hơn giữa người và robot có lợi. Arkin cảnh báo chưa hiểu hậu quả, cần tìm hiểu xem điều này tốt hay xấu cho xã hội → C."},
+  "21": {"ev": ["`Children of toddler age were chosen because they have no preconceived notions of robots,' according to Tanaka."],
+         "why": "Ý: trẻ rất nhỏ chưa có định kiến về robot. Tanaka: trẻ tuổi tập đi được chọn vì chưa có 'preconceived notions' về robot → A."},
+  "22": {"ev": ["a limited range of robot behaviors, however impressive, is nowhere near as important to human/robot interaction as being able to make appropriate responses from a broad repertoire of behaviors"],
+         "why": "Ý: robot cần thực hiện nhiều hành động đa dạng để con người gắn bó. Powers: phản ứng phù hợp từ một kho hành vi rộng quan trọng hơn nhiều so với vài hành vi ấn tượng → D."},
+  "23": {"ev": ["`It could have great potential in educational settings, assisting teachers and enriching the classroom environment,' Tanaka said."],
+         "why": "Ý: dùng robot hỗ trợ trường học có thể mang lại nhiều lợi ích. Tanaka: robot có tiềm năng lớn trong giáo dục, hỗ trợ giáo viên, làm phong phú lớp học → A."},
+  "24": {"ev": ["The most successful robots so far have been storytellers"],
+         "why": "Câu: trước đây, robot giữ sự chú ý của người tốt nhất là những robot đóng vai ___. Bài: robot thành công nhất là người kể chuyện (storytellers) → storytellers."},
+  "25": {"ev": ["the children progressively treated it more as a peer than a plaything"],
+         "why": "Câu: trẻ phản ứng với QRIO như bạn hoặc ___ chứ không như đồ chơi. Bài: trẻ dần coi nó như bạn đồng lứa (peer) hơn là đồ chơi (plaything = toy) → peer."},
+  "26": {"ev": ["Ronald Arkin was not surprised by the affection demonstrated by the toddlers toward the robot."],
+         "why": "Câu: Arkin đã đoán trước trẻ sẽ thể hiện ___ với QRIO. Bài: Arkin không ngạc nhiên trước tình cảm (affection) trẻ dành cho robot ('not surprised' = 'expected') → affection."}
+ }
+}

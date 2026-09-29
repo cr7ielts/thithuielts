@@ -83,4 +83,11 @@ export const EXPLAIN_IDS = new Set([
   "p1-what-lucy-taught-us",
   "p1-william-gilbert-and-magnetism",
   "p1-wood",
+  "p2-a-mechanical-friend-for-children",
+  "p2-a-new-look-for-talbot-park",
+  "p2-a-study-of-western-celebrity",
+  "p2-a-unique-golden-textile",
+  "p2-american-businesses-aim-to-support-employees-and-their-famil",
+  "p2-antarctic-research",
+  "p2-australias-camouflaged-creatures",
 ]);

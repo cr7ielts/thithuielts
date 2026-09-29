@@ -1,0 +1,31 @@
+{
+ "id": "p2-a-new-look-for-talbot-park",
+ "q": {
+  "14": {"ev": ["`There is no reason why state housing should look cheap in my view,'", "The tidy brick and wood apartments and townhouses would not look out of place in some of the city's most affluent suburbs"],
+         "why": "Đoạn A: nhà ở Talbot Park mới trông khác hẳn nhà xã hội thông thường, không hề rẻ tiền, như ở khu nhà giàu; kiến trúc sư còn lường trước sẽ bị phản đối vì chất lượng quá cao → iv (The unexpectedly high standard of the housing)."},
+  "15": {"ev": ["Initially, there was a strong sense of neighbourliness."],
+         "why": "Đoạn B: thời đầu thập niên 1960, tình làng xóm rất mạnh — trẻ con chơi chung ở khu vườn, hàng xóm tôn trọng nhau → ix (A close community in the original Talbot Park development)."},
+  "16": {"ev": ["The buildings themselves were also deteriorating and becoming run-down, petty crime was on the rise and the garden was considered unsafe."],
+         "why": "Đoạn C: cộng đồng chia rẽ, khu phố xuống cấp, trộm vặt tăng, vườn không còn an toàn → i (Some of the problems that developed at Talbot Park)."},
+  "17": {"ev": ["The first priority was to mix up the housing by employing a variety of plans by different architects"],
+         "why": "Đoạn D mô tả chi tiết phong cách 'mix and match': nhiều kiểu nhà, thiết kế tiết kiệm, bếp và sàn đơn giản, kiến trúc mở → x (Details of the style of buildings used in the makeover)."},
+  "18": {"ev": ["The population today is cosmopolitan: 50% Pacific Islanders, 20% M"],
+         "why": "Đoạn E liệt kê tỷ lệ các nhóm dân tộc ở Talbot Park hiện nay (người đảo Thái Bình Dương, Maori, châu Á, châu Âu…) → iii (The ethnic makeup of the new Talbot Park)."},
+  "19": {"ev": ["The area has a high density of households with incomes in the $5,000 to $15,000 range and very few with an income over $70,000."],
+         "why": "Đoạn F: Talbot Park và khu Tāmaki lân cận là vùng kinh tế – xã hội thấp, thu nhập hộ gia đình thấp → v (Financial hardship in Talbot Park and a neighbouring community)."},
+  "20": {"ev": ["Another important part of the new development is what Housing New Zealand calls `intensive tenancy management'."],
+         "why": "Đoạn G: quản lý người thuê chặt chẽ (kiểm tra, quy định) và tổ chức sự kiện giúp cư dân quen nhau → vii (How to co-ordinate and assist the people who live at Talbot Park)."},
+  "21": {"ev": ["`It was important that the buildings were sufficiently flexible to cater for the needs of people from a wide variety of cultural backgrounds,' explains designer James Lundy."],
+         "why": "James Lundy: công trình phải đủ linh hoạt để đáp ứng người thuộc nhiều nền văn hoá → cộng đồng đa sắc tộc cần thiết kế linh hoạt → D."},
+  "22": {"ev": ["`The focus is on frequent inspections and setting clear guidelines and boundaries regarding the sort of behaviour we expect from tenants,' says Graham Bodman"],
+         "why": "Graham Bodman: tập trung kiểm tra thường xuyên và đặt quy định rõ ràng về hành vi người thuê ('supervision and regulation') → A."},
+  "23": {"ev": ["you have to actually help them to get to know each other by organising morning teas and street barbecues"],
+         "why": "Stuart Bracey: muốn người dân sống trong khu chật chội thì phải giúp họ làm quen bằng cách tổ chức tiệc trà sáng, tiệc nướng ngoài phố → tổ chức sự kiện xã hội → C."},
+  "24": {"ev": ["One controversial aspect of the upgrade is that the new development has actually made the density of housing in Talbot Park greater"],
+         "why": "Tóm tắt: điều gây lo ngại là ___ nhà ở cao hơn. Bài: điểm gây tranh cãi là mật độ (density) nhà ở tăng lên, thêm 52 căn trên cùng diện tích → density."},
+  "25": {"ev": ["by employing a variety of plans by different architects"],
+         "why": "Tóm tắt: một nhóm ___ khác nhau cùng làm để các toà nhà không đồng dạng. Bài: dùng nhiều bản thiết kế của các kiến trúc sư (architects) khác nhau → architects."},
+  "26": {"ev": ["to optimise durability and ensure the project did not go over budget"],
+         "why": "Tóm tắt: nội thất tiện dụng vẫn xây được trong phạm vi ___. Bài: cách làm đơn giản để dự án không vượt ngân sách (budget) → budget."}
+ }
+}

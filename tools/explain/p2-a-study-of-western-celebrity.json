@@ -1,0 +1,31 @@
+{
+ "id": "p2-a-study-of-western-celebrity",
+ "q": {
+  "14": {"ev": ["is derived from the Latin word `celeber', meaning `frequented or populous'"],
+         "why": "Đoạn A giải thích từ 'celebrity' bắt nguồn từ tiếng Latin 'celeber' với nghĩa gốc 'đông đúc' → x (The original definition of celebrity). Bẫy: i nói 'vì sao cần giải thích nghĩa', đoạn không bàn điều đó."},
+  "15": {"ev": ["The celebrities of the ancient world were the powerful and awesome deities of Greece and Rome"],
+         "why": "Đoạn B: người nổi tiếng thời cổ đại là các vị thần Hy Lạp, La Mã — không phải con người — và họ tác động trực tiếp tới đời sống dân chúng → ii (The influence of non-human celebrities on societies)."},
+  "16": {"ev": ["Victors in the ancient Olympic Games were treated as heroes", "were also revered by the common people for their heroics and seemingly superhuman strength"],
+         "why": "Đoạn C: vận động viên Olympic và đấu sĩ được tôn sùng vì chiến công và sức mạnh thể chất → v (Admiration for physical achievement)."},
+  "17": {"ev": ["lent excitement to the lives of common people when there was often little else to be excited about, as they faced war, disease and food shortages"],
+         "why": "Đoạn D: thời Trung Cổ, dân chúng khổ cực vì chiến tranh, bệnh tật, đói kém nên say mê cuộc đời các nhân vật tôn giáo → sự nổi tiếng là kết quả của hoàn cảnh khó khăn → vii (A result of hardship)."},
+  "18": {"ev": ["It was a time when artists began to surpass political and religious individuals for supreme celebrity"],
+         "why": "Đoạn E: thời Phục Hưng, nghệ sĩ được nổi tiếng hơn cả chính trị gia và nhân vật tôn giáo → sự sáng tạo được coi trọng hơn → iv (Creativity having greater value)."},
+  "19": {"ev": ["The increase in the availability of the written word was accompanied by a huge rise in the number of common people who could read, allowing a mass audience to find out about celebrities for the first time."],
+         "why": "Đoạn F: thế kỷ 18, xuất bản phát triển và nhiều người biết đọc hơn, nên danh tiếng lan rộng khắp thế giới → viii (Literacy and widespread celebrity)."},
+  "20": {"ev": ["In the modern era, particularly as radio and film took off in the 1900s, things really began to change."],
+         "why": "Đoạn G: radio, phim, truyền hình và truyền hình thực tế thay đổi khái niệm người nổi tiếng → iii (The impact of broadcasting on concepts of celebrity). Bẫy: chi tiết động vật nổi tiếng (ii) chỉ là một câu nhỏ."},
+  "21": {"ev": ["The emergence of reality television shows in the late 1990s allowed all kinds of people with little ability to enjoy a short burst of fame on the television screen."],
+         "why": "Nhiều kiểu người được nổi tiếng trong thời gian ngắn: truyền hình thực tế cuối thập niên 1990 cho mọi loại người 'a short burst of fame' → thời hiện đại → D."},
+  "22": {"ev": ["This need to know led to the creation of myths, which personalized the gods and involved them in ancient celebrity scandals"],
+         "why": "Người ta bịa ra chuyện về đời tư người nổi tiếng: thời cổ đại, thần thoại được tạo ra, gán cho các vị thần những 'scandal' → A (Ancient times)."},
+  "23": {"ev": ["During the period 1300-1600 AD, or the Renaissance period as it is known, interest in ruling figures faded."],
+         "why": "Danh tiếng của người cai trị bắt đầu giảm: thời Phục Hưng, sự quan tâm tới giới cầm quyền phai nhạt ('faded' = 'diminish') → C."},
+  "24": {"ev": ["Suddenly, the lives of authors, politicians, war heroes, and other celebrities could now be read about in newspapers around the world."],
+         "why": "Tóm tắt: người biết đọc có thể tìm hiểu về nhân vật yêu thích qua việc đọc ___. Bài: cuộc đời người nổi tiếng giờ được đọc trên báo chí (newspapers) khắp thế giới → newspapers."},
+  "25": {"ev": ["All you needed, it seemed, was an attractive appearance."],
+         "why": "Tóm tắt: ___ của một người chứ không phải tài năng có thể đem lại danh tiếng. Bài: với truyền hình thực tế, chỉ cần ngoại hình (appearance) hấp dẫn → appearance."},
+  "26": {"ev": ["with the audience deciding whether someone deserves to become a celebrity or not"],
+         "why": "Tóm tắt: danh tiếng có thể hoàn toàn phụ thuộc vào phản ứng của ___. Bài: khán giả (audience) quyết định ai xứng đáng trở thành người nổi tiếng → audience."}
+ }
+}
