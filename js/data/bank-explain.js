@@ -196,4 +196,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-inside-the-mind-of-a-fan",
   "p3-jean-piaget-1896-1980",
   "p3-keeping-the-fun-in-funfairs",
+  "p3-language-strategy-in-multinational-companies",
+  "p3-lets-teach-them-how-to-teach",
+  "p3-living-dunes",
 ]);
