@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-impact-of-the-potato",
+ "q": {
+  "1": {"ev": ["Early Spanish chroniclers who misused the Indian word batata (sweet potato) as the name for the potato"],
+        "why": "Câu hỏi: người Tây Ban Nha gọi khoai tây bằng tên Inca 'chuño'. Bài: họ dùng nhầm từ 'batata' (khoai lang) để gọi khoai tây; 'chuño' là tên món khoai tây sấy khô của người Inca → FALSE."},
+  "2": {"ev": ["The Spanish conquistadors first encountered the potato when they arrived in Peru in 1532 in search of gold"],
+        "why": "Câu hỏi: người Tây Ban Nha đến Peru để tìm khoai tây. Bài: họ đến Peru để tìm vàng, rồi mới tình cờ gặp khoai tây → FALSE."},
+  "3": {"ev": ["At the time the Spaniards failed to realize that the potato represented a far more important treasure than either silver or gold"],
+        "why": "Bài chỉ nói người Tây Ban Nha không nhận ra giá trị của khoai tây và dùng nó làm khẩu phần trên tàu, thức ăn gia súc. Không nói họ nghĩ gì về chất dinh dưỡng của khoai so với rau khác → NOT GIVEN."},
+  "4": {"ev": ["Even peasants refused to eat from a plant that produced ugly, misshapen tubers"],
+        "why": "Ngay cả nông dân cũng không chịu ăn loại cây cho củ xấu xí, méo mó → họ không thích khoai vì trông xấu → TRUE."},
+  "5": {"ev": ["Potatoes did not become a staple until, during the food shortages associated with the Revolutionary Wars, the English government began to officially encourage potato cultivation."],
+        "why": "Khoai tây chỉ trở thành lương thực chính ở Anh khi thiếu lương thực trong thời Chiến tranh Cách mạng và chính phủ khuyến khích trồng khoai → TRUE."},
+  "6": {"ev": ["Louis XVI began to sport a potato flower in his buttonhole"],
+        "why": "Câu: người Pháp bớt ghê sợ khoai tây vì nhà vua cài một ___ khoai tây ở khuyết áo. Bài: vua Louis XVI cài hoa khoai tây (potato flower) → flower."},
+  "7": {"ev": ["but faced the challenge of overcoming the people's prejudice against the plant"],
+        "why": "Câu: Frederick thấy tiềm năng của khoai tây nhưng phải xử lý ___ của dân thường. Bài: ông phải vượt qua định kiến (prejudice) của người dân với loại cây này → prejudice."},
+  "8": {"ev": ["Frederick used a bit of reverse psychology"],
+        "why": "Câu: vua Phổ dùng một kiểu tâm lý ___ để người dân chấp nhận khoai tây. Bài: 'reverse psychology' (tâm lý ngược) — cho lính canh ruộng khoai để dân tưởng là quý mà lén lấy về trồng → reverse."},
+  "9": {"ev": ["Prior to 1800, the English diet had consisted primarily of meat, supplemented by bread, butter and cheese."],
+        "why": "Câu: trước 1800, người Anh thích ăn ___ với bánh mì, bơ, phô mai. Bài: chế độ ăn chủ yếu là thịt (meat), kèm bánh mì, bơ, phô mai → meat."},
+  "10": {"ev": ["High-yielding, easily prepared potato crops were the obvious solution to England's food problems."],
+         "why": "Câu: cách hiển nhiên để giải quyết vấn đề lương thực của Anh là ___ khoai tây năng suất cao. Bài: 'potato crops' (vụ khoai) năng suất cao, dễ chế biến → crops."},
+  "11": {"ev": ["The potato was well suited to the Irish soil and climate"],
+         "why": "Câu: ___ và khí hậu Ireland rất hợp với khoai tây. Bài: 'well suited to the Irish soil and climate' → soil."},
+  "12": {"ev": ["without any significant expansion of industry or reform of agricultural techniques beyond the widespread cultivation of the potato"],
+         "why": "Câu: 1780–1841, nhờ ___ khoai tây, dân số Ireland tăng gấp đôi. Bài: ngoài việc trồng khoai tây rộng rãi (widespread cultivation) thì không có thay đổi đáng kể nào khác → cultivation."},
+  "13": {"ev": ["the potato's high yields allowed even the poorest farmers to produce more healthy food than they needed with scarcely any investment or hard labour"],
+         "why": "Câu: năng suất cao giúp nông dân nghèo nhất có thêm thực phẩm mà hầu như không cần ___. Bài: 'with scarcely any investment or hard labour' ('almost without' = 'scarcely any') → investment."}
+ }
+}

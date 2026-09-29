@@ -1,0 +1,31 @@
+{
+ "id": "p1-the-origins-of-tennis",
+ "q": {
+  "1": {"ev": ["No drawings or descriptions of any tennis-like games have been discovered"],
+        "why": "Câu hỏi: có vài tài liệu còn sót lại cho thấy trò chơi giống tennis có từ thời cổ đại. Bài: không tìm thấy bất kỳ hình vẽ hay mô tả nào; bằng chứng chỉ là hai từ tiếng Ả Rập → FALSE."},
+  "2": {"ev": ["It is thought that French monks were the first to play a basic game of handball against their monastery buildings", "But as they found playing with bare hands quite uncomfortable"],
+        "why": "Dạng tennis sơ khai là trò đánh bóng bằng tay ('jeu de paume' = trò chơi của bàn tay); người chơi đánh tay không trước khi dùng găng → TRUE."},
+  "3": {"ev": ["a solid paddle, similar to the ones used in table tennis today"],
+        "why": "Bài chỉ so sánh cây vợt đặc với vợt bóng bàn ngày nay. Không nói bóng bàn ra đời vào thời điểm nào → NOT GIVEN."},
+  "4": {"ev": ["The game, which remained exclusive to the upper classes, gained more popularity over the 14th and 15th centuries."],
+        "why": "Câu hỏi: thế kỷ 14–15, tennis phổ biến với mọi tầng lớp ở Pháp. Bài: trò chơi vẫn chỉ dành riêng cho tầng lớp thượng lưu → FALSE."},
+  "5": {"ev": ["As it became increasingly fashionable, outdoor courtyards were modified into indoor courts."],
+        "why": "Bài chỉ nói sân ngoài trời được cải tạo thành sân trong nhà, không so sánh kích thước hai loại sân → NOT GIVEN."},
+  "6": {"ev": ["The game became such a widespread diversion among the aristocracy that both the pope and the French king tried to ban it."],
+        "why": "Tennis phổ biến trong giới quý tộc đến mức cả giáo hoàng và vua Pháp đều tìm cách cấm → có nỗ lực ngăn quý tộc chơi → TRUE."},
+  "7": {"ev": ["as the ball can be bounced off any of the surfaces, some of which are slanted at odd angles"],
+        "why": "Ghi chú: bóng có thể đập vào ___ quanh sân. Bài: bóng có thể nảy vào bất kỳ bề mặt (surfaces) nào của sân → surfaces."},
+  "8": {"ev": ["The net is just over 1.5 metres high at each end, but drops to just under a metre in the middle."],
+        "why": "Ghi chú: ___ thấp hơn ở giữa. Bài: lưới (net) cao hơn 1,5 m ở hai đầu nhưng chỉ dưới 1 m ở giữa → net."},
+  "9": {"ev": ["This led to the development of rubber tennis balls. During the 1850s, players began to experiment with these new balls"],
+        "why": "Ghi chú: thập niên 1850, bóng làm từ ___ bắt đầu được dùng. Bài: nhờ lưu hoá cao su, bóng tennis bằng cao su (rubber) ra đời và được thử nghiệm những năm 1850 → rubber."},
+  "10": {"ev": ["had the idea of devising rules, which he published"],
+         "why": "Ghi chú: Wingfield công bố ___ bằng văn bản cho trò chơi. Bài: ông soạn ra luật chơi (rules) và xuất bản → rules."},
+  "11": {"ev": ["He also introduced standardised equipment, including racquets, balls, posts, and a net, which he patented and sold in sets."],
+         "why": "Ghi chú: sản xuất các bộ ___ tennis hoàn chỉnh để bán. Bài: ông đưa ra dụng cụ (equipment) tiêu chuẩn và bán theo bộ → equipment."},
+  "12": {"ev": ["his original court had the shape of an hourglass, with the net across its narrowest section"],
+         "why": "Ghi chú: thiết kế một ___ khác thường cho sân. Bài: sân ban đầu có hình (shape) đồng hồ cát → shape."},
+  "13": {"ev": ["A major tennis tournament took place for the first time in Wimbledon, London in 1877"],
+         "why": "Ghi chú: năm 1877, ___ lớn đầu tiên được tổ chức. Bài: giải đấu (tournament) tennis lớn lần đầu diễn ra ở Wimbledon → tournament."}
+ }
+}
