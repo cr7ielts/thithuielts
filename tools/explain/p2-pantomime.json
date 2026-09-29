@@ -1,0 +1,31 @@
+{
+ "id": "p2-pantomime",
+ "q": {
+  "14": {"ev": ["For many British children, their first family trip to see a pantomime in the Christmas holiday season is their introduction to the magic of the theatre."],
+         "why": "Đoạn A: với nhiều trẻ em Anh, lần đầu cùng gia đình xem pantomime dịp Giáng sinh là lần đầu tiếp xúc với sân khấu → iv (Discovering pantomime at a young age)."},
+  "15": {"ev": ["These improvised shows took place in streets and marketplaces", "The key roles in the cast were invariably rich old men"],
+         "why": "Đoạn B: commedia dell'arte diễn ngoài đường phố, chợ, với các vai cố định (ông già giàu có, đôi tình nhân trẻ, người hầu lanh lợi) → ii (Outdoor performances with a standard set of characters)."},
+  "16": {"ev": ["a new kind of entertainment which interwove Ovid's first-century Latin poem Metamorphoses with aspects of the Italian commedia"],
+         "why": "Đoạn C: harlequinade kết hợp thơ của Ovid với commedia Ý, pha trộn cảnh tượng, âm nhạc, ba lê và thần thoại → viii (A successful merging of artistic sources)."},
+  "17": {"ev": ["His tactic was to set about changing pantomime's cultural identity, partly by confining shows to his theatre's Christmas season."],
+         "why": "Đoạn D: pantomime bị chỉ trích dữ dội; Garrick xoay xở bằng cách chỉ diễn vào mùa Giáng sinh để nó không bị coi là mối đe doạ → v (A way of dealing with a negative attitude toward pantomime)."},
+  "18": {"ev": ["a world of comic revenge against a highly repressive government. Grimaldi became one of the great satirists of his age"],
+         "why": "Đoạn E: chú hề của Grimaldi châm biếm chính quyền hà khắc, giới cầm quyền trong bối cảnh bất ổn chính trị → iii (Pantomime as a means of focusing on political issues)."},
+  "19": {"ev": ["In the Dame, Leno developed a persona whose theatrical power comes from the locking together of compassion and laughter."],
+         "why": "Đoạn F: nhân vật 'Dame' của Dan Leno kết hợp lòng trắc ẩn và tiếng cười → i (A character who provoked sympathy and amusement)."},
+  "20": {"ev": ["The engaging character of the Dame exemplifies pantomime's self- proclaimed absurdity. Her comical conversations with the audience cut across the boundaries between performers and spectators"],
+         "why": "Đoạn G: pantomime ngày nay vẫn phổ biến; nhân vật Dame thu hút khán giả hiện đại bằng cách trò chuyện, kéo họ vào thế giới hỗn loạn → vi (An explanation of how a pantomime character appeals to modern audiences)."},
+  "21": {"ev": ["Distinctive masks enabled audiences to recognise the people in these stories immediately; they also allowed actors to be rude or disrespectful without fear of being recognised."],
+         "why": "Câu: diễn viên commedia dell'arte dùng ___ để che danh tính thật. Bài: mặt nạ (masks) giúp diễn viên không bị nhận ra → masks."},
+  "22": {"ev": ["interwove Ovid's first-century Latin poem Metamorphoses with aspects of the Italian commedia"],
+         "why": "Câu: harlequinade kết hợp một loại hình nghệ thuật thế kỷ 16 với một ___ viết từ nhiều thế kỷ trước. Bài: bài thơ (poem) Metamorphoses thế kỷ 1 → poem."},
+  "23": {"ev": ["His anarchic activities included chasing and imprisoning policemen"],
+         "why": "Câu: đầu thế kỷ 19, ___ thường là nạn nhân của chú hề. Bài: chú hề đuổi bắt và giam cảnh sát (policemen) → policemen."},
+  "24": {"ev": ["a mother facing the difficulties of poverty, which he and his audiences knew all too well", "began to infuse pantomime with the plots and dilemmas of working people's culture"],
+         "why": "Các vai diễn tập trung vào hoàn cảnh của tầng lớp nghèo hơn: Dan Leno đóng bà mẹ lao động nghèo và đưa đời sống người lao động vào pantomime → D."},
+  "25": {"ev": ["Amazing transformations happened at the touch of a magic wand, with mechanical serpents and flying vehicles."],
+         "why": "Đưa yếu tố siêu nhiên vào pantomime: các vở của John Rich có phép biến hình bằng đũa thần, rắn máy, xe bay → A."},
+  "26": {"ev": ["But the Clown was never caught or sent to jail."],
+         "why": "Nhân vật không bao giờ bị trừng phạt vì 'tội' trên sân khấu: chú hề của Grimaldi không bao giờ bị bắt hay bỏ tù → C."}
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "id": "p2-orientation-of-birds",
+ "q": {
+  "14": {"ev": ["Such birds possess a highly developed visual memory, as experiments with pigeons have shown."],
+         "why": "Tóm tắt (kiểu 1): chim dựa vào ___ tinh vi của chúng. Bài: chúng có trí nhớ thị giác (visual memory) rất phát triển → visual memory."},
+  "15": {"ev": ["They appear to choose their normal migration direction even if they are released in a different place from their usual starting point."],
+         "why": "Tóm tắt (kiểu 2): chim chọn ___ quen thuộc dù được thả ở đâu. Bài: chúng chọn hướng di cư (migration direction) thông thường → migration direction."},
+  "16": {"ev": ["So if they are released further to the west, they maintain the correct direction but fly west of their destination, and so fail to arrive."],
+         "why": "Tóm tắt: vì vậy chúng có thể lỡ ___. Bài: bay lệch về phía tây điểm đến (destination) nên không tới nơi → destination."},
+  "17": {"ev": ["for the albatross clearly couldn't rely on any landmarks over the vast expanse of the Pacific Ocean"],
+         "why": "Tóm tắt (kiểu 3): chim định hướng đúng ngay cả ở nơi lạ và không có ___ để dựa vào. Bài: hải âu không thể dựa vào mốc địa hình (landmarks) nào trên Thái Bình Dương → landmarks."},
+  "18": {"ev": ["In one example, a Laysan albatross returned to its nesting area on Midway Island"],
+         "why": "Tóm tắt: một loài có kỹ năng này là ___. Bài: chim hải âu Laysan (Laysan albatross) bay 5.000 km về đảo Midway → Laysan albatross."},
+  "19": {"ev": ["If a bird uses only this type of homing behaviour, however, it can only succeed if the point of release is not too far away."],
+         "why": "Thông tin: ảnh hưởng của khoảng cách tới khả năng tìm tổ. Đoạn C: kiểu này chỉ thành công nếu điểm thả không quá xa; thả cách 800 km thì chỉ may mắn mới về được → C."},
+  "20": {"ev": ["They are taken to some spot, released, and the percentage of returns is recorded."],
+         "why": "Thông tin: phương pháp kiểm tra khả năng tìm tổ nói chung. Đoạn B: bắt chim, mang tới nơi khác thả rồi ghi tỷ lệ quay về, thay đổi khoảng cách, hướng… → B."},
+  "21": {"ev": ["Birds' eyes have a power of resolution two to three times greater than ours"],
+         "why": "Thông tin: một khía cạnh năng lực thể chất ở người và chim. Đoạn C: mắt chim có độ phân giải gấp 2–3 lần mắt người → C (dùng lần hai)."},
+  "22": {"ev": ["caught first-year European storks and released them later, after the departure of the adult storks"],
+         "why": "Thông tin: việc di cư của một số chim bị trì hoãn để thí nghiệm. Đoạn G: Schüz bắt cò non và chỉ thả sau khi cò trưởng thành đã bay đi → G."},
+  "23": {"ev": ["four years later the birds were still able to respond to this training when placed on the aerial photograph"],
+         "why": "Bồ câu nhà: bốn năm sau vẫn nhớ điểm được huấn luyện trên ảnh chụp từ trên không → khả năng nhớ những gì đã thấy → C."},
+  "24": {"ev": ["In one case, seven out of nine Alpine swifts were recaptured at their nests after being displaced some 1,400 kilometres"],
+         "why": "Yến Alpine: 7/9 con quay về tổ sau khi bị mang đi 1.400 km; các loài di cư mạnh có tỷ lệ về tổ cao nhất → tỷ lệ tìm tổ thành công cao → F. Bẫy: có chi tiết 'ba ngày' nhưng ý chính là tỷ lệ."},
+  "25": {"ev": ["in spite of the fact that there were no adults to guide them, the birds unanimously headed south-west"],
+         "why": "Cò châu Âu: cò non không có cò lớn dẫn đường vẫn bay đúng hướng tây nam → khả năng định hướng không cần huấn luyện (bẩm sinh) → A."},
+  "26": {"ev": ["These birds have a great aptitude for homing, but this behaviour differs in the different age groups."],
+         "why": "Sáo đá: khả năng tìm đường khác nhau theo tuổi — chim trưởng thành điều chỉnh hướng đúng, chim non thì không → ảnh hưởng của tuổi → D."}
+ }
+}

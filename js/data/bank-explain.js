@@ -122,4 +122,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-learning-from-the-romans",
   "p2-mammoth-kill",
   "p2-mind-music",
+  "p2-multi-tasking-and-the-brain",
+  "p2-orientation-of-birds",
+  "p2-pantomime",
 ]);
