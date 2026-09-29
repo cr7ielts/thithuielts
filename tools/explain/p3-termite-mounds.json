@@ -1,0 +1,15 @@
+{"id":"p3-termite-mounds","q":{
+"27":{"ev":["To most of us, termites are destructive insects which can cause damage on a devastating scale. But according to Dr Rupert Soar","these pests may serve a useful purpose for us after all"],"why":"Đoạn A: mối thường bị coi là loài phá hoại nhưng có thể hữu ích, tức là xem xét lại danh tiếng của mối, tiêu đề iii."},
+"28":{"ev":["Termite mounds are impressive for their size alone; typically they are three metres high, and some as tall as eight metres have been found."],"why":"Đoạn B mô tả kích thước ấn tượng của tổ mối (cao 3 m, có tổ tới 8 m, ăn sâu xuống đất), tiêu đề vii."},
+"29":{"ev":["This complex system of tunnels draws in air from the outside","The mound also automatically regulates moisture in the air"],"why":"Đoạn C nêu các chức năng chính của tổ: thông gió, thải khí, giữ nhiệt độ ổn định, điều hòa độ ẩm, tiêu đề iv."},
+"30":{"ev":["Part of their digestive process is carried out by a fungus, which they `farm' inside the mound."],"why":"Đoạn D: mối nuôi nấm, nấm tiêu hóa bột gỗ thành thức ăn cho mối, mối cho nấm môi trường sống lý tưởng, quan hệ cùng có lợi, tiêu đề ix."},
+"31":{"ev":["we may ultimately need to redefine our understanding of what constitutes a `living' organism"],"why":"Đoạn E: có thể phải định nghĩa lại thế nào là sinh vật sống, tiêu đề ii."},
+"32":{"ev":["To reveal the structure of the mounds, Soar's team begins by filling and covering their plaster of Paris"],"why":"Đoạn F mô tả phương pháp: đổ thạch cao, cắt lát, chụp ảnh, dựng mô hình 3D, tiêu đề i."},
+"33":{"ev":["the findings could be invaluable in informing future architectural design, and could inspire buildings that are self-sufficient, environmentally friendly, and cheap to run"],"why":"Đoạn G nêu lợi ích tiềm năng: truyền cảm hứng cho kiến trúc tự cung cấp năng lượng, thân thiện môi trường, tiêu đề vi."},
+"34":{"ev":["The mound itself is formed of an intricate lattice of tunnels"],"why":"Tổ được tạo bởi mạng lưới đường hầm (tunnels)."},
+"35":{"ev":["so ensuring them a continuous provision of fresh, breathable air"],"why":"Mạng đường hầm bảo đảm nguồn không khí (air) sạch liên tục cho mối."},
+"36":{"ev":["by means of both its underground `cellar', and evaporation from the top of the mound"],"why":"'Hầm' dưới đất giúp điều hòa độ ẩm (moisture) trong tổ."},
+"37":{"ev":["evaporation from the top of the mound"],"why":"Đỉnh tổ cho phép sự bay hơi (evaporation)."},
+"38":{"ev":["none ever leaves the structure, indicating that there is also some kind of internal waste-recycling system"],"why":"Chất thải không bao giờ ra khỏi tổ, cho thấy có hệ thống tái chế bên trong, nên YES."},
+"39":{"ev":["The researcher then carves the plaster of Paris into half-millimetre- thick slices, and photographs them sequentially."],"why":"Nhóm của Soar chụp liên tiếp nhiều lát cắt dày nửa milimét, không phải một bức ảnh cả tổ, nên NO."},
+"40":{"ev":["there will not be enough fuel to drive air conditioners around the world"],"why":"Khi không đủ nhiên liệu chạy điều hòa, kiến trúc học từ tổ mối có thể giúp tạo tòa nhà tự điều hòa, tức là giúp đối phó khủng hoảng năng lượng, nên YES."}}}

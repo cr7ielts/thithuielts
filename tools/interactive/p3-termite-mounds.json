@@ -83,12 +83,27 @@
    "instruction": "Label the diagram below. Choose ONE WORD ONLY from the passage for each answer.",
    "notes": [
     {
-     "level": 1,
-     "bullet": "",
-     "text": "top of the mound network of {{34}} permits {{37}} helps to give the termites a constant {{35}} Innermost chamber supply and to maintain a containing termites' nest limited temperature range cellar to aid control of {{36}} levels in mound"
+     "level": 0,
+     "bullet": "•",
+     "text": "Top of the mound: permits {{37}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Network of {{34}}: helps to give the termites a constant {{35}} supply and to maintain a limited temperature range"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Innermost chamber: containing termites' nest"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Cellar: to aid control of {{36}} levels in mound"
     }
    ],
-   "noteTitle": "Label the diagram below."
+   "noteTitle": "Termite mound"
   },
   {
    "from": 38,

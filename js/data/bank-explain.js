@@ -226,4 +226,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-some-views-on-the-use-of-headphones",
   "p3-songs-of-ourselves",
   "p3-star-performers",
+  "p3-tasmanias-museum-of-old-and-new-art",
+  "p3-termite-mounds",
+  "p3-the-accidental-scientist",
 ]);
