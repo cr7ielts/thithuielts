@@ -1,0 +1,31 @@
+{
+ "id": "p2-urban-regeneration-an-award-winning-redevelopment-project-in",
+ "q": {
+  "14": {"ev": ["Tracks, sheds and warehouses belonging to three old railway stations"],
+         "why": "Đoạn A mô tả khu Gleisdreieck hình thành từ giao điểm các tuyến đường sắt, với đường ray, nhà kho của ba nhà ga cũ → iv (The remains of a railway system). Bẫy: ii (chi tiết kiến trúc nhà ga) không được mô tả."},
+  "15": {"ev": ["As the railway infrastructure gradually ceased to be used, the whole area of Gleisdreieck became increasingly run down and abandoned"],
+         "why": "Đoạn B: đường sắt ngừng dùng, khu vực bị bỏ hoang, thành bãi rác, bị bức tường Berlin cô lập → viii (Reasons why the area had become neglected)."},
+  "16": {"ev": ["It was necessary to stimulate the development of sixteen new hectares of local amenities that would be capable of integrating different generations and social groups"],
+         "why": "Đoạn C: mục tiêu của dự án — kết nối các khu dân cư, phát triển tiện ích gắn kết nhiều thế hệ, hài hoà với thiên nhiên, bảo tồn di sản đường sắt → i (Objectives of the regeneration project)."},
+  "17": {"ev": ["The project as a whole was planned around a large central meadow, intersected from east to west by a concrete footpath, and from north to south by a pair of railway lines."],
+         "why": "Đoạn D: các cách đi qua khu đất — lối đi bê tông đông – tây, đường ray bắc – nam, cầu thang vượt độ chênh 4 m → vii (Ways of crossing the site)."},
+  "18": {"ev": ["The edges of the park are finished with a collection of distinctive, functional spaces"],
+         "why": "Đoạn E: đặc điểm và tiện ích của công viên — sân hiên nắng, rừng cây, xích đu, nhà trẻ, sân thể thao, chỗ trượt ván → iii (Features and facilities of the completed development)."},
+  "19": {"ev": ["The heart of Berlin now has a new green lung"],
+         "why": "Đoạn F: đánh giá tích cực về công viên đã hoàn thành — 'lá phổi xanh' mới của Berlin, trật tự tổng thể vững chắc → v (A positive evaluation of the finished project)."},
+  "20": {"ev": ["the German Museum of Technology was established there, attracting large numbers of visitors and giving visibility to the site"],
+         "why": "Đáp án B và C (không theo thứ tự). B — có một điểm thu hút du khách: Bảo tàng Công nghệ Đức thu hút đông khách."},
+  "21": {"ev": ["More importantly, the unification of the formerly divided city gave the zone more centrality"],
+         "why": "Đáp án B và C. C — nằm ở trung tâm thành phố sau khi tái thống nhất. Bẫy: A sai vì bài không nói loài quý hiếm; D sai vì đường sắt đã bỏ không."},
+  "22": {"ev": ["capable of integrating different generations and social groups in a sustainable way"],
+         "why": "Đáp án A và D (không theo thứ tự). A — gắn kết người ở các độ tuổi khác nhau: tiện ích nhằm hoà nhập nhiều thế hệ ('different generations' = different ages)."},
+  "23": {"ev": ["the need to reconcile these goals with the conservation of railway heritage also emerged"],
+         "why": "Đáp án A và D. D — bảo tồn di tích công nghiệp: cần dung hoà mục tiêu với việc bảo tồn di sản đường sắt. Bẫy: B, C, E không phải mục tiêu được nêu."},
+  "24": {"ev": ["The project as a whole was planned around a large central meadow, intersected from east to west by a concrete footpath, and from north to south by a pair of railway lines."],
+         "why": "Tóm tắt: giữa công viên là một ___, có lối đi bộ và hai đường ray. Bài: một đồng cỏ (meadow) lớn ở trung tâm → meadow."},
+  "25": {"ev": ["Once a month, a train slowly travels along these lines from its parking shed to the German Museum of Technology."],
+         "why": "Tóm tắt: một đoàn tàu chạy chậm giữa nơi đỗ và một ___. Bài: từ nhà đỗ tới Bảo tàng Công nghệ Đức (museum) → museum."},
+  "26": {"ev": ["The edges of the park are finished with a collection of distinctive, functional spaces, for example a nursery, sports fields"],
+         "why": "Tóm tắt: các khu thể thao, giải trí nằm quanh ___ của khu đất. Bài: rìa (edges) công viên có sân thể thao, chỗ trượt ván… → edges."}
+ }
+}

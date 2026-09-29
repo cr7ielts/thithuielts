@@ -157,4 +157,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-the-return-of-monkey-life",
   "p2-treasures-of-the-deep",
   "p2-understanding-climate-change",
+  "p2-urban-regeneration-an-award-winning-redevelopment-project-in",
+  "p2-war-of-the-plants",
+  "p2-what-does-performance-involve",
 ]);

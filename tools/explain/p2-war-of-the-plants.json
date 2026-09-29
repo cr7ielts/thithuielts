@@ -1,0 +1,31 @@
+{
+ "id": "p2-war-of-the-plants",
+ "q": {
+  "14": {"ev": ["In fact, it is necessary for the chemicals to be released from the seed coat so that the seed can germinate."],
+         "why": "Thông tin: cây dùng hoá chất trong quá trình sinh sản. Đoạn D: hạt cà độc dược phải giải phóng hoá chất từ vỏ hạt mới nảy mầm được → D."},
+  "15": {"ev": ["the sacs contain a natural adhesive and the unsuspecting insect landing on such a leaf and rupturing a trichome sac is held onto the plant"],
+         "why": "Thông tin: cây dùng một loại keo để chống bị tấn công. Đoạn B: túi trên lông chứa chất dính tự nhiên giữ côn trùng lại → B."},
+  "16": {"ev": ["Spinifex grass, a plant native to Australia, provides a notable example.", "Many plants, such as the sunflower, have hairy leaves which are rough to the touch."],
+         "why": "Thông tin: hai ví dụ tự vệ không dùng hoá chất. Đoạn A: cỏ spinifex với lá cuộn, lông; hướng dương với lá nhám → A."},
+  "17": {"ev": ["Chemical interactions that occur between plants are known as 'allelopathy"],
+         "why": "Thông tin: định nghĩa thuật ngữ allelopathy. Đoạn C: tương tác hoá học giữa các cây gọi là 'allelopathy' → C."},
+  "18": {"ev": ["an insect landing on a tomato leaf and rupturing the sac is exposed to a toxic chemical which will deter it from feeding on that plant in future"],
+         "why": "Thông tin: mô tả cây dùng hoá chất để ngăn kẻ săn mồi. Đoạn B: chất độc trên lá cà chua, chất kích ứng ở cây tầm ma → B (dùng lần hai)."},
+  "19": {"ev": ["Harnessing allelopathy is highly attractive to the farming industry"],
+         "why": "Thông tin: lợi ích của việc dùng hoá chất từ cây để diệt cỏ dại. Đoạn F: giảm chi phí thuốc diệt cỏ khổng lồ, đáp ứng lo ngại môi trường, sản phẩm tự nhiên bán giá cao → F."},
+  "20": {"ev": ["Allelopathic chemicals function in quite subtle ways. Generally they are active in small quantities"],
+         "why": "Thông tin: đặc điểm của hoá chất allelopathic. Đoạn E: tác dụng ở lượng nhỏ, chỉ với một số cây, không để lại tồn dư, có tác dụng hiệp đồng → E."},
+  "21": {"ev": ["spinifex has developed tightly rolled leaves which reduce the effects of drought stress"],
+         "why": "Thông tin: đặc điểm vật lý giúp một loài cây giữ nước. Đoạn A: lá cuộn chặt và lông bên trong lá cỏ spinifex giúp giảm mất nước → A (dùng lần hai)."},
+  "22": {"ev": ["In the leaves of the nettle plant these trichomes resemble miniature hypodermic syringes."],
+         "why": "'Những ống tiêm' ở cây tầm ma chính là các lông tuyến ('these trichomes' chỉ glandular trichomes vừa nói ở trên) → TRUE."},
+  "23": {"ev": ["On the whole, weeds are far more physically and chemically aggressive than crop and pasture species."],
+         "why": "Bài chỉ nói cỏ dại hung hăng hơn cây trồng về cả vật lý lẫn hoá học, không so sánh sự phát triển của cây dùng allelopathy với cây chỉ dựa vào đặc điểm vật lý → NOT GIVEN."},
+  "24": {"ev": ["It has also been found that the activity of these chemicals may be synergistic, that is, two or more such substances may combine", "These are the very attributes which are being targeted in the current development of synthetic herbicides"],
+         "why": "Câu hỏi: nghiên cứu thuốc diệt cỏ tổng hợp chủ yếu tập trung vào từng hoá chất riêng lẻ. Bài: các đặc điểm được nhắm tới gồm cả tác dụng hiệp đồng khi nhiều chất kết hợp → không phải từng chất riêng → FALSE."},
+  "25": {"ev": ["as at least half of the more than A$200-million annual cost of crop protection in Australia is spent on herbicides"],
+         "why": "Câu hỏi: thuốc diệt cỏ tốn của nông dân Úc hơn 200 triệu đô mỗi năm. Bài: 200 triệu là tổng chi phí bảo vệ cây trồng; thuốc diệt cỏ chỉ chiếm ít nhất một nửa → FALSE."},
+  "26": {"ev": ["Allelopathic chemicals may be harvested for development as `natural herbicides'"],
+         "why": "Hai ý chính: cây tự vệ bằng nhiều cách, và hoá chất trong cỏ dại có thể mang lại lợi ích thực tế cho nông nghiệp (thuốc diệt cỏ tự nhiên, giảm chi phí) → D."}
+ }
+}
