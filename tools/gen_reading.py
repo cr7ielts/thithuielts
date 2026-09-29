@@ -47,6 +47,7 @@ FIXES = {
     'p3-the-accidental-scientist': ({}, {38: 'Horace Walpole / Walpole'}),
     'p3-the-analysis-of-fear': ({}, {36: 'age / ages / their age', 37: 'two weeks / 2 weeks / two weeks old', 39: 'good motor control / motor control'}),
     'p3-the-fruit-book': ({}, {33: 'forest fruit / fruit / forest fruits', 34: 'fibre / fiber', 37: 'piquia trees / piquia / piquia tree', 40: 'non-timber forest products / NTFPs / non-timber forest products (NTFPs)'}),
+    'p3-the-hazards-of-multitasking': ({}, {38: 'new memories / memories', 39: 'new skills / skills'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
