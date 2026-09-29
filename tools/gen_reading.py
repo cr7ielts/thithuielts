@@ -37,6 +37,7 @@ FIXES = {
     'p2-why-do-we-need-the-arts': ({}, {25: 'A,C', 26: 'A,C'}),
     'p3-architecture-in-britain': ({}, {34: 'status and wealth / wealth and status / status wealth / wealth status', 37: 'furniture and textiles / textiles and furniture / furniture textiles / textiles furniture', 38: 'Edwin Lutyens / Lutyens'}),
     'p3-insect-inspired-robots': ({}, {35: 'Sahara desert / Sahara / the Sahara desert', 36: 'polarised light / polarized light'}),
+    'p3-keeping-the-fun-in-funfairs': ({}, {33: 'weight, position / weight and position / position and weight / position, weight'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }

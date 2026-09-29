@@ -193,4 +193,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-improving-patient-safety",
   "p3-innovation-in-business",
   "p3-insect-inspired-robots",
+  "p3-inside-the-mind-of-a-fan",
+  "p3-jean-piaget-1896-1980",
+  "p3-keeping-the-fun-in-funfairs",
 ]);
