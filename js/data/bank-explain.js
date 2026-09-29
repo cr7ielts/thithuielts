@@ -244,4 +244,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-the-new-zealand-writer-margaret-mahy",
   "p3-the-origin-of-language",
   "p3-the-peopling-of-patagonia",
+  "p3-the-pirah-people-of-brazil",
+  "p3-the-placebo-effect",
+  "p3-the-psychology-of-new-product-adoption",
 ]);
