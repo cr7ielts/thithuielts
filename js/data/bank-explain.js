@@ -223,4 +223,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-sea-change-for-salinity",
   "p3-sign-baby-sign",
   "p3-sir-francis-ronalds-1788-1873",
+  "p3-some-views-on-the-use-of-headphones",
+  "p3-songs-of-ourselves",
+  "p3-star-performers",
 ]);
