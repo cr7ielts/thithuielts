@@ -163,4 +163,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-what-is-an-unfair-advantage-in-sport",
   "p2-who-wrote-shakespeare-s-plays",
   "p2-why-do-singers-lose-their-voices",
+  "p2-why-do-we-need-sleep",
+  "p2-why-do-we-need-the-arts",
+  "p2-why-do-we-use-language",
 ]);

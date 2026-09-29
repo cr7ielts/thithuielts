@@ -33,6 +33,8 @@ FIXES = {
     'p2-the-origin-and-development-of-applause': ({}, {23: 'silence', 24: 'opera'}),  # key ghi chữ cái cho câu điền từ
     'p2-the-problem-of-graffiti': ({}, {21: 'D,E', 22: 'D,E', 23: 'social history', 24: 'tag'}),  # key lệch dòng từ câu 21
     'p2-urban-regeneration-an-award-winning-redevelopment-project-in': ({}, {22: 'A,D', 23: 'A,D', 24: 'meadow', 25: 'museum'}),  # key lệch dòng từ câu 22
+    'p2-why-do-we-need-sleep': ({}, {26: 'B,E', 27: 'B,E', 28: 'fatigue', 29: 'insomnia'}),  # key lệch chữ cái
+    'p2-why-do-we-need-the-arts': ({}, {25: 'A,C', 26: 'A,C'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
