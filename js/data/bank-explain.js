@@ -96,4 +96,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-boring-buildings",
   "p2-born-to-trade",
   "p2-bristlecone-pines",
+  "p2-can-a-global-database-of-fossils-help-us-predict-the-future-",
+  "p2-corporate-social-responsibility",
+  "p2-decision-fatigue",
 ]);
