@@ -1,0 +1,83 @@
+{
+ "id": "p1-a-brome-lives-on-how-a-british-grass-escaped-extinction",
+ "q": {
+  "1": {
+   "ev": [
+    "By 1972, it had vanished from its last toehold - two hay fields at Pampisford, near Cambridge."
+   ],
+   "why": "Năm 1963 là năm Philip Smith thu thập hạt giống. Cây biến mất khỏi nơi cuối cùng ngoài tự nhiên vào năm 1972, tức là sau 1963 vẫn còn thấy ngoài tự nhiên → FALSE. Bẫy: nhầm năm 1963 với năm biến mất."
+  },
+  "2": {
+   "ev": [
+    "he decided to astonish his colleagues at a meeting of the Botanical Society in Manchester in 1979, where he was booked to talk about his research on the evolution of the brome grasses."
+   ],
+   "why": "Smith mang hai chậu cỏ ra đúng trong buổi ông được mời thuyết trình về nghiên cứu của mình. Trưng bày (exhibition) kết hợp với bài giảng (lecture) → TRUE."
+  },
+  "3": {
+   "ev": [
+    "As Smith points out, interrupted brome is not particularly attractive and has no commercial value."
+   ],
+   "why": "Bài nói loài cỏ này không có giá trị thương mại, và hiện chỉ được trồng ở các vườn thực vật (Kew, Edinburgh, Cambridge) và đang chờ đưa lại ra đồng. Không phải cây trồng thương mại → FALSE."
+  },
+  "4": {
+   "ev": [
+    "The conservation organisation English Nature has included interrupted brome in its Species Recovery Programme"
+   ],
+   "why": "Bài nhắc English Nature đưa loài cỏ vào chương trình phục hồi, nhưng không nói gì về việc Smith làm tư vấn cho tổ chức này. Smith chỉ được giới thiệu là người điều hành School of Plant Sciences ở Edinburgh → NOT GIVEN."
+  },
+  "5": {
+   "ev": [
+    "So close is the relationship that interrupted brome was originally deemed to be a mere variety of soft brome by the great Victorian taxonomist Professor Hackel."
+   ],
+   "why": "Ban đầu interrupted brome bị coi chỉ là một biến thể của soft brome (Hackel). Đến năm 1895, Druce mới thuyết phục giới thực vật học công nhận nó là loài riêng. Vậy trước 1895 nó được xem là 'soft brome' → TRUE (theo đáp án của đề)."
+  },
+  "6": {
+   "ev": [
+    "By 1650, these legumes were increasingly used for their soil-enriching qualities, serving as 'green manure' to boost grain yields."
+   ],
+   "why": "Thế kỷ 17 cây họ đậu dùng cho hai mục đích: làm thức ăn cho gia súc (đầu những năm 1600) và làm 'phân xanh' giúp đất màu mỡ (đến 1650) → TRUE."
+  },
+  "7": {
+   "ev": [
+    "Its seeds cannot survive long in the soil. Each spring, the brome relied on farmers to re-sow its seeds with their animal feed crops"
+   ],
+   "why": "Hạt không tồn tại lâu trong đất; mỗi mùa xuân cây phụ thuộc vào nông dân gieo lại hạt cùng cây thức ăn gia súc. Nghĩa là nó cần được thu hoạch và gieo lại mới sống được → TRUE."
+  },
+  "8": {
+   "ev": [
+    "Any farmer willing to foster this unique contribution to the world's flora can rest assured that the grass will never become an invasive pest."
+   ],
+   "why": "Cỏ không trở thành loài xâm lấn vì nó không tự lan ra được (hạt không sống lâu trong đất), chứ không phải nhờ thuốc diệt cỏ. Câu hỏi nói 'chỉ có thuốc diệt cỏ hiện đại' ngăn điều đó → FALSE."
+  },
+  "9": {
+   "ev": [
+    "interrupted brome was originally deemed to be a mere variety of soft brome by the great Victorian taxonomist Professor Hackel."
+   ],
+   "why": "Hackel coi interrupted brome chỉ là một biến thể (variety) của soft brome, tức xếp nó vào một loài khác → H (classified interrupted brome as a part of another species)."
+  },
+  "10": {
+   "ev": [
+    "decided that it deserved species status, and convinced the botanical world of it."
+   ],
+   "why": "Druce cho rằng nó xứng đáng là một loài riêng và thuyết phục được giới thực vật học ('convinced' = 'persuaded others') → C."
+  },
+  "11": {
+   "ev": [
+    "According to agricultural historian Joan Thirsk, these legumes appeared in Britain in the early 1600s."
+   ],
+   "why": "Joan Thirsk xác định thời điểm các cây họ đậu (sainfoin, lucerne, clover) xuất hiện ở Anh: đầu những năm 1600 → G (dated the arrival in Britain of sainfoin)."
+  },
+  "12": {
+   "ev": [
+    "Nathaniel Fiennes's Sainfoin Improved, published in 1671, helped to spread the word."
+   ],
+   "why": "Cuốn sách bán chạy 'Sainfoin Improved' (1671) của Nathaniel Fiennes 'helped to spread the word' — giúp lan truyền việc trồng cây họ đậu để cải tạo đất. Tức là khuyến khích nông dân trồng cây họ đậu → F."
+  },
+  "13": {
+   "ev": [
+    "Although the credit for the 'discovery' of interrupted brome goes to a Miss A M Barnard, who collected specimens at Odsey, Bedfordshire, in 1849"
+   ],
+   "why": "Barnard được ghi công 'phát hiện' loài cỏ này: bà thu thập mẫu vật đầu tiên năm 1849 → A (gathered the first samples). Không chọn E vì Pampisford gắn với Philip Smith."
+  }
+ }
+}

@@ -1,4 +1,15 @@
 // Danh sách bài Reading đã có giải thích chi tiết (sinh bởi tools/gen_explain.py). Nội dung: js/data/explain/<id>.json
 export const EXPLAIN_IDS = new Set([
+  "p1-a-brief-history-of-humans-and-food",
+  "p1-a-brome-lives-on-how-a-british-grass-escaped-extinction",
+  "p1-a-look-at-the-history-of-poetry",
+  "p1-a-survivors-story",
+  "p1-ahead-of-its-time",
+  "p1-ambergris",
+  "p1-an-early-cultural-tourist",
+  "p1-an-important-language-development",
+  "p1-andrew-carnegie-industrialist-and-philanthropist",
+  "p1-australian-artist-margaret-preston",
+  "p1-australias-airborne-dentists",
   "p1-salt",
 ]);
