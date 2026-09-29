@@ -199,4 +199,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-language-strategy-in-multinational-companies",
   "p3-lets-teach-them-how-to-teach",
   "p3-living-dunes",
+  "p3-looking-at-daily-life-in-ancient-rome",
+  "p3-looking-for-inspiration",
+  "p3-manage-your-energy-not-your-time",
 ]);

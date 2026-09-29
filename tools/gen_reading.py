@@ -39,6 +39,7 @@ FIXES = {
     'p3-insect-inspired-robots': ({}, {35: 'Sahara desert / Sahara / the Sahara desert', 36: 'polarised light / polarized light'}),
     'p3-keeping-the-fun-in-funfairs': ({}, {33: 'weight, position / weight and position / position and weight / position, weight'}),
     'p3-language-strategy-in-multinational-companies': ({}, {34: 'a luxury / luxury / luxuries / one of the first luxuries', 35: 'a language strategy / language strategy', 38: '90 hours / roughly 90 hours / ninety hours'}),
+    'p3-looking-for-inspiration': ({}, {33: 'scalp electrodes / electrodes', 34: 'inspiration / inspiration and elaboration', 35: 'alpha waves / alpha wave activity'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
