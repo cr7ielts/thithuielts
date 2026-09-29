@@ -28,6 +28,8 @@ FIXES = {
     # key.docx lấy nhầm tiêu đề mục ("The ships", "The races", "The rewards") làm đáp án;
     # đáp án đúng theo bài trùng "...an era of competition between cargo ships"
     'p1-the-clipper-races': ({}, {7: 'sails', 9: 'Challenger', 13: 'money'}),
+    # key.docx lặp đáp án chọn 3 chữ (C,E,F) sang câu 8-10; đáp án đúng lấy từ bài đọc
+    'p1-building-a-castle': ({}, {8: 'masons', 9: 'holes', 10: 'metal wedges / wedges'}),
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }
 
@@ -40,7 +42,7 @@ def apply_fix(sid, groups, key):
         if g is None: raise SystemExit(f'{sid}: không thấy nhóm {old} để sửa')
         if new is None: groups.remove(g)
         else: g['from'], g['to'] = (int(x) for x in new.split('-'))
-    for n, v in adds.items(): key[n] = [v]
+    for n, v in adds.items(): key[n] = [a.strip() for a in v.split('/')]
     groups.sort(key=lambda g: g['from'])
 
 

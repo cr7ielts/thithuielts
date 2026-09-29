@@ -1,0 +1,31 @@
+{
+ "id": "p1-william-gilbert-and-magnetism",
+ "q": {
+  "1": {"ev": ["The 16th and 17th centuries saw two great pioneers of modern science: Galileo and Gilbert."],
+        "why": "Đoạn A giới thiệu Galileo và Gilbert — hai nhà tiên phong của khoa học hiện đại, và những gì người xưa biết về điện, từ trước họ → v (Pioneers of early science)."},
+  "2": {"ev": ["Born into an eminent local family in Colchester, Essex, on 24 May 1544, he went to grammar school and then studied medicine"],
+        "why": "Đoạn B kể về xuất thân, việc học và những năm đầu đời của Gilbert → i (Early years of Gilbert)."},
+  "3": {"ev": ["He was a very successful and eminent doctor.", "He was also appointed personal physician to Queen Elizabeth I and was later knighted by her."],
+        "why": "Đoạn C nói về thành công nghề nghiệp (bác sĩ nổi tiếng, chủ tịch Hội Hoàng gia, ngự y của Nữ hoàng, được phong tước hiệp sĩ) → vi (Professional and social recognition). Bẫy: vii chỉ là một chi tiết trong đoạn, không bao quát cả đoạn."},
+  "4": {"ev": ["Gilbert was first interested in chemistry but later changed his focus because alchemy contained too great a portion of mysticism"],
+        "why": "Đoạn D kể việc Gilbert chuyển từ hoá học sang vật lý, nghiên cứu từ tính → x (His change of focus). Bẫy: iii (sự phát triển của hoá học) không phải ý chính."},
+  "5": {"ev": ["He investigated the nature of magnetism and electricity, and he even coined the word \"electric\"."],
+        "why": "Đoạn E trình bày các phát hiện của Gilbert về từ tính: từ hoá kim loại, đặt tên cực bắc/nam của nam châm… → ix (His discovery about magnetism)."},
+  "6": {"ev": ["He also questioned traditional astronomical beliefs."],
+        "why": "Đoạn F nói Gilbert đặt câu hỏi về thiên văn học truyền thống: sao ở khoảng cách khác nhau, Trái Đất như nam châm khổng lồ → iv (Questioning traditional astronomy)."},
+  "7": {"ev": ["His research method was revolutionary in that he used experiments rather than pure logic and reasoning"],
+        "why": "Đoạn G nói phương pháp nghiên cứu của ông mang tính cách mạng vì dựa vào thí nghiệm → ii (What was new about his scientific research method)."},
+  "8": {"ev": ["However, he is less well known than he deserves."],
+        "why": "Gilbert ít nổi tiếng hơn mức ông xứng đáng ('less well known than he deserves' = 'less famous than he should be') → TRUE."},
+  "9": {"ev": ["He was a very successful and eminent doctor. All this culminated in his election as president of the Royal Society. He was also appointed personal physician to Queen Elizabeth I"],
+        "why": "Gilbert đã là một bác sĩ rất thành công và danh tiếng, rồi mới được bổ nhiệm làm ngự y của Nữ hoàng Elizabeth I → TRUE."},
+  "10": {"ev": ["Gilbert was first interested in chemistry but later changed his focus because alchemy contained too great a portion of mysticism"],
+         "why": "Bài nói Gilbert mất hứng thú với giả kim thuật vì quá thần bí, nhưng không nói gì về việc ông mất niềm tin vào lý thuyết y học đương thời → NOT GIVEN."},
+  "11": {"ev": ["Gilbert also found that metals can be magnetised by rubbing materials such as fur on them."],
+         "why": "Đáp án C, D, E (không theo thứ tự). C — kim loại có thể bị từ hoá: Gilbert phát hiện kim loại có thể nhiễm từ khi chà xát bằng lông thú. Bẫy: A (biến kim loại) là niềm tin giả kim mà ông từ bỏ; B là mê tín của thuỷ thủ; F là phát hiện của du Fay."},
+  "12": {"ev": ["he believed that stars are not equidistant from the Earth"],
+         "why": "Đáp án C, D, E. D — các ngôi sao ở khoảng cách khác nhau so với Trái Đất: Gilbert tin sao không cách đều Trái Đất ('not equidistant')."},
+  "13": {"ev": ["he believed that the Sun and other stars wobble just as the Earth does around a crystal core"],
+         "why": "Đáp án C, D, E. E — Trái Đất lắc lư quanh trục: Gilbert cho rằng Mặt Trời và các sao lắc lư giống như Trái Đất quanh một lõi tinh thể."}
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "id": "p1-wood",
+ "q": {
+  "1": {"ev": ["supported by the recognition that they were less likely to collapse suddenly during earthquakes"],
+        "why": "Câu hỏi: người định cư nhận thấy nhà gỗ nguy hiểm hơn các loại nhà khác. Bài: nhà gỗ ít có khả năng sập đột ngột khi động đất → an toàn hơn → FALSE."},
+  "2": {"ev": ["Early explorers recognised the suitability of the tall, straight trunks of the kauri for constructing sailing vessels.", "So, from the early 1800s, huge amounts of this type of wood were sold to Australia and the UK for that purpose."],
+        "why": "Từ đầu những năm 1800, rất nhiều gỗ kauri được bán sang Úc và Anh để đóng thuyền buồm → TRUE."},
+  "3": {"ev": ["By the 1960s, plantation-grown timber was providing most of the country's sawn-timber needs, especially for construction."],
+        "why": "Bài chỉ nói gỗ rừng trồng cung cấp phần lớn gỗ cho xây dựng. Không so sánh chất lượng với gỗ rừng tự nhiên → NOT GIVEN."},
+  "4": {"ev": ["This amazing versatility has encouraged the development of an integrated forest-products industry"],
+        "why": "Câu hỏi: gỗ thông có ít công dụng hơn các loại gỗ khác. Bài: gỗ thông dùng làm bột giấy, cột, đồ nội thất, ván ép, hoá chất, nhiên liệu — cực kỳ đa dụng → FALSE."},
+  "5": {"ev": ["servicing around 20,000 new-house starts annually"],
+        "why": "Bài chỉ nói mỗi năm có khoảng 20.000 ngôi nhà mới được khởi công, không dự đoán nhu cầu nhà ở sẽ giảm → NOT GIVEN."},
+  "6": {"ev": ["Accordingly, the development of the export market is the key to the industry's growth and contribution to the national economy in decades to come."],
+        "why": "Thị trường nội địa nhỏ, nên phát triển xuất khẩu là chìa khoá để ngành gỗ tăng trưởng trong những thập kỷ tới → TRUE."},
+  "7": {"ev": ["until affected by the exchange fluctuations and shipping costs of recent years"],
+        "why": "Ngoài tỷ giá, yếu tố nào ảnh hưởng xấu tới xuất khẩu lâm sản? Bài: biến động tỷ giá và chi phí vận chuyển (shipping costs) → shipping costs."},
+  "8": {"ev": ["The forestry industry is New Zealand's third-largest export sector"],
+        "why": "Lâm nghiệp đứng thứ ba trong lĩnh vực nào của nền kinh tế? Bài: là ngành xuất khẩu lớn thứ ba (third-largest export sector) → export sector."},
+  "9": {"ev": ["by 2025 the forestry sector could be the country's biggest export earner, generating $20 billion a year and employing 60,000 people"],
+         "why": "Quy mô lực lượng lao động có thể đạt bao nhiêu vào năm 2025? Bài: sử dụng 60.000 người → 60,000."},
+  "10": {"ev": ["its ability to source large quantities of softwood from renewable forests"],
+         "why": "Loại gỗ nào có sẵn số lượng lớn từ rừng tái tạo ở New Zealand? Bài: gỗ mềm (softwood) → softwood."},
+  "11": {"ev": ["Consumers in several key wood markets are becoming more worried about sustainability"],
+         "why": "Khách hàng chính ngày càng lo ngại về khía cạnh nào? Bài: người tiêu dùng ở các thị trường gỗ chủ chốt ngày càng lo về tính bền vững (sustainability) → sustainability."},
+  "12": {"ev": ["in the northern hemisphere, Scandinavian countries have all expanded their forests"],
+         "why": "Ngoài Nam bán cầu, đối thủ chính là ai? Bài: ở Bắc bán cầu, các nước Scandinavia (Scandinavian countries) đã mở rộng rừng → Scandinavian countries."},
+  "13": {"ev": ["New Zealand faces competition from goods such as wood substitutes"],
+         "why": "Ngành lâm nghiệp phải cạnh tranh với nhóm sản phẩm nào? Bài: các sản phẩm thay thế gỗ (wood substitutes) như khung nhà bằng thép → wood substitutes."}
+ }
+}

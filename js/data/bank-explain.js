@@ -14,6 +14,7 @@ export const EXPLAIN_IDS = new Set([
   "p1-australias-cane-toad-problem",
   "p1-book-review-triumph-of-the-city",
   "p1-bovids",
+  "p1-building-a-castle",
   "p1-candles",
   "p1-caral-an-ancient-south-american-city",
   "p1-carnivorous-plants",
@@ -78,5 +79,8 @@ export const EXPLAIN_IDS = new Set([
   "p1-the-whale-goes-to-court",
   "p1-think-small",
   "p1-transport-and-transport-systems-during-the-roman-empire",
+  "p1-tunnelling-under-the-thames",
   "p1-what-lucy-taught-us",
+  "p1-william-gilbert-and-magnetism",
+  "p1-wood",
 ]);
