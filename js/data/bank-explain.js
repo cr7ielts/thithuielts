@@ -102,4 +102,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-do-animals-really-remember",
   "p2-egypts-ancient-boat-builders",
   "p2-flood-control-in-the-usa",
+  "p2-going-with-the-flow",
+  "p2-growing-food-in-cities",
+  "p2-growing-more-for-less",
 ]);
