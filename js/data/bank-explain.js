@@ -127,4 +127,7 @@ export const EXPLAIN_IDS = new Set([
   "p2-pantomime",
   "p2-paternity-leave",
   "p2-playing-soccer",
+  "p2-should-space-be-explored-by-robots-or-by-humans",
+  "p2-should-we-stop-eating-meat",
+  "p2-skyscraper-farming",
 ]);
