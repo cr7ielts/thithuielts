@@ -11,5 +11,10 @@ export const EXPLAIN_IDS = new Set([
   "p1-andrew-carnegie-industrialist-and-philanthropist",
   "p1-australian-artist-margaret-preston",
   "p1-australias-airborne-dentists",
+  "p1-australias-cane-toad-problem",
+  "p1-book-review-triumph-of-the-city",
+  "p1-bovids",
+  "p1-candles",
+  "p1-caral-an-ancient-south-american-city",
   "p1-salt",
 ]);
