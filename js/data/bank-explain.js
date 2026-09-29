@@ -108,4 +108,6 @@ export const EXPLAIN_IDS = new Set([
   "p2-healthy-buildings-productive-people",
   "p2-herbal-medicines",
   "p2-homo-ergaster",
+  "p2-how-are-deserts-formed",
+  "p2-how-do-plants-talk-to-each-other",
 ]);

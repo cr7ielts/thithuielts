@@ -1,0 +1,31 @@
+{
+ "id": "p2-how-do-plants-talk-to-each-other",
+ "q": {
+  "14": {"ev": ["But the plant research community did not accept this.", "By the late 1980s, most ecologists felt that Schultz and Baldwin's ideas had been discredited."],
+         "why": "Section A: giới nghiên cứu không chấp nhận ý tưởng cây 'báo động' cho nhau; cuối thập niên 1980 ý tưởng bị coi là mất uy tín → iii (The widespread rejection of an idea)."},
+  "15": {"ev": ["A decade later, however, a number of more carefully designed experiments began to yield convincing indications to the contrary."],
+         "why": "Section B: các thí nghiệm cẩn thận hơn đưa ra bằng chứng thuyết phục, khôi phục niềm tin vào giả thuyết cũ → vi (Evidence leading to renewed belief in a theory)."},
+  "16": {"ev": ["because it enhances the 'extended fitness' of the sender by aiding related plants of the same species"],
+         "why": "Section C trả lời câu hỏi cây gửi tín hiệu được lợi gì: tín hiệu giúp phối hợp phản ứng của chính cây, hoặc giúp cây họ hàng (kin selection) → viii (A suggested benefit to the sender of plant communication)."},
+  "17": {"ev": ["seems to have found proof that distress signals can be passed through the plants' roots"],
+         "why": "Section D: tín hiệu truyền qua rễ và qua mạng lưới nấm dưới đất → i (Sending messages underground)."},
+  "18": {"ev": ["she demonstrated that chili plants planted next to fennel plants developed more quickly than seedlings grown with other chili plants"],
+         "why": "Section E: cây ớt trồng cạnh cây thì là phát triển nhanh hơn → iv (One species accelerating growth in another)."},
+  "19": {"ev": ["Researchers believe that knowledge of this phenomenon could eventually be applied to agriculture, and lead to the cultivation of hardier crops."],
+         "why": "Section F: hiểu biết này có thể được ứng dụng vào nông nghiệp, tạo cây trồng khoẻ hơn → ii (Potential advantages for farmers)."},
+  "20": {"ev": ["distress signals can be passed through the plants' roots"],
+         "why": "Tóm tắt: cây có thể gửi thông điệp qua ___ của chúng. Bài: tín hiệu cấp cứu truyền qua rễ (roots) → roots."},
+  "21": {"ev": ["subjected the first in each row to conditions similar to those experienced in a drought"],
+         "why": "Tóm tắt: tạo điều kiện giống một ___ quanh cây đầu hàng. Bài: điều kiện tương tự hạn hán (drought) → drought."},
+  "22": {"ev": ["have been studying the labyrinths of hair-like fungi that occur around the roots of most plants"],
+         "why": "Tóm tắt: nghiên cứu ở Aberdeen tập trung vào mạng lưới ___ kết nối cây dưới đất. Bài: mạng nấm (fungi) dạng sợi quanh rễ → fungi."},
+  "23": {"ev": ["broad bean plants were infested with aphids -- small herbivorous insects"],
+         "why": "Tóm tắt: thí nghiệm với cây đậu tằm và côn trùng ăn cây gọi là ___. Bài: rệp (aphids) → aphids."},
+  "24": {"ev": ["'Applying our limited knowledge [of plant- communication mechanisms] to agriculture is a big jump,' says Johnson, 'but it is definitely on the horizon.'"],
+         "why": "Nghiên cứu giao tiếp của cây có thể giúp cải thiện nguồn lương thực: Johnson nói ứng dụng vào nông nghiệp là bước nhảy lớn nhưng chắc chắn sẽ tới → C."},
+  "25": {"ev": ["Karban agrees, saying, 'The interplant signaling we see may be a result of plants co-opting that process.'"],
+         "why": "Giao tiếp giữa cây có thể là hệ quả của cơ chế nội bộ giúp chính một cây: Karban đồng ý rằng tín hiệu giữa các cây có thể là do cây 'tận dụng' cơ chế tín hiệu bên trong → A."},
+  "26": {"ev": ["'When I did my PhD [in the late 1980s], all this stuff was considered very weird,' recalls Ariel Novoplansky. 'Today, there's no doubt."],
+         "why": "Thái độ với giao tiếp của cây đã thay đổi lớn trong vài thập kỷ gần đây: Novoplansky nói thời ông làm tiến sĩ ý tưởng này bị coi là kỳ quặc, nay không còn ai nghi ngờ → B."}
+ }
+}
