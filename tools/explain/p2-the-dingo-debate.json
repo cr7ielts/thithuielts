@@ -1,0 +1,31 @@
+{
+ "id": "p2-the-dingo-debate",
+ "q": {
+  "14": {"ev": ["is the world's longest fence, two meters high", "the fence separates the main types of livestock found in Australia"],
+         "why": "Thông tin: hàng rào ngăn dingo, đồng thời chia hai loại động vật không bản địa. Section E: hàng rào dài nhất thế giới ngăn dingo, phía này là bò, phía kia là cừu → E."},
+  "15": {"ev": ["Johnson says dingoes are the solution to this problem because they keep cat and fox populations under control."],
+         "why": "Thông tin: cách dingo giữ các loài cạnh tranh không lấn át. Section D: dingo kiểm soát số mèo và cáo, ăn hoặc giết chúng để giảm cạnh tranh → D."},
+  "16": {"ev": ["In 1860, the rabbit was unleashed on Australia by a wealthy landowner and by 1980 rabbits had covered most of the mainland. Rabbits provide huge prey base for two other introduced species"],
+         "why": "Thông tin: một loài ngoại lai phổ biến làm thức ăn cho loài khác. Section C: thỏ lan khắp lục địa, là nguồn mồi lớn cho mèo hoang và cáo → C."},
+  "17": {"ev": ["About 4,000 years ago, Asian sailors introduced dingoes to Australia."],
+         "why": "Thông tin: dingo đến Úc. Section B: khoảng 4.000 năm trước, thuỷ thủ châu Á đưa dingo tới Úc → B."},
+  "18": {"ev": ["These animals aren't capable of going after large prey like kangaroos, so they turn to calves. In their study, some of the highest rates of calf predation occurred in areas that had been baited."],
+         "why": "Thông tin: nghiên cứu chứng minh dingo phải ăn gia súc non. Section F: sau khi bị đánh bả, dingo non đơn độc không săn được kangaroo nên quay sang bắt bê → F."},
+  "19": {"ev": ["those aboard drop 1,000 small pieces of meat, one by one, onto the scrubland below, each piece laced with poison; this practice is known as baiting"],
+         "why": "Thông tin: mô tả một cách giết dingo. Section A: thả từ máy bay 1.000 miếng thịt tẩm độc — gọi là đánh bả → A."},
+  "20": {"ev": ["Dingo packs live in large, stable territories and generally have only one fertile female, which limits their rate of increase."],
+         "why": "Thông tin: cấu trúc bầy dingo ảnh hưởng tốc độ tăng số lượng. Section D: mỗi bầy thường chỉ có một con cái sinh sản, nên số lượng tăng chậm → D (dùng lần hai)."},
+  "21": {"ev": ["saying he is not convinced that they manage to catch cats that often, believing they are more likely to catch small native animals instead"],
+         "why": "Dingo có xu hướng săn động vật bản địa hơn là các loài săn mồi ngoại lai: Mark Clifford không tin dingo hay bắt được mèo, mà cho rằng chúng bắt động vật bản địa nhỏ → D."},
+  "22": {"ev": ["Stuart McKechnie, manager of Carlton Hill, complains that graziers' livelihoods are threatened when dingoes prey on cattle."],
+         "why": "Sự có mặt của dingo đe doạ thu nhập của một số người: McKechnie than phiền sinh kế của người chăn nuôi bị đe doạ khi dingo săn bò → A."},
+  "23": {"ev": ["In the 4,000 years that dingoes have been Australia, they have contributed to few, if any, extinctions, Johnson says."],
+         "why": "Dingo ít tác động tới sự tuyệt chủng của các loài ở Úc: Johnson nói trong 4.000 năm, dingo gây ra rất ít, nếu có, vụ tuyệt chủng → B."},
+  "24": {"ev": ["as the Tasmanian tiger disappeared completely from Australia, dingoes became Australia's top predators"],
+         "why": "Câu: dingo thay thế ___ làm loài săn mồi chính ở Úc. Bài: khi hổ Tasmania (Tasmanian tiger) biến mất, dingo thành kẻ săn mồi đầu bảng → Tasmanian tiger."},
+  "25": {"ev": ["When bad seasons follow, rabbit numbers are significantly reduced - and the dwindling but still large fox and cat populations are left with little to eat besides native mammals."],
+         "why": "Câu: cáo và mèo dễ săn động vật bản địa hơn khi có ít ___. Bài: khi thỏ (rabbits) giảm mạnh, cáo và mèo chỉ còn ăn thú bản địa → rabbits."},
+  "26": {"ev": ["an adaption to prevent overpopulation in the arid environment"],
+         "why": "Câu: động vật Úc sinh sản chậm như cách tự nhiên để tránh ___. Bài: thích nghi để tránh quá tải dân số (overpopulation) ở môi trường khô cằn → overpopulation."}
+ }
+}
