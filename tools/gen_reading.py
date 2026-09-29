@@ -45,6 +45,7 @@ FIXES = {
     'p3-sir-francis-ronalds-1788-1873': ({}, {32: 'letters and numbers / numbers and letters', 34: '800 km / 800 kilometres / 800 kilometers / some 800 km'}),
     'p3-star-performers': ({}, {33: '16 / sixteen', 35: 'coaches / their coaches'}),
     'p3-the-accidental-scientist': ({}, {38: 'Horace Walpole / Walpole'}),
+    'p3-the-analysis-of-fear': ({}, {36: 'age / ages / their age', 37: 'two weeks / 2 weeks / two weeks old', 39: 'good motor control / motor control'}),
     'p2-what-is-an-unfair-advantage-in-sport': ({}, {23: 'spirit', 24: 'drag'}),  # key ghi chữ cái cho câu điền từ
     'p1-the-history-of-colours-and-the-meanings-people-have-given-th': ({}, {7: 'caves'}),  # key ghi nhầm tiêu đề
 }

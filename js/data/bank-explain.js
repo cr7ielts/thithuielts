@@ -229,4 +229,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-tasmanias-museum-of-old-and-new-art",
   "p3-termite-mounds",
   "p3-the-accidental-scientist",
+  "p3-the-analysis-of-fear",
+  "p3-the-animal-connection",
+  "p3-the-art-of-deception",
 ]);
