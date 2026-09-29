@@ -1,0 +1,31 @@
+{
+ "id": "p2-how-well-do-people-concentrate",
+ "q": {
+  "14": {"ev": ["Those old enough can remember when talking on the land line meant sitting down, putting your feet up and chatting - not doing laundry, cooking dinner, sweeping the floor or answering the door as well."],
+         "why": "Thông tin: một tình huống trong nhà ngày xưa khi người ta không làm nhiều việc cùng lúc. Đoạn B: nói chuyện điện thoại bàn nghĩa là ngồi xuống thư thả, không vừa giặt đồ vừa nấu ăn → B."},
+  "15": {"ev": ["`our increasingly shorter attention spans probably have something to do with it.'"],
+         "why": "Thông tin: lời giải thích có thể cho việc người ta đổi việc thường xuyên ở nơi làm việc. Đoạn E: Mark cho rằng khả năng tập trung ngày càng ngắn có lẽ là nguyên nhân → E."},
+  "16": {"ev": ["That means devices like cellphones being banned at meetings. It means training yourself not to look at your computer every 20 seconds."],
+         "why": "Thông tin: gợi ý thực tế để xử lý vấn đề của đa nhiệm. Đoạn F: đặt ranh giới — cấm điện thoại trong cuộc họp, tập không nhìn máy tính 20 giây một lần → F."},
+  "17": {"ev": ["For some people, listening to music while working actually makes them more imaginative"],
+         "why": "Thông tin: ví dụ một hoạt động có thể tăng sự sáng tạo. Đoạn A: với một số người, nghe nhạc khi làm việc khiến họ giàu trí tưởng tượng hơn → A."},
+  "18": {"ev": ["If we're talking about doing two jobs requiring real concentration, like text-messaging and driving, this lost time, even a fraction of a second, can be fatal."],
+         "why": "Thông tin: tình huống đa nhiệm có thể gây nguy hiểm. Đoạn D: vừa nhắn tin vừa lái xe — mất dù một phần giây cũng có thể gây chết người → D."},
+  "19": {"ev": ["only one or two objects tend to activate your neurons, indicating that you're really only focusing on one or two items at a time"],
+         "why": "Khi có nhiều thứ, ta chỉ tập trung được vào vài vật: Miller thấy khi có nhiều kích thích thị giác, chỉ một hai vật kích hoạt neuron → B."},
+  "20": {"ev": ["`People actually performed faster in conditions where they were interrupted, but they were less efficient.'"],
+         "why": "Làm nhanh hơn không có nghĩa là làm tốt hơn: Mark nói người bị gián đoạn làm nhanh hơn nhưng kém hiệu quả hơn → D."},
+  "21": {"ev": ["It gives the illusion that you're simultaneously tasking, but you're not really."],
+         "why": "Ta không bao giờ thật sự làm hai việc cùng lúc dù có vẻ như vậy: Lehman nói đa nhiệm chỉ tạo ảo giác làm song song, thực ra chỉ là chuyển qua lại → A."},
+  "22": {"ev": ["Psychiatrist Edward Hallowell has termed the effects of multitasking `attention deficit trait', which he attributes entirely to the environment."],
+         "why": "Nguyên nhân của đa nhiệm nằm ở môi trường xung quanh: Hallowell quy hoàn toàn cho môi trường ('surroundings' = 'environment') → E."},
+  "23": {"ev": ["it took significantly longer to complete what they were doing when switching between more complicated tasks"],
+         "why": "Khi đa nhiệm, người ta mất nhiều thời gian hơn để hoàn thành việc phức tạp: nghiên cứu của Meyer cho thấy chuyển giữa các việc phức tạp tốn thời gian hơn đáng kể → C."},
+  "24": {"ev": ["But we're all familiar with what Lehman calls `email voice', when someone you're talking to on the phone suddenly appears not to be fully engaged with the conversation."],
+         "why": "Câu: thuật ngữ mô tả giọng người vừa làm việc khác vừa nói điện thoại là ___. Bài: Lehman gọi là 'email voice' → email voice."},
+  "25": {"ev": ["humans have a very large prefrontal cortex, which is the part of the brain that helps us switch and prioritize tasks"],
+         "why": "Câu: ___ là vùng não kiểm soát việc đa nhiệm. Bài: vỏ não trước trán (prefrontal cortex) giúp chuyển đổi và sắp xếp ưu tiên công việc → prefrontal cortex."},
+  "26": {"ev": ["That means devices like cellphones being banned at meetings."],
+         "why": "Câu: một giải pháp là không cho dùng điện thoại tại ___. Bài: cấm điện thoại trong các cuộc họp (meetings) → meetings."}
+ }
+}

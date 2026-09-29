@@ -111,4 +111,6 @@ export const EXPLAIN_IDS = new Set([
   "p2-how-are-deserts-formed",
   "p2-how-do-plants-talk-to-each-other",
   "p2-how-the-petri-dish-supports-scientific-advances",
+  "p2-how-well-do-people-concentrate",
+  "p2-ideal-homes",
 ]);

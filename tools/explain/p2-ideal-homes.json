@@ -1,0 +1,31 @@
+{
+ "id": "p2-ideal-homes",
+ "q": {
+  "14": {"ev": ["clay has many benefits over its industrialized version, brick"],
+         "why": "Thông tin: lý do một vật liệu xây dựng có lợi thế. Đoạn G: đất sét rẻ bằng nửa gạch, tạo việc làm, tốn ít nhiên liệu, cách nhiệt tốt, dễ tái chế → G."},
+  "15": {"ev": ["The buildings were inward-looking, which served the dual function of focusing attention on the courtyard, where family members spend time together"],
+         "why": "Thông tin: một thiết kế có lợi cho sự gắn kết trong gia đình. Đoạn E: nhà tháp gió hướng vào sân trong, nơi các thành viên gia đình quây quần → E."},
+  "16": {"ev": ["The raised structure ensures a cooling breeze comes up through the floorboards"],
+         "why": "Thông tin: ngôi nhà được thông gió từ bên dưới. Đoạn A: nhà kampung dựng trên cột, gió mát thổi lên qua sàn → A."},
+  "17": {"ev": ["Every home can do its own thing with the help of a solar panel and a storage battery."],
+         "why": "Thông tin: ví dụ về nguồn năng lượng tự cung tự cấp. Đoạn J: mỗi nhà có thể tự làm điện nhờ tấm pin mặt trời và ắc quy, không cần lưới điện quốc gia → J."},
+  "18": {"ev": ["If Los Angeles painted its roofs white, planted trees to shade buildings, and chose lighter-colored paving, it could reduce city temperatures by 3"],
+         "why": "Thông tin: các cách giảm nhiệt độ thành phố. Đoạn C: sơn mái nhà màu trắng, trồng cây che bóng, lát đường màu sáng → C."},
+  "19": {"ev": ["The builders of kampung houses \"had no knowledge of modern science or engineering but they came up with the perfect design,\" says Davis."],
+         "why": "Muhammad Peter Davis: người xây nhà kampung không có kiến thức khoa học hiện đại nhưng tạo ra thiết kế hoàn hảo → kiến thức truyền thống có thể hơn kiến thức hiện đại → D."},
+  "20": {"ev": ["According to Arthur Rosenfeld from the University of California, what California needs is white paint."],
+         "why": "Arthur Rosenfeld: California chỉ cần sơn trắng — một giải pháp rất đơn giản có thể tiết kiệm 170 triệu đô tiền điều hoà mỗi năm → G."},
+  "21": {"ev": ["Clay also generates work because people can find it, mould it, bake it and work it themselves."],
+         "why": "R van der Ley: đất sét rẻ hơn gạch và tạo công ăn việc làm → lựa chọn vật liệu có tác động kinh tế – xã hội → A."},
+  "22": {"ev": ["\"super-windows\", for example, which let in invisible light but can be \"tuned\" to either allow in, or reflect away, infrared solar radiation"],
+         "why": "Amory Lovins: 'siêu cửa sổ' có thể điều chỉnh để cho vào hoặc phản xạ bức xạ nhiệt, giúp đạt nhiệt độ tối ưu → một cải tiến tiết kiệm cả điều hoà lẫn sưởi → E."},
+  "23": {"ev": ["He has calculated that typical modern Malaysian houses are 5"],
+         "why": "Câu hỏi: nhiệt độ trong nhà hiện đại ở Malaysia thấp hơn bên ngoài. Bài: nhà hiện đại là những 'bẫy nhiệt', nóng hơn không khí bên ngoài 5 độ C → FALSE."},
+  "24": {"ev": ["But, globally, transportation is responsible for just 22 per cent of carbon dioxide emissions. The building sector is responsible for 31 per cent"],
+         "why": "Ngành xây dựng gây 31% lượng CO2, giao thông chỉ 22% → xây dựng có lỗi nhiều hơn giao thông trong nóng lên toàn cầu → TRUE."},
+  "25": {"ev": ["Throughout the Middle East today, wind towers are often little more than museum pieces."],
+         "why": "Câu hỏi: tháp gió hiện được dùng rộng rãi ở Trung Đông. Bài: ngày nay tháp gió thường chỉ như hiện vật bảo tàng, chỉ có vài ngoại lệ → FALSE."},
+  "26": {"ev": ["In the United States, Amory Lovins has promoted a range of low-energy technologies"],
+         "why": "Bài chỉ mô tả chức năng của 'siêu cửa sổ', không nói chi phí lắp đặt thấp hay cao → NOT GIVEN."}
+ }
+}
