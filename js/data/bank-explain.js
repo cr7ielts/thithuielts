@@ -184,4 +184,7 @@ export const EXPLAIN_IDS = new Set([
   "p3-crossing-the-threshold",
   "p3-decisions-decisions",
   "p3-does-class-size-matter",
+  "p3-flower-power",
+  "p3-game-theory",
+  "p3-grimms-fairy-tales",
 ]);
