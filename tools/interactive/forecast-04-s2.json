@@ -1,0 +1,178 @@
+{
+ "id": "forecast-04-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 12,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A - E. Which TWO kinds of people are the scholarships intended for?",
+   "options": [
+    {
+     "v": "A",
+     "t": "people working as temporary staff"
+    },
+    {
+     "v": "B",
+     "t": "people with management experience"
+    },
+    {
+     "v": "C",
+     "t": "people straight from college"
+    },
+    {
+     "v": "D",
+     "t": "people with at least three years' experience"
+    },
+    {
+     "v": "E",
+     "t": "people with or without qualifications"
+    }
+   ]
+  },
+  {
+   "from": 13,
+   "to": 14,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A - E. Which TWO things does Marie say about the hospitality industry in Scotland?",
+   "options": [
+    {
+     "v": "A",
+     "t": "It mainly attracts UK tourists."
+    },
+    {
+     "v": "B",
+     "t": "It pays high wages."
+    },
+    {
+     "v": "C",
+     "t": "It is very important for the Scottish economy."
+    },
+    {
+     "v": "D",
+     "t": "It is highly regarded by visitors."
+    },
+    {
+     "v": "E",
+     "t": "It is attracting a lot of investment."
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 15,
+     "text": "Why did Marie start working at the Rock Hotel?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It was the only job available."
+      },
+      {
+       "v": "B",
+       "t": "She needed a job with flexible working hours."
+      },
+      {
+       "v": "C",
+       "t": "She wanted a job working with people."
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "text": "What did the scholarship application process involve?",
+     "options": [
+      {
+       "v": "A",
+       "t": "giving a presentation"
+      },
+      {
+       "v": "B",
+       "t": "writing a report about the Rock Hotel"
+      },
+      {
+       "v": "C",
+       "t": "researching the role of hotel manager"
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "What does Marie say about the other winners she met?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They were not as old as she expected."
+      },
+      {
+       "v": "B",
+       "t": "They were doing a variety of jobs in the hotel sector."
+      },
+      {
+       "v": "C",
+       "t": "Most of them had applied for scholarships before."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "Marie says that at the Florida Beach Hotel, every member of staff",
+     "options": [
+      {
+       "v": "A",
+       "t": "takes part in annual customer service training sessions."
+      },
+      {
+       "v": "B",
+       "t": "is responsible for providing an efficient service."
+      },
+      {
+       "v": "C",
+       "t": "is expected to interact with visitors."
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "What did Marie find out about people's attitude to visiting Scotland?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Most people would be interested in visiting it."
+      },
+      {
+       "v": "B",
+       "t": "People knew a surprising amount about it."
+      },
+      {
+       "v": "C",
+       "t": "People only wanted to see a limited number of places."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "What improvement has Marie introduced at the Rock Hotel?",
+     "options": [
+      {
+       "v": "A",
+       "t": "getting better feedback from customers"
+      },
+      {
+       "v": "B",
+       "t": "providing more information for customers"
+      },
+      {
+       "v": "C",
+       "t": "making contact with more customers"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

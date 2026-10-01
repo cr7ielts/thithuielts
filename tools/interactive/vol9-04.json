@@ -1,0 +1,435 @@
+{
+ "id": "vol9-04",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Weekend Course Booking",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Booking for: a guitar workshop"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Start date: {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Course code: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Previous course attended: Editing {{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Nick {{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: 27 Hawthorn {{5}}, Bristol, BS4 2QG"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Contact number: 07707 438 297"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Age: 26"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Occupation: {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Dietary requests: no {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "One-to-one lesson selected: {{8}} guitar"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "First heard about us from: a {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Additional request: would like {{10}} if possible"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "What is the main attraction in each of the following areas of the festival? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 11-15.",
+   "noteTitle": "Areas of the festival",
+   "bank": [
+    {
+     "v": "A",
+     "t": "talks about gardening"
+    },
+    {
+     "v": "B",
+     "t": "live music"
+    },
+    {
+     "v": "C",
+     "t": "an art exhibition"
+    },
+    {
+     "v": "D",
+     "t": "a children's playground"
+    },
+    {
+     "v": "E",
+     "t": "evening entertainment"
+    },
+    {
+     "v": "F",
+     "t": "a competition for adults"
+    },
+    {
+     "v": "G",
+     "t": "vegetable market"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Bridge Street"
+    },
+    {
+     "n": 12,
+     "text": "King's Park"
+    },
+    {
+     "n": 13,
+     "text": "Oakvale School"
+    },
+    {
+     "n": 14,
+     "text": "Green Road"
+    },
+    {
+     "n": 15,
+     "text": "Sun Lane"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Denford Festival",
+   "questions": [
+    {
+     "n": 16,
+     "text": "What does Sam say about the festival tickets?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They allow you to get into all the festival events."
+      },
+      {
+       "v": "B",
+       "t": "They are more expensive to buy on the day."
+      },
+      {
+       "v": "C",
+       "t": "They have nearly all been sold."
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "On the last night of the festival, visitors will be able to",
+     "options": [
+      {
+       "v": "A",
+       "t": "take part in a dance."
+      },
+      {
+       "v": "B",
+       "t": "go to a theatre performance."
+      },
+      {
+       "v": "C",
+       "t": "watch some fireworks."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "What will be provided for international visitors?",
+     "options": [
+      {
+       "v": "A",
+       "t": "discounts on accommodation"
+      },
+      {
+       "v": "B",
+       "t": "tours of the local area"
+      },
+      {
+       "v": "C",
+       "t": "a guide written in different languages"
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "What information is given about car park A?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is bigger than car park B."
+      },
+      {
+       "v": "B",
+       "t": "It is closer to town than car park B."
+      },
+      {
+       "v": "C",
+       "t": "It will close earlier than car park B."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "What change have the organisers made to the programme this year?",
+     "options": [
+      {
+       "v": "A",
+       "t": "replacing the programme with an app"
+      },
+      {
+       "v": "B",
+       "t": "reducing the number of programmes printed"
+      },
+      {
+       "v": "C",
+       "t": "introducing a charge for the programmes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 23,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Action Research Course for Practising Teachers",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Course leader: Alan Cumner (get his recent book called '{{21}}')"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Course objectives: to develop skills in:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "using different research techniques"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "researching as part of a {{22}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{23}} (in a collaborative culture)"
+    }
+   ]
+  },
+  {
+   "from": 24,
+   "to": 30,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Course Components",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Observational techniques"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Using observation checklists – to record aspects of lesson, e.g. {{24}} of pupils"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Writing a {{25}} – used to improve skill of reflection"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "{{26}} – try out on fellow students (in classroom {{27}})"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Non-observational techniques"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Analysing {{28}} – use statistics based on own students"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Using questionnaires – use the {{29}} to find respondents"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Using {{30}} – own choice of respondents"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 33,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Digital natives and digital immigrants",
+   "questions": [
+    {
+     "n": 31,
+     "text": "What impact does Marc Prensky believe that digital technology has had on young people?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It has altered their thinking patterns."
+      },
+      {
+       "v": "B",
+       "t": "It has harmed their physical development."
+      },
+      {
+       "v": "C",
+       "t": "It has limited their brain capacity."
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "text": "Digital immigrants tend to access computers",
+     "options": [
+      {
+       "v": "A",
+       "t": "using their native language."
+      },
+      {
+       "v": "B",
+       "t": "less efficiently than young people."
+      },
+      {
+       "v": "C",
+       "t": "for less important information."
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "text": "What example is given of having a 'digital accent'?",
+     "options": [
+      {
+       "v": "A",
+       "t": "having less effective typing skills"
+      },
+      {
+       "v": "B",
+       "t": "doing things the old-fashioned way"
+      },
+      {
+       "v": "C",
+       "t": "being unable to understand instructions"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 34,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Which theorist makes each of the following points? Choose the correct letter, A, B or C, next to questions 34-40.",
+   "noteTitle": "Points made",
+   "bank": [
+    {
+     "v": "A",
+     "t": "Allen"
+    },
+    {
+     "v": "B",
+     "t": "James"
+    },
+    {
+     "v": "C",
+     "t": "Vander"
+    }
+   ],
+   "questions": [
+    {
+     "n": 34,
+     "text": "Current teaching methods don't work."
+    },
+    {
+     "n": 35,
+     "text": "Many students don't understand computers."
+    },
+    {
+     "n": 36,
+     "text": "Computer technology doesn't interest all students."
+    },
+    {
+     "n": 37,
+     "text": "Students can still learn the traditional way."
+    },
+    {
+     "n": 38,
+     "text": "Students still need to learn research skills."
+    },
+    {
+     "n": 39,
+     "text": "We should use computer games to teach."
+    },
+    {
+     "n": 40,
+     "text": "Computers can't replace educators."
+    }
+   ]
+  }
+ ]
+}

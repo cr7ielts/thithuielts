@@ -1,0 +1,133 @@
+{
+ "id": "vol8-01-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "Label the plan (see the plan on the test paper). Write the correct letter, A-H, next to questions 11-15.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "seating area"
+    },
+    {
+     "n": 12,
+     "text": "cushions"
+    },
+    {
+     "n": 13,
+     "text": "computer bench"
+    },
+    {
+     "n": 14,
+     "text": "café bar"
+    },
+    {
+     "n": 15,
+     "text": "newspapers"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 16,
+     "text": "The bookshop aims to",
+     "options": [
+      {
+       "v": "A",
+       "t": "sell as many books as possible."
+      },
+      {
+       "v": "B",
+       "t": "create an energetic environment."
+      },
+      {
+       "v": "C",
+       "t": "attract people to remain in the shop."
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "Children's books are located",
+     "options": [
+      {
+       "v": "A",
+       "t": "on the ground floor."
+      },
+      {
+       "v": "B",
+       "t": "on the highest level."
+      },
+      {
+       "v": "C",
+       "t": "midway up."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "To help parents to relax, the shop",
+     "options": [
+      {
+       "v": "A",
+       "t": "trains floor staff to take care of children."
+      },
+      {
+       "v": "B",
+       "t": "has a free nursery."
+      },
+      {
+       "v": "C",
+       "t": "provides professional child care."
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "The regular book readings are held",
+     "options": [
+      {
+       "v": "A",
+       "t": "to sell more books."
+      },
+      {
+       "v": "B",
+       "t": "as an author gathering."
+      },
+      {
+       "v": "C",
+       "t": "to bring in more money by charging."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "The poetry workshop encourages people",
+     "options": [
+      {
+       "v": "A",
+       "t": "to get their works published."
+      },
+      {
+       "v": "B",
+       "t": "to become professional poets."
+      },
+      {
+       "v": "C",
+       "t": "to read their poems in public."
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

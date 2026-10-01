@@ -44,6 +44,7 @@ DISCLAIMER = re.compile(r'(?i)^\s*(?:disclaimer\s*$|compiled, formatted, and lig
 
 def drop_junk(text):
     """bỏ header/footer của từng trang PDF để chúng không dính vào câu hỏi"""
+    text = text.replace('\ufffd', '•')     # dấu đầu dòng bị lỗi font khi xuất chữ
     out = []
     for ln in text.split('\n'):
         t = ln.replace('\x0c', ' ')
@@ -111,7 +112,7 @@ def blocks(text, want):
     khớp theo số câu đầu, rồi tới số câu cuối."""
     heads = []
     # "Questions 14-18" hoặc nhóm một câu "Question 40"
-    for m in re.finditer(r'(?im)^[^\S\n]*Questions?\s+(\d{1,2})(?:\s*(?:' + DASH + r'|to|and|&)\s*(\d{1,2}))?\b.*$', text):
+    for m in re.finditer(r'(?im)^[^\S\n]*(?:(?:PART|SECTION)\s*\d\s+)?Questions?\s+(\d{1,2})(?:\s*(?:' + DASH + r'|to|and|&)\s*(\d{1,2}))?\b.*$', text):
         if re.search(r'(?i)which are based on|should spend', m.group(0)): continue   # dòng dẫn cả bài
         heads.append((m.start(), m.end(), int(m.group(1)), int(m.group(2) or m.group(1))))
     hits, used = [], set()

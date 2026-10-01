@@ -1,0 +1,95 @@
+{
+ "id": "forecast-11-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Office Design",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Early 20th century"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "workers employed to do {{31}} were arranged in rows"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "1960s to present"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Variations in design of open-plan offices:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "first, workers had individual {{32}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "later, they had cubicles with high or low {{33}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "nowadays, workers may have to {{34}} a work area"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Survey results"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Attitudes of employees to open-plan designs:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "there is a lack of {{35}} and {{36}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they pose a risk to our {{37}} (staff records support this)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Attitudes of employers to open-plan designs:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they significantly reduce rent and {{38}} costs"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they improve teamwork and communication"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they can make {{39}} staff easier"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "In reality, employees are unhappy and they are often distracted by the {{40}} in the office."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+ "id": "forecast-12-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 22,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points did students most frequently make about their musical background before starting a music degree?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They had already composed music."
+    },
+    {
+     "v": "B",
+     "t": "They had several music qualifications."
+    },
+    {
+     "v": "C",
+     "t": "They could play more than one instrument."
+    },
+    {
+     "v": "D",
+     "t": "They had performed in public."
+    },
+    {
+     "v": "E",
+     "t": "They had had piano lessons."
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "to": 24,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points did students most frequently make about music practice?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They prefer to practise alone."
+    },
+    {
+     "v": "B",
+     "t": "They try to practise every day."
+    },
+    {
+     "v": "C",
+     "t": "They are motivated to practise by fear."
+    },
+    {
+     "v": "D",
+     "t": "They feel they don't do enough practice."
+    },
+    {
+     "v": "E",
+     "t": "They enjoy the challenge of a difficult piece."
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 26,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points were most frequently made by students about the pieces they select for assessed performances?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They like to hear others performing the same pieces."
+    },
+    {
+     "v": "B",
+     "t": "They like to choose little-known pieces."
+    },
+    {
+     "v": "C",
+     "t": "They like to play pieces from memory."
+    },
+    {
+     "v": "D",
+     "t": "They like their tutor to choose their pieces."
+    },
+    {
+     "v": "E",
+     "t": "They like to choose technically demanding pieces."
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Which comment did most students make about each of the following aspects of performance? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "This is very beneficial."
+    },
+    {
+     "v": "B",
+     "t": "This is difficult but enjoyable."
+    },
+    {
+     "v": "C",
+     "t": "This can affect relationships."
+    },
+    {
+     "v": "D",
+     "t": "This makes them very nervous."
+    },
+    {
+     "v": "E",
+     "t": "This is time-consuming."
+    },
+    {
+     "v": "F",
+     "t": "This is easy."
+    },
+    {
+     "v": "G",
+     "t": "This happens infrequently."
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Performing solo"
+    },
+    {
+     "n": 28,
+     "text": "Deciding which pieces to perform"
+    },
+    {
+     "n": 29,
+     "text": "Performing with musicians from a different genre"
+    },
+    {
+     "n": 30,
+     "text": "Performing with musicians who play the same instrument"
+    }
+   ]
+  }
+ ]
+}

@@ -95,3 +95,12 @@ KEYS = {
     + '\n' + LETTERS('A B C B G A C H D B', 11) + '\n' + LETTERS('A B A A B C D B A C', 21)
     + '\n' + words(31, 'flooding', 'firewood', 'fertilizer / fertiliser', 'trash', 'sand', 'grey / gray', 'hot house / hothouse', 'rain', 'rabbit', 'storm')),
 }
+
+# Sửa đáp án sai/thiếu cách viết (soát khi chuyển đề Listening sang dạng tương tác)
+FIXES = {
+ 'forecast-07': {31: 'increase / health increase', 33: 'light and dark / light dark / dark and light', 35: 'heart and stomach / heart stomach / stomach and heart'},
+ 'forecast-12': {17: 'A,E', 18: 'A,E', 19: 'B,D', 20: 'B,D', 21: 'C,D', 22: 'C,D', 23: 'C,E', 24: 'C,E', 25: 'A,C', 26: 'A,C'},
+ 'dudoan-03': {27: 'D,E', 28: 'D,E'},
+}
+for _t, _f in FIXES.items():
+    for _n, _a in _f.items(): KEYS[_t][_n] = _a

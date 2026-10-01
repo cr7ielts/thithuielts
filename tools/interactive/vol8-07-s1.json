@@ -1,0 +1,153 @@
+{
+ "id": "vol8-07-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 4,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Travel Agency – Client Quotation Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Country of destination: Australia"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Surname: {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Month of travel: July"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Length of stay: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Possible dates of travel: within first fortnight"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Airport: Brisbane"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Area of destination: the {{3}} (near Brisbane)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Type of accommodation: {{4}}"
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "to": 7,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 5,
+     "text": "According to the client, the children's favourite theme park will be",
+     "options": [
+      {
+       "v": "A",
+       "t": "Movieworld."
+      },
+      {
+       "v": "B",
+       "t": "Dreamworld."
+      },
+      {
+       "v": "C",
+       "t": "Waterworld."
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "text": "At the wildlife sanctuary they will be able to take close-up photographs of",
+     "options": [
+      {
+       "v": "A",
+       "t": "the crocodiles."
+      },
+      {
+       "v": "B",
+       "t": "the kangaroos."
+      },
+      {
+       "v": "C",
+       "t": "the koalas."
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "text": "The client wants the accommodation to be near the",
+     "options": [
+      {
+       "v": "A",
+       "t": "beach."
+      },
+      {
+       "v": "B",
+       "t": "nightclubs."
+      },
+      {
+       "v": "C",
+       "t": "shopping facilities."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "to": 10,
+   "kind": "multi",
+   "instruction": "Choose THREE letters, A-G. Which THREE facilities does the client want at her accommodation?",
+   "options": [
+    {
+     "v": "A",
+     "t": "childcare"
+    },
+    {
+     "v": "B",
+     "t": "playroom"
+    },
+    {
+     "v": "C",
+     "t": "parking"
+    },
+    {
+     "v": "D",
+     "t": "gym"
+    },
+    {
+     "v": "E",
+     "t": "laundry"
+    },
+    {
+     "v": "F",
+     "t": "cleaning"
+    },
+    {
+     "v": "G",
+     "t": "sauna/spa"
+    }
+   ]
+  }
+ ]
+}

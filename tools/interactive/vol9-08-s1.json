@@ -1,0 +1,120 @@
+{
+ "id": "vol9-08-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Call Record Card",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Caller's phone number: 03786 439251 (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Caller's name: Robert {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: 27 {{2}}, Moortown"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Postcode: DP17 5HJ"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Date of birth: {{3}}, 1975"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Doctor's name: Dr Craven"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Doctor's address: Moortown Health Centre"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Reason for call: Pain in his {{4}} back"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Previous history: Similar back problem in June last year"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Details of present problem:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Started {{5}} ago"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Got worse this {{6}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "No abdominal pain"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Possible cause: Lifting up a heavy {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Treatment already applied:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Has applied heat"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Has taken {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Advice given:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Try using {{9}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Go to doctor tomorrow"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Ask for information about {{10}}"
+    }
+   ]
+  }
+ ]
+}

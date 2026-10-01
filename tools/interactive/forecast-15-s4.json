@@ -1,0 +1,100 @@
+{
+ "id": "forecast-15-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Geography 331 field trip",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The James Bay Road"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "At the starting point of the road, everyone must stop for {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "For safety reasons, there are {{32}} on the highway."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Radisson Research Centre"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The Centre works with other institutes to research the region's {{33}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Security is the responsibility of Hydro Quebec."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Lectures will discuss the effect of {{34}} on the land."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Outpost stations gather and publish research related to variations in the {{35}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The Trans-Taiga Road"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The road is unpaved."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Breakdowns are serious as car {{36}} are expensive."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "At hydro stations, engineers will discuss hydro production and the impact of rainfall."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The Taiga"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "There are not many types of {{37}}, but a good range of wildlife."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The area known as Muskeg is dangerous as it has hidden {{38}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Photographs of birds should be taken for future {{39}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Water samples will be checked for {{40}}"
+    }
+   ]
+  }
+ ]
+}

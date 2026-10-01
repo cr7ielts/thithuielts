@@ -1,0 +1,128 @@
+{
+ "id": "forecast-01-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 22,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO things do Gemma and Simon criticize about the zoo?",
+   "options": [
+    {
+     "v": "A",
+     "t": "the pace of change"
+    },
+    {
+     "v": "B",
+     "t": "the high level of staffing"
+    },
+    {
+     "v": "C",
+     "t": "the way older visitors are treated"
+    },
+    {
+     "v": "D",
+     "t": "the quality of educational activities"
+    },
+    {
+     "v": "E",
+     "t": "marketing to schools"
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "to": 24,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO possible difficulties with work placements do the students identify?",
+   "options": [
+    {
+     "v": "A",
+     "t": "taking too much time away from other studies"
+    },
+    {
+     "v": "B",
+     "t": "not being considered sufficiently academic"
+    },
+    {
+     "v": "C",
+     "t": "raising false expectations amongst employers"
+    },
+    {
+     "v": "D",
+     "t": "reducing students' confidence"
+    },
+    {
+     "v": "E",
+     "t": "developing bad study habits"
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What action do Gemma and Simon agree to take for each of the following sections of their presentation? Choose SIX answers from the box and write the correct letter, A-H, next to questions 25-30. Agreed actions",
+   "bank": [
+    {
+     "v": "A",
+     "t": "make it more academic"
+    },
+    {
+     "v": "B",
+     "t": "leave it as it is"
+    },
+    {
+     "v": "C",
+     "t": "change the title"
+    },
+    {
+     "v": "D",
+     "t": "include visual input"
+    },
+    {
+     "v": "E",
+     "t": "involve the listeners directly"
+    },
+    {
+     "v": "F",
+     "t": "include interview transcripts"
+    },
+    {
+     "v": "G",
+     "t": "give an additional example"
+    },
+    {
+     "v": "H",
+     "t": "reduce the length"
+    }
+   ],
+   "questions": [
+    {
+     "n": 25,
+     "text": "Historical development"
+    },
+    {
+     "n": 26,
+     "text": "Management organization"
+    },
+    {
+     "n": 27,
+     "text": "Finances"
+    },
+    {
+     "n": 28,
+     "text": "Marketing"
+    },
+    {
+     "n": 29,
+     "text": "Key problems"
+    },
+    {
+     "n": 30,
+     "text": "Further research"
+    }
+   ]
+  }
+ ]
+}

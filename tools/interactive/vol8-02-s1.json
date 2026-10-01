@@ -1,0 +1,105 @@
+{
+ "id": "vol8-02-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Fearnley Sports Center – Lifeguard Application Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Personal details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Peter Smith"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Home address: 130 South Main Street, Lake {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Contact number: {{2}} (cell phone)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Present occupation:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "has temporary job as a part-time {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "is studying PE"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "wants to be a high school {{4}} coach"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Qualifications"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Already holds: water safety certificate"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Certificate expires in: {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Relevant work experience"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Lifeguard at: the {{6}} in Fearnley"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Additional relevant skills: {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other information: is happy to"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "work on {{8}} mornings"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "start at {{9}} o'clock"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "How did the applicant find out about this job? On the {{10}}"
+    }
+   ]
+  }
+ ]
+}

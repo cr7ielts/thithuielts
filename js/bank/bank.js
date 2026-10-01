@@ -242,7 +242,8 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null) {
       el("div", { class: "bank-audio-row" }, el("span", { class: "tiny strong" }, f.label || "Audio"),
         el("audio", { controls: "", preload: "none", src: url, controlslist: "nodownload" })))));
   }
-  if (pdfIdx >= 0 && !inter) {   // bài tương tác thì không cần PDF nữa
+  // bài tương tác thì không cần PDF nữa — trừ bài có bản đồ/sơ đồ (inter.paper): vẫn hiện trang PDF để nhìn hình
+  if (pdfIdx >= 0 && (!inter || inter.paper)) {
     const pages = files[pdfIdx].pages || null;
     // file có kèm trang đáp án / nhiều đề -> chỉ hiện đúng các trang của đề, không cho mở cả file
     if (!pages && !files[pdfIdx].keyInside) paper.append(el("div", { class: "row", style: "justify-content:flex-end" },

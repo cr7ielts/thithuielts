@@ -1,0 +1,85 @@
+{
+ "id": "vol9-05-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "How to become a tea taster",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "What the training involves"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "A trainee tea taster mainly works in the company's {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "He/she learns how to:"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– taste the tea using a {{2}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– give a {{3}} to samples of tea according to their quality"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– select the right size of leaves for teabags"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– remember the {{4}} of different kinds of tea"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "He/she only qualifies after {{5}} of training."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "What the tea company is looking for in new staff"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a degree ({{6}} is an advantage)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "able to do {{7}} quickly"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "ability to distinguish different kinds of {{8}} accurately"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "effective {{9}} skills in different situations"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "being prepared to {{10}}"
+    }
+   ]
+  }
+ ]
+}

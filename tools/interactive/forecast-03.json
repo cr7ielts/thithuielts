@@ -1,0 +1,550 @@
+{
+ "id": "forecast-03",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Renting an apartment",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Location"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "in central Sydney"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Description"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a {{1}} apartment (for one or two people)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "approximately 34 square metres"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a shared {{2}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "on the fourteenth floor"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "views of the {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "outdoor area: a {{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Tenants have"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a {{5}} (no charge for residents)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "an indoor pool"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "two {{6}} (reduced charge for residents)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "underground {{7}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "easy access to transport in the area"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Rent"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "${{8}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "include {{9}} per month"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other details"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "available from {{10}} August"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "All entry points along the trail",
+     "options": [
+      {
+       "v": "A",
+       "t": "provide secure parking facilities for cars."
+      },
+      {
+       "v": "B",
+       "t": "are within easy access from public roads."
+      },
+      {
+       "v": "C",
+       "t": "have a regular shuttle bus service."
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "Which facility at the trail rest stations has been added as a result of a user survey?",
+     "options": [
+      {
+       "v": "A",
+       "t": "electric recharge points"
+      },
+      {
+       "v": "B",
+       "t": "picnic areas"
+      },
+      {
+       "v": "C",
+       "t": "maps and other information"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "On the Red Rock Walk, hikers are easily able to",
+     "options": [
+      {
+       "v": "A",
+       "t": "see many different plants."
+      },
+      {
+       "v": "B",
+       "t": "enjoy spectacular scenic views."
+      },
+      {
+       "v": "C",
+       "t": "identify a wide range of birds."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What does the speaker say about the River Walk in wintertime?",
+     "options": [
+      {
+       "v": "A",
+       "t": "There are not many other walkers in the area."
+      },
+      {
+       "v": "B",
+       "t": "The area does not get much ice and snow."
+      },
+      {
+       "v": "C",
+       "t": "It may not be possible to use this section of the trail."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Which information is given about each of the following facilities at the Halfway Hostel? Choose SIX answers from the box and write the correct letter, A-I, next to questions 15-20. Information",
+   "bank": [
+    {
+     "v": "A",
+     "t": "only at weekends"
+    },
+    {
+     "v": "B",
+     "t": "voluntary donation expected"
+    },
+    {
+     "v": "C",
+     "t": "not yet available"
+    },
+    {
+     "v": "D",
+     "t": "help from guests requested"
+    },
+    {
+     "v": "E",
+     "t": "provided free"
+    },
+    {
+     "v": "F",
+     "t": "advance booking required"
+    },
+    {
+     "v": "G",
+     "t": "new equipment"
+    },
+    {
+     "v": "H",
+     "t": "available on first-come-first-served basis"
+    },
+    {
+     "v": "I",
+     "t": "special rate for children"
+    }
+   ],
+   "questions": [
+    {
+     "n": 15,
+     "text": "dormitory beds"
+    },
+    {
+     "n": 16,
+     "text": "Family rooms"
+    },
+    {
+     "n": 17,
+     "text": "clothes washing"
+    },
+    {
+     "n": 18,
+     "text": "meals"
+    },
+    {
+     "n": 19,
+     "text": "hot showers"
+    },
+    {
+     "n": 20,
+     "text": "bicycle rental"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 25,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Why is Beth unconvinced that allergies are linked to vitamin D deficiency?",
+     "options": [
+      {
+       "v": "A",
+       "t": "because people's diets have improved since the 1950s"
+      },
+      {
+       "v": "B",
+       "t": "because most people get enough vitamin D"
+      },
+      {
+       "v": "C",
+       "t": "because the evidence only applies in Britain"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Eliot explains that rising CO2 levels",
+     "options": [
+      {
+       "v": "A",
+       "t": "will mean distribution of pollen over a wider area."
+      },
+      {
+       "v": "B",
+       "t": "are having less impact on pollen than milder winters."
+      },
+      {
+       "v": "C",
+       "t": "are responsible for higher quantities of pollen."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What does Beth say about seasonal changes?",
+     "options": [
+      {
+       "v": "A",
+       "t": "There is no clear short-term trend for the arrival of spring."
+      },
+      {
+       "v": "B",
+       "t": "In general, spring is likely to continue arriving early."
+      },
+      {
+       "v": "C",
+       "t": "Springs are becoming milder and longer."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What point is made about the plant ragweed?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is spreading to more countries."
+      },
+      {
+       "v": "B",
+       "t": "It is the most widespread cause of allergies globally."
+      },
+      {
+       "v": "C",
+       "t": "It causes the most severe type of allergy."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "Why is tree pollen a more serious problem in cities?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Trees produce more pollen there."
+      },
+      {
+       "v": "B",
+       "t": "There is less to absorb the tree pollen."
+      },
+      {
+       "v": "C",
+       "t": "There is not enough control over tree-planting."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What comment is made about the seasonal changes in pollen in each of the following European countries? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 26- 30. Seasonal changes in pollen",
+   "bank": [
+    {
+     "v": "A",
+     "t": "greatest change recorded for oak pollen"
+    },
+    {
+     "v": "B",
+     "t": "changes identified for two pollen types only"
+    },
+    {
+     "v": "C",
+     "t": "a longer season for grass pollen"
+    },
+    {
+     "v": "D",
+     "t": "earlier start dates for all pollen types"
+    },
+    {
+     "v": "E",
+     "t": "significant change in start date of birch pollen"
+    },
+    {
+     "v": "F",
+     "t": "little difference in start dates"
+    },
+    {
+     "v": "G",
+     "t": "information only available for birch pollen"
+    }
+   ],
+   "questions": [
+    {
+     "n": 26,
+     "text": "Austria"
+    },
+    {
+     "n": 27,
+     "text": "France"
+    },
+    {
+     "n": 28,
+     "text": "The Netherlands"
+    },
+    {
+     "n": 29,
+     "text": "Switzerland"
+    },
+    {
+     "n": 30,
+     "text": "UK"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Evolution"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "minerals in the bodies of gastropods are like those in the {{31}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "fossils date back 500 million years"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Physical features"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "single, muscular foot"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "radula (used for feeding)"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "shell (snails only)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "size: British shells range from 1.5-50 mm"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "form: most shells coil to the {{32}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "some shells have ribs, spines or {{33}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they have various colours and patterns"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Feeding habits"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "mainly feed on rotting plants, fungi or algae"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "some eat live animals, e.g. shield slugs eat {{34}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Predators"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "birds, frogs, flies"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "humans – snails were probably introduced to Britain as food in the {{35}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "many gastropods have particular types of {{36}}, e.g. glutinous snail makes itself slippery"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Habitats"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "gastropods prefer dampness and shade"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "{{37}} conditions are worst"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "biggest variety is found in old, natural habitats, e.g. {{38}} and meadowland"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "highly specialised species live in unusual habitats, e.g. blind snail lives entirely below the {{39}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "good indicators of the quality of the {{40}}"
+    }
+   ],
+   "noteTitle": "Gastropods (snails and slugs)"
+  }
+ ]
+}

@@ -1,0 +1,505 @@
+{
+ "id": "vol9-07",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Car Servicing",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer name: Ian Croft (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Car details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Registration number: {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Make and model: Vida (4-door saloon)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date of manufacture: 2001"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Number of miles: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Problems"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "needs two new {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the inside {{4}} needs fixing"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "one passenger seat {{5}} is stuck"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{6}} needs replacing"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{7}} brakes of the car need attention"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "needs a spare {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Service arrangements"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date/Time: Tuesday 5 October, 8.00 a.m."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Courtesy car? Yes, preferably {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Address: 361 College Road, Norwich"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Phone: {{10}}"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Rosedale Library",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Why is David Laws leading the meeting instead of Penny Williams today?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Penny Williams is not well."
+      },
+      {
+       "v": "B",
+       "t": "David Laws is the director now."
+      },
+      {
+       "v": "C",
+       "t": "The meeting will be postponed."
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "What does David say has been a problem with guest speaker talks?",
+     "options": [
+      {
+       "v": "A",
+       "t": "expensive tickets"
+      },
+      {
+       "v": "B",
+       "t": "lack of publicity"
+      },
+      {
+       "v": "C",
+       "t": "inconvenient time"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "What does the man say about the break-in at the library?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The building suffered some damage."
+      },
+      {
+       "v": "B",
+       "t": "Some valuable items were stolen."
+      },
+      {
+       "v": "C",
+       "t": "The thieves were well prepared."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "Why do they want to extend the library?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It has had no renovation since it was founded."
+      },
+      {
+       "v": "B",
+       "t": "It needs to double the number of computers."
+      },
+      {
+       "v": "C",
+       "t": "The number of visitors has increased."
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "text": "The investment from the city council will be used for",
+     "options": [
+      {
+       "v": "A",
+       "t": "recruiting extra staff."
+      },
+      {
+       "v": "B",
+       "t": "buying more computers."
+      },
+      {
+       "v": "C",
+       "t": "improving the lighting."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the map (see the map on the test paper). Choose the correct letter, A-H, next to questions 16-20.",
+   "questions": [
+    {
+     "n": 16,
+     "text": "Children's room"
+    },
+    {
+     "n": 17,
+     "text": "Community room"
+    },
+    {
+     "n": 18,
+     "text": "Café"
+    },
+    {
+     "n": 19,
+     "text": "Academic study room"
+    },
+    {
+     "n": 20,
+     "text": "Multimedia room"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 25,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "The artist Samuel Prout",
+   "questions": [
+    {
+     "n": 21,
+     "text": "According to Jack, why did Samuel Prout never become very famous?",
+     "options": [
+      {
+       "v": "A",
+       "t": "His output was very limited."
+      },
+      {
+       "v": "B",
+       "t": "He was seen as old-fashioned."
+      },
+      {
+       "v": "C",
+       "t": "His work never had a major exhibition."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Dr Rubin and Jack agree that many of Prout's problems were caused by",
+     "options": [
+      {
+       "v": "A",
+       "t": "poor health."
+      },
+      {
+       "v": "B",
+       "t": "jealous colleagues."
+      },
+      {
+       "v": "C",
+       "t": "an unhappy marriage."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "How did Prout learn painting?",
+     "options": [
+      {
+       "v": "A",
+       "t": "His father taught him."
+      },
+      {
+       "v": "B",
+       "t": "He went to art galleries."
+      },
+      {
+       "v": "C",
+       "t": "He copied pictures."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What point does Jack make about Prout's style?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Prout used different styles simultaneously."
+      },
+      {
+       "v": "B",
+       "t": "Many other artists had a similar style."
+      },
+      {
+       "v": "C",
+       "t": "Prout's style developed throughout his career."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What did John Ruskin admire about Prout's paintings?",
+     "options": [
+      {
+       "v": "A",
+       "t": "their realism"
+      },
+      {
+       "v": "B",
+       "t": "their presentation of buildings"
+      },
+      {
+       "v": "C",
+       "t": "their wide range of subject matter"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What information do the speakers give about each of the following pictures? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 26-30.",
+   "noteTitle": "Pictures",
+   "bank": [
+    {
+     "v": "A",
+     "t": "one of several paintings of the same view"
+    },
+    {
+     "v": "B",
+     "t": "probably an inaccurate title"
+    },
+    {
+     "v": "C",
+     "t": "may not be genuine"
+    },
+    {
+     "v": "D",
+     "t": "was never finished"
+    },
+    {
+     "v": "E",
+     "t": "typical subject matter for Prout"
+    },
+    {
+     "v": "F",
+     "t": "skilful painting of light and dark"
+    },
+    {
+     "v": "G",
+     "t": "shows an event that never took place"
+    }
+   ],
+   "questions": [
+    {
+     "n": 26,
+     "text": "A view in Germany: at Würzburg"
+    },
+    {
+     "n": 27,
+     "text": "Bridge on the Ouse, near York"
+    },
+    {
+     "n": 28,
+     "text": "Wooded scene"
+    },
+    {
+     "n": 29,
+     "text": "Venice"
+    },
+    {
+     "n": 30,
+     "text": "Entrance to a harbour"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Case Study: Chocozine's difficult decision",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Background"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Smith and his colleagues noticed the spread of mass-customisation in many US {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "They decided to apply the idea to chocolate, and allow clients to decide which ingredients they wanted."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "They called their company 'Chocozine'."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The email order"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "A European retailer wanted 15,000 chocolate bars to use as a {{32}} for customers."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The deal could improve their sales and provide {{33}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "But there were risks:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "They might not have sufficient time for the job."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "If they failed, it could affect their finances and their {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "They only had three {{35}}, which was not enough."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "They attempt to subcontract"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "At first they couldn't find a subcontractor with the right {{36}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "A Harvard professor invited Smith to speak to students."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Many students said it would be a {{37}} to do the deal."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "One student had a {{38}} in the chocolate industry."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "But this subcontractor had trouble with the unusual {{39}} of the chocolate bar."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Chocozine finally declined the order, but their sales improved anyway."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Comment"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Accepting {{40}} orders has created severe problems for many new businesses."
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

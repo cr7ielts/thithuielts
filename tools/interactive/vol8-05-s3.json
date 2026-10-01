@@ -1,0 +1,147 @@
+{
+ "id": "vol8-05-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 25,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Katy thinks it might be inappropriate for academic essays to",
+     "options": [
+      {
+       "v": "A",
+       "t": "give both sides of an argument."
+      },
+      {
+       "v": "B",
+       "t": "express personal opinions."
+      },
+      {
+       "v": "C",
+       "t": "present a range of views."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "The tutor says that in one type of conclusion students should",
+     "options": [
+      {
+       "v": "A",
+       "t": "withhold their own views."
+      },
+      {
+       "v": "B",
+       "t": "avoid too much repetition."
+      },
+      {
+       "v": "C",
+       "t": "refer to the title."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What does the tutor say about the bibliography?",
+     "options": [
+      {
+       "v": "A",
+       "t": "There is a standard format for references."
+      },
+      {
+       "v": "B",
+       "t": "Presentation is not assessed at this level."
+      },
+      {
+       "v": "C",
+       "t": "Book titles should be underlined."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What advice does the tutor give about quotations?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They provide evidence of how widely a student has read."
+      },
+      {
+       "v": "B",
+       "t": "They are useful for defining difficult concepts."
+      },
+      {
+       "v": "C",
+       "t": "There is a tendency to use too few of them."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "John suggests that the writer of the first essay should have",
+     "options": [
+      {
+       "v": "A",
+       "t": "done more thorough research."
+      },
+      {
+       "v": "B",
+       "t": "analysed his data more carefully."
+      },
+      {
+       "v": "C",
+       "t": "given his views more clearly."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write ONE WORD ONLY for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The tutor says that the most basic requirement of an essay is relevance."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Katy thinks the writer separates different {{26}} very clearly."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "John feels that bullet points and sub-headings might be more appropriate for {{27}} than for essays."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The tutor thinks that paragraphs should be used to structure essays."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "John particularly admires the way the writer backs up his statements with {{28}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Katy likes the writer's use of language to link his {{29}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The tutor thinks that wide {{30}} helps to develop writing ability."
+    }
+   ]
+  }
+ ]
+}

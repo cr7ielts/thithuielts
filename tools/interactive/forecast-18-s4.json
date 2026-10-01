@@ -1,0 +1,117 @@
+{
+ "id": "forecast-18-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 33,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 31,
+     "text": "The speaker says he is going to report on",
+     "options": [
+      {
+       "v": "A",
+       "t": "his own research."
+      },
+      {
+       "v": "B",
+       "t": "the research of wildlife experts."
+      },
+      {
+       "v": "C",
+       "t": "research carried out by the government."
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "text": "Wind turbine farms are most dangerous to birds which",
+     "options": [
+      {
+       "v": "A",
+       "t": "live in coastal regions."
+      },
+      {
+       "v": "B",
+       "t": "gather in large flocks."
+      },
+      {
+       "v": "C",
+       "t": "feed on fish and other seafood."
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "text": "The speaker implies that wind farms should be sited",
+     "options": [
+      {
+       "v": "A",
+       "t": "in gaps between hills."
+      },
+      {
+       "v": "B",
+       "t": "along sea coasts."
+      },
+      {
+       "v": "C",
+       "t": "on higher ground."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 34,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Study – Main focus – Problems – Proposed solutions",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Vulture study"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Main focus: connection between how high they fly and weather conditions: quantity of {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Problems: vultures fly lower in strong winds, so are in more {{35}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Proposed solution: use a fixed {{36}} to monitor bird activity"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Nocturnal bird survey"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Main focus: bird movements at night, particularly near wind farms and {{37}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Problems: previous tracking methods not practical because they were not very {{38}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Proposed solutions: develop new {{39}} systems; produce {{40}} models for use"
+    }
+   ]
+  }
+ ]
+}

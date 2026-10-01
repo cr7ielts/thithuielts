@@ -1,0 +1,178 @@
+{
+ "id": "vol9-03-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Voice training for drama students",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Ed is giving the voice coaching workshop in order to get",
+     "options": [
+      {
+       "v": "A",
+       "t": "a new job."
+      },
+      {
+       "v": "B",
+       "t": "a qualification."
+      },
+      {
+       "v": "C",
+       "t": "a promotion."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "According to Fiona, the seating pattern that Ed chooses",
+     "options": [
+      {
+       "v": "A",
+       "t": "should be illustrated visually."
+      },
+      {
+       "v": "B",
+       "t": "has to be explained in detail."
+      },
+      {
+       "v": "C",
+       "t": "is not particularly important."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Fiona and Ed agree that in the first activity, the students",
+     "options": [
+      {
+       "v": "A",
+       "t": "may feel uncomfortable."
+      },
+      {
+       "v": "B",
+       "t": "like to make group contact."
+      },
+      {
+       "v": "C",
+       "t": "must focus on themselves."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "Fiona and Ed agree that in the second activity, Ed should",
+     "options": [
+      {
+       "v": "A",
+       "t": "insist which students work together."
+      },
+      {
+       "v": "B",
+       "t": "tell students to prepare a speech."
+      },
+      {
+       "v": "C",
+       "t": "include a focus on breath control."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What does Fiona suggest about working in a big space?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It could be outside or inside."
+      },
+      {
+       "v": "B",
+       "t": "It is best to go to somewhere like a park."
+      },
+      {
+       "v": "C",
+       "t": "It is useful for getting actors to shout."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "What does Fiona think of Ed's selection of texts?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It should include more classical texts."
+      },
+      {
+       "v": "B",
+       "t": "It needs to focus on a single emotion."
+      },
+      {
+       "v": "C",
+       "t": "It has to cover a wider range."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What disadvantage do the speakers identify for each of the following textbooks? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.",
+   "noteTitle": "Textbooks",
+   "bank": [
+    {
+     "v": "A",
+     "t": "too expensive"
+    },
+    {
+     "v": "B",
+     "t": "too limited"
+    },
+    {
+     "v": "C",
+     "t": "prejudiced"
+    },
+    {
+     "v": "D",
+     "t": "unrealistic"
+    },
+    {
+     "v": "E",
+     "t": "out of date"
+    },
+    {
+     "v": "F",
+     "t": "too detailed"
+    },
+    {
+     "v": "G",
+     "t": "unavailable"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Vocal Instruction"
+    },
+    {
+     "n": 28,
+     "text": "Improve Your Accent"
+    },
+    {
+     "n": 29,
+     "text": "Actors' Handbook"
+    },
+    {
+     "n": 30,
+     "text": "Confident Voice Delivery"
+    }
+   ]
+  }
+ ]
+}

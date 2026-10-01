@@ -1,0 +1,93 @@
+{
+ "id": "forecast-01-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "What feature of each of the following walks does the speaker recommend? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 11-14.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "picnic area"
+    },
+    {
+     "v": "B",
+     "t": "historic building"
+    },
+    {
+     "v": "C",
+     "t": "flat paths"
+    },
+    {
+     "v": "D",
+     "t": "seashore"
+    },
+    {
+     "v": "E",
+     "t": "art works"
+    },
+    {
+     "v": "F",
+     "t": "wildlife"
+    },
+    {
+     "v": "G",
+     "t": "views"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Boundary Walk"
+    },
+    {
+     "n": 12,
+     "text": "Loop Track"
+    },
+    {
+     "n": 13,
+     "text": "Puriri Walk"
+    },
+    {
+     "n": 14,
+     "text": "North Head"
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the map (see the map on the test paper). Write the correct letter, A-J, next to questions 15-20.",
+   "questions": [
+    {
+     "n": 15,
+     "text": "Bird colony"
+    },
+    {
+     "n": 16,
+     "text": "Safe swimming beach"
+    },
+    {
+     "n": 17,
+     "text": "Old ship"
+    },
+    {
+     "n": 18,
+     "text": "Stony Batter"
+    },
+    {
+     "n": 19,
+     "text": "Settlers' Monument"
+    },
+    {
+     "n": 20,
+     "text": "Kiosk"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

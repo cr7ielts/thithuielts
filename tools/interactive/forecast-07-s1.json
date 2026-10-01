@@ -1,0 +1,105 @@
+{
+ "id": "forecast-07-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Wildlife Conservation Society – Application for membership",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Caller's name: Michael Jones (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Heard of WCS from: {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: 21 Beel Street, Leeds"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Postcode: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Phone number: 01173 58642"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "E-mail address: mj@{{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Length of membership: {{4}} years"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Type of membership: {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Fee: £{{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Payment details: direct debit"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name of bank: {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Account name: Michael Jones"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Account number: 01059612"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Date of first payment: {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Reference number: {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other requests:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "extra information pack"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{10}}"
+    }
+   ]
+  }
+ ]
+}

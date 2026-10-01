@@ -1,0 +1,498 @@
+{
+ "id": "vol8-07",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 4,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Travel Agency – Client Quotation Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Country of destination: Australia"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Surname: {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Month of travel: July"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Length of stay: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Possible dates of travel: within first fortnight"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Airport: Brisbane"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Area of destination: the {{3}} (near Brisbane)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Type of accommodation: {{4}}"
+    }
+   ]
+  },
+  {
+   "from": 5,
+   "to": 7,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 5,
+     "text": "According to the client, the children's favourite theme park will be",
+     "options": [
+      {
+       "v": "A",
+       "t": "Movieworld."
+      },
+      {
+       "v": "B",
+       "t": "Dreamworld."
+      },
+      {
+       "v": "C",
+       "t": "Waterworld."
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "text": "At the wildlife sanctuary they will be able to take close-up photographs of",
+     "options": [
+      {
+       "v": "A",
+       "t": "the crocodiles."
+      },
+      {
+       "v": "B",
+       "t": "the kangaroos."
+      },
+      {
+       "v": "C",
+       "t": "the koalas."
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "text": "The client wants the accommodation to be near the",
+     "options": [
+      {
+       "v": "A",
+       "t": "beach."
+      },
+      {
+       "v": "B",
+       "t": "nightclubs."
+      },
+      {
+       "v": "C",
+       "t": "shopping facilities."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 8,
+   "to": 10,
+   "kind": "multi",
+   "instruction": "Choose THREE letters, A-G. Which THREE facilities does the client want at her accommodation?",
+   "options": [
+    {
+     "v": "A",
+     "t": "childcare"
+    },
+    {
+     "v": "B",
+     "t": "playroom"
+    },
+    {
+     "v": "C",
+     "t": "parking"
+    },
+    {
+     "v": "D",
+     "t": "gym"
+    },
+    {
+     "v": "E",
+     "t": "laundry"
+    },
+    {
+     "v": "F",
+     "t": "cleaning"
+    },
+    {
+     "v": "G",
+     "t": "sauna/spa"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Reynolds Electrical",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Tony Reynolds' first business produced {{11}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Reynolds Electrical was started in the year {{12}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "There was previously a {{13}} where the company is now based."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The {{14}} of the products is an important factor for customers."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The company is building a new {{15}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The company recently won an award for its success in reducing {{16}}."
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 20,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Meetings",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Monday – possible improvements in {{17}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Tuesday – {{18}} development"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Wednesday – communication with {{19}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Thursday – getting the right staff"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Friday – making sure the company has enough {{20}}"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Design portfolio",
+   "questions": [
+    {
+     "n": 21,
+     "text": "According to Sandra, what is the most important thing to demonstrate in the portfolio?",
+     "options": [
+      {
+       "v": "A",
+       "t": "creativity"
+      },
+      {
+       "v": "B",
+       "t": "development"
+      },
+      {
+       "v": "C",
+       "t": "quality"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What is Charlie going to include to show his understanding of design?",
+     "options": [
+      {
+       "v": "A",
+       "t": "some photos"
+      },
+      {
+       "v": "B",
+       "t": "a poster"
+      },
+      {
+       "v": "C",
+       "t": "a publicity flyer"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Charlie and Sandra choose drawings of the human body to show their ability to",
+     "options": [
+      {
+       "v": "A",
+       "t": "provide realistic detail."
+      },
+      {
+       "v": "B",
+       "t": "portray everyday situations."
+      },
+      {
+       "v": "C",
+       "t": "represent movement."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "Why does Charlie advise Sandra not to include her work on deserts?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It needs explanation."
+      },
+      {
+       "v": "B",
+       "t": "It will take up too much space."
+      },
+      {
+       "v": "C",
+       "t": "It doesn't fit in with the rest of her work."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What did Sandra think was the best advice from their tutor?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Save the best for the end."
+      },
+      {
+       "v": "B",
+       "t": "Make a strong first impression."
+      },
+      {
+       "v": "C",
+       "t": "Organise work in groups."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "Who is Sandra going to ask to look at her portfolio before she submits it?",
+     "options": [
+      {
+       "v": "A",
+       "t": "her parents"
+      },
+      {
+       "v": "B",
+       "t": "an art critic"
+      },
+      {
+       "v": "C",
+       "t": "an artist"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Which reason is given for the inclusion in Charlie's portfolio of each of the following pieces? Choose FOUR answers from the box and write the correct letter, A-F, next to questions 27-30.",
+   "noteTitle": "Pieces",
+   "bank": [
+    {
+     "v": "A",
+     "t": "explanation of a personal relationship"
+    },
+    {
+     "v": "B",
+     "t": "communication of a mood"
+    },
+    {
+     "v": "C",
+     "t": "high degree of accuracy"
+    },
+    {
+     "v": "D",
+     "t": "evidence of originality"
+    },
+    {
+     "v": "E",
+     "t": "use of lettering"
+    },
+    {
+     "v": "F",
+     "t": "combination of different materials"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "a design for a book cover"
+    },
+    {
+     "n": 28,
+     "text": "designs for jewellery"
+    },
+    {
+     "n": 29,
+     "text": "a wood carving"
+    },
+    {
+     "n": 30,
+     "text": "an advertisement"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Hospital gardens",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A recent survey found that gardens are important in the design of hospitals."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "1984 Schwartz study found that"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "looking at gardens may speed recovery from surgery and from {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "patients with views of nature recovered much faster than patients with views of a {{32}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "European studies"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "hospitals were a source of {{33}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Looking at nature"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "can affect electrical activity in the body, especially the {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "can be beneficial to the {{35}} system"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "1995 Cooper and Bennett study"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "research methods included analysis, observation and {{36}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "gardens with a {{37}} were particularly popular"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "'Behavioural maps' studies"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "showed gardens need"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– areas for private conversation and flat paths"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– easily moved {{38}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– landscaping that attracts {{39}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "middle-aged patients prefer peace and quiet"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "elderly patients want to feel a part of {{40}}"
+    }
+   ]
+  }
+ ]
+}

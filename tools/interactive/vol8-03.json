@@ -1,0 +1,475 @@
+{
+ "id": "vol8-03",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Beach Heads Travel – Customer Request Sheet",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Duncan White (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Group details: three adults and two children"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Date of arrival: {{1}} (staying for 2 weeks)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Week One"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Accommodation:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Book a {{2}} on the beach"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Budget is around ${{3}} a night"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Activities:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The children want to go {{4}} – arrange for them to have a {{5}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Book a time for Susan and Jenny to play {{6}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Duncan wants to go {{7}} – send some information"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Week Two"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Accommodation: National Park – book a {{8}} ($100 per night)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Activities:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Arrange a {{9}} for Jenny"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Send Duncan a {{10}} for Marco's"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-I, next to questions 11-15.",
+   "noteTitle": "How to use City Cycle",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Subscribe to the service online to receive a card"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ At the station, log on at the computer terminal"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Select a bike by using the {{11}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Release the bike by using the {{12}} of your chosen bike"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Remove the bike from the {{13}} (You have ten seconds.)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Make sure you have a {{14}} before setting off"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ At the end of your journey, return the bike to a station and secure in place (A {{15}} will tell you the bike is locked correctly.)"
+    }
+   ],
+   "bank": [
+    {
+     "v": "A",
+     "t": "button"
+    },
+    {
+     "v": "B",
+     "t": "website"
+    },
+    {
+     "v": "C",
+     "t": "helmet"
+    },
+    {
+     "v": "D",
+     "t": "light"
+    },
+    {
+     "v": "E",
+     "t": "locker"
+    },
+    {
+     "v": "F",
+     "t": "password"
+    },
+    {
+     "v": "G",
+     "t": "rack"
+    },
+    {
+     "v": "H",
+     "t": "screen"
+    },
+    {
+     "v": "I",
+     "t": "sound"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the plan (see the plan on the test paper). Write the correct letter, A-H, next to questions 16-20.",
+   "questions": [
+    {
+     "n": 16,
+     "text": "Coffee cart"
+    },
+    {
+     "n": 17,
+     "text": "Workshop"
+    },
+    {
+     "n": 18,
+     "text": "Lockers"
+    },
+    {
+     "n": 19,
+     "text": "Showers"
+    },
+    {
+     "n": 20,
+     "text": "Towels"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 23,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Products using renewable energy sources",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "a) Kites produced by German company"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "are attached to ships by long cables"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "can use wind power in any {{21}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "could reduce toxic emissions by 50%"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "b) Sports car produced by US company"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "uses {{22}} as a power source"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "will have zero emissions"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "c) Ethanol stoves produced in South Africa"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "are safer than paraffin stoves as less likely to {{23}}"
+    }
+   ]
+  },
+  {
+   "from": 24,
+   "to": 25,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Who will Sylvia and Greg ask to take part in the survey?",
+   "options": [
+    {
+     "v": "A",
+     "t": "companies"
+    },
+    {
+     "v": "B",
+     "t": "lecturers"
+    },
+    {
+     "v": "C",
+     "t": "local residents"
+    },
+    {
+     "v": "D",
+     "t": "schoolchildren"
+    },
+    {
+     "v": "E",
+     "t": "university students"
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 26,
+     "text": "What does Sylvia say about people's knowledge of renewable energy?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Many people know little about it."
+      },
+      {
+       "v": "B",
+       "t": "People understand it because it has been in the news recently."
+      },
+      {
+       "v": "C",
+       "t": "People are eager to find out more about it."
+      }
+     ]
+    },
+    {
+     "n": 27,
+     "text": "What do Sylvia and Greg decide to ask about traditional energy consumption?",
+     "options": [
+      {
+       "v": "A",
+       "t": "the best way of preventing pollution"
+      },
+      {
+       "v": "B",
+       "t": "possible future developments"
+      },
+      {
+       "v": "C",
+       "t": "how expensive people find it"
+      }
+     ]
+    },
+    {
+     "n": 28,
+     "text": "What does Greg say about nuclear power?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is not important for their survey."
+      },
+      {
+       "v": "B",
+       "t": "People today have a positive attitude towards it."
+      },
+      {
+       "v": "C",
+       "t": "Some people think it is unsafe."
+      }
+     ]
+    },
+    {
+     "n": 29,
+     "text": "What do Sylvia and Greg agree about the cost of renewable energy?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Prices will drop in the future."
+      },
+      {
+       "v": "B",
+       "t": "People won't pay the high price."
+      },
+      {
+       "v": "C",
+       "t": "The benefits outweigh the high cost."
+      }
+     ]
+    },
+    {
+     "n": 30,
+     "text": "Sylvia and Greg agree that modern windmills",
+     "options": [
+      {
+       "v": "A",
+       "t": "are the most efficient way of harnessing energy."
+      },
+      {
+       "v": "B",
+       "t": "should be put in carefully selected locations."
+      },
+      {
+       "v": "C",
+       "t": "make the landscape look unattractive."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Absence from work",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Absence may be frequent or occasional."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Main factors involved"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{31}} of employees (e.g. females are likely to have responsibility for children)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "employees' {{32}} (but the evidence is inconclusive)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{33}} of the organisation (absenteeism may be acceptable)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the type of work (higher absence among employees in {{34}})"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{35}} of an employee's work group"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Public sector versus private sector"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Public sector has higher absence levels"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Possible explanation – the public sector is less {{36}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Systems may be more bureaucratic because of {{37}} factors (e.g. state controls)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "More recent literature suggests public sector organisations usually"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "have a {{38}} workforce"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "have more female and more older employees"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "provide {{39}} for longer, with fewer restrictions"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "are less likely to {{40}} employees"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

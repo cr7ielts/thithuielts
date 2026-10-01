@@ -1,0 +1,100 @@
+{
+ "id": "forecast-15-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "London Relocation Services",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer's name: Anna Woods"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer's personal details"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Current address: 118 {{1}} Park, Ballysillan"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Postcode: BT14 9BJ"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Phone no: {{2}} (mobile)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other information"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Anna is hoping to find work as a {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "She needs to find a {{4}} school for her son."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Requirements for the new property"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Location:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Her preferred location is in the {{5}} of the city."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Her husband would like to be near a {{6}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Her son would prefer to be close to a {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Property details:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "She would like to live in a {{8}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "She would prefer {{9}} bedrooms."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "A small {{10}} is also desirable."
+    }
+   ]
+  }
+ ]
+}

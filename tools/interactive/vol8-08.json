@@ -1,0 +1,522 @@
+{
+ "id": "vol8-08",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 6,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Problems with flat",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Elinor has been in the flat for 3 months."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Elinor shares the flat with her {{1}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Elinor must contact the landlord's {{2}} about the repairs."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The repairs cannot be started until next week."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Elinor may have to pay £{{3}} towards some repairs."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The agent suggests that Elinor should contact a {{4}} for urgent repairs."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Elinor can be contacted on her {{5}} number."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Elinor will need to sign the {{6}} after the repairs are completed."
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "to": 10,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 7,
+     "text": "According to the agent, what may be the problem with the bathroom window?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The lock may be broken."
+      },
+      {
+       "v": "B",
+       "t": "The glass may be cracked."
+      },
+      {
+       "v": "C",
+       "t": "The frame may need repainting."
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "text": "The agent says that the electricity should be checked",
+     "options": [
+      {
+       "v": "A",
+       "t": "after the washing machine is examined."
+      },
+      {
+       "v": "B",
+       "t": "when the lights are being repaired."
+      },
+      {
+       "v": "C",
+       "t": "before the main switch is renewed."
+      }
+     ]
+    },
+    {
+     "n": 9,
+     "text": "The agent thinks the central heating system should be",
+     "options": [
+      {
+       "v": "A",
+       "t": "checked."
+      },
+      {
+       "v": "B",
+       "t": "repaired."
+      },
+      {
+       "v": "C",
+       "t": "renewed."
+      }
+     ]
+    },
+    {
+     "n": 10,
+     "text": "What was the problem in the hall?",
+     "options": [
+      {
+       "v": "A",
+       "t": "the paintwork"
+      },
+      {
+       "v": "B",
+       "t": "the glue"
+      },
+      {
+       "v": "C",
+       "t": "the carpet"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Music festival programme",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Why does Jane recommend visiting the Music Tent on Tuesday?",
+     "options": [
+      {
+       "v": "A",
+       "t": "There will be free entry."
+      },
+      {
+       "v": "B",
+       "t": "There will be fewer people."
+      },
+      {
+       "v": "C",
+       "t": "There will be special classes."
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "When do the educational workshops take place in the Music Tent?",
+     "options": [
+      {
+       "v": "A",
+       "t": "weekends only"
+      },
+      {
+       "v": "B",
+       "t": "every evening"
+      },
+      {
+       "v": "C",
+       "t": "every afternoon"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "Why does Jane recommend going to the library to buy a ticket?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The tickets will be cheaper there."
+      },
+      {
+       "v": "B",
+       "t": "You can get tickets in advance there."
+      },
+      {
+       "v": "C",
+       "t": "It's easier to get tickets there than in the city."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What will history lovers find interesting about Macquarie House?",
+     "options": [
+      {
+       "v": "A",
+       "t": "its gardens"
+      },
+      {
+       "v": "B",
+       "t": "its architecture"
+      },
+      {
+       "v": "C",
+       "t": "its location"
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "text": "The Big Barbecue is different this year because",
+     "options": [
+      {
+       "v": "A",
+       "t": "it will be much larger than before."
+      },
+      {
+       "v": "B",
+       "t": "there will be free entertainment."
+      },
+      {
+       "v": "C",
+       "t": "the food will be cooked by international chefs."
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "text": "What can you do at the Railway Museum?",
+     "options": [
+      {
+       "v": "A",
+       "t": "see a steam engine working"
+      },
+      {
+       "v": "B",
+       "t": "dress up in a railway worker's uniform"
+      },
+      {
+       "v": "C",
+       "t": "have a meal inside an old train"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO free things does the family ticket on the steam train include?",
+   "options": [
+    {
+     "v": "A",
+     "t": "an educational talk"
+    },
+    {
+     "v": "B",
+     "t": "a children's book"
+    },
+    {
+     "v": "C",
+     "t": "a short film"
+    },
+    {
+     "v": "D",
+     "t": "a flag"
+    },
+    {
+     "v": "E",
+     "t": "a tour of the Ipswich Museum"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO things apply when voting for Our Favourite Place?",
+   "options": [
+    {
+     "v": "A",
+     "t": "People of any age may vote."
+    },
+    {
+     "v": "B",
+     "t": "You may send in your vote by email."
+    },
+    {
+     "v": "C",
+     "t": "Only local residents may vote."
+    },
+    {
+     "v": "D",
+     "t": "You may vote several times."
+    },
+    {
+     "v": "E",
+     "t": "Voting ends at midnight on Saturday."
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 30,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+   "noteTitle": "Notes on presentation and feedback",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Timing"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Likely period for presentation: 14th – 24th June"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Time of day: {{21}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Format"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "First part: 40-minute presentation to the {{22}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Second part: 20-minute interview with Dr Brown"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Requirements"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Must bring to discussion:"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– material used in presentation"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– {{23}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– {{24}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– book list"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Feedback (given during interview)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Students will receive:"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– {{25}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– 'thinking questions'"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Criteria"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Good projects will show the student:"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– has done {{26}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– has ability to {{27}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– has ability to present {{28}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Next stage"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Stage Two:"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– produce {{29}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– do data analysis"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Further information from website: www.{{30}}.com"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 39,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Research in child psychology (Past → Present)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past: Three aspects of development: social, cognitive, emotional."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present: These aspects now regarded as being {{31}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past: Behaviour was studied in artificial contexts. Example: {{32}} (was related to behaviour of animals in {{33}})"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present: Awareness that child's behaviour is influenced by his/her {{34}} and the situation he/she is in."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past: Child was seen as being {{35}}. Parents were held responsible for way child developed."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present: No direct link between early influences and child's {{36}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past – Influence of Piaget: Young children were believed to be {{37}}. Psychologists did not take culture into account. Example: importance of {{38}} for babies."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present – Influence of Harriet Reingold: Examples show that children are aware of other people. Guatemalan study – babies are kept in the {{39}} for first year → no effect on later development"
+    }
+   ]
+  },
+  {
+   "from": 40,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 40,
+     "text": "The speaker thinks that one topic which will be examined closely in future is",
+     "options": [
+      {
+       "v": "A",
+       "t": "the influence of the mother."
+      },
+      {
+       "v": "B",
+       "t": "early speech patterns."
+      },
+      {
+       "v": "C",
+       "t": "development before birth."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

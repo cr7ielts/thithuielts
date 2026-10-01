@@ -1,0 +1,110 @@
+{
+ "id": "vol9-06-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Kiwi Air Customer Complaint Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer has been trying to make a booking using the internet"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Booking details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Janet {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Ticket details: one adult and three children (Wellington to Christchurch) – four {{2}} tickets"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Flight details: November 10th – 15th"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Time: departing at {{3}} a.m."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Details of the problem"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the website changes the rate for one child"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the website keeps giving the customer {{4}} messages"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer informed that Kiwi Air policy:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "allows no more than {{5}} child fares per adult (this applies to domestic flights only)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer's reasons for complaint"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "none of her children are {{6}} years old or older"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "child passengers require less {{7}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the rule is unfair for large families and {{8}} groups"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer invited to send written complaint"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "letter to go to the {{9}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "reply predicted within a week"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "reference number: {{10}}"
+    }
+   ]
+  }
+ ]
+}

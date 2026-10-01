@@ -1,0 +1,478 @@
+{
+ "id": "dudoan-04",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Music Alive Agency",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Contact person: Jim Granley (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Members' details are on a {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Type of music represented: modern music ({{2}} and jazz)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Newsletter comes out once a {{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Cost of adult membership: £{{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Current number of members: {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Facilities include: rehearsal rooms and a {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "There is no charge for {{7}} advice"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "To become a member, send:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a letter with contact details"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a recent {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: 707, {{9}} Street, Marbury"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Contact email: music.{{10}}@bsu.co.uk"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "What do participants need to take to the registration desk?",
+     "options": [
+      {
+       "v": "A",
+       "t": "a form of identification"
+      },
+      {
+       "v": "B",
+       "t": "a competitor number"
+      },
+      {
+       "v": "C",
+       "t": "cash for the entrance fee"
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "What does the entrance fee to the competition include?",
+     "options": [
+      {
+       "v": "A",
+       "t": "equipment for fishing"
+      },
+      {
+       "v": "B",
+       "t": "all food for both days"
+      },
+      {
+       "v": "C",
+       "t": "fuel for the fishing"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "Participants without a fishing licence are recommended to apply for one",
+     "options": [
+      {
+       "v": "A",
+       "t": "at the registration desk."
+      },
+      {
+       "v": "B",
+       "t": "over the phone."
+      },
+      {
+       "v": "C",
+       "t": "on the internet."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What will happen at 6pm on Sunday?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The time allocated for fishing will end."
+      },
+      {
+       "v": "B",
+       "t": "The fish caught will be judged."
+      },
+      {
+       "v": "C",
+       "t": "The prizes will be awarded to the winners."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the map (see the map on the test paper). Write the correct letter, A-I, next to questions 15-20.",
+   "questions": [
+    {
+     "n": 15,
+     "text": "Registration area"
+    },
+    {
+     "n": 16,
+     "text": "Shore fishing area"
+    },
+    {
+     "n": 17,
+     "text": "Boat launching area"
+    },
+    {
+     "n": 18,
+     "text": "Judging area"
+    },
+    {
+     "n": 19,
+     "text": "Dining area"
+    },
+    {
+     "n": 20,
+     "text": "Prize-giving area"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Max and Abby agree that in the art exhibition they are looking forward to",
+     "options": [
+      {
+       "v": "A",
+       "t": "showing people their work."
+      },
+      {
+       "v": "B",
+       "t": "getting feedback from their tutor."
+      },
+      {
+       "v": "C",
+       "t": "talking to other students about their displays."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "In last year's exhibition, both students were impressed by",
+     "options": [
+      {
+       "v": "A",
+       "t": "a set of metal sculptures."
+      },
+      {
+       "v": "B",
+       "t": "a series of wooden models."
+      },
+      {
+       "v": "C",
+       "t": "a collection of textile designs."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What has Max decided to call his display?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Mother Nature"
+      },
+      {
+       "v": "B",
+       "t": "Views of Farmland"
+      },
+      {
+       "v": "C",
+       "t": "Seasons"
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What does Abby think will be difficult about preparing for their displays?",
+     "options": [
+      {
+       "v": "A",
+       "t": "having enough time to set it up"
+      },
+      {
+       "v": "B",
+       "t": "choosing which pieces to show"
+      },
+      {
+       "v": "C",
+       "t": "filling up all the available space"
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What does Abby say about the summary they have to write?",
+     "options": [
+      {
+       "v": "A",
+       "t": "She isn't sure whether people will read it."
+      },
+      {
+       "v": "B",
+       "t": "It will be difficult to keep it short enough."
+      },
+      {
+       "v": "C",
+       "t": "It will be hard to clarify the reasons for her work."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "What aspect of the display will the students organise themselves?",
+     "options": [
+      {
+       "v": "A",
+       "t": "arranging the lighting"
+      },
+      {
+       "v": "B",
+       "t": "inviting local journalists"
+      },
+      {
+       "v": "C",
+       "t": "providing comment forms"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Which feature do the speakers identify as particularly interesting for each of the following exhibitions they saw? Choose FOUR answers from the box and write the correct letter, A-F, next to questions 27-30 Interesting features",
+   "bank": [
+    {
+     "v": "A",
+     "t": "the realistic colours"
+    },
+    {
+     "v": "B",
+     "t": "the sense of space"
+    },
+    {
+     "v": "C",
+     "t": "the unusual interpretation of the theme"
+    },
+    {
+     "v": "D",
+     "t": "the painting technique"
+    },
+    {
+     "v": "E",
+     "t": "the variety of materials used"
+    },
+    {
+     "v": "F",
+     "t": "the use of light and shade"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "On the Water"
+    },
+    {
+     "n": 28,
+     "text": "City Life"
+    },
+    {
+     "n": 29,
+     "text": "Faces"
+    },
+    {
+     "n": 30,
+     "text": "Moods"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "The Mangrove Regeneration Project",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Background:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Mangrove forests:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "protect coastal areas from {{31}} by the sea"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "are an important habitat for wildlife"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Problems:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "mangroves had been used by farmers as {{32}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "mangroves were poisoned by the use of {{33}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "local people used the mangroves as a place to put their {{34}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Actions taken to protect the mangroves:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a barrier which was made of {{35}} was constructed – but it failed"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "new mangroves had to be grown from seed"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the seeds of the {{36}} mangrove were used"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "First set of seedlings:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "kept in small pots in a {{37}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "watered with {{38}} water"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "planted out on south side of a small island"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "at risk from the large {{39}} population"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Second set of seedlings:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "planted in the seabed near established mangrove roots"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the young plants were destroyed in a {{40}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Results:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The first set of seedlings was successful"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

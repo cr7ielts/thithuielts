@@ -1,0 +1,592 @@
+{
+ "id": "vol9-03",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 8,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Booking a centre for a group visit",
+   "questions": [
+    {
+     "n": 1,
+     "text": "The centre has enough accommodation for",
+     "options": [
+      {
+       "v": "A",
+       "t": "18 people."
+      },
+      {
+       "v": "B",
+       "t": "20 people."
+      },
+      {
+       "v": "C",
+       "t": "38 people."
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "text": "The meeting room is currently",
+     "options": [
+      {
+       "v": "A",
+       "t": "unavailable."
+      },
+      {
+       "v": "B",
+       "t": "flooded."
+      },
+      {
+       "v": "C",
+       "t": "booked."
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "text": "Visitors must tell the centre in advance if they want to",
+     "options": [
+      {
+       "v": "A",
+       "t": "use the centre's kitchen."
+      },
+      {
+       "v": "B",
+       "t": "have meals cooked for them."
+      },
+      {
+       "v": "C",
+       "t": "eat at restaurants outside."
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "text": "All visitors on the tour of the farm can",
+     "options": [
+      {
+       "v": "A",
+       "t": "get information about organic farming."
+      },
+      {
+       "v": "B",
+       "t": "help to feed the animals."
+      },
+      {
+       "v": "C",
+       "t": "watch a tractor demonstration."
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "text": "On the survival course, people have to",
+     "options": [
+      {
+       "v": "A",
+       "t": "learn to use a map."
+      },
+      {
+       "v": "B",
+       "t": "find their own food."
+      },
+      {
+       "v": "C",
+       "t": "run through woodland."
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "text": "From the centre, it is easy to walk to",
+     "options": [
+      {
+       "v": "A",
+       "t": "Exmoor National Park."
+      },
+      {
+       "v": "B",
+       "t": "the beach."
+      },
+      {
+       "v": "C",
+       "t": "a cycling route."
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "text": "If the weather is bad, visitors can go to a",
+     "options": [
+      {
+       "v": "A",
+       "t": "cinema."
+      },
+      {
+       "v": "B",
+       "t": "theatre."
+      },
+      {
+       "v": "C",
+       "t": "museum."
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "text": "Groups who wish to stay at the centre must pay",
+     "options": [
+      {
+       "v": "A",
+       "t": "part of the cost in advance."
+      },
+      {
+       "v": "B",
+       "t": "all of the cost in advance."
+      },
+      {
+       "v": "C",
+       "t": "all of the cost on arrival."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: Winsham Farm"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "{{9}} Road"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "near Sherborne"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Postcode: {{10}}"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Vacation jobs",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Stocktaking"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Main advantage: {{11}} · Main disadvantage: tiring · Recommendation: {{12}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Office work"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Main advantage: air-conditioning · Main disadvantage: {{13}} · Recommendation: choose a {{14}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Theme park attendant"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Main advantage: {{15}} · Main disadvantage: rude customers · Recommendation: {{16}}"
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 17,
+     "text": "Peter learned about the job",
+     "options": [
+      {
+       "v": "A",
+       "t": "from a college friend."
+      },
+      {
+       "v": "B",
+       "t": "on the computer."
+      },
+      {
+       "v": "C",
+       "t": "from a student job centre."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "Peter mainly enjoyed the job because it was",
+     "options": [
+      {
+       "v": "A",
+       "t": "easy."
+      },
+      {
+       "v": "B",
+       "t": "challenging."
+      },
+      {
+       "v": "C",
+       "t": "unusual."
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "The job's most interesting aspect was",
+     "options": [
+      {
+       "v": "A",
+       "t": "learning about the environment."
+      },
+      {
+       "v": "B",
+       "t": "working with children."
+      },
+      {
+       "v": "C",
+       "t": "caring for the animals."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "Peter has decided that next vacation he",
+     "options": [
+      {
+       "v": "A",
+       "t": "won't take a job."
+      },
+      {
+       "v": "B",
+       "t": "will work at the zoo."
+      },
+      {
+       "v": "C",
+       "t": "will work elsewhere."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Voice training for drama students",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Ed is giving the voice coaching workshop in order to get",
+     "options": [
+      {
+       "v": "A",
+       "t": "a new job."
+      },
+      {
+       "v": "B",
+       "t": "a qualification."
+      },
+      {
+       "v": "C",
+       "t": "a promotion."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "According to Fiona, the seating pattern that Ed chooses",
+     "options": [
+      {
+       "v": "A",
+       "t": "should be illustrated visually."
+      },
+      {
+       "v": "B",
+       "t": "has to be explained in detail."
+      },
+      {
+       "v": "C",
+       "t": "is not particularly important."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Fiona and Ed agree that in the first activity, the students",
+     "options": [
+      {
+       "v": "A",
+       "t": "may feel uncomfortable."
+      },
+      {
+       "v": "B",
+       "t": "like to make group contact."
+      },
+      {
+       "v": "C",
+       "t": "must focus on themselves."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "Fiona and Ed agree that in the second activity, Ed should",
+     "options": [
+      {
+       "v": "A",
+       "t": "insist which students work together."
+      },
+      {
+       "v": "B",
+       "t": "tell students to prepare a speech."
+      },
+      {
+       "v": "C",
+       "t": "include a focus on breath control."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What does Fiona suggest about working in a big space?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It could be outside or inside."
+      },
+      {
+       "v": "B",
+       "t": "It is best to go to somewhere like a park."
+      },
+      {
+       "v": "C",
+       "t": "It is useful for getting actors to shout."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "What does Fiona think of Ed's selection of texts?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It should include more classical texts."
+      },
+      {
+       "v": "B",
+       "t": "It needs to focus on a single emotion."
+      },
+      {
+       "v": "C",
+       "t": "It has to cover a wider range."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What disadvantage do the speakers identify for each of the following textbooks? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.",
+   "noteTitle": "Textbooks",
+   "bank": [
+    {
+     "v": "A",
+     "t": "too expensive"
+    },
+    {
+     "v": "B",
+     "t": "too limited"
+    },
+    {
+     "v": "C",
+     "t": "prejudiced"
+    },
+    {
+     "v": "D",
+     "t": "unrealistic"
+    },
+    {
+     "v": "E",
+     "t": "out of date"
+    },
+    {
+     "v": "F",
+     "t": "too detailed"
+    },
+    {
+     "v": "G",
+     "t": "unavailable"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Vocal Instruction"
+    },
+    {
+     "n": 28,
+     "text": "Improve Your Accent"
+    },
+    {
+     "n": 29,
+     "text": "Actors' Handbook"
+    },
+    {
+     "n": 30,
+     "text": "Confident Voice Delivery"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Food Safety Standards",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Risk assessment"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Scientists have to consider potential problems with:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "the product's {{31}} (could they attract harmful bacteria?)"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "method of preparation (will it eliminate harmful micro-organisms?)"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "how products are {{32}} and distributed"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "supermarkets (e.g. changes in {{33}} affecting the condition of frozen food)"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "end-users (how is food usually handled in the home?)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Factors affecting food consumption"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Legislation"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Consumer attitudes"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "e.g. dislike of additives → growth of the {{34}} food market in Australia"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "The food industry"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "supermarkets may use price or {{35}} as their selling strategy (but the main concern is profitability)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "The mass media"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "now the main source of {{36}} for many"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "negative effect because not objective:"
+    },
+    {
+     "level": 3,
+     "bullet": "",
+     "text": "– concern for {{37}}"
+    },
+    {
+     "level": 3,
+     "bullet": "",
+     "text": "– news is now a form of {{38}} which can mislead the public"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "few programmes deal with food safety or {{39}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Personal opinion"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Importance of education: as with benefits of exercise, many children can influence their {{40}}"
+    }
+   ]
+  }
+ ]
+}

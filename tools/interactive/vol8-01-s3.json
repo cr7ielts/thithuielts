@@ -1,0 +1,153 @@
+{
+ "id": "vol8-01-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 24,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "The Just-in-Time Supply System (JIT)",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Ron suggests that in his presentation he should have",
+     "options": [
+      {
+       "v": "A",
+       "t": "given credit to the originators of the JIT idea."
+      },
+      {
+       "v": "B",
+       "t": "discussed why the Japanese adopted the JIT idea."
+      },
+      {
+       "v": "C",
+       "t": "explained how supermarkets used the JIT idea."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "The tutor says that in his presentation Ron omitted",
+     "options": [
+      {
+       "v": "A",
+       "t": "a description of classic business theory."
+      },
+      {
+       "v": "B",
+       "t": "an introductory definition of JIT."
+      },
+      {
+       "v": "C",
+       "t": "a statement of the aims of JIT."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Ron says that he found his information on standardising parts from",
+     "options": [
+      {
+       "v": "A",
+       "t": "a website."
+      },
+      {
+       "v": "B",
+       "t": "journal articles."
+      },
+      {
+       "v": "C",
+       "t": "a textbook."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "The tutor suggests that in the service sector, JIT is",
+     "options": [
+      {
+       "v": "A",
+       "t": "difficult to apply because of the absence of countable things."
+      },
+      {
+       "v": "B",
+       "t": "regarded by most members of staff as unfashionable."
+      },
+      {
+       "v": "C",
+       "t": "unlikely to be accepted by important clients."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What criticism is made of each of the following technical aspects of Ron's presentation? Choose SIX answers from the box and write the correct letter, A-H, next to questions 25-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "too informal"
+    },
+    {
+     "v": "B",
+     "t": "too irregular"
+    },
+    {
+     "v": "C",
+     "t": "too predictable"
+    },
+    {
+     "v": "D",
+     "t": "too sudden"
+    },
+    {
+     "v": "E",
+     "t": "too technical"
+    },
+    {
+     "v": "F",
+     "t": "too unenthusiastic"
+    },
+    {
+     "v": "G",
+     "t": "too loosely related"
+    },
+    {
+     "v": "H",
+     "t": "too vague"
+    }
+   ],
+   "questions": [
+    {
+     "n": 25,
+     "text": "speed of delivery"
+    },
+    {
+     "n": 26,
+     "text": "purpose"
+    },
+    {
+     "n": 27,
+     "text": "transitions"
+    },
+    {
+     "n": 28,
+     "text": "visuals"
+    },
+    {
+     "n": 29,
+     "text": "vocabulary"
+    },
+    {
+     "n": 30,
+     "text": "body language"
+    }
+   ]
+  }
+ ]
+}

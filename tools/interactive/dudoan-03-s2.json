@@ -1,0 +1,132 @@
+{
+ "id": "dudoan-03-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Special conditions may apply to ____ students looking for a job."
+    },
+    {
+     "n": 12,
+     "text": "The university Job Centre is located on the ____ Campus."
+    },
+    {
+     "n": 13,
+     "text": "The Job Centre remains open until ____ every evening."
+    },
+    {
+     "n": 14,
+     "text": "The only day the employment lawyer is available is ____."
+    },
+    {
+     "n": 15,
+     "text": "The university ____ regularly advertises new jobs."
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter A, B or C",
+   "questions": [
+    {
+     "n": 16,
+     "text": "At present, the university is offering part-time work in",
+     "options": [
+      {
+       "v": "A",
+       "t": "its offices."
+      },
+      {
+       "v": "B",
+       "t": "the IT centre."
+      },
+      {
+       "v": "C",
+       "t": "the car parks."
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "Local employers visit the university",
+     "options": [
+      {
+       "v": "A",
+       "t": "only in the first term."
+      },
+      {
+       "v": "B",
+       "t": "twice a term."
+      },
+      {
+       "v": "C",
+       "t": "throughout the year."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "According to the speaker, a part-time job can",
+     "options": [
+      {
+       "v": "A",
+       "t": "lead to a full-time job after graduation."
+      },
+      {
+       "v": "B",
+       "t": "provide a useful work record for the future."
+      },
+      {
+       "v": "C",
+       "t": "give the chance to develop team-work skills."
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "Students who work part-time",
+     "options": [
+      {
+       "v": "A",
+       "t": "will be taxed."
+      },
+      {
+       "v": "B",
+       "t": "will be paid every week."
+      },
+      {
+       "v": "C",
+       "t": "will need private insurance."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "Part-time student workers are advised to",
+     "options": [
+      {
+       "v": "A",
+       "t": "give notice in writing."
+      },
+      {
+       "v": "B",
+       "t": "communicate by email."
+      },
+      {
+       "v": "C",
+       "t": "have a mobile phone."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

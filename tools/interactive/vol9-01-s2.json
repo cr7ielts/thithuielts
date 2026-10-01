@@ -1,0 +1,87 @@
+{
+ "id": "vol9-01-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 17,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Spring Down Junior School",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The school day starts at {{11}} with registration, and finishes at 4 p.m."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The school canteen offers a {{12}} for lunch."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The morning and afternoon breaks each last for {{13}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "On Thursday afternoons all children must take part in {{14}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Every term the children do a special {{15}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The children are given tests each {{16}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The children can go to {{17}} after school to learn new skills such as music."
+    }
+   ]
+  },
+  {
+   "from": 18,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Label the plan (see the plan on the test paper). Choose THREE letters, A-H, for the rooms labelled 18, 19 and 20.",
+   "options": [
+    {
+     "v": "A",
+     "t": "music room"
+    },
+    {
+     "v": "B",
+     "t": "assembly hall"
+    },
+    {
+     "v": "C",
+     "t": "computer room"
+    },
+    {
+     "v": "D",
+     "t": "cloakroom"
+    },
+    {
+     "v": "E",
+     "t": "Head's office"
+    },
+    {
+     "v": "G",
+     "t": "gym"
+    },
+    {
+     "v": "H",
+     "t": "reception"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

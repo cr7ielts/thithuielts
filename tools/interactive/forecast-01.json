@@ -1,0 +1,399 @@
+{
+ "id": "forecast-01",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 8,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Post Office – Package Delivery Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Country of destination: USA"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Package to reach destination by: {{1}} at latest"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Service selected: {{2}} Express"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Sender:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Peter White"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Address: {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Suburb: Lakeview"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Delivery to:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Anna {{4}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Address: Apartment 228, {{5}}, Upper {{6}}, New York"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Contents: {{7}} and {{8}}"
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Answer the questions below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "questions": [
+    {
+     "n": 9,
+     "text": "What is the total cost of sending the package?"
+    },
+    {
+     "n": 10,
+     "text": "What is required in order to find a lost package?"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "What feature of each of the following walks does the speaker recommend? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 11-14.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "picnic area"
+    },
+    {
+     "v": "B",
+     "t": "historic building"
+    },
+    {
+     "v": "C",
+     "t": "flat paths"
+    },
+    {
+     "v": "D",
+     "t": "seashore"
+    },
+    {
+     "v": "E",
+     "t": "art works"
+    },
+    {
+     "v": "F",
+     "t": "wildlife"
+    },
+    {
+     "v": "G",
+     "t": "views"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Boundary Walk"
+    },
+    {
+     "n": 12,
+     "text": "Loop Track"
+    },
+    {
+     "n": 13,
+     "text": "Puriri Walk"
+    },
+    {
+     "n": 14,
+     "text": "North Head"
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the map (see the map on the test paper). Write the correct letter, A-J, next to questions 15-20.",
+   "questions": [
+    {
+     "n": 15,
+     "text": "Bird colony"
+    },
+    {
+     "n": 16,
+     "text": "Safe swimming beach"
+    },
+    {
+     "n": 17,
+     "text": "Old ship"
+    },
+    {
+     "n": 18,
+     "text": "Stony Batter"
+    },
+    {
+     "n": 19,
+     "text": "Settlers' Monument"
+    },
+    {
+     "n": 20,
+     "text": "Kiosk"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 22,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO things do Gemma and Simon criticize about the zoo?",
+   "options": [
+    {
+     "v": "A",
+     "t": "the pace of change"
+    },
+    {
+     "v": "B",
+     "t": "the high level of staffing"
+    },
+    {
+     "v": "C",
+     "t": "the way older visitors are treated"
+    },
+    {
+     "v": "D",
+     "t": "the quality of educational activities"
+    },
+    {
+     "v": "E",
+     "t": "marketing to schools"
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "to": 24,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO possible difficulties with work placements do the students identify?",
+   "options": [
+    {
+     "v": "A",
+     "t": "taking too much time away from other studies"
+    },
+    {
+     "v": "B",
+     "t": "not being considered sufficiently academic"
+    },
+    {
+     "v": "C",
+     "t": "raising false expectations amongst employers"
+    },
+    {
+     "v": "D",
+     "t": "reducing students' confidence"
+    },
+    {
+     "v": "E",
+     "t": "developing bad study habits"
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What action do Gemma and Simon agree to take for each of the following sections of their presentation? Choose SIX answers from the box and write the correct letter, A-H, next to questions 25-30. Agreed actions",
+   "bank": [
+    {
+     "v": "A",
+     "t": "make it more academic"
+    },
+    {
+     "v": "B",
+     "t": "leave it as it is"
+    },
+    {
+     "v": "C",
+     "t": "change the title"
+    },
+    {
+     "v": "D",
+     "t": "include visual input"
+    },
+    {
+     "v": "E",
+     "t": "involve the listeners directly"
+    },
+    {
+     "v": "F",
+     "t": "include interview transcripts"
+    },
+    {
+     "v": "G",
+     "t": "give an additional example"
+    },
+    {
+     "v": "H",
+     "t": "reduce the length"
+    }
+   ],
+   "questions": [
+    {
+     "n": 25,
+     "text": "Historical development"
+    },
+    {
+     "n": 26,
+     "text": "Management organization"
+    },
+    {
+     "n": 27,
+     "text": "Finances"
+    },
+    {
+     "n": 28,
+     "text": "Marketing"
+    },
+    {
+     "n": 29,
+     "text": "Key problems"
+    },
+    {
+     "n": 30,
+     "text": "Further research"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Changing ideas"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Scientists once thought of plants as being {{31}} organisms."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Now there is evidence that this is not true."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Recent studies"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Great Lakes sea rocket"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Found on {{32}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "When near other plants, it normally produces extra {{33}} to compete for nutrients."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "However, it behaves differently if it is related to the other plants."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Sagebrush and thornapple"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Recognise surrounding plants by the type of {{34}} that they reflect"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Identification is possible because all plants have a particular {{35}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Dodder plant"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Is unable to produce {{36}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Needs to feed off another plant to survive"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Affects farmers' crops, e.g. alfalfa, {{37}} and citrus"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Identifies suitable 'hosts' by detecting the {{38}} they give off"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Moves in a {{39}} to check the environment, then grows towards the most suitable host"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Plant science"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Use of modern {{40}} provides evidence of plant behaviour"
+    }
+   ],
+   "noteTitle": "Plant Behaviour"
+  }
+ ],
+ "paper": true
+}

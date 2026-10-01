@@ -1,0 +1,81 @@
+{
+ "id": "vol8-08-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 39,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Research in child psychology (Past → Present)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past: Three aspects of development: social, cognitive, emotional."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present: These aspects now regarded as being {{31}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past: Behaviour was studied in artificial contexts. Example: {{32}} (was related to behaviour of animals in {{33}})"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present: Awareness that child's behaviour is influenced by his/her {{34}} and the situation he/she is in."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past: Child was seen as being {{35}}. Parents were held responsible for way child developed."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present: No direct link between early influences and child's {{36}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Past – Influence of Piaget: Young children were believed to be {{37}}. Psychologists did not take culture into account. Example: importance of {{38}} for babies."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Present – Influence of Harriet Reingold: Examples show that children are aware of other people. Guatemalan study – babies are kept in the {{39}} for first year → no effect on later development"
+    }
+   ]
+  },
+  {
+   "from": 40,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 40,
+     "text": "The speaker thinks that one topic which will be examined closely in future is",
+     "options": [
+      {
+       "v": "A",
+       "t": "the influence of the mother."
+      },
+      {
+       "v": "B",
+       "t": "early speech patterns."
+      },
+      {
+       "v": "C",
+       "t": "development before birth."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

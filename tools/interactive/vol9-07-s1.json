@@ -1,0 +1,110 @@
+{
+ "id": "vol9-07-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Car Servicing",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer name: Ian Croft (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Car details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Registration number: {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Make and model: Vida (4-door saloon)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date of manufacture: 2001"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Number of miles: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Problems"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "needs two new {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the inside {{4}} needs fixing"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "one passenger seat {{5}} is stuck"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{6}} needs replacing"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{7}} brakes of the car need attention"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "needs a spare {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Service arrangements"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date/Time: Tuesday 5 October, 8.00 a.m."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Courtesy car? Yes, preferably {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Address: 361 College Road, Norwich"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Phone: {{10}}"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,511 @@
+{
+ "id": "forecast-02",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Second-hand Cars",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Maximum price: $4,300"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Cars available"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Noda (silver)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "One {{1}} is broken"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Comina (white)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Used to belong to the {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Telsta (orange)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "It's an {{3}} model"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Has got new {{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Abrada (red)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Only {{5}} years old"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other information"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Garage address: {{6}} Road, Mitchell"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Day / Time: on {{7}} at 9:30 am"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Ask for: {{8}} Smith"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Parking available: outside the {{9}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "What to bring: {{10}} (for a test drive)"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "The Game of Curling",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The four players on the team are called the {{11}}, the Second, the Third and the Skip."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The length of ice on which curling is played is called the {{12}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The target area is called the {{13}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The main pieces of equipment used are stones and brushes."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Scottish brushes are usually made from {{14}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "One shoe needs to have a sole made of {{15}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The captain of the team often carries a {{16}}."
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 17,
+     "text": "Montreal Curling Club is famous as",
+     "options": [
+      {
+       "v": "A",
+       "t": "the champion club of the local league."
+      },
+      {
+       "v": "B",
+       "t": "the oldest sports club in the region."
+      },
+      {
+       "v": "C",
+       "t": "the most influential club in winter sports."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "The Caledonian Curling Club was formed in order to",
+     "options": [
+      {
+       "v": "A",
+       "t": "attract interest in the sport."
+      },
+      {
+       "v": "B",
+       "t": "train young players."
+      },
+      {
+       "v": "C",
+       "t": "fix regulations for the game."
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "In the 18th century, curling avoided being banned because",
+     "options": [
+      {
+       "v": "A",
+       "t": "it was already so popular."
+      },
+      {
+       "v": "B",
+       "t": "it was good training for battle."
+      },
+      {
+       "v": "C",
+       "t": "it was only played by children."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "Early curling games in Canada used implements made of",
+     "options": [
+      {
+       "v": "A",
+       "t": "local material."
+      },
+      {
+       "v": "B",
+       "t": "imported stone."
+      },
+      {
+       "v": "C",
+       "t": "cast iron."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 24,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "What does Josh think about Jackson Pollock's paintings?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They are easy to copy."
+      },
+      {
+       "v": "B",
+       "t": "They are complex."
+      },
+      {
+       "v": "C",
+       "t": "They are childish."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "The $5 painting was considered to be a fake because",
+     "options": [
+      {
+       "v": "A",
+       "t": "it lacked documentation."
+      },
+      {
+       "v": "B",
+       "t": "it was too cheap."
+      },
+      {
+       "v": "C",
+       "t": "it featured the wrong colours."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What made the International Foundation for Art Research reject the $5 painting?",
+     "options": [
+      {
+       "v": "A",
+       "t": "what was on the back of the painting"
+      },
+      {
+       "v": "B",
+       "t": "the type of paint used"
+      },
+      {
+       "v": "C",
+       "t": "how the paint was applied"
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What do Josh and Emily agree about art evaluation?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Only an experienced critic can evaluate a painting's authenticity."
+      },
+      {
+       "v": "B",
+       "t": "Modern scientific methods have replaced the traditional approach."
+      },
+      {
+       "v": "C",
+       "t": "Experts from the science and art worlds should work together."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A - H, next to Questions 25 - 30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "ultrasound"
+    },
+    {
+     "v": "B",
+     "t": "gamma-ray technology"
+    },
+    {
+     "v": "C",
+     "t": "stone"
+    },
+    {
+     "v": "D",
+     "t": "a laser scanner"
+    },
+    {
+     "v": "E",
+     "t": "a radar machine"
+    },
+    {
+     "v": "F",
+     "t": "glass"
+    },
+    {
+     "v": "G",
+     "t": "a thermographic camera"
+    },
+    {
+     "v": "H",
+     "t": "brick"
+    }
+   ],
+   "notes": [
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Seracini used {{25}} to help make a model of the building."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Seracini used {{26}} to reveal different materials in the walls. He found the original architecture."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Seracini guessed that Da Vinci painted his masterpiece on the east wall, in a space that used to hold {{27}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Seracini analysed the wall using {{28}} and discovered a second wall behind it."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Seracini hypothesised that the Da Vinci painting is still there on the original {{29}} wall."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Seracini is using {{30}} to prove his theory."
+    }
+   ],
+   "noteTitle": "Seracini's search for Leonardo Da Vinci's Battle of Anghiari"
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Textiles with Business Studies",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "New development"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Now possible to work with the {{31}} Faculty to widen learning opportunities"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Aims of course"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "To cover three areas of textiles:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "knitted"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "{{32}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "woven"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "To focus on related business operations"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Work placement: focus on studio work in the context of the {{33}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Course content"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Year One: experimentation"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Visual research with {{34}} and suggestions for its application"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Year Two: relating skills to the real world"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Optional course: {{35}} design processes"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Three- or four-year course? Students are offered {{36}} to help them make their decision."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Year Three: consolidation"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Learning style: {{37}} practice"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Students produce:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a dissertation"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a portfolio"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a {{38}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Career opportunities"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Within textile business – e.g. stylists, retail managers"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Further opportunities – jobs in {{39}} and trend forecasting"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "If interested – come back tomorrow for a short {{40}}."
+    }
+   ]
+  }
+ ]
+}

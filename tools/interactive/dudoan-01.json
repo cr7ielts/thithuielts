@@ -1,0 +1,486 @@
+{
+ "id": "dudoan-01",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 6,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Beechen Festival (Date – Time – Activity – Place – Comments)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 19th, 7 p.m. – Concert (example)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: the {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Comments: includes a visit to an old flour mill"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 20th, {{2}} p.m. – tour"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: meet at the {{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 21st, all day – children's {{4}} competition"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: Beechen Community Centre"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Comments: bring a {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 21st, evening – fireworks"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: by the {{6}}"
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "This year, activities end by {{7}} p.m."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "There won't be any {{8}} in the town centre this year."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The festival's web address is www.{{9}}.com."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Festival organisers would like to receive {{10}} online."
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Approximately how many passengers does the ferry hold?",
+     "options": [
+      {
+       "v": "A",
+       "t": "160"
+      },
+      {
+       "v": "B",
+       "t": "600"
+      },
+      {
+       "v": "C",
+       "t": "2000"
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "Which items should the tourists pack in a separate bag?",
+     "options": [
+      {
+       "v": "A",
+       "t": "food"
+      },
+      {
+       "v": "B",
+       "t": "reading material"
+      },
+      {
+       "v": "C",
+       "t": "medicines"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "The hostel in La Vega de Liebana has",
+     "options": [
+      {
+       "v": "A",
+       "t": "good washing facilities."
+      },
+      {
+       "v": "B",
+       "t": "a games room."
+      },
+      {
+       "v": "C",
+       "t": "a number of single bedrooms."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "Residents at the hostel are not allowed to",
+     "options": [
+      {
+       "v": "A",
+       "t": "take furniture out of the hostel building."
+      },
+      {
+       "v": "B",
+       "t": "enter the hostel after a certain time."
+      },
+      {
+       "v": "C",
+       "t": "smoke in the hostel gardens."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 17,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+   "noteTitle": "Bring: clothes and equipment",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "boots with thick soles"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "spare {{15}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "light waterproofs"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "suncream: strength – {{16}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "a {{17}} folder for map, etc."
+    }
+   ]
+  },
+  {
+   "from": 18,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Choose THREE letters, A-G. Which THREE of the following features of the area in Spain does the speaker talk about? (Option D is missing on the test paper.)",
+   "options": [
+    {
+     "v": "A",
+     "t": "altitude"
+    },
+    {
+     "v": "B",
+     "t": "coastline"
+    },
+    {
+     "v": "C",
+     "t": "economy"
+    },
+    {
+     "v": "E",
+     "t": "temperatures"
+    },
+    {
+     "v": "F",
+     "t": "vegetation"
+    },
+    {
+     "v": "G",
+     "t": "wildlife"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 24,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Sally says many students see peer assessment as",
+     "options": [
+      {
+       "v": "A",
+       "t": "a way for tutors to save time."
+      },
+      {
+       "v": "B",
+       "t": "a useful learning tool."
+      },
+      {
+       "v": "C",
+       "t": "a valuable form of assessment."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What do Steve and Sally agree is an advantage of peer assessment?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It's more reliable than self-assessment."
+      },
+      {
+       "v": "B",
+       "t": "It increases students' self-awareness."
+      },
+      {
+       "v": "C",
+       "t": "It builds rapport between students."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "If the peer assessment marks seem incorrect,",
+     "options": [
+      {
+       "v": "A",
+       "t": "students should mark the assignments again."
+      },
+      {
+       "v": "B",
+       "t": "the tutor should check those assignments."
+      },
+      {
+       "v": "C",
+       "t": "the marking criteria should be rewritten."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "How were the presentations in the research project marked?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Students and lecturers marked all the presentations."
+      },
+      {
+       "v": "B",
+       "t": "Students chose which presentations they wanted to mark."
+      },
+      {
+       "v": "C",
+       "t": "Lecturers marked a selection of presentations."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "How did the following categories of student markers compare with the rest of the group when marking student presentations? Write the correct letter, A, B or C, next to questions 25-30 (see the options box on the test paper).",
+   "questions": [
+    {
+     "n": 25,
+     "text": "male students marking female presenters"
+    },
+    {
+     "n": 26,
+     "text": "female students marking male presenters"
+    },
+    {
+     "n": 27,
+     "text": "female students marking female presenters"
+    },
+    {
+     "n": 28,
+     "text": "younger students marking older presenters"
+    },
+    {
+     "n": 29,
+     "text": "students marking presenters from a different university"
+    },
+    {
+     "n": 30,
+     "text": "students who had helped set criteria"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Bislama – The Pidgin English Language of Vanuatu",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Languages in Vanuatu"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Local languages:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "actively spoken languages: 81"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "declining languages: 17"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "{{31}} languages: 8"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "total: 106"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Foreign languages: English is used in the {{32}} system"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Bislama"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "It is spoken by 90% of the population today."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "In the past this language was described as {{33}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "History of Bislama"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Around 1800 it was used as a common language on many ships."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "After 1860 Vanuatu people worked in Australian {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "After 1950 people moved to the {{35}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Description of Bislama"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "General"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "Bislama should be called a {{36}} pidgin."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Vocabulary"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "Most words come from English."
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "Words such as \"from\" may have more {{37}} in Bislama."
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "Less than 10% of words are of {{38}} origin."
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "Pacific words describe the natural world and also local {{39}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Grammar"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "It is based on Vanuatu languages."
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "The word \"long\" acts as an important {{40}} in Bislama."
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

@@ -1,0 +1,187 @@
+{
+ "id": "vol9-03-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 8,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Booking a centre for a group visit",
+   "questions": [
+    {
+     "n": 1,
+     "text": "The centre has enough accommodation for",
+     "options": [
+      {
+       "v": "A",
+       "t": "18 people."
+      },
+      {
+       "v": "B",
+       "t": "20 people."
+      },
+      {
+       "v": "C",
+       "t": "38 people."
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "text": "The meeting room is currently",
+     "options": [
+      {
+       "v": "A",
+       "t": "unavailable."
+      },
+      {
+       "v": "B",
+       "t": "flooded."
+      },
+      {
+       "v": "C",
+       "t": "booked."
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "text": "Visitors must tell the centre in advance if they want to",
+     "options": [
+      {
+       "v": "A",
+       "t": "use the centre's kitchen."
+      },
+      {
+       "v": "B",
+       "t": "have meals cooked for them."
+      },
+      {
+       "v": "C",
+       "t": "eat at restaurants outside."
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "text": "All visitors on the tour of the farm can",
+     "options": [
+      {
+       "v": "A",
+       "t": "get information about organic farming."
+      },
+      {
+       "v": "B",
+       "t": "help to feed the animals."
+      },
+      {
+       "v": "C",
+       "t": "watch a tractor demonstration."
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "text": "On the survival course, people have to",
+     "options": [
+      {
+       "v": "A",
+       "t": "learn to use a map."
+      },
+      {
+       "v": "B",
+       "t": "find their own food."
+      },
+      {
+       "v": "C",
+       "t": "run through woodland."
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "text": "From the centre, it is easy to walk to",
+     "options": [
+      {
+       "v": "A",
+       "t": "Exmoor National Park."
+      },
+      {
+       "v": "B",
+       "t": "the beach."
+      },
+      {
+       "v": "C",
+       "t": "a cycling route."
+      }
+     ]
+    },
+    {
+     "n": 7,
+     "text": "If the weather is bad, visitors can go to a",
+     "options": [
+      {
+       "v": "A",
+       "t": "cinema."
+      },
+      {
+       "v": "B",
+       "t": "theatre."
+      },
+      {
+       "v": "C",
+       "t": "museum."
+      }
+     ]
+    },
+    {
+     "n": 8,
+     "text": "Groups who wish to stay at the centre must pay",
+     "options": [
+      {
+       "v": "A",
+       "t": "part of the cost in advance."
+      },
+      {
+       "v": "B",
+       "t": "all of the cost in advance."
+      },
+      {
+       "v": "C",
+       "t": "all of the cost on arrival."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: Winsham Farm"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "{{9}} Road"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "near Sherborne"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Postcode: {{10}}"
+    }
+   ]
+  }
+ ]
+}

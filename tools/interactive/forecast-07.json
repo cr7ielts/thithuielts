@@ -1,0 +1,564 @@
+{
+ "id": "forecast-07",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Wildlife Conservation Society – Application for membership",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Caller's name: Michael Jones (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Heard of WCS from: {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: 21 Beel Street, Leeds"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Postcode: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Phone number: 01173 58642"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "E-mail address: mj@{{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Length of membership: {{4}} years"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Type of membership: {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Fee: £{{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Payment details: direct debit"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name of bank: {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Account name: Michael Jones"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Account number: 01059612"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Date of first payment: {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Reference number: {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other requests:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "extra information pack"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{10}}"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "What is the speaker's profession?",
+     "options": [
+      {
+       "v": "A",
+       "t": "a travel agent"
+      },
+      {
+       "v": "B",
+       "t": "an actor"
+      },
+      {
+       "v": "C",
+       "t": "a journalist"
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "Why does he love travelling?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He watched documentaries as a child."
+      },
+      {
+       "v": "B",
+       "t": "He is influenced by his parents' passion."
+      },
+      {
+       "v": "C",
+       "t": "His parents are geographers."
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "When was the first British ski resort established?",
+     "options": [
+      {
+       "v": "A",
+       "t": "1920s"
+      },
+      {
+       "v": "B",
+       "t": "1930s"
+      },
+      {
+       "v": "C",
+       "t": "1960s"
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "Which activity is offered by a school in the other town?",
+     "options": [
+      {
+       "v": "A",
+       "t": "skydiving"
+      },
+      {
+       "v": "B",
+       "t": "playing golf"
+      },
+      {
+       "v": "C",
+       "t": "visiting a brewery"
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "text": "What does the speaker recommend in Edimore region?",
+     "options": [
+      {
+       "v": "A",
+       "t": "a hot spring"
+      },
+      {
+       "v": "B",
+       "t": "a museum"
+      },
+      {
+       "v": "C",
+       "t": "a local market"
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "text": "What program will be available soon?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Landscape of UK"
+      },
+      {
+       "v": "B",
+       "t": "Mountain Walking in Europe"
+      },
+      {
+       "v": "C",
+       "t": "Wildlife around the World"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Which feature does each of the following skiing locations have? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 17-20.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "A well-known ski school"
+    },
+    {
+     "v": "B",
+     "t": "Suitable for beginners"
+    },
+    {
+     "v": "C",
+     "t": "Olympic champion training location"
+    },
+    {
+     "v": "D",
+     "t": "Would-be Olympics rink"
+    },
+    {
+     "v": "E",
+     "t": "Good ski facilities"
+    },
+    {
+     "v": "F",
+     "t": "Popular for many years"
+    },
+    {
+     "v": "G",
+     "t": "Childcare provided"
+    }
+   ],
+   "questions": [
+    {
+     "n": 17,
+     "text": "Lakeside"
+    },
+    {
+     "n": 18,
+     "text": "Petersburg"
+    },
+    {
+     "n": 19,
+     "text": "Winterton"
+    },
+    {
+     "n": 20,
+     "text": "Al slops"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 25,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "What source did Mike use for his definition?",
+     "options": [
+      {
+       "v": "A",
+       "t": "a history textbook"
+      },
+      {
+       "v": "B",
+       "t": "an academic article"
+      },
+      {
+       "v": "C",
+       "t": "a lecture handout"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "According to Mike and his tutor, what is the most important contribution of the internet to oral history?",
+     "options": [
+      {
+       "v": "A",
+       "t": "the permanent preservation of recordings"
+      },
+      {
+       "v": "B",
+       "t": "an increase in student interest"
+      },
+      {
+       "v": "C",
+       "t": "wide access to the interviews by the public"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Mike says he chose his particular topic because",
+     "options": [
+      {
+       "v": "A",
+       "t": "he is a football fan."
+      },
+      {
+       "v": "B",
+       "t": "his father loves football."
+      },
+      {
+       "v": "C",
+       "t": "his friends encouraged him."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What does Mike say was his best source of information about the team?",
+     "options": [
+      {
+       "v": "A",
+       "t": "doing research in the local newspaper archives"
+      },
+      {
+       "v": "B",
+       "t": "speaking to the team manager"
+      },
+      {
+       "v": "C",
+       "t": "looking at materials in the local library"
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "How did Mike find the former players he has arranged to interview?",
+     "options": [
+      {
+       "v": "A",
+       "t": "on the internet"
+      },
+      {
+       "v": "B",
+       "t": "in the team records"
+      },
+      {
+       "v": "C",
+       "t": "in the phone book"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What problems with the following aspects of the proposed interviews do the speakers identify? Choose FIVE answers from the box and write the correct letter, A-H, next to questions 26- 30. Problems",
+   "bank": [
+    {
+     "v": "A",
+     "t": "too unreliable"
+    },
+    {
+     "v": "B",
+     "t": "too short"
+    },
+    {
+     "v": "C",
+     "t": "too noisy"
+    },
+    {
+     "v": "D",
+     "t": "too long"
+    },
+    {
+     "v": "E",
+     "t": "too formal"
+    },
+    {
+     "v": "F",
+     "t": "too factual"
+    },
+    {
+     "v": "G",
+     "t": "too complicated"
+    },
+    {
+     "v": "H",
+     "t": "too vague"
+    }
+   ],
+   "questions": [
+    {
+     "n": 26,
+     "text": "Questions drafted"
+    },
+    {
+     "n": 27,
+     "text": "Time allotted"
+    },
+    {
+     "n": 28,
+     "text": "Recording equipment used"
+    },
+    {
+     "n": 29,
+     "text": "Subjects chosen"
+    },
+    {
+     "n": 30,
+     "text": "Proposed report"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+   "noteTitle": "Health on the Night Shift",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Background:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{31}} in number of night workers because of 24-hour shopping / services"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Need to examine effects of changing work and sleep habits"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "US and British research found these lead to health problems"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Main causes:"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A) {{32}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "regulates daily life"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "connected to behavioural patterns and cycles of {{33}} (two words: ... and ...)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "programmes us to be awake and asleep at certain times"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "B) Sleep debt"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "impossible to get enough sleep during daytime"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "C) {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "different working / sleeping times, 'dislocation'"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Effects:"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A) Physical"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "higher incidence of {{35}} problems (two kinds: ... and ...)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "more minor illnesses, suggesting that immunity of shift workers is affected"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "B) Psychological"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "most common: {{36}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{37}} affected, e.g. decision-making, planning, which regulate our {{38}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "C) Social"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Night shift work can lead to:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "destruction of {{39}} and other relationships, e.g. {{40}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "eventually, for individuals: social isolation"
+    }
+   ]
+  }
+ ]
+}

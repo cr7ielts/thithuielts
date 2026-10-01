@@ -1,0 +1,120 @@
+{
+ "id": "vol9-06-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Linwood Apartment Complex",
+   "questions": [
+    {
+     "n": 11,
+     "text": "When was the first apartment complex completed?",
+     "options": [
+      {
+       "v": "A",
+       "t": "1 year ago"
+      },
+      {
+       "v": "B",
+       "t": "3 years ago"
+      },
+      {
+       "v": "C",
+       "t": "5 years ago"
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "What does the manager say he enjoys most about the job?",
+     "options": [
+      {
+       "v": "A",
+       "t": "resolving problems between residents"
+      },
+      {
+       "v": "B",
+       "t": "dealing with financial matters"
+      },
+      {
+       "v": "C",
+       "t": "organising building maintenance"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "Regarding restrictions in the complex, the manager says",
+     "options": [
+      {
+       "v": "A",
+       "t": "only some types of flowers can be planted."
+      },
+      {
+       "v": "B",
+       "t": "only the interiors of apartments can be painted."
+      },
+      {
+       "v": "C",
+       "t": "only certain colours can be used on the walls."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What does the manager ask residents to do for the welcome party?",
+     "options": [
+      {
+       "v": "A",
+       "t": "bring food"
+      },
+      {
+       "v": "B",
+       "t": "prepare name tags"
+      },
+      {
+       "v": "C",
+       "t": "decorate the hall"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the map (see the map on the test paper). Choose the correct letter, A-K, next to questions 15-20.",
+   "questions": [
+    {
+     "n": 15,
+     "text": "Shop"
+    },
+    {
+     "n": 16,
+     "text": "Barbecue area"
+    },
+    {
+     "n": 17,
+     "text": "Childcare centre"
+    },
+    {
+     "n": 18,
+     "text": "Laundry"
+    },
+    {
+     "n": 19,
+     "text": "Recreation room"
+    },
+    {
+     "n": 20,
+     "text": "Hall"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

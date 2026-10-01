@@ -1,0 +1,90 @@
+{
+ "id": "vol8-05-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Label the map (see the map on the test paper). Choose the correct letter, A-I, next to questions 11-16.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Art books"
+    },
+    {
+     "n": 12,
+     "text": "Gardening books"
+    },
+    {
+     "n": 13,
+     "text": "History books"
+    },
+    {
+     "n": 14,
+     "text": "Children's books"
+    },
+    {
+     "n": 15,
+     "text": "Reading area"
+    },
+    {
+     "n": 16,
+     "text": "Self-help books"
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "What does the speaker say about each new book? Choose FOUR answers from the box and write the correct letter, A-F, next to questions 17-20.",
+   "noteTitle": "New books",
+   "bank": [
+    {
+     "v": "A",
+     "t": "a first-time author"
+    },
+    {
+     "v": "B",
+     "t": "an award-winning book"
+    },
+    {
+     "v": "C",
+     "t": "a true story"
+    },
+    {
+     "v": "D",
+     "t": "has a sad ending"
+    },
+    {
+     "v": "E",
+     "t": "has good illustrations"
+    },
+    {
+     "v": "F",
+     "t": "part of a series"
+    }
+   ],
+   "questions": [
+    {
+     "n": 17,
+     "text": "Penny Pinchers"
+    },
+    {
+     "n": 18,
+     "text": "The Running Boy"
+    },
+    {
+     "n": 19,
+     "text": "The Hidden Code"
+    },
+    {
+     "n": 20,
+     "text": "The Orange Moon"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

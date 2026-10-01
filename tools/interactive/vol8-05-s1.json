@@ -1,0 +1,90 @@
+{
+ "id": "vol8-05-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Arizona – travel advice",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Example: the temperature will probably be about 40 degrees centigrade during the day"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "pack a {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "drive from Tucson along the {{2}} trails"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "go to the {{3}} (highly recommended)"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "there is the possibility of playing {{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Visit Susie's parents"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Susie's parents live in a town called Williams"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Address: 6073 {{5}} Drive"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Town history: named after a local hunter; destroyed by fire in {{6}} (rebuilt later)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Susie's parents will be at home after 2nd July"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "4th July – Independence Day: there will be {{7}} in the evening"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Susie's parents' phone number: {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Grand Canyon"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "tour by {{9}} (1½ hrs; 7 trips a day)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "canoe (all day; important to take {{10}})"
+    }
+   ]
+  }
+ ]
+}

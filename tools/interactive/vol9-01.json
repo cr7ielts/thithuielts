@@ -1,0 +1,455 @@
+{
+ "id": "vol9-01",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Renting a room",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Example: Jim wants to find out about a room."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Jim's weekly rent will be ${{1}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Jim can park his car in the {{2}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The telephone is in the {{3}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Jim will bring a {{4}} for his bedroom."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Peter would like Jim to bring a {{5}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Peter and Jim will probably watch TV on {{6}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Jim works in a {{7}} twice a week."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Peter will share the cost of {{8}} with Jim."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Peter wants Jim to move in by {{9}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Jim agrees to move in after his {{10}}."
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 17,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Spring Down Junior School",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The school day starts at {{11}} with registration, and finishes at 4 p.m."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The school canteen offers a {{12}} for lunch."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The morning and afternoon breaks each last for {{13}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "On Thursday afternoons all children must take part in {{14}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Every term the children do a special {{15}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The children are given tests each {{16}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The children can go to {{17}} after school to learn new skills such as music."
+    }
+   ]
+  },
+  {
+   "from": 18,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Label the plan (see the plan on the test paper). Choose THREE letters, A-H, for the rooms labelled 18, 19 and 20.",
+   "options": [
+    {
+     "v": "A",
+     "t": "music room"
+    },
+    {
+     "v": "B",
+     "t": "assembly hall"
+    },
+    {
+     "v": "C",
+     "t": "computer room"
+    },
+    {
+     "v": "D",
+     "t": "cloakroom"
+    },
+    {
+     "v": "E",
+     "t": "Head's office"
+    },
+    {
+     "v": "G",
+     "t": "gym"
+    },
+    {
+     "v": "H",
+     "t": "reception"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 24,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Forensic Linguistics",
+   "questions": [
+    {
+     "n": 21,
+     "text": "What do the students agree about defining forensic linguistics?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The dictionary definition was not very useful."
+      },
+      {
+       "v": "B",
+       "t": "They could provide an example of the kind of work involved."
+      },
+      {
+       "v": "C",
+       "t": "They should read about the subject to see how it is described."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Jen thinks it will be difficult to analyse the voice recording because",
+     "options": [
+      {
+       "v": "A",
+       "t": "it is not of good quality."
+      },
+      {
+       "v": "B",
+       "t": "the accent is difficult to understand."
+      },
+      {
+       "v": "C",
+       "t": "she doesn't know if the speaker is male or female."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Why does Jen think that the 'suspect' might vary their voice patterns?",
+     "options": [
+      {
+       "v": "A",
+       "t": "because they're being recorded"
+      },
+      {
+       "v": "B",
+       "t": "because they've been told to"
+      },
+      {
+       "v": "C",
+       "t": "because they feel uncomfortable about their accent"
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What does Rob think about Jen's approach to study?",
+     "options": [
+      {
+       "v": "A",
+       "t": "She worries too much about her ability."
+      },
+      {
+       "v": "B",
+       "t": "She often ignores the most important issues."
+      },
+      {
+       "v": "C",
+       "t": "She has trouble getting started."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 26,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO books do Jen and Rob decide to get from the library?",
+   "options": [
+    {
+     "v": "A",
+     "t": "Voice Identification"
+    },
+    {
+     "v": "B",
+     "t": "Modern Forensic Techniques"
+    },
+    {
+     "v": "C",
+     "t": "Language and Crime"
+    },
+    {
+     "v": "D",
+     "t": "Forensics Today"
+    },
+    {
+     "v": "E",
+     "t": "Research Methods in Forensic Linguistics"
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO practical considerations are both Jen and Rob concerned about?",
+   "options": [
+    {
+     "v": "A",
+     "t": "how much time they have for writing up the project"
+    },
+    {
+     "v": "B",
+     "t": "being able to do enough research"
+    },
+    {
+     "v": "C",
+     "t": "only speaking to the 'suspect' once"
+    },
+    {
+     "v": "D",
+     "t": "using recording equipment"
+    },
+    {
+     "v": "E",
+     "t": "how easy it will be to contact the 'suspect'"
+    }
+   ]
+  },
+  {
+   "from": 29,
+   "to": 30,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO sections of the project will Rob write alone?",
+   "options": [
+    {
+     "v": "A",
+     "t": "Methodology"
+    },
+    {
+     "v": "B",
+     "t": "Literature review"
+    },
+    {
+     "v": "C",
+     "t": "Introduction"
+    },
+    {
+     "v": "D",
+     "t": "Analysis"
+    },
+    {
+     "v": "E",
+     "t": "Discussion and conclusions"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Organisms enter a state of dormancy, or inactivity, to:"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "save available {{31}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "reduce demands on their environment"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Value of dormancy"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Organisms which become dormant:"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "can live in conditions which are environmentally {{32}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "can live in a wider range of places"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "have less {{33}} from other animals"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Causes of dormancy"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "changes in temperature and {{34}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "availability of food, water, oxygen"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Dormancy in insects"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "There may be a {{35}} in their metabolism (diapause)"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Diapause occurs during extreme conditions, or as part of the life cycle"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The African lungfish"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "It buries itself in the {{36}} and creates a slimy cocoon"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Two dangers: {{37}} and desiccation"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Snails"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Some close their shells with a membrane during dormancy"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Light-coloured shells reflect sunlight and limit {{38}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Hibernation"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Only warm-blooded animals hibernate"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The Arctic ground squirrel"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "It hibernates in an insulated, underground {{39}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "It loses 40% of its weight during hibernation"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "When it wakes up, the first part of the body to heat up is the {{40}}"
+    }
+   ],
+   "noteTitle": "Dormancy"
+  }
+ ],
+ "paper": true
+}

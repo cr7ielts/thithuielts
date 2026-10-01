@@ -1,0 +1,156 @@
+{
+ "id": "forecast-03-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "All entry points along the trail",
+     "options": [
+      {
+       "v": "A",
+       "t": "provide secure parking facilities for cars."
+      },
+      {
+       "v": "B",
+       "t": "are within easy access from public roads."
+      },
+      {
+       "v": "C",
+       "t": "have a regular shuttle bus service."
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "Which facility at the trail rest stations has been added as a result of a user survey?",
+     "options": [
+      {
+       "v": "A",
+       "t": "electric recharge points"
+      },
+      {
+       "v": "B",
+       "t": "picnic areas"
+      },
+      {
+       "v": "C",
+       "t": "maps and other information"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "On the Red Rock Walk, hikers are easily able to",
+     "options": [
+      {
+       "v": "A",
+       "t": "see many different plants."
+      },
+      {
+       "v": "B",
+       "t": "enjoy spectacular scenic views."
+      },
+      {
+       "v": "C",
+       "t": "identify a wide range of birds."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What does the speaker say about the River Walk in wintertime?",
+     "options": [
+      {
+       "v": "A",
+       "t": "There are not many other walkers in the area."
+      },
+      {
+       "v": "B",
+       "t": "The area does not get much ice and snow."
+      },
+      {
+       "v": "C",
+       "t": "It may not be possible to use this section of the trail."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Which information is given about each of the following facilities at the Halfway Hostel? Choose SIX answers from the box and write the correct letter, A-I, next to questions 15-20. Information",
+   "bank": [
+    {
+     "v": "A",
+     "t": "only at weekends"
+    },
+    {
+     "v": "B",
+     "t": "voluntary donation expected"
+    },
+    {
+     "v": "C",
+     "t": "not yet available"
+    },
+    {
+     "v": "D",
+     "t": "help from guests requested"
+    },
+    {
+     "v": "E",
+     "t": "provided free"
+    },
+    {
+     "v": "F",
+     "t": "advance booking required"
+    },
+    {
+     "v": "G",
+     "t": "new equipment"
+    },
+    {
+     "v": "H",
+     "t": "available on first-come-first-served basis"
+    },
+    {
+     "v": "I",
+     "t": "special rate for children"
+    }
+   ],
+   "questions": [
+    {
+     "n": 15,
+     "text": "dormitory beds"
+    },
+    {
+     "n": 16,
+     "text": "Family rooms"
+    },
+    {
+     "n": 17,
+     "text": "clothes washing"
+    },
+    {
+     "n": 18,
+     "text": "meals"
+    },
+    {
+     "n": 19,
+     "text": "hot showers"
+    },
+    {
+     "n": 20,
+     "text": "bicycle rental"
+    }
+   ]
+  }
+ ]
+}

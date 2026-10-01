@@ -1,0 +1,162 @@
+{
+ "id": "forecast-03-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 25,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Why is Beth unconvinced that allergies are linked to vitamin D deficiency?",
+     "options": [
+      {
+       "v": "A",
+       "t": "because people's diets have improved since the 1950s"
+      },
+      {
+       "v": "B",
+       "t": "because most people get enough vitamin D"
+      },
+      {
+       "v": "C",
+       "t": "because the evidence only applies in Britain"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Eliot explains that rising CO2 levels",
+     "options": [
+      {
+       "v": "A",
+       "t": "will mean distribution of pollen over a wider area."
+      },
+      {
+       "v": "B",
+       "t": "are having less impact on pollen than milder winters."
+      },
+      {
+       "v": "C",
+       "t": "are responsible for higher quantities of pollen."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What does Beth say about seasonal changes?",
+     "options": [
+      {
+       "v": "A",
+       "t": "There is no clear short-term trend for the arrival of spring."
+      },
+      {
+       "v": "B",
+       "t": "In general, spring is likely to continue arriving early."
+      },
+      {
+       "v": "C",
+       "t": "Springs are becoming milder and longer."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What point is made about the plant ragweed?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is spreading to more countries."
+      },
+      {
+       "v": "B",
+       "t": "It is the most widespread cause of allergies globally."
+      },
+      {
+       "v": "C",
+       "t": "It causes the most severe type of allergy."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "Why is tree pollen a more serious problem in cities?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Trees produce more pollen there."
+      },
+      {
+       "v": "B",
+       "t": "There is less to absorb the tree pollen."
+      },
+      {
+       "v": "C",
+       "t": "There is not enough control over tree-planting."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What comment is made about the seasonal changes in pollen in each of the following European countries? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 26- 30. Seasonal changes in pollen",
+   "bank": [
+    {
+     "v": "A",
+     "t": "greatest change recorded for oak pollen"
+    },
+    {
+     "v": "B",
+     "t": "changes identified for two pollen types only"
+    },
+    {
+     "v": "C",
+     "t": "a longer season for grass pollen"
+    },
+    {
+     "v": "D",
+     "t": "earlier start dates for all pollen types"
+    },
+    {
+     "v": "E",
+     "t": "significant change in start date of birch pollen"
+    },
+    {
+     "v": "F",
+     "t": "little difference in start dates"
+    },
+    {
+     "v": "G",
+     "t": "information only available for birch pollen"
+    }
+   ],
+   "questions": [
+    {
+     "n": 26,
+     "text": "Austria"
+    },
+    {
+     "n": 27,
+     "text": "France"
+    },
+    {
+     "n": 28,
+     "text": "The Netherlands"
+    },
+    {
+     "n": 29,
+     "text": "Switzerland"
+    },
+    {
+     "n": 30,
+     "text": "UK"
+    }
+   ]
+  }
+ ]
+}

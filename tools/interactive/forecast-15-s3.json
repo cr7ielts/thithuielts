@@ -1,0 +1,132 @@
+{
+ "id": "forecast-15-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "What reason do teachers give for using each of the following picture books with children? Choose SIX answers from the box and write the correct letter, A-I, next to questions 21-26.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "The pictures show changing times of day."
+    },
+    {
+     "v": "B",
+     "t": "The words are fun to say out loud."
+    },
+    {
+     "v": "C",
+     "t": "It has an uncommon plot structure."
+    },
+    {
+     "v": "D",
+     "t": "The text can easily be turned into song."
+    },
+    {
+     "v": "E",
+     "t": "The pictures were done by a famous illustrator."
+    },
+    {
+     "v": "F",
+     "t": "There is a surprise at the end of the story."
+    },
+    {
+     "v": "G",
+     "t": "The pictures are simple line drawings."
+    },
+    {
+     "v": "H",
+     "t": "It was published very recently."
+    },
+    {
+     "v": "I",
+     "t": "It features well-known characters."
+    }
+   ],
+   "questions": [
+    {
+     "n": 21,
+     "text": "I Spy Friends"
+    },
+    {
+     "n": 22,
+     "text": "Goodnight Little Rabbit"
+    },
+    {
+     "n": 23,
+     "text": "The Boat Party"
+    },
+    {
+     "n": 24,
+     "text": "Puppy and Friends"
+    },
+    {
+     "n": 25,
+     "text": "Hats and Socks"
+    },
+    {
+     "n": 26,
+     "text": "A Family Adventure"
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points from Smith's article about picture books did both speakers find surprising?",
+   "options": [
+    {
+     "v": "A",
+     "t": "their standard length"
+    },
+    {
+     "v": "B",
+     "t": "how recent the genre is"
+    },
+    {
+     "v": "C",
+     "t": "the argument that they are not literature"
+    },
+    {
+     "v": "D",
+     "t": "the lack of research about this age group"
+    },
+    {
+     "v": "E",
+     "t": "the popularity of books from overseas"
+    }
+   ]
+  },
+  {
+   "from": 29,
+   "to": 30,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO aspects of picture books do the speakers agree to talk about in their presentation?",
+   "options": [
+    {
+     "v": "A",
+     "t": "the material they are made from"
+    },
+    {
+     "v": "B",
+     "t": "common characters in them"
+    },
+    {
+     "v": "C",
+     "t": "the variety of roles in them"
+    },
+    {
+     "v": "D",
+     "t": "cultural elements in them"
+    },
+    {
+     "v": "E",
+     "t": "the future of the genre"
+    }
+   ]
+  }
+ ]
+}

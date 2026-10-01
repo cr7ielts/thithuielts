@@ -1,0 +1,442 @@
+{
+ "id": "forecast-11",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Oz Housesitters – Home Owner Registration Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Jenny Hall"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Address: 14 {{1}} St, Greenfield"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Mobile no: {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Date required from: {{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Length of time required: {{4}} weeks"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "House features:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "it has a new {{5}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "it is near a station"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the housesitter's {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Special duties required:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "water the {{7}} tree"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Housesitter requirements:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the house is large so a {{8}} is preferred"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "no {{9}} allowed"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "would like a check carried out by the {{10}}"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Arthur feels that when starting a business, mistakes should be",
+     "options": [
+      {
+       "v": "A",
+       "t": "seen as an opportunity to learn."
+      },
+      {
+       "v": "B",
+       "t": "predicted and minimised."
+      },
+      {
+       "v": "C",
+       "t": "avoided at all costs."
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "Recent American studies found that confidence will",
+     "options": [
+      {
+       "v": "A",
+       "t": "sometimes reduce people's chances of success."
+      },
+      {
+       "v": "B",
+       "t": "be increased by reading self-help books."
+      },
+      {
+       "v": "C",
+       "t": "ensure good results on business courses."
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "The American studies recommended that new entrepreneurs",
+     "options": [
+      {
+       "v": "A",
+       "t": "listen to their colleagues' advice."
+      },
+      {
+       "v": "B",
+       "t": "get professional help when things go wrong."
+      },
+      {
+       "v": "C",
+       "t": "remain concentrated on their aims."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What does Arthur say about his own experience of marketing?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He relied on what he already knew."
+      },
+      {
+       "v": "B",
+       "t": "He hired an expert to take care of it."
+      },
+      {
+       "v": "C",
+       "t": "He realised its importance too late."
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "text": "What does Arthur think is an important quality shared by good leaders?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They are ambitious for their company."
+      },
+      {
+       "v": "B",
+       "t": "They can deal with difficult people."
+      },
+      {
+       "v": "C",
+       "t": "They earn the respect of their workforce."
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "text": "What does Arthur say about taking risks?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He advises being cautious."
+      },
+      {
+       "v": "B",
+       "t": "He favours a long-term view."
+      },
+      {
+       "v": "C",
+       "t": "He believes it is financially advantageous."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A - E. Which TWO things does Arthur say people should focus on when developing their business idea?",
+   "options": [
+    {
+     "v": "A",
+     "t": "making sure the idea is original"
+    },
+    {
+     "v": "B",
+     "t": "offering a better deal than competitors"
+    },
+    {
+     "v": "C",
+     "t": "being committed to it"
+    },
+    {
+     "v": "D",
+     "t": "paying attention to detail"
+    },
+    {
+     "v": "E",
+     "t": "fixing realistic prices"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A - E. Which TWO things does Arthur say helped him get his business started?",
+   "options": [
+    {
+     "v": "A",
+     "t": "family support"
+    },
+    {
+     "v": "B",
+     "t": "getting a loan from a bank"
+    },
+    {
+     "v": "C",
+     "t": "good business advice"
+    },
+    {
+     "v": "D",
+     "t": "a favourable economic climate"
+    },
+    {
+     "v": "E",
+     "t": "an effective approach to business"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "What is said about each of the following experiments? Choose SIX answers from the box and write the correct letter, A-H, next to questions 21-26.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "very boring"
+    },
+    {
+     "v": "B",
+     "t": "too difficult"
+    },
+    {
+     "v": "C",
+     "t": "specialised equipment needed"
+    },
+    {
+     "v": "D",
+     "t": "very expensive"
+    },
+    {
+     "v": "E",
+     "t": "immediate results"
+    },
+    {
+     "v": "F",
+     "t": "useful practice for maths"
+    },
+    {
+     "v": "G",
+     "t": "cheap to do"
+    },
+    {
+     "v": "H",
+     "t": "takes longer than usual to do"
+    }
+   ],
+   "questions": [
+    {
+     "n": 21,
+     "text": "Steam engine"
+    },
+    {
+     "n": 22,
+     "text": "Breakfast cereals"
+    },
+    {
+     "n": 23,
+     "text": "Bouncing balls"
+    },
+    {
+     "n": 24,
+     "text": "Making paper"
+    },
+    {
+     "n": 25,
+     "text": "Tie-dyeing"
+    },
+    {
+     "n": 26,
+     "text": "Glue from milk"
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Label the diagram (see the diagram on the test paper). Write the correct letter, A-G, next to questions 27-30.",
+   "questions": [
+    {
+     "n": 27,
+     "text": "Metal container"
+    },
+    {
+     "n": 28,
+     "text": "Integral strainer"
+    },
+    {
+     "n": 29,
+     "text": "Drip tray"
+    },
+    {
+     "n": 30,
+     "text": "Pottery container"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Office Design",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Early 20th century"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "workers employed to do {{31}} were arranged in rows"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "1960s to present"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Variations in design of open-plan offices:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "first, workers had individual {{32}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "later, they had cubicles with high or low {{33}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "nowadays, workers may have to {{34}} a work area"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Survey results"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Attitudes of employees to open-plan designs:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "there is a lack of {{35}} and {{36}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they pose a risk to our {{37}} (staff records support this)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Attitudes of employers to open-plan designs:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they significantly reduce rent and {{38}} costs"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they improve teamwork and communication"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "they can make {{39}} staff easier"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "In reality, employees are unhappy and they are often distracted by the {{40}} in the office."
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

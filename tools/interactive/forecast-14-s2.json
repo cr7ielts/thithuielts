@@ -1,0 +1,162 @@
+{
+ "id": "forecast-14-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "What information is given about each of the following historical sites? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 11-15.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "limited viewing space"
+    },
+    {
+     "v": "B",
+     "t": "free movie"
+    },
+    {
+     "v": "C",
+     "t": "limited touring time"
+    },
+    {
+     "v": "D",
+     "t": "advance reservations only"
+    },
+    {
+     "v": "E",
+     "t": "old paintings"
+    },
+    {
+     "v": "F",
+     "t": "best seen at night"
+    },
+    {
+     "v": "G",
+     "t": "unusual architectural details"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Chamber Museum"
+    },
+    {
+     "n": 12,
+     "text": "Harris Park"
+    },
+    {
+     "n": 13,
+     "text": "State Building"
+    },
+    {
+     "n": 14,
+     "text": "High Court"
+    },
+    {
+     "n": 15,
+     "text": "Castle Mount"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 16,
+     "text": "At the King Centre, you can",
+     "options": [
+      {
+       "v": "A",
+       "t": "watch a movie."
+      },
+      {
+       "v": "B",
+       "t": "see a live performance."
+      },
+      {
+       "v": "C",
+       "t": "enjoy local food."
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "The 'T Park' attendance has recently improved because of",
+     "options": [
+      {
+       "v": "A",
+       "t": "extra summer events."
+      },
+      {
+       "v": "B",
+       "t": "popular activities for kids."
+      },
+      {
+       "v": "C",
+       "t": "better public transport."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "In Marytown, you may be able to",
+     "options": [
+      {
+       "v": "A",
+       "t": "find a discount shop."
+      },
+      {
+       "v": "B",
+       "t": "visit an old house."
+      },
+      {
+       "v": "C",
+       "t": "attend a university lecture."
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "At the canal, you can",
+     "options": [
+      {
+       "v": "A",
+       "t": "have a picnic."
+      },
+      {
+       "v": "B",
+       "t": "rent a bicycle."
+      },
+      {
+       "v": "C",
+       "t": "take a guided tour."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "The speaker concludes by recommending visitors to",
+     "options": [
+      {
+       "v": "A",
+       "t": "visit all the sites."
+      },
+      {
+       "v": "B",
+       "t": "carry water."
+      },
+      {
+       "v": "C",
+       "t": "use public transport."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

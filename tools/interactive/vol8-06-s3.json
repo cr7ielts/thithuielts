@@ -1,0 +1,179 @@
+{
+ "id": "vol8-06-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Bricks made from waste",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Adele read the article about Bitublocks because",
+     "options": [
+      {
+       "v": "A",
+       "t": "it'll help her write an assignment."
+      },
+      {
+       "v": "B",
+       "t": "she has to present it at a seminar."
+      },
+      {
+       "v": "C",
+       "t": "it's on her dissertation topic."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What does Adele think is the most innovative aspect of the manufacture of Bitublocks?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It uses entirely recycled materials."
+      },
+      {
+       "v": "B",
+       "t": "It does not involve a chemical reaction."
+      },
+      {
+       "v": "C",
+       "t": "It is such a simple process."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Ray was surprised to read that the Bitublocks are so",
+     "options": [
+      {
+       "v": "A",
+       "t": "stable."
+      },
+      {
+       "v": "B",
+       "t": "light."
+      },
+      {
+       "v": "C",
+       "t": "absorbent."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What do both Adele and Ray say about the manufacture of Bitublocks?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Existing methods are used."
+      },
+      {
+       "v": "B",
+       "t": "Cheap materials are used."
+      },
+      {
+       "v": "C",
+       "t": "Only local materials are used."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What insight did Ray get from reading about the hospital building?",
+     "options": [
+      {
+       "v": "A",
+       "t": "how quickly UK building projects are growing"
+      },
+      {
+       "v": "B",
+       "t": "how poor UK construction materials are"
+      },
+      {
+       "v": "C",
+       "t": "how much material the UK construction industry uses"
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "Adele thinks the research into the hospital was included in the article to show",
+     "options": [
+      {
+       "v": "A",
+       "t": "how much recycled material is currently used."
+      },
+      {
+       "v": "B",
+       "t": "ways to improve the levels of recycling."
+      },
+      {
+       "v": "C",
+       "t": "problems caused when using recycled materials."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO things make Veggieblocks different from Bitublocks?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They are cheaper to produce."
+    },
+    {
+     "v": "B",
+     "t": "They have a more acceptable colour."
+    },
+    {
+     "v": "C",
+     "t": "They are simpler to manufacture."
+    },
+    {
+     "v": "D",
+     "t": "They have problems with their smell."
+    },
+    {
+     "v": "E",
+     "t": "They can be more easily covered."
+    }
+   ]
+  },
+  {
+   "from": 29,
+   "to": 30,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO things about the future of the construction industry do Adele and Ray agree on?",
+   "options": [
+    {
+     "v": "A",
+     "t": "Architects will be willing to use new materials."
+    },
+    {
+     "v": "B",
+     "t": "Bitublocks will have a major impact."
+    },
+    {
+     "v": "C",
+     "t": "The industry will change very fast."
+    },
+    {
+     "v": "D",
+     "t": "Veggieblocks will become very popular."
+    },
+    {
+     "v": "E",
+     "t": "Financial incentives will be an important influence."
+    }
+   ]
+  }
+ ]
+}

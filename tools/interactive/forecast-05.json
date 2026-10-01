@@ -1,0 +1,483 @@
+{
+ "id": "forecast-05",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Rental Property Application Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Susan Smith (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Phone number: {{1}} (mobile)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Email address: susansmith@{{2}}.com"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Current address: 234 Becketts Road, Brisbane 4054"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "New Zealand employer: Auckland Hospital"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Occupation: a {{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Rental start date: 8th February"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Preferred property type:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "first preference: a house with a {{4}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "second preference: an apartment with a big {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Bedrooms: two"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Furnishings: a {{6}} is required"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Maximum rent: ${{7}} per week"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Preferred location: near the {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other requirements:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "must have {{9}} nearby"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "would like {{10}} included in the rent"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Choose the correct letter A, B or C",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Who founded the Middletown Urban Farming Scheme?",
+     "options": [
+      {
+       "v": "A",
+       "t": "university specialists"
+      },
+      {
+       "v": "B",
+       "t": "business people"
+      },
+      {
+       "v": "C",
+       "t": "town planners"
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "What was the original reason for starting the MUFS?",
+     "options": [
+      {
+       "v": "A",
+       "t": "to encourage more efficient land use"
+      },
+      {
+       "v": "B",
+       "t": "to help lessen CO2 emissions"
+      },
+      {
+       "v": "C",
+       "t": "to improve people's eating habits"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "For the coming year, the MUFS will focus on recruiting members from",
+     "options": [
+      {
+       "v": "A",
+       "t": "schools."
+      },
+      {
+       "v": "B",
+       "t": "companies."
+      },
+      {
+       "v": "C",
+       "t": "community centres"
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What kind of information is available from members of the MUFS committee?",
+     "options": [
+      {
+       "v": "A",
+       "t": "practical gardening tips"
+      },
+      {
+       "v": "B",
+       "t": "plant science"
+      },
+      {
+       "v": "C",
+       "t": "location of local garden sites"
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "text": "What are provided by the MUFS for the physically disabled?",
+     "options": [
+      {
+       "v": "A",
+       "t": "soil and compost"
+      },
+      {
+       "v": "B",
+       "t": "containers for plants"
+      },
+      {
+       "v": "C",
+       "t": "gardening tools"
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "text": "According to school teachers, what has been an unexpected advantage of the MUFS?",
+     "options": [
+      {
+       "v": "A",
+       "t": "its usefulness as an aid for teaching science"
+      },
+      {
+       "v": "B",
+       "t": "its contribution to reducing costs of school meals"
+      },
+      {
+       "v": "C",
+       "t": "its help in encouraging community pride among students"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "What free goods or services are offered by each of the following providers? Choose FOUR answers from the box and write the correct letter A-F next to questions 17-20. Free goods or services",
+   "bank": [
+    {
+     "v": "A",
+     "t": "fertilisers"
+    },
+    {
+     "v": "B",
+     "t": "cooking lessons"
+    },
+    {
+     "v": "C",
+     "t": "advice on soil"
+    },
+    {
+     "v": "D",
+     "t": "eat-to-keep-fit course"
+    },
+    {
+     "v": "E",
+     "t": "use of a greenhouse"
+    },
+    {
+     "v": "F",
+     "t": "market stalls"
+    }
+   ],
+   "questions": [
+    {
+     "n": 17,
+     "text": "city hospital"
+    },
+    {
+     "n": 18,
+     "text": "local government"
+    },
+    {
+     "n": 19,
+     "text": "university"
+    },
+    {
+     "n": 20,
+     "text": "supermarket"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 22,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points did students most frequently make about their musical background before starting a music degree?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They had already composed music."
+    },
+    {
+     "v": "B",
+     "t": "They had several music qualifications."
+    },
+    {
+     "v": "C",
+     "t": "They could play more than one instrument."
+    },
+    {
+     "v": "D",
+     "t": "They had performed in public."
+    },
+    {
+     "v": "E",
+     "t": "They had had piano lessons."
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "to": 24,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points did students most frequently make about music practice?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They prefer to practise alone."
+    },
+    {
+     "v": "B",
+     "t": "They try to practise every day."
+    },
+    {
+     "v": "C",
+     "t": "They are motivated to practise by fear"
+    },
+    {
+     "v": "D",
+     "t": "They feel they don't do enough practice."
+    },
+    {
+     "v": "E",
+     "t": "They enjoy the challenge of a difficult piece."
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 26,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points were most frequently made by students about the pieces they select for assessed performances?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They like to hear others performing the same pieces."
+    },
+    {
+     "v": "B",
+     "t": "They like to choose little-known pieces."
+    },
+    {
+     "v": "C",
+     "t": "They like to play pieces from memory."
+    },
+    {
+     "v": "D",
+     "t": "They like their tutor to choose their pieces."
+    },
+    {
+     "v": "E",
+     "t": "They like to choose technically demanding pieces."
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Which comment did most students make about each of the following aspects of performance? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30. Student comments",
+   "bank": [
+    {
+     "v": "A",
+     "t": "This is very beneficial."
+    },
+    {
+     "v": "B",
+     "t": "This is difficult but enjoyable."
+    },
+    {
+     "v": "C",
+     "t": "This can affect relationships."
+    },
+    {
+     "v": "D",
+     "t": "This makes them very nervous."
+    },
+    {
+     "v": "E",
+     "t": "This is time-consuming."
+    },
+    {
+     "v": "F",
+     "t": "This is easy."
+    },
+    {
+     "v": "G",
+     "t": "This happens infrequently."
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Performing solo"
+    },
+    {
+     "n": 28,
+     "text": "Deciding which pieces to perform"
+    },
+    {
+     "n": 29,
+     "text": "Performing with musicians from a different genre"
+    },
+    {
+     "n": 30,
+     "text": "Performing with musicians who play the same instrument"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Sustainability",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Sustainability: term first used in 1987 by writers of United Nations report"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Lecture aim: analysis of the {{31}} surrounding sustainability"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Sustainable development: development that will meet the needs of both present and future {{32}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Myth 1: No mention of the {{33}} in original definition"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Original focus: poorer nations should have the same {{34}} to natural resources as richer nations"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "This would help them achieve better {{35}} conditions"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Myth 2: 'Green' vs sustainable"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Key difference: unlike 'green', 'sustainable' is not always associated with things that are natural"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "For the sustainability lobby, the key problem is finding {{36}} to develop technology"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Sustainability lobby is prepared to {{37}} nuclear energy"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Myth 3: Role of technology"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Introduction of battery stations on {{38}} is an example of new business thinking, not new technology"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Agriculture: some farmers plant crops like sunflowers which don't use much water, unlike {{39}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Greater use of water is a result of changes in our {{40}}"
+    }
+   ]
+  }
+ ]
+}

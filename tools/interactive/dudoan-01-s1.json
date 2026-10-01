@@ -1,0 +1,93 @@
+{
+ "id": "dudoan-01-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 6,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Beechen Festival (Date – Time – Activity – Place – Comments)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 19th, 7 p.m. – Concert (example)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: the {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Comments: includes a visit to an old flour mill"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 20th, {{2}} p.m. – tour"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: meet at the {{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 21st, all day – children's {{4}} competition"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: Beechen Community Centre"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Comments: bring a {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June 21st, evening – fireworks"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Place: by the {{6}}"
+    }
+   ]
+  },
+  {
+   "from": 7,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "This year, activities end by {{7}} p.m."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "There won't be any {{8}} in the town centre this year."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The festival's web address is www.{{9}}.com."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Festival organisers would like to receive {{10}} online."
+    }
+   ]
+  }
+ ]
+}

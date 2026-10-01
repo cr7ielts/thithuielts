@@ -1,0 +1,532 @@
+{
+ "id": "forecast-14",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Family presents",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Company specialises in educational toys"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Presents for Peter:"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A wooden {{1}} (a model)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "includes a sheet of stickers"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "helps children to understand basic {{2}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "price: £17.50"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A {{3}} feeder"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "includes paints and brush"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "price: £{{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Present for Natalie:"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "A chocolate pack"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "kit includes chocolate, moulds and some small {{5}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "develops artistic skills"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "helps children to understand effects of {{6}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "price: £6.00"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Ordering toys"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "web address – www.{{7}}.com"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "order before Friday to get free {{8}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "can be wrapped and sent straight to children"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "under 'Packaging options' choose {{9}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "possible to include a {{10}}"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "What information is given about each of the following historical sites? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 11-15.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "limited viewing space"
+    },
+    {
+     "v": "B",
+     "t": "free movie"
+    },
+    {
+     "v": "C",
+     "t": "limited touring time"
+    },
+    {
+     "v": "D",
+     "t": "advance reservations only"
+    },
+    {
+     "v": "E",
+     "t": "old paintings"
+    },
+    {
+     "v": "F",
+     "t": "best seen at night"
+    },
+    {
+     "v": "G",
+     "t": "unusual architectural details"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Chamber Museum"
+    },
+    {
+     "n": 12,
+     "text": "Harris Park"
+    },
+    {
+     "n": 13,
+     "text": "State Building"
+    },
+    {
+     "n": 14,
+     "text": "High Court"
+    },
+    {
+     "n": 15,
+     "text": "Castle Mount"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 16,
+     "text": "At the King Centre, you can",
+     "options": [
+      {
+       "v": "A",
+       "t": "watch a movie."
+      },
+      {
+       "v": "B",
+       "t": "see a live performance."
+      },
+      {
+       "v": "C",
+       "t": "enjoy local food."
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "The 'T Park' attendance has recently improved because of",
+     "options": [
+      {
+       "v": "A",
+       "t": "extra summer events."
+      },
+      {
+       "v": "B",
+       "t": "popular activities for kids."
+      },
+      {
+       "v": "C",
+       "t": "better public transport."
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "In Marytown, you may be able to",
+     "options": [
+      {
+       "v": "A",
+       "t": "find a discount shop."
+      },
+      {
+       "v": "B",
+       "t": "visit an old house."
+      },
+      {
+       "v": "C",
+       "t": "attend a university lecture."
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "At the canal, you can",
+     "options": [
+      {
+       "v": "A",
+       "t": "have a picnic."
+      },
+      {
+       "v": "B",
+       "t": "rent a bicycle."
+      },
+      {
+       "v": "C",
+       "t": "take a guided tour."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "The speaker concludes by recommending visitors to",
+     "options": [
+      {
+       "v": "A",
+       "t": "visit all the sites."
+      },
+      {
+       "v": "B",
+       "t": "carry water."
+      },
+      {
+       "v": "C",
+       "t": "use public transport."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 24,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "John is unhappy because the work experience programme",
+     "options": [
+      {
+       "v": "A",
+       "t": "is very expensive."
+      },
+      {
+       "v": "B",
+       "t": "takes too long."
+      },
+      {
+       "v": "C",
+       "t": "doesn't earn credit."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What part of the preparation course do Emma and John agree is unnecessary?",
+     "options": [
+      {
+       "v": "A",
+       "t": "creating a professional curriculum vitae"
+      },
+      {
+       "v": "B",
+       "t": "attending an interview workshop"
+      },
+      {
+       "v": "C",
+       "t": "setting personal goals"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What does Emma say about the work experience role John might take on?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He will spend the entire time on the help desk."
+      },
+      {
+       "v": "B",
+       "t": "He will get the chance to design computer software."
+      },
+      {
+       "v": "C",
+       "t": "He will be able to do work appropriate to his area of study."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "According to John, when students are doing work experience after their second year",
+     "options": [
+      {
+       "v": "A",
+       "t": "they cannot expect to receive the same wage as recent graduates."
+      },
+      {
+       "v": "B",
+       "t": "their employers are not required to pay them."
+      },
+      {
+       "v": "C",
+       "t": "they are not allowed to work for charity organisations."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Complete the flow-chart below. Choose SIX answers from the box and write the correct letter, A-I, next to questions 25-30.",
+   "noteTitle": "The process for getting and doing work experience",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The student gets a simple {{25}} form."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ The college looks at a short {{26}} and confirms whether the work is suitable."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ The college obtains the relevant {{27}} from the employer."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ A meeting is arranged to discuss {{28}} issues."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ The student must complete a {{29}} while doing the work experience."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Employers are provided with a voluntary {{30}} form."
+    }
+   ],
+   "bank": [
+    {
+     "v": "A",
+     "t": "health and safety"
+    },
+    {
+     "v": "B",
+     "t": "record of work"
+    },
+    {
+     "v": "C",
+     "t": "application"
+    },
+    {
+     "v": "D",
+     "t": "contract"
+    },
+    {
+     "v": "E",
+     "t": "job description"
+    },
+    {
+     "v": "F",
+     "t": "feedback"
+    },
+    {
+     "v": "G",
+     "t": "payment"
+    },
+    {
+     "v": "H",
+     "t": "contact details"
+    },
+    {
+     "v": "I",
+     "t": "permission"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Theories of intelligence",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "1st theory (developed by psychologists such as Spearman, 1920s)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Everyone has a particular intelligence quotient (IQ)."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "There is no change during a person's {{31}}."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Intelligence is seen as genetic in origin."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "This theory is supported by research into the intelligence of {{32}}."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "2nd theory (based on the same research)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Intelligence is due to environmental factors."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Two children from the same family are likely to have similar {{33}}, affecting their intelligence."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Evidence:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "The Raven's test is used to assess people's ability to reason in an abstract way."
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "It found that after moving to a different culture there was an {{34}} in children's intelligence."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "3rd theory (Howard Gardner, 1990s)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "People have multiple intelligences, including traditional ones (e.g. linguistic), and non-traditional (e.g. {{35}})."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "It is based on research that suggests specific parts of the {{36}} control specific cognitive abilities."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "It is supported by the fact that some people have problems identifying a {{37}} but no problems in other related areas."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "According to Gardner's theory, there is {{38}} between the different intelligences. This can be used to improve learning:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "Surprisingly, improvements in rhythm may affect {{39}}."
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "Scientific facts may be easier to remember if learnt as a {{40}}."
+    }
+   ]
+  }
+ ]
+}

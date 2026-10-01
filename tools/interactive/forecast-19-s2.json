@@ -1,0 +1,149 @@
+{
+ "id": "forecast-19-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 18,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Spring Festival (Event – Location – Date and time – Other information)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Firework display"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: near the {{11}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 4 September, 9 p.m."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Other information: pack a {{12}} and blanket"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Display of {{13}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: Central Park"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: daily"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Other information: buses run from the town centre every {{14}} minutes"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The {{15}} Show"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: Exhibition Centre"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 10–15 September, 9 a.m. – 10 p.m."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "'Grow Your Imagination'"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: in the {{16}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 11–19 September"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "'Swing in Spring'"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: in the {{17}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 17 & 18 September"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Other information: Saturday matinee performance at {{18}}"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 19,
+     "text": "In the Spring Festival competition, you can win",
+     "options": [
+      {
+       "v": "A",
+       "t": "a family pass to 'Balloons Down Under'."
+      },
+      {
+       "v": "B",
+       "t": "a cheque for $200."
+      },
+      {
+       "v": "C",
+       "t": "a flight in a hot air balloon."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "You can get an entry form for the competition from",
+     "options": [
+      {
+       "v": "A",
+       "t": "the radio station."
+      },
+      {
+       "v": "B",
+       "t": "the newspaper."
+      },
+      {
+       "v": "C",
+       "t": "the Festival's website."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

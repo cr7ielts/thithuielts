@@ -1,0 +1,499 @@
+{
+ "id": "forecast-09",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Theatre booking",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Example: Booking for Pirates"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Date: 8th December (afternoon)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Fenella {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Contact number: 07796892326"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Booking details:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Type of booking: {{2}} with discount"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Tickets: {{3}} adults"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Children under 16 at £{{4}} each"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Requires seats on the {{5}} row of the circle"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "One person uses a {{6}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Need to have good access to the {{7}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Will collect the tickets from the {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Meals:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Several people are {{9}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Food: {{10}} (cheese and tomato)"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "Which choir does each of the following statements apply to? Write the correct letter, A, B or C, next to questions 11-15",
+   "bank": [
+    {
+     "v": "A",
+     "t": "Mitchelstown Choir"
+    },
+    {
+     "v": "B",
+     "t": "The Blackvale Male Voice Choir"
+    },
+    {
+     "v": "C",
+     "t": "The Caroline Singers"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "They specialise in a particular type of music"
+    },
+    {
+     "n": 12,
+     "text": "They organise social events"
+    },
+    {
+     "n": 13,
+     "text": "They have recently won a competition"
+    },
+    {
+     "n": 14,
+     "text": "They have recently recorded their first CD"
+    },
+    {
+     "n": 15,
+     "text": "They participate in charity events"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C",
+   "questions": [
+    {
+     "n": 16,
+     "text": "Elizabeth Arnold thinks people join a choir at work because it gives them a chance to",
+     "options": [
+      {
+       "v": "A",
+       "t": "have a break from work."
+      },
+      {
+       "v": "B",
+       "t": "improve their singing."
+      },
+      {
+       "v": "C",
+       "t": "make business contacts."
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "How does a company benefit from setting up a choir?",
+     "options": [
+      {
+       "v": "A",
+       "t": "improved relationships between co-workers"
+      },
+      {
+       "v": "B",
+       "t": "less sick leave taken by employees"
+      },
+      {
+       "v": "C",
+       "t": "increased commitment to the company"
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "How many members does the John White choir have?",
+     "options": [
+      {
+       "v": "A",
+       "t": "5"
+      },
+      {
+       "v": "B",
+       "t": "12"
+      },
+      {
+       "v": "C",
+       "t": "19"
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "When do the choir have their rehearsals?",
+     "options": [
+      {
+       "v": "A",
+       "t": "before work"
+      },
+      {
+       "v": "B",
+       "t": "at lunch-time"
+      },
+      {
+       "v": "C",
+       "t": "after work"
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "How does the company support the choir?",
+     "options": [
+      {
+       "v": "A",
+       "t": "by providing concert clothes"
+      },
+      {
+       "v": "B",
+       "t": "by funding social events"
+      },
+      {
+       "v": "C",
+       "t": "by paying for singing classes"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Mike suggests they use the word 'area' to mean",
+     "options": [
+      {
+       "v": "A",
+       "t": "geographical location."
+      },
+      {
+       "v": "B",
+       "t": "tourist site."
+      },
+      {
+       "v": "C",
+       "t": "research field."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "According to Eva, most people believe that culture",
+     "options": [
+      {
+       "v": "A",
+       "t": "refers to long-established events and places."
+      },
+      {
+       "v": "B",
+       "t": "includes modern forms of art and entertainment."
+      },
+      {
+       "v": "C",
+       "t": "is becoming less linked to particular regions."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Why should they carry out about 200 surveys?",
+     "options": [
+      {
+       "v": "A",
+       "t": "to provide information about a range of events"
+      },
+      {
+       "v": "B",
+       "t": "to be able to meet the deadline"
+      },
+      {
+       "v": "C",
+       "t": "to get valid results"
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "Which groups of people do they decide to interview?",
+     "options": [
+      {
+       "v": "A",
+       "t": "domestic tourists and local residents"
+      },
+      {
+       "v": "B",
+       "t": "local residents and international tourists"
+      },
+      {
+       "v": "C",
+       "t": "international and domestic tourists"
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "Mike expresses concern at having to ask about",
+     "options": [
+      {
+       "v": "A",
+       "t": "the amount of money a person has spent"
+      },
+      {
+       "v": "B",
+       "t": "a person's age"
+      },
+      {
+       "v": "C",
+       "t": "a person's occupation"
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "Which form will their results be presented in?",
+     "options": [
+      {
+       "v": "A",
+       "t": "a table"
+      },
+      {
+       "v": "B",
+       "t": "a pie chart"
+      },
+      {
+       "v": "C",
+       "t": "a graph"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Which tourist attraction will be highlighted in each of the following countries? Choose FOUR answers from the box and write the correct letter, A-G, next to questions",
+   "bank": [
+    {
+     "v": "A",
+     "t": "ancient buildings"
+    },
+    {
+     "v": "B",
+     "t": "contemporary art gallery"
+    },
+    {
+     "v": "C",
+     "t": "food festival"
+    },
+    {
+     "v": "D",
+     "t": "museums displaying traditional objects"
+    },
+    {
+     "v": "E",
+     "t": "national parks"
+    },
+    {
+     "v": "F",
+     "t": "theatre performances"
+    },
+    {
+     "v": "G",
+     "t": "traditional dances"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Mexico"
+    },
+    {
+     "n": 28,
+     "text": "Greece"
+    },
+    {
+     "n": 29,
+     "text": "Britain"
+    },
+    {
+     "n": 30,
+     "text": "India"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Working as a Patent Attorney",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Getting a patent"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Nowadays most patents are applied for by a {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The invention has to be {{32}} in order to be patented"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "A detailed {{33}} of the invention is required"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Requirements"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Academic qualifications, e.g. Chemistry or {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "People with very good {{35}} skills"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Knowledge of a different {{36}} (desirable)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Advantages of the job"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Interesting – uses range of expertise"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Good {{37}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Disadvantages of the job"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Sometimes quite {{38}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Location is inflexible"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Possible places of work"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Large {{39}} organisations"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Private practices"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{40}} departments"
+    }
+   ]
+  }
+ ]
+}

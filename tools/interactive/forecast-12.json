@@ -1,0 +1,416 @@
+{
+ "id": "forecast-12",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Library services",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Best option – Minack Library"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Located in {{1}} Street, next to the {{2}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Saturdays: open until {{3}} p.m."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Children's activities"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a {{4}} club (5–13 year olds)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a {{5}} club (every other Saturday)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Adult activities"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Book of the Month club"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Can meet local {{6}} (about one a year)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Services"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Can borrow {{7}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Computers are available (can be booked)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Various {{8}} are available"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Can drop off books, etc. via the letter box (must give card {{9}})"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Library shop sells"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "postcards (small selection)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{10}} (wide range)"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Label the plan (see the plan on the test paper). Write the correct letter, A-H, next to questions 11-16.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Toilet block"
+    },
+    {
+     "n": 12,
+     "text": "Shower block"
+    },
+    {
+     "n": 13,
+     "text": "Tent site"
+    },
+    {
+     "n": 14,
+     "text": "Cabins"
+    },
+    {
+     "n": 15,
+     "text": "Barbecue area"
+    },
+    {
+     "n": 16,
+     "text": "Bike trail"
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO items is it recommended that campers bring?",
+   "options": [
+    {
+     "v": "A",
+     "t": "earplugs"
+    },
+    {
+     "v": "B",
+     "t": "sunscreen"
+    },
+    {
+     "v": "C",
+     "t": "swimming toy"
+    },
+    {
+     "v": "D",
+     "t": "torch"
+    },
+    {
+     "v": "E",
+     "t": "boots"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which does the organiser suggest are the TWO most popular concert items?",
+   "options": [
+    {
+     "v": "A",
+     "t": "acting"
+    },
+    {
+     "v": "B",
+     "t": "dancing"
+    },
+    {
+     "v": "C",
+     "t": "poetry recital"
+    },
+    {
+     "v": "D",
+     "t": "singing"
+    },
+    {
+     "v": "E",
+     "t": "storytelling"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 22,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points did students most frequently make about their musical background before starting a music degree?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They had already composed music."
+    },
+    {
+     "v": "B",
+     "t": "They had several music qualifications."
+    },
+    {
+     "v": "C",
+     "t": "They could play more than one instrument."
+    },
+    {
+     "v": "D",
+     "t": "They had performed in public."
+    },
+    {
+     "v": "E",
+     "t": "They had had piano lessons."
+    }
+   ]
+  },
+  {
+   "from": 23,
+   "to": 24,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points did students most frequently make about music practice?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They prefer to practise alone."
+    },
+    {
+     "v": "B",
+     "t": "They try to practise every day."
+    },
+    {
+     "v": "C",
+     "t": "They are motivated to practise by fear."
+    },
+    {
+     "v": "D",
+     "t": "They feel they don't do enough practice."
+    },
+    {
+     "v": "E",
+     "t": "They enjoy the challenge of a difficult piece."
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 26,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO points were most frequently made by students about the pieces they select for assessed performances?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They like to hear others performing the same pieces."
+    },
+    {
+     "v": "B",
+     "t": "They like to choose little-known pieces."
+    },
+    {
+     "v": "C",
+     "t": "They like to play pieces from memory."
+    },
+    {
+     "v": "D",
+     "t": "They like their tutor to choose their pieces."
+    },
+    {
+     "v": "E",
+     "t": "They like to choose technically demanding pieces."
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Which comment did most students make about each of the following aspects of performance? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "This is very beneficial."
+    },
+    {
+     "v": "B",
+     "t": "This is difficult but enjoyable."
+    },
+    {
+     "v": "C",
+     "t": "This can affect relationships."
+    },
+    {
+     "v": "D",
+     "t": "This makes them very nervous."
+    },
+    {
+     "v": "E",
+     "t": "This is time-consuming."
+    },
+    {
+     "v": "F",
+     "t": "This is easy."
+    },
+    {
+     "v": "G",
+     "t": "This happens infrequently."
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Performing solo"
+    },
+    {
+     "n": 28,
+     "text": "Deciding which pieces to perform"
+    },
+    {
+     "n": 29,
+     "text": "Performing with musicians from a different genre"
+    },
+    {
+     "n": 30,
+     "text": "Performing with musicians who play the same instrument"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Ethics in Engineering",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Ethics – principles relating to right and wrong conduct"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "At first, engineers saw ethics as a {{31}} issue"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Attitudes changed because of three disasters involving the collapse of {{32}}:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "1876 – USA (metal fatigue)"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "1879 – Scotland (the impact of {{33}} on the structure was miscalculated)"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "1907 – Canada (the structure could not support its own {{34}})"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Boston Molasses Disaster"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "At the time, molasses was the main {{35}} used in the USA"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Boston company: collapse of a {{36}} released 8 million litres of molasses"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The wave of molasses destroyed buildings and the railway"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Local residents insisted on a {{37}} of the molasses company"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The company had to pay compensation"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Probable causes of the accident:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "insufficient {{38}} checks"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "fermentation raised the {{39}} to a dangerous level"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "It is now obligatory for engineers to have a {{40}}."
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

@@ -1,0 +1,173 @@
+{
+ "id": "vol8-02-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Feedback on second year of Performance Arts Course",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Gina chose to study performance arts at this university because the course",
+     "options": [
+      {
+       "v": "A",
+       "t": "has a very good reputation."
+      },
+      {
+       "v": "B",
+       "t": "has links with various theatres."
+      },
+      {
+       "v": "C",
+       "t": "has an international flavour."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Which of the options they chose have Gina and Charlie both found useful?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Movement Analysis"
+      },
+      {
+       "v": "B",
+       "t": "Dance and Drama"
+      },
+      {
+       "v": "C",
+       "t": "The Body in Dance"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What did Charlie do during his work experience?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He worked in a costume department."
+      },
+      {
+       "v": "B",
+       "t": "He performed with a ballet company."
+      },
+      {
+       "v": "C",
+       "t": "He helped out at a dance school for children."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What does Gina say she learnt from her work experience?",
+     "options": [
+      {
+       "v": "A",
+       "t": "how to organise her time better"
+      },
+      {
+       "v": "B",
+       "t": "how to work better in a team"
+      },
+      {
+       "v": "C",
+       "t": "how to cope when under pressure"
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What does Charlie say about his dissertation topic?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He wanted it to be different from those of other students."
+      },
+      {
+       "v": "B",
+       "t": "He had already done an assignment in this area."
+      },
+      {
+       "v": "C",
+       "t": "He was inspired to choose it by a performance he saw."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "Which aspect of writing a dissertation is Gina worried about?",
+     "options": [
+      {
+       "v": "A",
+       "t": "finding enough to say"
+      },
+      {
+       "v": "B",
+       "t": "doing the background reading"
+      },
+      {
+       "v": "C",
+       "t": "presenting it in an appropriate way"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What do the students say about each of the following types of careers in performance arts? Choose FOUR answers from the box and write the correct letter, A-F, next to questions 27-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "The pay can be low."
+    },
+    {
+     "v": "B",
+     "t": "There is a lot of competition."
+    },
+    {
+     "v": "C",
+     "t": "An additional qualification is required."
+    },
+    {
+     "v": "D",
+     "t": "Good communication skills are required."
+    },
+    {
+     "v": "E",
+     "t": "People with experience feel very positive about it."
+    },
+    {
+     "v": "F",
+     "t": "It is a relatively unpopular choice."
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Performance"
+    },
+    {
+     "n": 28,
+     "text": "Education"
+    },
+    {
+     "n": 29,
+     "text": "Theatre management"
+    },
+    {
+     "n": 30,
+     "text": "Marketing"
+    }
+   ]
+  }
+ ]
+}

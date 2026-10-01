@@ -1,0 +1,105 @@
+{
+ "id": "forecast-09-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Working as a Patent Attorney",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Getting a patent"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Nowadays most patents are applied for by a {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The invention has to be {{32}} in order to be patented"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "A detailed {{33}} of the invention is required"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Requirements"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Academic qualifications, e.g. Chemistry or {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "People with very good {{35}} skills"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Knowledge of a different {{36}} (desirable)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Advantages of the job"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Interesting – uses range of expertise"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Good {{37}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Disadvantages of the job"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Sometimes quite {{38}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Location is inflexible"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Possible places of work"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Large {{39}} organisations"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Private practices"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "{{40}} departments"
+    }
+   ]
+  }
+ ]
+}

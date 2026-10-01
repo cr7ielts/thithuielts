@@ -1,0 +1,119 @@
+{
+ "id": "dudoan-04-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 14,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "What do participants need to take to the registration desk?",
+     "options": [
+      {
+       "v": "A",
+       "t": "a form of identification"
+      },
+      {
+       "v": "B",
+       "t": "a competitor number"
+      },
+      {
+       "v": "C",
+       "t": "cash for the entrance fee"
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "What does the entrance fee to the competition include?",
+     "options": [
+      {
+       "v": "A",
+       "t": "equipment for fishing"
+      },
+      {
+       "v": "B",
+       "t": "all food for both days"
+      },
+      {
+       "v": "C",
+       "t": "fuel for the fishing"
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "Participants without a fishing licence are recommended to apply for one",
+     "options": [
+      {
+       "v": "A",
+       "t": "at the registration desk."
+      },
+      {
+       "v": "B",
+       "t": "over the phone."
+      },
+      {
+       "v": "C",
+       "t": "on the internet."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What will happen at 6pm on Sunday?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The time allocated for fishing will end."
+      },
+      {
+       "v": "B",
+       "t": "The fish caught will be judged."
+      },
+      {
+       "v": "C",
+       "t": "The prizes will be awarded to the winners."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 15,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the map (see the map on the test paper). Write the correct letter, A-I, next to questions 15-20.",
+   "questions": [
+    {
+     "n": 15,
+     "text": "Registration area"
+    },
+    {
+     "n": 16,
+     "text": "Shore fishing area"
+    },
+    {
+     "n": 17,
+     "text": "Boat launching area"
+    },
+    {
+     "n": 18,
+     "text": "Judging area"
+    },
+    {
+     "n": 19,
+     "text": "Dining area"
+    },
+    {
+     "n": 20,
+     "text": "Prize-giving area"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

@@ -1,0 +1,176 @@
+{
+ "id": "forecast-18-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "In Laura's opinion, what should Mike's first reflective journal include?",
+     "options": [
+      {
+       "v": "A",
+       "t": "his learning aims for the module"
+      },
+      {
+       "v": "B",
+       "t": "which study skills he needs to improve"
+      },
+      {
+       "v": "C",
+       "t": "his strengths and weaknesses"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What evidence can Mike provide that he is an effective communicator?",
+     "options": [
+      {
+       "v": "A",
+       "t": "his use of technology"
+      },
+      {
+       "v": "B",
+       "t": "listening to others"
+      },
+      {
+       "v": "C",
+       "t": "a presentation"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What does Mike decide to do to improve his skills as an effective communicator?",
+     "options": [
+      {
+       "v": "A",
+       "t": "ask questions during a class discussion"
+      },
+      {
+       "v": "B",
+       "t": "offer to lead a group discussion"
+      },
+      {
+       "v": "C",
+       "t": "do an online course in writing skills"
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "Laura says Mike can prove he is a critical thinker by",
+     "options": [
+      {
+       "v": "A",
+       "t": "solving a problem."
+      },
+      {
+       "v": "B",
+       "t": "using a range of sources."
+      },
+      {
+       "v": "C",
+       "t": "analysing his learning style."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "After his discussion with Laura, how does Mike feel now about writing a reflective journal?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He is looking forward to it."
+      },
+      {
+       "v": "B",
+       "t": "He wishes he had more time."
+      },
+      {
+       "v": "C",
+       "t": "He wants to finish it quickly."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "What is it important to demonstrate in the work selected for the reflective portfolio?",
+     "options": [
+      {
+       "v": "A",
+       "t": "self-awareness"
+      },
+      {
+       "v": "B",
+       "t": "a positive attitude"
+      },
+      {
+       "v": "C",
+       "t": "creative input"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Why has Laura included each of the following samples of work in her portfolio? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "This was something which she found difficult."
+    },
+    {
+     "v": "B",
+     "t": "This helped her to identify a problem."
+    },
+    {
+     "v": "C",
+     "t": "This gave her more confidence."
+    },
+    {
+     "v": "D",
+     "t": "This is evidence of independent learning."
+    },
+    {
+     "v": "E",
+     "t": "This was something she enjoyed doing."
+    },
+    {
+     "v": "F",
+     "t": "This shows she is aware of her learning style."
+    },
+    {
+     "v": "G",
+     "t": "This shows she can work as part of a team."
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "essay"
+    },
+    {
+     "n": 28,
+     "text": "test with result"
+    },
+    {
+     "n": 29,
+     "text": "class notes"
+    },
+    {
+     "n": 30,
+     "text": "presentation notes"
+    }
+   ]
+  }
+ ]
+}

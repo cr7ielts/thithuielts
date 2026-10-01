@@ -1,0 +1,100 @@
+{
+ "id": "forecast-16-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Dunedin Medical Centre",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Contact details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Henry Ian {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date of birth: {{2}} 1965"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Address: {{3}}, Dunedin"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Phone number: 293-8476"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Ethnic group: {{4}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Residency status: a New Zealand {{5}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Type of card holder: {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Transfer of records"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Previous medical centre: {{7}} Hill"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Located in: {{8}} Island"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Assign to doctor"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Patient preferences (if any): male doctor"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Hours: {{9}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Specialism: {{10}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Register with: Dr Chang"
+    }
+   ]
+  }
+ ]
+}

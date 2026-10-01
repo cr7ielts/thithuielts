@@ -1,0 +1,120 @@
+{
+ "id": "forecast-08-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "North Star Camping Equipment – Customer Order",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Customer surname: Greenaway"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Order reference: {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Ordered items:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Tent"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "family size"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "two doors"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Sleeping bags"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "the {{2}} design"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Beds"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "four mattresses"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Cooking"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a gas stove"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a suitable water {{4}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a set of metal {{5}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Other items"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "two torches made of {{6}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a {{7}} set suitable for children"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a recent {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Delivery address: 56, {{9}} Street, Bayswater"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Delivery charge: ${{10}}"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "id": "forecast-01-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 8,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Post Office – Package Delivery Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Country of destination: USA"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Package to reach destination by: {{1}} at latest"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Service selected: {{2}} Express"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Sender:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Peter White"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Address: {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Suburb: Lakeview"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Delivery to:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Anna {{4}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Address: Apartment 228, {{5}}, Upper {{6}}, New York"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Contents: {{7}} and {{8}}"
+    }
+   ]
+  },
+  {
+   "from": 9,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Answer the questions below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "questions": [
+    {
+     "n": 9,
+     "text": "What is the total cost of sending the package?"
+    },
+    {
+     "n": 10,
+     "text": "What is required in order to find a lost package?"
+    }
+   ]
+  }
+ ]
+}

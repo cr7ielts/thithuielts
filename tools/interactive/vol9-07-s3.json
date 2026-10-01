@@ -1,0 +1,164 @@
+{
+ "id": "vol9-07-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 25,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "The artist Samuel Prout",
+   "questions": [
+    {
+     "n": 21,
+     "text": "According to Jack, why did Samuel Prout never become very famous?",
+     "options": [
+      {
+       "v": "A",
+       "t": "His output was very limited."
+      },
+      {
+       "v": "B",
+       "t": "He was seen as old-fashioned."
+      },
+      {
+       "v": "C",
+       "t": "His work never had a major exhibition."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Dr Rubin and Jack agree that many of Prout's problems were caused by",
+     "options": [
+      {
+       "v": "A",
+       "t": "poor health."
+      },
+      {
+       "v": "B",
+       "t": "jealous colleagues."
+      },
+      {
+       "v": "C",
+       "t": "an unhappy marriage."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "How did Prout learn painting?",
+     "options": [
+      {
+       "v": "A",
+       "t": "His father taught him."
+      },
+      {
+       "v": "B",
+       "t": "He went to art galleries."
+      },
+      {
+       "v": "C",
+       "t": "He copied pictures."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What point does Jack make about Prout's style?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Prout used different styles simultaneously."
+      },
+      {
+       "v": "B",
+       "t": "Many other artists had a similar style."
+      },
+      {
+       "v": "C",
+       "t": "Prout's style developed throughout his career."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What did John Ruskin admire about Prout's paintings?",
+     "options": [
+      {
+       "v": "A",
+       "t": "their realism"
+      },
+      {
+       "v": "B",
+       "t": "their presentation of buildings"
+      },
+      {
+       "v": "C",
+       "t": "their wide range of subject matter"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What information do the speakers give about each of the following pictures? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 26-30.",
+   "noteTitle": "Pictures",
+   "bank": [
+    {
+     "v": "A",
+     "t": "one of several paintings of the same view"
+    },
+    {
+     "v": "B",
+     "t": "probably an inaccurate title"
+    },
+    {
+     "v": "C",
+     "t": "may not be genuine"
+    },
+    {
+     "v": "D",
+     "t": "was never finished"
+    },
+    {
+     "v": "E",
+     "t": "typical subject matter for Prout"
+    },
+    {
+     "v": "F",
+     "t": "skilful painting of light and dark"
+    },
+    {
+     "v": "G",
+     "t": "shows an event that never took place"
+    }
+   ],
+   "questions": [
+    {
+     "n": 26,
+     "text": "A view in Germany: at Würzburg"
+    },
+    {
+     "n": 27,
+     "text": "Bridge on the Ouse, near York"
+    },
+    {
+     "n": 28,
+     "text": "Wooded scene"
+    },
+    {
+     "n": 29,
+     "text": "Venice"
+    },
+    {
+     "n": 30,
+     "text": "Entrance to a harbour"
+    }
+   ]
+  }
+ ]
+}

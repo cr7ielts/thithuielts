@@ -1,0 +1,146 @@
+{
+ "id": "forecast-09-s2",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "Which choir does each of the following statements apply to? Write the correct letter, A, B or C, next to questions 11-15",
+   "bank": [
+    {
+     "v": "A",
+     "t": "Mitchelstown Choir"
+    },
+    {
+     "v": "B",
+     "t": "The Blackvale Male Voice Choir"
+    },
+    {
+     "v": "C",
+     "t": "The Caroline Singers"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "They specialise in a particular type of music"
+    },
+    {
+     "n": 12,
+     "text": "They organise social events"
+    },
+    {
+     "n": 13,
+     "text": "They have recently won a competition"
+    },
+    {
+     "n": 14,
+     "text": "They have recently recorded their first CD"
+    },
+    {
+     "n": 15,
+     "text": "They participate in charity events"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C",
+   "questions": [
+    {
+     "n": 16,
+     "text": "Elizabeth Arnold thinks people join a choir at work because it gives them a chance to",
+     "options": [
+      {
+       "v": "A",
+       "t": "have a break from work."
+      },
+      {
+       "v": "B",
+       "t": "improve their singing."
+      },
+      {
+       "v": "C",
+       "t": "make business contacts."
+      }
+     ]
+    },
+    {
+     "n": 17,
+     "text": "How does a company benefit from setting up a choir?",
+     "options": [
+      {
+       "v": "A",
+       "t": "improved relationships between co-workers"
+      },
+      {
+       "v": "B",
+       "t": "less sick leave taken by employees"
+      },
+      {
+       "v": "C",
+       "t": "increased commitment to the company"
+      }
+     ]
+    },
+    {
+     "n": 18,
+     "text": "How many members does the John White choir have?",
+     "options": [
+      {
+       "v": "A",
+       "t": "5"
+      },
+      {
+       "v": "B",
+       "t": "12"
+      },
+      {
+       "v": "C",
+       "t": "19"
+      }
+     ]
+    },
+    {
+     "n": 19,
+     "text": "When do the choir have their rehearsals?",
+     "options": [
+      {
+       "v": "A",
+       "t": "before work"
+      },
+      {
+       "v": "B",
+       "t": "at lunch-time"
+      },
+      {
+       "v": "C",
+       "t": "after work"
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "How does the company support the choir?",
+     "options": [
+      {
+       "v": "A",
+       "t": "by providing concert clothes"
+      },
+      {
+       "v": "B",
+       "t": "by funding social events"
+      },
+      {
+       "v": "C",
+       "t": "by paying for singing classes"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

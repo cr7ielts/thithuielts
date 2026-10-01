@@ -1,0 +1,138 @@
+{
+ "id": "dudoan-03-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 33,
+   "kind": "gap",
+   "instruction": "Complete the sentences below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Driverless vehicle competition",
+   "questions": [
+    {
+     "n": 31,
+     "text": "Undergraduates from both the engineering school and the ____ department can definitely take part in the project."
+    },
+    {
+     "n": 32,
+     "text": "The automated vehicles will have to avoid obstacles such as ____."
+    },
+    {
+     "n": 33,
+     "text": "The tutor mentions one vehicle which used technology such as ____, lasers, and laptops to measure its surroundings."
+    }
+   ]
+  },
+  {
+   "from": 34,
+   "to": 36,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 34,
+     "text": "The purpose of holding the race is to",
+     "options": [
+      {
+       "v": "A",
+       "t": "interest students in careers in industry."
+      },
+      {
+       "v": "B",
+       "t": "help provide finance for universities."
+      },
+      {
+       "v": "C",
+       "t": "find useful new design features."
+      }
+     ]
+    },
+    {
+     "n": 35,
+     "text": "The tutor says success will depend on",
+     "options": [
+      {
+       "v": "A",
+       "t": "the software design."
+      },
+      {
+       "v": "B",
+       "t": "good, solid construction."
+      },
+      {
+       "v": "C",
+       "t": "sophisticated mechanisms."
+      }
+     ]
+    },
+    {
+     "n": 36,
+     "text": "This year's competitors were surprised that the vehicles",
+     "options": [
+      {
+       "v": "A",
+       "t": "were so easy to design."
+      },
+      {
+       "v": "B",
+       "t": "were as successful as they were."
+      },
+      {
+       "v": "C",
+       "t": "took such a short time to construct."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 37,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Schedule",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Early May: introductory {{37}} about the project"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Late May: essay giving information about relevant {{38}} and experience"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "June: visit to a factory"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "September: workshop"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "discuss {{39}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "learn to use design package"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "December: submission of initial designs"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "January: selection of the {{40}}"
+    }
+   ]
+  }
+ ]
+}

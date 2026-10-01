@@ -1,0 +1,95 @@
+{
+ "id": "vol8-03-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Beach Heads Travel – Customer Request Sheet",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Duncan White (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Group details: three adults and two children"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Date of arrival: {{1}} (staying for 2 weeks)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Week One"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Accommodation:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Book a {{2}} on the beach"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Budget is around ${{3}} a night"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Activities:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The children want to go {{4}} – arrange for them to have a {{5}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Book a time for Susan and Jenny to play {{6}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Duncan wants to go {{7}} – send some information"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Week Two"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Accommodation: National Park – book a {{8}} ($100 per night)"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Activities:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Arrange a {{9}} for Jenny"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Send Duncan a {{10}} for Marco's"
+    }
+   ]
+  }
+ ]
+}

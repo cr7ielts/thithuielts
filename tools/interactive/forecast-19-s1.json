@@ -1,0 +1,90 @@
+{
+ "id": "forecast-19-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Interstate Moves Made Easy – Customer Information Sheet",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Anne Jones (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Home phone: 6621-8047"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "{{1}} phone: 0427 139 684"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Destination: Sydney"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Moving from: {{2}}, Western Australia"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "No. of people: two adults, one child (almost {{3}} years old)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Rental accommodation"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Type of accommodation: {{4}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: in the {{5}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "No. of bedrooms: four"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Special requirements: close to a {{6}}; would like a {{7}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Rent: prepared to pay a maximum of ${{8}} per week"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Moving-in date: by {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other information"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Organise a {{10}} for August 31st"
+    }
+   ]
+  }
+ ]
+}

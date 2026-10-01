@@ -1,0 +1,577 @@
+{
+ "id": "vol9-02",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 5,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Poppy Reserve",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Almond Valley Poppy Reserve is a nature reserve"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The poppies will be at their best at the end of the {{1}}."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The poppies on the hills are {{2}} in colour."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The reserve is located to the {{3}} of Lakeside."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The best time for photography is mid-afternoon."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Wear {{4}} because of rattlesnakes."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The reserve is a {{5}} park."
+    }
+   ]
+  },
+  {
+   "from": 6,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Tours",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The {{6}} tour"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Start time: every hour from 7:30 a.m. · Duration: 30 minutes"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Highlights: viewpoints, film and the {{7}} · Photography: panoramic pictures"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The wildflower tour"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Start time: every two hours from 8:00 a.m. · Duration: {{8}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Highlights: poppy, cream cup, and stage · Photography: close-up tips"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The wildlife tour"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Start time: {{9}} a.m. or 7:00 p.m. · Duration: 1.5 hours"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Highlights: coyote, quail, roadrunners · Photography: bring tripod and a {{10}} lens"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Re-creating life in an Iron Age village",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Jim says that in the Iron Age village",
+     "options": [
+      {
+       "v": "A",
+       "t": "he is sometimes cold at night."
+      },
+      {
+       "v": "B",
+       "t": "he always gets up early."
+      },
+      {
+       "v": "C",
+       "t": "he has time to himself."
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "What does Jim say about the food they eat in the village?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It takes time to prepare."
+      },
+      {
+       "v": "B",
+       "t": "It is difficult to get used to."
+      },
+      {
+       "v": "C",
+       "t": "It has to be eaten quickly."
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "Jim says that at the evening meal",
+     "options": [
+      {
+       "v": "A",
+       "t": "they are sometimes too tired to eat."
+      },
+      {
+       "v": "B",
+       "t": "they mainly have fruit and berries."
+      },
+      {
+       "v": "C",
+       "t": "they talk about what they've done."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "The most important job for the blacksmiths is",
+     "options": [
+      {
+       "v": "A",
+       "t": "to mend broken tools and implements."
+      },
+      {
+       "v": "B",
+       "t": "to maintain a good source of heat."
+      },
+      {
+       "v": "C",
+       "t": "to collect sufficient firewood."
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "text": "Jim likes the fact that in the village, people",
+     "options": [
+      {
+       "v": "A",
+       "t": "do varied activities."
+      },
+      {
+       "v": "B",
+       "t": "share their knowledge."
+      },
+      {
+       "v": "C",
+       "t": "get a lot of exercise."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Complete the flow-chart below. Choose FIVE answers from the box and write the correct letter, A-I, next to questions 16-20.",
+   "noteTitle": "Making an Iron Age roundhouse",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Mark centre of planned house with a {{16}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Mark out circle for outer boundary"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Dig ground using tools made from {{17}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Insert wall posts (Iron Age builders preferred wood from oak trees)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Slot more stakes into upright posts"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Insert centre post and build a wooden {{18}} around it"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Add main supporting beams and ring beams"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Complete roof framework using {{19}} wood rods"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Cover roof with reed bundles of {{20}} lengths"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "↓ Daub with mixture of clay, dung and straw"
+    }
+   ],
+   "bank": [
+    {
+     "v": "A",
+     "t": "bone"
+    },
+    {
+     "v": "B",
+     "t": "different"
+    },
+    {
+     "v": "C",
+     "t": "equal"
+    },
+    {
+     "v": "D",
+     "t": "elm"
+    },
+    {
+     "v": "E",
+     "t": "hazel"
+    },
+    {
+     "v": "F",
+     "t": "iron"
+    },
+    {
+     "v": "G",
+     "t": "peg"
+    },
+    {
+     "v": "H",
+     "t": "roof"
+    },
+    {
+     "v": "I",
+     "t": "scaffold"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 24,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Presentation on how jobs might change in the future",
+   "questions": [
+    {
+     "n": 21,
+     "text": "What do the students find surprising about the way that complaints were dealt with at the call centre?",
+     "options": [
+      {
+       "v": "A",
+       "t": "the way that customers responded to it"
+      },
+      {
+       "v": "B",
+       "t": "the employees' lack of enthusiasm for it"
+      },
+      {
+       "v": "C",
+       "t": "the kind of questions employees were obliged to ask"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What does Emma say about the report by Jerry Kaplan?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It shows how machines will respond to human needs."
+      },
+      {
+       "v": "B",
+       "t": "It emphasises the variety of roles that machines will have."
+      },
+      {
+       "v": "C",
+       "t": "It explains the limitations of machines."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What is Nick's reaction to the article The Human Cloud?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He agrees that companies should focus on making savings."
+      },
+      {
+       "v": "B",
+       "t": "He supports the concept of greater flexibility for employees."
+      },
+      {
+       "v": "C",
+       "t": "He approves of businesses spending more on recruiting experts."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What do the students agree about the use of technology to collect information about employees?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Cameras are an effective means of maintaining security."
+      },
+      {
+       "v": "B",
+       "t": "Sometimes productivity is more important than individual privacy."
+      },
+      {
+       "v": "C",
+       "t": "Employees may object to certain types of monitoring."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What issue do Emma and Nick discuss for each aspect of the presentation? Choose SIX answers from the box and write the correct letter, A-H, next to questions 25-30.",
+   "noteTitle": "Aspects of the presentation",
+   "bank": [
+    {
+     "v": "A",
+     "t": "at which point of the presentation it should come"
+    },
+    {
+     "v": "B",
+     "t": "whether it should be removed completely"
+    },
+    {
+     "v": "C",
+     "t": "whether it is clear enough"
+    },
+    {
+     "v": "D",
+     "t": "if it needs to be completely re-written"
+    },
+    {
+     "v": "E",
+     "t": "if visuals will help or not"
+    },
+    {
+     "v": "F",
+     "t": "if the information needs to be checked"
+    },
+    {
+     "v": "G",
+     "t": "which further examples should be included"
+    },
+    {
+     "v": "H",
+     "t": "which of them will present it"
+    }
+   ],
+   "questions": [
+    {
+     "n": 25,
+     "text": "Introduction"
+    },
+    {
+     "n": 26,
+     "text": "Researcher profiles"
+    },
+    {
+     "n": 27,
+     "text": "Section on automation"
+    },
+    {
+     "n": 28,
+     "text": "Section on workplace structure"
+    },
+    {
+     "n": 29,
+     "text": "Section on tracking technology"
+    },
+    {
+     "n": 30,
+     "text": "Interview with company manager"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS for each answer.",
+   "noteTitle": "Health on the night shift",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Background:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "↑ in number of night workers because of {{31}} 24-hour shopping/services"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "need to examine effects of changing work and sleep habits"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "US and British research found these lead to health problems"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Main causes:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "A {{32}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "regulates daily life"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "connected to behavioural patterns and cycles of {{33}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "programmes us to be awake and asleep at certain times"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "B Sleep debt"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "impossible to get enough sleep during daytime"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "C {{34}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "different working/sleeping times, 'dislocation'"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Effects:"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "A Physical"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "higher incidence of heart and {{35}} problems"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "more minor illnesses, suggesting that immunity of shift workers is affected"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "B Psychological"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "most common: {{36}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "{{37}} affected, e.g. decision-making, planning, which regulate our {{38}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "C Social"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "Night shift work can lead to:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "destruction of {{39}} and other relationships, e.g. {{40}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "eventually, for individuals: social isolation"
+    }
+   ]
+  }
+ ]
+}

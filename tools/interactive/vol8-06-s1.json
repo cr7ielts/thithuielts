@@ -1,0 +1,115 @@
+{
+ "id": "vol8-06-s1",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Shipping of personal belongings",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Example: Special boxes for packing are provided free of charge"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The company will transport:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "some electrical goods, e.g. a computer"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The company will not transport:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "any single item weighing more than {{2}} kg"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "any {{3}} (for security reasons) or foods"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "anything in containers made of {{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Additional services:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "special deliveries"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– delivery on {{5}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– express delivery"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "organisation of {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Example of price:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "for fifteen boxes and one violin sent from the UK to {{7}}, the cost would be about £{{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Payment options:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "on the phone by debit or credit card, or in cash to the {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Documentation needed:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "photocopy of {{10}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "insurance papers"
+    }
+   ]
+  }
+ ]
+}

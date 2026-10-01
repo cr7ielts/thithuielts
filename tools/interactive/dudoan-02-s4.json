@@ -1,0 +1,95 @@
+{
+ "id": "dudoan-02-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 36,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+   "noteTitle": "Different Types of Supermarket Layout (Layout – Description – Advantages – Disadvantages)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Grid"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Description: parallel aisles"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Advantages: efficient use of floor space; controls {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Disadvantages: uninteresting layout; shoppers can {{32}} through their shopping"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Free-form"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Description: {{33}} organisation"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Disadvantages: customers need more {{34}} to find products; poor use of space, so less {{35}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Boutique"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Description: displays arranged around a food speciality"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Advantages: separates space into {{36}}; creates attractive image"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Disadvantages: poor use of space"
+    }
+   ]
+  },
+  {
+   "from": 37,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Questions 37-40: see the test paper for the questions and options, then choose the correct letter.",
+   "questions": [
+    {
+     "n": 37,
+     "text": "Question 37 (see the test paper)"
+    },
+    {
+     "n": 38,
+     "text": "Question 38 (see the test paper)"
+    },
+    {
+     "n": 39,
+     "text": "Question 39 (see the test paper)"
+    },
+    {
+     "n": 40,
+     "text": "Question 40 (see the test paper)"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

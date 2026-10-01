@@ -1,0 +1,508 @@
+{
+ "id": "vol8-06",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Shipping of personal belongings",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Example: Special boxes for packing are provided free of charge"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The company will transport:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "some electrical goods, e.g. a computer"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a {{1}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The company will not transport:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "any single item weighing more than {{2}} kg"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "any {{3}} (for security reasons) or foods"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "anything in containers made of {{4}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Additional services:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "special deliveries"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– delivery on {{5}}"
+    },
+    {
+     "level": 2,
+     "bullet": "",
+     "text": "– express delivery"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "organisation of {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Example of price:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "for fifteen boxes and one violin sent from the UK to {{7}}, the cost would be about £{{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Payment options:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "on the phone by debit or credit card, or in cash to the {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Documentation needed:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "photocopy of {{10}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "insurance papers"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Which special feature does each of the following cooking tours and classes have? Choose SIX answers from the box and write the correct letter, A-H, next to questions 11-16.",
+   "noteTitle": "Cooking tours and classes",
+   "bank": [
+    {
+     "v": "A",
+     "t": "cook with one particular ingredient"
+    },
+    {
+     "v": "B",
+     "t": "learn about food history"
+    },
+    {
+     "v": "C",
+     "t": "have individual cooking lessons"
+    },
+    {
+     "v": "D",
+     "t": "make meals for college students"
+    },
+    {
+     "v": "E",
+     "t": "prepare healthy meals"
+    },
+    {
+     "v": "F",
+     "t": "go on a guided walking tour"
+    },
+    {
+     "v": "G",
+     "t": "make time-saving meals"
+    },
+    {
+     "v": "H",
+     "t": "go on an afternoon bus tour"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Northern California"
+    },
+    {
+     "n": 12,
+     "text": "Italy"
+    },
+    {
+     "n": 13,
+     "text": "New Orleans"
+    },
+    {
+     "n": 14,
+     "text": "Budget Feasts"
+    },
+    {
+     "n": 15,
+     "text": "Cooking for Two"
+    },
+    {
+     "n": 16,
+     "text": "Variations on a Theme"
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the plan (see the plan on the test paper). Write the correct letter, A-J, next to questions 17-20.",
+   "questions": [
+    {
+     "n": 17,
+     "text": "Oven"
+    },
+    {
+     "n": 18,
+     "text": "Refrigerator"
+    },
+    {
+     "n": 19,
+     "text": "Demonstration kitchen"
+    },
+    {
+     "n": 20,
+     "text": "Utensil cabinet"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Bricks made from waste",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Adele read the article about Bitublocks because",
+     "options": [
+      {
+       "v": "A",
+       "t": "it'll help her write an assignment."
+      },
+      {
+       "v": "B",
+       "t": "she has to present it at a seminar."
+      },
+      {
+       "v": "C",
+       "t": "it's on her dissertation topic."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What does Adele think is the most innovative aspect of the manufacture of Bitublocks?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It uses entirely recycled materials."
+      },
+      {
+       "v": "B",
+       "t": "It does not involve a chemical reaction."
+      },
+      {
+       "v": "C",
+       "t": "It is such a simple process."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "Ray was surprised to read that the Bitublocks are so",
+     "options": [
+      {
+       "v": "A",
+       "t": "stable."
+      },
+      {
+       "v": "B",
+       "t": "light."
+      },
+      {
+       "v": "C",
+       "t": "absorbent."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What do both Adele and Ray say about the manufacture of Bitublocks?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Existing methods are used."
+      },
+      {
+       "v": "B",
+       "t": "Cheap materials are used."
+      },
+      {
+       "v": "C",
+       "t": "Only local materials are used."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What insight did Ray get from reading about the hospital building?",
+     "options": [
+      {
+       "v": "A",
+       "t": "how quickly UK building projects are growing"
+      },
+      {
+       "v": "B",
+       "t": "how poor UK construction materials are"
+      },
+      {
+       "v": "C",
+       "t": "how much material the UK construction industry uses"
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "Adele thinks the research into the hospital was included in the article to show",
+     "options": [
+      {
+       "v": "A",
+       "t": "how much recycled material is currently used."
+      },
+      {
+       "v": "B",
+       "t": "ways to improve the levels of recycling."
+      },
+      {
+       "v": "C",
+       "t": "problems caused when using recycled materials."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO things make Veggieblocks different from Bitublocks?",
+   "options": [
+    {
+     "v": "A",
+     "t": "They are cheaper to produce."
+    },
+    {
+     "v": "B",
+     "t": "They have a more acceptable colour."
+    },
+    {
+     "v": "C",
+     "t": "They are simpler to manufacture."
+    },
+    {
+     "v": "D",
+     "t": "They have problems with their smell."
+    },
+    {
+     "v": "E",
+     "t": "They can be more easily covered."
+    }
+   ]
+  },
+  {
+   "from": 29,
+   "to": 30,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO things about the future of the construction industry do Adele and Ray agree on?",
+   "options": [
+    {
+     "v": "A",
+     "t": "Architects will be willing to use new materials."
+    },
+    {
+     "v": "B",
+     "t": "Bitublocks will have a major impact."
+    },
+    {
+     "v": "C",
+     "t": "The industry will change very fast."
+    },
+    {
+     "v": "D",
+     "t": "Veggieblocks will become very popular."
+    },
+    {
+     "v": "E",
+     "t": "Financial incentives will be an important influence."
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 36,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "The archaeological site of Trimera",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Location"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "southern Europe"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "mountainous region overlooking a plain"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "History"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "12,000 years ago: hunter-gatherers lived in area"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "5,000 years ago: farmers lived on banks of the rivers"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "2,500 years ago: became a trade centre"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "300 BC: invaded by Greeks"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "100 BC: invaded by Romans – trade in grain, olives and {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "518 AD: city abandoned following earthquake"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Rediscovery of site"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "1706: French explorer believed the site was the remains of a {{32}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "19th century: a map was made of the site"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "1982: a complete {{33}} was made"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Excavation"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "the {{34}} was the first place to be excavated"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "a number of {{35}} were discovered"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "evidence of a {{36}} industry was found"
+    }
+   ]
+  },
+  {
+   "from": 37,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Important buildings",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Doric House – Eastern area – inhabitants came here to collect {{37}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Theatre – next to a stone {{38}} – capacity of 5,000"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Stairway – south-western area – has sculptures of {{39}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Roman Baths – central area – a statue of a Roman {{40}} was found"
+    }
+   ]
+  }
+ ],
+ "paper": true
+}

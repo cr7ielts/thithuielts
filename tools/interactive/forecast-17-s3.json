@@ -1,0 +1,178 @@
+{
+ "id": "forecast-17-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "What field is Willows currently focused on?",
+     "options": [
+      {
+       "v": "A",
+       "t": "specialising in one product"
+      },
+      {
+       "v": "B",
+       "t": "making a variety of products"
+      },
+      {
+       "v": "C",
+       "t": "adding a lot of retail outlets"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "How did the students find out about the company?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The professor contacted the company."
+      },
+      {
+       "v": "B",
+       "t": "An article was read in a newspaper."
+      },
+      {
+       "v": "C",
+       "t": "A student worked there part-time during the vacations."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "How did the students feel about the software?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It's not easy to predict."
+      },
+      {
+       "v": "B",
+       "t": "It's slow for drawing designs."
+      },
+      {
+       "v": "C",
+       "t": "It had a good interface."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "How did the students find out about the effects of the software on the company?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They went to the IT department."
+      },
+      {
+       "v": "B",
+       "t": "They talked with the manager."
+      },
+      {
+       "v": "C",
+       "t": "They inspected the accounts."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "The reason why the students have a face-to-face interview alone is that",
+     "options": [
+      {
+       "v": "A",
+       "t": "they could prepare for exams."
+      },
+      {
+       "v": "B",
+       "t": "there will be less disturbance."
+      },
+      {
+       "v": "C",
+       "t": "it's less realistic."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "How did the two students perform in the exam?",
+     "options": [
+      {
+       "v": "A",
+       "t": "very disappointing"
+      },
+      {
+       "v": "B",
+       "t": "significantly good"
+      },
+      {
+       "v": "C",
+       "t": "above the average"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. In which TWO ways will the new system affect the company?",
+   "options": [
+    {
+     "v": "A",
+     "t": "gain more profit"
+    },
+    {
+     "v": "B",
+     "t": "employ more new staff"
+    },
+    {
+     "v": "C",
+     "t": "increase sales"
+    },
+    {
+     "v": "D",
+     "t": "reduce production time"
+    },
+    {
+     "v": "E",
+     "t": "cut labour costs"
+    }
+   ]
+  },
+  {
+   "from": 29,
+   "to": 30,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO effects will the new system have on new clients?",
+   "options": [
+    {
+     "v": "A",
+     "t": "getting more involved in the design"
+    },
+    {
+     "v": "B",
+     "t": "obtaining more contacts"
+    },
+    {
+     "v": "C",
+     "t": "linking at home to do online work"
+    },
+    {
+     "v": "D",
+     "t": "wasting less time"
+    },
+    {
+     "v": "E",
+     "t": "decreasing labour costs"
+    }
+   ]
+  }
+ ]
+}

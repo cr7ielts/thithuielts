@@ -1,0 +1,154 @@
+{
+ "id": "vol9-06-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 24,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "The history and development of the bicycle",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Izzy believes the 'safety bicycle' is significant because it was",
+     "options": [
+      {
+       "v": "A",
+       "t": "specifically made for children to use."
+      },
+      {
+       "v": "B",
+       "t": "the first bicycle to be similar to modern bicycles."
+      },
+      {
+       "v": "C",
+       "t": "designed to travel at higher speeds than previous models."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What effect of bicycles on the 19th-century working classes does Max want to highlight?",
+     "options": [
+      {
+       "v": "A",
+       "t": "how people spent their free time"
+      },
+      {
+       "v": "B",
+       "t": "where people were employed"
+      },
+      {
+       "v": "C",
+       "t": "the way people found romantic partners"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What will Max and Izzy stress about attitudes to bicycles in the 20th century?",
+     "options": [
+      {
+       "v": "A",
+       "t": "The popularity of cars reduced the status of bicycles in the 1950s."
+      },
+      {
+       "v": "B",
+       "t": "New designs led to an increase in sales of bicycles in the 1960s."
+      },
+      {
+       "v": "C",
+       "t": "An interest in fitness promoted demand for bicycles in the 1980s."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What does Max say about a scheme to provide free bikes to school pupils?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He wants to see more evidence of its benefits."
+      },
+      {
+       "v": "B",
+       "t": "He thinks it could cost the government a lot of money."
+      },
+      {
+       "v": "C",
+       "t": "He questions whether all parents would support it."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 25,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Which reason did each of the following people give for using a bike? Choose SIX answers from the box and write the correct letter, A-H, next to questions 25-30.",
+   "noteTitle": "People",
+   "bank": [
+    {
+     "v": "A",
+     "t": "Cycling is a convenient way to travel."
+    },
+    {
+     "v": "B",
+     "t": "Bikes are environmentally friendly."
+    },
+    {
+     "v": "C",
+     "t": "Riding a bike can be a social activity."
+    },
+    {
+     "v": "D",
+     "t": "Bikes are a cheap form of transport."
+    },
+    {
+     "v": "E",
+     "t": "Cycling is a way to spend time outdoors."
+    },
+    {
+     "v": "F",
+     "t": "Riding a bike is good for mental health."
+    },
+    {
+     "v": "G",
+     "t": "Riding a bike is good exercise."
+    },
+    {
+     "v": "H",
+     "t": "Cycling can be done by all ages."
+    }
+   ],
+   "questions": [
+    {
+     "n": 25,
+     "text": "David"
+    },
+    {
+     "n": 26,
+     "text": "Marlene"
+    },
+    {
+     "n": 27,
+     "text": "Annabelle"
+    },
+    {
+     "n": 28,
+     "text": "Rashid"
+    },
+    {
+     "n": 29,
+     "text": "Saira"
+    },
+    {
+     "n": 30,
+     "text": "Giovanni"
+    }
+   ]
+  }
+ ]
+}
