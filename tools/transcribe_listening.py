@@ -12,7 +12,7 @@ OUT = os.path.join(T, 'transcripts')
 JS = os.path.join(T, '..', 'js', 'data', 'bank-listening.js')
 
 src = open(JS, encoding='utf8').read()
-bank = json.loads(re.search(r'LISTENING_BANK = (\[.*?\n\]);', src, re.S).group(1))
+bank = [json.loads(l.strip().rstrip(',')) for l in src.split('LISTENING_BANK = [')[1].split('\n];')[0].splitlines() if l.strip().startswith('{')]
 want = set(sys.argv[1:])
 
 from faster_whisper import WhisperModel
