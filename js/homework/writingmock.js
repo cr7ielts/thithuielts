@@ -5,7 +5,7 @@
 import { el, icon, toast, confirmDialog, fmtDateTime, draft, Countdown } from "../ui.js";
 import { countWords } from "../engine.js";
 import { L } from "../i18n.js";
-import { submitHomework } from "./hwstore.js";
+import { submitHomework, saveDraft, getDraft, draftExpired } from "./hwstore.js";
 
 const DEF_T1 = "You should spend about 20 minutes on this task.\n\n" +
   "The chart below shows … Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\n" +
@@ -93,7 +93,26 @@ const promptBox = (task, label, minWords) => el("div", { class: "card wm-prompt"
   el("div", { style: "white-space:pre-wrap" }, task.prompt),
   task.image?.url ? el("a", { href: task.image.url, target: "_blank", rel: "noopener", class: "wm-img" }, el("img", { src: task.image.url, alt: "Task 1" })) : null);
 
-export function writingMockWorkArea(ctx, a, sub, teacher, proctor = null) {
+const joinText = (tasks) => tasks.map((t) => `${String(t.title || t.id).toUpperCase()}\n${t.text || ""}`).join("\n\n");
+
+/**
+ * Học sinh mở lại trang khi đã hết giờ mà chưa nộp: nộp luôn bản nháp đã lưu trên máy chủ.
+ * → "submitted" | "expired" (hết giờ nhưng không nộp được, vd. đã quá hạn — giáo viên sẽ thu) | null
+ */
+export async function submitExpiredDraft(ctx, a) {
+  const d = await getDraft(a.id, ctx.user.uid).catch(() => null);
+  if (!d || !draftExpired(d)) return null;
+  try {
+    await submitHomework(a, ctx.user, { tasks: d.tasks || [], text: joinText(d.tasks || []), integrity: d.integrity || null,
+      startedAt: d.startedAtServer?.toISOString(), durationSec: d.minutes * 60, autoSubmitted: true });
+    return "submitted";
+  } catch (err) {
+    console.warn(err);
+    return "expired";
+  }
+}
+
+export function writingMockWorkArea(ctx, a, sub, teacher, proctor = null, saved = null) {
   const w = writingOf(a);
   const card = el("div", { class: "stack" });
   // đã nộp (hoặc giáo viên xem trước): đề + bài làm, chỉ đọc
@@ -112,11 +131,39 @@ export function writingMockWorkArea(ctx, a, sub, teacher, proctor = null) {
   }
 
   const dkey = `hw-${a.id}`;
-  const texts = { task1: "", task2: "", ...(draft.load(ctx.user.uid, dkey)?.data || {}) };
-  // đồng hồ tính từ lúc bấm Bắt đầu (giữ qua lần tải lại trang)
-  const elapsed = proctor.report().elapsedSec || 0;
+  // bài làm: bản trên máy này, không có thì bản nháp trên máy chủ (đổi máy giữa chừng)
+  const fromServer = Object.fromEntries((saved?.tasks || []).map((t) => [t.id, t.text || ""]));
+  const texts = { task1: "", task2: "", ...fromServer, ...(draft.load(ctx.user.uid, dkey)?.data || {}) };
+  // đồng hồ tính từ lúc bấm Bắt đầu lần đầu: giờ máy chủ nếu đã có bản nháp, không thì giờ của bộ giám sát
+  const elapsed = saved?.startedAtServer ? (Date.now() - saved.startedAtServer.getTime()) / 1000 : proctor.report().elapsedSec || 0;
   let submitted = false;
   const timer = new Countdown({ seconds: Math.max(1, w.minutes * 60 - elapsed), onEnd: () => doSubmit(true) }).start();
+  // lưu nháp lên máy chủ: ngay khi bắt đầu, rồi 20 giây một lần nếu có thay đổi — hết giờ mà học sinh đã rời trang
+  // thì bài vẫn được thu từ bản nháp này
+  const taskList = () => ["task1", "task2"].map((k) => ({ id: k, title: k === "task1" ? "Task 1" : "Task 2", text: texts[k].trim(), words: countWords(texts[k]), minWords: w[k].minWords }));
+  let dirty = false, first = !saved;
+  const push = async () => {
+    if (submitted || (!dirty && !first)) return;
+    const wasFirst = first;
+    dirty = false; first = false;
+    try { await saveDraft(a, ctx.user, { tasks: taskList(), minutes: w.minutes, integrity: proctor.report(), first: wasFirst }); }
+    catch (err) { console.warn("lưu nháp", err); dirty = true; first = wasFirst; }
+  };
+  // 30 giây một lần, chỉ khi có thay đổi (mỗi học sinh tối đa ~120 lần ghi cho bài 60 phút)
+  const tick = () => {
+    if (!card.isConnected) {            // đã sang trang khác: lưu lần cuối rồi dừng hẳn
+      push(); clearInterval(saveIv);
+      document.removeEventListener("visibilitychange", onHide); window.removeEventListener("pagehide", push);
+      timer.stop();
+      return;
+    }
+    push();
+  };
+  push();
+  let saveIv = setInterval(tick, 30000);
+  const onHide = () => { if (document.hidden) push(); };
+  document.addEventListener("visibilitychange", onHide);
+  window.addEventListener("pagehide", push);
   const total = el("span", { class: "badge" });
   const counters = {};
   const refresh = () => {
@@ -124,6 +171,7 @@ export function writingMockWorkArea(ctx, a, sub, teacher, proctor = null) {
       `Task 1: ${countWords(texts.task1)} · Task 2: ${countWords(texts.task2)} words`);
     for (const k of ["task1", "task2"]) {
       const n = countWords(texts[k]);
+      dirty = true;
       counters[k].textContent = L(`${n} / ${w[k].minWords} từ`, `${n} / ${w[k].minWords} words`);
       counters[k].className = "badge " + (n >= w[k].minWords ? "badge-green" : "badge-amber");
     }
@@ -150,8 +198,9 @@ export function writingMockWorkArea(ctx, a, sub, teacher, proctor = null) {
   const bar = el("div", { class: "exam-bar" }, el("strong", {}, "Writing"), timer.node, el("div", { class: "spacer" }), total, submitBtn);
   refresh(); show("task1");
 
+  let closing = false;   // đang nộp: chặn nộp hai lần (vd. hết giờ đúng lúc đang ở hộp xác nhận)
   async function doSubmit(auto) {
-    if (submitted) return;
+    if (submitted || closing) return;
     const short = ["task1", "task2"].filter((k) => countWords(texts[k]) < w[k].minWords);
     if (!auto) {
       const ok = await confirmDialog({
@@ -161,22 +210,35 @@ export function writingMockWorkArea(ctx, a, sub, teacher, proctor = null) {
           L("Bài chỉ nộp được một lần.", "You can submit only once."),
         okText: L("Nộp bài", "Submit"),
       });
-      if (!ok) return;
+      if (!ok || closing || submitted) return;
     }
-    submitted = true; timer.stop(); submitBtn.disabled = true;
-    const tasks = ["task1", "task2"].map((k) => ({ id: k, title: k === "task1" ? "Task 1" : "Task 2", text: texts[k].trim(), words: countWords(texts[k]), minWords: w[k].minWords }));
+    closing = true; submitBtn.disabled = true;
+    dirty = true; await push();                      // lưu bản cuối lên máy chủ trước
+    submitted = true; clearInterval(saveIv); document.removeEventListener("visibilitychange", onHide); window.removeEventListener("pagehide", push);
+    const tasks = taskList();
     const rep = proctor.report();
     try {
       await submitHomework(a, ctx.user, {
-        tasks, text: tasks.map((t) => `${t.title.toUpperCase()}\n${t.text}`).join("\n\n"),
+        tasks, text: joinText(tasks),
         integrity: rep, startedAt: rep.startedAt, durationSec: rep.elapsedSec, autoSubmitted: auto,
       });
+      timer.stop();
       proctor.stop();
       draft.clear(ctx.user.uid, dkey);
       toast(auto ? L("Hết giờ — bài đã được nộp", "Time's up — submitted") : L("Đã nộp bài!", "Submitted!"), "ok");
       ctx.go(`homework/${a.id}`, { t: Date.now() });
     } catch (err) {
-      submitted = false; submitBtn.disabled = false;
+      if (auto || timer.remaining <= 0) {
+        timer.stop();
+        // hết giờ mà nộp lỗi (mạng, quá hạn…): bản nháp đã lưu trên máy chủ, giáo viên sẽ thu
+        proctor.stop(true);
+        card.replaceChildren(el("div", { class: "notice notice-info" }, L("Đã hết giờ. Bài làm đã được lưu — giáo viên sẽ thu bài từ bản lưu này.",
+          "Time is up. Your work has been saved — your teacher will collect it from this copy.")));
+        return;
+      }
+      submitted = false; closing = false; submitBtn.disabled = false;
+      saveIv = setInterval(tick, 30000);                 // nộp lỗi: tiếp tục lưu nháp
+      document.addEventListener("visibilitychange", onHide);
       toast(L("Không nộp được: ", "Couldn't submit: ") + err.message, "err", 7000);
     }
   }

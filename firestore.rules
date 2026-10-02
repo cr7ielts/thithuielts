@@ -107,7 +107,8 @@ service cloud.firestore {
 
       // resource == null: cho phép hỏi "mình đã nộp bài này chưa?" khi chưa có bài nộp
       allow read: if request.auth != null && (isAdmin() || resource == null || resource.data.uid == request.auth.uid);
-      allow create: if request.auth != null && studentFieldsOk();
+      // giáo viên: thu bài Writing full test đã hết giờ từ bản nháp của học sinh (hwDrafts)
+      allow create: if isAdmin() || (request.auth != null && studentFieldsOk());
       // Nộp lại: chỉ Writing / Speaking / nộp file, giáo viên bật "cho nộp lại trước hạn", trước khi chấm.
       // Còn lại mỗi bài một lần nộp.
       allow update: if isAdmin() || (request.auth != null
@@ -117,6 +118,32 @@ service cloud.firestore {
         && resource.data.get('gradedAt', null) == null
         && studentFieldsOk());
       allow delete: if false;
+    }
+
+    // Bản nháp có giờ của Writing full test: lưu trong lúc làm; giờ bắt đầu lấy đồng hồ máy chủ,
+    // quá startedAtServer + minutes (+2 phút dư) thì không ghi thêm được — hết giờ là chốt bài.
+    match /hwDrafts/{sid} {
+      function wasg(aid) { return get(/databases/$(database)/documents/assignments/$(aid)).data; }
+      allow read: if request.auth != null && (isAdmin() || resource == null || resource.data.uid == request.auth.uid);
+      allow create: if request.auth != null
+        && request.resource.data.uid == request.auth.uid
+        && sid == request.resource.data.assignmentId + '_' + request.auth.uid
+        && request.resource.data.startedAtServer == request.time
+        && request.resource.data.updatedAt == request.time
+        && wasg(request.resource.data.assignmentId).published == true
+        && isMember(wasg(request.resource.data.assignmentId).classId)
+        && wasg(request.resource.data.assignmentId).type == 'writingmock'
+        && request.resource.data.minutes == wasg(request.resource.data.assignmentId).writing.minutes
+        && !exists(/databases/$(database)/documents/hwSubmissions/$(sid));
+      allow update: if request.auth != null
+        && resource.data.uid == request.auth.uid
+        && request.resource.data.uid == resource.data.uid
+        && request.resource.data.assignmentId == resource.data.assignmentId
+        && request.resource.data.minutes == resource.data.minutes
+        && request.resource.data.startedAtServer == resource.data.startedAtServer
+        && request.resource.data.updatedAt == request.time
+        && request.time < resource.data.startedAtServer + duration.value(resource.data.minutes * 60 + 120, 's');
+      allow delete: if isAdmin();   // học sinh không tự xoá để "làm lại từ đầu" với đồng hồ mới
     }
 
     // Bài nộp: học sinh chỉ tạo & đọc bài của chính mình, không sửa/xoá được sau khi nộp

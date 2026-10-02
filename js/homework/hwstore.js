@@ -12,7 +12,7 @@
 import { initFirebase, isConfigured } from "../firebase.js";
 import { HOMEWORK_MAX_MB } from "../config.js";
 
-const LS = { a: "ielts:hw:assignments", k: "ielts:hw:keys", s: "ielts:hw:subs" };
+const LS = { a: "ielts:hw:assignments", k: "ielts:hw:keys", s: "ielts:hw:subs", d: "ielts:hw:drafts" };
 const DEMO_MAX_MB = 3;
 
 const lsGet = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || "null") ?? d; } catch { return d; } };
@@ -252,6 +252,80 @@ export async function submitHomework(assignment, user, body) {
     ...base,
     submittedAt: dbMod.serverTimestamp(),
   });
+}
+
+/* ---------------- Bản nháp có giờ (Writing full test) ----------------
+ * hwDrafts/<bài>_<học sinh>: { assignmentId, uid, name, email, type, minutes, tasks, startedAtServer, updatedAt }
+ * Lưu vài chục giây một lần trong lúc làm. startedAtServer lấy đồng hồ máy chủ; luật Firestore chặn ghi sau
+ * startedAtServer + minutes (+2 phút dư). Hết giờ mà học sinh không nộp: bản nháp được chuyển thành bài nộp
+ * (học sinh mở lại trang, hoặc giáo viên mở trang Chấm bài).
+ */
+const normDraft = (id, d) => ({ id, ...d, startedAtServer: toDate(d.startedAtServer), updatedAt: toDate(d.updatedAt) });
+/** hết giờ chưa (theo giờ bắt đầu của máy chủ) */
+export const draftExpired = (d, now = Date.now()) => !!d?.startedAtServer && now > d.startedAtServer.getTime() + d.minutes * 60e3;
+
+export async function getDraft(aid, uid) {
+  if (!isConfigured) { const d = lsGet(LS.d, {})[subId(aid, uid)]; return d ? normDraft(subId(aid, uid), d) : null; }
+  const { db, dbMod } = await initFirebase();
+  const snap = await dbMod.getDoc(dbMod.doc(db, "hwDrafts", subId(aid, uid)));
+  return snap.exists() ? normDraft(snap.id, snap.data()) : null;
+}
+
+/** first=true: lần đầu bấm Bắt đầu (ghi giờ bắt đầu máy chủ); sau đó chỉ cập nhật bài làm */
+export async function saveDraft(a, user, { tasks, minutes, integrity = null, first = false }) {
+  const id = subId(a.id, user.uid);
+  if (!isConfigured) {
+    const all = lsGet(LS.d, {});
+    const now = new Date().toISOString();
+    all[id] = { ...(all[id] || { assignmentId: a.id, uid: user.uid, name: user.displayName || "", email: user.email || "", type: a.type, minutes, startedAtServer: now }),
+      tasks, integrity, updatedAt: now };
+    lsSet(LS.d, all);
+    return;
+  }
+  const { db, dbMod } = await initFirebase();
+  const ref = dbMod.doc(db, "hwDrafts", id);
+  if (first) {
+    await dbMod.setDoc(ref, { assignmentId: a.id, uid: user.uid, name: user.displayName || "", email: user.email || "", type: a.type,
+      minutes, tasks, integrity, startedAtServer: dbMod.serverTimestamp(), updatedAt: dbMod.serverTimestamp() });
+  } else {
+    await dbMod.updateDoc(ref, { tasks, integrity, updatedAt: dbMod.serverTimestamp() });
+  }
+}
+
+export async function listDraftsFor(aid) {
+  if (!isConfigured) return Object.entries(lsGet(LS.d, {})).filter(([, d]) => d.assignmentId === aid).map(([id, d]) => normDraft(id, d));
+  const { db, dbMod } = await initFirebase();
+  const snap = await dbMod.getDocs(dbMod.query(dbMod.collection(db, "hwDrafts"), dbMod.where("assignmentId", "==", aid)));
+  return snap.docs.map((d) => normDraft(d.id, d.data()));
+}
+
+/** Giáo viên: bản nháp đã hết giờ mà học sinh chưa nộp -> thành bài nộp (tự nộp khi hết giờ) */
+export async function submitDraftAsTeacher(a, d) {
+  const tasks = d.tasks || [];
+  const base = {
+    assignmentId: a.id, type: a.type, uid: d.uid, name: d.name || "", email: d.email || "",
+    answers: null, files: [], note: "", turns: null, analysis: null, analysisError: null, score: null, details: null, practiceId: null,
+    tasks, text: tasks.map((t) => `${String(t.title || t.id).toUpperCase()}\n${t.text || ""}`).join("\n\n"),
+    startedAt: d.startedAtServer?.toISOString() || null, durationSec: d.minutes * 60, autoSubmitted: true, fromDraft: true,
+    integrity: d.integrity || null,
+  };
+  if (!isConfigured) {
+    const all = lsGet(LS.s, {});
+    // thời điểm nộp = lúc hết giờ (không phải lúc giáo viên mở trang)
+    all[d.id] = { ...base, submittedAt: new Date(d.startedAtServer.getTime() + d.minutes * 60e3).toISOString() };
+    lsSet(LS.s, all);
+    return;
+  }
+  const { db, dbMod } = await initFirebase();
+  await dbMod.setDoc(dbMod.doc(db, "hwSubmissions", d.id), {
+    ...base, submittedAt: dbMod.Timestamp.fromDate(new Date(d.startedAtServer.getTime() + d.minutes * 60e3)),
+  });
+}
+
+export async function deleteDraft(aid, uid) {
+  if (!isConfigured) { const all = lsGet(LS.d, {}); delete all[subId(aid, uid)]; lsSet(LS.d, all); return; }
+  const { db, dbMod } = await initFirebase();
+  await dbMod.deleteDoc(dbMod.doc(db, "hwDrafts", subId(aid, uid))).catch(() => {});
 }
 
 /** criteria (Speaking): { fc, lr, gra, p } — band giáo viên chấm từng tiêu chí, hoặc null */

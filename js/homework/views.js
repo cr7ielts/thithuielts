@@ -8,6 +8,7 @@ import { L } from "../i18n.js";
 import {
   listAssignments, getAssignment, saveAssignment, deleteAssignment, getKey, parseKey, keyToText,
   uploadFile, getMySubmission, listMyHomework, listSubmissionsFor, countSubmissions, submitHomework, gradeHomework,
+  getDraft, listDraftsFor, draftExpired, submitDraftAsTeacher,
 } from "./hwstore.js";
 import { speakingFormSection, speakingWorkArea, recordingsList, aiReport, speakingTurns } from "./speaking.js";
 import { CRITERIA, overallBand, aiAvailable } from "./speaking-ai.js";
@@ -16,7 +17,7 @@ import { myClasses, hasClass, listAllClasses, countMembers, listMembers } from "
 import { noClassView, joinPromptCard } from "../classes/views.js";
 import { startProctor, onceAudio, clearOnce, integrityFlags, flagChips } from "../proctor.js";
 import { integrityRules } from "../bank/bank.js";
-import { writingMockFormSection, writingMockWorkArea, writingMockReview, writingBandInputs, writingOf } from "./writingmock.js";
+import { writingMockFormSection, writingMockWorkArea, writingMockReview, writingBandInputs, writingOf, submitExpiredDraft } from "./writingmock.js";
 
 const TYPES = {
   reading:   { icon: "reading",   color: "var(--c-reading)",   label: "Reading" },
@@ -188,12 +189,22 @@ export function renderHomeworkDetail(ctx, id) {
     const a = await getAssignment(id);
     if (!a) { body.replaceWith(el("div", { class: "notice notice-error" }, L("Không tìm thấy bài tập này.", "Assignment not found."))); return; }
     const teacher = isAdmin(ctx.user);
-    const sub = teacher ? null : await getMySubmission(id, ctx.user.uid);
+    let sub = teacher ? null : await getMySubmission(id, ctx.user.uid);
+    // Writing full test: hết giờ mà chưa nộp (đã rời trang) -> nộp luôn bản nháp đã lưu trên máy chủ
+    let wmDraft = null, wmExpired = false;
+    if (!teacher && !sub && a.type === "writingmock") {
+      const r = await submitExpiredDraft(ctx, a);
+      if (r === "submitted") {
+        sub = await getMySubmission(id, ctx.user.uid);
+        toast(L("Đã hết giờ — bài của bạn đã được nộp tự động.", "Time was up — your work has been submitted automatically."), "ok", 5000);
+      } else if (r === "expired") wmExpired = true;
+      else wmDraft = await getDraft(id, ctx.user.uid).catch(() => null);
+    }
     const due = dueInfo(a);
     const st = statusOf(a, sub);
     const closed = !teacher && st === "missed";
     // chưa nộp: phải bấm "Bắt đầu làm bài" (toàn màn hình + giám sát) mới thấy đề
-    const gated = !teacher && !sub && !closed && ["reading", "listening", "writing", "writingmock", "speaking"].includes(a.type);
+    const gated = !teacher && !sub && !closed && !wmExpired && ["reading", "listening", "writing", "writingmock", "speaking"].includes(a.type);
 
     const head = el("section", { class: "card hw-head", style: `--t:${TYPES[a.type]?.color}` },
       el("div", { class: "row wrap", style: "gap:8px" }, typeTag(a.type), teacher ? null : el("span", { class: STATUS[st].cls }, STATUS[st].label),
@@ -217,7 +228,10 @@ export function renderHomeworkDetail(ctx, id) {
       if (gated && a.instructions) out.push(el("div", { class: "card hw-instructions" }, a.instructions));
       const mats = materialsBlock(a, proctor, ctx.user.uid);
       if (mats) out.push(mats);
-      if (closed) {
+      if (wmExpired) {
+        out.push(el("div", { class: "notice notice-info" }, L("Đã hết giờ làm bài. Bài làm đã được lưu — giáo viên sẽ thu bài từ bản lưu này.",
+          "Time is up. Your work has been saved — your teacher will collect it from this copy.")));
+      } else if (closed) {
         out.push(el("div", { class: "notice notice-error" }, L("Đã hết hạn nộp bài này.", "The deadline for this assignment has passed.")));
       } else if (a.type === "reading" || a.type === "listening") {
         out.push(await answerSheet(ctx, a, sub, teacher, proctor));
@@ -226,7 +240,7 @@ export function renderHomeworkDetail(ctx, id) {
       } else if (a.type === "bank") {
         out.push(await bankWorkArea(ctx, a, sub, teacher));
       } else if (a.type === "writingmock") {
-        out.push(writingMockWorkArea(ctx, a, sub, teacher, proctor));
+        out.push(writingMockWorkArea(ctx, a, sub, teacher, proctor, wmDraft));
       } else {
         out.push(workArea(ctx, a, sub, teacher, proctor));
       }
@@ -235,7 +249,7 @@ export function renderHomeworkDetail(ctx, id) {
       return out;
     };
     if (gated) {
-      const gate = startGate(a, async () => {
+      const gate = startGate(a, wmDraft, async () => {
         // giám sát bắt đầu ngay trong cú bấm (để trình duyệt cho vào toàn màn hình)
         const proctor = startProctor({ key: `hw-${a.id}-${ctx.user.uid}` });
         gate.replaceWith(el("div", { class: "stack-lg" }, ...(await work(proctor))));
@@ -249,13 +263,19 @@ export function renderHomeworkDetail(ctx, id) {
 }
 
 /** Màn hình trước khi làm homework: luật làm bài + nút Bắt đầu */
-function startGate(a, onStart) {
-  const btn = el("button", { class: "btn btn-primary btn-lg" }, icon("check"), L("Bắt đầu làm bài", "Start"));
+function startGate(a, wmDraft, onStart) {
+  const btn = el("button", { class: "btn btn-primary btn-lg" }, icon("check"), wmDraft ? L("Làm tiếp", "Continue") : L("Bắt đầu làm bài", "Start"));
   btn.onclick = () => { btn.disabled = true; onStart(); };
   return el("div", { class: "card stack hw-gate" },
     el("div", { class: "row", style: "gap:10px" }, icon("shield"), el("h2", { class: "mb-0" }, L("Sẵn sàng làm bài?", "Ready to start?"))),
     el("p", { class: "mb-0 muted" }, L("Đề bài chỉ hiện sau khi bấm Bắt đầu. Hãy làm một mạch, như đang thi thật.",
       "The task appears once you press Start. Do it in one go, as if it were the real test.")),
+    // đang làm dở (đã bấm Bắt đầu trước đó): đồng hồ vẫn chạy
+    wmDraft?.startedAtServer ? (() => {
+      const left = Math.max(0, Math.ceil((wmDraft.startedAtServer.getTime() + wmDraft.minutes * 60e3 - Date.now()) / 60e3));
+      return el("div", { class: "notice notice-error small" }, L(`Bạn đã bắt đầu lúc ${fmtDateTime(wmDraft.startedAtServer)} — đồng hồ không dừng khi rời trang, còn khoảng ${left} phút. Bấm để làm tiếp.`,
+        `You started at ${fmtDateTime(wmDraft.startedAtServer)} — the timer keeps running, about ${left} min left. Press to continue.`));
+    })() : null,
     integrityRules(a.type === "writingmock" ? "writing" : a.type,
       a.type === "writingmock" ? el("li", {}, L(`Có ${writingOf(a).minutes} phút cho cả Task 1 và Task 2, đồng hồ chạy liên tục kể cả khi tải lại trang; hết giờ tự nộp.`,
         `You have ${writingOf(a).minutes} minutes for Task 1 and Task 2 together; the timer keeps running even if you reload, and work is submitted when time runs out.`)) : null,
@@ -886,9 +906,25 @@ export function renderHomeworkReview(ctx, id) {
   (async () => {
     const a = await getAssignment(id);
     if (!a) throw new Error(L("Không tìm thấy bài tập.", "Assignment not found."));
-    const [subs, students, key] = await Promise.all([listSubmissionsFor(id),
+    let [subs, students, key] = await Promise.all([listSubmissionsFor(id),
       (a.classId ? listMembers(a.classId) : listStudents()).catch(() => []),
       ["reading", "listening"].includes(a.type) ? getKey(id) : Promise.resolve([])]);
+    // Writing full test: bản nháp hết giờ mà học sinh chưa nộp -> thu thành bài nộp; còn giờ -> "đang làm"
+    const working = new Map();
+    if (a.type === "writingmock") {
+      const drafts = await listDraftsFor(id).catch(() => []);
+      const has = new Set(subs.map((s) => s.uid));
+      let collected = 0;
+      for (const d of drafts) {
+        if (has.has(d.uid)) continue;
+        if (draftExpired(d)) { try { await submitDraftAsTeacher(a, d); collected++; } catch (err) { console.warn(err); } }
+        else working.set(d.uid, d);
+      }
+      if (collected) {
+        subs = await listSubmissionsFor(id);
+        toast(L(`Đã thu ${collected} bài hết giờ mà học sinh chưa bấm nộp`, `Collected ${collected} timed-out paper(s)`), "ok", 5000);
+      }
+    }
     const byUid = new Map(subs.map((s) => [s.uid, s]));
     const autoScore = (s) => {
       if (!key.length || !s.answers) return null;
@@ -926,7 +962,7 @@ export function renderHomeworkReview(ctx, id) {
         } }, o.label)));
       const done = rows.filter((r) => r.sub).sort((x, y) => SORTS[sortBy].cmp(x, y) || byName(x, y));
       const none = rows.filter((r) => !r.sub).sort(byName);
-      list.replaceChildren(...[...done, ...none].map((r) => reviewRow(ctx, a, r, key, autoScore)));
+      list.replaceChildren(...[...done, ...none].map((r) => reviewRow(ctx, a, r, key, autoScore, working.get(r.uid))));
     };
     paintList();
 
@@ -951,11 +987,12 @@ export function renderHomeworkReview(ctx, id) {
 const stat = (k, v) => el("div", { class: "stat" }, el("div", { class: "k" }, k), el("div", { class: "v" }, v));
 const fmtMinSec = (sec) => `${Math.floor(sec / 60)}:${String(Math.round(sec % 60)).padStart(2, "0")}`;
 
-function reviewRow(ctx, a, r, key, autoScore) {
+function reviewRow(ctx, a, r, key, autoScore, working = null) {
   const s = r.sub;
   const who = el("div", {}, el("div", { class: "strong" }, r.name || "—"), el("div", { class: "tiny muted" }, r.email || ""));
   if (!s) {
     return el("div", { class: "hw-review-row missing" }, who, el("div", { class: "spacer" }),
+      working ? el("span", { class: "chip chip-warn" }, icon("clock"), L(`Đang làm · bắt đầu ${fmtDateTime(working.startedAtServer)}`, `In progress · started ${fmtDateTime(working.startedAtServer)}`)) : null,
       el("span", { class: a.dueAt < Date.now() ? "chip chip-bad" : "chip" }, a.dueAt < Date.now() ? L("Không nộp", "Not submitted") : L("Chưa nộp", "Not yet")));
   }
   const isLate = s.submittedAt > a.dueAt;
@@ -1060,6 +1097,8 @@ function reviewRow(ctx, a, r, key, autoScore) {
       who, el("div", { class: "spacer" }),
       el("span", { class: "small muted" }, fmtDateTime(s.submittedAt)),
       isLate ? el("span", { class: "chip chip-warn" }, L("muộn", "late")) : null,
+      s.autoSubmitted && a.type === "writingmock" ? el("span", { class: "chip chip-warn", title: s.fromDraft ? L("Học sinh rời trang trước khi hết giờ; bài thu từ bản lưu tự động", "Collected from the autosaved copy") : "" },
+        s.fromDraft ? L("tự nộp khi hết giờ (bản lưu)", "auto-submitted (saved copy)") : L("tự nộp khi hết giờ", "auto-submitted")) : null,
       auto != null ? el("span", { class: "chip" }, `${auto}/${autoTotal}`) : null,
       aiBand ? el("span", { class: "chip chip-ai", title: L("Band AI ước lượng", "AI-estimated band") }, `AI ${aiBand}`) : null,
       a.type === "speaking" && s.analysisError ? el("span", { class: "chip chip-bad" }, L("AI lỗi", "AI failed")) : null,
