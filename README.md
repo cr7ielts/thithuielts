@@ -107,6 +107,10 @@ Tab **Homework** — giáo viên giao bài có hạn nộp, học sinh nộp nga
   (mặc định chỉ giáo viên xem). AI lỗi thì bài vẫn được nộp, giáo viên chấm tay.
 - Đáp án lưu riêng (`assignmentKeys`) — học sinh chỉ đọc được khi đã nộp bài của mình **và đã qua hạn nộp**.
 - Trang **Review** của mỗi bài: ai đã nộp / chưa nộp / nộp muộn, điểm tự động, file đính kèm, ô chấm điểm.
+- Bản ghi Speaking (homework và thi thử) tải về dạng **MP3**: nút **Tải MP3** ở từng câu, **Tải từng câu** (mỗi câu một
+  file) và **Tải gộp 1 file MP3** (các câu nối theo thứ tự, cách nhau 1,5 giây). Máy của người bấm tự chuyển định dạng
+  (mono 22 kHz, 64 kbps) bằng thư viện lamejs đặt sẵn ở [`js/vendor/lame.min.js`](js/vendor/lame.min.js) (giấy phép LGPL);
+  trên Storage vẫn lưu file gốc (webm/m4a). Không chuyển được (Storage chưa bật CORS) thì tải file gốc.
 
 Cần **Firebase Storage** (gói Blaze) để upload file — xem mục 4 bên dưới.
 

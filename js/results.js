@@ -6,6 +6,7 @@ import { createCat } from "./cat.js";
 import { L, isVi } from "./i18n.js";
 import { integrityFlags, flagChips } from "./proctor.js";
 import { hiddenUntil } from "./homework/hwlock.js";
+import { mp3Button, mp3Downloads } from "./audio-mp3.js";
 
 const SKILL_LABEL = { listening: "Listening", reading: "Reading", writing: "Writing", speaking: "Speaking" };
 
@@ -69,17 +70,24 @@ export function renderResult(ctx, sub) {
 
   if (sub.skill === "speaking") {
     body.append(teacherCard(sub, ctx));
+    const slug = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D")
+      .replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 40);
+    const who = slug(sub.name || sub.email || "hoc-sinh");
+    const mp3Name = (i) => `${who}_speaking_cau-${String(i + 1).padStart(2, "0")}`;
+    const items = (sub.turns || []).map((t, i) => (t.audioUrl ? { url: t.audioUrl, name: mp3Name(i), origExt: "webm" } : null)).filter(Boolean);
     body.append(
       el("div", { class: "card" },
         el("div", { class: "row", style: "margin-bottom:6px" },
           el("h3", { style: "margin:0" }, L("Các lượt nói", "Your answers")),
           el("span", { class: "badge" }, `${L("Tổng thời lượng nói", "Total speaking time")}: ${fmtDuration(sub.spokenSeconds || 0)}`)),
+        mp3Downloads(items, `${who}_speaking`),
         sub.turns.map((t, i) =>
           el("div", { class: "turn" },
             el("div", { class: "row", style: "gap:8px" },
               el("span", { class: "badge" }, `#${i + 1}`),
               el("span", { class: "tiny dim" }, t.part),
               el("div", { class: "spacer" }),
+              t.audioUrl ? mp3Button({ url: t.audioUrl, name: mp3Name(i), origExt: "webm" }) : null,
               el("span", { class: "badge " + (t.skipped ? "badge-red" : "badge-teal") },
                 t.skipped ? L("bỏ qua", "skipped") : `${t.seconds}s`)),
             el("div", { class: "turn-q", style: "margin-top:8px" }, t.prompt),

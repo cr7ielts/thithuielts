@@ -3,6 +3,7 @@
 import { el, icon, toast, confirmDialog, fmtDateTime, fmtClock } from "../ui.js";
 import { L } from "../i18n.js";
 import { uploadFile, submitHomework } from "./hwstore.js";
+import { mp3Button, mp3Downloads } from "../audio-mp3.js";
 import { analyzeSpeaking, aiAvailable, CRITERIA } from "./speaking-ai.js";
 
 const DEFAULTS = { mode: "parts", part1: [], part2: null, part3: [], p1Secs: 45, p2Prep: 60, p2Secs: 120, p3Secs: 60, freePrompt: "", freeSecs: 120, showAi: false };
@@ -365,52 +366,21 @@ function recorderArea(ctx, a, turns, teacher, resubmit) {
 const slugify = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D")
   .replace(/[^A-Za-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 40);
 const audioExt = (a) => (a?.name?.match(/\.(\w{2,4})$/)?.[1] || (a?.contentType?.includes("mp4") ? "m4a" : a?.contentType?.includes("ogg") ? "ogg" : "webm"));
-const fileNameFor = (sub, t, i) => [slugify(sub.name || sub.email || "hoc-sinh"), `cau-${String(i + 1).padStart(2, "0")}`, slugify(t.part)]
-  .filter(Boolean).join("_") + "." + audioExt(t.audio);
-
-/** File trên Firebase Storage khác tên miền nên thuộc tính download bị bỏ qua -> tải về dạng blob rồi lưu */
-async function downloadAudio(url, filename) {
-  try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(res.status);
-    const blobUrl = URL.createObjectURL(await res.blob());
-    const a = el("a", { href: blobUrl, download: filename, style: "display:none" });
-    document.body.append(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(blobUrl), 30000);
-  } catch (err) {
-    console.warn("download fallback", err);
-    window.open(url, "_blank", "noopener");   // không tải được thì mở file ở tab mới (bấm ⋮ → Tải xuống)
-  }
-}
-
-function downloadBtn(url, filename, label) {
-  const b = el("button", { type: "button", class: "btn btn-sm", title: filename }, icon("download"), label);
-  b.onclick = async () => { b.disabled = true; try { await downloadAudio(url, filename); } finally { b.disabled = false; } };
-  return b;
-}
+const baseNameFor = (sub, t, i) => [slugify(sub.name || sub.email || "hoc-sinh"), `cau-${String(i + 1).padStart(2, "0")}`, slugify(t.part)]
+  .filter(Boolean).join("_");
 
 export function recordingsList(sub, turnsDef, analysis) {
   const list = el("div", { class: "stack" });
-  const withAudio = (sub.turns || []).map((t, i) => ({ t, i })).filter(({ t }) => t.audio?.url);
-  if (withAudio.length > 1) {
-    const all = el("button", { type: "button", class: "btn btn-sm" }, icon("download"), L(`Tải tất cả (${withAudio.length} file)`, `Download all (${withAudio.length} files)`));
-    all.onclick = async () => {
-      all.disabled = true;
-      for (const { t, i } of withAudio) {
-        await downloadAudio(t.audio.url, fileNameFor(sub, t, i));
-        await new Promise((r) => setTimeout(r, 400));   // trình duyệt có thể hỏi "cho phép tải nhiều file" — bấm Cho phép
-      }
-      all.disabled = false;
-    };
-    list.append(el("div", { class: "row wrap", style: "gap:10px;justify-content:flex-end" },
-      el("span", { class: "tiny muted" }, L("Trình duyệt có thể hỏi cho phép tải nhiều file — chọn Cho phép.", "Your browser may ask to allow multiple downloads — choose Allow.")), all));
-  }
+  // tải MP3: từng câu hoặc gộp cả bài thành một file
+  const items = (sub.turns || []).map((t, i) => (t.audio?.url ? { url: t.audio.url, name: baseNameFor(sub, t, i), origExt: audioExt(t.audio) } : null)).filter(Boolean);
+  const dl = mp3Downloads(items, `${slugify(sub.name || sub.email || "hoc-sinh")}_speaking`);
+  if (dl) list.append(dl);
   (sub.turns || []).forEach((t, i) => {
     const an = analysis?.turns?.[i];
     list.append(el("div", { class: "sp-turn" + (t.audio ? " done" : "") },
       el("div", { class: "row wrap", style: "gap:8px" }, el("span", { class: "sp-part-tag" }, t.part),
         el("span", { class: "tiny muted" }, `#${i + 1}`), el("div", { class: "spacer" }),
-        t.audio?.url ? downloadBtn(t.audio.url, fileNameFor(sub, t, i), L("Tải xuống", "Download")) : null,
+        t.audio?.url ? mp3Button({ url: t.audio.url, name: baseNameFor(sub, t, i), origExt: audioExt(t.audio) }) : null,
         t.audio ? el("span", { class: "chip" }, fmtClock(t.seconds)) : el("span", { class: "chip chip-bad" }, L("bỏ trống", "blank"))),
       el("div", { class: "turn-q" }, t.prompt),
       t.audio ? el("audio", { controls: "", preload: "metadata", src: t.audio.url }) : null,
