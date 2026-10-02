@@ -45,3 +45,13 @@ Bước 1 (máy có thư mục `2. IELTS\VOL 1-9 2`):
 
 Rồi commit + push `tools/vol_reading`. File OneDrive "chỉ trên mạng" sẽ tự tải về khi script đọc tới (chỉ file Word/PDF Reading).
 File `.doc` đời cũ được liệt kê cuối bảng kết quả — mở bằng Word, Save As `.docx` rồi chạy lại.
+
+## Xem lại Listening: lời thoại + nghe lại từng câu
+
+| Script | Việc |
+|---|---|
+| `transcribe_listening.py [đề…] [--force]` | chép lời audio kèm mốc từng từ -> `transcripts/<đề>-s<n>.json` (cần audio gốc + `pip install faster-whisper`) |
+| `align_listening.py [đề…]` | in mốc dò được cho từng câu: `exact` / `fuzzy` (đáp án điền từ), `option` (câu chữ cái), `guess` (ước lượng) |
+| `gen_explain_listening.py` | transcripts + `explain_listening/<đề>.json` (viết tay) -> `../js/data/explain-listening/` + `bank-explain-listening.js` |
+| `reviewtest.html?kind=listening&id=<đề>&files=<url>` | xem thử trang xem lại với một lần làm bài giả |
+

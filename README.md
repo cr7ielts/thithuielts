@@ -174,6 +174,35 @@ bài cũ đã lưu mà nay không đạt — xoá tay `tools/interactive/<id>.js
 Xem thử giao diện không cần đăng nhập: chạy một web server tĩnh ở thư mục gốc rồi mở
 `tools/examtest.html?id=<id-bài>`.
 
+### Xem lại Listening: lời thoại + nghe lại câu sai
+
+Sau khi nộp bài Listening (cả đề hoặc từng section), trang **Xem lại** có:
+
+- Cột trái: **lời thoại** từng section kèm trình phát; dòng đang phát được tô, bấm một dòng để nghe từ chỗ đó,
+  chữ tô màu có số nhỏ là chỗ chứa đáp án câu tương ứng.
+- Mỗi câu: nút **Nghe lại** phát đúng đoạn chứa đáp án (từ ~8 giây trước đến ~3 giây sau đáp án) rồi tự dừng,
+  kèm câu lời thoại có tô đáp án. Câu nào máy không dò ra chỗ đáp án thì phát khoảng giữa câu trước và câu sau,
+  ghi “ước lượng”.
+- Đầu trang: **Nghe lại N câu sai** phát lần lượt mọi câu sai.
+
+Lời thoại do máy chép từ audio (faster-whisper), phải chạy **một lần trên máy có thư mục audio gốc**:
+
+```bash
+pip install faster-whisper
+python tools/transcribe_listening.py          # -> tools/transcripts/<đề>-s<n>.json (bỏ qua file đã có)
+python tools/align_listening.py forecast-01   # (tuỳ chọn) xem máy dò mốc từng câu thế nào
+python tools/gen_explain_listening.py         # -> js/data/explain-listening/ + bank-explain-listening.js
+```
+
+rồi commit `tools/transcripts` và `js/data`. Cả 39 đề là khoảng 20 giờ audio; model `small` chạy CPU có thể mất
+vài giờ tới nửa ngày tuỳ máy, nên để máy chạy qua đêm. Có GPU thì đặt `WHISPER_DEVICE=cuda WHISPER_MODEL=medium`.
+Có thể chạy dần từng đề: `python tools/transcribe_listening.py forecast-01 forecast-02`.
+Section lẻ dùng chung lời thoại của đề gốc nên không phải chép riêng.
+
+Giải thích tiếng Việt và sửa mốc nghe lại (khi máy dò sai) viết tay trong `tools/explain_listening/<đề>.json`:
+`{ "q": { "7": { "why": "…", "t": [61.0, 70.5] } } }` — chạy lại `gen_explain_listening.py` để đưa lên web.
+Xem thử không cần đăng nhập: `tools/reviewtest.html?kind=listening&id=forecast-01&files=<thư mục chứa bank/…>`.
+
 ### Bật CORS cho Firebase Storage (để web đọc được file PDF)
 
 Trang làm bài đọc file PDF bằng mã lệnh (PDF.js) nên Storage phải cho phép trang web đọc. Nếu chưa bật, học sinh gặp

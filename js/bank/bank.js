@@ -44,8 +44,9 @@ export function filesOf(kind, item) {
   return [{ src: item.src, path: `bank/${kind}/${item.id}.pdf`, type: "pdf", label: "PDF" }];
 }
 
-async function fileUrl(path) {
+export async function fileUrl(path) {
   if (!isConfigured) return path; // chế độ thử: đọc file tĩnh cùng thư mục web
+  if (globalThis.BANK_FILE_BASE) return globalThis.BANK_FILE_BASE + path;   // trang thử tools/reviewtest.html
   const { storage, stMod } = await initFirebase();
   return stMod.getDownloadURL(stMod.ref(storage, path));
 }

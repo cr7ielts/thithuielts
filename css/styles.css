@@ -1564,6 +1564,24 @@ mark.ev.flash { background: color-mix(in srgb, var(--copper) 38%, transparent); 
 .rv-why .rv-lbl { color: var(--navy-ink); margin-bottom: 4px; }
 .rv-ev { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
 .rv-ev blockquote { margin: 0; padding: 6px 12px; border-left: 3px solid var(--copper); background: var(--copper-soft); border-radius: 0 10px 10px 0; font-size: .9rem; font-style: italic; }
+/* Listening: lời thoại + nghe lại */
+.lr-paper { display: flex; flex-direction: column; gap: 10px; }
+.lr-bar { position: sticky; top: -1px; z-index: 2; display: flex; flex-direction: column; gap: 8px; padding-bottom: 10px;
+  background: var(--surface); border-bottom: 1px solid var(--line); }
+.lr-audio { width: 100%; height: 40px; }
+.lr-status { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-height: 30px; }
+.lr-sec { font-weight: 700; color: var(--navy-ink); }
+.lr-tabs .chip-btn { padding: 4px 10px; }
+.tr-lines { display: flex; flex-direction: column; }
+.tr-line { display: flex; gap: 10px; padding: 5px 8px; border-radius: 8px; cursor: pointer; line-height: 1.6; }
+.tr-line:hover { background: var(--navy-soft); }
+.tr-line.on { background: color-mix(in srgb, var(--mint) 18%, transparent); }
+.tr-line.flash { box-shadow: 0 0 0 3px color-mix(in srgb, var(--copper) 35%, transparent); }
+.tr-t { flex: none; font-variant-numeric: tabular-nums; font-size: .78rem; font-weight: 700; color: var(--ink-3); padding-top: 2px; }
+.lr-q blockquote .tr-t { margin-right: 4px; }
+.lr-q blockquote mark.ev { font-style: normal; font-weight: 700; }
+.rv-q.playing { box-shadow: 0 0 0 3px color-mix(in srgb, var(--copper) 45%, transparent); }
+.lr-note { margin: 4px 0 0; }
 @media (max-width: 760px) { .rv-paper { position: static; max-height: 55vh; } }
 @media (max-width: 900px) {
   .rv-split { display: flex !important; flex-direction: column; gap: 14px; }
