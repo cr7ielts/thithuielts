@@ -3,7 +3,10 @@
 //    part1 / part3: mỗi phần tử một câu hỏi; dòng bắt đầu bằng "# " là tên chủ đề của các câu sau nó
 //    part2: { topic, bullets: ["You should say" từng ý], followUp: câu hỏi kết (rounding-off) }
 //  Thêm đề: copy một khối { id, title, ... } rồi sửa nội dung.
-export const SPEAKING_TESTS = [
+//  Đề forecast: tự ghép từ js/data/speaking-forecast.js (xem forecastTests bên dưới), không sửa ở đây.
+import { SPEAKING_FORECAST } from "./speaking-forecast.js";
+
+const READY_MADE = [
   {
     id: "cum3-getting-around-money",
     title: "IELTS Speaking Mock Test — Cụm 3: Getting Around & Money",
@@ -52,3 +55,39 @@ export const SPEAKING_TESTS = [
     },
   },
 ];
+
+/**
+ * Mỗi cue card Part 2 trong forecast thành một đề đầy đủ:
+ *   Part 1 = 1 chủ đề mở đầu (Work/Study, Home, Hometown, lần lượt) + 2 chủ đề forecast (xoay vòng) — 12 câu
+ *   Part 2 = cue card + câu hỏi kết · Part 3 = 6 câu đi kèm cue card đó
+ */
+export function forecastTests(f = SPEAKING_FORECAST) {
+  const pad = (n) => String(n).padStart(2, "0");
+  const block = (t, i) => [`# Topic ${i} — ${t.topic}`, ...t.questions];
+  return f.part2.map((card, k) => {
+    const p1 = [f.core[k % f.core.length], f.part1[(2 * k) % f.part1.length], f.part1[(2 * k + 1) % f.part1.length]];
+    const short = card.topic.replace(/^Describe\s+/i, "").replace(/\.$/, "");
+    const title = `Forecast ${f.period} · Đề ${pad(k + 1)} — ${short[0].toUpperCase()}${short.slice(1)}`;
+    return {
+      id: `fc-${f.period.replace(/\D+/g, "-")}-${card.id}`,
+      group: `Forecast ${f.period} (cập nhật ${f.updated.split("-").reverse().join("/")})`,
+      title,
+      topics: p1.map((t) => t.topic).join(" · "),
+      instructions:
+        `IELTS Speaking Mock Test — Forecast ${f.period}\n` +
+        "Part 1 (4–5 phút): 12 câu, 3 chủ đề × 4 câu.\n" +
+        "Part 2 (3–4 phút): 1 phút chuẩn bị, nói 1–2 phút theo cue card, rồi trả lời 1 câu hỏi kết.\n" +
+        "Part 3 (4–5 phút): 6 câu, 2 chủ đề × 3 câu.\n" +
+        "Trả lời như đang thi thật: nói đủ ý, có lý do và ví dụ.",
+      speaking: {
+        mode: "parts",
+        part1: p1.flatMap((t, i) => block(t, i + 1)),
+        part2: { topic: card.topic, bullets: card.bullets, followUp: card.followUp },
+        part3: card.part3,
+        p1Secs: 45, p2Prep: 60, p2Secs: 120, p3Secs: 60,
+      },
+    };
+  });
+}
+
+export const SPEAKING_TESTS = [...READY_MADE.map((t) => ({ group: "Đề có sẵn", ...t })), ...forecastTests()];

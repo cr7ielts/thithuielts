@@ -116,6 +116,12 @@ Tab **Homework** — giáo viên giao bài có hạn nộp, học sinh nộp nga
   cue card, câu hỏi kết, tên bài, hướng dẫn), sửa được trước khi lưu. Đề lưu ở
   [`js/data/speaking-tests.js`](js/data/speaking-tests.js); hiện có *Mock Test Cụm 3 — Getting Around & Money*.
   Trong ô câu hỏi, dòng bắt đầu bằng `#` là tên chủ đề (hiện cạnh từng câu khi học sinh ghi âm).
+- **Forecast Speaking theo kỳ đề** (tháng 1–4, 5–8, 9–12): danh sách chủ đề Part 1 và cue card Part 2/3 ở
+  [`js/data/speaking-forecast.js`](js/data/speaking-forecast.js). Mỗi cue card tự thành một đề thi thử đầy đủ
+  (Part 1 12 câu, Part 2, Part 3 6 câu) trong nhóm *Forecast …* của ô “Chọn đề có sẵn”. Chủ đề lấy từ các trang
+  forecast/đề thật thí sinh báo lại (ghi ở `sources`); câu hỏi tự soạn theo dạng đề. Lịch tự động đầu mỗi tháng tìm
+  đề mới, cập nhật file này và đẩy lên GitHub — vẫn cần chạy `deploy.cmd` để lên web. Sửa tay xong thì chạy
+  `node tools/check_forecast.mjs` để kiểm tra.
 - Bản ghi Speaking (homework và thi thử) tải về dạng **MP3**: nút **Tải MP3** ở từng câu, **Tải từng câu** (mỗi câu một
   file) và **Tải gộp 1 file MP3** (các câu nối theo thứ tự, cách nhau 1,5 giây). Máy của người bấm tự chuyển định dạng
   (mono 22 kHz, 64 kbps) bằng thư viện lamejs đặt sẵn ở [`js/vendor/lame.min.js`](js/vendor/lame.min.js) (giấy phép LGPL);

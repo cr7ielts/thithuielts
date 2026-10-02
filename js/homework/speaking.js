@@ -85,7 +85,8 @@ export function speakingFormSection(a) {
   // đề có sẵn (js/data/speaking-tests.js): chọn là điền sẵn cả đề; vẫn sửa được trước khi lưu
   const pick = el("select", { id: "sp-template", class: "pick" },
     el("option", { value: "" }, L("— Chọn đề có sẵn —", "— Pick a ready-made test —")),
-    SPEAKING_TESTS.map((t) => el("option", { value: t.id }, t.title)));
+    [...new Set(SPEAKING_TESTS.map((t) => t.group))].map((g) => el("optgroup", { label: g },
+      SPEAKING_TESTS.filter((t) => t.group === g).map((t) => el("option", { value: t.id }, t.title)))));
   pick.onchange = () => {
     const t = SPEAKING_TESTS.find((x) => x.id === pick.value);
     if (!t) return;
