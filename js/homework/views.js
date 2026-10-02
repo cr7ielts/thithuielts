@@ -16,11 +16,13 @@ import { myClasses, hasClass, listAllClasses, countMembers, listMembers } from "
 import { noClassView, joinPromptCard } from "../classes/views.js";
 import { startProctor, onceAudio, clearOnce, integrityFlags, flagChips } from "../proctor.js";
 import { integrityRules } from "../bank/bank.js";
+import { writingMockFormSection, writingMockWorkArea, writingMockReview, writingBandInputs, writingOf } from "./writingmock.js";
 
 const TYPES = {
   reading:   { icon: "reading",   color: "var(--c-reading)",   label: "Reading" },
   listening: { icon: "listening", color: "var(--c-listening)", label: "Listening" },
   writing:   { icon: "writing",   color: "var(--c-writing)",   label: "Writing" },
+  writingmock: { icon: "writing", color: "var(--c-writing)",   label: L("Writing full test", "Writing full test") },
   speaking:  { icon: "mic",       color: "var(--c-speaking)",  label: "Speaking" },
   upload:    { icon: "upload",    color: "#9a8f7a",            label: L("Nộp file", "File upload") },
   bank:      { icon: "file",      color: "#a47ad8",            label: L("Ngân hàng đề", "Question bank") },
@@ -191,7 +193,7 @@ export function renderHomeworkDetail(ctx, id) {
     const st = statusOf(a, sub);
     const closed = !teacher && st === "missed";
     // chưa nộp: phải bấm "Bắt đầu làm bài" (toàn màn hình + giám sát) mới thấy đề
-    const gated = !teacher && !sub && !closed && ["reading", "listening", "writing", "speaking"].includes(a.type);
+    const gated = !teacher && !sub && !closed && ["reading", "listening", "writing", "writingmock", "speaking"].includes(a.type);
 
     const head = el("section", { class: "card hw-head", style: `--t:${TYPES[a.type]?.color}` },
       el("div", { class: "row wrap", style: "gap:8px" }, typeTag(a.type), teacher ? null : el("span", { class: STATUS[st].cls }, STATUS[st].label),
@@ -223,6 +225,8 @@ export function renderHomeworkDetail(ctx, id) {
         out.push(speakingWorkArea(ctx, a, sub, teacher, proctor));
       } else if (a.type === "bank") {
         out.push(await bankWorkArea(ctx, a, sub, teacher));
+      } else if (a.type === "writingmock") {
+        out.push(writingMockWorkArea(ctx, a, sub, teacher, proctor));
       } else {
         out.push(workArea(ctx, a, sub, teacher, proctor));
       }
@@ -252,7 +256,9 @@ function startGate(a, onStart) {
     el("div", { class: "row", style: "gap:10px" }, icon("shield"), el("h2", { class: "mb-0" }, L("Sẵn sàng làm bài?", "Ready to start?"))),
     el("p", { class: "mb-0 muted" }, L("Đề bài chỉ hiện sau khi bấm Bắt đầu. Hãy làm một mạch, như đang thi thật.",
       "The task appears once you press Start. Do it in one go, as if it were the real test.")),
-    integrityRules(a.type,
+    integrityRules(a.type === "writingmock" ? "writing" : a.type,
+      a.type === "writingmock" ? el("li", {}, L(`Có ${writingOf(a).minutes} phút cho cả Task 1 và Task 2, đồng hồ chạy liên tục kể cả khi tải lại trang; hết giờ tự nộp.`,
+        `You have ${writingOf(a).minutes} minutes for Task 1 and Task 2 together; the timer keeps running even if you reload, and work is submitted when time runs out.`)) : null,
       el("li", {}, a.allowResubmit && ["writing", "speaking", "upload"].includes(a.type)
         ? L("Được nộp lại trước hạn, trước khi giáo viên chấm.", "You can resubmit before the deadline, until your teacher marks it.")
         : L("Chỉ nộp được một lần.", "You can submit only once.")),
@@ -265,7 +271,10 @@ function feedbackBlock(sub) {
   return el("div", { class: "card hw-feedback" },
     el("div", { class: "row", style: "gap:10px" }, icon("star"), el("h3", { class: "mb-0" }, L("Giáo viên đã chấm", "Teacher feedback")),
       sub.teacherScore ? el("span", { class: "chip chip-gold" }, sub.teacherScore) : null),
-    sub.teacherCriteria ? el("div", { class: "crit-chips" }, CRITERIA.map((c) =>
+    sub.teacherCriteria && sub.type === "writingmock" ? el("div", { class: "crit-chips" },
+      sub.teacherCriteria.t1 != null ? el("span", { class: "chip" }, `Task 1: ${Number(sub.teacherCriteria.t1).toFixed(1)}`) : null,
+      sub.teacherCriteria.t2 != null ? el("span", { class: "chip" }, `Task 2: ${Number(sub.teacherCriteria.t2).toFixed(1)}`) : null)
+    : sub.teacherCriteria ? el("div", { class: "crit-chips" }, CRITERIA.map((c) =>
       sub.teacherCriteria[c.key] != null ? el("span", { class: "chip" }, `${c.name}: ${Number(sub.teacherCriteria[c.key]).toFixed(1)}`) : null)) : null,
     sub.teacherComment ? el("p", { class: "mb-0", style: "white-space:pre-wrap" }, sub.teacherComment) : null);
 }
@@ -682,6 +691,7 @@ export function renderHomeworkForm(ctx, id) {
       el("div", { class: "tiny muted" }, L("Mỗi dòng một câu, theo thứ tự. Nhiều đáp án đúng thì ngăn bằng dấu /. Không phân biệt hoa thường. Học sinh chỉ thấy đáp án sau khi nộp.",
         "One answer per line, in order. Separate accepted alternatives with /. Not case-sensitive. Students only see the key after submitting.")));
     const speakingField = speakingFormSection(a);
+    const writingField = writingMockFormSection(a);
     // Ngân hàng đề: sửa bài có sẵn hoặc mở từ nút "Giao làm bài tập" trong ngân hàng đề
     const bankInit = a?.bank || ctx.data?.bank || null;
     if (!a && ctx.data?.bank) type.value = "bank";
@@ -692,6 +702,7 @@ export function renderHomeworkForm(ctx, id) {
     const syncType = () => {
       keyField.classList.toggle("hidden", !["reading", "listening"].includes(type.value));
       speakingField.classList.toggle("hidden", type.value !== "speaking");
+      writingField.classList.toggle("hidden", type.value !== "writingmock");
       bankField.classList.toggle("hidden", type.value !== "bank");
     };
     type.onchange = syncType; syncType();
@@ -737,7 +748,10 @@ export function renderHomeworkForm(ctx, id) {
       if (answers && !answers.length) { toast(L("Bài Reading/Listening cần có đáp án.", "Reading/Listening homework needs an answer key."), "err"); keyBox.focus(); return; }
       const classIds = classField.read();
       if (!classIds.length) { toast(L("Chọn ít nhất một lớp để giao bài.", "Pick at least one class."), "err"); return; }
-      let speaking = null, bank = null;
+      let speaking = null, bank = null, writing = null;
+      if (t === "writingmock") {
+        try { writing = writingField.read(); } catch (err) { toast(err.message, "err"); return; }
+      }
       if (t === "bank") {
         bank = bankField.read();
         if (!bank) { toast(L("Hãy chọn một bài trong ngân hàng đề.", "Pick a test from the question bank."), "err"); return; }
@@ -750,9 +764,15 @@ export function renderHomeworkForm(ctx, id) {
         // Cần id trước khi upload file → tạo bản ghi trước nếu là bài mới
         let aid = id;
         const data = { title: title.value.trim(), type: t, instructions: instructions.value.trim(), dueAt: dueDate,
-          allowLate: allowLate.checked, published: published.checked, materials, links, speaking, bank, classId: classIds[0],
+          allowLate: allowLate.checked, published: published.checked, materials, links, speaking, bank, writing, classId: classIds[0],
           allowResubmit: ["writing", "speaking", "upload"].includes(t) && allowResubmit.checked };
         if (!aid) aid = await saveAssignment(null, { ...data, published: false }, answers, ctx.user);
+        // Writing full test: tải hình Task 1 lên (cần id bài tập trước)
+        if (writing && writingField.pendingImage()) {
+          status.textContent = L("Đang tải hình Task 1…", "Uploading the Task 1 image…");
+          writing.task1.image = await uploadFile({ aid, kind: "materials", file: writingField.pendingImage() });
+          data.writing = writing;
+        }
         if (pending.length) {
           progress.classList.remove("hidden");
           const total = pending.reduce((s, f) => s + f.size, 0) || 1;
@@ -817,7 +837,7 @@ export function renderHomeworkForm(ctx, id) {
         el("div", { class: "row wrap", style: "gap:8px" }, linkUrl, linkLabel,
           el("button", { class: "btn btn-sm", onclick: addLink }, icon("link"), L("Thêm link", "Add link"))),
         el("div", { class: "tiny muted" }, L("File tối đa 50 MB. Audio rất dài hoặc video có thể dán link Google Drive / YouTube.", "Files up to 50 MB each. For very long audio or video, add a Google Drive / YouTube link."))),
-      keyField, speakingField, bankField, progress, status,
+      keyField, speakingField, writingField, bankField, progress, status,
       el("div", { class: "row wrap", style: "gap:10px" }, saveBtn, el("div", { class: "spacer" }), delBtn)));
   })().catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
 
@@ -958,7 +978,8 @@ function reviewRow(ctx, a, r, key, autoScore) {
         el("span", { class: "strong" }, given || "—"), ok ? null : el("span", { class: "ans-key tiny" }, alts.join(" / ")));
     })));
   }
-  if (s.text) {
+  if (a.type === "writingmock" && s.tasks) details.append(writingMockReview(a, s));
+  else if (s.text) {
     details.append(el("div", { class: "row", style: "justify-content:flex-end" }, el("span", { class: "chip" }, L(`${countWords(s.text)} từ`, `${countWords(s.text)} words`))),
       el("div", { class: "hw-essay" }, s.text));
   }
@@ -981,11 +1002,16 @@ function reviewRow(ctx, a, r, key, autoScore) {
   const aiBand = s.analysis?.overall != null ? s.analysis.overall.toFixed(1) : null;
   const scoreIn = el("input", { type: "text", id: `score-${s.id}`,
     value: s.teacherScore || (auto != null ? `${auto}/${autoTotal}` : aiBand ? `Band ${aiBand}` : ""),
-    placeholder: ["writing", "speaking"].includes(a.type) ? L("vd. Band 6.5", "e.g. Band 6.5") : L("vd. 8/10", "e.g. 8/10"), style: "width:150px" });
+    placeholder: ["writing", "writingmock", "speaking"].includes(a.type) ? L("vd. Band 6.5", "e.g. Band 6.5") : L("vd. 8/10", "e.g. 8/10"), style: "width:150px" });
   const comment = el("textarea", { id: `comment-${s.id}`, placeholder: L("Nhận xét cho học sinh…", "Feedback for the student…"), style: "width:100%;min-height:80px" });
   comment.value = s.teacherComment || "";
   // Speaking: giáo viên chấm band từng tiêu chí, band tổng tự tính theo quy tắc IELTS
   let critBox = null, readCriteria = () => null;
+  if (a.type === "writingmock") {
+    // band từng task, band tổng tự tính (Task 2 gấp đôi)
+    const wb = writingBandInputs(s, (ov) => { if (ov != null) scoreIn.value = `Band ${ov.toFixed(1)}`; });
+    critBox = wb.box; readCriteria = wb.read;
+  }
   if (a.type === "speaking") {
     const bands = [];
     for (let b = 9; b >= 0; b -= 0.5) bands.push(b);
@@ -1022,7 +1048,7 @@ function reviewRow(ctx, a, r, key, autoScore) {
   };
   details.append(el("div", { class: "hw-grade" },
     critBox,
-    el("label", { class: "field-label mb-0", for: scoreIn.id }, a.type === "speaking" ? L("Band tổng", "Overall band") : L("Điểm", "Mark")), scoreIn, comment, el("div", {}, saveBtn)));
+    el("label", { class: "field-label mb-0", for: scoreIn.id }, ["speaking", "writingmock"].includes(a.type) ? L("Band tổng", "Overall band") : L("Điểm", "Mark")), scoreIn, comment, el("div", {}, saveBtn)));
 
   const toggle = el("button", { class: "btn btn-sm", onclick: () => {
     const open = details.classList.toggle("hidden") === false;

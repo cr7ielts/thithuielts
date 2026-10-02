@@ -85,6 +85,7 @@ export async function saveAssignment(id, data, answers, user) {
     questionCount: answers ? answers.length : (data.type === "bank" ? data.bank?.count || 0 : 0),
     speaking: data.type === "speaking" ? (data.speaking || null) : null,
     bank: data.type === "bank" ? (data.bank || null) : null,    // { kind, id, title } — bài trong ngân hàng đề
+    writing: data.type === "writingmock" ? (data.writing || null) : null,   // Writing full test: đề Task 1 (+ hình) và Task 2
   };
   if (!isConfigured) {
     const all = lsGet(LS.a, []);
@@ -229,6 +230,7 @@ export async function submitHomework(assignment, user, body) {
     files: body.files || [],
     note: body.note || "",
     turns: body.turns || null,          // Speaking: [{ part, prompt, seconds, audio }]
+    tasks: body.tasks || null,          // Writing full test: [{ id, title, text, words, minWords }]
     analysis: body.analysis || null,    // Speaking: báo cáo AI 4 tiêu chí
     analysisError: body.analysisError || null,
     score: body.score || null,          // Ngân hàng đề: { raw, total } chấm tự động

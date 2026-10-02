@@ -94,6 +94,7 @@ Tab **Homework** — giáo viên giao bài có hạn nộp, học sinh nộp nga
 |---|---|---|---|
 | **Reading / Listening** | Upload đề (PDF, ảnh, audio) hoặc dán link Drive/YouTube + nhập đáp án | Xem đề, điền phiếu trả lời | Tự động; điểm và đáp án hiện **sau hạn nộp**. Nộp **một lần** |
 | **Writing** | Dán đề bài vào ô hướng dẫn (có thể kèm ảnh biểu đồ) | Gõ bài, có đếm từ, có thể đính kèm file | Giáo viên nhập band + nhận xét |
+| **Writing full test** | Đề Task 1 + **hình biểu đồ** (tải ảnh lên) + đề Task 2, chọn tổng thời gian (mặc định 60 phút) | Làm như thi thật: tab Task 1 / Task 2, đếm từ từng task, một đồng hồ chung (chạy cả khi tải lại trang), hết giờ tự nộp, không dán chữ | Giáo viên chọn band Task 1 và Task 2; band tổng tự tính = (Task 1 + 2 × Task 2) / 3, làm tròn 0,5. Nộp **một lần** |
 | **Speaking** | Soạn câu hỏi theo **Part 1 / 2 / 3** (cue card, thời gian chuẩn bị, giới hạn giây mỗi câu) hoặc **một đề tự do** | Ghi âm từng câu ngay trên web, nghe lại, ghi lại | Giáo viên nghe và chọn band **4 tiêu chí** (FC, LR, GRA, P) — band tổng tự tính. AI chấm thử đang tắt (xem mục 5) |
 | **Ngân hàng đề** | Chọn 1 passage Reading, 1 đề Listening hoặc 1 section Listening trong Ngân hàng đề (hoặc bấm **Giao làm bài tập** ngay trong trang bài đó) | Làm trên giao diện luyện đề (PDF + audio + đồng hồ), nộp **một lần** | Tự động theo đáp án ngân hàng đề; giáo viên xem từng câu, chỉnh điểm/nhận xét |
 | **Nộp file** | Hướng dẫn + tài liệu tuỳ ý | Upload ảnh/PDF/Word/audio/video (≤ 50 MB/file) hoặc **ghi âm trực tiếp** trên web | Giáo viên nhập điểm + nhận xét |
