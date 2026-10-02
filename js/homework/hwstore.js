@@ -80,7 +80,7 @@ export async function getAssignment(id) {
 export async function saveAssignment(id, data, answers, user) {
   const body = {
     title: data.title, type: data.type, instructions: data.instructions || "", classId: data.classId || null,
-    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published,
+    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published, allowResubmit: !!data.allowResubmit,
     materials: data.materials || [], links: data.links || [],
     questionCount: answers ? answers.length : (data.type === "bank" ? data.bank?.count || 0 : 0),
     speaking: data.type === "speaking" ? (data.speaking || null) : null,
@@ -236,6 +236,8 @@ export async function submitHomework(assignment, user, body) {
     practiceId: body.practiceId || null,
     durationSec: body.durationSec ?? null,
     autoSubmitted: body.autoSubmitted ?? null,
+    startedAt: body.startedAt || null,
+    integrity: body.integrity || null,  // giám sát: rời màn hình, dán chữ… (js/proctor.js)
   };
   if (!isConfigured) {
     const all = lsGet(LS.s, {});

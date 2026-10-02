@@ -5,6 +5,7 @@ import { TEST } from "../data/current.js";
 import { DURATION } from "../config.js";
 import { saveSubmission } from "../store.js";
 import { L } from "../i18n.js";
+import { startProctor } from "../proctor.js";
 
 const SKILL = "writing";
 
@@ -37,12 +38,13 @@ function briefing(ctx, view) {
     ),
     el("button", {
       class: "btn btn-primary btn-lg",
-      onclick: () => { view.innerHTML = ""; view.append(examUI(ctx)); },
+      // giám sát bắt đầu ngay trong cú bấm (trình duyệt chỉ cho vào toàn màn hình khi người dùng bấm)
+      onclick: () => { const pr = startProctor({ key: `mock-${SKILL}-${ctx.user.uid}` }); view.innerHTML = ""; view.append(examUI(ctx, pr)); },
     }, L("Bắt đầu làm bài", "Start the test"))
   );
 }
 
-function examUI(ctx) {
+function examUI(ctx, proctor) {
   const texts = {};
   const saved = draft.load(ctx.user.uid, SKILL);
   if (saved?.data) Object.assign(texts, saved.data);
@@ -63,6 +65,7 @@ function examUI(ctx) {
     totalWords,
     el("button", { class: "btn btn-primary", onclick: () => doSubmit(false) }, L("Nộp bài", "Submit"))
   );
+  bar.insertBefore(proctor.badge, bar.querySelector(".spacer"));
 
   const refresh = () => {
     const n = TEST.writing.tasks.reduce((s, t) => s + countWords(texts[t.id]), 0);
@@ -72,7 +75,7 @@ function examUI(ctx) {
 
   const tabs = el("div", { class: "tabs" });
   const holder = el("div");
-  const panels = TEST.writing.tasks.map((t) => taskPanel(t, texts, refresh));
+  const panels = TEST.writing.tasks.map((t) => taskPanel(t, texts, refresh, proctor));
 
   TEST.writing.tasks.forEach((t, i) => {
     tabs.append(el("button", { class: "btn btn-sm", onclick: () => show(i) },
@@ -115,6 +118,7 @@ function examUI(ctx) {
     try {
       const sub = await saveSubmission(ctx.user, {
         testId: TEST.id, skill: SKILL,
+        integrity: proctor.report(),
         startedAt: startedAt.toISOString(),
         durationSec: timer.elapsedSeconds,
         autoSubmitted: auto,
@@ -123,6 +127,7 @@ function examUI(ctx) {
       });
       draft.clear(ctx.user.uid, SKILL);
       toast(auto ? L("Hết giờ — bài đã được nộp tự động", "Time's up — your test was submitted") : L("Đã nộp bài", "Submitted"), "ok");
+      proctor.stop();
       ctx.go("result", { submission: sub });
     } catch (err) {
       submitted = false;
@@ -136,7 +141,7 @@ function examUI(ctx) {
   return wrap;
 }
 
-function taskPanel(task, texts, refresh) {
+function taskPanel(task, texts, refresh, proctor) {
   const counter = el("span", { class: "badge" }, "0");
   const ta = el("textarea", {
     id: `essay-${task.id}`,
@@ -146,6 +151,7 @@ function taskPanel(task, texts, refresh) {
     oninput: (e) => { texts[task.id] = e.target.value; update(); refresh(); },
   });
   ta.value = texts[task.id] || "";
+  proctor.guardText(ta);   // không cho dán bài viết sẵn
 
   function update() {
     const n = countWords(ta.value);

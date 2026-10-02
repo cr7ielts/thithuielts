@@ -5,6 +5,7 @@ import { TEST, BAND_LISTENING } from "../data/current.js";
 import { DURATION } from "../config.js";
 import { saveSubmission } from "../store.js";
 import { L } from "../i18n.js";
+import { startProctor, onceAudio, clearOnce } from "../proctor.js";
 import { createHighlighter, attachHtmlHighlighter } from "../highlight.js";
 
 const SKILL = "listening";
@@ -42,12 +43,13 @@ function briefing(ctx, view) {
     ),
     el("button", {
       class: "btn btn-primary btn-lg",
-      onclick: () => { view.innerHTML = ""; view.append(examUI(ctx)); },
+      // giám sát bắt đầu ngay trong cú bấm (trình duyệt chỉ cho vào toàn màn hình khi người dùng bấm)
+      onclick: () => { const pr = startProctor({ key: `mock-${SKILL}-${ctx.user.uid}` }); view.innerHTML = ""; view.append(examUI(ctx, pr)); },
     }, L("Bắt đầu làm bài", "Start the test"))
   );
 }
 
-function examUI(ctx) {
+function examUI(ctx, proctor) {
   const answers = {};
   const saved = draft.load(ctx.user.uid, SKILL);
   if (saved?.data) Object.assign(answers, saved.data);
@@ -71,6 +73,7 @@ function examUI(ctx) {
     dots,
     el("button", { class: "btn btn-primary", onclick: () => doSubmit(false) }, L("Nộp bài", "Submit"))
   );
+  bar.insertBefore(proctor.badge, bar.querySelector(".spacer"));
 
   const onChange = () => {
     dots.update();
@@ -121,6 +124,7 @@ function examUI(ctx) {
     try {
       const sub = await saveSubmission(ctx.user, {
         testId: TEST.id, skill: SKILL,
+        integrity: proctor.report(),
         startedAt: startedAt.toISOString(),
         durationSec: timer.elapsedSeconds,
         autoSubmitted: auto,
@@ -130,6 +134,8 @@ function examUI(ctx) {
       });
       draft.clear(ctx.user.uid, SKILL);
       toast(auto ? L("Hết giờ — bài đã được nộp tự động", "Time's up — your test was submitted") : L("Đã nộp bài", "Submitted"), "ok");
+      proctor.stop();
+      clearOnce("mock-listening-");
       ctx.go("result", { submission: sub });
     } catch (err) {
       submitted = false;
@@ -168,18 +174,8 @@ function audioBox(sec) {
   let played = false;
 
   if (sec.audioUrl) {
-    const audio = el("audio", { src: sec.audioUrl, preload: "none" });
-    const btn = el("button", { class: "btn btn-primary" }, L("▶  Phát audio (1 lần)", "▶  Play audio (once)"));
-    btn.onclick = () => {
-      if (played) return;
-      played = true;
-      btn.disabled = true;
-      wave.classList.add("on");
-      status.textContent = L("Đang phát…", "Playing…");
-      audio.play();
-      audio.onended = () => { wave.classList.remove("on"); status.textContent = L("Đã phát xong", "Finished"); };
-    };
-    box.append(btn, wave, status, audio);
+    // phát một lần, không dừng / tua; tải lại trang thì phát tiếp chứ không nghe lại từ đầu
+    box.append(onceAudio({ src: sec.audioUrl, label: sec.title, key: `mock-listening-${TEST.id}-${sec.title}` }));
   } else {
     const btn = el("button", { class: "btn btn-primary" }, L("▶  Phát bằng giọng đọc trình duyệt", "▶  Play with text-to-speech"));
     const stopBtn = el("button", { class: "btn btn-sm hidden" }, L("Dừng", "Stop"));

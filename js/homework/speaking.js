@@ -149,6 +149,7 @@ function turnRecorder(turn, index, state, onChange) {
   async function startRecording() {
     clearInterval(prepIv);
     try {
+      curProctor?.allowBlur(20000);   // hộp xin quyền micro không tính là rời màn hình
       stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
     } catch {
       toast(L("Không dùng được micro. Hãy cho phép micro trong trình duyệt rồi thử lại.", "Can't use the microphone. Allow it in your browser and try again."), "err", 6000);
@@ -223,7 +224,10 @@ function turnRecorder(turn, index, state, onChange) {
 }
 
 /* ======================= Học sinh: làm bài ======================= */
-export function speakingWorkArea(ctx, a, sub, teacher) {
+let curProctor = null, prevIntegrity = null;
+export function speakingWorkArea(ctx, a, sub, teacher, proctor = null) {
+  curProctor = proctor;
+  prevIntegrity = sub?.integrity || null;   // nộp lại: giữ số liệu giám sát của lần làm đầu
   const turns = speakingTurns(a);
   const card = el("div", { class: "card stack" });
   const graded = !!(sub?.gradedAt || sub?.teacherScore);
@@ -239,7 +243,7 @@ export function speakingWorkArea(ctx, a, sub, teacher) {
           : L("Giáo viên sẽ nghe và chấm bài của bạn.", "Your teacher will listen and mark your work."))));
     if (showAi && sub.analysis) card.append(aiReport(sub.analysis, { forTeacher: false }));
     card.append(recordingsList(sub, turns, showAi ? sub.analysis : null));
-    if (!graded && !teacher) {
+    if (!graded && !teacher && a.allowResubmit) {
       card.append(el("div", {}, el("button", { class: "btn", onclick: () => { card.replaceWith(recorderArea(ctx, a, turns, teacher, true)); } },
         icon("refresh"), L("Ghi âm lại và nộp lại", "Record again and resubmit"))));
     }
@@ -333,11 +337,15 @@ function recorderArea(ctx, a, turns, teacher, resubmit) {
       // 3) Lưu bài nộp
       status.textContent = L("Đang lưu bài nộp…", "Saving your submission…");
       bar.style.width = "98%";
+      const rep = curProctor?.report() || null;
       await submitHomework(a, ctx.user, {
         turns: recorded.map(({ blob, ...t }) => t),
         files: recorded.filter((t) => t.audio).map((t) => t.audio),
         analysis, analysisError,
+        integrity: rep || prevIntegrity, startedAt: rep?.startedAt || null, durationSec: rep?.elapsedSec ?? null,
       });
+      curProctor?.stop();
+      curProctor = null;
       bar.style.width = "100%";
       toast(resubmit ? L("Đã nộp lại!", "Resubmitted!") : L("Đã nộp bài!", "Submitted!"), "ok");
       ctx.go(`homework/${a.id}`, { t: Date.now() });

@@ -1,5 +1,6 @@
 // Điều hướng, đăng nhập Google, trang chủ
 import { el, toast, fmtDateTime, setExamGuard, icon } from "./ui.js";
+import { stopActiveProctor } from "./proctor.js";
 import { initFirebase, isConfigured, isAdmin } from "./firebase.js";
 import { ensureStudentProfile, listMySubmissions } from "./store.js";
 import { DURATION, BRAND, ALLOW_EMAIL_SIGNUP } from "./config.js";
@@ -249,6 +250,7 @@ window.addEventListener("hashchange", () => {
 /* ===================== Render ===================== */
 function render() {
   setExamGuard(false);
+  stopActiveProctor();
   document.body.classList.remove("hl-on", "hl-erasing");   // tắt bút highlight khi đổi trang
   window.speechSynthesis?.cancel();
   app.innerHTML = "";

@@ -92,7 +92,7 @@ Tab **Homework** — giáo viên giao bài có hạn nộp, học sinh nộp nga
 
 | Loại bài | Giáo viên chuẩn bị | Học sinh làm | Chấm |
 |---|---|---|---|
-| **Reading / Listening** | Upload đề (PDF, ảnh, audio) hoặc dán link Drive/YouTube + nhập đáp án | Xem đề, điền phiếu trả lời | Tự động, xem được đáp án sau khi nộp. Nộp **một lần** |
+| **Reading / Listening** | Upload đề (PDF, ảnh, audio) hoặc dán link Drive/YouTube + nhập đáp án | Xem đề, điền phiếu trả lời | Tự động; điểm và đáp án hiện **sau hạn nộp**. Nộp **một lần** |
 | **Writing** | Dán đề bài vào ô hướng dẫn (có thể kèm ảnh biểu đồ) | Gõ bài, có đếm từ, có thể đính kèm file | Giáo viên nhập band + nhận xét |
 | **Speaking** | Soạn câu hỏi theo **Part 1 / 2 / 3** (cue card, thời gian chuẩn bị, giới hạn giây mỗi câu) hoặc **một đề tự do** | Ghi âm từng câu ngay trên web, nghe lại, ghi lại | Giáo viên nghe và chọn band **4 tiêu chí** (FC, LR, GRA, P) — band tổng tự tính. AI chấm thử đang tắt (xem mục 5) |
 | **Ngân hàng đề** | Chọn 1 passage Reading, 1 đề Listening hoặc 1 section Listening trong Ngân hàng đề (hoặc bấm **Giao làm bài tập** ngay trong trang bài đó) | Làm trên giao diện luyện đề (PDF + audio + đồng hồ), nộp **một lần** | Tự động theo đáp án ngân hàng đề; giáo viên xem từng câu, chỉnh điểm/nhận xét |
@@ -101,13 +101,38 @@ Tab **Homework** — giáo viên giao bài có hạn nộp, học sinh nộp nga
 - Đáp án nhập mỗi dòng một câu (`1. TRUE`, `2. B`, `3. hen / a hen`); nhiều đáp án đúng ngăn bằng `/`.
 - Hạn nộp do giáo viên đặt; tick “Accept late work” thì học sinh vẫn nộp được sau hạn và bị đánh dấu *late*.
 - Bỏ tick “Visible to students” để lưu nháp, học sinh chưa thấy.
-- Writing / Speaking / nộp file được **nộp lại** trước hạn, cho tới khi giáo viên chấm.
+- Mỗi bài **nộp một lần**. Writing / Speaking / nộp file chỉ được nộp lại trước hạn khi giáo viên tick
+  “Cho nộp lại trước hạn” (và giáo viên chưa chấm). Bài giao trước khi có tuỳ chọn này coi như không cho nộp lại.
 - Speaking: tick “Show the AI feedback to students” nếu muốn học sinh xem nhận xét AI ngay sau khi nộp
   (mặc định chỉ giáo viên xem). AI lỗi thì bài vẫn được nộp, giáo viên chấm tay.
-- Đáp án lưu riêng (`assignmentKeys`) — học sinh chỉ đọc được sau khi đã nộp bài của mình.
+- Đáp án lưu riêng (`assignmentKeys`) — học sinh chỉ đọc được khi đã nộp bài của mình **và đã qua hạn nộp**.
 - Trang **Review** của mỗi bài: ai đã nộp / chưa nộp / nộp muộn, điểm tự động, file đính kèm, ô chấm điểm.
 
 Cần **Firebase Storage** (gói Blaze) để upload file — xem mục 4 bên dưới.
+
+### Làm bài nghiêm túc: giám sát homework và thi thử
+
+Chỉ áp dụng cho **homework** (Reading, Listening, Writing, Speaking, Ngân hàng đề) và **4 bài thi thử**;
+luyện tự do trong Ngân hàng đề và loại “Nộp file” không bị giám sát. Code: [`js/proctor.js`](js/proctor.js).
+
+| Biện pháp | Học sinh thấy | Giáo viên thấy |
+|---|---|---|
+| Màn hình **Bắt đầu làm bài** | Luật làm bài; đề / tài liệu chỉ hiện sau khi bấm Bắt đầu | Thời gian làm tính từ lúc bấm |
+| **Toàn màn hình** | Bấm Bắt đầu là vào toàn màn hình; thoát ra thì có thanh nhắc “Vào lại toàn màn hình” | “Thoát toàn màn hình N lần” |
+| **Ghi nhận rời màn hình** (chuyển tab, thu nhỏ, bấm sang ứng dụng khác ≥ 1,5 giây) | Chip “Đang giám sát · rời N lần” trên thanh làm bài + cảnh báo mỗi lần quay lại | “Rời màn hình N lần · tổng m:ss” |
+| **Chặn dán** vào bài Writing | Dán / kéo thả chữ bị chặn, có cảnh báo | “Cố dán chữ N lần”, “Chữ xuất hiện đột ngột N lần” |
+| **Listening nghe một lần** | Bấm Phát một lần, không dừng, không tua; tải lại trang thì phát tiếp chứ không nghe lại từ đầu | — |
+| **Ẩn đáp án đến hạn** | Ngân hàng đề: thấy điểm ngay, đáp án / xem lại / luyện lại mở sau hạn. Reading/Listening phiếu: điểm và đáp án sau hạn. Bài đang là homework thì không luyện tự do được (kể cả section ↔ đề đầy đủ chứa nó) | — |
+| **Một lần nộp** | Xem mục trên | Tuỳ chọn “Cho nộp lại trước hạn” trong form giao bài |
+| **Làm nhanh bất thường** | — | Reading/Listening: xong < 30% thời gian dự kiến mà đúng ≥ 70%. Writing: > 35 từ/phút với bài ≥ 120 từ |
+
+Cờ hiện ở trang **Chấm bài** của từng homework, trang kết quả và bảng bài nộp ở trang Admin.
+Bộ đếm giữ qua lần tải lại trang (ghi thêm “Tải lại / mở lại trang N lần”).
+
+Giới hạn: trang web không khoá được máy. Điện thoại thứ hai, máy thứ hai thì không phát hiện được; iPhone/Safari
+không cho trang web vào toàn màn hình nên trên đó chỉ ghi nhận rời màn hình. Học sinh rành kỹ thuật có thể sửa số liệu
+gửi lên. Coi các cờ là **dấu hiệu để hỏi lại học sinh**, không phải bằng chứng; bài test quan trọng vẫn nên làm tại lớp.
+Sau khi cập nhật, **deploy lại `firestore.rules`** (luật mới khoá đáp án đến hạn và chặn nộp lại).
 
 ## Ngân hàng đề (Reading passage + Listening)
 

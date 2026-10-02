@@ -4,6 +4,8 @@ import { listMySubmissions, listAllSubmissions, gradeSubmission, listStudents } 
 import { isAdmin } from "./firebase.js";
 import { createCat } from "./cat.js";
 import { L, isVi } from "./i18n.js";
+import { integrityFlags, flagChips } from "./proctor.js";
+import { hiddenUntil } from "./homework/hwlock.js";
 
 const SKILL_LABEL = { listening: "Listening", reading: "Reading", writing: "Writing", speaking: "Speaking" };
 
@@ -25,11 +27,13 @@ export function renderResult(ctx, sub) {
           auto ? el("span", { class: "badge badge-amber" }, L("Tự động nộp khi hết giờ", "Auto-submitted when time ran out"))
                : el("span", { class: "badge badge-green" }, L("Học sinh chủ động nộp", "Submitted by student")),
           sub.local ? el("span", { class: "badge badge-red" }, L("Lưu tạm trên máy (chưa cấu hình Firebase)", "Saved on this device only (Firebase not set up)")) : null
-        )
+        ),
+        (() => { const fl = subFlags(sub); return fl.length ? el("div", { class: "row wrap", style: "margin-top:8px;gap:6px" }, flagChips(fl)) : null; })()
       ),
       el("div", { class: "result-cat" }, resultCat(sub))
     )
   );
+  const until = hiddenUntil(sub, ctx.user);
 
   const body = el("div", { class: "stack", style: "margin-top:16px" });
 
@@ -42,8 +46,9 @@ export function renderResult(ctx, sub) {
         stat(L("Tỉ lệ đúng", "Accuracy"), `${Math.round((sub.raw / sub.total) * 100)}%`),
         stat(L("Bỏ trống", "Blank"), String(sub.details.filter((d) => !d.given).length))
       ),
-      reviewLink(ctx, sub),
-      reviewCard(sub)
+      until ? el("div", { class: "notice notice-info" }, L(`Đây là bài tập về nhà — đáp án và phần xem lại mở lúc ${fmtDateTime(until)}.`,
+        `This was homework — answers and review open at ${fmtDateTime(until)}.`)) : reviewLink(ctx, sub),
+      until ? null : reviewCard(sub)
     );
   }
 
@@ -89,6 +94,13 @@ export function renderResult(ctx, sub) {
     el("div", { class: "row", style: "margin-top:20px" },
       el("button", { class: "btn", onclick: () => ctx.go("home") }, icon("back"), L("Về trang chủ", "Back to home")),
       el("button", { class: "btn", onclick: () => ctx.go("history") }, L("Xem lịch sử làm bài", "View test history"))));
+}
+
+/** cờ giám sát + làm nhanh bất thường */
+export function subFlags(sub) {
+  const auto = sub.skill === "listening" || sub.skill === "reading";
+  return integrityFlags(sub, auto ? { raw: sub.raw, total: sub.total, expectedSec: (sub.total || 0) * (sub.skill === "reading" ? 90 : 45) }
+    : sub.skill === "writing" ? { words: (sub.tasks || []).reduce((n, t) => n + (t.words || 0), 0) } : {});
 }
 
 function resultCat(sub) {
@@ -355,7 +367,8 @@ function submissionTable(list, ctx, showStudent) {
       el("td", {}, el("span", { class: `skill-tag ${s.skill}` }, SKILL_LABEL[s.skill] || s.skill),
         s.testTitle ? el("div", { class: "tiny dim", style: "margin-top:4px;max-width:260px" }, s.testTitle) : null),
       el("td", {}, el("div", {}, fmtDateTime(s.submittedAt)),
-        s.autoSubmitted ? el("div", { class: "tiny", style: "color:var(--amber)" }, L("tự động nộp", "auto-submitted")) : null),
+        s.autoSubmitted ? el("div", { class: "tiny", style: "color:var(--amber)" }, L("tự động nộp", "auto-submitted")) : null,
+        ...subFlags(s).map((x) => el("div", { class: "tiny", style: `color:var(${x.level === "bad" ? "--red" : "--amber"})` }, x.text))),
       el("td", {}, fmtDuration(s.durationSec)),
       el("td", {}, score),
       el("td", {}, el("button", { class: "btn btn-sm", onclick: () => ctx.go("result", { submission: s }) }, L("Xem", "View")))

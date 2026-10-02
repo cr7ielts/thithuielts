@@ -4,6 +4,7 @@ import { TEST } from "../data/current.js";
 import { saveSubmission, uploadAudio } from "../store.js";
 import { ENABLE_AUDIO_UPLOAD } from "../config.js";
 import { L } from "../i18n.js";
+import { startProctor } from "../proctor.js";
 
 const SKILL = "speaking";
 
@@ -63,12 +64,13 @@ function briefing(ctx, view) {
     ),
     el("button", {
       class: "btn btn-primary btn-lg",
-      onclick: () => { view.innerHTML = ""; view.append(examUI(ctx)); },
+      // giám sát bắt đầu ngay trong cú bấm (trình duyệt chỉ cho vào toàn màn hình khi người dùng bấm)
+      onclick: () => { const pr = startProctor({ key: `mock-${SKILL}-${ctx.user.uid}` }); view.innerHTML = ""; view.append(examUI(ctx, pr)); },
     }, L("Bắt đầu làm bài", "Start the test"))
   );
 }
 
-function examUI(ctx) {
+function examUI(ctx, proctor) {
   const turns = buildTurns();
   const results = turns.map(() => null); // { seconds, blob }
   const startedAt = new Date();
@@ -88,6 +90,7 @@ function examUI(ctx) {
     el("div", { class: "spacer" }),
     progressBadge
   );
+  bar.insertBefore(proctor.badge, bar.querySelector(".spacer"));
 
   const stage = el("div", { class: "card" });
   const wrap = el("div");
@@ -95,6 +98,7 @@ function examUI(ctx) {
 
   (async () => {
     try {
+      proctor.allowBlur(20000);   // hộp xin quyền micro không tính là rời màn hình
       stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     } catch {
       toast(L("Không truy cập được micro — bài vẫn tiếp tục, chỉ ghi nhận thời gian nói.",
@@ -253,6 +257,7 @@ function examUI(ctx) {
     try {
       const sub = await saveSubmission(ctx.user, {
         testId: TEST.id, skill: SKILL,
+        integrity: proctor.report(),
         startedAt: startedAt.toISOString(),
         durationSec: Math.round((Date.now() - t0) / 1000),
         spokenSeconds: spokenTotal,
@@ -261,6 +266,7 @@ function examUI(ctx) {
         graded: false, teacherBand: null, teacherComment: "",
       });
       toast(L("Đã nộp bài Speaking", "Speaking test submitted"), "ok");
+      proctor.stop();
       ctx.go("result", { submission: sub });
     } catch (err) {
       console.error(err);

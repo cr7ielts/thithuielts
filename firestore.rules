@@ -78,10 +78,12 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // Đáp án: giáo viên đọc được; học sinh chỉ đọc SAU KHI đã có bài nộp của mình
+    // Đáp án: giáo viên đọc được; học sinh chỉ đọc khi đã nộp bài của mình VÀ đã qua hạn nộp
+    // (để không chuyền đáp án cho bạn chưa làm)
     match /assignmentKeys/{aid} {
       allow read: if isAdmin() || (request.auth != null &&
-        exists(/databases/$(database)/documents/hwSubmissions/$(aid + '_' + request.auth.uid)));
+        exists(/databases/$(database)/documents/hwSubmissions/$(aid + '_' + request.auth.uid)) &&
+        request.time > get(/databases/$(database)/documents/assignments/$(aid)).data.dueAt);
       allow write: if isAdmin();
     }
 
@@ -106,10 +108,12 @@ service cloud.firestore {
       // resource == null: cho phép hỏi "mình đã nộp bài này chưa?" khi chưa có bài nộp
       allow read: if request.auth != null && (isAdmin() || resource == null || resource.data.uid == request.auth.uid);
       allow create: if request.auth != null && studentFieldsOk();
-      // Nộp lại: chỉ Writing / Speaking / nộp file, trước khi giáo viên chấm; Reading/Listening nộp một lần
+      // Nộp lại: chỉ Writing / Speaking / nộp file, giáo viên bật "cho nộp lại trước hạn", trước khi chấm.
+      // Còn lại mỗi bài một lần nộp.
       allow update: if isAdmin() || (request.auth != null
         && resource.data.uid == request.auth.uid
         && resource.data.type in ['writing', 'upload', 'speaking']
+        && asg(resource.data.assignmentId).get('allowResubmit', false) == true
         && resource.data.get('gradedAt', null) == null
         && studentFieldsOk());
       allow delete: if false;

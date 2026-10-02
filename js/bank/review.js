@@ -10,6 +10,7 @@ import { listMySubmissions } from "../store.js";
 import { findBankItem } from "./bank.js";
 import { loadInteractive } from "./exam.js";
 import { loadListenExplain, listenPanel, mmss } from "./listen-review.js";
+import { bankLock, lockNotice, hiddenUntil } from "../homework/hwlock.js";
 
 let EXPLAIN_IDS = null;
 async function loadExplain(id) {
@@ -78,9 +79,14 @@ export function renderBankReview(ctx, kind, id, sub = null) {
   (async () => {
     const item = (await findBankItem({ kind, id }))?.item;
     if (!item) throw new Error(L("Không tìm thấy bài này.", "Test not found."));
+    // bài đang là homework chưa tới hạn: chưa xem đáp án
+    const lock = await bankLock(ctx, kind, id);
+    if (lock) { body.replaceWith(lockNotice(ctx, lock)); return; }
     // mở thẳng link / tải lại trang: lấy lần làm gần nhất của bài này
     if (!sub) sub = (await listMySubmissions(ctx.user.uid)).find((s) => s.testId === `bank:${kind}:${id}` && s.details?.length) || null;
     if (!sub) { body.replaceWith(el("div", { class: "notice notice-info" }, L("Bạn chưa làm bài này. Làm bài xong sẽ xem lại được ở đây.", "You haven't taken this test yet."))); return; }
+    const until = hiddenUntil(sub, ctx.user);
+    if (until) { body.replaceWith(el("div", { class: "notice notice-info" }, L(`Đây là bài tập về nhà — đáp án và phần xem lại mở lúc ${fmtDateTime(until)}.`, `This was homework — answers and review open at ${fmtDateTime(until)}.`))); return; }
     const [inter, exp, lexp] = await Promise.all([loadInteractive(id), kind === "reading" ? loadExplain(id) : null,
       kind === "reading" ? null : loadListenExplain(kind, item)]);
     body.replaceWith(view(ctx, kind, item, sub, inter, exp, lexp));

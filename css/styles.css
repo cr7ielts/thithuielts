@@ -1587,3 +1587,16 @@ mark.ev.flash { background: color-mix(in srgb, var(--copper) 38%, transparent); 
   .rv-split { display: flex !important; flex-direction: column; gap: 14px; }
   .rv-paper { position: static; max-height: 50vh; }
 }
+
+/* ===== Giám sát homework / thi thử (js/proctor.js) ===== */
+.proctor-chip { white-space: nowrap; }
+.proctor-chip .i svg { width: 14px; height: 14px; }
+.proctor-fs { position: fixed; top: 0; left: 0; right: 0; z-index: 2000; display: flex; align-items: center; gap: 10px;
+  padding: 10px 16px; background: var(--red-soft); color: var(--red); font-weight: 600; box-shadow: 0 4px 14px rgba(0,0,0,.12); }
+.hw-gate { border: 2px solid var(--copper-line); }
+.hw-proctor-bar { gap: 10px; align-items: center; flex-wrap: wrap; }
+.once-audio { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px;
+  background: var(--navy-soft); }
+.once-audio .once-bar { flex: 1; min-width: 120px; height: 8px; }
+.once-audio .once-time { font-variant-numeric: tabular-nums; min-width: 92px; }
+.once-audio .once-vol { width: 90px; }

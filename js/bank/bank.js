@@ -10,6 +10,8 @@ import { getAssignment, getMySubmission, submitHomework } from "../homework/hwst
 import { createHighlighter, pdfHighlightStore, attachHtmlHighlighter } from "../highlight.js";
 import { loadInteractive, examView } from "./exam.js";
 import { L } from "../i18n.js";
+import { startProctor, onceAudio, clearOnce } from "../proctor.js";
+import { bankLock, lockNotice, resetLockCache } from "../homework/hwlock.js";
 
 const ROMANS = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv"];
 const KIND_LABEL = {
@@ -157,6 +159,11 @@ export function renderBankPractice(ctx, kind, id, hwId = null) {
     const banks = await loadBanks();
     const item = (banks[kind] || []).find((i) => i.id === id);
     if (!item) throw new Error(L("Không tìm thấy bài này.", "Test not found."));
+    // bài đang là homework: không luyện tự do (sẽ thấy đáp án) cho tới hạn nộp
+    if (!hwId) {
+      const lock = await bankLock(ctx, kind, id);
+      if (lock) { body.replaceWith(lockNotice(ctx, lock)); return; }
+    }
     const files = filesOf(kind, item);
     let urls;
     try {
@@ -176,11 +183,17 @@ export function renderBankPractice(ctx, kind, id, hwId = null) {
       if (a && a.type === "bank" && a.bank?.kind === kind && a.bank?.id === id) {
         const done = isAdmin(ctx.user) ? null : await getMySubmission(hwId, ctx.user.uid);
         const late = a.dueAt < new Date() && !a.allowLate;
-        hw = { a, done, late };
+        hw = { a, done, late, active: !done && !late && !isAdmin(ctx.user) };
+        // đã nộp mà chưa tới hạn: chưa cho luyện lại (luyện xong sẽ thấy đáp án)
+        if (done && a.dueAt > new Date()) { body.replaceWith(lockNotice(ctx, { a, sub: done })); return; }
       }
     }
     const inter = await loadInteractive(item.id);   // có nội dung đề -> làm như thi trên máy, không cần PDF
-    const intro = briefing(ctx, kind, item, () => intro.replaceWith(practiceUI(ctx, kind, item, files, urls, hw, inter)), hw, inter);
+    // homework: giám sát bắt đầu ngay trong cú bấm "Bắt đầu" (trình duyệt chỉ cho vào toàn màn hình khi người dùng bấm)
+    const intro = briefing(ctx, kind, item, () => {
+      const proctor = hw?.active ? startProctor({ key: `hw-${hw.a.id}-${ctx.user.uid}` }) : null;
+      intro.replaceWith(practiceUI(ctx, kind, item, files, urls, hw, inter, proctor));
+    }, hw, inter);
     body.replaceWith(intro);
   })().catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
   return wrap;
@@ -196,7 +209,8 @@ function briefing(ctx, kind, item, start, hw = null, inter = null) {
         L("Đã hết hạn nộp — lần làm này chỉ để luyện tập.", "The deadline has passed — this attempt is practice only."))
     : el("div", { class: "notice notice-info small", style: "margin-top:12px" },
         el("strong", {}, L("Bài tập về nhà: ", "Homework: ")), hw.a.title, " · ",
-        L(`hạn ${due}. Nộp xong giáo viên thấy ngay; chỉ nộp một lần.`, `due ${due}. Your teacher sees it as soon as you submit; one attempt only.`));
+        L(`hạn ${due}. Nộp xong giáo viên thấy ngay; chỉ nộp một lần.`, `due ${due}. Your teacher sees it as soon as you submit; one attempt only.`),
+        integrityRules(kind));
   return el("div", { class: "card intro-card" },
     el("div", { class: "row", style: "gap:14px;margin-bottom:6px" },
       el("div", { class: `skill-ico ${SKILL[kind]}` }, icon(SKILL[kind])),
@@ -212,7 +226,8 @@ function briefing(ctx, kind, item, start, hw = null, inter = null) {
           ? L("Đề (PDF) ở bên trái, phiếu trả lời ở bên phải.", "The test paper (PDF) is on the left and the answer sheet on the right.")
           : L("Bật audio và làm theo đề PDF; mỗi phần nghe một lần như thi thật.", "Play the audio and follow the PDF; listen to each part once, as in the real test.")),
       el("li", {}, L("Sai chính tả bị tính là sai. Hết giờ tự nộp.", "Spelling mistakes count as wrong. Your answers are submitted when time runs out.")),
-      el("li", {}, L("Nộp xong xem ngay đáp án và câu sai.", "After submitting you'll see the answers and your mistakes."))),
+      hw?.active ? el("li", {}, L("Nộp xong thấy điểm ngay; đáp án và phần xem lại mở sau hạn nộp.", "You'll see your score straight away; answers and review open after the deadline."))
+        : el("li", {}, L("Nộp xong xem ngay đáp án và câu sai.", "After submitting you'll see the answers and your mistakes."))),
     hwNote,
     el("div", { class: "row wrap", style: "gap:10px;margin-top:14px" },
       el("button", { class: "btn btn-primary btn-lg", onclick: start }, L("Bắt đầu", "Start")),
@@ -221,7 +236,7 @@ function briefing(ctx, kind, item, start, hw = null, inter = null) {
         icon("homework"), L("Giao làm bài tập", "Set as homework")) : null));
 }
 
-function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null) {
+function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proctor = null) {
   const draftKey = `bank-${kind}-${item.id}`;
   const answers = {};
   const saved = draft.load(ctx.user.uid, draftKey);
@@ -239,8 +254,10 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null) {
   const paper = el("div", { class: "bank-paper" });
   const audios = files.map((f, i) => (f.type === "audio" ? { f, url: urls[i] } : null)).filter(Boolean);
   if (audios.length) {
-    paper.append(el("div", { class: "bank-audio" }, audios.map(({ f, url }) =>
-      el("div", { class: "bank-audio-row" }, el("span", { class: "tiny strong" }, f.label || "Audio"),
+    paper.append(el("div", { class: "bank-audio" }, audios.map(({ f, url }, i) => proctor
+      // homework: nghe một lần như thi thật
+      ? onceAudio({ src: url, label: f.label || "Audio", key: `bank-hw-${hw.a.id}-${ctx.user.uid}-${i}` })
+      : el("div", { class: "bank-audio-row" }, el("span", { class: "tiny strong" }, f.label || "Audio"),
         el("audio", { controls: "", preload: "none", src: url, controlslist: "nodownload" })))));
   }
   // bài tương tác thì không cần PDF nữa — trừ bài có bản đồ/sơ đồ (inter.paper): vẫn hiện trang PDF để nhìn hình
@@ -268,7 +285,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null) {
   const barTitle = kind === "listening" ? `${item.set} · ${item.title}` : kind === "section" ? `Section ${item.section} · ${item.title}` : item.title;
   attachHtmlHighlighter(sheet, hl);
   if (exam) attachHtmlHighlighter(exam.paper, hl);   // tô màu ngay trên bài đọc tương tác
-  const bar = el("div", { class: "exam-bar" }, el("strong", {}, barTitle), timer.node, hl.toolbar, el("div", { class: "spacer" }),
+  const bar = el("div", { class: "exam-bar" }, el("strong", {}, barTitle), timer.node, hl.toolbar, proctor?.badge, el("div", { class: "spacer" }),
     el("button", { class: "btn btn-primary", onclick: () => doSubmit(false) }, L("Nộp bài", "Submit")));
 
   async function doSubmit(auto) {
@@ -297,6 +314,8 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null) {
         startedAt: startedAt.toISOString(), durationSec: timer.elapsedSeconds, autoSubmitted: auto,
         raw: res.correct, total: res.total, band: bandFor(kind, res.correct, res.total),
         details: res.details, graded: true,
+        // homework: đáp án trong lần làm này chỉ hiện sau hạn nộp
+        ...(proctor ? { hwId: hw.a.id, revealAt: hw.a.dueAt.toISOString(), integrity: proctor.report() } : {}),
       });
       draft.clear(ctx.user.uid, draftKey);
       // bài tập về nhà: ghi bài nộp vào Homework (lượt đầu tiên, còn hạn)
@@ -305,8 +324,14 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null) {
           await submitHomework(hw.a, ctx.user, {
             answers, score: { raw: res.correct, total: res.total }, details: res.details,
             practiceId: sub.id || "", durationSec: timer.elapsedSeconds, autoSubmitted: auto,
+            integrity: proctor?.report() || null,
           });
+          proctor?.stop();
+          clearOnce(`bank-hw-${hw.a.id}-`);
+          resetLockCache();
           toast(L("Đã nộp bài tập — giáo viên đã nhận được", "Homework submitted — your teacher has it"), "ok", 4000);
+          ctx.go(`homework/${hw.a.id}`, { t: Date.now() });   // chưa tới hạn: chỉ thấy điểm, chưa thấy đáp án
+          return;
         } catch (err) {
           console.error(err);
           toast(L("Bài làm đã lưu vào Lịch sử nhưng chưa nộp được bài tập: ", "Saved to your history, but the homework couldn't be submitted: ") + err.message, "err", 8000);
@@ -712,4 +737,15 @@ export function bankPicker(initial, onPick) {
       "Students do it on the web (PDF + audio) and it's marked automatically with the bank's answer key. One attempt per student.")));
   node.read = () => picked;
   return node;
+}
+
+/** Luật làm bài homework hiện ở màn hình chuẩn bị */
+export function integrityRules(kind = "", ...extra) {
+  return el("ul", { class: "small", style: "margin:8px 0 0;padding-left:20px" },
+    el("li", {}, L("Bài làm ở chế độ toàn màn hình. Mỗi lần rời màn hình (chuyển tab, thu nhỏ, mở ứng dụng khác) đều được ghi lại và giáo viên xem được.",
+      "The test runs in full screen. Every time you leave the screen (switch tab, minimise, open another app) it is recorded and your teacher can see it.")),
+    kind === "listening" || kind === "section"
+      ? el("li", {}, L("Audio chỉ phát một lần, không dừng hay tua được.", "The audio plays once and can't be paused or rewound.")) : null,
+    kind === "writing" ? el("li", {}, L("Không dán được chữ vào bài viết — hãy tự gõ.", "You can't paste into your answer — type it yourself.")) : null,
+    ...extra);
 }
