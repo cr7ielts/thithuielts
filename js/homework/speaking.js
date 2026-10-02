@@ -5,6 +5,7 @@ import { L } from "../i18n.js";
 import { uploadFile, submitHomework } from "./hwstore.js";
 import { mp3Button, mp3Downloads } from "../audio-mp3.js";
 import { analyzeSpeaking, aiAvailable, CRITERIA } from "./speaking-ai.js";
+import { SPEAKING_TESTS } from "../data/speaking-tests.js";
 
 const DEFAULTS = { mode: "parts", part1: [], part2: null, part3: [], p1Secs: 45, p2Prep: 60, p2Secs: 120, p3Secs: 60, freePrompt: "", freeSecs: 120, showAi: false };
 const lines = (t) => String(t || "").split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
@@ -16,9 +17,21 @@ export function speakingTurns(a) {
     return [{ part: L("Tự do", "Free talk"), prompt: s.freePrompt || a.title, maxSeconds: s.freeSecs, prepSeconds: 0 }];
   }
   const turns = [];
-  s.part1.forEach((q) => turns.push({ part: "Part 1", prompt: q, maxSeconds: s.p1Secs, prepSeconds: 0 }));
-  if (s.part2?.topic) turns.push({ part: "Part 2", prompt: s.part2.topic, cue: s.part2, maxSeconds: s.p2Secs, prepSeconds: s.p2Prep });
-  s.part3.forEach((q) => turns.push({ part: "Part 3", prompt: q, maxSeconds: s.p3Secs, prepSeconds: 0 }));
+  // dòng "# Tên chủ đề" không phải câu hỏi: gắn tên chủ đề cho các câu sau nó
+  const addPart = (list, part, maxSeconds) => {
+    let topic = "";
+    for (const q of list) {
+      if (/^#/.test(q)) { topic = q.replace(/^#+\s*/, ""); continue; }
+      turns.push({ part, prompt: q, topic, maxSeconds, prepSeconds: 0 });
+    }
+  };
+  addPart(s.part1, "Part 1", s.p1Secs);
+  if (s.part2?.topic) {
+    turns.push({ part: "Part 2", prompt: s.part2.topic, cue: s.part2, maxSeconds: s.p2Secs, prepSeconds: s.p2Prep });
+    // câu hỏi kết (rounding-off): trả lời ngắn ngay sau bài nói dài
+    if (s.part2.followUp) turns.push({ part: "Part 2", prompt: s.part2.followUp, topic: L("Câu hỏi kết", "Rounding-off question"), maxSeconds: 30, prepSeconds: 0 });
+  }
+  addPart(s.part3, "Part 3", s.p3Secs);
   return turns;
 }
 
@@ -35,6 +48,7 @@ export function speakingFormSection(a) {
   const p2topic = el("input", { type: "text", id: "sp-p2-topic", style: "width:100%", value: s.part2?.topic || "", placeholder: "Describe a book you enjoyed reading." });
   const p2bullets = el("textarea", { id: "sp-p2-bullets", style: "width:100%;min-height:90px", placeholder: "what the book was\nwhen you read it\nwhat it was about\nand explain why you enjoyed it." });
   p2bullets.value = (s.part2?.bullets || []).join("\n");
+  const p2follow = el("input", { type: "text", id: "sp-p2-follow", style: "width:100%", value: s.part2?.followUp || "", placeholder: "Do you often buy things on sale?" });
   const p3 = el("textarea", { id: "sp-p3", style: "width:100%;min-height:110px", placeholder: "Why do some people prefer e-books?\nShould schools make reading compulsory?" });
   p3.value = s.part3.join("\n");
   const freePrompt = el("textarea", { id: "sp-free", style: "width:100%;min-height:100px", placeholder: L("Ví dụ: Kể về kỳ nghỉ gần nhất của bạn trong 2 phút.", "e.g. Talk about your last holiday for 2 minutes.") });
@@ -57,12 +71,41 @@ export function speakingFormSection(a) {
         el("span", { class: "tiny muted" }, L("Nói", "Talk")), p2Secs),
       p2topic,
       el("div", { class: "tiny muted" }, L("Gợi ý “You should say” — mỗi dòng một ý:", "“You should say” prompts — one per line:")),
-      p2bullets),
+      p2bullets,
+      el("div", { class: "tiny muted" }, L("Câu hỏi kết sau bài nói (rounding-off, không bắt buộc — trả lời tối đa 30 giây):",
+        "Rounding-off question after the long turn (optional — up to 30 seconds):")),
+      p2follow),
     el("div", { class: "sp-part" },
       el("div", { class: "row wrap" }, el("strong", { style: "flex:1" }, "Part 3 — " + L("mỗi dòng một câu hỏi", "one question per line")),
         el("span", { class: "tiny muted" }, L("Mỗi câu tối đa", "Max per answer")), p3Secs),
       p3),
-    el("div", { class: "tiny muted" }, L("Bỏ trống part nào thì part đó không có trong bài.", "Leave a part empty to leave it out.")));
+    el("div", { class: "tiny muted" }, L("Bỏ trống part nào thì part đó không có trong bài. Dòng bắt đầu bằng # là tên chủ đề (không phải câu hỏi), vd. “# Topic 2 — Public transport”.",
+      "Leave a part empty to leave it out. A line starting with # is a topic heading, not a question, e.g. “# Topic 2 — Public transport”.")));
+
+  // đề có sẵn (js/data/speaking-tests.js): chọn là điền sẵn cả đề; vẫn sửa được trước khi lưu
+  const pick = el("select", { id: "sp-template", class: "pick" },
+    el("option", { value: "" }, L("— Chọn đề có sẵn —", "— Pick a ready-made test —")),
+    SPEAKING_TESTS.map((t) => el("option", { value: t.id }, t.title)));
+  pick.onchange = () => {
+    const t = SPEAKING_TESTS.find((x) => x.id === pick.value);
+    if (!t) return;
+    const sp = { ...DEFAULTS, ...t.speaking };
+    node.querySelector('input[name="sp-mode"][value="parts"]').checked = true;
+    p1.value = sp.part1.join("\n");
+    p2topic.value = sp.part2?.topic || "";
+    p2bullets.value = (sp.part2?.bullets || []).join("\n");
+    p2follow.value = sp.part2?.followUp || "";
+    p3.value = sp.part3.join("\n");
+    p1Secs.value = sp.p1Secs; p2Prep.value = sp.p2Prep; p2Secs.value = sp.p2Secs; p3Secs.value = sp.p3Secs;
+    // tên bài và hướng dẫn: chỉ điền khi đang trống
+    const title = document.getElementById("hw-title"), instr = document.getElementById("hw-instr");
+    if (title && !title.value.trim()) title.value = t.title;
+    if (instr && !instr.value.trim()) instr.value = t.instructions || "";
+    sync();
+    toast(L(`Đã điền đề “${t.title}” — kiểm tra lại rồi lưu.`, `Filled in “${t.title}” — check it, then save.`), "ok");
+  };
+  const templateRow = SPEAKING_TESTS.length ? el("div", { class: "row wrap", style: "gap:10px;align-items:center" },
+    el("strong", {}, L("Đề có sẵn:", "Ready-made test:")), pick) : null;
 
   const freeBox = el("div", { class: "sp-part stack-sm" },
     el("div", { class: "row wrap" }, el("strong", { style: "flex:1" }, L("Đề nói tự do", "Free-talk prompt")),
@@ -80,6 +123,7 @@ export function speakingFormSection(a) {
       el("strong", {}, L("Dạng bài Speaking:", "Speaking format:")),
       radio("parts", L("Theo Part 1 / 2 / 3", "IELTS Parts 1 / 2 / 3")),
       radio("free", L("Tự do (một đề)", "Free talk (one prompt)"))),
+    templateRow,
     partsBox, freeBox,
     aiAvailable() ? el("label", { class: "check" }, showAi, L("Cho học sinh xem nhận xét AI ngay sau khi nộp", "Show the AI feedback to students right after they submit")) : null,
     el("div", { class: "notice notice-info tiny" },
@@ -96,7 +140,7 @@ export function speakingFormSection(a) {
     const sp = {
       mode,
       part1: lines(p1.value),
-      part2: p2topic.value.trim() ? { topic: p2topic.value.trim(), bullets } : null,
+      part2: p2topic.value.trim() ? { topic: p2topic.value.trim(), bullets, followUp: p2follow.value.trim() } : null,
       part3: lines(p3.value),
       p1Secs: Number(p1Secs.value), p2Prep: Number(p2Prep.value), p2Secs: Number(p2Secs.value), p3Secs: Number(p3Secs.value),
       freePrompt: freePrompt.value.trim(), freeSecs: Number(freeSecs.value),
@@ -211,6 +255,7 @@ function turnRecorder(turn, index, state, onChange) {
   box.append(
     el("div", { class: "row wrap", style: "gap:8px" },
       el("span", { class: "sp-part-tag" }, turn.part), el("span", { class: "tiny muted" }, `#${index + 1}`),
+      turn.topic ? el("span", { class: "tiny strong muted" }, turn.topic) : null,
       el("div", { class: "spacer" }), status),
     turn.cue
       ? el("div", { class: "cue-card sm" }, el("strong", {}, turn.cue.topic),
