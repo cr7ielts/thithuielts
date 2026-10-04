@@ -1,0 +1,5235 @@
+
+===== TRANG 1 =====
+  209	Safari
+  209	Tep
+  209	Stra
+  210	Dau trang
+  210	Cua s6Trd giup
+  211	Xem
+  211	Lich sur
+  210	20:58 Th 5 29 thg 1
+  242	docs.google.com
+  270	G Trang ch..
+  269	A speaking.
+  270	@ instagra..
+  271	G minh gi..
+  271	G BAI9-G...
+  271	日DAP AN READING V...
+  271	日READING..
+  271	G VOL 5_A..
+  271	 Google Di..
+  271	G pyin cua..
+  270	--e nb wa W
+  273	 Duolingo...
+  271	A Reading...
+  301	DAP AN READING VOL 8
+  307	Yeu cau quyén chinh suta
+  308	2 Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh siua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  389	Cac the trong tai lieu
+  423	TEST1
+  432	1. Inefficient: Englishman Jonathan Hulls took out patents on a steamboat in 1736, but it
+  452	TEST 2
+  445	was to be driven by a Newcomen engine, which was heavy and therefore inefficient, and
+  461	would never be a success
+  482	TEST 3
+  486	2. Endurance: Nearly 20 years later, in the 1780s, a steam-powered paddle-wheeler
+  499	managed to last fteen minutes against the current on the River Saone in France, but lacked
+  511	TEST 4
+  515	the endurance for longer trips
+  540	TEST 5
+  539	3. technical: For example, American John Fitch successfully trialled his first steamboat in
+  569	TEST6
+  579	4.submarine: Inspired by news of the Charlotte Dundas, Fulton ran steamboat trials on
+  598	TEST7
+  595	the River Seine, in an attempt to attract French support for his submarine Nautilus.
+  628	1TEST8
+  619	Clermont: In 1807, the Clermont began a scheduled passenger steamboat service
+  635	between New York and Albany, 250 kilometres up the Hudson River, taking 30 hours for the
+  650	trip
+  677	6.
+  675	Cargo: Inside a decade, dozens of steamboats were to be seen on the rivers, lochs and
+  688	canals of Scotland, carrying cargo and occasionally passengers. The age of steamboats
+  701	had come
+  757	7.
+  755	True: Once steamboats were carrying passengers and industrial goods along the inland
+  770	waterways and sheltered coastines of Europe, North America and elsewhere, the challenge
+  784	became to send steamboats onto the open ocean, such as across the Atlantic Ocean,
+  814	use less coal so the ship could stay at sea for several weeks.
+  852	False: In order to provide a reliable service, it was also necessary to replace paddle
+  905	NG: Without waiting for such breakthroughs, crossings under a combination of steam
+  921	and sail got underway in 1819 with the American ship Savannah
+  961	10.
+  961	NG: Brunel, brilliant and daring, had already built the Great Western Railway. He
+  974	created ever bigger ships faster, more luxurious and comfortable for passengers.
+ 1068	docs.google.com
+ 1097	G minh gi...
+ 1097	GBAI9-G...
+ 1097	G Trang ch..
+ 1097	日DAP AN READING V...
+ 1097	A speaking..
+ 1097	日READING.
+ 1097	G VOL 5_A...
+ 1097	o Duolingo...
+ 1097	 Google Di.
+ 1097	G pyin cia..
+ 1097	 Iinstagra...
+ 1099	M em gui a...
+ 1097	A Reading...
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyen chinh sura
+ 1134	& Chia Se
+ 1132	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sira
+ 1148	Xem
+ 1185	NG: Without waiting for such breakthroughs, crossings under a combination of steam
+ 1199	and sail got underway in 1819 with the American ship Savannah
+ 1216	Cac the trong tailisu
+ 1241	10.
+ 1239	NG: Brunel, briliant and daring, had already built the Great Westem Railway. He
+ 1249	目 TEST1
+ 1278	TEST2
+ 1294	11.
+ 1292	True: His 1853 Great Britain, nearly 100 metres long and luxuriously appointed, was
+ 1307	TEST 3
+ 1308	the first ocean- going steamship made of iron, and the first to use the underwater screw
+ 1322	propeller for powering movement in place of paddle wheels
+ 1337	TEST 4
+ 1362	12.
+ 1366	TEST 5
+ 1361	NG
+ 1395	TEST 6
+ 1425	TEST7
+ 1454	TEST8
+ 1542	13.False: In many modern ships, steam turbines have replaced engines with pistons, with
+ 1558	fuel oil instead of coal to fire the boilers
+ 1608	14.A: Flynn believes that the demands of visuo-spatial abilities have grown because of
+ 1622	TV, computers, and cars, and also that. In societies where intelligence has become
+ 1635	something people focus on excessively abstract problem-solving skills develop faster than
+ 1652	other skills.
+ 1689	15.D: Results in these tests have been carefully analysed by Thomas Teasdale,a
+ 1705	neuropsychologist. He found that during the 1960s and '70s, scores showed gains on a
+ 1719	scale similar to those of other countries, but by the 1990s the rate of Improvement had
+ 1733	slowed right down to about one IQ point over the decade. Furthemore, the scores were
+ 1748	improving only on the visuo-spatial questions; verbal and numerical performance was
+ 1776	downturn. One explanation might be that there is some absolute ceiling to people's abilities
+ 1790	to perform these tasks, no matter how much the prevailing culture encourages them.
+ 1804	However, as Teasdale points out, if such a ceiling had been reached, the test results should
+ 1819	show scores pushing against it rather than actually falling.
+
+===== TRANG 2 =====
+  242	docs.google.com
+  270	G minh gi...
+  270	 Google Dj-.
+  271	G BAI 9 - G...
+  271	G Trang ch..
+  271	日DAP AN READING V.
+  271	A speaking.
+  271	日READING..
+  271	G VOL 5_A..
+  271	o Duolingo...
+  271	G pyin cia..
+  271	 instagra..
+  270	M em gi a
+  271	A Reading...
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sura
+  308	& Chia Se
+  307	Nang cip
+  321	Tep
+  319	Chinh sura
+  321	Cong cu
+  322	Xem
+  347	C: Others, such as experimental psychologist Robert Howard, argue that overall
+  349	16.
+  363	intelligence really has risen, helped by better nutrition, smaller families, wider access to
+  376	education and other environmental changes.
+  389	Cac the trong tai lieu
+  423	目TEST1
+  418	17. B: He also points out that if just one mind grasps a new concept, such as Einstein and
+  452	TEST2
+  448	way
+  482	TEST 3
+  489	18.
+  487	B: John Rust of the University of London suggests that it is not just an increase in
+  500	visuo-spatial activities thatis pushing upIQ scores. He believes that there are several
+  511	TEST 4
+  530	solutions to problems they face.
+  540	TEST5
+  569	TEST6
+  581	19.E: The Danish military still summons virtually all young men before a draft board to
+  598	TEST7
+  595	identify who is suitable to do military service. Since 1957, all 17-year-olds there have taken
+  610	exactly the same qualifying IQ tests - including ones similar to Raven's matrices.
+  628	TEST8
+  648	20.B: To find out more, Flynn went on to look at scores for each type of reasoning that IQ
+  664	tests set out to measure, such as verbal, numerical and visuo- spatial. This last test category
+  677	usually includes 'Raven's matrices' - sequential patterns with one piece missing.
+  862	21.A: Some researchers argue that people are not getting more intelligent overall, but just
+  891	rising IQ scores in 'real world' measures of intelligence. To confuse things still more, there
+  905	are hints that the trend may be about to grind to a halt.
+  945	22. F: However, he does wonder whether the conditions leading to dramatic
+  960	Improvements in mental ability disappear as societies become more prosperous. He points
+  974	out that in human history, prosperity often led to decadence, and argues that the case of
+  988	ancient Rome can be viewed as an Illustration of this.
+ 1068	docs.google.com
+ 1095	@ Trang ch..
+ 1096	 Duolingo...
+ 1097	G minh gi..
+ 1097	G BAI9- G...
+ 1097	日DAP AN READING V.
+ 1097	A speaking...
+ 1097	日READING..
+ 1097	G VOL 5_A...
+ 1096	 Google Di..
+ 1097	G pyin cia..
+ 1097	 Iinstagra...
+ 1099	M em guli a..
+ 1097	 Reading...
+ 1127	DAP AN READING VOL8
+ 1133	Yeu cau quyen chinh sura
+ 1134	 Chia Se
+ 1134	Nang cip
+ 1146	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1173	23.
+ 1171	Mid-1980s: James Flynn, a professor of political science, first showed that IQ scores
+ 1184	were rising in the mid-1980s, and became famous after others dubbed the pattern he had
+ 1199	observed the 'Flynn effect
+ 1216	Cac the trong tailisu
+ 1240	24.
+ 1238	Raven's matrices: To find out more, Flynn went on to look at scores for each type of
+ 1249	目TEST1
+ 1278	TEST2
+ 1279	missing
+ 1307	TEST3
+ 1323	25.
+ 1322	Verbal: The strongest gains in almost every case were on Raven's matrices and
+ 1337	TEST 4
+ 1338	similar tests, while verbal and arithmetical scores showed more modest rises.
+ 1365	TEST 5
+ 1375	Countries: Since presenting his original paper, Flynn has looked at data from further
+ 1395	TEST6
+ 1391	countries and found the same upward trend, with the same skills responsible for most of the
+ 1406	increase.
+ 1425	TEST7
+ 1453	TEST8
+ 1455	Q27C
+ 1482	Passage A: In recent years, though, the American Institute of Architects has fostered the
+ 1497	idea that the process of architectural design, not just the appreciation of architecture, is a
+ 1510	beneficial aspect of the art curriculum (Sadler, 1989).
+ 1533	Q28B
+ 1562	Passage C: Although the technology and expertise required of modem architecture can
+ 1591	methods remain quite accessible to the art classroom.
+ 1616	Q29A
+ 1807	Passage E: But most significantly, this type of project-based activity motivates students to
+ 1823	invest intellectually and emotionally in the outcome.
+
+===== TRANG 3 =====
+  242	docs.google.com
+  269	A speaking.
+  270	G VOL 5_..
+  270	 Google Dj-.
+  271	G minh gi...
+  271	G BAI9 - G...
+  271	G Trang ch..
+  271	日DAP AN READING V...
+  271	日READING..
+  271	o Duolingo...
+  271	G pyin cia..
+  271	 instagra..
+  270	M em gi a
+  271	A Reading...
+  301	DAP AN READING VOL8
+  308	Yéu cau quyén chinh sura
+  308	& Chia Se
+  307	Nang cip
+  321	Tep
+  319	Chinh sura
+  321	Cong cu
+  322	Xem
+  364	invest intellectually and emotionally in the outcome.
+  389	Cac the trong tailieu
+  388	Q30B
+  423	目 TEST1
+  417	Passage H: A simple landscape feature such as a wall, entryway, or arch can draw students
+  431	into important aspects of design that involve the structure's interaction with people, the
+  452	TEST2
+  460	to focus on the chemistry of soil or the structural dynamics of construction. Design goals
+  474	might guide students to involve traditional forms, consider formal aspects, or integrate math
+  482	TEST 3
+  488	skills of measuring and estimating.
+  511	TEST 4
+  512	Q31D
+  540	TEST5
+  540	Passage I: Many others in the community and around the country share this renewal of
+  554	interest in traditional earthen technologies. It is the connection to a cultural heritage that
+  569	TEST6
+  566	interests some; the quality ofliving within massive, natural walls that attracts others; or for
+  581	others, the sustainability of the process and the minimal energy spent in construction.
+  598	TEST7
+  628	TEST8
+  631	Q32D storage
+  658	Passage F: Behind our main high school building there was a one-room adobe structure
+  674	which was once used for teaching. Now it served as a place where old furniture could be
+  689	kept.
+  713	Q33 C design
+  753	due to its broad south face, and it stayed cool in the summer due to its spacious, ventilated
+  767	attic and massive earthen walls. Because of this, my students agreed it was worth
+  783	preserving and were enthusiastic about helping.
+  806	Q34F resources
+  834	Passage G: She showed us where to find local supplies of sand and clay soil for the plaster
+  850	mix.
+  875	Q35Aexperts
+  900	Passage G: To teach the traditional skills, Gasper and other local specialists joined us.
+  924	Q36 G training
+  951	Passage G: They gave my class three fll momings ofintensive workshops on history and
+  965	preservation as well as mud-plastering technique, and the building got a new coat of
+  981	traditional mud plaster.
+ 1068	docs.google.com
+ 1095	@ Trang ch..
+ 1097	G minh gi...
+ 1097	G BAI9 - G...
+ 1097	日DAP AN READING V...
+ 1097	A speaking...
+ 1097	日READING.
+ 1097	G VOL 5_A...
+ 1097	o Duolingo...
+ 1096	 Google Di--
+ 1097	G pyin cua...
+ 1097	 Iinstagra...
+ 1099	M em gui a...
+ 1097	 Reading...
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyen chinh sura
+ 1134	 Chia Se
+ 1132	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1191	Q37NO
+ 1216	Cac the trong tailisu
+ 1218	Passage C: Traditional architectural materials, such as earth, clay and straw, are cheap,
+ 1234	easy to work with and readily available.
+ 1249	目 TEST1
+ 1256	Q38NOTGIVEN
+ 1278	TEST2
+ 1298	school students in the town of Zuni, New Mexico, in the Southwestern United States.
+ 1307	TEST3
+ 1323	Q39YES
+ 1337	TEST 4
+ 1350	Passage E: During the project, a student will get to know the materials, understand the
+ 1365	TEST 5
+ 1364	chemistry, solve problems, work with classmates, and exercise muscles.
+ 1395	TEST6
+ 1388	Q40 NOT GIVEN
+ 1425	TEST7
+ 1416	Passage I: This experiment in adobe conservation with middle school students convinced
+ 1429	me that traditional architecture deserves a place in the regular curriculum.
+ 1453	TEST8
+
+===== TRANG 4 =====
+  242	docs.google.com
+  270	G m.inh gi..
+  270	 Duolingo...
+  270	 Google Dj-.
+  271	G BAI9-G...
+  271	G Trang ch..
+  271	日DAP AN READING V...
+  271	A speaking.
+  271	日READING..
+  271	G VOL 5_A..
+  271	G pyin cia..
+  271	 instagra..
+  270	M em gif .-
+  271	A Reading..
+  302	DAP AN READING VOL8
+  308	Yéu cau quyén chinh sura
+  308	& Chia Se
+  307	Nang cip
+  321	Tep
+  319	Chinh sura
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  389	Cac the trong tai lieu
+  423	目TEST1
+  431	Q1 beetle
+  451	目 TEST 2 
+  458	Passage A: This was a species of beetle whose larvae, the infant form of the beetle, live
+  472	underground in the soil in the sugar cane fields.
+  482	TEST3
+  497	Q2 roots
+  511	TEST 4
+  540	TEST5
+  537	by the larvae.
+  569	TEST6
+  565	Q3 expensive
+  598	TEST7
+  590	Passage A: Chemicals like arsenic and copper were used, but these were not only
+  604	expensive but also stayed in the environment and were poisonous to people, plants and
+  618	animals.
+  628	TEST8
+  644	Q4 gardeners
+  670	Passage B: For example, in 19th-century France toads were sold to gardeners at markets in
+  683	Paris to eat insect pests in their gardens.
+  709	Q5 moth
+  749	increase of the exotic prickly-pear cactus by the introduction of a moth from Argentina.
+  777	Q6 Hawaii
+  802	Passage D: In 1935, an Australian entomologist brought 101 cane toads from Hawaii and
+  816	released them in sugar cane plantations in the north of Australia.
+  841	Q7 failure
+  868	Passage D: However, over the following years it became clear that the cane toads were a
+  882	failure.
+  907	Q8 FALSE
+  934	Passage D: There was a fatal flaw in the plan to use them as a form of biological control.
+  947	This was that earthbound cane toads were expected to eat the mostly flying adult beetles in
+  963	order to eliminate the soil-dwelling beetle larvae that ate the roots of the cane sugar plants.
+  977	This, of course, cane toads could not do.
+ 1003	Q9 NOT GIVEN
+ 1068	docs.google.com
+ 1095	GBAI g-G..
+ 1095	@ Trang ch..
+ 1097	G minh gi..
+ 1097	日DAP AN READING V...
+ 1097	A speaking...
+ 1097	日READING.
+ 1097	G VOL 5_A...
+ 1097	o Duolingo...
+ 1096	 Google Di..
+ 1097	G pyin cua...
+ 1097	 Iinstagra...
+ 1099	M em gii a...
+ 1097	 Reading...
+ 1127	DAP AN READING VOL8
+ 1133	Yeu cau quyen chinh sura
+ 1134	& Chia Se
+ 1134	Nang cip
+ 1147	Tep
+ 1146	Chinh siua
+ 1147	Cong cu
+ 1148	Xem
+ 1147	Tro giup
+ 1174	Q9 NOT GIVEN
+ 1199	Passage E: He forecast that cane toads might become as great a pest in Australia as
+ 1216	Cac the trong tailisu
+ 1214	rabbits.
+ 1249	目TEST1
+ 1240	Q10TRUE
+ 1278	TEST2
+ 1307	TEST3
+ 1337	TEST 4
+ 1365	TEST5
+ 1395	TEST6
+ 1425	TEST7
+ 1419	Passage E: However, Froggatts peers rebuked him and eminent scientists branded his
+ 1435	views 'decidedly pessimistic.
+ 1453	TEST8
+ 1460	Q11NOTGIVEN
+ 1487	Passage F: Average-sized adults are 10-15 cm long and weigh more than a kilo.
+ 1511	Q12FALSE
+ 1538	Passage F: it is now dear that freshwater crocodiles, goannas (large lizards) and dingoes
+ 1554	(wild dogs) have died after eating cane toads.
+ 1579	Q13TRUE
+ 1620	where native Australian fauna live.
+ 1673	14
+ 1670	a mention of the company being sold
+ 1684	F: Famers almost didn't pulithrough one economic crisis. In the mid-1980s, business was
+ 1698	booming and the company had stores throughout the country. Then, with sales topping s375
+ 1714	million, it was taken over by Chase Corporation.
+ 1755	15
+ 1754	a reference to how the range of goods for sale has become more limited
+ 1767	D: Farmers was once home to genteel tea rooms, children's playgrounds, and an annual
+ 1783	sale to celebrate the birthday of Hector the Parrot-who came to embody the store in the eyes
+ 1797	of many shoppers and who died, aged 131, in the 1970s. You could buy houses from
+ 1811	Farmers, and its saddle factory supplied the armed forces. In fact, although the company
+ 1826	has grown considerably over the years, today it sells a narrower assortment of products than
+
+===== TRANG 5 =====
+  242	docs.google.com
+  269	A speaking.
+  271	G minh gi...
+  271	G BAI9 - G...
+  271	G Trang ch..
+  271	日DAP AN READING V.
+  271	日READING..
+  271	G VOL 5_A..
+  271	o Duolingo...
+  271	 Google Di..
+  271	G pyin cia..
+  271	 instagra..
+  270	M em gi a
+  271	A Reading...
+  301	DAP AN READING VOL 8
+  307	Yeu cau quyen chinh suta
+  307	Nang cip
+  308	2 Chia Se
+  321	Tep
+  319	Chinh sura
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  342	15
+  341	a reference to how the range of goods for sale has become more limited
+  354	D: Farmers was once home to genteel tea rooms, children's playgrounds, and an annual
+  370	sale to celebrate the birthday of Hector the Parrot-who came to embody the store in the eyes
+  389	Cac the trong tai lieu
+  384	of many shoppers and who died, aged 131, in the 1970s. You could buy houses from
+  423	目TEST1
+  414	has grown considerably over the years, today it sells a narrower assortment of products than
+  427	in the past.
+  451	目 TEST 2 
+  454	16
+  453	an example of an innovative offer made by the company's founder
+  468	B: Right from the outset, Laidlaw guaranteed customer satisfaction, and those who were not
+  482	TEST3
+  482	entirely happy with a purchase would receive a full refund with no questions asked. This was
+  496	certainly the first time such a guarantee had been made by a New Zealand retailer and was
+  511	TEST 4
+  509	probably one of the first worldwide.
+  540	TEST 5
+  551	17
+  550	a description of a romantic event on the shop's roof
+  569	TEST6
+  565	A: Gary Blumenthal, whose family have been customers for three generations, understands
+  578	well the role Farmers have played in New Zealand culture.' We were on holiday in Auckland,
+  598	TEST7
+  593	he explains, 'and I decided that the lookout tower on top of the Farmers building would be a
+  607	unique place to fit the ring on my new fiancee's finger.' The couple has been married for 50
+  628	1TEST8
+  623	years.
+  648	18
+  647	a description of the latest store in the chain
+  660	E: Its most recent branch in the suburb of Albany is flled with bright lights and big brands.
+  867	19
+  865	Farmers was set up as a/an .. mail order....business before it became a chain.
+  878	Location: The chain of stores known as Farmers began one hundred years ago as a mail
+  892	order company.
+  933	20Robert Laidlaw setup...buying offices.......overseas so he could sell up-todate
+  949	fashions.
+  962	Location: By the time the Hobson Street store opened in 1920 in order to sell directly to
+  976	customers for the first time, Laidlaw had established buying officers in New York and London
+  990	so as to offer his customers the latest designs
+ 1068	docs.google.com
+ 1097	G minh gi..
+ 1097	G BAI 9 - G...
+ 1097	G Trang ch..
+ 1097	日DAP AN READING V.
+ 1097	A speaking...
+ 1097	日READING..
+ 1097	G VOL 5_A...
+ 1097	o Duolingo...
+ 1097	 Google Di.
+ 1097	G pyin cia..
+ 1097	@ instagra..
+ 1099	M em gii a...
+ 1097	 Reading...
+ 1127	DAP AN READING VOL8
+ 1134	Yéu cau quyén chinh sura
+ 1134	 Chia Se
+ 1133	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1185	21According to employees, Farmers was like aan....large family....
+ 1200	Location: It's also true that whoever you speak to regarding Farmers in the early years,
+ 1216	Cac the trong tai lisu
+ 1215	whether managers or workers, they all emphasize how the company represented a large
+ 1230	family
+ 1249	目TEST1
+ 1267	Farmers held aan....sale...once a year in honourofthe company's famous
+ 1278	TEST2
+ 1270	22
+ 1284	pet.
+ 1307	TEST3
+ 1312	annual sale to celebrate the birthday of Hector the Parrot-who came to embody the store in
+ 1326	the eyes of many shoppers and who died, aged 131, in the 1970s
+ 1337	TEST 4
+ 1365	TEST5
+ 1378	23
+ 1379	lanHunter
+ 1395	TEST6
+ 1392	Location: Coming to Farmers once a week has become woven into the fabric of New
+ 1406	Zealand culture, 'says business historian lan Hunter.
+ 1425	TEST7
+ 1446	24
+ 1454	TEST8
+ 1447	Rawdon Busfield
+ 1460	Location: Farmers has always had a heart, according to former board chairman Rawdon
+ 1474	Busfield.
+ 1516	25
+ 1515	RodMcDermott
+ 1529	Location: The branch sells cosmetics from 16 different international companies and buys
+ 1556	years ago, says current chief executive Rod McDermott, lots of brands wouldn't partner with
+ 1572	us. We weren't in trouble as such, but we could have been doing much better because we
+ 1586	were focused too much on price and not on fashion. The reorientation of the last decade has
+ 1600	seen a great improvement.
+ 1627	26
+ 1627	Lincoin Laidlaw
+ 1640	Location: Lincoln Laidlaw, the son of the company's founder, remembers the dark days
+ 1654	following the stock market crash of 1987 and the collapse of the Chase Corporation. The
+
+===== TRANG 6 =====
+  243	docs.google.com
+  270	@ Trang ch..
+  269	A speaking.
+  270	日READING.
+  270	Duolingo...
+  270	@ instagra.
+  270	M em gi .-
+  271	G minh gi..
+  271	G BAI9-G..
+  271	日DAP AN READING V...
+  271	 Google Di..
+  272	G VOL 5_A...
+  272	G pyin c.a..
+  270	A Reading...
+  302	DAP AN READINGVOL8
+  308	Yéu cau quyén chinh sura
+  308	2 Chia Se
+  309	Nang cip
+  319	Chinh sira
+  321	Cong cu
+  321	Tro giup
+  322	Tep
+  322	Xem
+  356	was dispelled and it hasn't been recovered. That's a shame, but the business is still strong.
+  389	Cac the trong tailiu
+  408	Q27D
+  423	目TEST1
+  436	Passage D: Since that time, two critical pieces of evidence have been found on Earth which
+  452	TEST2
+  450	support the idea that Mars has life. The first is known as ALH84001, a meteorite that was
+  463	blasted into space when a large body struck Mars 15 milion years ago and which spiralled
+  479	across the solar system to crash into the Antarctic.
+  482	TEST 3
+  511	TEST 4
+  504	Q28G
+  530	Passage G: These are aimed at conducting experiments to detect the presence of a
+  540	TEST5
+  544	substance called carbon 13 in soil and rock samples on Mars.
+  570	TEST6
+  569	Q29E
+  598	TEST7
+  610	Paul Murdin. 'Earth retained one, and it protects our atmosphere. Without that protection,
+  628	TEST8
+  623	Mars's gases and water boiled off: That is why they are so different today.
+  646	Q30F
+  676	Passage F: And where there is ice, there is likely to be liquid water, probably undemeath.
+  700	Q31A
+  728	Passage A: These canals, argued US scientist Percival Lowell, had been built by
+  742	technologically advanced Martians to transport water from the poles to the equator of their
+  755	drying worid. Martian folk are possessed ofinventions of which we have not dreamed, he
+  769	argued.
+  795	Q32H
+  822	Passage H: For a start, we will be able to find out if Martian organisms have DNA, the
+  835	golden molecule that controls the replication of earthly creatures.:
+  887	Q33B
+  914	Passage A: The 18th-century astronomer William Herschel, noting the seasons and
+  927	atmosphere of Mars, declared that its inhabitants enjoy a situation similar to our own.
+  953	Q34C
+  979	Passage B: The vision of an advanced culture trapped on a drying world was taken up by
+  994	the British writer H.G. Wells in 1898 in his masterpiece The War of the Worlds, in which
+ 1009	Eneth in nsdhinnhnd in
+ 1009	nf hidaan ined
+ 1009	udah nninan
+
+===== TRANG 7 =====
+  242	docs.google.com
+  270	 Google Di-
+  271	G minh gi...
+  271	G BAI 9 - G...
+  271	G Trang ch..
+  271	日DAP AN READING V...
+  271	A speaking.
+  271	日READING..
+  271	G VOL 5_A..
+  271	o Duolingo...
+  271	G pyin cia..
+  271	 instagra..
+  270	M em gi a
+  271	A Reading...
+  301	DAPANREADINGVOL8
+  308	Yeu cau quyen chinh sura
+  308	& Chia Se
+  307	Nang cip
+  321	Tep
+  319	Chinh sura
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  345	Q34C
+  373	Passage B: The vision of an advanced culture trapped on a drying world was taken up by
+  389	Cac the trong tai lieu
+  386	the British writer H.G. Wells in 1898 in his masterpiece The War of the Worlds, in which
+  400	Earth is subjected to a pitiless invasion from arace of hideous Martians armed with poison
+  423	目TEST1
+  451	目 TEST 2
+  482	TEST3
+  511	TEST 4
+  540	TEST5
+  569	TEST6
+  581	least as far as the public was concemed.
+  598	TEST7
+  605	Q35D
+  628	TEST8
+  631	Passage C: Then, in the late 1960s, rocket science changed our image of Mars forever. The
+  645	US Mariner probes swept past Mars and sent back pictures, not of a world covered in
+  661	vegetation, as many scientists still expected, but of vistas of cratered, arid deserts.
+  686	Q36A
+  727	harshness has been provided by the study of extremophiles, bacteria that have been found
+  741	in increasingly hostile landscapes on Earth  acid lakes, for example, and volcanoes.
+  792	Q37YES
+  819	Passage A: These canals, argued US scientist Percival Lowell, had been built by
+  833	technologically advanced Martians to transport water from the poles to the equator of their
+  846	drying world. "Martian folk are possessed of inventions of which we have not dreamed, he
+  860	argued.
+  885	Q38NO
+  913	Passage D: Analysis carried out by NASA scientist Imre Friedmann showed that the
+  926	meteorite contained elements identical to those found on Mars by the Viking probes, and
+  956	believes that these could only have been created by living organisms. Others, however,
+  995	Q39YES
+ 1068	docs.google.com
+ 1095	@ Trang ch..
+ 1096	 Duolingo...
+ 1097	G minh gi...
+ 1097	G BAI9 - G...
+ 1097	日DAP AN READING V...
+ 1097	A speaking...
+ 1097	日READING.
+ 1097	G VOL 5_A...
+ 1096	 Google Di--
+ 1097	G pyin cia..
+ 1097	 Iinstagra...
+ 1099	M em gii a...
+ 1097	 Reading...
+ 1127	DAP AN READING VOL 8
+ 1133	Yeu cau quyen chinh sura
+ 1134	 Chia Se
+ 1134	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1182	Passage D: A second area of support for the idea that living organisms could survive Mars's
+ 1195	harshness has been provided by the study of extremophiles, bacteria that have been found
+ 1216	Cac the trong tailisu
+ 1210	in increasingly hostile landscapes on Earth  acid lakes, for example, and volcanoes.
+ 1249	目TEST1
+ 1260	Q37YES
+ 1278	1TEST2
+ 1287	Passage A: These canals, argued US scientist Percival Lowell, had been buit by
+ 1302	technologically advanced Martians to transport water from the poles to the equator of their
+ 1307	TEST3
+ 1315	drying world. Martian folk are possessed ofinventions of which we have not dreamed, he
+ 1337	TEST 4
+ 1330	argued.
+ 1355	Q38NO
+ 1365	TEST5
+ 1382	Passage D: Analysis carried out by NASA scientist Imre Friedmann showed that the
+ 1395	TEST6
+ 1395	meteorite contained elements identical to those found on Mars by the Viking probes, and
+ 1425	TEST7
+ 1425	believes that these could only have been created by living organisms. Others, however,
+ 1453	TEST8
+ 1465	Q39YES
+ 1490	Passage E: In the past few years, astronomers have become convinced that the Martian
+ 1505	surface, although hostile and arid today, was once lush and welcoming. Images sent back by
+ 1518	recent probes such as the Mars Global Surveyor have revealed dried-up riverbeds and old
+ 1534	estuaries. Rivers poured into ancient seas, it appears, and rain swept the sodden terrain.
+ 1559	Q40NOTGIVEN
+ 1585	Passage H: If DNA is located, it would mean that life on Mars and on Earth may spring from
+ 1601	the same source.
+ 1806	￥TEST3
+
+===== TRANG 8 =====
+  209	Safari
+  209	Tep
+  209	Stra
+  210	Dau trang
+  210	Tro giup
+  211	Xem
+  211	Lich sur
+  211	Cuta s6
+  208	14:56 Th 6 30 thg 1
+  242	docs.google.com
+  271	G minh gi lai foldert..
+  271	G BTVN - Google Drive
+  271	G Trang chu  Google..
+  271	日 DAP AN READING V..
+  271	日 READING VOL 8- G..
+  271	G Trang chu  Google..
+  271	A speakingwriting re..
+  270	 Duolingo - Bai hoc..
+  271	G dijch - Tim tren Go...
+  303	DAP ANREADINGVOL8
+  308	Yeu cau quyen chinh sura
+  308	Chia Se
+  307	Nang cip
+  320	Chinh siua
+  321	Cong cu
+  322	Tep
+  322	Xem
+  321	Tro giup
+  346	PASSAGE1
+  377	Cau s0 1:TRUE
+  389	Cac the trong tailieu
+  421	目 TEST1
+  430	Cau s0 2:NOT GIVEN
+  451	目TEST 2
+  480	目 TEST 3
+  482	Cau so 3:TRUE
+  509	目TEST4
+  538	目 TEST 5
+  534	Cau s6 4:TRUE
+  569	TEST6
+  586	Cau s6 5:TRUE
+  598	TEST7
+  626	目 TEST 8
+  637	Cau s6 6:NOT GIVEN
+  689	Cau s6 7:FALSE
+  741	Cau so 8:zoos
+  793	Cau so 9:tombs
+  845	Cau so 10:incubation
+  895	Cau s6 11:humidity
+  948	Cau s6 12:ovens
+ 1000	Cau so 13:predators
+ 1068	docs.google.com
+ 1097	G minh gi lai foldert..
+ 1097	 BTVN - Google Drive
+ 1096	 Trang ch - Google.
+ 1097	日 DAP AN READING V..
+ 1097	日 READING VOL 8- G..
+ 1097	 Trang cho - Google...
+ 1098	 Duolingo - Bai hoc...
+ 1099	A Speaking-writing re...
+ 1097	G djch - Tim tren Go...
+ 1127	DAP AN READING VOL 8
+ 1134	Yéu cau quyén chinh sura
+ 1133	Chia Se
+ 1134	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1175	PASSAGE2
+ 1203	Cau so 14: vi Examples of various contexts in which we might need to act out of
+ 1216	Cac the trong tai lisu
+ 1219	character
+ 1249	目TEST1
+ 1278	TEST2
+ 1271	Cau so 15:vili Learning by trial and error
+ 1307	目TEST3
+ 1321	Cau so 16:iv Why researchers decided to focus on the workplace
+ 1335	目TEST4
+ 1365	TEST5
+ 1373	Cau so 17:vii How workplace facilities aid the success of one personality type
+ 1395	TEST6
+ 1423	目TEST7
+ 1426	Cau so 18:li The pressure of restraining an outgoing nature
+ 1453	TEST8
+ 1478	Cau so 19:i How company culture can have a negative impact
+ 1530	Cau so 20:ii Recommendations for employers
+ 1581	Cau so 21-22: B, E
+ 1634	Cau s6 23:competitive
+ 1685	Cau so 24:implications
+ 1737	Cau so 25:surveys
+ 1788	Cau s6 26:productivity
+
+===== TRANG 9 =====
+  242	docs.google.com
+  271	G minh gi lai foldert..
+  271	G BTVN - Google Drive
+  271	G Trang chu  Google..
+  271	日 DAP AN READING V..
+  271	日 READING VOL 8 - G..
+  271	A Speaking-writing re..
+  272	G Trang chu  Google...
+  272	 Duolingo  Bai hoc...
+  271	G dijch - Tim tren Go...
+  301	DAP AN READING VOL8
+  307	Yeu cau quyén chinh suta
+  308	& Chia Se
+  308	Nang cip
+  321	Tep
+  319	Chinh sura
+  321	Cong cu
+  322	Xem
+  363	PASSAGE3
+  389	Cac the trong tai lieu
+  389	Q27C
+  423	TEST1
+  415	Passage F: A brain scanning experiment by Baron-Cohen in 1995 found that when
+  442	response to vision and colour.
+  451	目 TEST 2
+  463	Q28C
+  482	TEST3
+  499	UK showed that synesthetes who,whentested,had linked particularcolioursor shapesto
+  511	TEST 4
+  540	TEST5
+  537	Q29 B
+  569	TEST6
+  572	describe synesthesia. He wrote about a man who experienced bright red as the sound of the
+  587	trumpet.
+  598	TEST7
+  609	Q30A
+  628	TEST 8
+  632	Passage B:When scientists study nomalperception,says Daniel Smilek ofthe University
+  646	of Waterloo in Ontario, Canada, there are lots of things we don't question because most of
+  658	us perceive in the same way. Synesthesia, because it's abnormal, can give us new insights
+  671	into normal perception.
+  691	Q31F
+  719	Passage F: A brain scanning experiment by Baron-Cohen in 1995 found that when
+  743	response to vision and colour.
+  766	Q321
+  791	Passage I: novelist Nabokov, who perceived the English 'a' as dark brown and the French 'e'
+  804	as black.
+  827	Q33A
+  852	Passage A: People who 'see' colour in numbers or letters of the alphabet and feel' sensation
+  877	that causes certain senses to leak' into one another.
+  898	Q34F
+  925	Passage F: From this comes the notion that we may all have synesthesia at birth, when
+  973	challenged,however,on thegroundsthat ifyougivepeoplecertaindrugsthey will have
+  987	synesthetic experiences, which suggests the mechanism is intact in adults but repressed.
+ 1068	docs.google.com
+ 1097	G minh gi lai folder t..
+ 1097	 BTVN - Google Drive
+ 1097	G Trang chu  Google..
+ 1097	日 DAP AN READING V..
+ 1097	日 READING VOL 8 - G..
+ 1096	G Trang cho - Google..
+ 1097	 Duolingo  Bai hoc..
+ 1098	A Speaking-writing re...
+ 1097	G dich - Tim tren Goo..
+ 1127	DAP AN READING VOL 8
+ 1133	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1132	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1216	Cac the trong tailisu
+ 1249	目TEST1
+ 1247	Q35B
+ 1277	目TEST 2
+ 1295	Q36TRUE
+ 1307	TEST3
+ 1320	Passage C: Wassily Kandinsky, who believed synesthetes were like good, much-played
+ 1337	TEST 4
+ 1332	violins, which vibrate in alltheir parts and fibres.
+ 1356	Q37TRUE
+ 1366	TEST 5
+ 1379	Passage D: Early claims that the multi-sensory experiences of synesthesia were linked with
+ 1395	TEST6
+ 1394	the hallucinations of mental llness have long been disproved.
+ 1425	TEST7
+ 1418	Q38FALSE
+ 1440	Passage E: Women are between two and eight times morelikely than men to have the
+ 1454	TEST 8
+ 1454	condition.
+ 1476	Q39NOTGIVEN
+ 1527	response to vision and colour.
+ 1549	Q40TRUE
+ 1574	Passage F: From this comes the notion that we may all have synesthesia at birth.
+
+===== TRANG 10 =====
+  242	docs.google.com
+  270	A speaking-writing re.
+  271	G minh gi lai foldert..
+  271	G BTVN - Google Drive
+  271	G Trang chu  Google..
+  271	日DAP AN READING V..
+  271	日 READING VOL 8-G..
+  271	G Trang chu  Google...
+  270	 Duolingo - Bai hoc..
+  271	G dich - Tim tren Goo..
+  303	DAP ANREADINGVOL8
+  308	Yeu cau quyén chinh sura
+  308	&Chia Se
+  307	Nang cip
+  320	Tep
+  320	Chinh sira
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  389	Cac the trong tailieu
+  380	Cau s6 1:NOT GIVEN
+  421	目 TEST1
+  433	Cau so 2:TRUE
+  452	TEST2
+  480	目TEST3
+  485	Cau s6 3:TRUE
+  511	TEST4
+  539	目TEST 5
+  537	Cau s6 4:FALSE
+  569	TEST6
+  588	Cau s6 5:NOT GIVEN
+  598	TEST7
+  626	目 TEST 8
+  640	Cau s6 6:FALSE
+  692	Cau so 7:operator
+  744	Cau so 8:confidence
+  796	Cau so 9:disappointment
+  848	Cau s6 10:president
+  898	Cau s6 11:listening
+  951	Cau so 12:vision
+ 1003	Cau so 13:heart
+ 1068	docs.google.com
+ 1097	G minh gi lai folder t..
+ 1097	 BTVN - Google Drive
+ 1096	G Trang chu - Google..
+ 1097	日DAP AN READING V..
+ 1097	日 READING VOL 8- G..
+ 1097	 Trang cho - Google....
+ 1098	A Speaking-writing re..
+ 1098	 Duolingo - Bai hoc...
+ 1097	G dich - Tim tren Goo..
+ 1127	DAP AN READING VOL 8
+ 1133	Yeu cau quyen chinh sura
+ 1134	&Chia Se
+ 1134	Nang cip
+ 1146	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1172	Q14D
+ 1198	Passage D: Another robot-ike toy named Robby. which resembled QRIO but did not move,
+ 1216	Cac the trong tailisu
+ 1227	decreased throughout the study.
+ 1249	目TEST1
+ 1252	Q15F
+ 1278	TEST 2
+ 1277	Passage F: Arobotic tutor could react on the spot to social cues and approximate social
+ 1294	skills like facial expression and eye gaze, they said.
+ 1307	TEST3
+ 1320	Q16D
+ 1335	目 TEST 4
+ 1344	Passage D: At first the toddlers would touch the robot on its face, but later on they would
+ 1366	TEST 5
+ 1360	touch it only on its hands and arms, like they would with other humans.
+ 1385	Q17A
+ 1395	TEST6
+ 1412	Passage A: This observation is in sharp contrast to the long-term interactions and bonding
+ 1423	目TEST7
+ 1426	that commonly develop between humans and their pets.
+ 1453	TEST8
+ 1450	Q18C
+ 1476	Passage C: The researchers sent instructions to the robot about every two minutes to do
+ 1492	things like giggle, dance, sit down, fall down or walk in a certain direction.
+ 1516	Q19B
+ 1542	Passage F: 't is becoming clear that, to achieve this goal, we are going to [need to] endow
+ 1573	Movellan.
+ 1596	Q20C
+ 1624	Passage G: But he also cautioned that researchers do not yet understand the consequences
+ 1638	of increased human/robot interaction.
+ 1663	Q21A
+ 1690	Passage B: Children of toddler age were chosen because they have no preconceived
+ 1704	notions of robots, according to Tanaka.
+ 1729	Q22D
+ 1756	Passage G: Associate professor David Powers, an expert in artificial intelligence and
+ 1770	cognitive science at Flinders University in South Australia, commented, 'ln this study it is
+ 1786	clearly demonstrated that limited range of robot behaviors, however impressive, is nowhere
+ 1813	from a broad repertoire of behaviors'.
+
+===== TRANG 11 =====
+  242	docs.google.com
+  270	G Trang chu - Google.
+  270	A speaking-writing re.
+  271	G minh gi lai foldert..
+  271	G BTVN - Google Drive
+  271	日DAP AN READING V..
+  271	日 READING VOL 8-G..
+  271	G Trang chu  Google..
+  270	 Duolingo - Bai hoc..
+  271	G dich - Tim tren Goo..
+  303	DAP ANREADINGVOL8
+  308	Yeu cau quyen chinh sura
+  308	Chia Se
+  307	Nang cip
+  320	Tep
+  320	Chinh sia
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  347	Q23A
+  389	Cac the trong tailieu
+  421	目 TEST1
+  452	TEST2
+  480	目TEST3
+  511	TEST4
+  512	Passage F: it could have great potential in educational settings assisting teachers and
+  528	enriching the classroom environment,' Tanaka said.
+  539	目TEST 5
+  555	Q24 storytellers
+  569	TEST6
+  579	Passage A: The most successful robots so far have been storytellers, but they have only
+  598	TEST7
+  593	been able to maintain human interest for a limited time and typically rely on the robot telling
+  608	stories that change over time.
+  626	目 TEST 8
+  634	Q25 peer
+  660	Passage E: Overall, the interaction between children and the robot improved over time and
+  673	the children progressively treated it more as a peer than a plaything.
+  701	Q26 affection
+  723	Passage G: Ronald Arkin was not surprised by the affection demonstrated by the toddlers
+  741	toward the robot.
+  764	Q27C
+  790	Passage A: The earliest occupation of Patagonia carries obvious implications for
+  806	understanding when the North and South American continents were peopled, because it
+  819	gives a baseline that all calculations regrading the rate of dispersion of humans throughout
+  836	both continents must take into account.
+  859	Q28C
+  886	Passage B: For many years the human settlement of North and South America has been
+  901	conceived of as beginning in the far north and travelling progressively southwards to
+  915	Patagonia. However, fundamental disagreements developed concerning the length of time
+  929	involved.
+  953	Q29A
+  995	continually advancing wave of settlement. This has always been difficult to take seriously
+ 1068	docs.google.com
+ 1097	G minh gi lai foldert..
+ 1097	 BTVN - Google Drive
+ 1096	 Trang ch - Google.
+ 1097	日 DAP AN READING V..
+ 1097	日 READING VOL 8 -G..
+ 1097	 Trang cho - Google...
+ 1098	A Speaking-writing re..
+ 1098	 Duolingo - Bai hoc...
+ 1097	G dich - Tim tren Goo..
+ 1127	DAP AN READING VOL 8
+ 1133	Yeu cau quyen chinh sura
+ 1133	Chia Se
+ 1134	Nang cip
+ 1147	Tep
+ 1147	Chinh siura
+ 1147	Cong cu
+ 1148	Xem
+ 1147	Tro giup
+ 1167	Q29A
+ 1215	Cac the trong tailieu
+ 1208	continually advancing wave of settlement. This has always been difficult to take seriously
+ 1224	and many scholars now support the idea of an 'early model that sees the migration as a less
+ 1239	ordered migration,
+ 1249	目TEST1
+ 1259	Q30D
+ 1278	TEST2
+ 1289	Passage C: This has always been difficult to take seriously and many scholars now support
+ 1304	the idea of an 'eary' model that sees the migration as a less ordered migration, and this is
+ 1307	TEST 3
+ 1317	surely the most realistic scenario as migrants slowly adapted to the diverse natural habitats
+ 1335	目 TEST 4
+ 1332	they would have met while travelling through the continent.
+ 1356	Q31B
+ 1366	TEST5
+ 1395	TEST6
+ 1423	目TEST7
+ 1453	TEST8
+ 1557	Passage D: Nevertheless, evidence for human occupation of the centre of South America is
+ 1573	now securely dated to around 12,500 years ago at the Monte Verde site, which casts doubt
+ 1587	on the 'late' model.
+ 1610	Q32NO
+ 1637	Passage E: We can speculate then that the retreat of the Patagonian glaciers around 14,o00
+ 1652	years ago allowed the initial human intrusion into a pristine environment, which was similar
+ 1666	to that of early post-glacial Europe.
+ 1692	33NOTGIVEN
+ 1717	Passage E: Human settlement of the vast horizontal expanse of treeless high country must
+ 1732	have been tenuous at best, and the evidence for this occupation remains relatively scant,
+ 1746	most of it coming from rock shelters in Argentina and Chile.
+ 1771	Q34NO
+ 1796	Passage E: There is,however,reliable evidence from these sites to confirm the presenceof
+ 1812	humans by around 11,000 years ago in different habitats and some hints of an even older
+ 1827	occupation.
+
+===== TRANG 12 =====
+  242	docs.google.com
+  271	G minh gi lai foldert..
+  271	G BTVN - Google Drive
+  271	G Trang chu  Google..
+  271	日 DAP AN READING V..
+  271	日READING VOL 8-G..
+  271	G Trang chu  Google..
+  270	A speakingwiting re..
+  272	 Duolingo  Bai hoc...
+  271	G dich - Tim tren Goo..
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyen chinh sura
+  308	& Chia Se
+  307	Nang cip
+  320	Tep
+  319	Chinh sura
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  341	Q34NO
+  367	Passage E: There is, however, reliable evidence from these sites to confirm the presence of
+  389	Cac the trong tai lieu
+  383	humans by around 11,000 years ago in diferent habitats and some hints of an even older
+  399	occupation.
+  423	TEST1
+  423	Q35YES
+  452	TEST2
+  478	as floods or predators, and not necessarily by humans.
+  482	TEST3
+  511	TEST4
+  504	Q36 D good condition
+  530	Passage F: At the site located beside Chinchihuapi Creek, excavations have produced
+  540	TEST5
+  544	convincing evidence of human occupation, including hut foundations and wooden artefacts.
+  569	TEST6
+  573	well, and as a result radiocarbon dating* tests have shown these artefacts to date from
+  586	around 12,500 years ago.
+  598	TEST7
+  611	Q37 B random collection
+  628	TEST8
+  637	Passage F: However, the evidence from this site has recenty been called into question
+  653	because dispersed flecks of carbon used in the test process were taken unsystematically
+  667	from many different places in the site.
+  692	Q38 C similar properties
+  719	Passage G: The artefacts from the earliest occupations were found at the same depth and
+  733	have the same origins as those from Los Toldos, and have been securely dated to around
+  745	9,000 years ago.
+  956	Q39 H reliable connection
+  984	Passage G: However, anthropologists now believe that presumed cut marks on the bones
+  997	are somewhat dubious, and despite detailed testing there is no way of securely relating any
+ 1068	docs.google.com
+ 1097	G minh gi lai foldert..
+ 1097	 BTVN - Google Drive
+ 1097	G Trang chu  Google..
+ 1097	日 DAP AN READING V..
+ 1097	日 READING VOL 8- G..
+ 1096	G Trang cho - Google..
+ 1098	A Speaking-writing re..
+ 1098	 Duolingo - Bai hoc...
+ 1097	G dijch - Tim tren Go...
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyen chinh sura
+ 1134	Chia Se
+ 1134	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1165	well, and as a result radiocarbon dating* tests have shown these artefacts to date from
+ 1178	around 12,500 years ago.
+ 1205	Q37 B random collection
+ 1216	Cac the trong tai liu
+ 1233	Passage F: However, the evidence from this site has recently been called into question,
+ 1249	目TEST1
+ 1246	because dispersed flecks of carbon used in the test process were taken unsystematically
+ 1260	from many different places in the site.
+ 1278	TEST 2
+ 1286	Q38 C similar properties
+ 1307	TEST3
+ 1310	Passage G: The artefacts from the earliest occupations were found at the same depth and
+ 1334	目TEST4
+ 1327	have the same origins as those from Los Toldos, and have been securely dated to around
+ 1339	9,000 years ago.
+ 1366	TEST 5
+ 1395	TEST6
+ 1425	TEST7
+ 1454	TEST8
+ 1552	Q39 H reliable connection
+ 1594	are somewhat dubious, and despite detailed testing there is no way of securely relating any
+ 1606	of these remains with human occupation.
+ 1632	Q40 J immediate surroundings
+ 1658	Passage G: However, it is now recognised that the utility of this site must be restricted to its
+ 1671	direct vicinity, given changes to the nearby area caused by flooding, and findings cannot be
+ 1687	freely extrapolated further afield.
+
+===== TRANG 13 =====
+  209	Safari
+  209	Tep
+  209	Stra
+  210	Dau trang
+  210	Tro giup
+  211	Xem
+  211	Lich sur
+  211	Cutas6
+  210	14:57 Th 6 30 thg 1
+  242	docs.google.com
+  271	G minh gi lai foldert..
+  271	G BTVN - Google Drive
+  271	G Trang chu  Google..
+  271	日 DAP AN READING V..
+  271	日 READING VOL 8- G..
+  270	G Trang chu - Google...
+  271	A speakingwriting re..
+  271	 Duolingo - Bai hoc...
+  271	G dich - Tim tren Goo..
+  303	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sura
+  308	& Chia Se
+  307	Nang cip
+  319	Chinh sura
+  319	Cong cu
+  322	Tep
+  322	Xem
+  321	Tro giup
+  389	Cac the trong tai lieu
+  380	Cau so 1:li Government's safeguard in the West
+  421	目 TEST1
+  434	Cau so 2:iv Built-up to the new infrastructure
+  452	TEST2
+  481	TEST3
+  485	Cau sd 3:x Early major urban development of the West
+  508	目TEST4
+  540	目TEST5
+  536	Cau so 4:vi Ethnics and language make-up
+  569	TEST6
+  587	Cau so 5:i Not all would stay in Canada forever
+  598	TEST7
+  626	目 TEST 8
+  641	Cau so 6:vii Pursuing a pure life
+  691	Cau so 7:xii Advertising of Western Canada
+  744	Cau so 8:homesteads
+  796	Cau so 9:agricultural output
+  848	Cau s6 10:wheat
+  898	Cau s6 11:company
+  951	Cau so 12:Police Force
+ 1003	Cau so 13:transcontinental railwav
+ 1068	docs.google.com
+ 1097	G minh gi lai folder t..
+ 1097	 BTVN - Google Drive
+ 1096	 Trang ch - Google..
+ 1097	日DAP AN READING V.-
+ 1097	日 READING VOL 8- G..
+ 1097	 Trang cho - Google...
+ 1098	A Speaking-writing re..
+ 1098	 Duolingo - Bai hoc...
+ 1097	G djch - Tim tren Go...
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sura
+ 1133	 Chia Se
+ 1134	Nang cap
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1170	Cau s6 13:transcontinental railway
+ 1216	Cac the trong tai lisu
+ 1247	目 TEST1
+ 1278	TEST2
+ 1307	TEST3
+ 1335	目TEST4
+ 1365	目 TEST 5 
+ 1368	Q14 prescriptions
+ 1395	TEST6
+ 1410	doctors in America last year.
+ 1423	目TEST7
+ 1435	Q15 accidents
+ 1451	目TEST8
+ 1459	Passage A: The Institute of Medicine, an independent scientific advisory group, estimates
+ 1476	nearly 20 percent of all major accidents on the road are associated with driver sleepiness.
+ 1501	Q16 productivity
+ 1525	Passage A: The loss in terms of productivity within the workplace is even higher, costing
+ 1540	bilions.
+ 1563	Q17 training
+ 1591	Passage A: Currently most medical school students get no more than four hours of training
+ 1607	on sleep disorders; some get none.
+ 1631	Q18H
+ 1658	Passage H: While apnea can be treated with a device that forces air down the sleeper's
+ 1672	throat to keep the airways open, the treatment of classic insomnia is not so clear cut.
+ 1685	Acupuncture may help. it has long had this role in Asian medicine and is being studied at the
+ 1701	University of Pittsburgh sleep center now.
+ 1726	Q19E
+ 1752	Passage E: Sleep is likely to have physiological purposes too. Some researchers have found
+ 1781	helps boost the immune system and control infection.
+ 1805	Q20C
+ 1832	Daeeana F- Theu fntind that thnea whn hadl annanarl in DEM elean euheanulantlu narfnrmard
+
+===== TRANG 14 =====
+  243	docs.google.com
+  271	G Trang chu  Google..
+  272	G minh gui lai folder t..
+  272	@ BTVN - Google Drive
+  272	日 DAP AN READING V...
+  271	日 READING VOL 8- G..
+  272	G Trang chu  Google...
+  272	A Speakingwriting re.
+  272	 Duolingo  Bai hoc...
+  272	G dich - Tim tren Go...
+  302	DAP AN READING VOL8
+  307	Nang cip
+  308	Yéu cau quyén chinh sura
+  308	&Chia Se
+  319	Chinh sira
+  321	Cong cu
+  322	Tep
+  322	Xem
+  321	Tro giup
+  338	Q20C
+  362	Passage C: They found that those who had engaged in REM sleep subsequenty performed
+  378	better in pattern recogniion tasks, such as grammar, while those who slept deeply were
+  389	Cac the trong tailiu
+  395	better at memorization.
+  423	TEST1
+  416	Q21B
+  452	TEST2
+  445	Passage B: We know that all mammals sleep, and that there are some insects and reptiles
+  482	TEST 3
+  485	Q22D
+  511	TEST4
+  511	Passage D: His study showed that the sleeping brain seems to delete redundant or
+  540	TEST5
+  541	remember what's important, by letting us forget what's not.
+  570	TEST6
+  565	Q23G
+  598	TEST7
+  628	TEST8
+  731	Passage G: In sleep apnea, muscle relaxation allows the soft tissue of the throat to close,
+  759	sends a signal to the body to wake up. The sleeper awakes, inhales, and sleep retums.
+  782	Q24B
+  825	solid is because we get sleepy'
+  848	Q25C
+  877	Passage F: However, Clete Kushida, the clinic director, told me he can spot most people's
+  890	sleep problems right at the intake interview. There are those who cannot keep their eyes
+  904	open, and those who just speak of their exhaustion but don't actually fall asleep. The former
+  946	Q26E
+  971	Passage I: ‘Some people continue in my experience to struggle,' says John Winkelman,
+
+===== TRANG 15 =====
+  242	docs.google.com
+  270	G Trang chu - Google...
+  270	G Trang chu - Google...
+  270	A speaking-writing re..
+  271	G minh gi lai foldert..
+  271	G BTVN - Google Drive
+  271	日 DAP AN READING V..
+  271	日 READING VOL 8- G..
+  270	 Duolingo - Bai hoc..
+  271	G djch - Tim tren Go...
+  303	DAP ANREADINGVOL8
+  308	Yéu cau quyén chinh sura
+  308	Chia Se
+  307	Nang cip
+  320	Chinh siua
+  321	Cong cu
+  322	Tep
+  322	Xem
+  321	Tro giup
+  342	Cau s6 27:D
+  389	Cac the trong tailieu
+  392	Cau s6 28:B
+  421	目 TEST1
+  452	TEST2
+  445	Cau s6 29:A
+  481	TEST3
+  497	Cau s6 30:D
+  508	目TEST4
+  540	目TEST5
+  550	Cau so 31:C
+  569	TEST6
+  598	TEST7
+  602	Cau so 32:C
+  624	目 TEST8
+  654	Cau so 33:E whether young children are puzzled by pictures.
+  865	Cau so 34:F that young children expect tiny objects to function in the same way as
+  882	life-sized ones.
+  932	Cau so 35:D the effectiveness of symbolic objects as teaching tools.
+  985	Cau s6 36:YES
+ 1068	docs.google.com
+ 1097	G minh gi lai foldert..
+ 1097	@ BTVN - Google Drive
+ 1096	 Trang ch - Google..
+ 1097	日 DAP AN READING V..
+ 1097	日 READING VOL 8- G..
+ 1097	@ Trang cho - Google..
+ 1098	A Speaking-writing re..
+ 1098	 Duolingo - Bai hoc...
+ 1097	G djch - Tim tren Go...
+ 1127	DAP AN READINGVOL8
+ 1133	Yeu cau quyen chinh sura
+ 1133	Chia Se
+ 1134	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1216	Cac the trong tai lisu
+ 1247	目 TEST1
+ 1278	TEST 2
+ 1307	TEST3
+ 1335	目TEST4
+ 1365	目 TEST 5
+ 1370	Cau so 34:F that young children expect tiny objects to function in the same way as
+ 1395	TEST6
+ 1387	life-sized ones.
+ 1423	目TEST7
+ 1437	Cau so 35:D the effectiveness of symbolic objects as teaching tools.
+ 1453	目TEST 8
+ 1489	Cau so 36:YES
+ 1541	Cau so 37:NO
+ 1592	Cau s6 38:YES
+ 1644	Cau s6 39:NO
+ 1696	Cau s6 40:NOT GIVEN
+
+===== TRANG 16 =====
+  242	docs.google.com
+  271	G PDF - Google Drive
+  271	G Trang chu  Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	G VOL 5_ADVANCED - Google Drive
+  306	OUng dung naydalithoiva phaidugckhoidong lai.Tat ca thay doi cua ban dadugc luu.
+  344	DAP AN READING VOL 8
+  345	2 Dang co ging ket ndi..
+  349	Yeu cau quyen chinh sura
+  349	2 Chia Se
+  349	Nang cap
+  362	Tep
+  359	Chinh siua Xem Cong cu Tro gip
+  431	Cac the trong tai lisu
+  438	Cau s6 1:seven years,7 years
+  462	目 TEST1
+  493	TEST2
+  488	Cau s6 2:670
+  522	TEST3
+  550	目TEST4
+  541	Cau so 3:lung function
+  581	目TEST5
+  592	Cau s6 4:immune system
+  609	目 TEST 6
+  638	目TEST7
+  645	Cau so 5:heart patients
+  669	TEST8
+  697	Cau so 6:D optimism has not been considered a worthy research topic.
+  748	Cau so 7:A optimists have an unrealistic view of life.
+  801	Cau so 8:F happiness is not inked to material comfort.
+  850	Cau so g:G levels of optimism can decrease with age.
+  904	Cau so 10:C excessive optimism may have negative consequences.
+  954	Cau s6 11:YES
+ 1008	ARIEM
+ 1068	docs.google.com
+ 1097	G PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1096	 DAp AN READING VOL 8 - Google Tai lieu
+ 1097	日 READING VOL 8 - Google Tai lieu
+ 1097	G VOL 5_ADVANCED - Google Drive
+ 1132	OUng dung naydalithoiva phaidugckhoidong lai.Tat ca thay doi cua ban dadugc luu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket noi..
+ 1175	Yeu cau quyen chinh sura
+ 1177	2, Chia Se
+ 1176	Nang cip
+ 1189	Tep
+ 1188	Chinh sura
+ 1190	Xem
+ 1189	Cong cuTro giup
+ 1214	Cau s6 11:YES
+ 1257	Cac the trong tailisu
+ 1267	Cau s6 12:NOT GIVEN
+ 1289	TEST1
+ 1319	TEST 2
+ 1320	Cau s6 13:NO
+ 1348	TEST3
+ 1377	TEST 4
+ 1407	目TEST5
+ 1436	目TEST6
+ 1465	TEST7
+ 1493	目TEST8
+ 1516	Cau so 14:C
+ 1568	Cau so 15:B
+ 1619	Cau s6 16:D
+ 1671	Cau s6 17:A
+ 1723	Cau s6 18:B
+ 1775	Cau s6 19:D
+ 1827	Cau so 20:A
+
+===== TRANG 17 =====
+  242	docs.google.com
+  271	G PDF - Google Drive
+  271	G Trang chu  Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	G VOL 5_ADVANCED - Google Drive
+  306	OUng dung naydalithoiva phaidugckhoidong lai.Tat ca thay doi cua ban dadugc luu.
+  344	DAP AN READING VOL 8
+  345	2 Dang co ging ket ni..
+  349	Yeu cau quyen chinh sura
+  349	2 Chia Se
+  349	Nang cap
+  359	TepChinh sia XemCong cu Tra gip
+  384	Cau s6 21:D
+  431	Cac the trong tai lisu
+  441	Cau s6 22:C
+  462	目 TEST1
+  493	TEST 2
+  488	Cau s6 23:eye
+  522	TEST3
+  550	目TEST4
+  546	Cau so 24:offices
+  581	目TEST5
+  596	Cau so 25:tooth
+  609	目 TEST 6
+  638	目TEST7
+  648	Cau so 26:size
+  669	TEST8
+  855	Cau s6 27:C
+  907	Cau s6 28:D
+  959	Cau so 29:D
+ 1068	docs.google.com
+ 1097	G PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1096	 DAp AN READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	G VOL 5_ADVANCED - Google Drive
+ 1132	OUng dung naydalithoiva phaidugckhoidong lai.Tat ca thay doi cua ban dadugc luu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket noi..
+ 1175	Yeu cau quyen chinh sura
+ 1177	2, Chia Se
+ 1176	Nang cip
+ 1189	Tep
+ 1188	Chinh sua
+ 1190	Xem
+ 1189	Cong cuTro giup
+ 1209	Cau s6 30:A
+ 1257	Cac the trong tailisu
+ 1259	Cau s6 31:B
+ 1289	TEST1
+ 1319	TEST 2
+ 1313	Cau s6 32:YES
+ 1348	TEST 3
+ 1364	Cau so 33:NO
+ 1377	TEST 4
+ 1407	目TEST5
+ 1416	Cau so 34:NOT GIVEN
+ 1436	目TEST6
+ 1465	TEST7
+ 1468	Cau so 35:NOT GIVEN
+ 1493	目TEST8
+ 1520	Cau so 36:E people allow their feelings to influence decisions.
+ 1572	Cau so 37:A something is thought to be worth more than it really is.
+ 1623	Cau so 38:D businesses consider possible future developments.
+ 1675	Cau so 39:C too much information is given to the other parties early on.
+
+===== TRANG 18 =====
+  242	docs.google.com
+  271	G PDF - Google Drive
+  270	G Trang cho - Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	G VOL 5_ADVANCED - Google Drive
+  306	OUng dung nay da lbi thoi va phai dugc khoi dong lai. Tat ca thay doi cua ban da dugc lu.
+  344	DAP AN READING VOL8
+  345	☆@Dang cogingket ni
+  349	Yeu cau quyen chinh sura
+  349	& Chia Se
+  349	Nang cap
+  359	Tep Chinh suta Xem Cong cu Tragip
+  377	Cau s6 34:NOT GIVEN
+  431	Cac the trong tai lisu
+  430	Cau s6 35:NOT GIVEN
+  462	目 TEST1
+  482	Cau so 36:E people allow their feelings to influence decisions.
+  493	TEST2
+  522	TEST3
+  534	Cau so 37:A something is thought to be worth more than it really is.
+  550	目TEST4
+  581	目TEST5
+  584	Cau so 38:D businesses consider possible future developments.
+  609	目 TEST 6 
+  638	目TEST7
+  636	Cau so 39:C too much information is given to the other parties early on.
+  669	TEST8
+  845	Cau so 40:B discussions between the parties begin to break down.
+ 1068	docs.google.com
+ 1096	 DAp AN READING VOL 8 - Google Tai lieu
+ 1097	 PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1097	日 READING VOL 8 - Google Tai lieu
+ 1096	G VOL 5_ADVANCED - Google Drive
+ 1132	OUng dung nay da lbithoi va phaidugc khoidong lai. Tat ca thay di cua ban da dugc lu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket noi..
+ 1175	Yeu cau quyen chinh sura
+ 1175	& Chia Se
+ 1175	Nang cap
+ 1189	Tep
+ 1188	Chinh sura
+ 1190	Xem
+ 1189	Cong cu Tro giup
+ 1257	Cac the trong tai lisu
+ 1256	PASSAGE1
+ 1289	TEST1
+ 1302	Causo1:vPioneers of the earlyscience
+ 1319	TEST 2
+ 1348	TEST3
+ 1344	Cau so 2: iEarly years of Gilbert
+ 1377	TEST 4
+ 1387	Cau so 3:vi Professional and social recognition
+ 1405	目 TEST 5
+ 1436	TEST6
+ 1429	Cau so 4:x His change offocus
+ 1464	目 TEST 7
+ 1470	Cau so 5:ix His discoveryaboutmagnetism
+ 1493	目TEST 8
+ 1512	Cau so 6:iv Questioningtraditional astronomy
+ 1555	Cau so 7:ii What was newabout his scientific research method
+ 1594	Cau so 8: TRUE
+ 1638	Cau so 9:
+ 1637	TRUE
+ 1680	Causo10:NOTGIVEN
+ 1721	Cau so 11-13:
+ 1722	C, D, E
+
+===== TRANG 19 =====
+  242	docs.google.com
+  271	G PDF - Google Drive
+  271	G Trang chu  Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	G VOL 5_ADVANCED - Google Drive
+  306	Ung dung nay dali thoiva phai dugckhoidong lai.Tat ca thay doicua ban dadugclu.
+  341	DAP AN READING VOL 8
+  345	☆@2Dang cogingket ni..
+  349	Yeu cau quyen chinh sura
+  349	Chia Se
+  349	Nang cap
+  362	Tep
+  361	Chinh sia Xem 
+  362	Cong cu Tro giup
+  381	Q14 iv
+  410	Passage A: Think again. Unless you are one of the three percent of super-taskers in
+  431	Cac the trong tai lisu
+  441	to more than one complex task at a time.
+  464	目TEST1
+  467	Q15 ii
+  493	TEST2
+  494	Passage B: It's true that you can check your email while eating your lunch, or listen
+  522	TEST3
+  525	not require you to pay attention, whereas activities such as reading, tapping outa
+  550	目TEST4
+  542	text message or driving a car do require attention.
+  568	Q16 vi
+  581	TEST 5
+  595	Passage C: Neuroscientist Etienne Koechlin says his study demonstrates that while
+  609	目TEST6
+  626	when we try to juggle more than two tasks simply because we have only two frontal
+  640	TEST7
+  642	lobes.
+  669	TEST8
+  668	Q17v
+  697	Passage D: To the question of whether there is a difference between the sexes,
+  711	Koechlin's imaging studies uncovered no differences in the ability switch between
+  728	tasks in the prefrontal cortices of men or women.
+  755	Q18i
+  781	Passage E: These so-called'super-taskers exhibit different patterns of brain activity
+  827	high level of efficiency. Strayer thinks that pilots of high-performance aircraf,
+  844	high-end chefs who can cook several meals at the same time to perfection, and elite
+  860	doctors in hospital emergency rooms might all be more likely to be super-taskers.
+  885	Q19 vii
+  914	Passage F: The ability to multi-task probably comes down to the DNA you inherit
+  929	from your parents.
+  953	Q20C
+  984	Passage E: These so-called 'super-taskers' exhibit different patterns of brain activity
+ 1068	docs.google.com
+ 1097	G PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1097	日 DAP AN READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1097	G VOL 5_ADVANCED - Google Drive
+ 1132	Ung dung naydali thoivaphai dugckhoidong lai.Tatcathaydoi cuabandadugc luu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket ni..
+ 1176	Yeu cau quyen chinh sua
+ 1177	2, Chia Se
+ 1176	Nang cip
+ 1188	Chinh sua
+ 1189	Tep
+ 1188	Xem
+ 1189	Cong cuTro giup
+ 1204	Q20C
+ 1235	Passage E: These so-called 'super-taskers' exhibit dfferent patterns of brain activity
+ 1257	Cac the trong tai lisu
+ 1289	TEST1
+ 1282	high level of efficiency.
+ 1319	TEST 2
+ 1348	TEST3
+ 1377	TEST 4
+ 1405	目 TEST 5
+ 1434	目TEST6
+ 1464	目 TEST 7
+ 1463	Q21C
+ 1493	目TEST8
+ 1491	Passage B: Strayer's research shows that performance deteriorates dramatically
+ 1507	when attention is split between tasks: more mistakes are made and it takes longer to
+ 1522	complete each activity.
+ 1548	Q22A
+ 1575	Passage A: Researchers who study attention say that effective multi-tasking is
+ 1592	beyond most of us. Psychiatrist Edward M Hallowell even describes multi-tasking as
+ 1608	a 'mythical activity in which people believe they can perform two or more tasks
+ 1623	simultaneously as effectively as they can perform one'.
+ 1649	Q23E
+ 1676	Passage D: Women have a much better strategy for finding the keys, whereas men
+ 1693	tend to jump to it and be far less organised and thorough. 'lt's as if they don't stop to
+ 1708	reflect and plan for a moment, says Professor Keith Laws from the University of
+ 1724	Hertfordshire in England.
+ 1761	Cau so 24:
+ 1761	position
+ 1811	Causo26:
+ 1812	structure
+
+===== TRANG 20 =====
+  242	docs.google.com
+  271	G PDF - Google Drive
+  270	G Trang chu - Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	G VOL 5_ADVANCED - Google Drive
+  306	OUng dung nay da lbithoi va phaidugc khoidong lai.Tat ca thay doi cua ban da dugc lu.
+  344	DAP AN READING VOL 8
+  345	☆@2Dang cogingket ni..
+  349	Yeu cau quyen chinh sura
+  349	2 Chia Se
+  349	Nang cap
+  359	Tep Chinh suta Xem Cong cu Tra gip
+  396	Cau so 25:
+  398	attention
+  431	Cac the trong tai lisu
+  462	目 TEST1
+  493	TEST 2
+  522	TEST3
+  550	目TEST4
+  581	TEST5
+  610	TEST6
+  638	目 TEST 7
+  669	目TEST8
+  821	PASSAGE3
+  851	Cau s6 27: NOT GIVEN
+  878	Cau s6 28: NO
+  907	Cau s6 29: NOT GIVEN
+  935	Cau s6 30:
+  935	YES
+  963	Cau s6 31: D
+  991	Cau s6 32:A
+ 1068	docs.google.com
+ 1097	 PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1096	 DAP AN READING VOL 8 - Google Tai lieu
+ 1097	日 READING VOL 8 - Google Tai lieu
+ 1097	G VOL 5_ADVANCED - Google Drive
+ 1132	OUng dung nayda lbithoiva phaidugc khoidong lai.Tat ca thay di cua ban da dugc lu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket noi..
+ 1176	Yeu cau quyen chinh sua
+ 1177	2, Chia Se
+ 1176	Nang cip
+ 1189	Tep
+ 1188	Chinh sua
+ 1190	Xem
+ 1189	Cong cuTro giup
+ 1222	PASSAGE3
+ 1257	Cac the trong tai lisu
+ 1253	Cau s6 27: NOT GIVEN
+ 1282	Cau s6 28:
+ 1289	TEST1
+ 1281	NO
+ 1309	Cau s6 29: NOT GIVEN
+ 1319	TEST 2
+ 1337	Cau s6 30:
+ 1337	YES
+ 1348	TEST3
+ 1365	Cau s6 31: D
+ 1377	TEST 4
+ 1393	Cau s6 32:
+ 1405	目 TEST 5
+ 1421	Cau so33:
+ 1436	TEST6
+ 1447	Cou s634:
+ 1464	目 TEST 7
+ 1476	Cau s6 35: A
+ 1493	目TEST8
+ 1504	Cau s6 36:
+ 1503	D acquiring the particular set of physical sklls needed to play an instrument.
+ 1530	Cau so 37:A comparing the brains of people who had never played an instrument with those who played for a living.
+ 1559	Cau so 38: B activating many different parts of the brain at the same time.
+ 1588	Cau s5 39: F having played an instrument for a considerable length of time.
+ 1614	Cau sd 40: C teaching a group of older people to play an instrument.
+
+===== TRANG 21 =====
+  242	docs.google.com
+  271	G PDF - Google Drive
+  271	G Trang chu  Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	G VOL 5_ADVANCED - Google Drive
+  306	Ung dung nay dali thoiva phai dugc khoidong lai.Tat ca thay doicua ban da dugclu.
+  342	DAP AN READING VOL 8
+  345	2 Dang co giang ket ndi..
+  348	Yeu cau quyen chinh sura
+  349	Chia Se
+  349	Nang cap
+  362	Tep
+  361	Chinh sia Xem 
+  362	Cong cu Tro giup
+  420	Q1 hopper
+  431	Cac the trong tailisu
+  449	Passage C: This allowed seed to pass evenly from the hopper above to a funnel below.
+  464	目TEST1
+  463	From here, the seed was directed at regular intervals into three channels, or furrows, in the
+  478	earth.
+  493	TEST2
+  502	Q2 cylinder
+  522	TEST3
+  529	Passage C: In his device, as the main wheels of the drill turned, the cylinder rotated against
+  550	目TEST4
+  544	a spring-held tongue.
+  570	Q3 funnel
+  581	TEST 5
+  610	TEST6
+  609	From here, the seed was directed at regular intervals into three channels, or furrows, in the
+  624	earth.
+  638	目TEST7
+  649	Q4 Spikes
+  669	TEST8
+  675	Passage C: Spikes at the back of the machine then turned the soil over to immediately cover
+  689	the seeds.
+  715	Q5 broadcasting
+  741	Passage B: At that time seeds were stll thrown by hand across the field in a haphazard
+  754	manner, in a traditional method known as broadcasting.
+  779	Q6 vine-growing
+  821	Europe.
+  848	Q7 manure
+  873	Passage D: He wrongly believed that this practice would release enough nutrients in the soil
+  888	to nourish the crop, and so eliminate the need for manure to be used to fertilise the soil.
+  914	Q8 horses
+  939	Passage E: Tull also advocated the use of horses over the oxen.
+  964	Q9 NOT GIVEN
+  991	Passage A: He studied first at Oxford University and then at the Inns of Court, London, in
+ 1006	nrenaratinn fnr a leaal nr nnlitical career. However. ill health callserd him to nnstnnne thesa
+ 1068	docs.google.com
+ 1097	G PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1097	日 DAP AN READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1097	G VOL 5_ADVANCED - Google Drive
+ 1132	Ung dung naydaloi thoiva phai dugckhoidong lai.Tat ca thay doi cia ban dadugc luu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket ni..
+ 1176	Yeu cau quyen chinh sua
+ 1177	2, Chia Sé
+ 1176	Nang cip
+ 1189	Tep
+ 1187	Chinh siua
+ 1190	Xem
+ 1189	Cong cuTro giup
+ 1206	Q9 NOT GIVEN
+ 1231	Passage A: He studied first at Oxford University and then at the Inns of Court, London, in
+ 1257	Cac the trong tai lisu
+ 1262	plans.
+ 1289	TEST1
+ 1319	TEST 2
+ 1348	TEST3
+ 1378	TEST 4
+ 1405	目 TEST 5
+ 1436	TEST6
+ 1465	TEST7
+ 1479	Q10TRUE
+ 1495	目TEST8
+ 1522	a machine to do the work for him.
+ 1546	Q11TRUE
+ 1572	Passage D: However, tis morelikely thatit was the turning over and pulverisation of the soil
+ 1588	that cut down on the volume of weeds competing with the seed.
+ 1611	Q12FALSE
+ 1654	ridiculed, they were gradually adopted by large landowners, and in time, came to form the
+ 1668	basis of modem agriculture.
+ 1692	Q13NOT GIVEN
+ 1720	Passage E: The book caused great controversy when it appeared, and resistance to his
+ 1734	revolutionary theories persisted for many decades.
+ 1758	14 - F: Further evidence for this emerged in 1995, when researchers at Massachusetts
+ 1774	General Hospital isolated nerve cells from the SCN, and found they kept up a circadian cycle
+ 1788	without help from daylight. Finally in 1997, scientists at Northwestem University in Ilinois
+ 1803	found a gene that regulates the daily rhythms of cellular activity in mammals.
+ 1828	15 - D: In 1998, Dr Terence Hines of Pace University, New York State published the most
+
+===== TRANG 22 =====
+  242	docs.google.com
+  271	G PDF - Google Drive
+  271	G Trang chu  Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	G VOL 5_ADVANCED - Google Drive
+  305	Ung dung nay dalbithoiva phai duc khoidong lai Tat ca thay dgi cua ban da dugc lu.
+  342	DAP AN READING VOL 8
+  345	2 Dang co giang ket noi..
+  348	Yeu cau quyen chinh sura
+  348	 Chia Se
+  349	Nang cap
+  361	Tep
+  363	Chinh siraXem
+  362	Cong cu Tro giup
+  384	15 - D: In 1998, Dr Terence Hines of Pace University, New York State published the most
+  397	comprehensive study of the claims made for biorhythms, reviewing the results of over 130
+  413	investigations. He found that three-quarters of them failed to provide any support for
+  431	Cac the trong tailisu
+  427	biorhythms. Most of the remainder contained blunders ranging from faulty mathematics to
+  444	basic errors in statistics, while the handful of positive studies were explicable as flukes.
+  464	目TEST1
+  467	16 - A: Intrigued by the way some flowers open and close their leaves each day,
+  483	Jean-Jacques de Mairan put a heliotrope in a darkened room and observed the effect. He
+  493	TEST2
+  511	its leaves continued to open and close as if in response to some invisible timekeeper.
+  522	TEST3
+  537	17 - E: But there is no doubting the existence of 24-hour biological cycles  or, rather, ones
+  552	TEST 4
+  551	roughly 24 hours long. Following de Mairan's pioneering work, other researchers found that
+  565	when deprived of the cues provided by sunlight, organisms settle down to 'free-running'
+  581	TEST 5
+  578	cycles that are close to, but rarely exactly, 24 hours. In the case of humans, the cycle is
+  594	typically around 24.5 hours long.
+  610	TEST 6
+  618	18 - C: During the 1970s, best-selling books began to emerge claiming such phenomena
+  638	目TEST7
+  634	were manifestations of so-called biorhythms, a set of three cycles governing physical,
+  649	emotional and intellectual traits.
+  669	TEST8
+  868	19. daylight
+  908	the release of hormones like melatonin, which keep body functions in synchronization with
+  920	the time of day.
+  949	20. fruit flies
+  989	flies found evidence for something truly amazing-
+ 1068	docs.google.com
+ 1097	G PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1097	日 DAP AN READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1097	G VOL 5_ADVANCED - Google Drive
+ 1132	Ung dung nay dali thoi va phai dugc khoidong lai.Tat ca thay doicua ban da dugcluu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket ni...
+ 1176	Yeu cau quyen chinh sua
+ 1176	2 Chia Se
+ 1176	Nang cip
+ 1189	Tep
+ 1188	Chinh sua
+ 1189	Cong cu
+ 1190	Xem
+ 1211	21. genes
+ 1238	Passage F: Fruit flies appeared to have genes affecting the daily rhythm of their behavior
+ 1257	Cac the trong tai lisu
+ 1254	suggesting that there are ‘clocks' inside each of their cells
+ 1277	22. circadian cycle
+ 1289	TEST1
+ 1303	Passage F: Further evidence for this emerged in 1995, when researchers at Massachusetts
+ 1319	TEST 2
+ 1320	General Hospital isolated nerve cells from the SCN, and found they kept up a circadian cycle
+ 1334	without help from daylight.
+ 1348	TEST3
+ 1378	TEST 4
+ 1386	23, 24: C. an increase in casualties on the roads at specific times of day;
+ 1407	TEST5
+ 1411	D. a decline in efficiency on certain days in a number of fixed cycles
+ 1436	TEST 6
+ 1437	Giai thich:
+ 1465	TEST7
+ 1478	they generate prove dangerous: traffic accident statistics show two deadly peaks, at 4 a.m.
+ 1495	目TEST8
+ 1492	and again twelve hours later when people are at their least alert.
+ 1546	sub- optimal performance, with unfortunate consequences.
+ 1598	25, 26: C. the reason for living beings forming a connection with the Sun's rhythms;
+ 1624	D. the way in which all'clocks' in a single organism are able to stay in step with one
+ 1639	another
+ 1663	Giai thich:
+ 1690	Passage G: But how do all the biochemical °clocks' inside their cells stay in synchronization
+ 1704	and why did organisms bother to acquire a link with sunlight?
+
+===== TRANG 23 =====
+  242	docs.google.com
+  270	G PDF - Google Drive
+  271	G Trang chu  Google Drive
+  271	日 DAP AN READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  272	G VOL 5_ADVANCED - Google Drive
+  342	DAP AN READING VOL 8
+  344	2) Dang co gang ket noi..
+  349	Yeu cau quyen chinh sura
+  349	2 Chia Se
+  349	Nang cap
+  363	Tep
+  363	Chinh sira
+  363	Xem
+  361	Cong cu Tro giup
+  385	27 C
+  431	Cac the trong tailisu
+  438	28 A
+  464	目TEST1
+  465	Location: Many theories to date rely on an assumed association between brain size and
+  480	language abilities, without acknowledging the problem this creates: fossil evidence indicates
+  493	TEST 2
+  494	that the Neanderthals* had larger brains than modern humans, Homo sapiens, but
+  508	archaeological evidence indicates that the Neanderthals lacked a capacity for language.
+  522	TEST3
+  532	29A
+  552	TEST4
+  559	Location: Those authors have an important lesson to learn from Rousseau and other writers
+  581	TEST 5
+  573	of his time who addressed the origin of language.
+  598	30 D
+  610	TEST 6
+  626	Location: Linguist Derek Bickerton has made an important contribution towards our
+  640	目TEST7
+  654	the discussions that have occurred. But Bickerton's idea that the precursor of modern
+  669	TEST8
+  667	language consisted of words strung together with limited, if any, grammar is, Ibelieve
+  683	fundamentally mistaken.
+  707	31 C
+  734	Location: I believe this insight enables us to understand the origin of music as well as
+  749	language, and to relate both to the emotional lives of our human ancestors.
+  774	32 D.
+  772	Felt that the origin of language should not be debated.
+  800	Location: However, the debate became plagued by strange theories, so much so that in
+  814	1866 the influential Societe de Linguistique de Paris banned all discussions about the origin
+  829	of language.
+  855	33 H.
+  853	Referred to music in part of a book about the development of human beings.
+  882	Location: However, there are notable exceptions that should be acknowledged. One is the
+  895	aforementioned Charles Darwin who, in his 1871 book on human evolution, The Descent of
+  909	Man, devoted several pages to the development of music.
+  935	34 A.
+  934	Suggested music was an essential part of every individual.
+  960	Location: Another is the renowned ethnomusicologist John Blacking, whose 1973 book, How
+  975	Musical is Man?, broached the idea that music is an inherent and universal human quality.
+  999	35 B.Made no link between music and language in a comprehensive study.
+ 1068	docs.google.com
+ 1097	G PDF - Google Drive
+ 1097	G Trang ch - Google Drive
+ 1097	日 DAP AN READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai ligu
+ 1097	G VOL 5_ADVANCED - Google Drive
+ 1132	Ung dung nay dali thoi va phai dugc khoidong lai.Tat ca thay doicua ban da dugcluu.
+ 1171	DAP AN READING VOL 8
+ 1172	2 Dang co ging ket ni..
+ 1176	Yeu cau quyen chinh suta
+ 1176	2 Chia Se
+ 1176	Nang cip
+ 1189	Tep
+ 1188	Chinh sua
+ 1189	Cong cu
+ 1190	Xem
+ 1210	35 B.Made no link between music and language in a comprehensive study.
+ 1235	Location: In contrast, Morten Christiansen and Simon Kirby's book, Language Evolution
+ 1257	Cac the trong tailisu
+ 1251	(2000), which they conceived as a definitive book on the subject,' failed to mention music in
+ 1265	any of its 17 chapters.
+ 1290	TEST1
+ 1319	TEST 2
+ 1348	TEST3
+ 1378	TEST 4
+ 1407	TEST5
+ 1426	36 E.States that early language was made up of basic words used in an
+ 1436	TEST6
+ 1441	unsystematic way.
+ 1465	TEST7
+ 1466	Location: Linguist Derek Bickerton has made an important contribution towards our
+ 1495	TEST8
+ 1495	the discussions that have occurred. But Bickerton's idea that the precursor of modern
+ 1508	language consisted of words strung together with limited, if any, grammar is, Ibelieve
+ 1524	fundamentally mistaken.
+ 1548	37 G.E
+ 1549	Believes that proto-language had no individual words.
+ 1573	Location: By this she means that the precursor to language was a communication system
+ 1589	composed of messages' rather than words.
+ 1614	38A
+ 1641	Location: The first is an insufficient concern with the archaeological and fossil proof of the
+ 1655	brains and behaviour of our human ancestors.
+ 1679	39 D
+ 1707	Location: the second reason for limited progress: insufficient concem with the other major
+ 1723	aural and vocal communication system of modern humans: music.
+ 1746	40E
+ 1787	and indeed the human mind in general: an insufficient concem with emotion.
+
+===== TRANG 24 =====
+  241	巴<
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  270	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  347	1. TRUE
+  362	Cau hoi: The Ruamahanga River often floods.
+  377	(Song Ruamahanga thurong xuyen bj IO lut.)
+  389	Cac the trong tailieu
+  392	Doan chtra dap an:
+  406	The family farm borders the river and a four-metre-high flood bank testifies to its natural
+  423	TEST1
+  418	tendency to flood.
+  452	TEST2
+  449	cho thay xu hurong ty nhien cua con song la de bj ld.
+  460	Dap an: TRUE
+  482	TEST3
+  487	2.TRUE
+  501	cau hoi: When Tobin first found the object in the river, he mistook it for something
+  511	TEST 4
+  518	else.
+  529	(Khi Tobin lan dau tien tim thay vat the do duroi song, anh ta da nham no voi mot thi khac.)
+  540	TEST5
+  547	Doan chira dap an:
+  558	Tobin stepped out onto a broad shoulder of river sand, where he noticed what he initilly
+  569	TEST6
+  574	took to be a whitish rock, lit by the sun.
+  587	Tobin buocra mot dai cat rong ven song. noi anh chuy den mot vat the ma ban dau anh
+  598	TEST7
+  602	tuong la mot hon da mau trang, duroc anh nang chieu sang
+  617	→ Dap an: TRUE
+  627	目TEST8
+  640	3. FALSE
+  657	TEST9
+  656	Cau hoi: Tobin could not decide what part of the body the bone came from.
+  671	( Tobin khong the xac dinh duroc khuc xurong do thuoc phan nao cua co the.)
+  688	TEST10
+  685	Doan chura dap an:
+  698	As he picked it up, he saw it was a skull, discoloured with age.
+  716	目TEST11
+  713	Khi anh nhat no len, anh thay do la mot hop so da bi doi mau do thoi gian
+  728	Dap an: FALSE
+  754	4. NOT GIVEN
+  766	Cau hoi: Tobin's mother was surprised that the skull caused debate among
+  781	specialists.
+  796	(Me cua Tobin ngac nhien khi chiec so gay ra tranh luan giora cac chuyen gia)
+  812	Doan chira dap an:
+  825	Tobin replaced the skull and hurried home to tell his mother what the river had delivered to
+  853	some of the country's most respected specialists
+  881	den tan cura nha ho. Do hoa ra la mot phat hien ngoan muc, khoi dau cho mot cuoc dieu tra
+  894	cua nhong chuyen gia dang kinh nhat) cua dat nuroc
+  922	biet ve tranh luan gicra cac chuyen gia hay khong
+  938	→ Dap an: NOT GIVEN
+  963	5. POLICE
+  974	Cau hoi: Stage 2: The (5)
+  978	were initially involved in trying to explain the
+  991	presence of the skull.
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日 DAP AN READING VOL 8 - Google Tailiu
+ 1128	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1170	(Giai doan 2: (5),
+ 1170	 ban dau tham gia vao viec tim cach giai thich su xuat hien cua
+ 1184	chiec so.)
+ 1198	Doan chira dap an:
+ 1216	Cac the trong tai liu
+ 1213	The police were immediately called, but despite a thorough search could find nothing that
+ 1248	目 TEST1
+ 1243	appearance.
+ 1253	Canh sat lap tirc duoc goi den, nhung du da tim kiem kylurong, ho khong the lam sang to
+ 1268	duoc danh tinh cia hop so Ruamahanga hay hoan canh xuat hien dot ngot cia no
+ 1278	TEST2
+ 1282	+Dap an: police
+ 1307	TEST3
+ 1309	6. EUROPEAN
+ 1324	Cau hoi: Stage 4: Dr Koelmeyer suggested it was a (6)
+ 1320	skull
+ 1337	TEST4
+ 1338	(Giai doan 4: Bac si Koelmeyer cho rang do la mot chiec so,
+ 1350	Doan chua dap an:
+ 1366	TEST5
+ 1366	He then consulted with a colleague, Dr Koelmeyer, who believed that the deterioration of the
+ 1381	bone placed the time of death 'before living memory and, most significantly as it would turn
+ 1395	TEST6
+ 1394	out, the skull appeared to be European in origin.
+ 1423	目TEST7
+ 1423	huy cua xurong cho thay thoi diem t vong truroc ky oc song cua con nguroi, va dieu dang
+ 1437	chu y nhat la hop so durong nhu co nguon goc chau Au
+ 1453	目TEST8
+ 1452	→ Dap an: European
+ 1483	TEST9
+ 1476	7. Radiocarbon dating
+ 1491	Cau hoi: Stage 5: Dr Watt recommended (7)
+ 1492	to establish the skull's age
+ 1506	(Giai doan 5: Bac si Watt de nghi,
+ 1511	目TEST10
+ 1505	de xac djnh tuoi cua chiec so)
+ 1519	Doan chia dap an:
+ 1542	目TEST11
+ 1533	Wellington-based forensic anthropologist Dr Watalso examined the skull, and suggestedit
+ 1563	but was not certain, and proposed the use of radiocarbon dating to make sure it wasn't a
+ 1576	recent death.
+ 1589	Tien st Wat, mot nha nhan ching hoc phapylam viec tai Welington, cng kiem tra hops
+ 1618	con lai cia mot chon cat tren trang trai xura, nhung khong chac chan va de xuat su dung
+ 1632	phuong phap dinh tuoi bang carbon phong xa de xac dinh xem day co phaila cai chet gan
+ 1647	day hay khong
+ 1662	→ Dap an: radiocarbon
+ 1685	8. SAMPLE
+ 1702	Cau hoi: Stage 6: A bone (8).
+ 1702	was senttotheGNS
+ 1717	(Giai doan 6: Mot)
+ 1715	cua xurong da durqc gui toi GNS)
+ 1732	Doan chira dap an:
+ 1743	As a result, the Institute of Geological and Nuclear Sciences (GNS) in Lower Hutt was
+ 1759	contacted, and provided with a sample of bone that had originated in the top of the skull
+ 1773	Vi vay, Vien Khoa hoc Dja chat va Hat nhan (GNS) tai Lower Hutt durac lien he va nhan
+ 1787	duroc mot mau xurong tr phan dinh cua hop so
+ 1801	→ Dap an: sample
+
+===== TRANG 25 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  303	DAP AN READING VOL 8
+  307	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  346	9.296
+  363	Cau hoi: Stage 7: The age of the skull was about (9)
+  363	years
+  377	(Giai doan 7: Tuoi cuia chiec so la khoang
+  389	Cac the trong tailieu
+  394	Doan chira dap an:
+  423	TEST1
+  434	Trong su phuc tap roi ram cua phan tich khoa hoc, co mot dong cho noi bat tuoi carbon
+  452	TEST2
+  449	phong xa thong thurong khoang 296 nam
+  464	→ Dap an: 296
+  482	TEST3
+  488	10.RACE
+  511	TEST 4
+  503	Cau hoi:  Ruahahanga skull surprising because of its:
+  518	+age
+  540	TEST5
+  531	(oL)+
+  543	+gender
+  569	TEST6
+  560	(Chiec so Ruamahanga gay ngac nhien vi:
+  573	+tuoi
+  588	+ (10),
+  598	TEST7
+  601	+ gioi tinh)
+  627	目TEST8
+  619	Doan.chua.dap.an:
+  630	Thefascinating question,however,was howa skull of thisrace, let alonethis gender,had
+  646	reached these remote islands in the South Pacific at such a time
+  657	1TEST9
+  658	Nhung dieu hap dan la lam sao mot hop so thuoc chung toc nay lai xuat hien  cac hon dao
+  674	xa xoi thuoc Nam Thai Binh Duong vao thoi diem nhu vay
+  686	TEST10
+  689	Dap an: race
+  714	目TEST11
+  712	11.ARCHAEOLOGISTS
+  728	Cau hoi:  Evidence of this expedition found elsewhere by (11),
+  741	(Bang chong ve chuyen tham hiem nay duoc tim thay o noi khac boi,
+  758	Doan chra dap an:
+  771	However, it is unlikely the Ruamahanga skull originated from this expedition because no
+  785	evidence of Mendana's ships has ever been found in New Zealand, while a team of
+  799	archaeologists working in the Solomon Islands in 1970 did discover the remains of European
+  812	vessels dating from the 16th century.
+  840	chong nao ve tau cua Mendana tng den New Zealand, trong khi mot nhom nha khao co
+  854	hoc lam viec tai quan dao Solomon nam 1970 lai tim thay dau tich tau chau Au ti the ky 16
+  870	Dap an: archaeologist
+  895	12.AUSTRALIA
+  910	Cau hoi:  Hagerty and Edgar arrived in 1806 from (12)
+  909	where they had
+  923	been imprisoned
+  937	(Hagerty va Edgar den vao nam 1806 tir
+  939	 noi ho tirng bi giam gio)
+  955	Doan chira dap an:
+  980	Zealand, both having escaped from prison in Australia.Kathleen Hagerty and Charote
+  994	Edgar are known to have reached the country in 1806.
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1128	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sua
+ 1134	Chia Se
+ 1132	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1165	12. AUSTRALIA
+ 1181	Cau hoi:  Hagerty and Edgar arrived in 1806 from (12)
+ 1181	where they had
+ 1197	been imprisoned
+ 1209	(Hagerty va Edgar den vao nam 1806 tur,
+ 1216	Cac the trong tai liu
+ 1209	_ noi ho tirng bi giam gio)
+ 1226	Doan.chua.dap.an:
+ 1237	Two centuries were to pass before thefrst recorded European females arrived in New
+ 1248	目 TEST1
+ 1267	Edgar are known to have reached the country in 1806.
+ 1278	TEST2
+ 1281	Hai the ky sau, nhorng phu no chau Au dau tien den New Zealand  ca hai deu tron khoi
+ 1307	TEST 3
+ 1337	TEST4
+ 1366	TEST5
+ 1395	TEST6
+ 1423	目TEST7
+ 1453	目TEST8
+ 1462	1806
+ 1483	TEST9
+ 1478	Dap an: Australia
+ 1511	目TEST10
+ 1505	13.SHIPWRECK
+ 1518	Cau hoi: Ruamahange skull may have reached NZ in 17th century after a
+ 1540	目TEST11
+ 1533	(13)
+ 1547	(Chiec so co the da den New Zealand vao the ky 17 sau mot_
+ 1563	Doan chira dap an:
+ 1574	How then do we account for the Ruamahanga skull, which appears to be about 100 years
+ 1590	older than that? It is impossible to say with certainty, but the most likely explanation is that a
+ 1604	Spanish or Portuguese trading-hip was washed onto these wild shores as a result of a
+ 1619	shipwreck and a woman got ashore.
+ 1631	Vay lam sao giai thichdugchop so Ruamahanga,von co tubikhoang100 nam truroc do?
+ 1645	Khong the noi chac chan, nhung gia thuyet hoply nhat la mot con tau buon Tay Ban Nha
+ 1660	hoac Bo Dao Nha da bi dam tau va mot nguroi phu no da vao durc bo
+ 1675	Dap an: shipwreck
+ 1700	14. v
+ 1716	Doan chura dap an:
+ 1729	Some 10 million people in the UK suffer from hearing dificulties and, helpful as hearing
+ 1744	aids are, those who wear them often complain that background noise continues to interfere
+ 1758	with their understanding. But what if hearing aid wearers could choose to filter out all the
+ 1772	troublesome sounds and focus just on the voices they want to hear?
+ 1786	Engineer Dr Richard Turner believes that this is fast becoming a possibility. He is
+ 1799	developing a system that identifies the distracting noise and'rubs it out'. ‘The poor
+ 1813	performance in noise of current hearing devices is a majorreason why six million people in
+ 1828	the UK who would benefit from hearing aids do not use them,' he said.
+
+===== TRANG 26 =====
+  242	docs.google.com
+  271	 Google Drive
+  271	日READING VOL 8 -Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  272	M hienthanhnguyen1357@gmail.com - Gmail
+  271	日 DAP AN READING VOL 8 - Google Tailieu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  340	the UK who would benefit from hearing aids do not use them,' he said.
+  369	ich nhung ho van phan nan rang tieng on nen tiep tuc can tro kha nang nghe cua ho. Neu
+  389	Cac the trong tai liu
+  396	nghe thi sao?.
+  409	Ky su Tien st Richard Turner tin rang dieunay dang nhanh chong trothanh hien thuc. Ong
+  423	TEST1
+  426	dang phat trienhe thong co the nhan dien tieng on xaonhang va xoa bo ching.Hieu suat
+  452	TEST 2
+  456	may tro thinh lai khong su dung chung
+  470	→ Dap an: v. A drawback in the help currently available to those with hearing
+  482	TEST3
+  511	TEST 4
+  508	15.m
+  524	Doan chira dap an:
+  540	TEST5
+  538	Turner and his colleagues have analysed this process mathematically and then developed
+  569	TEST6
+  567	developed is capable of being 'trained'  a process that uses new methods from the field of
+  598	TEST7
+  595	relatively small set of statistics is sufficient to describe a large number of sounds' he says.
+  609	Crucially, the system that Turner and his team have come up with is capable of telling the
+  627	目TEST8
+  624	difference between speech and other types of sound.
+  657	TEST9
+  688	TEST10
+  716	目TEST11
+  806	thuat toan mo phong cach bo nao hoat dong. He thong nay co the duroc huan luyen bang
+  820	cac phurong phap moi trong linh vuc hoc may de no co the nhan dien am thanh moi. Chi
+  834	canmot tap hop nho cac so lieu thong ke la du de mo ta mot so lurong lon am thanh. Quan
+  864	→ Dap an: ili. Creating a model for the classification of sounds (Tao mo hinh de phan
+  879	loai am thanh)
+  903	16. ix
+  918	Doan chura dap an:
+  932	The idea is that future devices will have several different modes in which they can operate.
+  948	These might include a mode for travelling in a car or on a train, a mode for places like a
+  961	noisy party or a busy restaurant, a mode that can be used outdoors in windy weather, and so
+  975	on. The device might intelligently select an appropriate mode based on the characteristics of
+  989	the incoming sound.
+ 1003	Y turong  day la cac thiet bi trong turong lai se co nhieu che do hoat dong khac nhau.
+ 1068	docs.google.com
+ 1097	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	 Google Drive
+ 1097	日READING VOL 8 -Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1097	日 DAP AN READING VOL 8 - Google Tailieu
+ 1127	DAP AN READING VOL8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1164	Nhorng che do nay co the bao gom che do dung khi di chuyen bang o to hoac tau hoa, che
+ 1176	do danh cho nhong noi on ao nhu tiec tung hay nha hang dong khach, che do su dung
+ 1192	ngoai troi trong dieu kien nhieu gio, v.v. Thiet bi co the ty dong va thong minh lva chon che
+ 1216	Cac the trong tai liu
+ 1208	do pho hop dya tren dac diem cua am thanh dau vao.
+ 1222	→ Dap an: ix. The possibility of a hearing aid that can adjust itself to different
+ 1236	environments (Kha nang may tro thinh co the ty dieu chinh theo cac moi trurong khac
+ 1249	TEST1
+ 1250	nhau)
+ 1278	TEST 2
+ 1275	17. iv
+ 1292	Doan.chua.dap an:
+ 1303	Turmer anticipates that his team willneed two more years of simulating the effect of
+ 1307	TEST3
+ 1316	modifications that clean up sound before they start to work with device specialists. 'f these
+ 1337	TEST4
+ 1366	TEST5
+ 1361	Turner dy doan rang nhom cua ong se can them khoang hai nam nra de mo phong tac
+ 1374	dong cua cac dieu chinh nham lam sach am thanh,truroc khi bat dau hoptac voi cac
+ 1395	TEST6
+ 1388	chuyen gia ve thiet bi. Ong cho biet: "Neu cac thu nghiem ban dau nay dien ra thuan loi,
+ 1417	chinh quy trinh xiu ly cua ho, nham tich hop cac ky thuat hoc may nay.*
+ 1423	目TEST7
+ 1453	目TEST8
+ 1446	trien tiem nang van can nghien cru them)
+ 1471	18. vii
+ 1483	TEST9
+ 1486	Doan chira dap an:
+ 1501	Tinnitus sufferers, who are plagued by a constant ringing in their ears, could also benefit
+ 1512	TEST10
+ 1514	from the technology. At present, people with tinnitus sometimes use environmental sound
+ 1528	generators as a distraction from the ringing in their ears. But such generators offer only a
+ 1542	TEST11
+ 1542	limited selection of sounds a gently flowing stream, waves lapping on the seashore, or
+ 1556	leaves rusting. With the new technology individual patients could select the best soundto
+ 1572	distract them from their tinnitus.
+ 1586	Nhorng nguroi mac chong  tai, nhorng nguroi bj am anh boi tieng 0 lien tuc trong tai, cing
+ 1784	ugqow bu Bugo iooex oex Keo eiKe q  ugiq Buos“su Keo igns Buop nu
+ 1798	nhan co the ty chon am thanh phu hop nhat de lam giam trieu chong cua minh
+ 1812	Dap an: vi. A more effective way to take attention away from a hearing problem
+
+===== TRANG 27 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8-Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  345	19. I
+  361	Doan chua dap an:
+  371	The technology not only holds promisefor helping the hearing impaired, but it also has the
+  389	Cac the trong tai liu
+  423	TEST1
+  418	Systems that can deal with unwanted audio content would also be welcomed by the
+  452	TEST2
+  459	cai thien cuoc goi dien thoai. Bat ky ai tirng co gang tro chuyen tir can phong dong dic deu
+  475	se nhan ra loi ich nay. Cac he thong co the xi ly noi dung am thanh khong mong muon
+  482	TEST3
+  511	TEST 4
+  504	video
+  516	→ Dap an: i. Uses for Turner's research in media and communications (U'ng dung
+  540	TEST5
+  557	20. identical
+  569	TEST6
+  571	Cau hoi: Although sounds are never
+  572	, he believes they do share some
+  587	similarities.
+  598	TEST7
+  597	(Mac du cac am thanhkhong bao giod
+  598	, ong tin rang chung van co mot so diem
+  614	turong dong.)
+  627	目TEST8
+  630	Doan chira dap an:
+  657	TEST9
+  657	is never repeated. Nonetheless, there must be statistical similarities in the sounds of these
+  688	TEST10
+  684	may be able to group similartypes of sounds together based on their specific characteristics.
+  700	"Khong co hai am thanh mua nao hoan toan giong nhau, boi vi su sap xep chinh xac cua
+  715	目TEST11
+  728	dong mang tinh thong ke giora am thanh cua cac giot mua nay so voi, chang han, tieng lach
+  742	tach cua lira.' Ong cho rang vi ly do do, nao bo co the phan loai va nhom cac loai am thanh
+  755	turong tv lai voi nhau dva tren nhong dac diem rieng biet cua chung.
+  771	Dap an: identical
+  796	21. algorithms
+  810	Cau hoi: He and his colleagues have worked on a mathematical system using 21
+  825	which replicate how we hear sounds
+  836	(Ong va cac dong nghiep da phat trien mot he thong toan hoc si dung.
+  837	demo
+  853	phong cach chung ta nghe am thanh)
+  869	Doan chira dap an:
+  880	Turner and his colleagues have analysed this process mathematically and then developed
+  896	algorithms that mimic what the brain is doing.
+ 1068	docs.google.com
+ 1097	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	 Google Drive
+ 1097	日READING VOL 8-Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1127	DAP AN READING VOL8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1169	thuat toan mo phong cach bo nao hoat dong
+ 1183	→ Dap an: algorithms
+ 1216	Cac the trong tai liu
+ 1211	22. statistics
+ 1225	Cau hoi: To allow this system to be “trained', they have applied procedures used in
+ 1249	TEST1
+ 1240	machine learning and found that many different sounds can be described using a
+ 1255	limitednumberof
+ 1266	(De he thong nay co the duroc huan luyen', ho da ap dung cac quy trinh cia hoc may va
+ 1278	TEST 2
+ 1280	phat hien rang nhieu loai am thanh khac nhau co the dugc mo ta bang mot so luong han
+ 1296	che cac.
+ 1307	TEST3
+ 1310	Doan chura dap an:
+ 1323	'Rather surprisingly, it seems that a relatively small set of statistics is sufficient to describe a
+ 1337	TEST4
+ 1339	large number of sounds' he says.
+ 1351	"Dieu kha bat ngo la durong nhur chi can mot tap hop thong ke turong doi nho cing di de
+ 1366	TEST5
+ 1367	mo ta mot so lurong lon cac loai am thanh, ong noi.
+ 1379	Dap an: statistics
+ 1395	TEST 6
+ 1405	23.speech
+ 1421	Cau hoi: They have now developed a system that can distinguish,
+ 1423	目TEST7
+ 1421	from other
+ 1435	sounds
+ 1448	(Hien nay, ho da phat trien mot he thong co the phan biet.
+ 1453	目TEST8
+ 1449	voi cac am thanh khac)
+ 1466	Doan.chua.dap.an:
+ 1483	TEST9
+ 1478	Crucially, the system that Turner and his team have come up with is capable of telling the
+ 1492	difference between speech and other types of sound.
+ 1512	TEST10
+ 1505	Quan trong nhat, he thong nay co the phan biet loi noi khoi cac loai am thanh khac.
+ 1521	→ Dap an: speech
+ 1542	TEST11
+ 1545	24. B
+ 1559	Cau hoi: Turner's team are now planning a new development involving a device which
+ 1572	could
+ 1589	A.
+ 1589	allow sound to be heard at a greater distance.
+ 1605	B.
+ 1602	adapt itself to different kinds of background noise.
+ 1618	C.
+ 1618	allow a user to remove all types of sound completely.
+ 1632	adapt itself to disorders involving other senses.
+ 1646	(Nhom cua Turner hign dang len ke hoach cho mot buroc phat trien moi lien quan den
+ 1658	mot thiet bj co the
+ 1674	cho phep am thanh duroc nghe  khoang cach xa hon.
+ 1689	B.
+ 1688	ty dieu chinh de phu hop voi cac loai tieng on nen khac nhau.
+ 1703	C.
+ 1703	cho phep nguoi dung loai bo hoan toan moi loai am thanh.
+ 1716	tu dieu chinh de xu ly cac roi loan lien quan den cac giac quan khac.)
+ 1733	Doan chira dap an:
+ 1744	The idea is that future devices will have several different modes in which they can operate.
+ 1774	noisy party or a busy restaurant, a mode that can be used outdoors in windy weather, and so
+ 1788	on. The device might intelligently select an appropriate mode based on the characteristics of
+ 1802	the incoming sound.
+ 1814	Y turong la cac thiet bi trong turong lai se co nhieu che do hoat dong khac nhau. Nhong che
+ 1830	do nav co the bao aom ch do dina khi di chuven bana  to hoac tau hda. ch do danh cho
+
+===== TRANG 28 =====
+  241	巴<
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 -Google Tai lieu
+  271	日READING VOL 8 -Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL8
+  308	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  337	Y turong la cac thiet bi trong turong lai se co nhieu che do hoat dong khac nhau. Nhong che
+  352	do nay co the bao gom che do dung khi di chuyen bang o to hoac tau hoa, che do danh cho
+  389	Cac the trong tailiu
+  423	TEST1
+  452	TEST2
+  482	TEST3
+  511	TEST 4
+  540	TEST5
+  535	trong dieu kien nhieu gio, vv. Thiet bi co the ty dong va thong minh lua chon che do pho
+  551	hop dua tren cac dac diem cua am thanh dau vao.
+  569	TEST6
+  564	→ Dap an: B
+  589	25.A
+  598	TEST7
+  603	Cau hoi: In the 5th section,a stream, waves and leaves are examples of the sounds
+  627	目TEST8
+  619	that tinnitus sufferers
+  633	can currently use to help their condition.
+  648	B.
+  647	might choose to use if they were available.
+  657	TEST9
+  662	C.
+  661	hear in their ears as a result of their condition.
+  676	D.
+  675	find to be the most natural solutions to their problem.
+  688	TEST10
+  690	(Trong phan tho 5, tieng suoi, song bien va la xao xac la nhong am thanh ma nguroi
+  703	bj o tai
+  716	目TEST11
+  717	hien nay co the si dung de ho trq tinh trang cua minh.
+  733	B.
+  732	co the lva chon su dung neu nhong am thanh do co san.
+  748	C.
+  746	nghe thay trong tai do tinh trang benh cua ho gay ra.
+  762	D.
+  760	cho la nhong giai phap ty nhien nhat cho van de cua minh.)
+  776	Doan chua dap an:
+  804	distraction from the ringing in their ears. But such generators offer only a limited selection of
+  859	cap mot so lva chon am thanh han che, chang han nhu tieng suoi chay nhe, tieng song v
+  873	bo bien hoac tieng la xao xac.
+  890	→ Dap an: A
+  914	26.A
+  927	Cau hoi: The writer refers to 'a busy roadside on a windy day'in the 6th section to
+  944	illustrate that
+  956	unwanted noise could be erased from video recordings.
+  971	B.
+  972	some environments are dificult for the hearing-impaired.
+  986	when noises are combined in a video they are difficult to erase.
+  999	D.
+ 1000	people must cooperate in order to leam how to apply the technology.
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 -Google Tai lieu
+ 1097	日READING VOL 8 -Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1128	DAPAN READINGVOL8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1163	when noises are combined in a video they are dificult to erase.
+ 1180	D.
+ 1192	(Tac gia de cap den “mot con durong dong duc trong ngay nhieu gio"o phan thi 6
+ 1216	Cac the trong tai liu
+ 1208	nham minh hoa rang
+ 1219	A.tieng on khong mong muon co thé bi xoa khoi cac ban ghi hinh.
+ 1236	mot so moi trurong gay kho khan cho nguroi khiem thinh.
+ 1248	目TEST1
+ 1249	khi nhieu loai tieng on ket hop trong mot doan video thi rat kho loai bo.
+ 1264	D.
+ 1265	(Keu bu Bugo Bunp de yoe cou p neu on se doy ugo onbu uoo
+ 1278	TEST2
+ 1292	Doan chia dap an:
+ 1307	TEST3
+ 1319	windy day could be made more intelligible by isolating the speech from the noises  users
+ 1337	TEST4
+ 1333	could even be offered the chance to de-noise their video during the upload process.
+ 1347	Vi du, mot doan video ghi lai cuoc tro chuyen dien ra ben mot con durong dong duc vao
+ 1366	TEST5
+ 1395	TEST6
+ 1423	目TEST7
+ 1453	目TEST8
+ 1483	TEST9
+ 1511	目TEST10
+ 1529	am xung quanh - nguroi dung tham chi con co the duqc cung cap tuy chon khu tieng on cho
+ 1542	目TEST11
+ 1545	video ngay trong qua trinh tai len.
+ 1560	→ Dap an: A
+ 1583	27. F
+ 1599	Cau hoi: The executive committee that organises the event is made up of pre-service
+ 1614	teachers who receive
+ 1612	from HKIEd staff.
+ 1628	(Ban dieu hanh to churc su kien gom cac giao sinh, nhong nguoi nhan duroc
+ 1642	doi ng giang vien cua HKIEd.)
+ 1655	Doan chira dap an:
+ 1683	committee. They are advised by tutors in the Business Studies Division and some of them
+ 1699	are selected to act as TEC instructors.
+ 1711	Vao dau nam hoc, cac giao sinh nay thanh lap mot ban dieu hanh, Ho duoc cac giang vien
+ 1727	cua Khoa Nghien cru Kinh doanh tu van, va mot so nguroi trong so ho durac lva chon de
+ 1741	dam nhiem vai tro giang vien hurong dan cua TEC.
+ 1756	advised by tutors = receive guidance
+ 1768	→ Dap an: F guidance (sv hurong dan, su co van)
+ 1794	28.J
+ 1809	Cau hoi: The
+ 1810	of the programme include giving secondary school students
+ 1824	the opportunity to get involved in authentic business tasks
+
+===== TRANG 29 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  270	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日 DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  307	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  347	28.J
+  364	Cau hoi: The
+  363	of the programme include giving secondary school students
+  376	the opportunity to get involved in authentic business tasks
+  389	Cac the trong tailieu
+  407	cac nhiem vu kinh doanh mang tinh thurc te)
+  423	TEST1
+  421	Doan chira dap an:
+  435	It has the following key objectives: to enable secondary school business students to
+  452	TEST2
+  450	integrate their conceptual leaming with real business practices; to promote a collaborative
+  462	approach to enterprise education; and to build up formal links between HKIEd, schools and
+  479	entrepreneurs.
+  482	TEST3
+  511	TEST 4
+  505	ket hop kien thoc ly thuyet voi thyc tién kinh doanh., thoc day phuong phap tiep can hop
+  519	tac trong giao duc khoi nghiep., xay dyng moi lien ket chinh thoc giora HKIEd, trurong hoc
+  540	TEST5
+  532	va cac doanh nhan.
+  550	objectives = aims
+  569	TEST6
+  563	Dap an: J aims (cac muc tieu)
+  587	29. K
+  598	TEST7
+  603	Cau hoi: and developing a
+  603	consisting of the institute, local business people,
+  627	目TEST8
+  618	and schools.
+  631	(va phat trien mot.
+  630	bao gom vien, cac doanh nhan dja phuong va cac trurong hoc.)
+  645	Doan chira dap an:
+  657	TEST9
+  658	It has the following key objectives: to enable secondary school business students to
+  674	integrate their conceptual leaming with real business practices; to promote a collaborative
+  686	TEST10
+  687	approach to enterprise education; and to build up formal links between HKIEd, schools and
+  703	entrepreneurs.
+  714	目TEST 11
+  731	ket hop kien thoc ly thuyet voi thurc tien kinh doanh., thic day phurong phap tiep can hop
+  745	tac trong giao duc khoi nghiep., xay dung moi lien ket chinh thorc giora HKIEd, truong hoc
+  915	va cac doanh nhan.
+  929	→ Dap an: K network (mang luoi)
+  953	30. D
+  967	Cau hoi: Before meeting the teams, the instructors go to
+  967	,where theydevelop
+  984	practical skills...
+  994	(truroc khi gap cac doi, cac giang vien hurong dan se den,
+  997	, noi ho duac ren luyen
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1128	DAP AN READING VOL 8
+ 1133	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1161	30. D
+ 1175	Cau hoi: Before meeting the teams, the instructors go to
+ 1176	,where theydevelop
+ 1187	practical skills...
+ 1204	(truroc khi gap cac doi, cac giang vien hurong dan se den
+ 1205	, noi ho duqc ren luyen
+ 1216	Cac the trong tai liu
+ 1218	cac ky nang thvc hanh...)
+ 1235	Doan.chuza.dap.an:
+ 1248	目TEST1
+ 1245	These instructors attend a series of training sessions that cover the concepts of
+ 1261	entrepreneurship and practical skills for business start-ups.
+ 1278	TEST2
+ 1290	ve khoi nghiep va nhong ky nang thurc hanh can thiet cho viec thanh lap doanh nghiep
+ 1304	training sessions = workshops
+ 1307	TEST 3
+ 1318	→ Dap an: D workshops (cac budi tap huan)
+ 1337	TEST4
+ 1343	31. H
+ 1366	TEST5
+ 1358	Cau hoi... and are taught a range of entrepreneurial
+ 1371	(va duoc giang day nhieu
+ 1371	ve khoi nghiep.)
+ 1395	TEST 6
+ 1388	Doan chira dap an:
+ 1399	These instructors attend a series of training sessions that cover the concepts of
+ 1414	entrepreneurship and practical sills for business start-ups.
+ 1423	目TEST7
+ 1442	ve khoi nghiep va nhong ky nang thvc hanh can thiet cho viec thanh lap doanh nghiep
+ 1453	目TEST8
+ 1455	concepts = theories
+ 1470	→ Dap an: H theories (cac ly thuyet)
+ 1483	TEST9
+ 1496	32. B
+ 1511	目TEST10
+ 1511	Cau hoi: The competition requires teams to come up with a new business
+ 1512	for
+ 1525	the Chinese New Year.
+ 1540	目TEST11
+ 1540	(Cuoc thi yeu cau cac doi dura ra mot
+ 1540	kinh doanh moi cho dip Tet Nguyen dan.)
+ 1556	Doan chira dap an:
+ 1567	Over a three-month period, the teams are required to brainstorm an innovative business
+ 1583	start-up that is suitable for the Chinese New Year.
+ 1597	Trong khoang thoi gian ba thang, cac nhom duroc yeu cau cung nhau dong nao de xay
+ 1625	business start-up = venture
+ 1639	 Dap an: B venture (doanh nghiep khoi nghiep)
+ 1664	33. NO
+ 1679	Cau hoi: The questionnaire results indicated that relatively few participants were
+ 1694	satisfied with their performance in TEC.
+ 1723	trong TEC.)
+ 1738	Doan chira dap an:
+ 1749	In a recent evaluation survey, most participants ranked themselves in the satisfactory
+ 1779	business.
+
+===== TRANG 30 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8-Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  356	Trong mot cuoc khao sat danh gia gan day, hau het nhorng nguroi tham gia ty xep minh vao
+  369	nhom co murc do thuc hien cong viec dat yeu cau va cho rang ho da dat duoc cac ky nang
+  389	Cac the trong tai liu
+  385	thuc tien de van hanh mot doanh nghiep nho.
+  399	→ Dap an: NO
+  423	TEST1
+  424	34.YES
+  440	Cau hoi: One participant was initially tempted to withdraw from the competition.
+  452	TEST2
+  454	(Mot nguroi tham gia ban dau da bi cam do muon rut khoi cuoc thi.)
+  469	Doan chia dap an:
+  482	TEST3
+  481	For example, one participant reflected: 1 initially received a lot of criticism and even thought
+  495	about giving up. However, Ieventually learned to work in a systematic way.
+  511	TEST 4
+  510	Vi du,mot nguroi tham gia chia se: Ban dau toi nhan duoc rat nhieu loi chi trich va tham
+  525	chi da tirng nghi den viec bo cuoc. Tuy nhien, cuoi cung toi da hoc duroc cach lam viec mot
+  540	TEST5
+  539	cach co he thong.'
+  554	→ Dap an: YES
+  569	TEST6
+  580	35. NOT GIVEN
+  598	TEST7
+  594	Cau hoi:Schoolteachers believed that some oftheirstudents werebettersuitedto
+  607	taking part in the competition than others.
+  627	目TEST8
+  622	(Giao vien tin rang mot so hoc sinh phu hop voi cuoc thi hon nhong hoc sinh khac.)
+  638	Doan.chua.dap.an:
+  657	1TEST9
+  649	In addition, the school teachers stated that TEC was a good platform in thatit enabled their
+  688	TEST10
+  679	views on the promising future of TEC
+  691	Ngoaira,cac giao vien trong trurong chobietTECla mot nen tang tot vichuong trinh nay
+  716	目TEST11
+  707	cho phep hoc sinh tham gia vao cac hoat dong kinh doanh. Ho cho rang ty le bo hoc bang
+  749	pho hop hon ai
+  762	→ Dap an: NOT GIVEN
+  786	36.YES
+  804	Cau hoi: School teachers thought that participants sustained interest in the
+  817	programme confirmed their positive opinion of it
+  831	(Giao vien nghi rang viec hoc sinh duy tri hung th voi chuong trinh da khang dinh danh
+  847	gia tich cuc cua ho.)
+  861	Doan chua dap an:
+  890	TEC
+  900	Ho chorang ty Ie bo hoc bang khong laminh chong rorang, cing co quan diem cia ho ve
+  917	tuong lai day hra hen cia TEC.
+  931	Dap an: YES
+  956	37. A
+  972	Cau hoi In the sixth paragraph what point does the writer make about the TEC
+  985	programme?
+ 1001	A.
+ 1000	The programme enabled participants to put theory into practice.
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8-Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1176	37.A
+ 1190	Cau hoi: In the sixth paragraph what point does the writer make about the TEC
+ 1205	programme?
+ 1216	Cac the trong tai liu
+ 1218	The programme enabled participants to put theory into practice.
+ 1234	B.
+ 1234	There is lttle agreement on how sustainable the programme is.
+ 1248	目 TEST1
+ 1278	TEST 2
+ 1307	TEST3
+ 1337	TEST4
+ 1366	TEST5
+ 1395	TEST 6
+ 1406	The participants evaluations of the programme were inconsistent.
+ 1422	D.
+ 1423	目TEST7
+ 1420	The programme showed how little participants knew about business.
+ 1434	(Trong doan van tho sau, tac gia dura ra quan diem gi ve churong trinh TEC?
+ 1449	A.
+ 1453	目TEST8
+ 1448	Churong trinh cho phep nguroi tham gia ap dung ly thuyet vao thyc tien.
+ 1463	B.
+ 1462	Co rat it su dong thuan ve moc do ben vong cua churong trinh.
+ 1478	C.
+ 1483	TEST9
+ 1477	Cac danh gia cia nguroi tham gia ve chuong trinh khong nhat quan.
+ 1491	Churong trinh cho thay nguroi tham gia biet rat it ve kinh doanh.)
+ 1512	TEST10
+ 1516	Doan chia dap an:
+ 1542	TEST11
+ 1545	learning with real business situations. The research studies that were carried out indicated
+ 1558	that the school students taking part in TEC were able to apply entrepreneurial knowledge
+ 1574	gained in their studies to the authentic business situations created by the programme. In
+ 1588	fact, participants not only succeeded in doing this, but also increased their overall
+ 1602	understanding of business enterprise.
+ 1615	Mot trong nhong muc tieu la tao cohoi chonguoitham gia ket hopkien thorcmang tinh
+ 1645	nhong hoc sinh tham gia churong trinh TEC co kha nang van dung kien thorc khoi nghiep da
+ 1657	hoc vao cac bbi canh kinh doanh thuc te do churong trinh tao ra, Tren thuc te, nhong nguoi
+ 1671	tham gia khong chi lam duoc dieu nay ma con nang cao hieu biet tong the cia ho ve hoat
+ 1687	dong kinh doanh
+ 1701	→ Dap an: A
+ 1725	38. C
+ 1740	Cau hoi: In the sixth paragraph what point does the writer make about the TEC
+ 1754	programme?
+ 1783	There is litle agreement on how sustainable the programme is.
+ 1799	c.
+ 1798	The participants evaluations of the programme were inconsistent.
+ 1813	D.
+ 1812	The programme showed how lite participants knew about business.
+
+===== TRANG 31 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 -Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sua
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  342	Doan.chua dap an:
+  354	From the very start of the programme considerable emphasis was placed on collaboration
+  389	Cac the trong tailieu
+  423	TEST1
+  426	Ngay tor khi churong trinh bat dau, sy hop tac va lam viec nhom da duroc dac biet nhan
+  452	TEST2
+  470	chung xay ra. Qua trinh nay doi hoi moi nguroi tham gia phai chju trach nhiem voi vai tro
+  482	TEST3
+  511	TEST 4
+  540	TEST5
+  569	TEST6
+  598	TEST7
+  627	目TEST8
+  657	1TEST9
+  666	→ Dap an: C
+  688	TEST10
+  692	39. D
+  716	目TEST11
+  706	Cau hoi: What does the writer say about TEC's connections with the business world?
+  722	Entrepreneurs offered valuable professional advice.
+  738	B.
+  737	There were a few communication problems with the entrepreneurs.
+  752	C.
+  751	Some entrepreneurs were unwilling to provide a suitable venue.
+  765	D.
+  765	Entrepreneurs helped to make the programme workable in terms of costs.
+  779	(Tac gia noi gi ve moi lien he cua TEC voi gioi kinh doanh?
+  793	Cac doanh nhan da dura ra nhorng loi khuyen chuyen mon co gia trj.
+  807	B.
+  807	Co mot so van de trong giao tiep voi cac doanh nhan.
+  823	C.
+  835	D.
+  834	Cac doanh nhan da giup chuong trinh co the van hanh duroc ve mat chi phi.)
+  863	Doan chua dap an:
+  876	Local entrepreneurs acted as sponsors and had an important role in ensuring the
+  889	programme was financially viable
+  903	Cac doanh nhan dja phurong dong vai trola nha taitro va gio vai tro quan trong trong viec
+  918	dam bao churong trinh co the van hanh ben vong ve mat tai chinh.
+  932	Dap an: D
+  957	40. D
+  973	Cau hoi: According to the final paragraph, the Hong Kong Institute of Education
+  989	A.
+  987	has voted to continue offering the programme
+ 1003	B.
+ 1001	was central in securing support from community groups
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 -Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1128	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sua
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1175	Cac doanh nhan da dua ra nhorng loi khuyen chuyen mon co gia trj.
+ 1177	A.
+ 1189	B.
+ 1189	Co mot so van de trong giao tiep voi cac doanh nhan.
+ 1216	Cac the trong tai liu
+ 1217	D.
+ 1216	Cac doanh nhan da giup chuong trinh co the van hanh duroc ve mat chi phi.)
+ 1248	目 TEST1
+ 1244	Doan chua dap an:
+ 1278	TEST 2
+ 1271	programme was financially viable
+ 1285	Cac doanh nhan dja phurong dong vai tro la nha tai tro va gio vai tro quan trong trong viec
+ 1300	dam bao churong trinh co the van hanh ben vong ve mat tai chinh.
+ 1307	TEST3
+ 1315	→ Dap an: D
+ 1337	TEST4
+ 1339	40. D
+ 1353	Cau hoi: According to the final paragraph, the Hong Kong Institute of Education
+ 1366	TEST5
+ 1371	A.
+ 1369	has voted to continue offering the programme
+ 1384	B.
+ 1382	was central in securing support from community groups
+ 1395	TEST 6
+ 1398	C.
+ 1397	has improved its reputation as a result of the programme
+ 1410	was a useful link between the other contributors
+ 1413	D.
+ 1423	目TEST7
+ 1426	(Theo doan van cudi cung, Vign Giao duc Hong Kong
+ 1442	A.
+ 1440	da bo phieu quyet djnh tiep tuc trien khai churong trinh
+ 1453	目TEST8
+ 1454	B.
+ 1453	gio vai tro trung tam trong viec gianh duoc su ho tro ti cac nhom cong dong
+ 1469	C.
+ 1467	da cai thien danh tieng cua minh nho churong trinh
+ 1483	TEST9
+ 1483	D.
+ 1482	la cau noi horu ich giora cac ben dong gop khac)
+ 1498	Doan chira dap an:
+ 1511	目TEST10
+ 1509	The second tier was an organisational level that mainly consisted of the participating
+ 1525	schools and the HKIEd. The contribution of the teacher training institute was to provide
+ 1542	目TEST11
+ 1539	logistical support for implementing the programme, including the provision of a venue and a
+ 1552	credible point of contact between the schools and the committee.
+ 1566	Tang thhai la cap do to chuc, chu yeu bao gom cac trurong tham gia va Vien Giao duc
+ 1580	Hong Kong (HKIEd),Dong gop cia vien dao tao giao vien nay la cung cap sy ho trq ve mat
+ 1596	hau can cho viec trien khai churong trinh, bao gom viec cung cap dja diem va dong vai tro la
+ 1609	dau moi lien he dang tin cay gioa cac trurong va ban dieu phoi
+ 1625	→ Dap an: D
+ 1805	￥TEST10
+
+===== TRANG 32 =====
+  241	巴<
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sua
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  338	1.FALSE
+  350	Cau hoi: An inspection fee on fish oil was introduced in New York in 1818.
+  366	(Mot khoan phi kiem tra ddi voi dau ca da duroc ban hanh o New York vao nam 1818.)
+  389	Cac the trong tai liu
+  380	Doan chua dap an:
+  395	In 1818 a whale became the subject of a controversial court case in New York City. The
+  408	case involved an old law requiring those who sold fish oil to pay a fee in order to have their
+  423	TEST1
+  422	barrels inspected by city officials, and certified
+  436	Nam 1818, mot con ca voi tro thanh ch de cia mot vu kien gay tranh cai taithanh pho
+  452	TEST2
+  466	mot khoan phi de cac thung dau cua ho duoc quan choc thanh pho kiem tra va chung nhan.
+  480	Giai thich: *Dao luat co" nghia la no da duoc ban hanh truroc 1818.
+  482	TEST3
+  511	TEST 4
+  507	Dap an: FALSE
+  540	TEST5
+  531	2.TRUE
+  546	Cau hoi: Samuel Judd argued that the inspection fee should exclude whale oil.
+  569	TEST6
+  560	(Samuel Judd lap luan rang phi kiem tra khong nen ap dung doi voi dau ca voi.)
+  576	Doan chira dap an:
+  588	However, an oil merchant named Samuel Judd refused to pay the inspection fee on three
+  598	TEST7
+  603	barrels of oil, claiming that no inspection was necessary because it was whale oil, and
+  617	whales were not fish
+  628	TEST8
+  630	Tuy nhien, mot thurong nhan buon dau ten la Samuel Judd da tir choi tra phi kiem djnh cho
+  644	ba thung dau, cho rang viec kiem tra la khong can thiet vi do la dau ca voi, ma ca voi thi
+  657	TEST9
+  659	khong phai la ca.
+  673	→ Dap an: TRUE
+  687	TEST10
+  699	3.NOT GIVEN
+  716	目TEST11
+  714	Cau hoi: Judd had been in trouble with city officials before the inspection fee
+  727	disagreement.
+  741	(Truroc tranh cai ve phi kiem tra, Judd da ting gap rac roi voi chinh quyen thanh pho.)
+  756	Giai thich: Khong co thong tin nao trong bai noi Judd tirng gap rac roi truroc do.
+  769	Dap an: NOT GIVEN
+  795	4.TRUE
+  811	Cau hoi: Many New Yorkers were interested in the court case at the time.
+  824	(Nhieu nguroi dan New York vao thoi diem do rat quan tam den vu kien.)
+  841	Doan chira dap an:
+  853	Indeed, the public debate in New York sparked off by the trial was sensational.
+  882	dong du luan.
+  895	→ Dap an: TRUE
+  921	5. TRUE
+  935	Cau hoi: Traditionally, non-human creatures had been classified in one of three
+  951	groups.
+  962	(Theo truyen thong, cac sinh vat khong phai con nguoi duoc phan loai vao mot trong ba
+  978	nhom.)
+  993	Doan chua dap an:
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1180	according to the categories of birds, beasts and fish.
+ 1192	Trong suot khoang thoi gian dai ma con nguoi con co the nho duqc, tat ca cac sinh vat
+ 1216	Cac the trong tai liu
+ 1207	khong phai con nguroi deu durgc phan loai theo cac nhom: chim, thu va ca.
+ 1223	→ Dap an: TRUE
+ 1248	目TEST1
+ 1247	6. NOT GIVEN
+ 1261	Cau hoi:Generally speaking,ordinarypeoplethoughtfish were thelowestformoflife.
+ 1278	TEST 2
+ 1276	(Noi chung. nguroi binh thurong cho rang ca la dang song thap kem nhat.)
+ 1289	Giai thich: Khong co thong tin nao trong bai nhac den dieu nay
+ 1304	Dap an: NOT GIVEN
+ 1307	TEST3
+ 1337	TEST4
+ 1329	7.FALSE
+ 1344	Cau hoi: Whales were excluded from the Linnaean system in 1818.
+ 1366	TEST5
+ 1359	(Ca voi bj loai khoi he thong phan loai Linnaeus vao nam 1818.)
+ 1374	Doan chura dap an:
+ 1395	TEST6
+ 1386	Barely half a century old in 1818, the Linnaean system controversially classified whales as
+ 1402	mammals because they shared two mammalian characteristics: they were warm-blooded
+ 1423	目TEST7
+ 1416	and breathed air.
+ 1428	Vao nam 1818,khi moi chi ton tai chura day nua the ky,he thong phan loai cia Linnaeus da
+ 1444	gay tranh cai khi xep ca voi vao nhom dong vat co vo vi chung co hai dac diem cua loai nay:
+ 1454	TEST8
+ 1457	la dong vat mau nong va ho hap bang khong khi.
+ 1472	→ Dap an: FALSE
+ 1481	TEST9
+ 1498	8. lecturer
+ 1514	TEST10
+ 1512	Cau hoi: Samuel Mitchill worked as a congressman and a
+ 1526	(Samuel Mitchill lam viec voi tu cach la mot ngh si va mot
+ 1542	TEST11
+ 1542	Doan chira dap an:
+ 1555	Referred to as a 'living encyclopaedia' and a walking library', Mitchill was a renowned
+ 1568	natural history lecturer at the College of Physicians and Surgeons who liked to dare his
+ 1583	students to test his knowledge of the natural world.
+ 1610	ty nhien noi tieng tai Truong Cao dang Y si va Phu thuat, nguoirat thich thach thuc sinh
+ 1626	vien kiem tra kien thorc cua ong ve the gioi ty nhien.
+ 1641	Dap an: lecturer
+ 1667	9. whalers
+ 1680	Cau hoi: William Sampson called
+ 1680	as witnesses in order to appeal to the
+ 1693	common sense of the jury
+ 1708	(William Sampson da goi,
+ 1708	lam nhan chung nham danh vao le thurong cia boi
+ 1722	tham doan.)
+ 1737	Doan chura dap an:
+ 1750	Lead counsel Wiliam Sampson turned the trial into a contest between scientific learning
+ 1778	Luat suchinh William Sampsondabienphien toa thanh mot cuocdoi daugica trithoc
+ 1807	diem cia ho truoc boi tham doan.
+ 1822	→ Dap an: whalers
+
+===== TRANG 33 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  270	 Google Drive
+  271	日READING VOL 8-Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL8
+  308	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  340	10.Europe
+  354	Cau hoi: New Yorkers disliked Mitchill because his ideas came from
+  369	(Nguroi dan New York khong thich Mitchill vi cac y turong cua ong xuat phat tur
+  389	Cac the trong tailieu
+  398	Doan chira dap an:
+  411	The smooth-talking Sampson then claimed Mitchill's beliefs had their origin in Europe 
+  423	TEST1
+  452	TEST2
+  453	nguon goc tir chau Au, dieu ma ong doan ding la se khien nhong cong dan luon de cao tinh
+  468	doc lap cua New York trc gian.
+  482	TEST3
+  480	Dap an: Europe
+  511	TEST 4
+  510	11. merchants
+  522	Cau hoi: In the end it was statements from local
+  522	not Mitchill's testimony,
+  540	TEST5
+  537	which helped Judd win
+  552	(Cudi cung, chinh loi khai cua cac
+  551	dja phurong, cho khong phai loi chong cua
+  569	TEST6
+  564	Mitchill, da giup Judd gianh chien thang.)
+  582	Doan.chua dap.an:
+  598	TEST7
+  609	not the same: whale oil could be used as a fuel for lamps because it could be burned without
+  628	TEST8
+  623	giving off smoke; fish oil, on the other hand, was nasty, impure stuff used primarily in tanning
+  636	leather. In the end it was this testimony that led to Judd's victory.
+  657	TEST9
+  664	giong nhau: dau ca voi co the dung lam nhien liu choden vikhidot khong taorakhoi,trong
+  678	khi dau ca thi ban va khong tinh khiet, chu yeu duoc dung trong viec thuoc da. Cuoi cung.
+  688	TEST10
+  693	chinh loi chong thuc nay da dan den chien thang cua Judd.
+  716	目TEST11
+  708	Dap an: merchants
+  733	12. fuel
+  747	Cau hoi: Whale oil made a good 12
+  747	because it was clean
+  762	(Dau ca voi la mot loai.
+  761	tot vi no sach khi dot.)
+  778	Doan chira dap an:
+  790	In New York's markets, the merchants implicitly understood that whale oil and fish oil were
+  805	not the same: whale oil could be used as a fuel for lamps because it could be burned without
+  819	giving off smoke; fish oil, on the other hand, was nasty, impure stuff used primarily in tanning
+  832	leather. In the end it was this testimony that led to Judd's victory.
+  860	giong nhau: dau ca voi co the dung lam nhien lieu choden vikhidot khong taorakhoi,trong
+  874	khi dau ca thi ban va khong tinh khiet, chu yeu duoc dung trong viec thuoc da. Cuoi cung.
+  890	chinh loi chong thuc nay da dan den chien thang cua Judd.
+  905	Dap an: fuel
+  931	13. climate
+  944	Cau hoi: Judd's case is relevant today, e.g. in the debate about Earth's
+  955	(Vu kien cia Judd van con y nghia cho den ngay nay, vi du nhu trong cuc tranh luan ve
+  972	cua Trai Dat.)
+  987	Doan.chira dap an:
+ 1001	Whether the issue today is the effects of human activity on the climate of this planet, or one
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8-Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sua
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1167	of many other contemporary topics, the legacy of Judd's case continues to be of relevance.
+ 1181	Du van de ngay nay la tac dong cua hoat dong con nguroi len khi hau Trai Dat hay bat ky
+ 1196	chu de durong dai nao khac, di san cua vu an Judd van tiep tuc co y nghia.
+ 1216	Cac the trong tai liu
+ 1211	→ Dap an: climate
+ 1235	14. D
+ 1248	目 TEST1
+ 1249	Cau hoi: a reference to the interest shown by large corporations in herbal remedies
+ 1264	(mot su de cap den viec cac tap doan lon the hien su quan tam toi cac san pham thao
+ 1278	TEST2
+ 1279	duoc)
+ 1293	Doan chtra dap an:
+ 1307	TEST 3
+ 1308	Natural health products are big sellers in pharmacies, and global pharmaceutical companies
+ 1322	are buying up natural supplement brands or developing their own.
+ 1337	TEST4
+ 1334	Cac san pham cham soc suc khoe ty nhien ban rat chay tai cac hieu thuoc, va cac tap
+ 1366	TEST5
+ 1361	ty phat tien san pham cia rieng ho.
+ 1379	→ Dap an: D
+ 1395	TEST6
+ 1403	15.A
+ 1423	目TEST7
+ 1418	Cau hoi: examples of the uses ofone particular herbal medicine
+ 1432	(vi du ve cong dung cua mot loai thuoc thao duroc cu the)
+ 1454	TEST8
+ 1448	Doan chira dap an:
+ 1460	Take arnica for example, a popular pharmaceutical herb used to treat bruises and joint
+ 1482	TEST9
+ 1473	problems
+ 1488	Lay arnica lam vi dumot loaithao duoc duoc hoc pho bien durgc dung de dieu tri vet
+ 1502	bam tim va cac van de ve khop.
+ 1514	TEST10
+ 1516	→ Dap an: A
+ 1542	TEST11
+ 1543	16.F
+ 1558	Cau hoi: a warning that small companies cannot afford stricter controls of the herbal
+ 1573	medicine industry
+ 1601	ngat hon trong nganh thao duroc)
+ 1616	Doan chira dap an:
+ 1629	But others argue that more regulation would be prohibitively expensive for all but the largest
+ 1658	of business.
+ 1668	Nhung nhong nguroikhac cho rang viec tang cuong quan ly se vo cung ton kem doi voitat
+ 1686	ca cac nha san xuat, ngoai tru nhong cong ty lon nhat  mot sy thay doi ma Clair canh bao
+ 1699	rang rat co the se khien mot so doanh nghiep dja phurong phai dong cura.
+ 1715	→ Dap an: F
+ 1738	17.E
+ 1753	Cau hoi: a statement by one expert about the effectiveness and limitations of herbal
+ 1768	medicines
+ 1781	(mot phat bieu cia chuyen gia ve hiu qua va nhong gioi han cia thuoc thao duoc)
+ 1798	Doan chura dap an:
+ 1809	"t doesn't do everything, he says,"but there's a lot it does do, particularly in terms of
+ 1824	preventative health care.
+
+===== TRANG 34 =====
+  241	docs.google.com
+  271	 Google Drive
+  271	日READING VOL 8 -Google Tai liu
+  271	日READING VOL 8 - Google Tai liu
+  272	M hienthanhnguyen1357@gmail.com - Gmail
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sua
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sita
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  340	* No khong lam duroc moi tho, ong noi, “nhung co rat nhieu viec no lam duroc, dac biet la
+  355	trong linh vuc cham soc surc khoe mang tinh phong ngura.*
+  370	→ Dap an: E
+  389	Cac the trong tailiu
+  395	18. pain
+  409	Cau hoi: Originally, the Maori people consumed plants to help deal with
+  410	and
+  423	TEST1
+  422	also as a food.
+  438	(Ban dau, nguoi Maori su dung thurc vat de giup doi pho voi,
+  438	va dong thoi lam thuc
+  452	TEST 2
+  452	pham.)
+  467	Doan chira dap an:
+  482	TEST3
+  495	stocked with edible plants that were an obvious source of nutrition, but that were taken for
+  511	TEST 4
+  508	the relief of pain as well.
+  522	Doi voinguroi Maorithoiky daunhong cu dan ban dja dau tien cua New Zealand,rng
+  540	TEST5
+  536	chura rat nhieu loai cay co the an duqc, von la nguon dinh duong ro rang, nhung dong thoi
+  552	cing duroc su dung de giam dau.
+  569	TEST 6
+  567	→ Dap an: pain
+  598	TEST7
+  591	19.book
+  603	Cau hoi:When Europeans settled in the country,a
+  605	by James Neil
+  628	TEST8
+  620	showed that some of them also recognized the medicinal value of native plants
+  633	(Khi nguroi chau Au djnh cu tai dat nuroc nay, mot
+  633	cua James Neil cho thay rang
+  655	TEST9
+  664	Doan chira dap an:
+  677	While the earliest European doctors in New Zealand relied on imported dried herbs, many
+  687	TEST10
+  691	were keen to include native plants in their practices: in his book published in 1891, herbalist
+  715	目TEST 11
+  706	James Neil described manuka and koromiko as among New Zealand's most valuable herbs.
+  720	Trong khi cac bac si chau Au dau tien  New Zealand chu yeu dyra vao cac loai thao moc
+  734	kho nhap khau, nhieu nguroi rat muon dua cac loai cay ban dja vao vicc dieu trj. Trong cuon
+  748	sach xuat ban nam 1891, nha thao durgc hoc James Neil da mo ta manuka va koromiko la
+  762	mot trong nhong duroc lieu quy gia nhat cua New Zealand.
+  777	Dap an: book
+  802	20. law
+  815	Cau hoi:Thefollowing year,the use ofherbal medicines was mademoredifficult
+  832	becauseofanew
+  831	and for a time in the mid-2oth century, they were largely
+  843	ignored
+  859	(Nam sau do, viec su dung thuoc thao duroc tro nen kho khan hon vi mot,
+  859	moi, va
+  873	trong mot thoi gian vao gioa the ky 20, chung hau nhu bj lang quen.)
+  889	Doan chira dap an:
+  914	govermment passed a controversial law that had the effect of restricting traditional herbal
+  929	practice, or pushing it underground.
+  957	me hon. Nam 1908, chinh phu thong qua mot daoluat gay tranh cai, co tac dung han ch
+  972	viec hanh nghe thao duoc truyen thong hoac day no vao hoat dong ngam.
+  988	Dap an: law
+ 1068	docs.google.com
+ 1097	Google Drive
+ 1097	日READING VOL 8-Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailigu
+ 1127	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sua
+ 1134	Chia Se
+ 1135	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1164	21.course
+ 1181	Cau hoi: Then in the 1980s a number of institutions started offering a
+ 1182	in the
+ 1210	(Sau do, vao nhorng nam 1980, mot so co so bat dau mo
+ 1216	Cac the trong tai lieu
+ 1210	ve linh vurc nay, mac du
+ 1223	trong nhieu nam van con rat it bang chong chong minh hiou qua cua chung.)
+ 1249	TEST1
+ 1240	Doan.chura.dap.an:
+ 1253	But a centuries-old tradition was not going to disappear so easily, and in the 1980s the
+ 1278	TEST 2
+ 1281	several polytechnics around the country.
+ 1293	Tuy nhien,mot truyen thong co lich si hang the ky khong de gi bien mat. Vao nhong nam
+ 1307	TEST3
+ 1308	1980, NZAMH duqc khoi phuc, va nguoi hoc co the hoan thanh mot khoa hoc ve y hoc thao
+ 1322	duroc tai nhieu trurong bach khoa tren khap dat nuroc.
+ 1337	TEST4
+ 1339	Dap an: course
+ 1366	TEST 5
+ 1362	22.A
+ 1377	Cau hoi: There ought to be restrictions on where you can buy some herbal medicines.
+ 1396	TEST 6
+ 1392	(Can co han che ve noi nguroi tieu dung co the mua mot so loai thudc thao duroc.)
+ 1408	Doan.chua.dap. an:
+ 1425	TEST7
+ 1420	According to Rasmussen, some herbs should require a prescription from a suitably qualified
+ 1434	medical herbalist or doctor.
+ 1454	TEST8
+ 1446	Theo Rasmussen,mot so loaithao duoc nen duroc yeu cau co don ke timot chuyen gia
+ 1462	thao duoc y hoc hoac bac si co trinh do phu hop.
+ 1482	TEST9
+ 1477	Dap an: A Phil Rasmussen
+ 1501	23. B
+ 1513	TEST10
+ 1517	Cau hoi: The authorities stopped supporting one project without a good reason.
+ 1531	(Chinh quyen da ngung h5 trq mot dy an ma khong co ly do chinh dang.)
+ 1542	TEST11
+ 1547	Doan chira dap an:
+ 1560	However, the initiative was stopped in its tracks when the govermment abruptly halted
+ 1574	funding for the research programmer. It was an unjustified move, according to agronomist
+ 1588	Malcolm Douglas, based on a number of inaccurate views about weed invasion.
+ 1601	Tuy nhien, sang kien nay da bj chan dong khi chinh phu dot ngot ngung tai tro cho chuong
+ 1617	trinh nghien coru. Theo nha nong hoc Malcolm Douglas, day la mot quyet djnh thieu co so,
+ 1630	xuat phat tir nhieu quan diem khong chinh xac ve su xam lan cuia co dai.
+ 1645	Dap an: B  Malcolm Douglas
+ 1669	24.D
+ 1685	Cau hoi: The herbal medicine industry has an effect on the environment where some
+ 1698	plant-based medicines are found.
+ 1712	(Nganh cong nghiep thuoc thao duroc co tac dong den moi trurong noi mot so durqc lieu co
+ 1727	nguon goc thuc vat duoc tim thay)
+ 1742	Doan chira dap an:
+ 1756	'The great majority of these are harvested from the wild, so they each have an impact on
+ 1770	their local ecosystem.'She gives the example of elm trees in the USA ringbarked and
+ 1783	stripped for the growing market for a product called 'slippery elm': this endangered tree
+ 1797	should be protected.
+ 1811	"Phan lon cac loai nay duoc thu hai truc tiep ti ty nhien, vi vay moi loai deu tac dong den
+ 1827	he sinh thai dja phurong." Ba dua ra vi du ve cay du  My bi khoanh vo va lot vo de phuc vu
+
+===== TRANG 35 =====
+  241	巴<
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  336	thi trurong dang phat trien cua mot san pham goi la "cay du tron'; loai cay dang bj de doa
+  352	nay can duroc bao ve.
+  366	→ Dap an: D  Isla Burgess
+  389	Cac the trong tai liu
+  391	25.A
+  405	Cau hoi: New Zealand has the human resources and natural environment to grow
+  423	TEST1
+  421	herbs commercially.
+  434	(New Zealand co nguon nhan lvc va dieu kien ty nhien de trong thao duroc voi quy mo
+  452	TEST2
+  451	thurong mai.)
+  464	Doan chira dap an:
+  482	TEST3
+  491	excellent growing conditions and expertise there, according to Phil Rasmussen, a
+  511	TEST 4
+  505	pharmacist and medical herbalist.
+  540	TEST5
+  533	duoc, da tren dieu kien trong trot tuyet voi va chuyen mon san co tai day,theo Phil
+  549	Rasmussen  mot durgc s va chuyen gia thao duoc y hoc.
+  569	TEST6
+  563	Dap an: A Phil Rasmussen
+  585	26.C
+  598	TEST7
+  602	Cau hoi: It is essential for herbal medicines to have international certification, despite
+  618	the cost.
+  628	TEST8
+  630	(Viec thuoc thao duroc co chong nhan quoc te la dieu can thiet, mac d chi phi cao.)
+  647	Doan chira dap an:
+  657	TEST9
+  674	but necessary if you want to export herbal remedies to the rest of the world.
+  687	TEST10
+  686	Dieu nay cing dung voi cac san pham do Sandra Clair san xuat. Ba cho biet viec dam bao
+  701	chat luong nhu vay rat ton kem, nhung la dieu can thiet neumuon xuat khau cac san pham
+  716	目TEST11
+  716	thao duroc ra thj trurong the gioi.
+  731	Dap an: C  Sandra Clair
+  753	27. NO
+  771	Cau hoi: Scientists and chefs have a long-established history of working together.
+  784	(Cac nha khoa hoc va dau bep da co lich su hop tac lau doi voi nhau.)
+  801	Doan chira dap an:
+  812	There is a recent movementin the world offood, in which chefs are collaborating with
+  842	Gan day co mot xu hurong trong linh vuc am thuc, trong do cac dau bep hop tac voi cac
+  856	nha khoa hoc de ty hoc ve hoa hoc va vat ly cua am thuc.
+  870	Giai thich: Bai nhan manh day la phong trao gan day, truroc do hai linh vuc nay tach biet,
+  884	khong phai hop tac lau doi.
+  898	ON ue deG
+  923	28.NO
+  939	Cau hoi: Traditional ways of cooking tend to be supported by modern scientific
+  951	research.
+  964	(Cac phurong phap nau an truyen thong thurong duoc khoa hoc hien dai ing ho.)
+  983	Doan chira dap an:
+  994	You may wonder what's wrong with long established culinary traditions. Thefact is, many
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1097	日DAP AN READING VOL 8 - Google Tailiu
+ 1127	DAP AN READING VOL8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1171	culturally ingrained cooking methods are less than perfect.
+ 1181	Banco thethacmacrang nhong truyen thong nauanlaudoithi co van de gi. Thuctla
+ 1198	nhieu phurong phap nau an an sau trong van hoa lai khong that sv hoan hao.
+ 1216	Cac the trong tai liu
+ 1212	Giai thich: Khoa hoc hien dai bac bo nhieu niem tin nau an truyen thong, khong ung ho.
+ 1225	Dap an: NO
+ 1248	目 TEST1
+ 1250	29.YES
+ 1267	Cau hoi: The food produced by Heston Blumenthal at The Fat Duck is unconventional.
+ 1278	TEST 2
+ 1283	Doan chira dap an:
+ 1294	(Cac mon an do Heston Blumenthal tao ra tai nha hang The Fat Duck la khong theo I6i
+ 1307	TEST3
+ 1310	truyen thong.)
+ 1325	The restaurant is widely regarded as one of the best in the world, serving delightfully
+ 1337	TEST4
+ 1339	unexpected dishes such as nitro scrambled egg and bacon ice cream.
+ 1351	Nha hang nay duoc danh gia rong rai la mot trong nhong nha hang tot nhat the gioi,phuc
+ 1366	TEST5
+ 1380	xong khoi.
+ 1395	TEST6
+ 1395	→ Dap an: YES
+ 1423	目TEST7
+ 1417	30.NOT GIVEN
+ 1435	Cau hoi: EI Bull is the most popular restaurant of its kind in Spain.
+ 1454	TEST8
+ 1450	(EI Bulli la nha hang noi tieng nhat cung loai & Tay Ban Nha.)
+ 1466	Doan.chua.dap.an:
+ 1482	TEST9
+ 1477	EI Bulli in Catalonia, Spaindirected by chef Ferran Adriais another leading restaurant
+ 1492	thus enthusiastically engaging with scientific techniques. It closes for six months of the year
+ 1514	TEST10
+ 1506	(to allow six months for research and development), yet is rumoured to be booked out for an
+ 1521	entire year in advance.
+ 1542	TEST11
+ 1533	EI Bullivung Catalonia,Tay Ban Nhado dau bep Ferran Adria dieu hanhla mot nha
+ 1548	hang hang dau khac cing nhiet tinh ap dung cac ky thuat khoa hoc. Nha hang nay dong
+ 1562	cura sau thang moi nam (de danh sau thang cho viec nghien cou va phat trien), nhung van
+ 1577	durc don doan la kin cho truroc cho ca mot nam.
+ 1605	Ban Nha
+ 1619	Dap an: NOT GIVEN
+ 1645	31.NOT GIVEN
+ 1660	Cau hoi: McGee has plans to open his own restaurant.
+ 1674	(McGee co ke hoach mo nha hang rieng cua minh.)
+ 1690	Doan chira dap an:
+ 1717	food, a wave that grew and grew, and knocked down the barriers between science and
+ 1731	cooking, especially in the last decade
+ 1758	cang gia tang doi voi am thuc, motlan song lon dan len va pha vo nhong rao can gira khoa
+ 1774	hoc va nau an, dac biet la trong thap ky vira qua."
+ 1786	Giai thich: Bai chi noi McGee la tac gia/nha khoa hoc thuc pham, khong he de cap den viec
+ 1800	Ong mo nha hang.
+ 1816	Dap an: NOT GIVEN
+
+===== TRANG 36 =====
+  242	docs.google.com
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  272	M hienthanhnguyen1357@gmail.com - Gmail
+  271	日DAP AN READING VOL 8 - Google Tailiu
+  301	DAP AN READING VOL 8
+  308	Yeu cau quyén chinh sua
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  340	32.C
+  356	Cau hoi: The purpose of Herve This's research is to
+  386	A.
+  389	Cac the trong tai liu
+  383	determine how chemistry has influenced modern cooking.
+  400	B.
+  400	provide a scientific basis for traditional cooking methods.
+  413	show that long held beliefs about cooking are wrong.
+  423	TEST1
+  430	D.
+  427	offer practical advice to those who cook at home.
+  441	(Muc dich nghien coru cua Herve This la de
+  452	TEST 2
+  456	xac dinh cach hoa hoc da anh huong den nau an hien dai nhu the nao.
+  472	B.
+  470	cung cap co so khoa hoc cho cac phurong phap nau an truyen thong.
+  482	TEST3
+  485	C.
+  485	chong minh rang nhong niem tin lau doi ve nau an la sai.
+  499	D.
+  499	dura ra loi khuyen thuc te cho nhorng nguoi nau an tai nha.)
+  511	TEST 4
+  524	Doan choa dap an:
+  540	TEST5
+  539	Herve This, director of the Molecular Gastronomy team at the French National Institute for
+  569	TEST6
+  565	Herve This, giam doc nhom Nghien ciru Am thuc Phan ti tai Vien Nghien cu Nong nghiep
+  580	Quoc gia Phap, danh phan lon thoi gian cia minh de tim cach bac bo nhong quan niem dan
+  598	TEST7
+  592	gian sailam trong ndu an.
+  609	→ Dap an: C
+  628	TEST8
+  634	33.A
+  657	TEST9
+  650	Cau hoi: According to Peter Barham, one difference between cookery books and
+  663	scientific papers is that
+  679	A.
+  687	TEST10
+  678	scientific papers are checked by more people.
+  693	B.
+  693	the writers of cookery books need not be qualified.
+  708	C.
+  716	目TEST11
+  707	the language used in scientific papers is more complicated.
+  722	D.
+  721	recipe writers can profit more financially than scientific writers
+  734	(Theo Peter Barham,mot diem khac bit giora sach day nau an va cac bai bao khoa
+  748	hoc la
+  765	A.
+  763	cac bai bao khoa hoc duroc nhieu nguoi kiem tra hon.
+  778	B.
+  792	C.
+  791	ngon ngo durgc su dung trong cac bai bao khoa hoc phorc tap hon.
+  807	D.
+  820	viet khoa hoc.)
+  846	Doan chira dap an:
+  859	Barham contends thatit'sdificult to get consistent resultsfrom cookery books,because
+  875	recipes are typically poorly writen. In stark contrast, he notes, scientific papers are subject
+  889	to peer review, whereby experts pore over experiments to ensure they can be accurately
+  902	reproduced.
+  959	cac thi nghiem de dam bao chung co the duoc tai tao mot cach chinh xac.
+  975	→ Dap an: A
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日DAP AN READING VOL 8 - Google Tai lizu
+ 1128	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sura
+ 1134	& Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sira
+ 1148	Xem
+ 1147	Tro giup
+ 1162	34.B
+ 1177	Cau hoi: Nicholas Kurti referred to a souffle in order to
+ 1193	give an example of a dish that can easily be ruined by excess heat.
+ 1207	B.
+ 1205	highlight the inadequacy of scientific research into cooking.
+ 1216	Cac the trong tailieu
+ 1221	show that cooking is similar to other scientific processes.
+ 1222	C.
+ 1235	confess his own limitations as a cook.
+ 1248	目TEST1
+ 1247	(Nicholas Kurti nhac den mon souffle nham
+ 1263	dua ra vi du ve mot mon an co the d dang bi hong do nhiet do qua cao.
+ 1277	B.
+ 1278	TEST2
+ 1277	lam noi bat sy thieu sot cia nghien coru khoa hoc ve nau ain.
+ 1291	C.
+ 1291	cho thay rang nau an turong ty nhu cac qua trinh khoa hoc khac.
+ 1307	TEST3
+ 1307	D.
+ 1337	TEST4
+ 1332	Doan chiha dap an:
+ 1345	Kurti once quipped that "it is a sad reflection that we know the temperature inside the stars
+ 1366	TEST5
+ 1360	better than the temperature inside a souffle."
+ 1396	TEST6
+ 1388	cac vi sao con ro hon nhiet do ben trong mot chiec banh souffle."
+ 1403	→ Dap an: B
+ 1425	TEST7
+ 1427	35.c
+ 1442	Cau hoi: One aspect of Rachel Edwards Stuart's research involves
+ 1453	目TEST8
+ 1457	A.
+ 1457	matching solid food to complementary liquids.
+ 1482	TEST9
+ 1485	studying how food changes form in certain conditions.
+ 1498	evaluating the risk of damage from using preservatives in food.
+ 1514	TEST10
+ 1513	(Mot khia canh trong nghien ciru cia Rachel Edwards-Stuart lien quan den
+ 1528	A.ket hop thuc pham ran voi cac loai chat long phu hop.
+ 1541	目 TEST 11
+ 1541	B. xac dinh nhong mui vi nao hap dan gioi tre.
+ 1557	C.
+ 1555	nghien coru cach thuc pham thay doi hinh dang trong nhorng dieu kien nhat dinh.
+ 1570	D.
+ 1569	danh gia nguy co gay hai do viec so dung chat bao quan trong thuc pham.)
+ 1596	Doan chira dap an:
+ 1610	Rachel Edwards Stuart is a graduate PhD student who is studying some remarkable food
+ 1637	are cooled. The idea is to make dishes that develop different flavours as they are eaten. Her
+ 1653	other project is creating drinks that change flavour.
+ 1667	Rachel Edwards Stuart la mot nghien coru sinh tien si dang nghien coru mot so phu gia thurc
+ 1680	pham rat dac biet, bao gom cac loai gel cellulose bien ddi co the dong lai khi durgc dun nong
+ 1708	qua trinh thuong thic. Du an khac cia co la tao ra cac loai do uong co hurong vi bien doi.
+ 1722	Dap an: C
+ 1748	36.E
+ 1764	Cau hoi: Colin Osborne explains that
+ 1777	(Colin Osbome giai thich rang.
+ 1794	Doan chura dap an:
+ 1805	Colin Osborne of the Royal Society of Chemistry in London is enthusiastic: Chefs are using
+ 1821	unusual methods to produce exciting dishes that would be impossible without modem
+
+===== TRANG 37 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai lisu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  303	DAP AN READING VOL 8
+  307	Yeu cau quyén chinh sura
+  308	& Chia Se
+  308	Nang cip
+  321	Tep
+  320	Chinh sura
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  338	science," he says.
+  351	Colin Osborne thuoc Hiep hoi Hoa hoc Hoang gia tai London to ra vo cung hao hong: Cac
+  365	dau bep dang su dung nhong phurong phap khac thurong de tao ra cac mon an day kich
+  379	thich, nhong dieu ma neu khong co khoa hoc hien dai thi khong the lam duoc,' ong noi.
+  389	Cac the trong tailieu
+  396	→ Dap an: E. science has helped cooks make meals that would otherwise be
+  423	TEST1
+  420	thi khong the lam duoc.)
+  452	TEST2
+  445	37.C
+  462	Cau hoi: Herve This's research has led him to the view that
+  477	(Nghien coru cua Herve This da dan ong den quan dim rang.
+  482	TEST3
+  511	TEST4
+  502	Doan chaa dap an:
+  517	"The first modern chemists used kitchen equipment to do their experiments, Herve This
+  539	目TEST5
+  530	explains. Since then, chemistry has undergone massive changes  but cooking methods
+  546	have remained largely as they were in the Middle Ages."
+  558	Jui yuey ugy gp dg eu no Bunp oe bunp s ep uen nep lep uoiy soy eoy eu Bugn.
+  569	TEST6
+  585	cac phurong phap nau an thi van gan nhu khong thay doi ke tir thoi Trung Co."
+  598	TEST7
+  602	→ Dap an: C. cooking has failed to keep pace with scientific developments. (C. nau
+  615	an da khong theo kip su phat trien cia khoa hoc)
+  628	TEST8
+  641	38.G
+  656	目 TEST9
+  657	Cau hoi: Thanks to the joint effort of Nicholas Kurti and Herve This,
+  671	(Nho su hop tac chung cia Nicholas Kurti va Herve This,
+  688	TEST10
+  686	Doan chura dap an:
+  699	Kurti and Herve This devised the expression 'molecular gastronomy' during the 1980s to
+  714	目TEST11
+  713	denote the science of culinary transformations and eating phenomena, and differentiate it
+  728	from food science.
+  741	Kurti va Herve This da dat ra thuat ngo *am thuc phan ti* vao nhong nam 1980 de chi
+  770	no voi khoa hoc thurc pham.
+  784	→+ Dap an: G. there is new terminology to describe the study of culinary reactions.
+  797	(G. da co thuat ngo moi de mo ta viec nghien curu cac phan ng trong nau an.)
+  825	39.A
+  838	Cau hoi: Food writer Harold McGee says that
+  852	(Nha van viet ve am thuc Harold McGee cho rang.
+  865	Doan chira dap an:
+  894	agrees author Harold McGee, a top food science writer.
+  909	"Cach day hai muroi nam, the gioi khoa hoc va nau an van hoan toan tach biet," tac gia
+  924	Harold McGee  mot cay bit hang dau ve khoa hoc thuc pham  dong tinh.
+  938	→ Dap an: A. there used to be a clear division between cooking and science. (A.
+  952	truroc day da tirng co su phan chia ro rang giora nau an va khoa hoc.)
+  977	40.D
+  992	Cau hoi: Rachel Edwards Stuart gives an example of a case where
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai lisu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日DAp AN READING VOL 8 - Google Tai lizu
+ 1129	DAP AN READING VOL 8
+ 1134	Yeu cau quyen chinh sura
+ 1134	&Chia Se
+ 1132	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sua
+ 1148	Xem
+ 1147	Tro giup
+ 1159	Cau nol: Food writer Harold McGee says that
+ 1174	(Nha van viet ve am thurc Harold McGee cho rang.
+ 1191	Doan chua dap an:
+ 1203	"Twenty years ago the worlds of science and cooking were neatly compartmentalised,"
+ 1216	Cac the trong tailieu
+ 1217	agrees author Harold McGee, a top food science writer.
+ 1231	"Cach day hai muroi nam, the gioi khoa hoc va nau an van hoan toan tach bist," tac gia
+ 1248	目 TEST1
+ 1244	Harold McGee  mot cay but hang dau ve khoa hoc thuc pham  dong tinh.
+ 1260	Dap an: A. there used to be a clear division between cooking and science. (A.
+ 1277	目TEST2
+ 1274	truroc day da tirng co su phan chia ro rang giora nau an va khoa hoc.)
+ 1298	40.D
+ 1307	TEST3
+ 1313	Cau hoi: Rachel Edwards Stuart gives an example of a case where
+ 1335	目TEST4
+ 1366	TEST5
+ 1395	TEST6
+ 1423	目TEST7
+ 1453	目 TEST8
+ 1483	TEST9
+ 1488	(Rachel Edwards-Stuart dua ra mot vi du ve trurong hop ma
+ 1512	TEST10
+ 1503	Doan chtra dap an:
+ 1514	-The concept came from Roald Dah's children's book Charlie and the Chocolate Factory.
+ 1531	where Willy Wonka makes a bubble gum that is a whole meal in one sweet," she says.
+ 1542	目TEST11
+ 1559	Dahl, trong do Willy Wonka tao ra mot vien keo cao su co the thay the ca mot bra an," co
+ 1574	noi.
+ 1588	Dap an: D. an imaginary invention inspired scientific research (D. mot phat minh
+ 1602	turong turong da truyen cam horng cho nghien coru khoa hoc.)
+
+===== TRANG 38 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  303	DAP AN READING VOL8
+  308	Yeu cau quyen chinh sua
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  338	1.FALSE
+  353	Cau hoi: In Robert FitzRoy's time, weather forecasting was a respected skill
+  389	Cac the trong tailieu
+  383	Doan chua dap an:
+  423	TEST1
+  424	become a national joke when their forecasts inevitably went wrong.
+  439	Do la mot no lurc day can dam, boi vao thoi diem do viec du bao thoi tiet bi mang tieng
+  452	TEST2
+  452	giong nhu chiem tinh hoc hay boi toan. Mot vai nguroi dam thi surc da tro thanh tro curoi cua
+  467	ca nuoc khi nhong dy bao cua ho luon sai lsch.
+  482	TEST3
+  482	→ Dap an: FALSE
+  511	TEST 4
+  506	2.TRUE
+  519	Cau hoi: When FitzRoy retired from the navy,hehad already had a successful career
+  540	TEST5
+  534	at sea
+  569	TEST6
+  566	Doan chira dap an:
+  579	His background was faultless, most famously his captaining of the ship HMS Beagle on
+  598	TEST7
+  593	Charles Darwin's voyage around the world, which eventually led to the publication of
+  607	Darwin's well-known book On the Origin of Species. When FitzRoy retired from active
+  628	TEST8
+  621	service as an admiral in Britain's navy, he was looking for a new direction.
+  657	TEST9
+  648	HMS Beagle trong chuyen hai trinh vong quanh the gioi cua Charles Darwin - chuyen di cuoi
+  675	huu khoi nhiem vu tich cuc voi tu cachla mot do doctrong Hai quan Hoang gia Anh, ong
+  687	TEST10
+  692	bat dau tim kiem mot hurong di moi cho cuoc doi minh.
+  716	目TEST 11
+  707	Dap an: TRUE
+  731	3.NG
+  745	Cau hoi: FitzRoy faced competition from other applicants for the chief statistician's
+  761	job
+  774	(FitzRoy phai canh tranh voi nhong ong vien khac cho vi tri thong ke truong-)
+  791	Doan.chia dap. an:
+  803	He subsequently secured a job as chief statistician at the Meteorological Department, part
+  817	of the Board of Trade
+  830	Sau do, ong da gianh duoc mot cong viec voi vitrithong ke trurong tai Cuc Khi tuong, mot
+  846	bo phan thuoc Hoi dong Thurong mai.
+  859	Giai thich: Doan van chi noi ong co durc cong viec, khong noi co nguoi canh tranh hay
+  875	khong
+  887	Dap an: NOT GIVEN
+  913	4.FALSE
+  929	Cau hoi: The British Parliament supported the idea of regular weather forecasts in
+  942	1854
+  957	(Qudc hoi Anh da ung ho y turong dy bao thoi tiet thuong xuyen vao nam 1854.)
+  973	Doan chira dap an:
+  985	However, the British Government was not impressed with the idea of collecting weather
+ 1068	docs.google.com
+ 1097	G Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日DAP AN READING VOL 8 - Google Tai lizu
+ 1129	DAP AN READING VOL8
+ 1134	Yeu cau quyen chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1166	reports and establishing a weather forecast, and the suggestion by one Member of
+ 1183	Parliament for this was met with laughter from the other MPs.
+ 1196	Tuy nhien, Chinh phu Anh khong he an tuong voiy turong thu thap cac bao cao thoi tiet va
+ 1216	Cac the trong tailieu
+ 1210	xay dung mot he thong du bao thoi tiet, va de xuat nay cua mot nghi si quoc hoi da bi cac
+ 1226	nghi si khac curoi nhao.
+ 1248	目TEST1
+ 1237	Dap an: FALSE
+ 1264	5.TRUE
+ 1278	TEST2
+ 1280	Cau hoi: Progress in technology made it a good time for publicly available weather
+ 1294	forecasting to begin
+ 1307	TEST3
+ 1321	tiet cong cong.)
+ 1337	TEST4
+ 1339	Doan chua dap an:
+ 1349	This was just the right moment for a national forecasting service. Knowledge of the weather
+ 1366	TEST 5
+ 1364	was improving, barometer readings gave waming of approaching storms, and the invention
+ 1379	of the electric telegraph and Morse code in 1844 gave instant communication for the first
+ 1396	TEST 6
+ 1394	time.
+ 1406	Day chinh la thoi diem hoan hao de thietlap mot dich vu dy bao thoi tiet mang tam quoc
+ 1425	TEST7
+ 1419	gia. Kien thirc ve thoitiet dang ngay cang duqc cai thien, cac chi so khi ap ke co the canh
+ 1436	bao nhorng con bao sap toi, va su ra doi cia dion bao cung ma Morse vao nam 1844 lan
+ 1453	目TEST8
+ 1450	dau tien mang lai kha nang lien lac torc thi.
+ 1465	Dap an: TRUE
+ 1483	TEST9
+ 1491	6. instruments
+ 1503	Cau hoi: FitzRoy received weather reports produced by ships using reliable
+ 1514	TEST10
+ 1517	(FitzRoy nhan durgc cac bao cao thoi tiet do cac con tau tao ra bang cach su dung
+ 1542	TEST11
+ 1533	dang tin cay.)
+ 1547	Doan chua dap an:
+ 1561	So in February 1861, FitzRoy pressed ahead with a storm-warning service. Previous
+ 1574	weather reports had been unreliable, but FitzRoy's innovation was to issue ships with
+ 1589	standardised instruments which allowed for accurate weather reports.
+ 1604	Vi vay, vao thang 2 nam 1861, FitzRoy da thuc day viec trien khai mot dich vu canh bao
+ 1618	bao. Cac bao cao thoi tiet truroc do von khong dang tin cay, nhung diem doi moi cua
+ 1632	FitzRoy la cung cap cho cac con tau nhorng thiet bj do lurong durqc tieu chuan hoa, cho phep
+ 1646	tao ra cac bao cao thoi tiet chinh xac.
+ 1660	→ Dap an instruments
+ 1686	7. ports
+ 1701	Cau hoi: storm warnings were telegraphed to
+ 1700	along the shore
+ 1715	(cac canh bao bao duroc guri bang dien bao toi,
+ 1712	doc theo bo bien)
+ 1731	Doan.chua.dap.an:
+ 1742	The approach of an incoming storm could be recognised, and from London, FitzRoy could
+ 1758	telegraph warnings to ports on the coast, where an ingenious system of flags was hoisted up
+ 1772	high for passing ships to read.
+ 1784	Cothnhanbietduroc sutiengan ciamotconbao,vat LondonFitzRoycotheguidien
+ 1798	tin canh bao toi cac cang doc bo bien, noimot he thong co hieu thong minh duoc treo cao
+ 1814	de cac tau dang di ngang co the nhin thay va doc durqc.
+ 1828	Dap an: ports
+
+===== TRANG 39 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  303	DAP AN READING VOL8
+  308	Yeu cau quyen chinh sua
+  308	2 Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sura
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  339	8. flags
+  354	Cau hoi: signals for ships were displayed using raised,
+  368	(cac tin hieu cho tau thuyen duoc hien thi bang cach treo cao
+  389	Cac the trong tai liu
+  384	Doan chtra dap an:
+  396	The approach of an incoming storm could be recognised, and from London, FitzRoy could
+  423	TEST1
+  426	high for passing ships to read.
+  452	TEST2
+  454	tin canh bao toi cac cang doc bo bien, noi mot he thong co hisu thong minh duroc treo cao
+  468	de cac tau dang di ngang co the nhin thay va doc duroc.
+  482	TEST3
+  480	Dap an: flags
+  511	TEST 4
+  508	9. lifeboat
+  521	Cau hoi: the storm warning service was the greatest development in sea safety since
+  537	the.
+  540	TEST5
+  538	was introduced
+  569	TEST6
+  565	duoc dura vao si dung)
+  581	Doan chiaa dap an:
+  598	TEST7
+  608	and in subsequent years the number of lives lost around Britain fell by about a third.
+  628	TEST8
+  635	ugig Bunayuenb Buewin onbugs'opnes weu Bunyu Buon en Bunp ns oen enpa.onp
+  657	TEST9
+  649	Anh da giam khoang mot phan ba.
+  665	Dap an: lifeboat
+  687	TEST10
+  690	10. island
+  703	Cau hoi: frequently used by the English Queen for safe trips to a favourite
+  716	目TEST 11
+  719	1o1 ueoy ue ip ugkno Buou op Bunp s uy Bupoy o aonp ugknx Buonn)
+  719	yeu
+  732	thich)
+  747	Doan chua dap an:
+  761	It attracted huge attention, including from Queen Victoria, who regularly sent messengers to
+  776	FitzRoy's office to get a forecast for the sea crossing over the Solent to an island which she
+  790	liked to visit off the south coast of England.
+  848	Dap an: island
+  871	11. owners
+  886	Cau hoi: FitzRoy's forecasts were popular with fishermen but not with boat
+  899	(cac ban dy bao cia FitzRoy duoc ngu dan ua chuong nhung khong duroc cac chu
+  915	ung ho)
+  931	Doan chira dap an:
+  942	The owners of fishing vessels, however, were not supportive of FitzRoy's forecasts, which
+  957	often caused delays for them when bad weather was forecast.
+  986	thurong khien ho bi tri hoan khi thoi tiet xau duroc dy bao
+ 1000	→ Dap an: owners
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日 DAp AN READING VOL 8 - Google Tai liu
+ 1129	DAP AN READING VOL8
+ 1134	Yeu cau quyen chinh sua
+ 1134	Chia Se
+ 1133	Nang cip
+ 1146	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1164	12.name
+ 1179	is usedfora marine area
+ 1180	Cau hoi: in modern times FitzRoy's
+ 1194	(trong thoi hien dai,
+ 1193	cua FitzRoy duroc dung de dat ten cho mot vung bien)
+ 1216	Cac the trong tailieu
+ 1210	Doan chua dap an:
+ 1237	he has been recognized as a towering figure in meteorology, with the honour of an area of
+ 1248	目 TEST1
+ 1251	sea being given his name in the shipping forecast (a radio broadcast of weather reports for
+ 1264	the seas around Britain)
+ 1278	TEST2
+ 1279	Khong the phu nhan rang FitzRoy da di truroc thoi dai rat xa, nhung chi trong nhong nam
+ 1292	gan day ong moi dugc cong nhan la mot nhan vat vi dai trong nganh khi turong hoc, voi
+ 1307	TEST3
+ 1322	thoi tiet phat tren dai phat thanh cho cac vung bien xung quanh nuoc Anh)
+ 1337	TEST4
+ 1337	Dap an: name
+ 1366	TEST 5
+ 1361	13. book
+ 1376	Cau hoi: FitzRoy produced a
+ 1375	which was respected by the scientific
+ 1396	TEST6
+ 1390	community
+ 1404	(FitzRoy da tao ra mot
+ 1404	duqc cong dong khoa hoc kinh trong)
+ 1425	TEST7
+ 1420	Doan chtra dap an:
+ 1433	His extraordinary determination to get forecasting established cost him dearly though, and
+ 1453	目TEST8
+ 1446	he died prematurely. But his legacy lives on, because late in hislfe he published a book
+ 1460	about weatherforecasting which was recognized by other scientists to be wellahead of its
+ 1483	TEST9
+ 1477	time.
+ 1488	Su quyet tam phi thurong cua FitzRoy trong viec thiet lap dy bao thoi tiet da khien ong phai
+ 1514	TEST10
+ 1532	nhan la vurot xa thoi dai cua no.
+ 1542	TEST11
+ 1547	→ Dap an: book
+ 1571	14.C
+ 1601	(vi du ve cac thiet bi duroc su dung trong nghien coru tang bang troi)
+ 1616	Doan chiua dap an:
+ 1629	During their first expedition, Smith and his research team deployed a series of
+ 1643	oceanographic instruments, fishing nets, and video cameras attached to remotely operated
+ 1657	vehicles around a smalliceberg with a surface area of 0.12 square kilometers, as well as
+ 1672	around another much larger example.
+ 1700	loat cac thiet bi hai durong hoc, luroi danh ca va camera video gan vao cac phuong tien dieu
+ 1713	khien tir xa xung quanh mot tang bang troi nho co dien tich be mat 0,12 km, cng nhu xung
+ 1727	quanh mot tang lon hon nhieu.
+ 1742	→ Dap an: C
+ 1768	15.E
+ 1782	Cau hoi: a description of the volume of water inside one iceberg
+ 1797	(mo ta ve lurong nuroc chura ben trong mot tang bang)
+ 1811	Doan chia dap an:
+ 1824	Nearly the size of the US state of Connecticut and containing enough fresh water to supply
+
+===== TRANG 40 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  303	DAP AN READING VOL 8
+  308	Yeu cau quyen chinh sua
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  344	the entire US for five years, the berg had begun to break up by the time Stone's team arrived
+  360	several months later, and the shifting pack ice made it impossible for them to reach it.
+  374	Gan bang dien tich bang Connecticut cua My va choa du luong nuroc ngot de cung cap cho
+  389	Cac the trong tailiu
+  403	Stone den noi vai thang sau do, va lop bang troi di chuyen lien tuc khien ho khong the tiep
+  423	TEST1
+  417	can duqc no.
+  431	→ Dap an: E
+  452	TEST2
+  456	16.1
+  471	Cau hoi: a reference to causes of instability in icebergs
+  482	TEST3
+  485	(de cap den nguyen nhan gay mat On djnh cua cac tang bang)
+  511	TEST 4
+  502	Doan.chuadap.an:
+  514	The pressures caused by the continuous melting and re-freezing of water throughout these
+  529	mountainous structures ultimately lead to their destruction.
+  540	TEST5
+  556	tric do so nay cudi cung dan den su sup do cua chung.
+  569	TEST6
+  571	Dap an:1
+  598	TEST7
+  595	17.D
+  611	Cau hoi: an explanation as to the origins of the contents of the water around icebergs
+  628	TEST8
+  640	Doan chita dap an:
+  657	TEST9
+  652	Perhaps their most significant finding was that as icebergs melt, accumulated dust,
+  667	pulverized rocks, and other terrestrial materials are dispersed into the water. These were all
+  687	TEST10
+  696	debris from the surface of the soil while moving across huge areas of land.
+  716	目TEST11
+  725	nghien vun va cac vat chat khac co nguon goc tr dat lien se duoc phan tan vao trong nurdc.
+  767	Ion da cao xoi va thu gom cac manh vun tip be mat dat.
+  782	→ Dap an: D
+  806	18.A
+  820	Cau hoi: a definition of the term 'iceberg'
+  836	(dinh nghia thuat ngo “tang bang troi")
+  851	Doan chua dap an:
+  892	→ Dap an: A
+  917	19. F
+  930	Cau hoi: areference to the temperature of the water surrounding an iceberg
+  947	(de cap den nhiet do cua nudc xung quanh tang bang)
+  963	Doan chira dap an:
+  974	Greg Stone noted that the water of Antarctica where his team undertook dives was several
+  989	degrees below freezing.
+ 1003	Greg Stone luu V rang nhiet do nuoc  Nam Cuc  noi nhom cua ong thuc hien cac cuoc
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日DAP AN READING VOL 8 - Google Tai lizu
+ 1128	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sura
+ 1134	Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1169	Ian  thap hon diem dong bang vai do.
+ 1185	→ Dap an: F
+ 1216	Cac the trong tailieu
+ 1211	20.A
+ 1224	Cau hoi: Choose TWO letters, A-E.Which TWO of the following are true about Ken
+ 1248	目 TEST1
+ 1240	Smith's findings?
+ 1255	A.
+ 1254	Ken Smith likened iceberg melt to river estuaries.
+ 1278	TEST2
+ 1269	He obtained all his results from a single Antarctic iceberg.
+ 1284	C.
+ 1283	He confirmed that all icebergs had identical ecosystems.
+ 1297	D.
+ 1297	He connected iceberg contents with surrounding marine life.
+ 1307	TEST3
+ 1310	He was the first to note bacteria around icebergs.
+ 1324	(Chon HAI dap an (AE). Hai nhan djnh nao sau day ding ve nhipng phat hien cua
+ 1337	TEST4
+ 1337	Ken Smith?
+ 1354	A.
+ 1353	Ken Smith da so sanh qua trinh tan chay cua bang troi voi cac cura song.
+ 1366	TEST5
+ 1368	B.
+ 1368	Ong thu durqc toan bo ket qua nghien coru ti mot tang bang duy nhat & Nam Cuc.
+ 1382	C.
+ 1382	Ong xac nhan rang tat ca cac tang bang deu co h sinh thai giong hot nhau.
+ 1396	TEST6
+ 1397	D.
+ 1395	Ong da lien he cac thanh phan trong bang troi voi suy song bien xung quanh.
+ 1409	Ong la nguroi dau tien ghi nhan sy xuat hien cia vi khuan xung quanh cac tang bang.)
+ 1411	E.
+ 1425	TEST7
+ 1426	Doan chia dap an:
+ 1437	These icebergs can be compared to river estuaries that supply surrounding coastal regions
+ 1453	目 TEST8
+ 1453	with nutrients as they enter the ocean,' Smith and his team wrote.
+ 1483	TEST9
+ 1480	duong cho cac vung ven bien xung quanh khi chung chay ra dai durong.' Smith va nhom
+ 1495	cua ong viet.
+ 1514	TEST10
+ 1509	Dap an: A
+ 1542	TEST11
+ 1534	21.D
+ 1550	Doan chua dap an:
+ 1564	Once in the water, these materials act as ocean fertilizer to nourish microscopic marine
+ 1577	organisms such as plankton, upon which the entire food chain ultimately depends.
+ 1591	Khi vao trong nuoc, nhong vat chat nay hoat dong nhu phan bon dai durong, nuoi durong
+ 1605	cac sinh vat bien sieu nho nhu sinh vat phu du, von la nen tang cia toan bo chuoi thurc an.
+ 1619	Dap an: D
+ 1646	22. jellyfish
+ 1659	Cau hoi: On his dives in Antarctica, Greg Stone and his team noted the presence of
+ 1675	above-normal levels of marine life, such as krill and
+ 1675	in the immediate vicinity
+ 1687	of the ice.
+ 1702	(Trong cac chuyen lian tai Nam Cuc, Greg Stone va nhom cia ong ghi nhan su hien dien
+ 1716	cia cac dang sinh vat bien voi mat do cao hon binh thurong, chang han nhu nhuyen the va
+ 1732	o khu vuc ngay sat cac tang bang.)
+ 1748	Doan chira dap an:
+ 1760	Like Smith's team, they recorded higher concentrations of jellyfish and krill within a mile or
+ 1774	so around the icebergs.
+ 1787	Giong nhu nhom cia Smith, ho ghi nhan nong do sua va nhuyen the cao hon trong pham vi
+ 1803	khoang mot dam xung quanh cac tang bang.
+ 1818	Dap an: jellyfish
+
+===== TRANG 41 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  303	DAP AN READING VOL 8
+  308	Yeu cau quyen chinh sua
+  308	& Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  345	23.burrows
+  373	created,
+  372	.to live in...
+  389	Cac the trong tailiu
+  385	(Ho cing quan sat thay rang ben duroi nhieu tang bang, ca non duong nhu da taora
+  401	de sinh song)
+  423	TEST1
+  418	Doan chuta. dap an:
+  429	They also frequently saw juvenile ice fish living in burrows in the ice, though they were
+  452	TEST2
+  445	uncertain whether the fish excavated these themselves to hide from predators or simply took
+  457	advantage of natural features of the ice.
+  482	TEST3
+  487	trong bang, mac du ho khong chac lieu nhong con ca nay co tu dao cac hang do de tron
+  511	TEST 4
+  516	Dap an: burrows
+  540	TEST5
+  542	24. predators
+  569	TEST6
+  569	(- co the nhu mot cach de tranh.
+  584	Doan chira dap an:
+  598	TEST7
+  596	They alsofrequently saw juvenile ice fish living in burrows inthe ice,though they were
+  612	uncertain whether the fish excavated these themselves to hide from predators or simply took
+  628	TEST8
+  626	advantage of natural features of the ice.
+  639	Ho cing thurong xuyen quan sat thay nhong con ca bang non song trong cac hang hdc ben
+  657	TEST9
+  655	trong bang, mac du ho khong chac lisu nhong con ca nay co tu dao cac hang do de tron
+  668	tranh ke san moi hay chi don gian la tan dung nhong cau tric ty nhien san co cua bang.
+  687	TEST10
+  684	Dap an: predators
+  716	目TEST11
+  710	25. cave
+  722	Cau hoi: Under one iceberg, they located a stunning display of sea cucumbers,
+  738	sponges and other invertebrates living deep within a
+  737	in the ice.
+  765	va cac loai dong vat khong xuong song khac sinh song sau ben trong mot
+  767	trong
+  780	bang.)
+  794	Doan chia dap an:
+  807	In an especially dangerous dive, they swam 300 meters into a cave inside another iceberg
+  837	feather duster worms, starfish, colorful sponges, sea cucumbers, and more - living on the
+  851	seafloor at the farthest reaches of the cave.
+  864	Trong mot lan lan dac biet nguy hiem,ho da boi sau 300 met vaomot hang dong ben trong
+  879	mot tang bang khac da mac can trong nhieu nam, va phat hien ra mot khu vuron" sinh vat
+  892	khong xurong song vo cing ngoan muc-gom giun long vi, sao bien, bot bien sac so, hai
+  908	sam va nhieu loai khac - dang sinh song tren day bien & khu vuc sau nhat cua hang dong.
+  923	→ Dap an: cave
+  949	26. currents
+  962	Cau hoi: These had probably survived because the iceberg in question had become
+  977	stuck on the seabed rather than being blown around or moved by ocean,
+ 1004	bi aio thoi hoac bi cac
+ 1005	dai durona dav di.)
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日DAP AN READING VOL 8 - Google Tai lizu
+ 1128	DAP AN READING VOL 8
+ 1134	Yeu cau quyén chinh sura
+ 1134	& Chia Se
+ 1133	Nang cip
+ 1146	Tep
+ 1147	Cong cu
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1171	Doan chia dap an:
+ 1198	and currents.
+ 1216	Cac the trong tailieu
+ 1212	Theo Stone, hau het cac tang bang troi  Nam Cuc lien tuc bi day di boi gio va cac dong
+ 1227	hai luru.
+ 1248	目 TEST1
+ 1243	Dap an: currents
+ 1267	27.D
+ 1278	TEST2
+ 1282	Cau hoi: What does the writer say about Dunedin in the 1970s?
+ 1297	A.
+ 1295	It was the safest city in the country.
+ 1307	TEST3
+ 1311	B.
+ 1310	It was less prosperous than other cities.
+ 1326	C.
+ 1325	Many people were frustrated that they could not find a job.
+ 1337	TEST4
+ 1341	D.
+ 1339	It was wealthy and seen as an ideal place to raise children.
+ 1351	(Taic gia noi gi ve thanh ph6 Dunedin vao nhong nam 1970?
+ 1366	TEST5
+ 1368	A.
+ 1367	Day la thanh pho an toan nhat ca nudc
+ 1382	B.
+ 1380	Thanh pho kem thinh vurong hon cac thanh pho khac
+ 1396	TEST6
+ 1397	C.
+ 1394	Nhieu nguroi that vong vi khong tim duoc viec lam
+ 1409	D. Thanh pho giau co va durQc xem la noi ly turong de nuoi day tre em)
+ 1425	TEST7
+ 1425	Doan chura dap an:
+ 1438	There was next to no unemployment and people left their doors unlocked at night. New
+ 1453	目 TEST8
+ 1451	Zealand was then the ninth richest country in the world and many residents believed that, as
+ 1467	a place to bring up children, this was a city without rival.
+ 1483	TEST9
+ 1492	dem. Vao thoi diem do, New Zealand la quc gia giau th chin tren the gioi, va nhieu nguroi
+ 1514	TEST10
+ 1506	dan tinrang, xet ve noinuoi day con cai, day la mot thanh ph khong noinao sanh bang.
+ 1524	→ Dap an: D
+ 1542	TEST11
+ 1547	28.C
+ 1562	Cau hoi: What did the writer find surprising about Phil Silva's original study?
+ 1577	That the study was held in a church.
+ 1593	B.
+ 1592	That the tests took half a day.
+ 1606	C.
+ 1606	That 91% of parents agreed to help.
+ 1621	D.
+ 1620	That the study used volunteers.
+ 1634	(Dieu gi khien tac gia ngac nhien ve nghien ciru ban dau cuia Phil Silva?
+ 1647	Nghien curu duoc tien hanh trong nha tho
+ 1663	B.
+ 1661	Cac bai kiem tra keo dai nura ngay
+ 1677	C.
+ 1677	91% phy huynh dong y tham gia
+ 1693	D.
+ 1691	Nghien coru si dung tinh nguyen vien)
+ 1707	Doan chira dap an:
+ 1718	Incredibly, no fewer than 91% agreed to help and 1037 three-year-olds completed half a day
+ 1734	of tests and experiments.
+ 1746	Mot cach dang kinh ngac, co toi khong duoi 91% dong y tham gia h tro, va 1.037 tre em
+ 1762	ba tuoi da hoan thanh nura ngay kiem tra va thi nghiem.
+ 1777	→ Dap an: C
+ 1802	29.B
+ 1816	Cau hoi: What was Silva's main finding in 1978?
+ 1832	A.
+ 1830	Children had excellent lanauaae.
+
+===== TRANG 42 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  303	DAP AN READING VOL 8
+  308	Yeu cau quyen chinh sura
+  308	& Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  341	B.
+  341	Many children had developmental problems.
+  354	No children had ear problems.
+  357	C.
+  371	D.
+  370	All children were healthy.
+  389	Cac the trong tailiu
+  383	(Phat hisn chinh cua Silva vao nam 1978 la gi?
+  396	Tre em co kha nang ngon ngo rat tot
+  401	A.
+  413	B.
+  412	Nhieu tre gap van de phat trien
+  423	TEST1
+  429	C.
+  427	Khong co tre nao gep van de ve tai
+  440	Tat ca tre deu khoe manh)
+  452	TEST2
+  457	Doan chia dap an:
+  468	By 1978, Silva was able to shock the nation with his findings: one in four children had
+  482	TEST3
+  484	delayed language development; 15% had ear problems; the researchers had identified one
+  498	child who was blind and another who might have died from undetected skin cancer.
+  511	TEST 4
+  511	Den nam 1978, Silva da khien ca dat nuoc bang hoang voi nhong phat hien cia minh: cu
+  525	bon tre thi co mottre cham phat trien ngon ngur15% gap van de ve tai; cac nha nghien curu
+  540	TEST5
+  556	phat hien kip thoi.
+  570	TEST6
+  570	→ Dap an: B
+  598	TEST7
+  594	30.D
+  609	Cau hoi: What was different about the first and second studies?
+  625	A.
+  628	TEST8
+  622	The sample group was smaller in the first study.
+  639	B.
+  636	The second study produced conflicting results.
+  653	C.
+  657	TEST9
+  664	The second study collected additional types of information.
+  687	TEST10
+  680	(Diem khac biet giora nghien ciru tho nhat va tho hai la gi?
+  694	Nhom mau nho hon  nghien curu dau
+  709	B.
+  716	目TEST 11
+  708	Nghien cru tho hai cho ket qua mau thuan
+  725	C.
+  723	Nghien coru th hai khong dung tro gip
+  738	D.
+  736	Nghien coru tho hai thu thap them loai thong tin moi)
+  753	Doan chua dap an:
+  779	nutrition, dental health - were introduced.
+  792	Do liu thu thap khi tre len ba da durqc cap nhat, dong thoi cac tieu chi do lurong moi - nhu
+  808	ky luat, dinh durong va surc khoe rang mieng - duroc dura vao.
+  823	→ Dap an: D
+  845	31.B
+  862	Cau hoi: What problem did Silva face when conducting the original study?
+  878	A.
+  875	A shortage of helpers.
+  891	B.
+  891	A lack of available funding.
+  907	C.
+  905	The bad behaviour of some children.
+  920	D.
+  919	The poor language skills of the participants.
+  933	(Van de Silva gip phai khi tien hanh nghien chru ban dau la gi?
+  947	Thieu nguoi giup do
+  961	Ky nang ngon ngo kem cia nguoi tham gia
+  987	C. Hanh vi xau cuia mot so tre em.
+ 1002	D. Ky nang ngon ngo kem cua nguroi tham gia.)
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 -Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日DAP AN READING VOL 8 - Google Tai lizu
+ 1128	DAP AN READING VOL 8
+ 1134	Yeu cau quyen chinh sura
+ 1134	&Chia Se
+ 1133	Nang cip
+ 1147	Cong cu
+ 1148	Tep
+ 1148	Chinh sura
+ 1148	Xem
+ 1147	Tro giup
+ 1172	Doan.chia dap. an:
+ 1183	There was precious little money at Silva's disposal, so the assessments were done in a
+ 1199	church with the help of dozens of volunteers.
+ 1216	Cac the trong tailieu
+ 1226	hanh trong mot nha tho voi su tro giup cua hang chuc tinh nguyen vien.
+ 1248	目 TEST1
+ 1242	Dap an: B
+ 1266	32.B
+ 1278	TEST2
+ 1280	Cau hoi: Why does the writer mention the new building in the fourth paragraph?
+ 1295	To show how generous project funding had become.
+ 1307	TEST 3
+ 1310	B.
+ 1309	To show that the study was being taken seriously.
+ 1325	C.
+ 1324	To emphasise the temporary nature of the facilities.
+ 1337	TEST4
+ 1339	D.
+ 1338	To highlight that the children disliked the site.
+ 1352	(Vi sao tac gia nhac den toa nha moi  doan 4?
+ 1366	TEST 5
+ 1367	A.
+ 1366	De cho thay kinh phi tro nen doi dao nhu the nao
+ 1381	B.
+ 1379	Dé cho thay nghien ciru durqc coi trong
+ 1396	TEST6
+ 1394	Nhan manh tinh tam bo cua co so vat chat
+ 1408	Neu bat viec tre em khong thich dja diem nay)
+ 1409	D.
+ 1425	TEST7
+ 1424	Doan chura dap an:
+ 1437	It wouldn't have been the researchers' first choice, and was certainly not grand, but it was at
+ 1453	目TEST8
+ 1451	least a site for the long term and its acquisition represented a landmark in the study's
+ 1467	development.
+ 1483	TEST9
+ 1478	Day khong phai la lva chon hang dau cua cac nha nghien ciru,va chac chan khong he
+ 1494	hoanh trang, nhung it nhat do cing la mot dja diem co the su dung lau dai, va vigc co duoc
+ 1514	TEST10
+ 1522	→ Dap an: B
+ 1542	TEST11
+ 1547	33.YES
+ 1561	Cau hoi: Recent results suggest that intellectual development and birth weight are
+ 1576	linked.
+ 1589	(Ket qua gan day cho thay su phat trien tri tue colien quan den can nang lic sinh.)
+ 1607	Doan chiaa dap an:
+ 1619	Among the most recent findings are that birth complications - a focus of Silva's original
+ 1634	research - don't necessarily set children up for problems as they mature in later life, although
+ 1648	the amount a newborn infant weighs is associated with IQ.
+ 1660	Trong so nhing phat hien gan day nhat la viec cac bien ching khi sinh -von la trong tam
+ 1690	sau nay, mac du can nang cia tre so sinh co moi lien he voi chi so IQ.
+ 1705	Dap an: YES
+ 1729	34.NG
+ 1743	Cau hoi: Medical textbooks usedto claim that breast-fed children were more
+ 1758	intelligent.
+ 1773	(Sach y khoa tirng cho rang tre bu sora me thong minh hon.)
+ 1789	Doan chira dap an:
+ 1816	problems like asthma and allergies.
+ 1828	Trona nhieu nam. cac qiao trinh nhi khoa da khana dinh rana viec cho tre bu me qiup bao
+
+===== TRANG 43 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  271	 Google Drive
+  271	日READING VOL 8 -Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日 DAP AN READING VOL 8 - Google Tailieu
+  303	DAP ANREADINGVOL8
+  308	Yeu cau quyen chinh sura
+  308	& Chia Se
+  308	Nang cap
+  320	Chinh sura
+  321	Cong cu
+  322	Tep
+  322	Xem
+  321	Tro giup
+  334	Trong nhieu nam, cac giao trinh nhi khoa da khang dinh rang viec cho tre bu me giup bao
+  389	Cac the trong tai liu
+  423	TEST1
+  452	TEST2
+  482	TEST3
+  511	TEST4
+  504	ve tre khoi cac van de y te nhu hen suyen va dj (rng.
+  520	Giai thich: bai khong nhac toi viec bu stra me giup tre thong minh hon
+  539	目TEST5
+  533	Dap an: NOT GIVEN
+  569	TEST6
+  560	35.NO
+  573	Cau hoi: Children who suck their thumbs are prone to developmental problems
+  588	(Tre mut tay de gap van de phat trien.)
+  598	TEST7
+  602	Doan chira dap an:
+  616	Other findings that challenged the received wisdom include the fact that thumb-sucking
+  628	TEST8
+  631	does no harm; birth order makes no difference to later development; and pre-schoolers
+  644	whose mothers work are not disadvantaged.
+  657	TEST9
+  658	Nhong phat hien khac thach thuc cac quan niem lau nay bao gom viec mut tay cai khong
+  688	TEST10
+  686	Iam khong he bi thiot thoi.
+  700	→ Dap an: NO
+  715	目 TEST 11
+  727	36. YES
+  742	Cau hoi: The findings of the Dunedin study have challenged some doctors'
+  758	preconceptions
+  769	(Nhong phat hien cia nghien ciru Dunedin da thach thurc cac quan niem san co cia bac
+  785	sT.)
+  801	Doan.chua.dap.an:
+  813	Along the way, the Dunedin researchers have been able to contradict old assumptions and
+  828	explode medical myths long held by the profession.
+  840	Trong suot qua trinh nghien curu, cac nha khoa hoc tai Dunedin da co the bac bo nhong gia
+  854	djnh co va pha v cac huyen thoai y khoa da ton tai lau doi trong gioi chuyen mon.
+  868	→ Dap an: YES
+  894	37.A
+  910	Cau hoi: The demographics of Dunedin mean that residents feel committed to the
+  923	study, and that it also provides
+  924	that can be applied both nationally and
+  936	internationally
+  951	(Dac diem dan so cia Dunedin khien nguroi dan cam thay gan bo voi nghien ciu, va dong
+  967	thoi nghien coru nay cing cung cap.
+  967	co the duroc ap dung o pham vi quoc gia va
+  980	qudc te.)
+  995	Doan chia dap an:
+
+===== TRANG 44 =====
+  242	docs.google.com
+  270	M hienthanhnguyen1357@gmail.com - Gmail
+  270	G Google Drive
+  271	日READING VOL 8 - Google Tai lieu
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  303	DAP AN READING VOL 8
+  308	Yeu cau quyen chinh sura
+  308	Chia Se
+  308	Nang cap
+  321	Tep
+  320	Chinh sua
+  321	Cong cu
+  322	Xem
+  321	Tro giup
+  339	37.A
+  355	Cau hoi: The demographics of Dunedin mean that residents feel committed to the
+  369	study, and that it also provides
+  368	that can be applied both nationally and
+  389	Cac the trong tailieu
+  385	internationally
+  397	(Dac diem dan so cia Dunedin khien nguroi dan cam thay gan bo voi nghien cuu, va dong
+  413	thoi nghien coru nay cing cung cap.
+  413	 co the duroc ap dung  pham vi quoc gia va
+  423	TEST1
+  426	qudc te.)
+  441	Doan chura dap an:
+  452	TEST2
+  468	generalised to New Zealand and other developed countries, yet small enough that one in
+  482	TEST3
+  484	every 10 households has had a child or relative in the study.
+  498	Quy mo cuia thanh pho du lon de tao ra mot nhom dan so nghien coru cho phep khai quat
+  511	TEST4
+  512	hoa ket qua cho New Zealand va cac quoc gia phat trien khac, nhung dong thoi cung du
+  539	目TEST5
+  541	→ Dap an: A generalisable research (nghien cru co the khai quat hoa)
+  569	TEST6
+  565	38.B
+  579	Cau hoi ...but even more important was Silva's conviction that the
+  580	mustbe
+  598	TEST7
+  596	looked after...
+  609	(Nhung dieu con quan trong hon la niem tin cua Silva rang.
+  608	phai duoc cham soc va
+  628	TEST8
+  657	TEST9
+  688	TEST10
+  714	目TEST11
+  780	duy tri can than;)
+  793	Doan chira dap an:
+  809	He realised the most important asset they had was the sample group and these people
+  823	must be nurtured at all costs.
+  836	Ong nhan ra rang tai san quan trong nhat ma ho co chinh la nhom mau nghien ciu, va
+  865	→ Dap an: B study members (nhong nguoi tham gia nghien coru)
+  890	39.G
+  906	Cau hoi: nothing should be done to threaten the study's.
+  906	and as a result Silva is
+  921	cautious when questioned...
+  933	(khong dieu gi duoc phep lam ton hai den,
+  934	cia nghien curu, va vi the Silva rat than
+  949	trong khi bi chat van,)
+  964	Doan chtra dap an:
+  976	Privacy is absolutely paramount: Silva won't even say how many of the study members are
+  992	now in prison: nothing must erode the trust that's been built up over the years.
+ 1006	Ourvan riann thr la lian thi mlan trnnn* Silva tham chi cAn khAnn tiAt IA ch han nhial1 nmnyi
+ 1068	docs.google.com
+ 1097	 Google Drive
+ 1097	日READING VOL 8 - Google Tai lieu
+ 1097	日READING VOL 8 - Google Tai liu
+ 1098	M hienthanhnguyen1357@gmail.com - Gmail
+ 1096	日DAp AN READING VOL 8 - Google Tai ligu
+ 1129	DAP AN READING VOL 8
+ 1134	Yeu cau quyen chinh sura
+ 1134	Chia Se
+ 1132	Nang cip
+ 1147	Tep
+ 1147	Cong cu
+ 1148	Chinh sua
+ 1148	Xem
+ 1147	Tro giup
+ 1216	Cac the trong tailieu
+ 1248	目TEST1
+ 1265	duy tri can than:)
+ 1277	目TEST2
+ 1286	Doan chia dap an:
+ 1299	He realised the most important asset they had was the sample group and these people
+ 1307	TEST3
+ 1312	must be nurtured at all costs.
+ 1325	Ong nhan ra rang tai san quan trong nhat ma ho co chinh la nhom mau nghien ciu, va
+ 1335	目TEST4
+ 1356	→ Dap an: B study members (nhong nguroi tham gia nghien coru)
+ 1366	TEST5
+ 1380	39.G
+ 1395	TEST6
+ 1395	Cau hoi: nothing should be done to threaten the study's.
+ 1395	and as a result Silva is
+ 1410	cautious when questioned...
+ 1423	目TEST7
+ 1422	(khong dieu gi duoc phep lam ton hai den,
+ 1423	cia nghien curu, va vi the Silva rat than
+ 1437	trong khi bi chat van.)
+ 1453	目TEST8
+ 1453	Doan chtra dap an:
+ 1465	Privacy is absolutely paramount: Silva won't even say how many of the study members are
+ 1483	TEST9
+ 1481	now in prison: nothing must erode the trust that's been built up over the years.
+ 1495	Quyen rieng tur la dieu toi quan trong: Silva tham chi con khong tiet Io co bao nhieu nguroi
+ 1511	目TEST10
+ 1508	tham gia nghien cou hien dang  trong to: khong dieu gi duroc phep lam xoi mon sur tin
+ 1523	turong da duqc xay dung suot nhieu nam qua.
+ 1542	TEST11
+ 1538	→ Dap an: G confidentiality (tinh bao mat)
+ 1563	40.F
+ 1576	Cau hoi: and a lot of work is done to minimize
+ 1578	in order to ensure that the study
+ 1592	continues into the future.
+ 1605	(va rat nhieu no lvc duroc thuc hien de giam thieu.
+ 1605	 nham dam bao nghien curu co
+ 1620	the tiep tuc trong turong lai.)
+ 1636	Doan chira dap an:
+ 1647	This is just one example of the enormous effort that goes into maintaining contact and
+ 1663	removing obstacles to participation.
+ 1675	Day chi la mot vi du cho thay nhong no luc to lon da duoc bo ra nham duy trilien lac va
+ 1691	loai bo cac rao can doi voi viec tham gia nghien ctru.
+ 1704	Dap an: F barriers to involvement (rao can ddi voi viec tham gia)
+
+===== TRANG 45 =====
+  242	docs.google.com
+  271	日 READING VOL 8 - Google Tai lieu
+  271	 Trang chu - Google Drive
+  270	A Trang cho - Google Drive
+  271	日READING VOL 8 - Google Tai liu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  306	Da ding 86% bo nh Ban co the don dep hoac mua thém bo nho cho Drive, Gmail va Google Photos. Hay mua thém bo nhoGiam 73% cho 3 thang.
+  307	Quan ly bo nho
+  342	DAP AN READING VOL 8
+  349	Yeu cau quyen chinh sura
+  349	Chia Se
+  349	Nang cip
+  362	Tep
+  360	Chinh sura
+  362	Cong cu
+  363	Xem
+  362	Tro giup
+  381	1 False
+  411	Location: Ancient Egyptian artworks depict the use of candles by writers and philosophers
+  431	Cac the trong tai lisu
+  427	who worked long after sundown.
+  450	2 False
+  464	目TEST1
+  477	Location: tallow, the white, nearly tasteless fat of cattle or sheep also used to make soap.
+  493	TEST 2
+  503	3 True
+  522	TEST3
+  528	Location: when beeswax was preferred over animal or vegetable fats candles were
+  542	introduced to Europe.
+  552	TEST 4
+  567	4NG
+  581	TEST 5
+  594	Location: In the 15th century, for example, candles were used as a means of keeping time.
+  610	TEST 6
+  609	At auctions, the bidding time was limited by inserting a pin into a candle and letting the wax
+  623	melt until the pin dropped, thus concluding the period in which a bid could be made.
+  640	TEST7
+  649	5 NG
+  668	TEST8
+  681	Cau so 6:
+  682	mess
+  679	Cau s6 7:
+  682	light
+  698	TEST9
+  712	Cau s6 8:
+  714	weather
+  712	Cau so 9:
+  714	cotton
+  727	TEST10
+  743	Cau s6 10:
+  743	Cau s6 11:
+  745	shrub
+  744	fruit
+  756	TEST 11
+  776	Cau so12:
+  776	Cau so 13:
+  777	casing
+  776	wire
+  786	TEST12
+  811	14E
+  853	called Wassily Leontief got a Nobel Prize) that succeeds in capturing the endless ripple
+  867	effects in a way that is one hundred per cent complete.
+  892	15B
+  917	16F
+  945	Paragraph F: The specific model I have used is one that was developed at Small World
+  959	Consulting in collaboration with Lancaster University in the UK, and draws mainly on data
+  972	obtained from govemment sources
+  998	17D
+ 1068	docs.google.com
+ 1096	日 READING VOL 8 -Google Tai lieu
+ 1097	△ Trang cho - Google Drive
+ 1097	A Trang ch - Google Drive
+ 1097	日 READING VOL 8 - Google Tai lieu
+ 1096	日DAp AN READING VOL 8 - Google Tai ligu
+ 1132	Da ding 86% bo nho Ban co the don dep hoic mua thém bo nho cho Drive, Gmail va Google Photos. Hay mua them bo nhoGiam 73% cho 3 thang.
+ 1133	Quan lybo nhd
+ 1171	DAP ANREADINGVOL8
+ 1176	Yeu cau quyén chinh sura
+ 1176	Chia Se
+ 1176	Nang cap
+ 1189	Tep
+ 1188	Chinh sua
+ 1189	Xem
+ 1189	Cong cu
+ 1189	Tro giup
+ 1218	17 D
+ 1245	Paragraph D: It is often referred to as bottom-up' because you start off identifying, one by
+ 1257	Cac the trong tai lisu
+ 1260	one, all the processes that have had to happen in order for, say, a product to be created.
+ 1289	TEST1
+ 1319	TEST 2
+ 1348	TEST3
+ 1378	TEST 4
+ 1407	TEST 5
+ 1421	Then you add up the emissions from each process, and that is the footprint of the product. It
+ 1436	TEST6
+ 1437	may sound simple, but it is not at all It is back-breaking work.
+ 1465	TEST7
+ 1461	18G
+ 1494	TEST8
+ 1488	Paragraph G: At its best, life-cycle analysis can be more precise, but input-output analysis is
+ 1503	often able to get at information that life-cycle analysis is unable to reach.
+ 1522	TEST9
+ 1524	19 F
+ 1553	TEST 10
+ 1554	Paragraph F: A key weakness, which I sometimes adjust for, is that it treats imported
+ 1567	products as though they had the same carbon intensity as products from within the UK,
+ 1583	目TEST11
+ 1583	whereas in reality imports are usually more carbon intensive.
+ 1612	TEST12
+ 1607	20 A
+ 1635	Paragraph D: It is often referred to as bottom-up' because you start off identifying, one by
+ 1649	one, all the processes that have had to happen in order for, say, a product to be created.
+ 1661	Then you add up the emissions from each process, and that is the footprint of the product It
+ 1677	may sound simple, but it is not at all It is back-breaking work.
+ 1699	21C
+ 1729	Paragraph D: is the most common approach to carbon footprint calculations.
+ 1753	22C
+ 1779	Paragraph E: It is sometimes called a 'top-down' approach because it begins by looking at
+ 1793	the whole economy.
+
+===== TRANG 46 =====
+  240	docs.google.com
+  271	日 READING VOL 8 - Google Tai lieu
+  271	△ Trang chu - Google Drive
+  272	 Trang ch - Google Drive
+  271	日READING VOL 8 - Google Tai ligu
+  272	日 DAP AN READING VOL 8 - Google Tai lisu
+  306	Da ding 86% bo nh Ban co the don dep hoic mua thém bo nho cho Drive, Gmail va Google Photos. Hay mua them bo nho- Giam 73% cho 3 thang.
+  309	Quanlybonhd
+  342	DAP AN READING VOL 8
+  349	Yeu cau quyén chinh sira
+  349	Chia Se
+  350	Nang cip
+  362	Cong cu
+  363	Tep
+  363	Chinh sira
+  363	Xem
+  361	Trd giup
+  419	Paragraph E: It has the further advantage that if you know how much something costs, you
+  431	Cac the trong tailisu
+  434	can get an instant crude estimate of its carbon footprint.
+  463	目 TEST1
+  464	government
+  468	Cau s6 24:
+  467	Cau so 25:
+  468	weakness
+  493	TEST 2
+  498	Cau s6 26:
+  500	products
+  522	TEST3
+  534	27 B
+  552	TEST 4
+  560	Location: It is more that they are all wel-versed in the science of persuading people to buy
+  581	TEST5
+  576	things  a science that, thanks to technological advances, is beginning to understand what
+  610	TEST 6
+  614	28 D
+  640	TEST7
+  641	Location: People need to make a gentle start and take stock of the surroundings. This is why
+  655	some supermarkets have a so-called chill zone' for browsing magazines, books and DVDs,
+  669	TEST8
+  698	TEST9
+  727	TEST10
+  756	TEST 11
+  788	TEST12
+  838	impulsive purchases.
+  860	29 A
+  888	Location: But psychology is at work here: selecting wholesome fresh food is an uplfting way
+  904	to start shopping, and it makes people feel less guilty about reaching for the less nutritious
+  919	stuff later on.
+  940	30c
+  970	Location: Shoppers have worked out that everyday items, like milk, will invariably be placed
+  999	their way there.
+
+===== TRANG 47 =====
+  242	docs.google.com
+  271	日 READING VOL 8 - Google Tai lieu
+  271	△ Trang chu - Google Drive
+  270	 Trang cho - Google Drive
+  271	日READING VOL 8 - Google Tai lisu
+  271	日DAP AN READING VOL 8 - Google Tailieu
+  306	Da ding 86% bo nh Ban co the don dep hoac mua thém bo nho cho Drive, Gmail va Google Photos. Hay mua thém bo nhoGiam 73% cho 3 thang.
+  306	Quan lybonhd
+  344	DAP AN READING VOL8
+  349	Yeu cau quyen chinh sura
+  349	Chia Se
+  349	Nang cip
+  362	Tep
+  361	Chinh sura
+  362	Cong cu
+  363	Xem
+  362	Tro giup
+  389	31 Yes
+  431	Cac the trong tai lisu
+  431	arranging them at eye-level, with cheaper ones lower down.
+  464	目TEST1
+  456	32 Yes
+  483	Location: Often head offices specify where everything has to be placed and spot-checks are
+  493	TEST 2
+  497	carried out to make sure instructions are followed to the letter. But shelf-positioning is
+  511	extremely controversial. Despite all the academic papers written on how best to stack
+  522	TEST3
+  525	shelves, retailers have their own views.
+  552	TEST 4
+  551	33 No
+  580	TEST 5
+  591	is better.
+  610	TEST6
+  616	34 NG
+  639	TEST7
+  643	Location: security cameras in stores may be doing considerably more than watching out for
+  658	theft.
+  668	TEST8
+  683	35 No
+  698	TEST9
+  708	Location: However, despite the availability of sophisticated technology,researchers have
+  727	TEST 10
+  756	TEST 11
+  747	36G
+  775	Location: logic and common sense, considering issues such as price, quality or
+  786	目TEST12
+  790	convenience.
+  812	37C
+  841	Location: factors which play a role, such as certain feelings and memories which individuals
+  855	are not fully aware of.
+ 1068	docs.google.com
+ 1096	日 READING VOL 8 - Google Tai lieu
+ 1097	△ Trang cho - Google Drive
+ 1097	A Trang ch - Google Drive
+ 1097	日 READING VOL 8 - Google Tai lieu
+ 1096	日DAp AN READING VOL 8 - Google Tai ligu
+ 1132	Da ding 86% bo nho Ban co the don dep hoic mua thém bo nho cho Drive, Gmail va Google Photos. Hay mua them bo nhoGiam 73% cho 3 thang.
+ 1133	Quan ly bo nhd
+ 1171	DAP AN READING VOL 8
+ 1176	Yeu cau quyén chinh sura
+ 1176	Chia Se
+ 1176	Nang cap
+ 1189	Tep
+ 1188	Chinh sua
+ 1189	Xem
+ 1189	Cong cu
+ 1189	Tro giup
+ 1257	Cac the trong tai lisu
+ 1289	TEST1
+ 1319	TEST 2
+ 1348	TEST3
+ 1339	38 A
+ 1365	Location: scanners reveal their brain activity.
+ 1377	TEST 4
+ 1389	H66
+ 1407	TEST 5
+ 1436	TEST6
+ 1431	thinking. This is immensely valuable information.
+ 1455	40E
+ 1465	TEST7
+ 1483	Location: Eight out of ten new consumer products launched on the market do not succeed.
+ 1494	TEST8
+ 1522	TEST9
+ 1553	TEST10
+ 1583	目TEST11
+ 1612	目TEST12

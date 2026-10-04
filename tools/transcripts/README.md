@@ -1,0 +1,57 @@
+# tools — sinh ngân hàng đề (chạy trên máy giáo viên, không đưa lên web)
+
+Cần: Python 3, `pdftotext` (có sẵn trong Git for Windows), Word (chỉ để chuyển đề .docx sang PDF).
+
+Reading (thư mục `2. IELTS\5. READING IN PASSAGES`, mỗi bài một thư mục gồm PDF đề + key.docx):
+
+    python extract.py          # đọc PDF + key.docx -> rd/all.json
+    python parse_reading.py    # đọc đáp án, kiểm tra -> rd/parsed.json
+    python gen_reading.py      # -> ../js/data/bank-reading.js + ../bank-report.md
+
+Listening (thư mục `2. IELTS\2. LISTENING`):
+
+    python dump_listening.py                    # trích chữ các PDF/DOCX -> ls/
+    powershell -File convert_listening.ps1      # Word -> PDF, WMA/WAV -> M4A vào "2. LISTENING\_web"
+    python dump_vol.py                          # đáp án + đề VOL 8, VOL 9 -> ls/vol.json
+    powershell -File convert_vol.ps1            # đề VOL (Word) -> PDF vào "_web"
+    python find_sections.py                     # dò mốc Section 2/3/4 trong audio cả đề -> ls/sections.json
+    python split_audio.py                       # cắt audio cả đề thành 4 section vào "_web"
+    python gen_listening.py [--titles]          # -> ../js/data/bank-listening.js (đề + section)
+
+Tiêu đề section đặt tay: `section_titles.json`.
+
+Đáp án Listening được chép tay trong `listening_keys.py` (nhiều file đáp án là ảnh).
+Thêm đề mới: thêm đáp án vào `listening_keys.py` và một dòng trong danh sách TESTS của `gen_listening.py`.
+Sau khi sinh lại: deploy, rồi vào Ngân hàng đề → Tải file đề lên để tải file mới.
+
+## Bóc đề sang dạng làm bài tương tác
+
+| Script | Việc |
+|---|---|
+| `extract_interactive.py <id> [--save]` | bóc một bài, in JSON và dòng "kiểm tra: ĐẠT/không đạt" |
+| `batch_interactive.py <reading\|listening\|section> [part] [--save]` | bóc cả nhóm, liệt kê bài không đạt |
+| `audit_interactive.py <kind> [part]` | cảnh báo mềm về chất lượng nội dung đã bóc |
+| `gen_interactive.py` | `interactive/*.json` -> `js/data/interactive/*.json` + danh sách id |
+| `dump_text.py [--force]` | xuất văn bản mọi đề ra `txt/<id>.txt` để máy không có tài liệu gốc vẫn bóc được |
+| `examtest.html?id=<id>` | xem thử giao diện làm bài, không cần đăng nhập |
+
+Thứ tự lấy văn bản đề: file gốc trong `2. IELTS\…` → nếu máy không có thì `txt/<id>.txt`.
+
+## Full test Reading từ VOL 1-9 (ORIGINAL EXAMS)
+
+Bước 1 (máy có thư mục `2. IELTS\VOL 1-9 2`):
+
+    python dump_vol_reading.py      # -> vol_reading/manifest.json + vol_reading/txt/…  (văn bản đề + đáp án Reading)
+
+Rồi commit + push `tools/vol_reading`. File OneDrive "chỉ trên mạng" sẽ tự tải về khi script đọc tới (chỉ file Word/PDF Reading).
+File `.doc` đời cũ được liệt kê cuối bảng kết quả — mở bằng Word, Save As `.docx` rồi chạy lại.
+
+## Xem lại Listening: lời thoại + nghe lại từng câu
+
+| Script | Việc |
+|---|---|
+| `transcribe_listening.py [đề…] [--force]` | chép lời audio kèm mốc từng từ -> `transcripts/<đề>-s<n>.json` (cần audio gốc + `pip install faster-whisper`) |
+| `align_listening.py [đề…]` | in mốc dò được cho từng câu: `exact` / `fuzzy` (đáp án điền từ), `option` (câu chữ cái), `guess` (ước lượng) |
+| `gen_explain_listening.py` | transcripts + `explain_listening/<đề>.json` (viết tay) -> `../js/data/explain-listening/` + `bank-explain-listening.js` |
+| `reviewtest.html?kind=listening&id=<đề>&files=<url>` | xem thử trang xem lại với một lần làm bài giả |
+
