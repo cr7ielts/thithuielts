@@ -11,8 +11,10 @@ if errorlevel 1 (
 )
 
 echo.
+set HASGIT=0
+where git >nul 2>nul && if exist ".git" set HASGIT=1
 echo  [1/4] Lay ban code moi nhat...
-git pull origin firebase-app
+if "%HASGIT%"=="1" (git pull origin firebase-app) else (echo        Khong co Git - dung cac file dang co trong thu muc.)
 
 echo.
 echo  [2/4] Cai faster-whisper (lan dau hoi lau, cac lan sau bo qua)...
@@ -30,10 +32,23 @@ if errorlevel 1 (
 )
 
 echo.
+if "%HASGIT%"=="0" goto nogit
 echo  [4/4] Day transcript len GitHub...
 git add tools\transcripts
 git commit -m "Transcript audio Listening"
 git push origin firebase-app
+goto done
+
+:nogit
+echo  [4/4] Thu muc nay khong co Git nen khong tu day len duoc.
+echo        Transcript nam o: %~dp0tools\transcripts
+echo        Nen thu muc do thanh file zip va gui cho Claude.
+explorer "%~dp0tools\transcripts"
+echo.
+pause
+exit /b 0
+
+:done
 
 echo.
 echo  [XONG] Bao Claude: "transcript da len, viet giai thich Listening".
