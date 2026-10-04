@@ -42,7 +42,7 @@ goto done
 :nogit
 echo  [4/4] Thu muc nay khong co Git nen khong tu day len duoc.
 echo        Transcript nam o: %~dp0tools\transcripts
-echo        Tai cac file .txt trong do len GitHub: nhanh firebase-app, thu muc tools/transcripts
+echo        Tai tat ca file trong do len GitHub: nhanh firebase-app, thu muc tools/transcripts
 echo        (github.com/cr7ielts/thithuielts/upload/firebase-app/tools/transcripts)
 explorer "%~dp0tools\transcripts"
 echo.
