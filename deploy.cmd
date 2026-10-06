@@ -4,13 +4,15 @@ title Cap nhat web IELTS Mock
 cd /d "%~dp0"
 set FIREBASE=%APPDATA%\npm\firebase.cmd
 
-rem ---- Lay ban moi nhat tu GitHub (nhanh main) truoc khi deploy ----
+rem ---- Lay ban moi nhat tu GitHub (dung nhanh dang mo) truoc khi deploy ----
 where git >nul 2>nul
 if errorlevel 1 goto nogit
 if not exist ".git" goto nogit
 echo.
 echo  Dang lay ban moi nhat tu GitHub...
-git pull --ff-only origin main
+for /f "delims=" %%b in ('git rev-parse --abbrev-ref HEAD') do set BRANCH=%%b
+echo  Nhanh: %BRANCH%
+git pull --ff-only origin %BRANCH%
 if errorlevel 1 goto pullfail
 goto deploy
 
