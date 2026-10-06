@@ -48,8 +48,8 @@ export function renderResult(ctx, sub) {
         stat(L("Bỏ trống", "Blank"), String(sub.details.filter((d) => !d.given).length))
       ),
       until ? el("div", { class: "notice notice-info" }, L(`Đây là bài tập về nhà — đáp án và phần xem lại mở lúc ${fmtDateTime(until)}.`,
-        `This was homework — answers and review open at ${fmtDateTime(until)}.`)) : reviewLink(ctx, sub),
-      until ? null : reviewCard(sub)
+        `This was homework — answers and review open at ${fmtDateTime(until)}.`)) : reviewLink(ctx, sub) || "",
+      until ? "" : reviewCard(sub)
     );
   }
 
@@ -144,15 +144,17 @@ function stat(k, v) {
   return el("div", { class: "stat" }, el("div", { class: "k" }, k), el("div", { class: "v" }, v));
 }
 
-/** Bài Reading trong ngân hàng đề: mở trang xem lại có bài đọc, dẫn chứng, giải thích */
+/** Bài Reading/Listening trong ngân hàng đề: mở trang xem lại (bài đọc hoặc lời thoại + nghe lại), giải thích */
 function reviewLink(ctx, sub) {
-  const m = /^bank:(reading):(.+)$/.exec(sub.testId || "");
+  const m = /^bank:(reading|listening):(.+)$/.exec(sub.testId || "");
   if (!m || !sub.details?.length) return null;
   return el("div", { class: "card rv-cta row wrap" },
     el("span", { class: "rv-cta-ic" }, icon("search")),
     el("div", { style: "flex:1;min-width:220px" },
       el("strong", {}, L("Xem lại chi tiết từng câu", "Review every question")),
-      el("div", { class: "small muted" }, L("Bài đọc tô sẵn câu dẫn chứng, đáp án đúng và giải thích vì sao.", "The passage with evidence highlighted, the right answers and why."))),
+      el("div", { class: "small muted" }, m[1] === "listening"
+        ? L("Lời thoại, nút nghe lại đúng đoạn chứa đáp án và giải thích từng câu.", "The transcript, replay of the exact clip and why each answer is right.")
+        : L("Bài đọc tô sẵn câu dẫn chứng, đáp án đúng và giải thích vì sao.", "The passage with evidence highlighted, the right answers and why."))),
     el("button", { class: "btn btn-primary", onclick: () => ctx.go(`bank/${m[1]}/${m[2]}/review`, { submission: sub }) },
       L("Xem lại & giải thích", "Review & explanations"), icon("arrow")));
 }
