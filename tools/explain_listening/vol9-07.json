@@ -1,42 +1,152 @@
-{"q": {
-"1": {"why": "\"BD 51 STR. Is that B for Bravo at the beginning? – Yes\"."},
-"2": {"why": "\"It's 180,000 miles\". 2001 là năm sản xuất."},
-"3": {"why": "\"A couple of the tyres probably need replacing. They're getting a bit worn\"."},
-"4": {"why": "Mở cửa xe thì \"the light ought to come on inside automatically, but it seems to have stopped working\"."},
-"5": {"why": "Ghế sau: \"you can't fasten the belt, it seems to have stuck\"."},
-"6": {"why": "\"One thing… going to need replacing I think is the radio\"."},
-"7": {"why": "\"Can you have a particular look at the front ones?\" – phanh trước."},
-"8": {"why": "\"I only have one key for the car and I really need a spare\"."},
-"9": {"why": "Xe mượn miễn phí: \"can I have an automatic if possible\"."},
-"10": {"why": "Số điện thoại ban ngày: 07847 355780 – nghe kỹ từng chữ số.", "t": [323, 335]},
-"11": {"why": "\"Due to unexpected illness I will be taking her place\" → A. Họ không hoãn cuộc họp (C sai); David là trợ lý, không phải giám đốc (B sai)."},
-"12": {"why": "Giá vé tăng nhẹ không ảnh hưởng; \"some people have missed events because they didn't know they were on\" → thiếu thông báo (B)."},
-"13": {"why": "Kẻ trộm \"left empty-handed\" nhưng \"did smash a number of windows and kicked down a door\" → toà nhà bị hư hại (A). Chúng chỉ \"taking a chance\" (C sai).", "t": [101, 127]},
-"14": {"why": "Số sách tăng gấp đôi và \"visitor numbers have increased 20%\" → C. Đã sửa sang năm 1969 (A sai)."},
-"15": {"why": "Hội đồng thành phố đã duyệt chi cho ánh sáng → C. Máy tính đã lắp từ tháng 6, nhân viên thêm thì chưa quyết. Lưu ý: đáp án đề cho là A, cần nghe lại để đối chiếu."},
-"16": {"why": "Qua lối dốc cho xe đẩy là phòng mới sáng sủa, \"ideal location for a new children's room looking out onto the park\"."},
-"17": {"why": "Sau khu sách người lớn: \"a new community room for public lectures, special events\" – phòng mới lớn nhất."},
-"18": {"why": "Bên phải khu sách người lớn, nhìn ra biển: quán cà phê, có bậc thang xuống Queen's Parade.", "t": [304, 330]},
-"19": {"why": "Phòng nhìn ra cả Queen's Parade và Roberts Avenue là \"the academic study room\"."},
-"20": {"why": "Nhìn ra Roberts Avenue nhưng không ra Queen's Parade: \"the multimedia room\"."},
-"21": {"why": "Prout sáng tác rất nhiều (A sai), không lỗi thời (B sai); \"there's never really been a high profile showing of his paintings\" → C.", "t": [22, 46]},
-"22": {"why": "\"He was prone to chronic chest infections throughout his life\" – \"it must have been hard for him\" → sức khoẻ kém (A). Gia đình và đồng nghiệp đều ủng hộ.", "t": [46, 68]},
-"23": {"why": "Không học từ cha; \"he painstakingly reproduced other painters' works\" → chép tranh (C)."},
-"24": {"why": "Phong cách không phát triển theo thời gian; \"he seems to have several on the go all at the same time\" → A."},
-"25": {"why": "Jack thấy chi tiết kiến trúc nhàm, \"but for Ruskin, that was where Prout's genius lay\" → cách thể hiện công trình (B)."},
-"26": {"why": "Würzburg: cảnh chợ với chi tiết hoa mỹ, \"basically what Prout had made his name doing\" → đề tài tiêu biểu (E)."},
-"27": {"why": "Bridge on the Ouse: \"experts now think this isn't York at all\" → tên có lẽ không chính xác (B)."},
-"28": {"why": "Có chữ ký nhưng \"experts… doubt he actually painted it… probably a forgery\" → có thể không phải tranh thật (C).", "t": [255, 290]},
-"29": {"why": "Venice: \"picturesque shadow cast by the buildings opposite, which is shown brilliantly\" → vẽ sáng tối khéo (F).", "t": [290, 312]},
-"30": {"why": "Entrance to a harbour: cảnh này \"also appear in other pictures\" với thời tiết khác nhau → A."},
-"31": {"why": "\"The mass customisation movement that was spreading through a large number of industries\"."},
-"32": {"why": "Nhà bán lẻ muốn tặng \"as a gift\" cho khách."},
-"33": {"why": "\"It could also be very good publicity\"."},
-"34": {"why": "\"The possible damage to the company's reputation\"."},
-"35": {"why": "\"They only had three of them\" (machines)."},
-"36": {"why": "Không tìm được ai có kinh nghiệm làm \"the type of melted toppings\"."},
-"37": {"why": "\"Doing the deal with a luxury retailer would be a mistake\"."},
-"38": {"why": "Sinh viên \"had a contact in the business\"."},
-"39": {"why": "Khó tái tạo \"the distinctive shape of the Chocozine bars\"."},
-"40": {"why": "\"Taking on too big an order has destroyed many a small business\"."}
-}}
+{
+"q": {
+"1": {
+"why": "\"BD 51 STR. Is that B for Bravo at the beginning? – Yes\"."
+},
+"2": {
+"why": "\"It's 180,000 miles\". 2001 là năm sản xuất."
+},
+"3": {
+"why": "\"A couple of the tyres probably need replacing. They're getting a bit worn\"."
+},
+"4": {
+"why": "Mở cửa xe thì \"the light ought to come on inside automatically, but it seems to have stopped working\"."
+},
+"5": {
+"why": "Ghế sau: \"you can't fasten the belt, it seems to have stuck\"."
+},
+"6": {
+"why": "\"One thing… going to need replacing I think is the radio\"."
+},
+"7": {
+"why": "\"Can you have a particular look at the front ones?\" – phanh trước."
+},
+"8": {
+"why": "\"I only have one key for the car and I really need a spare\"."
+},
+"9": {
+"why": "Xe mượn miễn phí: \"can I have an automatic if possible\"."
+},
+"10": {
+"why": "Số điện thoại ban ngày: 07847 355780 – nghe kỹ từng chữ số.",
+"t": [
+323,
+335
+]
+},
+"11": {
+"why": "\"Due to unexpected illness I will be taking her place\" → A. Họ không hoãn cuộc họp (C sai); David là trợ lý, không phải giám đốc (B sai)."
+},
+"12": {
+"why": "Giá vé tăng nhẹ không ảnh hưởng; \"some people have missed events because they didn't know they were on\" → thiếu thông báo (B)."
+},
+"13": {
+"why": "Kẻ trộm \"left empty-handed\" nhưng \"did smash a number of windows and kicked down a door\" → toà nhà bị hư hại (A). Chúng chỉ \"taking a chance\" (C sai).",
+"t": [
+101,
+127
+]
+},
+"14": {
+"why": "Số sách tăng gấp đôi và \"visitor numbers have increased 20%\" → C. Đã sửa sang năm 1969 (A sai)."
+},
+"15": {
+"why": "Hội đồng thành phố \"have authorised the spending in this area\" – ánh sáng → C. Máy tính đã lắp từ tháng 6 (B sai), thêm nhân viên thì chưa quyết (A sai)."
+},
+"16": {
+"why": "Qua lối dốc cho xe đẩy là phòng mới sáng sủa, \"ideal location for a new children's room looking out onto the park\"."
+},
+"17": {
+"why": "Sau khu sách người lớn: \"a new community room for public lectures, special events\" – phòng mới lớn nhất."
+},
+"18": {
+"why": "Bên phải khu sách người lớn, nhìn ra biển: quán cà phê, có bậc thang xuống Queen's Parade.",
+"t": [
+304,
+330
+]
+},
+"19": {
+"why": "Phòng nhìn ra cả Queen's Parade và Roberts Avenue là \"the academic study room\"."
+},
+"20": {
+"why": "Nhìn ra Roberts Avenue nhưng không ra Queen's Parade: \"the multimedia room\"."
+},
+"21": {
+"why": "Prout sáng tác rất nhiều (A sai), không lỗi thời (B sai); \"there's never really been a high profile showing of his paintings\" → C.",
+"t": [
+22,
+46
+]
+},
+"22": {
+"why": "\"He was prone to chronic chest infections throughout his life\" – \"it must have been hard for him\" → sức khoẻ kém (A). Gia đình và đồng nghiệp đều ủng hộ.",
+"t": [
+46,
+68
+]
+},
+"23": {
+"why": "Không học từ cha; \"he painstakingly reproduced other painters' works\" → chép tranh (C)."
+},
+"24": {
+"why": "Phong cách không phát triển theo thời gian; \"he seems to have several on the go all at the same time\" → A."
+},
+"25": {
+"why": "Jack thấy chi tiết kiến trúc nhàm, \"but for Ruskin, that was where Prout's genius lay\" → cách thể hiện công trình (B)."
+},
+"26": {
+"why": "Würzburg: cảnh chợ với chi tiết hoa mỹ, \"basically what Prout had made his name doing\" → đề tài tiêu biểu (E)."
+},
+"27": {
+"why": "Bridge on the Ouse: \"experts now think this isn't York at all\" → tên có lẽ không chính xác (B)."
+},
+"28": {
+"why": "Có chữ ký nhưng \"experts… doubt he actually painted it… probably a forgery\" → có thể không phải tranh thật (C).",
+"t": [
+255,
+290
+]
+},
+"29": {
+"why": "Venice: \"picturesque shadow cast by the buildings opposite, which is shown brilliantly\" → vẽ sáng tối khéo (F).",
+"t": [
+290,
+312
+]
+},
+"30": {
+"why": "Entrance to a harbour: cảnh này \"also appear in other pictures\" với thời tiết khác nhau → A."
+},
+"31": {
+"why": "\"The mass customisation movement that was spreading through a large number of industries\"."
+},
+"32": {
+"why": "Nhà bán lẻ muốn tặng \"as a gift\" cho khách."
+},
+"33": {
+"why": "\"It could also be very good publicity\"."
+},
+"34": {
+"why": "\"The possible damage to the company's reputation\"."
+},
+"35": {
+"why": "\"They only had three of them\" (machines)."
+},
+"36": {
+"why": "Không tìm được ai có kinh nghiệm làm \"the type of melted toppings\"."
+},
+"37": {
+"why": "\"Doing the deal with a luxury retailer would be a mistake\"."
+},
+"38": {
+"why": "Sinh viên \"had a contact in the business\"."
+},
+"39": {
+"why": "Khó tái tạo \"the distinctive shape of the Chocozine bars\"."
+},
+"40": {
+"why": "\"Taking on too big an order has destroyed many a small business\"."
+}
+}
+}

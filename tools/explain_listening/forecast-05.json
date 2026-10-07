@@ -1,42 +1,196 @@
-{"q": {
-"1": {"why": "Susan chỉ có di động và đọc số máy ngay sau đó. Nghe kỹ từng chữ số, không bỏ sót số lặp."},
-"2": {"why": "\"It's susansmith at post.com\" – phần sau @ là post.", "t": [192, 198]},
-"3": {"why": "Bẫy: người ta hay nghĩ cô là y tá hoặc bác sĩ, \"but actually I'm a chemist\"."},
-"4": {"why": "\"My dream would be a house that has its own garden\" – lựa chọn số 1."},
-"5": {"why": "Phương án thay thế: \"if you could find me one with a large balcony I'd be happy\"."},
-"6": {"why": "Cô mang theo giường, sofa, máy giặt; \"All I really need in the place is a fridge\"."},
-"7": {"why": "$350 là mức mong muốn, $300 là mức người môi giới bắt đầu tìm; \"you won't need to pay more than $400\" – \"I couldn't pay more than that\" → tối đa 400."},
-"8": {"why": "Không muốn ở gần chỗ làm; mê lướt sóng nên \"important for me to be close to the beach\"."},
-"9": {"why": "Không cần phương tiện công cộng vì tự lái xe; nơi ở \"will need to have parking close to the door\"."},
-"10": {"why": "\"It'd be great if electricity was part of the rent\"."},
-"11": {"why": "Ý tưởng có từ lâu ở giới quy hoạch, \"but it was actually a group of Middletown business people… who decided to create\" MUFS → B. Chuyên gia đại học tham gia sau (A sai).", "t": [80, 106]},
-"12": {"why": "Không phải giảm CO2; \"it was simply to maximise the utilisation of the vacant or idle land\" → A. Ăn uống lành mạnh là lợi ích phát hiện sau (C sai).", "t": [106, 128]},
-"13": {"why": "Trường học và nhân viên công ty đã tham gia nhiều; \"for next year, we're gonna concentrate on getting various community centres\" → C.", "t": [128, 155]},
-"14": {"why": "Ban điều hành là người làm vườn nghiệp dư, sẵn sàng đưa ra \"hands-on suggestions about gardening\" → A. Đừng hỏi câu kỹ thuật như tên Latin (B sai), họ không biết mảnh đất của bạn (C sai).", "t": [155, 183]},
-"15": {"why": "Dụng cụ chuyên dụng \"not happening yet\"; hiện có \"window boxes as well as larger containers… free of charge\" → B. Đất và phân thì thành viên tự lo (A sai).", "t": [183, 210]},
-"16": {"why": "Theo lời thoại, giáo viên đã biết trước chương trình hữu ích cho môn khoa học; điều bất ngờ là \"the change in attitude\" – học sinh có ý thức giữ môi trường xung quanh gọn gàng (gần với C). Đáp án đề cho là A, cần nghe lại để đối chiếu.", "t": [210, 247]},
-"17": {"why": "Quản lý bếp bệnh viện \"runs a course for our members on how to use vegetables in a huge variety of dishes\" → cooking lessons (B)."},
-"18": {"why": "Chính quyền địa phương cho dùng miễn phí \"a large glass building\" để ươm cây → use of a greenhouse (E)."},
-"19": {"why": "Trường đại học nhận mẫu đất và \"do a series of tests on it\" để tư vấn cây và phân bón → advice on soil (C)."},
-"20": {"why": "Siêu thị mở lớp \"how to lose weight and stay healthy by having a sensible diet\" → eat-to-keep-fit course (D). Bẫy: nhắc fertiliser ở câu đại học, không phải siêu thị.", "t": [337, 349]},
-"21": {"why": "Hầu hết đã biểu diễn trước khán giả (\"playing in front of live audiences\") → D; và \"they all had a degree of proficiency in at least two instruments\" → C. Sáng tác là chuyện sau khi vào trường (A sai); piano không phải ai cũng học chính thức (E sai).", "t": [72, 126]},
-"22": {"why": "Hầu hết đã biểu diễn trước khán giả (\"playing in front of live audiences\") → D; và \"they all had a degree of proficiency in at least two instruments\" → C. Sáng tác là chuyện sau khi vào trường (A sai); piano không phải ai cũng học chính thức (E sai).", "t": [72, 126]},
-"23": {"why": "\"It's being terrified of failing that really makes them practise\" → C; và \"nothing more rewarding than mastering something that's really hard to learn\" → E. Tập một mình không phải ý của đa số (A sai).", "t": [126, 166]},
-"24": {"why": "\"It's being terrified of failing that really makes them practise\" → C; và \"nothing more rewarding than mastering something that's really hard to learn\" → E. Tập một mình không phải ý của đa số (A sai).", "t": [126, 166]},
-"25": {"why": "Phần lớn \"would always try to learn their pieces by heart\" → C; và \"it helps to listen to other people playing your chosen piece\" → A. Chọn bài ít người biết hay bài khó là ý thiểu số (B, E sai).", "t": [166, 209]},
-"26": {"why": "Phần lớn \"would always try to learn their pieces by heart\" → C; và \"it helps to listen to other people playing your chosen piece\" → A. Chọn bài ít người biết hay bài khó là ý thiểu số (B, E sai).", "t": [166, 209]},
-"27": {"why": "Biểu diễn solo không làm họ lo lắng (D sai); \"hugely challenging to start with, but they appreciate the challenge and find it stimulating\" → B.", "t": [254, 270]},
-"28": {"why": "Chọn bài: người nói nghĩ là dễ (F là ý riêng của cô), nhưng đa số nói \"it took them ages to make their minds up\" → time-consuming (E).", "t": [270, 309]},
-"29": {"why": "Chơi với nhạc công thể loại khác có thể vui, \"but most of the music students had never even considered it\" → hiếm khi xảy ra (G).", "t": [309, 320]},
-"30": {"why": "Chơi cùng người chơi cùng nhạc cụ: \"incredibly helpful, and not at all intimidating\" → very beneficial (A).", "t": [320, 336]},
-"31": {"why": "\"I want to analyse what seems to be the confusion that surrounds sustainability\"."},
-"32": {"why": "Định nghĩa của LHQ: phát triển cho phép \"both the present and all future generations to meet their needs\"."},
-"33": {"why": "Myth 1: \"Sustainability is not simply about the environment… the original definition says nothing about it at all\"."},
-"34": {"why": "Mục tiêu ban đầu là cho nước nghèo \"similar rights to natural resources\"."},
-"35": {"why": "\"The ultimate goal was improving living standards for all\" (standards = conditions)."},
-"36": {"why": "\"The main problem they state correctly is time\" – dân số tăng nhanh."},
-"37": {"why": "\"Nuclear power, too, is something the sustainability lobby has come to accept, unlike most Greens\"."},
-"38": {"why": "Thay vì pin tốt hơn, đặt \"battery stations for drivers to use on roads\" để đổi pin – tư duy kinh doanh mới."},
-"39": {"why": "Nông dân trồng hướng dương và lúa mì \"instead of corn\" vì chúng cần ít nước hơn."},
-"40": {"why": "\"One of the biggest problems is that our diet is changing\" – ăn nhiều thịt hơn nên tốn nước hơn."}
-}}
+{
+"q": {
+"1": {
+"why": "Susan chỉ có di động và đọc số máy ngay sau đó. Nghe kỹ từng chữ số, không bỏ sót số lặp."
+},
+"2": {
+"why": "\"It's susansmith at post.com\" – phần sau @ là post.",
+"t": [
+192,
+198
+]
+},
+"3": {
+"why": "Bẫy: người ta hay nghĩ cô là y tá hoặc bác sĩ, \"but actually I'm a chemist\"."
+},
+"4": {
+"why": "\"My dream would be a house that has its own garden\" – lựa chọn số 1."
+},
+"5": {
+"why": "Phương án thay thế: \"if you could find me one with a large balcony I'd be happy\"."
+},
+"6": {
+"why": "Cô mang theo giường, sofa, máy giặt; \"All I really need in the place is a fridge\"."
+},
+"7": {
+"why": "$350 là mức mong muốn, $300 là mức người môi giới bắt đầu tìm; \"you won't need to pay more than $400\" – \"I couldn't pay more than that\" → tối đa 400."
+},
+"8": {
+"why": "Không muốn ở gần chỗ làm; mê lướt sóng nên \"important for me to be close to the beach\"."
+},
+"9": {
+"why": "Không cần phương tiện công cộng vì tự lái xe; nơi ở \"will need to have parking close to the door\"."
+},
+"10": {
+"why": "\"It'd be great if electricity was part of the rent\"."
+},
+"11": {
+"why": "Ý tưởng có từ lâu ở giới quy hoạch, \"but it was actually a group of Middletown business people… who decided to create\" MUFS → B. Chuyên gia đại học tham gia sau (A sai).",
+"t": [
+80,
+106
+]
+},
+"12": {
+"why": "Không phải giảm CO2; \"it was simply to maximise the utilisation of the vacant or idle land\" → A. Ăn uống lành mạnh là lợi ích phát hiện sau (C sai).",
+"t": [
+106,
+128
+]
+},
+"13": {
+"why": "Trường học và nhân viên công ty đã tham gia nhiều; \"for next year, we're gonna concentrate on getting various community centres\" → C.",
+"t": [
+128,
+155
+]
+},
+"14": {
+"why": "Ban điều hành là người làm vườn nghiệp dư, sẵn sàng đưa ra \"hands-on suggestions about gardening\" → A. Đừng hỏi câu kỹ thuật như tên Latin (B sai), họ không biết mảnh đất của bạn (C sai).",
+"t": [
+155,
+183
+]
+},
+"15": {
+"why": "Dụng cụ chuyên dụng \"not happening yet\"; hiện có \"window boxes as well as larger containers… free of charge\" → B. Đất và phân thì thành viên tự lo (A sai).",
+"t": [
+183,
+210
+]
+},
+"16": {
+"why": "Giáo viên đã biết trước chương trình hữu ích cho môn khoa học; điều họ không ngờ là \"the change in attitude\" – học sinh có ý thức giữ môi trường xung quanh gọn gàng → C.",
+"t": [
+210,
+247
+]
+},
+"17": {
+"why": "Quản lý bếp bệnh viện \"runs a course for our members on how to use vegetables in a huge variety of dishes\" → cooking lessons (B)."
+},
+"18": {
+"why": "Chính quyền địa phương cho dùng miễn phí \"a large glass building\" để ươm cây → use of a greenhouse (E)."
+},
+"19": {
+"why": "Trường đại học nhận mẫu đất và \"do a series of tests on it\" để tư vấn cây và phân bón → advice on soil (C)."
+},
+"20": {
+"why": "Siêu thị mở lớp \"how to lose weight and stay healthy by having a sensible diet\" → eat-to-keep-fit course (D). Bẫy: nhắc fertiliser ở câu đại học, không phải siêu thị.",
+"t": [
+337,
+349
+]
+},
+"21": {
+"why": "Hầu hết đã biểu diễn trước khán giả (\"playing in front of live audiences\") → D; và \"they all had a degree of proficiency in at least two instruments\" → C. Sáng tác là chuyện sau khi vào trường (A sai); piano không phải ai cũng học chính thức (E sai).",
+"t": [
+72,
+126
+]
+},
+"22": {
+"why": "Hầu hết đã biểu diễn trước khán giả (\"playing in front of live audiences\") → D; và \"they all had a degree of proficiency in at least two instruments\" → C. Sáng tác là chuyện sau khi vào trường (A sai); piano không phải ai cũng học chính thức (E sai).",
+"t": [
+72,
+126
+]
+},
+"23": {
+"why": "\"It's being terrified of failing that really makes them practise\" → C; và \"nothing more rewarding than mastering something that's really hard to learn\" → E. Tập một mình không phải ý của đa số (A sai).",
+"t": [
+126,
+166
+]
+},
+"24": {
+"why": "\"It's being terrified of failing that really makes them practise\" → C; và \"nothing more rewarding than mastering something that's really hard to learn\" → E. Tập một mình không phải ý của đa số (A sai).",
+"t": [
+126,
+166
+]
+},
+"25": {
+"why": "Phần lớn \"would always try to learn their pieces by heart\" → C; và \"it helps to listen to other people playing your chosen piece\" → A. Chọn bài ít người biết hay bài khó là ý thiểu số (B, E sai).",
+"t": [
+166,
+209
+]
+},
+"26": {
+"why": "Phần lớn \"would always try to learn their pieces by heart\" → C; và \"it helps to listen to other people playing your chosen piece\" → A. Chọn bài ít người biết hay bài khó là ý thiểu số (B, E sai).",
+"t": [
+166,
+209
+]
+},
+"27": {
+"why": "Biểu diễn solo không làm họ lo lắng (D sai); \"hugely challenging to start with, but they appreciate the challenge and find it stimulating\" → B.",
+"t": [
+254,
+270
+]
+},
+"28": {
+"why": "Chọn bài: người nói nghĩ là dễ (F là ý riêng của cô), nhưng đa số nói \"it took them ages to make their minds up\" → time-consuming (E).",
+"t": [
+270,
+309
+]
+},
+"29": {
+"why": "Chơi với nhạc công thể loại khác có thể vui, \"but most of the music students had never even considered it\" → hiếm khi xảy ra (G).",
+"t": [
+309,
+320
+]
+},
+"30": {
+"why": "Chơi cùng người chơi cùng nhạc cụ: \"incredibly helpful, and not at all intimidating\" → very beneficial (A).",
+"t": [
+320,
+336
+]
+},
+"31": {
+"why": "\"I want to analyse what seems to be the confusion that surrounds sustainability\"."
+},
+"32": {
+"why": "Định nghĩa của LHQ: phát triển cho phép \"both the present and all future generations to meet their needs\"."
+},
+"33": {
+"why": "Myth 1: \"Sustainability is not simply about the environment… the original definition says nothing about it at all\"."
+},
+"34": {
+"why": "Mục tiêu ban đầu là cho nước nghèo \"similar rights to natural resources\"."
+},
+"35": {
+"why": "\"The ultimate goal was improving living standards for all\" (standards = conditions)."
+},
+"36": {
+"why": "\"The main problem they state correctly is time\" – dân số tăng nhanh."
+},
+"37": {
+"why": "\"Nuclear power, too, is something the sustainability lobby has come to accept, unlike most Greens\"."
+},
+"38": {
+"why": "Thay vì pin tốt hơn, đặt \"battery stations for drivers to use on roads\" để đổi pin – tư duy kinh doanh mới."
+},
+"39": {
+"why": "Nông dân trồng hướng dương và lúa mì \"instead of corn\" vì chúng cần ít nước hơn."
+},
+"40": {
+"why": "\"One of the biggest problems is that our diet is changing\" – ăn nhiều thịt hơn nên tốn nước hơn."
+}
+}
+}
