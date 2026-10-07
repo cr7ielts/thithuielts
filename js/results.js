@@ -146,13 +146,13 @@ function stat(k, v) {
 
 /** Bài Reading/Listening trong ngân hàng đề: mở trang xem lại (bài đọc hoặc lời thoại + nghe lại), giải thích */
 function reviewLink(ctx, sub) {
-  const m = /^bank:(reading|listening):(.+)$/.exec(sub.testId || "");
+  const m = /^bank:(reading|listening|section):(.+)$/.exec(sub.testId || "");
   if (!m || !sub.details?.length) return null;
   return el("div", { class: "card rv-cta row wrap" },
     el("span", { class: "rv-cta-ic" }, icon("search")),
     el("div", { style: "flex:1;min-width:220px" },
       el("strong", {}, L("Xem lại chi tiết từng câu", "Review every question")),
-      el("div", { class: "small muted" }, m[1] === "listening"
+      el("div", { class: "small muted" }, m[1] !== "reading"
         ? L("Lời thoại, nút nghe lại đúng đoạn chứa đáp án và giải thích từng câu.", "The transcript, replay of the exact clip and why each answer is right.")
         : L("Bài đọc tô sẵn câu dẫn chứng, đáp án đúng và giải thích vì sao.", "The passage with evidence highlighted, the right answers and why."))),
     el("button", { class: "btn btn-primary", onclick: () => ctx.go(`bank/${m[1]}/${m[2]}/review`, { submission: sub }) },
