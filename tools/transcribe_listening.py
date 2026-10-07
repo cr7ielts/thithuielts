@@ -19,6 +19,10 @@ bank = [json.loads(l.strip().rstrip(',')) for l in src.split('LISTENING_BANK = [
 force = '--force' in sys.argv
 want = {a for a in sys.argv[1:] if not a.startswith('--')}
 
+import av
+# PyAV bản mới bỏ tham số metadata_errors mà faster-whisper vẫn truyền vào av.open -> lược đi cho chạy được
+_av_open = av.open
+av.open = lambda *a, **k: _av_open(*a, **{x: y for x, y in k.items() if x != 'metadata_errors'})
 from faster_whisper import WhisperModel
 model = WhisperModel(os.environ.get('WHISPER_MODEL', 'small'),
                      device=os.environ.get('WHISPER_DEVICE', 'cpu'),

@@ -1,0 +1,176 @@
+{
+"q": {
+"1": {
+"why": "Mã đặt hàng là chuỗi số lẫn chữ: \"The reference is 5174XCM\"."
+},
+"2": {
+"why": "Đi biển, trời ấm nên \"the design you need is what we call our summer sleeping bag\"."
+},
+"3": {
+"why": "Dùng đệm hơi thay giường gấp; để bơm \"You'll need a pump\"."
+},
+"4": {
+"why": "Nồi chảo mang từ nhà; \"What we need to think about is water. We'll need a large bottle for that\"."
+},
+"5": {
+"why": "Cần đồ ăn không vỡ bằng kim loại: \"So plates, then. A set of four in metal\". Dao dĩa thì đã có."
+},
+"6": {
+"why": "Không muốn đèn pin nhựa vì bọn trẻ làm vỡ; \"we've got some good rubber ones\"."
+},
+"7": {
+"why": "Đã có bóng; \"do you have a baseball set? They'd love that\"."
+},
+"8": {
+"why": "\"We need an up-to-date map of the area\" – bản đồ cũ đã quá cũ."
+},
+"9": {
+"why": "Địa chỉ \"56 Taupo Street\", được đánh vần T-A-U-P-O."
+},
+"10": {
+"why": "Phí chuẩn $50, nhưng đơn trên $500 nên \"a discounted delivery charge of only $25.50\". Bẫy: 50 và 500."
+},
+"21": {
+"why": "Dầu gội từng là cách gội đầu tiết kiệm, nay \"has evolved into a beauty product\" → trở thành loại hàng hoá khác (C).",
+"t": [
+85,
+95
+]
+},
+"22": {
+"why": "Nghiên cứu ở Yale cho thấy \"bad hair days\" \"are not just imagined, and both sexes are equally affected\" → chúng có thật (A). Nam nữ như nhau nên B sai.",
+"t": [
+104,
+133
+]
+},
+"23": {
+"why": "Hầu hết nhà sản xuất dùng các hoá chất này \"though they keep it quiet… strangely silent about it\" → hiếm khi công khai (C).",
+"t": [
+133,
+154
+]
+},
+"24": {
+"why": "In thẳng lên chai rẻ hơn 50% và nhanh hơn, nhưng \"doesn't enhance the visual impact… comes across as a bit cheap\" → trông kém hấp dẫn (B).",
+"t": [
+154,
+180
+]
+},
+"25": {
+"why": "Bao bì thân thiện hơn \"just by making it less heavy… I'd like to find out whether some of them actually do\" → trọng lượng chai (B).",
+"t": [
+180,
+208
+]
+},
+"26": {
+"why": "Michael ngại khuyến mãi, nhưng gặp nhãn mới \"I'm usually up for giving it a go rather than sticking to one or two favourite brands\" → C.",
+"t": [
+208,
+233
+]
+},
+"27": {
+"why": "Quảng cáo Zing: gia đình hạnh phúc, nhà đẹp, người xem nghĩ \"if only my life was like that\" → lối sống đáng ghen tị (B).",
+"t": [
+283,
+320
+]
+},
+"28": {
+"why": "Splash kể chuyện một cặp đôi chia tay hay ở lại với nhau → yếu tố tình cảm lãng mạn (F).",
+"t": [
+321,
+362
+]
+},
+"29": {
+"why": "Just Go có nhiều thông tin kỹ thuật để khách tin rằng sản phẩm \"will do the job they want it to\" → độ tin cậy (E).",
+"t": [
+368,
+391
+]
+},
+"30": {
+"why": "Brozene: không lời bình, \"very calming with soft music and very peaceful imagery\" → thư giãn (A).",
+"t": [
+391,
+417
+]
+},
+"31": {
+"why": "Máy tính được ví như bước ngoặt khi tổ tiên trong hang \"first learned to make fire\".",
+"t": [
+136,
+160
+]
+},
+"32": {
+"why": "\"People will increasingly perceive these computer systems as intelligent\"."
+},
+"33": {
+"why": "Nghiên cứu tâm lý \"would inevitably become increasingly varied\"."
+},
+"34": {
+"why": "\"As increasing numbers of women become research scientists\" – các lĩnh vực sức khoẻ, gia đình được chú ý hơn."
+},
+"35": {
+"why": "\"Imaging devices that will be inserted into the brain\"."
+},
+"36": {
+"why": "Người già ngày càng nhiều nên phải tính tới \"quality of life\"."
+},
+"37": {
+"why": "Giải mã gen giúp dự đoán \"our likelihood of suffering from any particular disease\"."
+},
+"38": {
+"why": "Cách chữa \"one-size-fits-all\" sẽ nhường chỗ cho \"a more personal approach\"."
+},
+"39": {
+"why": "Trên mạng thấy được tác hại \"by destroying the forests\"."
+},
+"40": {
+"why": "\"Apply this knowledge to help protect our planet\"."
+},
+"11": {
+"why": "Có 20 lối vào, \"each connected to public roads by short paths\" → B. Bẫy: xe buýt chỉ tới 2 điểm đầu cuối (C), bãi đỗ có camera chỉ ở 4 lối vào (A)."
+},
+"12": {
+"why": "\"In response to a poll of walkers last year, we've recently installed kiosks… with clear, easy-to-follow maps and other trail information\" → C. Picnic và chỗ sạc đã có từ trước."
+},
+"13": {
+"why": "Red Rock Walk là cơ hội \"to study a huge variety of vegetation\" → A. Không nhìn được xa (B sai), chim thì \"hard to spot\" (C sai)."
+},
+"14": {
+"why": "Mùa đông \"if the weather conditions are really unsuitable, we might have to close this walk\" → C. Sông vẫn đóng băng, tuyết dày (B sai) và thường đông người (A sai)."
+},
+"15": {
+"why": "Giường tập thể: đặt trước không hiệu quả \"so now we allocate them as people arrive\" → H (ai đến trước được trước)."
+},
+"16": {
+"why": "Phòng gia đình: \"you will need to make arrangements ahead of time\" → F (phải đặt trước)."
+},
+"17": {
+"why": "\"A popular facility that we've recently added is coin-operated washing machines\" → G (thiết bị mới)."
+},
+"18": {
+"why": "Bữa ăn có giá cố định, nhưng \"We do ask you to give a hand with serving and cleaning up after meals\" → D (nhờ khách giúp). Bẫy I: giá như nhau cho người lớn và trẻ em.",
+"t": [
+316,
+339
+]
+},
+"19": {
+"why": "Tắm nước nóng \"at no charge\" → E (miễn phí)."
+},
+"20": {
+"why": "\"The hostel is in the process of creating a bike rental scheme which should be up and running next year\" → C (chưa có).",
+"t": [
+349,
+370
+]
+}
+}
+}

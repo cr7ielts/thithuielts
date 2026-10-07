@@ -101,6 +101,13 @@ FIXES = {
  'forecast-07': {31: 'increase / health increase', 33: 'light and dark / light dark / dark and light', 35: 'heart and stomach / heart stomach / stomach and heart'},
  'forecast-12': {17: 'A,E', 18: 'A,E', 19: 'B,D', 20: 'B,D', 21: 'C,D', 22: 'C,D', 23: 'C,E', 24: 'C,E', 25: 'A,C', 26: 'A,C'},
  'dudoan-03': {27: 'D,E', 28: 'D,E'},
+ 'forecast-05': {16: 'C'},
+ 'forecast-08': {31: 'fire'},
+ 'forecast-09': {16: 'A', 27: 'C'},
+ 'forecast-17': {17: 'A', 26: 'C'},
+ 'forecast-19': {8: '650', 21: 'E', 22: 'G', 23: 'H', 24: 'B', 25: 'C', 26: 'F', 27: 'C', 28: 'A', 29: 'C', 30: 'B'},
+ 'vol9-07': {15: 'C'},
+ 'vol9-08': {16: 'B'},
 }
 for _t, _f in FIXES.items():
     for _n, _a in _f.items(): KEYS[_t][_n] = _a
