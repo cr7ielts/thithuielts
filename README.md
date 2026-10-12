@@ -165,6 +165,10 @@ hoặc **từng section Listening** (10 câu, 10 phút — xếp theo Section 1�
   Giáo viên tải lên **một lần**: Ngân hàng đề → **Tải file đề lên** → chọn thư mục `5. READING IN PASSAGES`, bấm Tải lên;
   rồi chọn thư mục `2. LISTENING`, bấm Tải lên (≈ 1 GB, nên để máy chạy tới khi xong). File đã có sẽ được bỏ qua.
 - PDF hiển thị bằng PDF.js nên xem được trên cả điện thoại.
+- **Dự đoán Reading theo kỳ đề**: tab Reading có nút lọc *Dự đoán 9–12/2026* (40 passage, thẻ bài có nhãn “Dự đoán”),
+  lấy từ bảng dự đoán của IELTS Prediction. Danh sách ở [`js/data/reading-forecast.js`](js/data/reading-forecast.js):
+  `ids` là bài đã có trên web, `missing` là bài trong bảng dự đoán mà ngân hàng chưa có, kèm nguồn tìm được
+  (giáo viên thấy danh sách này khi bấm nút lọc). Sang kỳ mới thì thay `period`, `ids`, `missing`.
 
 ### Làm bài tương tác (giống thi trên máy)
 

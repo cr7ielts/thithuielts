@@ -12,6 +12,7 @@ import { loadInteractive, examView } from "./exam.js";
 import { L } from "../i18n.js";
 import { startProctor, onceAudio, clearOnce } from "../proctor.js";
 import { bankLock, lockNotice, resetLockCache } from "../homework/hwlock.js";
+import { READING_FORECAST } from "../data/reading-forecast.js";
 
 const ROMANS = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv"];
 const KIND_LABEL = {
@@ -55,6 +56,9 @@ export async function fileUrl(path) {
 
 const questionCount = (item) => item.groups.reduce((s, g) => s + g.to - g.from + 1, 0);
 const testId = (kind, item) => `bank:${kind}:${item.id}`;
+// bài Reading nằm trong bảng dự đoán của kỳ đề hiện tại (js/data/reading-forecast.js)
+const FORECAST = new Set(READING_FORECAST.ids);
+const FC_CHIP = "forecast";
 const partLabel = (kind, item) => (kind === "reading" ? `Passage ${item.part}` : kind === "section" ? `Section ${item.section}` : item.set || "Listening");
 const sourceLabel = (item) => `${item.set} · ${item.testTitle}`;
 
@@ -97,17 +101,27 @@ function bankList(ctx, banks, kind, best) {
     ? [...banks.section].sort((a, b) => a.section - b.section || a.title.localeCompare(b.title))
     : banks[kind];
   const parts = [...new Set(items.map((i) => partLabel(kind, i)))];
+  const hasFc = kind === "reading" && items.some((i) => FORECAST.has(i.id));
   let part = "all", q = "";
   const search = el("input", { type: "search", id: "bank-search", placeholder: L("Tìm theo tên bài…", "Search by title…"), style: "flex:1;min-width:200px",
     oninput: () => { q = search.value.trim().toLowerCase(); paint(); } });
   const chips = el("div", { class: "row wrap", style: "gap:6px" });
   const grid = el("div", { class: "bank-grid" });
   const count = el("span", { class: "chip" });
+  // giáo viên: bài trong bảng dự đoán mà ngân hàng chưa có
+  const fcMissing = hasFc && isAdmin(ctx.user) && READING_FORECAST.missing.length ? el("details", { class: "notice" },
+    el("summary", {}, L(`${READING_FORECAST.missing.length} bài trong bảng dự đoán chưa có trên web (chỉ giáo viên thấy)`,
+      `${READING_FORECAST.missing.length} forecast passages are not on the site yet (teachers only)`)),
+    el("ul", { class: "tiny", style: "margin:8px 0 0" }, READING_FORECAST.missing.map((m) =>
+      el("li", {}, el("strong", {}, `P${m.part} ${m.title}`), ` — ${m.note}`)))) : null;
   const paint = () => {
+    fcMissing?.classList.toggle("hidden", part !== FC_CHIP);
     [...chips.children].forEach((c) => c.classList.toggle("on", c.dataset.part === part));
     grid.innerHTML = "";
     const hay = (i) => `${i.title} ${kind === "section" ? sourceLabel(i) + " " + (i.alsoIn || []).join(" ") : ""}`.toLowerCase();
-    const list = items.filter((i) => (part === "all" || partLabel(kind, i) === part) && (!q || hay(i).includes(q)));
+    const inPart = (i) => part === "all" || (part === FC_CHIP ? FORECAST.has(i.id) : partLabel(kind, i) === part);
+    const list = items.filter((i) => inPart(i) && (!q || hay(i).includes(q)))
+      .sort((a, b) => (part === FC_CHIP ? a.part - b.part || a.title.localeCompare(b.title) : 0));
     count.textContent = L(`${list.length} bài`, `${list.length} tests`);
     let lastHead = null;
     list.forEach((i) => {
@@ -122,7 +136,9 @@ function bankList(ctx, banks, kind, best) {
   };
   ["all", ...parts].forEach((p) => chips.append(el("button", { class: "chip-btn", dataset: { part: p }, onclick: () => { part = p; paint(); } },
     p === "all" ? L("Tất cả", "All") : p)));
-  box.append(tabs, el("div", { class: "row wrap", style: "gap:10px" }, search, count), chips, grid);
+  if (hasFc) chips.append(el("button", { class: "chip-btn", dataset: { part: FC_CHIP }, onclick: () => { part = FC_CHIP; paint(); } },
+    icon("star"), L(` Dự đoán ${READING_FORECAST.period}`, ` Forecast ${READING_FORECAST.period}`)));
+  box.append(tabs, el("div", { class: "row wrap", style: "gap:10px" }, search, count), chips, fcMissing, grid);
   paint();
   return box;
 }
@@ -131,7 +147,8 @@ function bankCard(ctx, kind, item, done) {
   const n = questionCount(item);
   return el("button", { class: "bank-card", onclick: () => ctx.go(`bank/${kind}/${item.id}`) },
     el("div", { class: "row", style: "justify-content:space-between;gap:8px" },
-      el("span", { class: `skill-tag ${kind}` }, partLabel(kind, item)),
+      el("span", { class: "row", style: "gap:6px" }, el("span", { class: `skill-tag ${kind}` }, partLabel(kind, item)),
+        kind === "reading" && FORECAST.has(item.id) ? el("span", { class: "chip chip-warn", title: READING_FORECAST.source }, L("Dự đoán", "Forecast")) : null),
       done ? el("span", { class: "chip chip-ok" }, icon("check"), `${done.raw}/${done.total}`) : el("span", { class: "tiny muted" }, L(`${n} câu`, `${n} Qs`))),
     el("div", { class: "bank-title" }, item.title),
     kind === "reading" && item.set ? el("div", { class: "tiny muted" }, `${item.set} · ${item.testTitle}`) : null,
