@@ -288,7 +288,8 @@ function startGate(a, wmDraft, onStart) {
         ? L("Được nộp lại trước hạn, trước khi giáo viên chấm.", "You can resubmit before the deadline, until your teacher marks it.")
         : L("Chỉ nộp được một lần.", "You can submit only once.")),
       ["reading", "listening", "quiz"].includes(a.type)
-        ? el("li", {}, L("Điểm và đáp án hiện sau hạn nộp.", "Your score and the answers appear after the deadline.")) : null),
+        ? el("li", {}, a.keyAfterSubmit ? L("Nộp xong xem ngay điểm, đáp án và giải thích.", "You'll see your score, the answers and explanations as soon as you submit.")
+          : L("Điểm và đáp án hiện sau hạn nộp.", "Your score and the answers appear after the deadline.")) : null),
     el("div", {}, btn));
 }
 
@@ -305,12 +306,15 @@ function feedbackBlock(sub) {
 }
 
 /* ----- Reading / Listening: phiếu trả lời, chấm tự động ----- */
+/** học sinh đã nộp nhưng chưa được xem đáp án (chưa tới hạn và giáo viên không mở đáp án ngay sau khi nộp) */
+const keyHidden = (a, teacher) => !teacher && !a.keyAfterSubmit && a.dueAt > new Date();
+
 async function answerSheet(ctx, a, sub, teacher, proctor = null) {
   const n = a.questionCount || 0;
   const card = el("div", { class: "card" });
 
   // đã nộp nhưng chưa tới hạn: chưa có điểm / đáp án (luật Firestore cũng chặn đọc đáp án tới hạn nộp)
-  if (sub && !teacher && a.dueAt > new Date()) {
+  if (sub && keyHidden(a, teacher)) {
     card.append(el("h2", {}, L("Đã nộp bài", "Submitted")),
       el("p", { class: "mb-0" }, L(`Nộp lúc ${fmtDateTime(sub.submittedAt)}. Điểm và đáp án hiện sau hạn nộp (${fmtDateTime(a.dueAt)}).`,
         `Submitted ${fmtDateTime(sub.submittedAt)}. Your score and the answers appear after the deadline (${fmtDateTime(a.dueAt)}).`)));
@@ -394,7 +398,7 @@ async function quizWorkArea(ctx, a, sub, teacher, proctor = null) {
   if (!a.quiz?.items?.length) { card.append(el("div", { class: "notice notice-error" }, L("Bài này chưa có nội dung đề.", "This test has no content."))); return card; }
   const head = el("div", {}, el("h2", { class: "mb-0" }, a.quiz.title),
     ...(a.quiz.subtitle || []).map((x) => el("div", { class: "muted small" }, x)));
-  if (sub && !teacher && a.dueAt > new Date()) {
+  if (sub && keyHidden(a, teacher)) {
     card.append(head, el("div", { class: "notice notice-info" }, L(`Đã nộp lúc ${fmtDateTime(sub.submittedAt)}. Điểm, đáp án và giải thích hiện sau hạn nộp (${fmtDateTime(a.dueAt)}).`,
       `Submitted ${fmtDateTime(sub.submittedAt)}. Your score, the answers and explanations appear after the deadline (${fmtDateTime(a.dueAt)}).`)));
     return card;
@@ -472,7 +476,7 @@ async function bankWorkArea(ctx, a, sub, teacher) {
       el("div", { class: "muted small" }, L(`${found.count} câu · chấm tự động`, `${found.count} questions · marked automatically`)))));
   if (sub?.score) {
     const { raw, total } = sub.score;
-    const hide = !teacher && a.dueAt > new Date();   // chưa tới hạn: thấy điểm, chưa thấy đáp án
+    const hide = keyHidden(a, teacher);   // chưa tới hạn: thấy điểm, chưa thấy đáp án
     card.append(
       el("div", { class: "row wrap", style: "gap:14px" },
         el("div", { class: "band-ring sm", style: `--pct:${total ? (raw / total) * 100 : 0}%` }, el("div", { class: "val" }, `${raw}/${total}`)),
@@ -769,6 +773,12 @@ export function renderHomeworkForm(ctx, id) {
     const allowLate = el("input", { type: "checkbox", id: "hw-late", checked: a ? (a.allowLate ? "" : null) : "" });
     // mặc định mỗi bài một lần nộp; Writing / Speaking / nộp file có thể cho nộp lại trước hạn
     const allowResubmit = el("input", { type: "checkbox", id: "hw-resubmit", checked: a?.allowResubmit ? "" : null });
+    // đáp án + giải thích: mặc định mở sau hạn nộp; hoặc mở ngay khi học sinh nộp xong
+    const keyWhen = el("select", { id: "hw-keywhen", class: "pick" },
+      el("option", { value: "due", selected: a?.keyAfterSubmit ? null : "" }, L("Sau hạn nộp", "After the deadline")),
+      el("option", { value: "submit", selected: a?.keyAfterSubmit ? "" : null }, L("Ngay sau khi học sinh nộp bài", "As soon as the student submits")));
+    const keyWhenField = el("div", { class: "row wrap", style: "gap:8px;align-items:center" },
+      el("label", { class: "field-label mb-0", for: "hw-keywhen" }, L("Học sinh xem đáp án & giải thích:", "Students see answers and explanations:")), keyWhen);
     const published = el("input", { type: "checkbox", id: "hw-pub", checked: a ? (a.published ? "" : null) : "" });
     const instructions = el("textarea", { id: "hw-instr", style: "width:100%;min-height:110px",
       placeholder: L("Hướng dẫn cho học sinh. Với Writing, dán đề bài vào đây.", "Instructions for students. For Writing, paste the task prompt here.") });
@@ -861,6 +871,7 @@ export function renderHomeworkForm(ctx, id) {
     const syncType = () => {
       keyField.classList.toggle("hidden", !["reading", "listening", "quiz"].includes(type.value));
       quizField.classList.toggle("hidden", type.value !== "quiz");
+      keyWhenField.classList.toggle("hidden", !["reading", "listening", "quiz", "bank"].includes(type.value));
       speakingField.classList.toggle("hidden", type.value !== "speaking");
       writingField.classList.toggle("hidden", type.value !== "writingmock");
       bankField.classList.toggle("hidden", type.value !== "bank");
@@ -931,7 +942,8 @@ export function renderHomeworkForm(ctx, id) {
         const data = { title: title.value.trim(), type: t, instructions: instructions.value.trim(), dueAt: dueDate,
           allowLate: allowLate.checked, published: published.checked, materials, links, speaking, bank, writing, classId: classIds[0],
           quiz: t === "quiz" ? qz.quiz : null, keyExtra: t === "quiz" ? qz.extra : null,
-          allowResubmit: ["writing", "speaking", "upload"].includes(t) && allowResubmit.checked };
+          allowResubmit: ["writing", "speaking", "upload"].includes(t) && allowResubmit.checked,
+          keyAfterSubmit: ["reading", "listening", "quiz", "bank"].includes(t) && keyWhen.value === "submit" };
         if (!aid) aid = await saveAssignment(null, { ...data, published: false }, answers, ctx.user);
         // Writing full test: tải hình Task 1 lên (cần id bài tập trước)
         if (writing && writingField.pendingImage()) {
@@ -994,6 +1006,7 @@ export function renderHomeworkForm(ctx, id) {
         el("label", { class: "check", title: L("Chỉ áp dụng cho Writing, Speaking, nộp file", "Writing, Speaking and file upload only") }, allowResubmit,
           L("Cho nộp lại trước hạn (Writing, Speaking, nộp file)", "Allow resubmitting before the deadline (Writing, Speaking, upload)")),
         el("label", { class: "check" }, published, L("Hiện cho học sinh", "Visible to students"))),
+      keyWhenField,
       el("div", {}, el("label", { class: "field-label", for: "hw-instr" }, L("Hướng dẫn / đề bài", "Instructions / prompt")), instructions),
       el("div", { class: "stack-sm" },
         el("div", { class: "row wrap", style: "gap:8px" },

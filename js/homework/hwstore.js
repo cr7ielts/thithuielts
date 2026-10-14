@@ -80,7 +80,7 @@ export async function getAssignment(id) {
 export async function saveAssignment(id, data, answers, user) {
   const body = {
     title: data.title, type: data.type, instructions: data.instructions || "", classId: data.classId || null,
-    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published, allowResubmit: !!data.allowResubmit,
+    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published, allowResubmit: !!data.allowResubmit, keyAfterSubmit: !!data.keyAfterSubmit,
     materials: data.materials || [], links: data.links || [],
     questionCount: answers ? answers.length : (data.type === "bank" ? data.bank?.count || 0 : 0),
     speaking: data.type === "speaking" ? (data.speaking || null) : null,

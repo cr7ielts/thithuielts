@@ -78,12 +78,13 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // Đáp án: giáo viên đọc được; học sinh chỉ đọc khi đã nộp bài của mình VÀ đã qua hạn nộp
-    // (để không chuyền đáp án cho bạn chưa làm)
+    // Đáp án: giáo viên đọc được; học sinh chỉ đọc khi đã nộp bài của mình VÀ (đã qua hạn nộp
+    // hoặc giáo viên chọn mở đáp án ngay sau khi nộp) — để không chuyền đáp án cho bạn chưa làm
     match /assignmentKeys/{aid} {
       allow read: if isAdmin() || (request.auth != null &&
         exists(/databases/$(database)/documents/hwSubmissions/$(aid + '_' + request.auth.uid)) &&
-        request.time > get(/databases/$(database)/documents/assignments/$(aid)).data.dueAt);
+        (request.time > get(/databases/$(database)/documents/assignments/$(aid)).data.dueAt ||
+         get(/databases/$(database)/documents/assignments/$(aid)).data.get('keyAfterSubmit', false) == true));
       allow write: if isAdmin();
     }
 
