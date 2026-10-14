@@ -202,7 +202,7 @@ export function renderBankPractice(ctx, kind, id, hwId = null) {
         const late = a.dueAt < new Date() && !a.allowLate;
         hw = { a, done, late, active: !done && !late && !isAdmin(ctx.user) };
         // đã nộp mà chưa tới hạn: chưa cho luyện lại (luyện xong sẽ thấy đáp án)
-        if (done && a.dueAt > new Date()) { body.replaceWith(lockNotice(ctx, { a, sub: done })); return; }
+        if (done && a.dueAt > new Date() && !a.keyAfterSubmit) { body.replaceWith(lockNotice(ctx, { a, sub: done })); return; }
       }
     }
     const inter = await loadInteractive(item.id);   // có nội dung đề -> làm như thi trên máy, không cần PDF
@@ -243,7 +243,7 @@ function briefing(ctx, kind, item, start, hw = null, inter = null) {
           ? L("Đề (PDF) ở bên trái, phiếu trả lời ở bên phải.", "The test paper (PDF) is on the left and the answer sheet on the right.")
           : L("Bật audio và làm theo đề PDF; mỗi phần nghe một lần như thi thật.", "Play the audio and follow the PDF; listen to each part once, as in the real test.")),
       el("li", {}, L("Sai chính tả bị tính là sai. Hết giờ tự nộp.", "Spelling mistakes count as wrong. Your answers are submitted when time runs out.")),
-      hw?.active ? el("li", {}, L("Nộp xong thấy điểm ngay; đáp án và phần xem lại mở sau hạn nộp.", "You'll see your score straight away; answers and review open after the deadline."))
+      hw?.active && !hw.a.keyAfterSubmit ? el("li", {}, L("Nộp xong thấy điểm ngay; đáp án và phần xem lại mở sau hạn nộp.", "You'll see your score straight away; answers and review open after the deadline."))
         : el("li", {}, L("Nộp xong xem ngay đáp án và câu sai.", "After submitting you'll see the answers and your mistakes."))),
     hwNote,
     el("div", { class: "row wrap", style: "gap:10px;margin-top:14px" },
@@ -331,8 +331,8 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
         startedAt: startedAt.toISOString(), durationSec: timer.elapsedSeconds, autoSubmitted: auto,
         raw: res.correct, total: res.total, band: bandFor(kind, res.correct, res.total),
         details: res.details, graded: true,
-        // homework: đáp án trong lần làm này chỉ hiện sau hạn nộp
-        ...(proctor ? { hwId: hw.a.id, revealAt: hw.a.dueAt.toISOString(), integrity: proctor.report() } : {}),
+        // homework: đáp án trong lần làm này chỉ hiện sau hạn nộp (trừ khi giáo viên mở đáp án ngay khi nộp)
+        ...(proctor ? { hwId: hw.a.id, revealAt: (hw.a.keyAfterSubmit ? new Date() : hw.a.dueAt).toISOString(), integrity: proctor.report() } : {}),
       });
       draft.clear(ctx.user.uid, draftKey);
       // bài tập về nhà: ghi bài nộp vào Homework (lượt đầu tiên, còn hạn)

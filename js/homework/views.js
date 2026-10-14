@@ -8,8 +8,10 @@ import { L } from "../i18n.js";
 import {
   listAssignments, getAssignment, saveAssignment, deleteAssignment, getKey, parseKey, keyToText,
   uploadFile, getMySubmission, listMyHomework, listSubmissionsFor, countSubmissions, submitHomework, gradeHomework,
-  getDraft, listDraftsFor, draftExpired, submitDraftAsTeacher,
+  getDraft, listDraftsFor, draftExpired, submitDraftAsTeacher, getKeyFull,
 } from "./hwstore.js";
+import { docxLines, parseQuiz, parseKeyDoc, quizQuestions, gradeQuiz } from "./quizdoc.js";
+import { quizView } from "./quizview.js";
 import { speakingFormSection, speakingWorkArea, recordingsList, aiReport, speakingTurns } from "./speaking.js";
 import { CRITERIA, overallBand, aiAvailable } from "./speaking-ai.js";
 import { bankPicker, findBankItem } from "../bank/bank.js";
@@ -27,6 +29,7 @@ const TYPES = {
   speaking:  { icon: "mic",       color: "var(--c-speaking)",  label: "Speaking" },
   upload:    { icon: "upload",    color: "#9a8f7a",            label: L("Nộp file", "File upload") },
   bank:      { icon: "file",      color: "#a47ad8",            label: L("Ngân hàng đề", "Question bank") },
+  quiz:      { icon: "cards",     color: "#4f8fd8",            label: L("Bài kiểm tra từ file Word", "Test from a Word file") },
 };
 const HOUR = 3600 * 1000;
 
@@ -204,11 +207,11 @@ export function renderHomeworkDetail(ctx, id) {
     const st = statusOf(a, sub);
     const closed = !teacher && st === "missed";
     // chưa nộp: phải bấm "Bắt đầu làm bài" (toàn màn hình + giám sát) mới thấy đề
-    const gated = !teacher && !sub && !closed && !wmExpired && ["reading", "listening", "writing", "writingmock", "speaking"].includes(a.type);
+    const gated = !teacher && !sub && !closed && !wmExpired && ["reading", "listening", "writing", "writingmock", "speaking", "quiz"].includes(a.type);
 
     const head = el("section", { class: "card hw-head", style: `--t:${TYPES[a.type]?.color}` },
       el("div", { class: "row wrap", style: "gap:8px" }, typeTag(a.type), teacher ? null : el("span", { class: STATUS[st].cls }, STATUS[st].label),
-        ["reading", "listening", "bank"].includes(a.type) && a.questionCount ? el("span", { class: "chip" }, L(`${a.questionCount} câu`, `${a.questionCount} questions`)) : null,
+        ["reading", "listening", "bank", "quiz"].includes(a.type) && a.questionCount ? el("span", { class: "chip" }, L(`${a.questionCount} câu`, `${a.questionCount} questions`)) : null,
         a.type === "speaking" ? el("span", { class: "chip" }, ((n) => L(`${n} câu hỏi`, `${n} question${n === 1 ? "" : "s"}`))(speakingTurns(a).length)) : null),
       el("h1", { style: "margin:8px 0 4px" }, a.title),
       el("div", { class: `hw-due due-${due.state}` }, icon("clock"), due.text, a.allowLate ? el("span", { class: "tiny muted" }, L(" · cho phép nộp muộn", " · late work accepted")) : null),
@@ -239,6 +242,8 @@ export function renderHomeworkDetail(ctx, id) {
         out.push(speakingWorkArea(ctx, a, sub, teacher, proctor));
       } else if (a.type === "bank") {
         out.push(await bankWorkArea(ctx, a, sub, teacher));
+      } else if (a.type === "quiz") {
+        out.push(await quizWorkArea(ctx, a, sub, teacher, proctor));
       } else if (a.type === "writingmock") {
         out.push(writingMockWorkArea(ctx, a, sub, teacher, proctor, wmDraft));
       } else {
@@ -282,8 +287,9 @@ function startGate(a, wmDraft, onStart) {
       el("li", {}, a.allowResubmit && ["writing", "speaking", "upload"].includes(a.type)
         ? L("Được nộp lại trước hạn, trước khi giáo viên chấm.", "You can resubmit before the deadline, until your teacher marks it.")
         : L("Chỉ nộp được một lần.", "You can submit only once.")),
-      ["reading", "listening"].includes(a.type)
-        ? el("li", {}, L("Điểm và đáp án hiện sau hạn nộp.", "Your score and the answers appear after the deadline.")) : null),
+      ["reading", "listening", "quiz"].includes(a.type)
+        ? el("li", {}, a.keyAfterSubmit ? L("Nộp xong xem ngay điểm, đáp án và giải thích.", "You'll see your score, the answers and explanations as soon as you submit.")
+          : L("Điểm và đáp án hiện sau hạn nộp.", "Your score and the answers appear after the deadline.")) : null),
     el("div", {}, btn));
 }
 
@@ -300,12 +306,15 @@ function feedbackBlock(sub) {
 }
 
 /* ----- Reading / Listening: phiếu trả lời, chấm tự động ----- */
+/** học sinh đã nộp nhưng chưa được xem đáp án (chưa tới hạn và giáo viên không mở đáp án ngay sau khi nộp) */
+const keyHidden = (a, teacher) => !teacher && !a.keyAfterSubmit && a.dueAt > new Date();
+
 async function answerSheet(ctx, a, sub, teacher, proctor = null) {
   const n = a.questionCount || 0;
   const card = el("div", { class: "card" });
 
   // đã nộp nhưng chưa tới hạn: chưa có điểm / đáp án (luật Firestore cũng chặn đọc đáp án tới hạn nộp)
-  if (sub && !teacher && a.dueAt > new Date()) {
+  if (sub && keyHidden(a, teacher)) {
     card.append(el("h2", {}, L("Đã nộp bài", "Submitted")),
       el("p", { class: "mb-0" }, L(`Nộp lúc ${fmtDateTime(sub.submittedAt)}. Điểm và đáp án hiện sau hạn nộp (${fmtDateTime(a.dueAt)}).`,
         `Submitted ${fmtDateTime(sub.submittedAt)}. Your score and the answers appear after the deadline (${fmtDateTime(a.dueAt)}).`)));
@@ -383,6 +392,74 @@ async function answerSheet(ctx, a, sub, teacher, proctor = null) {
   return card;
 }
 
+/* ----- Bài kiểm tra từ file Word: làm trên web, phần trắc nghiệm / điền từ chấm tự động, câu viết giáo viên chấm ----- */
+async function quizWorkArea(ctx, a, sub, teacher, proctor = null) {
+  const card = el("div", { class: "card stack" });
+  if (!a.quiz?.items?.length) { card.append(el("div", { class: "notice notice-error" }, L("Bài này chưa có nội dung đề.", "This test has no content."))); return card; }
+  const head = el("div", {}, el("h2", { class: "mb-0" }, a.quiz.title),
+    ...(a.quiz.subtitle || []).map((x) => el("div", { class: "muted small" }, x)));
+  if (sub && keyHidden(a, teacher)) {
+    card.append(head, el("div", { class: "notice notice-info" }, L(`Đã nộp lúc ${fmtDateTime(sub.submittedAt)}. Điểm, đáp án và giải thích hiện sau hạn nộp (${fmtDateTime(a.dueAt)}).`,
+      `Submitted ${fmtDateTime(sub.submittedAt)}. Your score, the answers and explanations appear after the deadline (${fmtDateTime(a.dueAt)}).`)));
+    return card;
+  }
+  if (sub) {
+    let k = { answers: [], why: [], sample: [] };
+    try { k = await getKeyFull(a.id); } catch { /* chưa được đọc đáp án */ }
+    const g = gradeQuiz(a.quiz, k.answers, sub.answers || {}, isCorrect);
+    const qs = quizQuestions(a.quiz);
+    const res = { byN: new Map(g.details.map((d) => [d.n, d])), showKey: true,
+      why: new Map(qs.map((q, i) => [q.n, k.why?.[i] || ""])), sample: new Map(qs.map((q, i) => [q.n, k.sample?.[i] || ""])) };
+    card.append(
+      el("div", { class: "row wrap", style: "gap:14px" },
+        el("div", { class: "band-ring sm", style: `--pct:${g.auto ? (g.raw / g.auto) * 100 : 0}%` }, el("div", { class: "val" }, `${g.raw}/${g.auto}`)),
+        el("div", {}, el("h2", { class: "mb-0" }, L("Kết quả phần chấm tự động", "Auto-marked result")),
+          el("div", { class: "muted small" }, `${L("Nộp lúc", "Submitted")} ${fmtDateTime(sub.submittedAt)}`),
+          g.free ? el("div", { class: "small" }, sub.teacherScore ? L(`Điểm giáo viên: ${sub.teacherScore}`, `Teacher's mark: ${sub.teacherScore}`)
+            : L(`${g.free} câu viết đang chờ giáo viên chấm.`, `${g.free} written answers are waiting for your teacher.`)) : null)),
+      head, quizView(a.quiz, { ...(sub.answers || {}) }, null, res));
+    return card;
+  }
+  const answers = {};
+  const saved = draft.load(ctx.user.uid, `hw-${a.id}`);
+  if (saved?.data) Object.assign(answers, saved.data);
+  const qs = quizQuestions(a.quiz);
+  const counter = el("span", { class: "chip" });
+  const paint = () => { counter.textContent = L(`Đã làm ${qs.filter((q) => String(answers[q.n] ?? "").trim()).length}/${qs.length} câu`, `${qs.filter((q) => String(answers[q.n] ?? "").trim()).length}/${qs.length} answered`); };
+  paint();
+  const view = quizView(a.quiz, answers, () => { paint(); if (!teacher) draft.save(ctx.user.uid, `hw-${a.id}`, answers); });
+  const submitBtn = el("button", { class: "btn btn-primary btn-lg", disabled: teacher ? "" : null }, icon("check"), L("Nộp bài", "Submit"));
+  submitBtn.onclick = async () => {
+    const blank = qs.filter((q) => !String(answers[q.n] ?? "").trim()).length;
+    const ok = await confirmDialog({
+      title: L("Nộp bài?", "Submit your test?"),
+      body: (blank ? L(`Còn <strong>${blank}</strong> câu bỏ trống. `, `<strong>${blank}</strong> answers are blank. `) : "") +
+        L("Bài chỉ nộp được <strong>một lần</strong>.", "You can only submit <strong>once</strong>."),
+      okText: L("Nộp bài", "Submit"),
+    });
+    if (!ok) return;
+    submitBtn.disabled = true;
+    try {
+      const clean = {};
+      qs.forEach((q) => { clean[q.n] = String(answers[q.n] ?? "").trim(); });
+      const rep = proctor?.report() || null;
+      await submitHomework(a, ctx.user, { answers: clean, integrity: rep, startedAt: rep?.startedAt, durationSec: rep?.elapsedSec });
+      proctor?.stop();
+      clearOnce(`hw-${a.id}-`);
+      draft.clear(ctx.user.uid, `hw-${a.id}`);
+      toast(L("Đã nộp bài!", "Submitted!"), "ok");
+      ctx.go(`homework/${a.id}`, { t: Date.now() });
+    } catch (err) {
+      submitBtn.disabled = false;
+      toast(L("Không nộp được: ", "Couldn't submit: ") + err.message, "err", 6000);
+    }
+  };
+  card.append(el("div", { class: "row wrap", style: "gap:10px" }, el("div", { style: "flex:1" }, head), counter),
+    el("p", { class: "muted small mb-0" }, L("Bài được lưu nháp tự động trên máy này.", "Your answers are saved as a draft on this device.")),
+    view, el("div", { class: "row" }, submitBtn));
+  return card;
+}
+
 /* ----- Ngân hàng đề: làm trên giao diện luyện đề, chấm tự động ----- */
 async function bankWorkArea(ctx, a, sub, teacher) {
   const found = await findBankItem(a.bank);
@@ -399,7 +476,7 @@ async function bankWorkArea(ctx, a, sub, teacher) {
       el("div", { class: "muted small" }, L(`${found.count} câu · chấm tự động`, `${found.count} questions · marked automatically`)))));
   if (sub?.score) {
     const { raw, total } = sub.score;
-    const hide = !teacher && a.dueAt > new Date();   // chưa tới hạn: thấy điểm, chưa thấy đáp án
+    const hide = keyHidden(a, teacher);   // chưa tới hạn: thấy điểm, chưa thấy đáp án
     card.append(
       el("div", { class: "row wrap", style: "gap:14px" },
         el("div", { class: "band-ring sm", style: `--pct:${total ? (raw / total) * 100 : 0}%` }, el("div", { class: "val" }, `${raw}/${total}`)),
@@ -680,7 +757,8 @@ export function renderHomeworkForm(ctx, id) {
 
   (async () => {
     const a = id ? await getAssignment(id) : null;
-    const key = id ? await getKey(id) : [];
+    const keyFull = id ? await getKeyFull(id) : { answers: [], why: [], sample: [] };
+    const key = keyFull.answers;
     const classes = (await listAllClasses()).filter((c) => !c.archived || c.id === a?.classId);
     const classField = classPicker(classes, a, ctx.data?.classId);
     const materials = [...(a?.materials || [])];
@@ -695,13 +773,22 @@ export function renderHomeworkForm(ctx, id) {
     const allowLate = el("input", { type: "checkbox", id: "hw-late", checked: a ? (a.allowLate ? "" : null) : "" });
     // mặc định mỗi bài một lần nộp; Writing / Speaking / nộp file có thể cho nộp lại trước hạn
     const allowResubmit = el("input", { type: "checkbox", id: "hw-resubmit", checked: a?.allowResubmit ? "" : null });
+    // đáp án + giải thích: mặc định mở sau hạn nộp; hoặc mở ngay khi học sinh nộp xong
+    const keyWhen = el("select", { id: "hw-keywhen", class: "pick" },
+      el("option", { value: "due", selected: a?.keyAfterSubmit ? null : "" }, L("Sau hạn nộp", "After the deadline")),
+      el("option", { value: "submit", selected: a?.keyAfterSubmit ? "" : null }, L("Ngay sau khi học sinh nộp bài", "As soon as the student submits")));
+    const keyWhenField = el("div", { class: "row wrap", style: "gap:8px;align-items:center" },
+      el("label", { class: "field-label mb-0", for: "hw-keywhen" }, L("Học sinh xem đáp án & giải thích:", "Students see answers and explanations:")), keyWhen);
     const published = el("input", { type: "checkbox", id: "hw-pub", checked: a ? (a.published ? "" : null) : "" });
     const instructions = el("textarea", { id: "hw-instr", style: "width:100%;min-height:110px",
       placeholder: L("Hướng dẫn cho học sinh. Với Writing, dán đề bài vào đây.", "Instructions for students. For Writing, paste the task prompt here.") });
     instructions.value = a?.instructions || "";
     const keyBox = el("textarea", { id: "hw-key", class: "mono", style: "width:100%;min-height:220px",
       placeholder: "1. TRUE\n2. B\n3. hartley / the hartley\n4. 8.30\n…" });
-    keyBox.value = keyToText(key);
+    // bài từ file Word: đề + giải thích lấy từ file; ô đáp án ghi số câu thật, câu viết tự do là "*"
+    const qz = { quiz: a?.quiz || null, extra: { why: keyFull.why || [], sample: keyFull.sample || [] } };
+    const quizKeyText = (answers) => quizQuestions(qz.quiz).map((q, i) => `${q.n}. ${(answers[i] || []).join(" / ")}`).join("\n");
+    keyBox.value = a?.type === "quiz" && qz.quiz ? quizKeyText(key) : keyToText(key);
     const keyCount = el("span", { class: "chip" });
     const updCount = () => { keyCount.textContent = L(`${parseKey(keyBox.value).length} câu`, `${parseKey(keyBox.value).length} questions`); };
     keyBox.oninput = updCount; updCount();
@@ -710,6 +797,68 @@ export function renderHomeworkForm(ctx, id) {
       keyBox,
       el("div", { class: "tiny muted" }, L("Mỗi dòng một câu, theo thứ tự. Nhiều đáp án đúng thì ngăn bằng dấu /. Không phân biệt hoa thường. Học sinh chỉ thấy đáp án sau khi nộp.",
         "One answer per line, in order. Separate accepted alternatives with /. Not case-sensitive. Students only see the key after submitting.")));
+    const quizStatus = el("div", { class: "small" });
+    const paintQuiz = () => {
+      if (!qz.quiz) { quizStatus.replaceChildren(el("span", { class: "muted" }, L("Chưa có file đề.", "No test file yet."))); return; }
+      const qs = quizQuestions(qz.quiz);
+      const kinds = {};
+      qs.forEach((q) => { kinds[q.kind] = (kinds[q.kind] || 0) + 1; });
+      const NAME = { mcq: L("trắc nghiệm", "multiple choice"), choice: "True/False/NG", bank: L("chọn từ", "word list"), text: L("điền", "fill-in"), free: L("viết (GV chấm)", "written (teacher-marked)") };
+      const missing = parseKey(keyBox.value).filter((alts) => !alts.length).length;
+      quizStatus.replaceChildren(
+        el("div", {}, el("strong", {}, qz.quiz.title), " · ", L(`${qs.length} câu`, `${qs.length} questions`), " (",
+          Object.entries(kinds).map(([k, v]) => `${v} ${NAME[k] || k}`).join(", "), ")"),
+        el("div", { class: "tiny muted" }, L("Kiểm tra lại ô Đáp án bên dưới trước khi lưu. Dòng có * là câu viết, giáo viên chấm tay. Bấm Xem trước để xem bài như học sinh.",
+          "Check the answer key below before saving. Lines marked * are written answers you mark yourself.")),
+        missing ? el("div", { class: "notice notice-error small" }, L(`${missing} câu chưa có đáp án.`, `${missing} questions have no answer.`)) : "");
+    };
+    const readDoc = (kind) => {
+      const inp = el("input", { type: "file", accept: ".docx", class: "hidden" });
+      inp.onchange = async () => {
+        const f = inp.files[0]; inp.value = "";
+        if (!f) return;
+        try {
+          const lines = await docxLines(f);
+          if (kind === "test") {
+            const qzNew = parseQuiz(lines);
+            if (!quizQuestions(qzNew).length) throw new Error(L("Không tìm thấy câu hỏi đánh số (1. 2. 3. …) trong file.", "No numbered questions found in this file."));
+            qz.quiz = qzNew;
+            qz.extra = { why: [], sample: [] };
+            // file đề có kèm đáp án ở cuối (ANSWER KEY) thì đọc luôn
+            const ki = lines.findIndex((l) => /ANSWER KEY|ĐÁP ÁN/i.test(l));
+            const k = parseKeyDoc(ki >= 0 ? lines.slice(ki) : [], qz.quiz);
+            keyBox.value = quizKeyText(k.answers); qz.extra = { why: k.why, sample: k.sample };
+            if (!title.value.trim()) title.value = qz.quiz.title;
+            toast(L(`Đã đọc ${quizQuestions(qz.quiz).length} câu hỏi`, `Read ${quizQuestions(qz.quiz).length} questions`), "ok");
+          } else {
+            if (!qz.quiz) throw new Error(L("Hãy chọn file đề trước.", "Choose the test file first."));
+            const k = parseKeyDoc(lines, qz.quiz);
+            if (!k.found) throw new Error(L("Không đọc được đáp án: file cần có bảng hoặc dòng dạng “1 | đáp án | giải thích”.", "No answers found: use a table or lines like “1 | answer | explanation”."));
+            keyBox.value = quizKeyText(k.answers); qz.extra = { why: k.why, sample: k.sample };
+            toast(L(`Đã đọc đáp án ${k.found}/${k.total} câu`, `Read answers for ${k.found}/${k.total} questions`), k.found === k.total ? "ok" : "err");
+          }
+          updCount(); paintQuiz();
+        } catch (err) { toast(err.message, "err", 7000); }
+      };
+      return inp;
+    };
+    const testPick = readDoc("test"), keyPick = readDoc("key");
+    const previewBox = el("div", { class: "hidden" });
+    const quizField = el("div", { class: "stack-sm hw-quizfield" },
+      el("strong", {}, L("Đề và đáp án từ file Word", "Test and answers from Word files")),
+      el("div", { class: "tiny muted" }, L("File đề: đánh số câu 1. 2. 3., chia PART, phương án A. B. C. D., chỗ trống ____. File đáp án: bảng Câu | Đáp án | Giải thích. Web tự dựng bài làm, chấm tự động phần trắc nghiệm / điền; câu viết giáo viên chấm.",
+        "Test file: numbered questions, PART headings, A–D options, ____ gaps. Key file: a table Question | Answer | Explanation.")),
+      el("div", { class: "row wrap", style: "gap:8px" },
+        el("button", { class: "btn btn-sm", onclick: () => testPick.click() }, icon("upload"), L("Chọn file đề (.docx)", "Choose test file (.docx)")),
+        el("button", { class: "btn btn-sm", onclick: () => keyPick.click() }, icon("upload"), L("Chọn file đáp án (.docx)", "Choose answer file (.docx)")),
+        el("button", { class: "btn btn-sm btn-ghost", onclick: () => {
+          if (!qz.quiz) return;
+          const open = previewBox.classList.toggle("hidden") === false;
+          previewBox.replaceChildren(...(open ? [quizView(qz.quiz, {}, null)] : []));
+        } }, icon("search"), L("Xem trước", "Preview"))),
+      testPick, keyPick, quizStatus, previewBox);
+    keyBox.addEventListener("input", paintQuiz);
+    paintQuiz();
     const speakingField = speakingFormSection(a);
     const writingField = writingMockFormSection(a);
     // Ngân hàng đề: sửa bài có sẵn hoặc mở từ nút "Giao làm bài tập" trong ngân hàng đề
@@ -720,7 +869,9 @@ export function renderHomeworkForm(ctx, id) {
     });
     title.addEventListener("input", () => { title.dataset.auto = "0"; });
     const syncType = () => {
-      keyField.classList.toggle("hidden", !["reading", "listening"].includes(type.value));
+      keyField.classList.toggle("hidden", !["reading", "listening", "quiz"].includes(type.value));
+      quizField.classList.toggle("hidden", type.value !== "quiz");
+      keyWhenField.classList.toggle("hidden", !["reading", "listening", "quiz", "bank"].includes(type.value));
       speakingField.classList.toggle("hidden", type.value !== "speaking");
       writingField.classList.toggle("hidden", type.value !== "writingmock");
       bankField.classList.toggle("hidden", type.value !== "bank");
@@ -761,7 +912,12 @@ export function renderHomeworkForm(ctx, id) {
 
     saveBtn.onclick = async () => {
       const t = type.value;
-      const answers = ["reading", "listening"].includes(t) ? parseKey(keyBox.value) : null;
+      const answers = ["reading", "listening", "quiz"].includes(t) ? parseKey(keyBox.value) : null;
+      if (t === "quiz") {
+        if (!qz.quiz) { toast(L("Hãy chọn file đề (.docx).", "Choose the test file (.docx)."), "err"); return; }
+        const nq = quizQuestions(qz.quiz).length;
+        if (answers.length !== nq) { toast(L(`Đề có ${nq} câu nhưng ô Đáp án có ${answers.length} dòng.`, `The test has ${nq} questions but the key has ${answers.length} lines.`), "err", 7000); keyBox.focus(); return; }
+      }
       if (!title.value.trim()) { toast(L("Hãy đặt tên bài tập.", "Give the assignment a title."), "err"); title.focus(); return; }
       const dueDate = new Date(due.value);
       if (Number.isNaN(dueDate.getTime())) { toast(L("Hạn nộp chưa hợp lệ.", "The deadline isn't valid."), "err"); return; }
@@ -785,7 +941,9 @@ export function renderHomeworkForm(ctx, id) {
         let aid = id;
         const data = { title: title.value.trim(), type: t, instructions: instructions.value.trim(), dueAt: dueDate,
           allowLate: allowLate.checked, published: published.checked, materials, links, speaking, bank, writing, classId: classIds[0],
-          allowResubmit: ["writing", "speaking", "upload"].includes(t) && allowResubmit.checked };
+          quiz: t === "quiz" ? qz.quiz : null, keyExtra: t === "quiz" ? qz.extra : null,
+          allowResubmit: ["writing", "speaking", "upload"].includes(t) && allowResubmit.checked,
+          keyAfterSubmit: ["reading", "listening", "quiz", "bank"].includes(t) && keyWhen.value === "submit" };
         if (!aid) aid = await saveAssignment(null, { ...data, published: false }, answers, ctx.user);
         // Writing full test: tải hình Task 1 lên (cần id bài tập trước)
         if (writing && writingField.pendingImage()) {
@@ -848,6 +1006,7 @@ export function renderHomeworkForm(ctx, id) {
         el("label", { class: "check", title: L("Chỉ áp dụng cho Writing, Speaking, nộp file", "Writing, Speaking and file upload only") }, allowResubmit,
           L("Cho nộp lại trước hạn (Writing, Speaking, nộp file)", "Allow resubmitting before the deadline (Writing, Speaking, upload)")),
         el("label", { class: "check" }, published, L("Hiện cho học sinh", "Visible to students"))),
+      keyWhenField,
       el("div", {}, el("label", { class: "field-label", for: "hw-instr" }, L("Hướng dẫn / đề bài", "Instructions / prompt")), instructions),
       el("div", { class: "stack-sm" },
         el("div", { class: "row wrap", style: "gap:8px" },
@@ -857,7 +1016,7 @@ export function renderHomeworkForm(ctx, id) {
         el("div", { class: "row wrap", style: "gap:8px" }, linkUrl, linkLabel,
           el("button", { class: "btn btn-sm", onclick: addLink }, icon("link"), L("Thêm link", "Add link"))),
         el("div", { class: "tiny muted" }, L("File tối đa 50 MB. Audio rất dài hoặc video có thể dán link Google Drive / YouTube.", "Files up to 50 MB each. For very long audio or video, add a Google Drive / YouTube link."))),
-      keyField, speakingField, writingField, bankField, progress, status,
+      quizField, keyField, speakingField, writingField, bankField, progress, status,
       el("div", { class: "row wrap", style: "gap:10px" }, saveBtn, el("div", { class: "spacer" }), delBtn)));
   })().catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
 
@@ -908,7 +1067,7 @@ export function renderHomeworkReview(ctx, id) {
     if (!a) throw new Error(L("Không tìm thấy bài tập.", "Assignment not found."));
     let [subs, students, key] = await Promise.all([listSubmissionsFor(id),
       (a.classId ? listMembers(a.classId) : listStudents()).catch(() => []),
-      ["reading", "listening"].includes(a.type) ? getKey(id) : Promise.resolve([])]);
+      ["reading", "listening", "quiz"].includes(a.type) ? getKey(id) : Promise.resolve([])]);
     // Writing full test: bản nháp hết giờ mà học sinh chưa nộp -> thu thành bài nộp; còn giờ -> "đang làm"
     const working = new Map();
     if (a.type === "writingmock") {
@@ -928,6 +1087,7 @@ export function renderHomeworkReview(ctx, id) {
     const byUid = new Map(subs.map((s) => [s.uid, s]));
     const autoScore = (s) => {
       if (!key.length || !s.answers) return null;
+      if (a.type === "quiz") return gradeQuiz(a.quiz, key, s.answers, isCorrect).raw;
       let c = 0;
       key.forEach((alts, i) => { if (isCorrect(s.answers[i + 1] ?? "", alts)) c++; });
       return c;
@@ -939,7 +1099,8 @@ export function renderHomeworkReview(ctx, id) {
     ];
     const late = subs.filter((s) => s.submittedAt > a.dueAt).length;
     const scores = a.type === "bank" ? subs.map((s) => s.score?.raw).filter((x) => x != null) : subs.map(autoScore).filter((x) => x != null);
-    const scoreTotal = a.type === "bank" ? (a.questionCount || subs.find((s) => s.score)?.score.total || 0) : key.length;
+    const scoreTotal = a.type === "bank" ? (a.questionCount || subs.find((s) => s.score)?.score.total || 0)
+      : a.type === "quiz" ? key.filter((x) => x[0] !== "*").length : key.length;
     const avg = scores.length ? (scores.reduce((p, c) => p + c, 0) / scores.length).toFixed(1) : null;
 
     // Sắp xếp: mặc định ai nộp trước đứng trước; học sinh chưa nộp luôn ở cuối (theo tên)
@@ -997,16 +1158,30 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
   }
   const isLate = s.submittedAt > a.dueAt;
   const auto = a.type === "bank" ? (s.score?.raw ?? null) : autoScore(s);
-  const autoTotal = a.type === "bank" ? (s.score?.total ?? 0) : key.length;
+  const autoTotal = a.type === "bank" ? (s.score?.total ?? 0) : a.type === "quiz" ? key.filter((x) => x[0] !== "*").length : key.length;
   // cờ giám sát + làm / viết nhanh bất thường
   const BANK_MIN = { reading: 20, listening: 40, section: 15 };
   const flags = integrityFlags(s, {
     raw: auto, total: autoTotal,
-    expectedSec: a.type === "bank" ? (BANK_MIN[a.bank?.kind] || 0) * 60 : a.type === "reading" ? autoTotal * 90 : a.type === "listening" ? autoTotal * 45 : 0,
+    expectedSec: a.type === "bank" ? (BANK_MIN[a.bank?.kind] || 0) * 60 : a.type === "reading" ? autoTotal * 90 : a.type === "listening" ? autoTotal * 45 : a.type === "quiz" ? (a.questionCount || 0) * 20 : 0,
     words: s.text ? countWords(s.text) : 0,
   });
   const details = el("div", { class: "hw-review-body hidden" });
 
+  if (a.type === "quiz" && a.quiz) {
+    const g = gradeQuiz(a.quiz, key, s.answers || {}, isCorrect);
+    details.append(el("div", { class: "sheet-grid" }, g.details.filter((d) => d.kind !== "free").map((d) =>
+      el("div", { class: "sheet-cell " + (d.ok ? "ok" : "bad") }, el("span", { class: "qnum" }, d.n),
+        el("span", { class: "strong" }, d.given || "—"), d.ok ? null : el("span", { class: "ans-key tiny" }, d.key)))));
+    const free = g.details.filter((d) => d.kind === "free");
+    if (free.length) {
+      const items = new Map(a.quiz.items.filter((x) => x.t === "q").map((x) => [x.n, x]));
+      details.append(el("div", { class: "stack-sm" }, el("strong", {}, L(`Câu viết (${free.length}) — giáo viên chấm`, `Written answers (${free.length}) — marked by you`)),
+        free.map((d) => el("div", { class: "hw-essay", style: "padding:10px 12px" },
+          el("div", { class: "tiny muted" }, `${d.n}. ${items.get(d.n)?.text || ""}`),
+          el("div", {}, d.given || el("span", { class: "muted" }, L("(bỏ trống)", "(blank)")))))));
+    }
+  }
   if (a.type === "reading" || a.type === "listening") {
     details.append(el("div", { class: "sheet-grid" }, key.map((alts, i) => {
       const given = s.answers?.[i + 1] ?? "";

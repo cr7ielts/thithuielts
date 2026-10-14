@@ -80,13 +80,16 @@ export async function getAssignment(id) {
 export async function saveAssignment(id, data, answers, user) {
   const body = {
     title: data.title, type: data.type, instructions: data.instructions || "", classId: data.classId || null,
-    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published, allowResubmit: !!data.allowResubmit,
+    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published, allowResubmit: !!data.allowResubmit, keyAfterSubmit: !!data.keyAfterSubmit,
     materials: data.materials || [], links: data.links || [],
     questionCount: answers ? answers.length : (data.type === "bank" ? data.bank?.count || 0 : 0),
     speaking: data.type === "speaking" ? (data.speaking || null) : null,
     bank: data.type === "bank" ? (data.bank || null) : null,    // { kind, id, title } — bài trong ngân hàng đề
     writing: data.type === "writingmock" ? (data.writing || null) : null,   // Writing full test: đề Task 1 (+ hình) và Task 2
+    quiz: data.type === "quiz" ? (data.quiz || null) : null,   // Bài kiểm tra dựng từ file Word (quizdoc.js)
   };
+  // giải thích / câu mẫu từng câu (bài từ file Word) — lưu cùng đáp án, học sinh chỉ đọc được khi được xem đáp án
+  const extra = data.type === "quiz" && data.keyExtra ? { why: data.keyExtra.why || [], sample: data.keyExtra.sample || [] } : {};
   if (!isConfigured) {
     const all = lsGet(LS.a, []);
     const now = new Date().toISOString();
@@ -97,6 +100,9 @@ export async function saveAssignment(id, data, answers, user) {
     const keys = lsGet(LS.k, {});
     keys[newId] = answers || [];
     lsSet(LS.k, keys);
+    const ex = lsGet(LS.k + ":x", {});
+    ex[newId] = extra;
+    lsSet(LS.k + ":x", ex);
     return newId;
   }
   const { db, dbMod } = await initFirebase();
@@ -109,7 +115,7 @@ export async function saveAssignment(id, data, answers, user) {
   };
   await dbMod.setDoc(ref, payload, { merge: true });
   // Firestore không lưu được mảng lồng mảng → đổi mỗi đáp án thành chuỗi "a|b"
-  await dbMod.setDoc(dbMod.doc(db, "assignmentKeys", ref.id), { answers: (answers || []).map((alts) => alts.join("|")) });
+  await dbMod.setDoc(dbMod.doc(db, "assignmentKeys", ref.id), { answers: (answers || []).map((alts) => alts.join("|")), ...extra });
   return ref.id;
 }
 
@@ -129,6 +135,16 @@ export async function getKey(id) {
   const { db, dbMod } = await initFirebase();
   const snap = await dbMod.getDoc(dbMod.doc(db, "assignmentKeys", id));
   return snap.exists() ? (snap.data().answers || []).map((s) => String(s).split("|")) : [];
+}
+
+/** Đáp án kèm giải thích / câu mẫu (bài từ file Word): { answers, why, sample } */
+export async function getKeyFull(id) {
+  if (!isConfigured) return { answers: lsGet(LS.k, {})[id] || [], ...(lsGet(LS.k + ":x", {})[id] || {}) };
+  const { db, dbMod } = await initFirebase();
+  const snap = await dbMod.getDoc(dbMod.doc(db, "assignmentKeys", id));
+  if (!snap.exists()) return { answers: [], why: [], sample: [] };
+  const d = snap.data();
+  return { answers: (d.answers || []).map((s) => String(s).split("|")), why: d.why || [], sample: d.sample || [] };
 }
 
 /* ---------------- File ---------------- */
