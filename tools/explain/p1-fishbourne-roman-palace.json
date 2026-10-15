@@ -1,0 +1,84 @@
+{
+ "id": "p1-fishbourne-roman-palace",
+ "q": {
+  "1": {
+   "ev": [
+    "This large palace was built in the 1st century AD, around thirty years after the Roman conquest of Britain, on the site of Roman army grain stores"
+   ],
+   "why": "Cung điện được xây \"on the site of\" (trên nền) các kho lương của quân đội La Mã đã có từ trước. Vậy cung điện không phải công trình đầu tiên trên khu đất này → FALSE."
+  },
+  "2": {
+   "ev": [
+    "There were extensive alterations in the 2nd and 3rd centuries AD",
+    "More alterations were in progress when the palace burned down"
+   ],
+   "why": "Bài nói có những đợt sửa đổi lớn ở thế kỷ 2 và 3, rồi lại đang sửa tiếp khi cháy. \"alterations\" = renovated, và nhiều đợt → \"more than once\" → TRUE."
+  },
+  "3": {
+   "ev": [
+    "In size, Fishbourne Palace would have been approximately equivalent to some of the great Roman palaces of Italy"
+   ],
+   "why": "Bài: kích thước \"approximately equivalent\" (xấp xỉ bằng) các cung điện lớn ở Ý. Theo đáp án gốc, câu hỏi hiểu là \"lớn hơn so với\" cung điện ở Ý, mà bài chỉ nói ngang bằng → FALSE. (Câu này dễ gây tranh cãi: nếu hiểu \"large in comparison\" là \"cũng lớn như\" thì nghiêng về TRUE.)"
+  },
+  "4": {
+   "ev": [
+    "A team of volunteers and professional archaeologists are involved in ongoing archaeological excavation on the site of nearby, possibly military, buildings."
+   ],
+   "why": "\"ongoing excavation\" = việc khai quật vẫn đang tiếp diễn; \"nearby buildings\" = khu vực gần cung điện → TRUE."
+  },
+  "5": {
+   "ev": [
+    "With regard to who lived in Fishbourne Palace, there are a number of theories."
+   ],
+   "why": "Có \"a number of theories\" (nhiều giả thuyết) về người sống/được xây cung điện cho: Cogidubnus, Lucullus, Verica, Catuarus. Các nhà nghiên cứu không thống nhất → FALSE."
+  },
+  "6": {
+   "ev": [
+    "the north wing was destroyed in a fire around 270 AD"
+   ],
+   "why": "Bài chỉ nói cung điện bị cháy khoảng năm 270, không nói ai gây ra hay do người dân địa phương → NOT GIVEN."
+  },
+  "7": {
+   "ev": [
+    "on the site of Roman army grain stores"
+   ],
+   "why": "Công trình đầu tiên là kho lương (grain stores = chứa thức ăn) của quân đội La Mã → Roman army."
+  },
+  "8": {
+   "ev": [
+    "The rectangular palace was built around formal gardens"
+   ],
+   "why": "\"built around\" = surrounded (bao quanh) → cung điện bao quanh formal gardens."
+  },
+  "9": {
+   "ev": [
+    "many of the original black and white mosaic floors being overlaid with more sophisticated colored ones"
+   ],
+   "why": "Thế kỷ 2–3, các sàn khảm trắng đen được phủ bằng sàn khảm màu → màu được thêm vào floors (mosaic floors)."
+  },
+  "10": {
+   "ev": [
+    "after workmen accidentally uncovered a wall while laying a water main"
+   ],
+   "why": "Năm 1960 công nhân vô tình đào trúng một bức tường khi đặt ống nước → phần đầu tiên được tìm thấy là wall."
+  },
+  "11": {
+   "ev": [
+    "Lucullus was executed by the Emperor Domitian in or shortly after 93 AD"
+   ],
+   "why": "Lucullus bị xử tử khoảng năm 93 nên chỉ có thể sống ở đó tới khoảng năm 93 → 93."
+  },
+  "12": {
+   "ev": [
+    "following the recent discovery of a gold ring belonging to him"
+   ],
+   "why": "Giả thuyết về Catuarus dựa trên việc tìm thấy chiếc nhẫn vàng của ông → (gold) ring."
+  },
+  "13": {
+   "ev": [
+    "A modern museum has been built by the Sussex Archaeological Society, incorporating most of the visible remains"
+   ],
+   "why": "Một bảo tàng hiện đại được xây bao trùm phần lớn di tích để bảo vệ chúng → (modern) museum."
+  }
+ }
+}

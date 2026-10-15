@@ -41,6 +41,9 @@ export const READING_FORECAST = {
     "p3-jean-piaget-1896-1980",
     "p3-on-art-and-artists",
     "p3-science-and-filmmaking",
+    "p1-fishbourne-roman-palace",
+    "p2-saving-the-british-bitterns",
+    "p3-memory-decoding",
     "p3-termite-mounds",
     "p3-the-peopling-of-patagonia",
     "p3-the-voynich-manuscript",
@@ -48,13 +51,10 @@ export const READING_FORECAST = {
     "p3-when-people-are-deaf-to-music",
   ],
   missing: [
-    { part: 1, title: "Fishbourne Roman Palace", note: "Đề thật thí sinh chép lại, không có trong sách Cambridge. Tìm trong VOL 1-9 (chạy tools/dump_vol_reading.py)." },
     { part: 1, title: "The Dunedin study", note: "Actual Test Vol 8 — có trong file đáp án Key.pdf của VOL 8, nhưng bản OCR đáp án hỏng nên chưa đưa lên được. Cần bản đáp án dạng chữ (xuất Google Docs gốc ra .docx)." },
     { part: 2, title: "Dark Chocolate's Health-giving Benefits", note: "Đề thật thí sinh chép lại, không rõ sách gốc. Tìm trong VOL 1-9." },
     { part: 2, title: "IQ Scores", note: "Đề thật thí sinh chép lại (chủ đề hiệu ứng Flynn), không rõ sách gốc. Tìm trong VOL 1-9." },
-    { part: 2, title: "Saving British Bitterns", note: "Theo một trang đáp án: The Official Cambridge Guide to IELTS (Cambridge University Press), Reading Passage 2 — chưa đối chiếu với sách." },
     { part: 3, title: "Lawrence Johnston and Hidcote Garden", note: "Đề thật năm 2021 thí sinh chép lại, không có trong sách Cambridge. Tìm trong VOL 1-9." },
-    { part: 3, title: "Memory Champions or just good at tricks", note: "Còn gọi là \"Memory Decoding\" — đề thật thí sinh chép lại, không rõ sách gốc. Tìm trong VOL 1-9." },
     { part: 3, title: "Neanderthal Technology", note: "Đề thật thí sinh chép lại, không rõ sách gốc. Tìm trong VOL 1-9." },
   ],
 };

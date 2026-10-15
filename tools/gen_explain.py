@@ -9,7 +9,8 @@ import extract_interactive as E
 T = E.T
 OUT = os.path.join(E.PROJ, 'js', 'data', 'explain')
 norm = lambda s: re.sub(r'\s+', ' ', str(s).replace('‘', "'").replace('’', "'").replace('`', "'").replace('“', '"').replace('”', '"')).strip()
-items = {x['id']: x for x in E.js_items('bank-reading.js', 'READING_BANK')}
+items = {x['id']: x for f, c in [('bank-reading.js', 'READING_BANK'), ('bank-vol8.js', 'VOL8_READING'), ('bank-vol9.js', 'VOL9_READING'), ('bank-extra.js', 'EXTRA_READING')]
+         for x in E.js_items(f, c)}
 os.makedirs(OUT, exist_ok=True)
 ok_ids, bad = [], 0
 for f in sorted(glob.glob(os.path.join(T, 'explain', '*.json'))):
