@@ -1,0 +1,93 @@
+{
+ "id": "p3-memory-decoding",
+ "q": {
+  "27": {
+   "ev": [
+    "Before printed books, the art of memory was considered a staple of classical education, on a par with grammar, logic, and rhetoric."
+   ],
+   "why": "\"academic settings\" = classical education. Đoạn E nói trước khi có sách in, nghệ thuật ghi nhớ là môn cốt lõi trong giáo dục cổ điển, ngang với ngữ pháp, logic, hùng biện → E."
+  },
+  "28": {
+   "ev": [
+    "In the 14 years since the World Memory Championships was founded"
+   ],
+   "why": "Cuộc thi trí nhớ thế giới đã tổ chức 14 năm liền → \"contest held in consecutive years\" → A."
+  },
+  "29": {
+   "ev": [
+    "He held up three cards—the 7 of spades, the queen of clubs, and the 10 of spades. He pointed at a fireplace and said, \"Destiny's Child is whacking Franz Schubert with handbags.\""
+   ],
+   "why": "Đoạn C kể Cooke trình diễn trong quán rượu: rút bài rồi đọc ra một câu kỳ quặc để nhớ ba lá bài → ví dụ cụ thể về người có trí nhớ phi thường chơi trò ghi nhớ lạ → C."
+  },
+  "30": {
+   "ev": [
+    "K. Anders Ericsson, a Swedish-born psychologist at Florida State University, thinks anyone can acquire Shereshevski's skills.",
+    "but if they wasted 50 hours, they'd be exceptional at it"
+   ],
+   "why": "Ericsson tin ai cũng đạt được trí nhớ như vậy nếu luyện đủ (50 giờ là thành xuất sắc) → G."
+  },
+  "31": {
+   "ev": [
+    "Shereshevski also had synesthesia, a rare condition in which the senses become intertwined.",
+    "Synesthetic reactions evoke a response in more areas of the brain, making memory easier."
+   ],
+   "why": "\"rare ability\" = synesthesia (rare condition, các giác quan hòa trộn), giúp ghi nhớ dễ hơn → F."
+  },
+  "32": {
+   "ev": [
+    "Cooke has already memorized a specific person, verb, and object that he associates with each card in the deck.",
+    "The first card in the triplet becomes the person"
+   ],
+   "why": "Lá đầu tiên trong mỗi nhóm được mã hóa thành một người cụ thể → specific person."
+  },
+  "33": {
+   "ev": [
+    "When Cooke commits a deck to memory, he does it three cards at a time."
+   ],
+   "why": "\"commits a deck to memory\" → ghi nhớ mỗi lần ba lá → three cards."
+  },
+  "34": {
+   "ev": [
+    "When it comes time to recall, Cooke takes a mental walk along his route and translates the images into cards."
+   ],
+   "why": "Câu tóm tắt gần như trùng nguyên văn: \"takes a ___ along his route\" → mental walk."
+  },
+  "35": {
+   "ev": [
+    "That technique, known as the loci method, reportedly originated in 477 B.C. with the Greek poet Simonides of Ceos."
+   ],
+   "why": "Kỹ thuật bắt nguồn từ Hy Lạp cổ đại (Simonides) có tên là the loci method."
+  },
+  "36": {
+   "ev": [
+    "the art of memory was considered a staple of classical education"
+   ],
+   "why": "\"a staple\" = môn chính/cốt lõi (major subject) của nền giáo dục cổ điển → education."
+  },
+  "37": {
+   "ev": [
+    "memorize rows of 40-digit numbers, recall the names of 110 people after looking at their photographs"
+   ],
+   "why": "Các phần thi: nhớ dãy số 40 chữ số (A: thứ tự một nhóm lớn chữ số) và nhớ tên 110 người qua ảnh (D: ghép tên với ảnh). B sai vì chỉ nhớ mặt thì chưa đủ (phải nhớ tên); C sai vì bài thơ hai trang, không nói thơ Hy Lạp; E không có → A và D."
+  },
+  "38": {
+   "ev": [
+    "memorize rows of 40-digit numbers, recall the names of 110 people after looking at their photographs"
+   ],
+   "why": "Cùng nhóm câu 37–38: hai đáp án là A và D (thứ tự không quan trọng)."
+  },
+  "39": {
+   "ev": [
+    "When it came to memorizing sequences of three-digit numbers, the difference between the memory contestants and the control subjects was, as expected, immense.",
+    "These regions, which included the right posterior hippocampus, are known to be involved in visual memory and spatial navigation."
+   ],
+   "why": "B đúng: khác biệt rất lớn khi nhớ dãy số ba chữ số. E đúng: vùng não như hồi hải mã phải sau liên quan đến trí nhớ hình ảnh và định hướng không gian. A sai: họ chỉ \"wondered\" não có khác không; C sai: với ảnh bông tuyết họ làm ngang nhóm đối chứng (no better), không phải tệ hơn nhiều; D sai: họ dùng vùng não KHÁC, không phải NHIỀU hơn → B và E."
+  },
+  "40": {
+   "ev": [
+    "When it came to memorizing sequences of three-digit numbers, the difference between the memory contestants and the control subjects was, as expected, immense."
+   ],
+   "why": "Cùng nhóm câu 39–40: hai đáp án là B và E (thứ tự không quan trọng)."
+  }
+ }
+}
