@@ -22,7 +22,7 @@ export function renderVocabHub(ctx) {
   const wrap = el("div", { class: "stack-lg" });
 
   const cat = createCat({
-    size: 150, mood: s.due ? "wow" : "idle", bubbleSide: "left",
+    size: 110, mood: s.due ? "wow" : "idle", bubbleSide: "left",
     say: s.due
       ? L(`Có ${s.due} từ đang chờ bạn ôn nè!`, `${s.due} words are waiting for you!`)
       : s.learned ? L("Hôm nay học thêm vài từ mới nhé?", "Shall we learn a few new words today?")
@@ -47,18 +47,7 @@ export function renderVocabHub(ctx) {
     statStrip(s)
   );
 
-  wrap.append(
-    ...[["ielts", L("Bộ từ theo chủ đề", "Topic decks")],
-      ["evu", L("English Vocabulary in Use · Upper-intermediate", "English Vocabulary in Use · Upper-intermediate")],
-      ["ows", L("Oxford Word Skills · Intermediate", "Oxford Word Skills · Intermediate")]].flatMap(([series, title]) => {
-      const ds = DECKS.filter((d) => d.series === series);
-      const n = ds.reduce((k, d) => k + d.words.length, 0);
-      return ds.length ? [el("div", { class: "section-head" },
-        el("h2", {}, title),
-        el("span", { class: "muted small" }, L(`${ds.length} bộ · ${n} từ`, `${ds.length} decks · ${n} words`))),
-        el("div", { class: "deck-grid" }, ds.map((d) => deckCard(d, ctx)))] : [];
-    })
-  );
+  wrap.append(deckLibrary(ctx));
 
   const saved = savedWords();
   const lb = el("div", { class: "lb-list" }, el("div", { class: "muted small" }, L("Đang tải…", "Loading…")));
@@ -116,8 +105,80 @@ function miniStat(ic, v, k, sub) {
       el("div", { class: "ms-k" }, sub)));
 }
 
-function deckCard(d, ctx) {
-  const p = deckProgress(d);
+/* ----- Thư viện bộ từ: chọn bộ sách, tìm, lọc theo tiến độ ----- */
+const SERIES = [
+  ["ielts", L("IELTS theo chủ đề", "IELTS topics")],
+  ["evu", L("Vocabulary in Use", "Vocabulary in Use")],
+  ["ows", L("Oxford Word Skills", "Oxford Word Skills")],
+];
+const PREF = "ielts:vocab:hub";
+const loadPref = () => { try { return JSON.parse(localStorage.getItem(PREF) || "{}"); } catch { return {}; } };
+const savePref = (v) => { try { localStorage.setItem(PREF, JSON.stringify(v)); } catch { /* bỏ qua */ } };
+const FILTERS = [
+  ["all", L("Tất cả", "All")], ["due", L("Cần ôn", "Due")], ["going", L("Đang học", "In progress")],
+  ["new", L("Chưa học", "Not started")], ["done", L("Đã học hết", "Finished")],
+];
+
+function deckLibrary(ctx) {
+  const pref = { series: "ielts", filter: "all", ...loadPref() };
+  if (!DECKS.some((d) => d.series === pref.series)) pref.series = "ielts";
+  const prog = new Map(DECKS.map((d) => [d.id, deckProgress(d)]));
+  const box = el("section", { class: "deck-lib stack" });
+
+  // đang học dở: bộ đã bắt đầu hoặc có từ cần ôn — mở lại nhanh, khỏi tìm
+  const going = DECKS.filter((d) => { const p = prog.get(d.id); return p.due || (p.learned && p.learned < p.total); })
+    .sort((a, b) => prog.get(b.id).due - prog.get(a.id).due || prog.get(b.id).learned - prog.get(a.id).learned).slice(0, 8);
+  if (going.length) box.append(
+    el("div", { class: "section-head" }, el("h2", {}, L("Đang học dở", "Continue learning"))),
+    el("div", { class: "deck-rail" }, going.map((d) => deckCard(d, ctx, prog.get(d.id)))));
+
+  const tabs = el("div", { class: "deck-tabs", role: "tablist" });
+  const search = el("input", { type: "search", class: "deck-search", placeholder: L("Tìm bộ từ, chủ đề, unit…", "Search decks, topics, units…") });
+  const filters = el("div", { class: "row wrap", style: "gap:6px" });
+  const count = el("span", { class: "muted small" });
+  const grid = el("div", { class: "deck-grid compact" });
+
+  const match = (d) => {
+    const p = prog.get(d.id);
+    const f = pref.filter;
+    if (f === "due" && !p.due) return false;
+    if (f === "going" && !(p.learned && p.learned < p.total)) return false;
+    if (f === "new" && p.learned) return false;
+    if (f === "done" && p.learned < p.total) return false;
+    const q = search.value.trim().toLowerCase();
+    return !q || `${d.title} ${d.sub} ${d.units ? "unit " + d.units : ""}`.toLowerCase().includes(q);
+  };
+  const paint = () => {
+    const q = search.value.trim();
+    const pool = q ? DECKS : DECKS.filter((d) => d.series === pref.series);   // đang tìm thì tìm trong mọi bộ sách
+    const ds = pool.filter(match);
+    tabs.querySelectorAll("button").forEach((b) => b.classList.toggle("on", !q && b.dataset.s === pref.series));
+    filters.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.dataset.f === pref.filter));
+    const n = ds.reduce((k, d) => k + d.words.length, 0);
+    count.textContent = L(`${ds.length} bộ · ${n} từ`, `${ds.length} decks · ${n} words`);
+    grid.replaceChildren(...(ds.length ? ds.map((d) => deckCard(d, ctx, prog.get(d.id)))
+      : [el("p", { class: "muted" }, L("Không có bộ nào khớp.", "No decks match."))]));
+    savePref({ series: pref.series, filter: pref.filter });
+  };
+  for (const [id, label] of SERIES) {
+    const ds = DECKS.filter((d) => d.series === id);
+    if (!ds.length) continue;
+    tabs.append(el("button", { type: "button", class: "deck-tab", dataset: { s: id }, onclick: () => { pref.series = id; search.value = ""; paint(); } },
+      el("span", {}, label), el("span", { class: "deck-tab-n" }, L(`${ds.length} bộ`, `${ds.length} decks`))));
+  }
+  for (const [id, label] of FILTERS) filters.append(el("button", { type: "button", class: "chip-btn", dataset: { f: id }, onclick: () => { pref.filter = id; paint(); } }, label));
+  search.oninput = paint;
+
+  box.append(
+    el("div", { class: "section-head" }, el("h2", {}, L("Thư viện bộ từ", "Deck library")), count),
+    tabs,
+    el("div", { class: "deck-toolbar" }, search, filters),
+    grid);
+  paint();
+  return box;
+}
+
+function deckCard(d, ctx, p = deckProgress(d)) {
   return el("button", { class: "deck-card", style: `--deck:${d.color}`, onclick: () => ctx.go(`deck/${d.id}`) },
     el("div", { class: "deck-top" },
       el("div", { class: "deck-ico" }, icon(d.icon)),
@@ -139,8 +200,27 @@ export function renderDeck(ctx, deckId) {
   const p = deckProgress(d);
   const fresh = d.words.filter((w) => wordStatus(w.id) === "new").length;
 
+  // bộ dài (tới 100+ từ): tìm, lọc theo trạng thái, hiện dần từng trang 30 từ
+  const PAGE = 30;
+  let shown = PAGE, st = "all";
   const list = el("div", { class: "word-list" });
-  for (const w of d.words) list.append(wordRow(w));
+  const q = el("input", { type: "search", class: "deck-search", placeholder: L("Tìm từ hoặc nghĩa…", "Search a word or meaning…") });
+  const chips = el("div", { class: "row wrap", style: "gap:6px" });
+  const more = el("div", { class: "word-more" });
+  const paintWords = () => {
+    const k = q.value.trim().toLowerCase();
+    const ws = d.words.filter((w) => (st === "all" || wordStatus(w.id) === st)
+      && (!k || `${w.word} ${w.vi} ${w.def}`.toLowerCase().includes(k)));
+    list.replaceChildren(...(ws.length ? ws.slice(0, shown).map(wordRow) : [el("p", { class: "muted", style: "padding:16px 20px" }, L("Không có từ nào khớp.", "No words match."))]));
+    more.replaceChildren(...(ws.length > shown ? [el("button", { class: "btn btn-sm", onclick: () => { shown += PAGE; paintWords(); } },
+      L(`Xem thêm (${ws.length - shown} từ)`, `Show more (${ws.length - shown} words)`))] : []));
+    more.classList.toggle("hidden", ws.length <= shown);
+    chips.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.dataset.s === st));
+  };
+  for (const [id, label] of [["all", L("Tất cả", "All")], ["new", STATUS_LABEL.new], ["learning", STATUS_LABEL.learning], ["due", STATUS_LABEL.due], ["mastered", STATUS_LABEL.mastered]])
+    chips.append(el("button", { type: "button", class: "chip-btn", dataset: { s: id }, onclick: () => { st = id; shown = PAGE; paintWords(); } }, label));
+  q.oninput = () => { shown = PAGE; paintWords(); };
+  paintWords();
 
   return el("div", { class: "stack-lg" },
     el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go("vocab") }, icon("back"), L("Tất cả bộ từ", "All decks")),
@@ -161,7 +241,7 @@ export function renderDeck(ctx, deckId) {
           : fresh ? L(`Học ${Math.min(fresh, NEW_PER_SESSION)} từ mới`, `Learn ${Math.min(fresh, NEW_PER_SESSION)} new words`)
           : L("Đã ôn hết hôm nay", "All done for today")),
         el("button", { class: "btn btn-lg", onclick: () => ctx.go(`games/${d.id}`) }, icon("game"), L("Chơi với bộ này", "Play with this deck")))),
-    el("div", { class: "card card-flush" }, list));
+    el("div", { class: "card card-flush" }, d.words.length > 15 ? el("div", { class: "word-tools" }, q, chips) : "", list, more));
 }
 
 function wordRow(w) {
