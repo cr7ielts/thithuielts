@@ -48,10 +48,15 @@ export function renderVocabHub(ctx) {
   );
 
   wrap.append(
-    el("div", { class: "section-head" },
-      el("h2", {}, L("Bộ từ theo chủ đề", "Topic decks")),
-      el("span", { class: "muted small" }, L(`${DECKS.length} bộ · ${ALL_WORDS.length} từ`, `${DECKS.length} decks · ${ALL_WORDS.length} words`))),
-    el("div", { class: "deck-grid" }, DECKS.map((d) => deckCard(d, ctx)))
+    ...[["ielts", L("Bộ từ theo chủ đề", "Topic decks")],
+      ["evu", L("English Vocabulary in Use · Upper-intermediate", "English Vocabulary in Use · Upper-intermediate")]].flatMap(([series, title]) => {
+      const ds = DECKS.filter((d) => d.series === series);
+      const n = ds.reduce((k, d) => k + d.words.length, 0);
+      return ds.length ? [el("div", { class: "section-head" },
+        el("h2", {}, title),
+        el("span", { class: "muted small" }, L(`${ds.length} bộ · ${n} từ`, `${ds.length} decks · ${n} words`))),
+        el("div", { class: "deck-grid" }, ds.map((d) => deckCard(d, ctx)))] : [];
+    })
   );
 
   const saved = savedWords();
@@ -179,7 +184,7 @@ function wordRow(w) {
         el("strong", { class: "word" }, w.word),
         el("span", { class: "ipa" }, w.ipa),
         el("span", { class: "pos" }, w.pos)),
-      el("div", { class: "vi" }, meaning(w), el("span", { class: "alt" }, ` · ${altMeaning(w)}`)),
+      el("div", { class: "vi" }, meaning(w), altMeaning(w) ? el("span", { class: "alt" }, ` · ${altMeaning(w)}`) : null),
       el("div", { class: "example" }, w.example)),
     el("span", { class: `status status-${st}` }, STATUS_LABEL[st]),
     saveBtn);

@@ -7,6 +7,7 @@
 //  (tiến độ ôn tập được lưu theo id).
 // =====================================================================
 import { L, isVi } from "../i18n.js";
+import { EVU_DECKS } from "./vocab-evu.js";
 
 const RAW_DECKS = [
   {
@@ -677,8 +678,9 @@ const RAW_DECKS = [
 
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
-export const DECKS = RAW_DECKS.map((d) => ({
-  id: d.id, icon: d.icon, color: d.color,
+// series: "ielts" (bộ theo chủ đề IELTS) | "evu" (English Vocabulary in Use Upper-intermediate)
+export const DECKS = [...RAW_DECKS, ...EVU_DECKS].map((d) => ({
+  id: d.id, icon: d.icon, color: d.color, series: d.series || "ielts", units: d.units || "",
   title: L(d.vi, d.en),
   sub: L(d.en, d.vi),
   words: d.words.map(([word, ipa, pos, vi, def, example]) => ({
@@ -695,5 +697,6 @@ export const getWord = (id) => BY_ID.get(id);
 export const getDeck = (id) => DECKS.find((d) => d.id === id);
 
 /** Nghĩa chính theo ngôn ngữ giao diện, và nghĩa phụ bên còn lại */
-export const meaning = (w) => (isVi() ? w.vi : w.def);
-export const altMeaning = (w) => (isVi() ? w.def : w.vi);
+// bộ chưa có định nghĩa tiếng Anh (def rỗng) thì dùng nghĩa tiếng Việt
+export const meaning = (w) => (isVi() ? w.vi : w.def || w.vi);
+export const altMeaning = (w) => (isVi() ? w.def : w.def ? w.vi : "");
