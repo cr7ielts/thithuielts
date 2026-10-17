@@ -7,7 +7,7 @@
 import { el, icon, fmtDateTime, fmtDuration } from "../ui.js";
 import { L } from "../i18n.js";
 import { listMySubmissions } from "../store.js";
-import { findBankItem } from "./bank.js";
+import { findBankItem, isMock, mockInteractive } from "./bank.js";
 import { loadInteractive } from "./exam.js";
 import { loadListenExplain, listenPanel, mmss } from "./listen-review.js";
 import { bankLock, lockNotice, hiddenUntil } from "../homework/hwlock.js";
@@ -87,8 +87,20 @@ export function renderBankReview(ctx, kind, id, sub = null) {
     if (!sub) { body.replaceWith(el("div", { class: "notice notice-info" }, L("Bạn chưa làm bài này. Làm bài xong sẽ xem lại được ở đây.", "You haven't taken this test yet."))); return; }
     const until = hiddenUntil(sub, ctx.user);
     if (until) { body.replaceWith(el("div", { class: "notice notice-info" }, L(`Đây là bài tập về nhà — đáp án và phần xem lại mở lúc ${fmtDateTime(until)}.`, `This was homework — answers and review open at ${fmtDateTime(until)}.`))); return; }
-    const [inter, exp, lexp] = await Promise.all([loadInteractive(id), kind === "reading" ? loadExplain(id) : null,
-      kind === "reading" ? null : loadListenExplain(kind, item)]);
+    let inter, exp, lexp;
+    if (isMock(kind)) {
+      // đề thi thử ghép: gộp nội dung + giải thích của từng bài (số câu không trùng nhau)
+      inter = await mockInteractive(kind, item);
+      if (inter?.passages) inter.passage = { title: item.title, paras: inter.passages.flatMap((ps, i) =>
+        [{ mark: "", text: `— Passage ${i + 1}: ${ps.title} —` }, ...ps.paras]) };
+      if (kind === "mockr") {
+        const exps = await Promise.all(item.subs.map((x) => loadExplain(x.id)));
+        if (exps.some(Boolean)) exp = { q: Object.assign({}, ...exps.map((e) => e?.q || {})) };
+      }
+    } else {
+      [inter, exp, lexp] = await Promise.all([loadInteractive(id), kind === "reading" ? loadExplain(id) : null,
+        kind === "reading" ? null : loadListenExplain(kind, item)]);
+    }
     body.replaceWith(view(ctx, kind, item, sub, inter, exp, lexp));
   })().catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
   return wrap;

@@ -13,7 +13,7 @@ const SKILL = "listening";
 export function renderListening(ctx) {
   // Đề thi thử tự soạn chưa có audio thật (chỉ đọc bằng giọng máy, nghe sai) -> làm đề Listening có audio thật trong ngân hàng đề
   if (!TEST.listening.sections.some((s) => s.audioUrl)) {
-    setTimeout(() => ctx.go("bank/listening"), 0);
+    setTimeout(() => ctx.go("bank/mock/listening"), 0);
     return el("div", { class: "muted" }, L("Đang mở đề Listening có audio thật…", "Opening Listening tests with real audio…"));
   }
   const view = el("div");

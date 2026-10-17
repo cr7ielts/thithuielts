@@ -19,7 +19,7 @@ import { renderGamesHub, renderGame, GAMES, WORDPLAY_GAMES } from "./vocab/games
 import { renderIdioms, renderIdiomGame } from "./wordplay/idioms.js";
 import { renderPuns, renderPunGame } from "./wordplay/puns.js";
 import { renderHomework, renderHomeworkDetail, renderHomeworkForm, renderHomeworkReview, homeworkWidget } from "./homework/views.js";
-import { renderBank, renderBankPractice, renderBankImport } from "./bank/bank.js";
+import { renderBank, renderBankPractice, renderBankImport, renderMockStart } from "./bank/bank.js";
 import { renderBankReview } from "./bank/review.js";
 import { loadMyClasses, hasClass, normCode } from "./classes/clstore.js";
 import { renderClasses, renderClass, renderJoin, tryJoin } from "./classes/views.js";
@@ -38,10 +38,10 @@ const ctx = {
 const SKILLS = [
   { id: "listening", name: "Listening",
     meta: L(`40 câu · ${DURATION.listening} phút`, `40 questions · ${DURATION.listening} min`),
-    desc: L("Đề thật có audio gốc, làm theo từng Part như thi trên máy.", "Real tests with the original audio, one Part at a time like the computer test.") },
+    desc: L("Mỗi lần ghép ngẫu nhiên Section 1–4 từ đề thật có audio gốc.", "A random Section 1–4 from real tests with the original audio, every time.") },
   { id: "reading", name: "Reading",
     meta: L(`40 câu · ${DURATION.reading} phút`, `40 questions · ${DURATION.reading} min`),
-    desc: L("3 bài đọc học thuật, bài đọc và câu hỏi đặt cạnh nhau.", "3 academic passages with the text and questions side by side.") },
+    desc: L("Mỗi lần ghép ngẫu nhiên Passage 1, 2, 3 từ ngân hàng đề.", "A random Passage 1, 2 and 3 from the question bank, every time.") },
   { id: "writing", name: "Writing",
     meta: L(`2 task · ${DURATION.writing} phút`, `2 tasks · ${DURATION.writing} min`),
     desc: L("Task 1 mô tả biểu đồ, Task 2 nghị luận, đếm từ trực tiếp.", "Task 1 chart report and Task 2 essay, with a live word count.") },
@@ -274,6 +274,7 @@ function render() {
     case "bank":
       if (a === "import") main.append(renderBankImport(ctx));
       else if (b && c === "review") main.append(renderBankReview(ctx, a, b, routeData?.submission || null));   // #bank/<loại>/<id>/review
+      else if (a === "mock") main.append(renderMockStart(ctx, b));   // #bank/mock/<reading|listening>: thi thử ghép đề ngẫu nhiên
       else if (b) main.append(renderBankPractice(ctx, a, b, c === "hw" ? d : null));   // #bank/<loại>/<id>/hw/<bài tập>
       else main.append(renderBank(ctx, a || "reading"));
       break;
@@ -615,7 +616,8 @@ function wordplayTile(routeName, ic, title, desc, color) {
 function skillGrid() {
   return el("div", { class: "skill-grid" },
     SKILLS.map((k) =>
-      el("button", { class: `skill-card ${k.id}`, onclick: () => go(k.id) },
+      // Reading / Listening: ghép đề ngẫu nhiên từ ngân hàng (P1+P2+P3, S1–S4)
+      el("button", { class: `skill-card ${k.id}`, onclick: () => go(["reading", "listening"].includes(k.id) ? `bank/mock/${k.id}` : k.id) },
         el("span", { class: "skill-ico" }, icon(k.id)),
         el("h3", {}, k.name),
         el("p", { class: "muted small" }, k.desc),
@@ -627,7 +629,7 @@ function examsView() {
   return el("div", { class: "stack-lg" },
     el("section", { class: "games-hero" },
       el("div", { style: "flex:1;min-width:260px" },
-        el("div", { class: "eyebrow" }, L("Đề thi thử số 01", "Mock test 01")),
+        el("div", { class: "eyebrow" }, L("Thi thử", "Mock test")),
         el("h1", {}, L("Thi thử IELTS Academic", "IELTS Academic mock test")),
         el("p", { class: "lead" },
           L("Mỗi kỹ năng có đồng hồ riêng và tự nộp khi hết giờ. Thời điểm nộp được ghi lại cho từng bài.",
