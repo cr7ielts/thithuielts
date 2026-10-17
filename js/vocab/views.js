@@ -49,7 +49,8 @@ export function renderVocabHub(ctx) {
 
   wrap.append(
     ...[["ielts", L("Bộ từ theo chủ đề", "Topic decks")],
-      ["evu", L("English Vocabulary in Use · Upper-intermediate", "English Vocabulary in Use · Upper-intermediate")]].flatMap(([series, title]) => {
+      ["evu", L("English Vocabulary in Use · Upper-intermediate", "English Vocabulary in Use · Upper-intermediate")],
+      ["ows", L("Oxford Word Skills · Intermediate", "Oxford Word Skills · Intermediate")]].flatMap(([series, title]) => {
       const ds = DECKS.filter((d) => d.series === series);
       const n = ds.reduce((k, d) => k + d.words.length, 0);
       return ds.length ? [el("div", { class: "section-head" },

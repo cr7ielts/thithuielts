@@ -8,6 +8,7 @@
 // =====================================================================
 import { L, isVi } from "../i18n.js";
 import { EVU_DECKS } from "./vocab-evu.js";
+import { OWS_DECKS } from "./vocab-ows.js";
 
 const RAW_DECKS = [
   {
@@ -678,8 +679,8 @@ const RAW_DECKS = [
 
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
-// series: "ielts" (bộ theo chủ đề IELTS) | "evu" (English Vocabulary in Use Upper-intermediate)
-export const DECKS = [...RAW_DECKS, ...EVU_DECKS].map((d) => ({
+// series: "ielts" (bộ theo chủ đề IELTS) | "evu" (English Vocabulary in Use Upper-intermediate) | "ows" (Oxford Word Skills Intermediate)
+export const DECKS = [...RAW_DECKS, ...EVU_DECKS, ...OWS_DECKS].map((d) => ({
   id: d.id, icon: d.icon, color: d.color, series: d.series || "ielts", units: d.units || "",
   title: L(d.vi, d.en),
   sub: L(d.en, d.vi),
