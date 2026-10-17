@@ -38,7 +38,7 @@ const ctx = {
 const SKILLS = [
   { id: "listening", name: "Listening",
     meta: L(`40 câu · ${DURATION.listening} phút`, `40 questions · ${DURATION.listening} min`),
-    desc: L("4 section hội thoại và bài giảng, nghe một lần như thi thật.", "4 sections of conversations and talks, played once like the real test.") },
+    desc: L("Đề thật có audio gốc, làm theo từng Part như thi trên máy.", "Real tests with the original audio, one Part at a time like the computer test.") },
   { id: "reading", name: "Reading",
     meta: L(`40 câu · ${DURATION.reading} phút`, `40 questions · ${DURATION.reading} min`),
     desc: L("3 bài đọc học thuật, bài đọc và câu hỏi đặt cạnh nhau.", "3 academic passages with the text and questions side by side.") },
