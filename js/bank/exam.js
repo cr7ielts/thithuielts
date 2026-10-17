@@ -43,21 +43,57 @@ export function examView(data, item, answers, onChange) {
 
   /* ----- cột phải: câu hỏi ----- */
   const sheet = el("div", { class: "cdi-questions" });
-  for (const g of data.groups) sheet.append(groupBlock(g, item, answers, change, flags, qNodes, () => paint()));
+  // Listening cả đề (không có bài đọc, quá 10 câu): chia theo Part như thi trên máy — mỗi lần một Part
+  const partOf = (n) => Math.ceil(n / 10);
+  const lastQ = Math.max(...item.groups.map((g) => g.to));
+  const byPart = !data.passage && lastQ > 10 && item.groups.every((g) => partOf(g.from) === partOf(g.to));
+  const partBoxes = new Map();
+  for (const g of data.groups) {
+    const block = groupBlock(g, item, answers, change, flags, qNodes, () => paint());
+    if (!byPart) { sheet.append(block); continue; }
+    const p = partOf(g.from);
+    if (!partBoxes.has(p)) {
+      const box = el("div", { class: "cdi-part", dataset: { part: p } },
+        el("div", { class: "cdi-part-head" }, el("strong", {}, `Part ${p}`),
+          el("span", { class: "tiny muted" }, L(`Câu ${(p - 1) * 10 + 1}–${p * 10}`, `Questions ${(p - 1) * 10 + 1}–${p * 10}`))));
+      partBoxes.set(p, box); sheet.append(box);
+    }
+    partBoxes.get(p).append(block);
+  }
+  let curPart = 1;
+  const partListeners = [];
+  const setPart = (p) => {
+    if (!byPart || !partBoxes.has(p)) return;
+    curPart = p;
+    partBoxes.forEach((box, k) => box.classList.toggle("hidden", k !== p));
+    partTabs.forEach((t, k) => t.classList.toggle("on", k === p));
+    partListeners.forEach((f) => f(p));
+  };
+  const partTabs = new Map();
 
   function change() { onChange?.(); paint(); }
 
   /* ----- thanh số câu ----- */
-  const nav = el("div", { class: "cdi-nav" });
+  const nav = el("div", { class: "cdi-nav" + (byPart ? " by-part" : "") });
   const numbers = item.groups.flatMap((g) => Array.from({ length: g.to - g.from + 1 }, (_, i) => g.from + i));
+  const navGroups = new Map();
+  if (byPart) partBoxes.forEach((_, p) => {
+    const tab = el("button", { type: "button", class: "cdi-part-tab", onclick: () => { setPart(p); sheet.scrollIntoView({ behavior: "smooth", block: "start" }); } },
+      el("strong", {}, `Part ${p}`), el("span", { class: "cdi-part-count" }));
+    partTabs.set(p, tab);
+    const nums = el("div", { class: "cdi-part-nums" });
+    navGroups.set(p, nums);
+    nav.append(el("div", { class: "cdi-part-nav" }, tab, nums));
+  });
   numbers.forEach((n) => {
     const b = el("button", { type: "button", class: "cdi-num", title: L(`Câu ${n}`, `Question ${n}`), onclick: () => {
+      if (byPart && partOf(n) !== curPart) setPart(partOf(n));
       qNodes.get(n)?.scrollIntoView({ behavior: "smooth", block: "center" });
       qNodes.get(n)?.classList.add("flash");
       setTimeout(() => qNodes.get(n)?.classList.remove("flash"), 900);
     } }, String(n));
     navBtns.set(n, b);
-    nav.append(b);
+    (byPart ? navGroups.get(partOf(n)) || nav : nav).append(b);
   });
 
   const answered = (n) => {
@@ -72,9 +108,14 @@ export function examView(data, item, answers, onChange) {
       b.classList.toggle("flag", flags.has(n));
     });
     nav.dataset.left = String(numbers.filter((n) => !answered(n)).length);
+    partTabs.forEach((t, p) => {
+      const ns = numbers.filter((n) => partOf(n) === p);
+      t.querySelector(".cdi-part-count").textContent = ` ${ns.filter(answered).length}/${ns.length}`;
+    });
   };
   paint();
-  return { paper, sheet, nav, flags, blanks: () => numbers.filter((n) => !answered(n)).length, flagged: () => [...flags] };
+  setPart(1);
+  return { paper, sheet, nav, flags, byPart, setPart, onPart: (f) => partListeners.push(f), blanks: () => numbers.filter((n) => !answered(n)).length, flagged: () => [...flags] };
 }
 
 /* ----- một nhóm câu hỏi ----- */

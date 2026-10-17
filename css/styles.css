@@ -1647,3 +1647,24 @@ mark.ev.flash { background: color-mix(in srgb, var(--copper) 38%, transparent); 
   .qz-extra, .qz-opts, .qz-fb { padding-left: 0; }
   .qz-input, .qz-free { margin-left: 0; width: 100%; }
 }
+
+/* Listening cả đề: chia theo Part như thi trên máy */
+.cdi-part-head { display: flex; align-items: baseline; gap: 10px; padding: 4px 2px 10px; border-bottom: 2px solid var(--line); margin-bottom: 12px; font-size: 1.05rem; }
+.cdi-nav.by-part { flex-wrap: nowrap; gap: 8px; overflow-x: auto; }
+.cdi-part-nav { display: flex; align-items: center; gap: 5px; flex: 1 1 0; min-width: 0; padding-right: 8px; border-right: 1px solid var(--line); }
+.cdi-part-nav:last-child { border-right: 0; }
+.cdi-part-tab { flex: none; border: 2px solid var(--line); background: var(--surface); border-radius: 10px; padding: 4px 10px; font: inherit; font-size: .82rem; cursor: pointer; color: inherit; }
+.cdi-part-tab.on { background: var(--accent, #f08a24); border-color: var(--accent, #f08a24); color: #fff; }
+.cdi-part-count { font-weight: 400; opacity: .8; }
+.cdi-part-nums { display: flex; flex-wrap: wrap; gap: 4px; }
+.cdi-part-nav:has(.cdi-part-tab:not(.on)) .cdi-part-nums { display: none; }
+.bank-figure { margin-top: 8px; border: 2px solid var(--line); border-radius: var(--r); background: var(--surface); }
+.bank-figure > summary { padding: 10px 14px; cursor: pointer; font-weight: 600; }
+@media (max-width: 720px) {
+  .cdi-part-nav { flex: none; }
+}
+.cdi-part-nav:has(.cdi-part-tab.on) { flex: 4 1 0; }
+.cdi-part-nav:has(.cdi-part-tab.on) .cdi-part-nums { flex-wrap: nowrap; }
+/* thanh audio Listening dính ngay dưới thanh giờ làm bài, không bị che */
+.cdi-one .bank-paper { top: 142px; }
+@media (max-width: 720px) { .cdi-one .bank-paper { position: static; } }

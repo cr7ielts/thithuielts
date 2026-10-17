@@ -139,7 +139,7 @@ function bankList(ctx, banks, kind, best) {
     p === "all" ? L("Tất cả", "All") : p)));
   if (hasFc) chips.append(el("button", { class: "chip-btn", dataset: { part: FC_CHIP }, onclick: () => { part = FC_CHIP; paint(); } },
     icon("star"), L(` Dự đoán ${READING_FORECAST.period}`, ` Forecast ${READING_FORECAST.period}`)));
-  box.append(tabs, el("div", { class: "row wrap", style: "gap:10px" }, search, count), chips, fcMissing, grid);
+  box.append(tabs, el("div", { class: "row wrap", style: "gap:10px" }, search, count), chips, fcMissing || "", grid);
   paint();
   return box;
 }
@@ -275,16 +275,21 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
     paper.append(el("div", { class: "bank-audio" }, audios.map(({ f, url }, i) => proctor
       // homework: nghe một lần như thi thật
       ? onceAudio({ src: url, label: f.label || "Audio", key: `bank-hw-${hw.a.id}-${ctx.user.uid}-${i}` })
-      : el("div", { class: "bank-audio-row" }, el("span", { class: "tiny strong" }, f.label || "Audio"),
+      : el("div", { class: "bank-audio-row", dataset: { part: (/(\d)\s*$/.exec(f.label || "") || [])[1] || "" } }, el("span", { class: "tiny strong" }, f.label || "Audio"),
         el("audio", { controls: "", preload: "none", src: url, controlslist: "nodownload" })))));
   }
   // bài tương tác thì không cần PDF nữa — trừ bài có bản đồ/sơ đồ (inter.paper): vẫn hiện trang PDF để nhìn hình
+  let figure = null;   // Listening làm trên máy: hình trong đề nằm trên phần câu hỏi, không dính vào thanh audio
   if (pdfIdx >= 0 && (!inter || inter.paper)) {
     const pages = files[pdfIdx].pages || null;
+    const listenFig = inter && !inter.passage;
     // file có kèm trang đáp án / nhiều đề -> chỉ hiện đúng các trang của đề, không cho mở cả file
-    if (!pages && !files[pdfIdx].keyInside) paper.append(el("div", { class: "row", style: "justify-content:flex-end" },
+    if (!pages && !files[pdfIdx].keyInside && !listenFig) paper.append(el("div", { class: "row", style: "justify-content:flex-end" },
       el("a", { class: "btn btn-sm", href: urls[pdfIdx], target: "_blank", rel: "noopener" }, L("Mở PDF trong tab mới", "Open PDF in a new tab"), icon("arrow"))));
-    paper.append(pdfViewer(urls[pdfIdx], item.title, pages, hlStore, !!files[pdfIdx].keyInside));
+    const viewer = pdfViewer(urls[pdfIdx], item.title, pages, hlStore, !!files[pdfIdx].keyInside);
+    // Listening làm trên máy: đề PDF chỉ để xem bản đồ / sơ đồ -> gập lại, mở khi cần
+    if (listenFig) figure = el("details", { class: "bank-figure" }, el("summary", {}, L("Xem hình trong đề (bản đồ, sơ đồ)", "Show the pictures from the test paper (maps, diagrams)")), viewer);
+    else paper.append(viewer);
   }
 
   // Phiếu trả lời — bản tương tác (như thi trên máy) hoặc phiếu cạnh PDF
@@ -292,7 +297,13 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
   if (inter) {
     exam = examView(inter, item, answers, save);
     if (inter.passage) paper.append(exam.paper);   // Listening không có bài đọc -> câu hỏi chiếm cả bề ngang
-    sheet = el("div", { class: "bank-sheet cdi" }, exam.sheet);
+    // Listening cả đề: mỗi lần một Part, chỉ hiện audio của Part đó
+    if (exam.byPart) {
+      const rows = [...paper.querySelectorAll(".bank-audio-row[data-part]")].filter((r) => r.dataset.part);
+      const showAudio = (p) => rows.forEach((r) => r.classList.toggle("hidden", r.dataset.part !== String(p)));
+      if (rows.length) { exam.onPart(showAudio); showAudio(1); }
+    }
+    sheet = el("div", { class: "bank-sheet cdi" }, figure || "", exam.sheet);
   } else {
     sheet = el("div", { class: "bank-sheet" });
     for (const g of item.groups) sheet.append(groupInputs(g, answers, save));
