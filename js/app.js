@@ -16,6 +16,10 @@ import { renderResult, renderHistory, renderAdmin } from "./results.js";
 import { initProgress, getStats } from "./vocab/progress.js";
 import { renderVocabHub, renderDeck, renderReview, statStrip } from "./vocab/views.js";
 import { renderGamesHub, renderGame, GAMES, WORDPLAY_GAMES } from "./vocab/games.js";
+import { renderSetsHub, renderSetDetail, renderSetEditor, renderStudyRoute } from "./sets/views.js";
+import { renderLiveSetup, renderLiveJoin } from "./sets/live.js";
+import { renderLiveHost } from "./sets/live-host.js";
+import { renderLivePlay } from "./sets/live-play.js";
 import { renderIdioms, renderIdiomGame } from "./wordplay/idioms.js";
 import { renderPuns, renderPunGame } from "./wordplay/puns.js";
 import { renderHomework, renderHomeworkDetail, renderHomeworkForm, renderHomeworkReview, homeworkWidget } from "./homework/views.js";
@@ -230,6 +234,7 @@ async function demoSignIn(name, teacher = false) {
 
 /* ===================== Router ===================== */
 // #home · #exams · #vocab · #deck/education · #review/due · #games/saved · #game/rain/all
+// #sets · #set/my:<id> · #study/learn/deck:education · #live · #live/play/<pin>
 // #idioms · #idioms/play/meaning · #idioms/play/missing · #puns · #puns/play
 let route = location.hash.replace("#", "") || "home";
 let routeData = null;
@@ -283,6 +288,15 @@ function render() {
     case "review":    main.append(renderReview(ctx, a || "due")); break;
     case "games":     main.append(renderGamesHub(ctx, a || "all")); break;
     case "game":      main.append(renderGame(ctx, a, b || "all")); break;
+    case "sets":      main.append(a === "new" ? renderSetEditor(ctx, null) : a === "edit" ? renderSetEditor(ctx, b) : renderSetsHub(ctx)); break;   // #sets · #sets/new · #sets/edit/<id>
+    case "set":       main.append(renderSetDetail(ctx, a || "saved")); break;                                  // #set/my:<id> · #set/deck:<id> · #set/saved
+    case "study":     main.append(renderStudyRoute(ctx, a, b || "saved")); break;                             // #study/<flash|learn|write|spell|test|match>/<ref>
+    case "live":                                                                                            // #live · #live/new[/<ref>] · #live/host/<pin> · #live/play/<pin>
+      if (a === "new") main.append(renderLiveSetup(ctx, b || ""));
+      else if (a === "host" && b) main.append(renderLiveHost(ctx, b));
+      else if (a === "play" && b) main.append(renderLivePlay(ctx, b));
+      else main.append(renderLiveJoin(ctx));
+      break;
     case "idioms":    main.append(a === "play" ? renderIdiomGame(ctx, b) : renderIdioms(ctx)); break;
     case "puns":      main.append(a === "play" ? renderPunGame(ctx) : renderPuns(ctx)); break;
     case "homework":
@@ -417,6 +431,7 @@ function googleIcon() {
 const SECTION_OF = {
   home: "home", exams: "exams", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
   vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
+  sets: "sets", set: "sets", study: "sets", live: "live",
   idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
   classes: "classes", class: "classes", join: "classes",
 };
@@ -435,6 +450,8 @@ function navGroups() {
       ["history", "history", L("Lịch sử làm bài", "History")]] },
     { title: L("Từ vựng", "Words"), items: [
       ["vocab", "cards", L("Từ vựng", "Vocabulary")],
+      ["sets", "bookmark", L("Học phần", "Study sets")],
+      ["live", "qr", L("Vào phòng live", "Live game")],
       ["games", "game", L("Trò chơi", "Games")],
       ["idioms", "quote", "Idioms"],
       ["puns", "laugh", "Puns"]] },

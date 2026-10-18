@@ -42,7 +42,8 @@ export function renderVocabHub(ctx) {
             class: "btn btn-primary btn-lg", disabled: s.due ? null : "",
             onclick: () => ctx.go("review/due"),
           }, icon("refresh"), s.due ? L(`Ôn ${s.due} từ đến hạn`, `Review ${s.due} due words`) : L("Chưa có từ đến hạn", "Nothing due yet")),
-          el("button", { class: "btn btn-lg", onclick: () => ctx.go("games") }, icon("game"), L("Chơi mà học", "Learn by playing")))),
+          el("button", { class: "btn btn-lg", onclick: () => ctx.go("games") }, icon("game"), L("Chơi mà học", "Learn by playing")),
+          el("button", { class: "btn btn-lg", onclick: () => ctx.go("sets") }, icon("bookmark"), L("Học phần & live", "Study sets & live")))),
       el("div", { class: "vocab-hero-cat" }, cat)),
     statStrip(s)
   );

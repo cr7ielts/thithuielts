@@ -147,6 +147,54 @@ service cloud.firestore {
       allow delete: if isAdmin();   // học sinh không tự xoá để "làm lại từ đầu" với đồng hồ mới
     }
 
+    // ================= HỌC PHẦN (study set) =================
+    // Mỗi người tạo / sửa / xoá học phần của mình. Đọc được khi là chủ, là giáo viên, hoặc học phần bật "chia sẻ".
+    // byTeacher (hiện ở mục "Giáo viên chia sẻ") chỉ giáo viên đặt được.
+    match /studySets/{sid} {
+      function validSet() {
+        return request.resource.data.ownerUid == request.auth.uid
+          && request.resource.data.title is string
+          && request.resource.data.title.size() > 0 && request.resource.data.title.size() <= 120
+          && request.resource.data.cards is list
+          && request.resource.data.cards.size() <= 500
+          && (request.resource.data.get('byTeacher', false) == false || isAdmin());
+      }
+      allow read:   if request.auth != null &&
+                    (isAdmin() || resource.data.ownerUid == request.auth.uid || resource.data.get('shared', false) == true);
+      allow create: if request.auth != null && validSet();
+      allow update: if request.auth != null && resource.data.ownerUid == request.auth.uid && validSet();
+      allow delete: if request.auth != null && (isAdmin() || resource.data.ownerUid == request.auth.uid);
+    }
+
+    // ================= LIVE GAME =================
+    // Phòng chơi: chỉ giáo viên tạo; mọi tài khoản đăng nhập đọc được (cần biết mã 6 số mới tìm ra phòng).
+    // Đáp án nằm ở liveKeys (chỉ giáo viên chủ phòng đọc), giáo viên chấm điểm giúp người chơi.
+    match /liveGames/{pin} {
+      function isHost() { return request.auth != null && get(/databases/$(database)/documents/liveGames/$(pin)).data.hostUid == request.auth.uid; }
+      allow get:    if request.auth != null;
+      allow list:   if false;
+      allow create: if isAdmin() && request.resource.data.hostUid == request.auth.uid;
+      allow update, delete: if isAdmin() && resource.data.hostUid == request.auth.uid;
+
+      match /players/{uid} {
+        // người chơi chỉ được gửi đáp án (answers) và lượt chọn của đội (tap); điểm do giáo viên ghi
+        allow read:   if request.auth != null;
+        allow create: if request.auth != null && request.auth.uid == uid
+                      && request.resource.data.uid == uid
+                      && request.resource.data.score == 0
+                      && request.resource.data.get('team', '') == ''
+                      && get(/databases/$(database)/documents/liveGames/$(pin)).data.status != 'finished';
+        allow update: if request.auth != null &&
+                      ((request.auth.uid == uid && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['answers', 'tap']))
+                       || (isAdmin() && isHost()));
+        allow delete: if request.auth != null && (request.auth.uid == uid || (isAdmin() && isHost()));
+      }
+    }
+    match /liveKeys/{pin} {
+      allow create: if isAdmin() && request.resource.data.hostUid == request.auth.uid;
+      allow read, update, delete: if isAdmin() && resource.data.hostUid == request.auth.uid;
+    }
+
     // Bài nộp: học sinh chỉ tạo & đọc bài của chính mình, không sửa/xoá được sau khi nộp
     match /submissions/{id} {
       allow read:   if request.auth != null &&
