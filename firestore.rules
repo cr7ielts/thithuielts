@@ -99,6 +99,7 @@ service cloud.firestore {
           && request.resource.data.get('teacherComment', null) == null
           && request.resource.data.get('gradedAt', null) == null
           && request.resource.data.get('teacherCriteria', null) == null
+          && request.resource.data.get('teacherMeme', null) == null
           && asg(request.resource.data.assignmentId).published == true
           && isMember(asg(request.resource.data.assignmentId).classId)
           && request.resource.data.type == asg(request.resource.data.assignmentId).type
@@ -145,6 +146,12 @@ service cloud.firestore {
         && request.resource.data.updatedAt == request.time
         && request.time < resource.data.startedAtServer + duration.value(resource.data.minutes * 60 + 120, 's');
       allow delete: if isAdmin();   // học sinh không tự xoá để "làm lại từ đầu" với đồng hồ mới
+    }
+
+    // Kho meme nhận xét giáo viên tự tải lên: ai đăng nhập cũng xem (để học sinh thấy meme), chỉ giáo viên thêm / xoá
+    match /memes/{mid} {
+      allow read:  if request.auth != null;
+      allow write: if isAdmin();
     }
 
     // ================= HỌC PHẦN (study set) =================

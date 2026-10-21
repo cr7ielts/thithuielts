@@ -12,7 +12,7 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
 ## Cấu trúc chính
 - `js/app.js`: router (hash), trang chủ, Thi thử (`exams`).
 - `js/bank/`: Ngân hàng đề. `bank.js` (danh sách, làm bài, thi thử ghép đề `mockr`/`mockl`), `exam.js` (giao diện làm trên máy, chia theo Part), `review.js` + `listen-review.js` (xem lại, giải thích).
-- `js/homework/`: bài tập về nhà theo lớp. `quizdoc.js`/`quizview.js` = bài kiểm tra dựng từ file Word.
+- `js/homework/`: bài tập về nhà theo lớp. `memes.js` = meme nhận xét (40 meme mèo i-melts theo 10 sắc thái + ảnh giáo viên tải lên ở `memes`/Storage `memes/`, gợi ý theo điểm; lưu `teacherMeme` trong bài nộp). `quizdoc.js`/`quizview.js` = bài kiểm tra dựng từ file Word.
 - `js/sets/`: Học phần kiểu Quizlet. `store.js` (học phần Firestore `studySets` + `liveDb` realtime, chế độ thử dùng localStorage/BroadcastChannel), `cards.js` (ref `my:<id>`/`deck:<id>`/`saved`, dựng câu hỏi), `modes.js` (Thẻ ghi nhớ, Learn, Write, Spell, Test, Match), `views.js` (thư viện, chi tiết, soạn), `live*.js` (live game: giáo viên host `liveGames/<pin>` + `liveKeys/<pin>` chứa đáp án, học sinh vào bằng mã 6 số / QR; 3 chế độ solo, teamscore, race), `qr.js` (tạo QR + quét camera; thư viện ở `js/vendor/qrcode.js`, `jsqr.js`). Giáo viên phải mở tab host suốt trận (trình duyệt giáo viên chấm điểm). Sửa rules phải `deploy.cmd`.
 - `js/vocab/`, `js/wordplay/`: Từ vựng (SRS, game), Idioms, Puns.
 - `firestore.rules`: đáp án (`assignmentKeys`) chỉ đọc được khi đã nộp và (qua hạn hoặc `keyAfterSubmit`).
