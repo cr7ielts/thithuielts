@@ -4,6 +4,10 @@ import { L } from "../i18n.js";
 import { meaning } from "../data/vocab.js";
 import { addXP } from "../vocab/progress.js";
 import { front, back, clip, isCorrect, makeMC, starredIds, toggleStar } from "./cards.js";
+import { makeQuestion, checkTyped } from "./qgen.js";
+import { askQuestion } from "./qview.js";
+import { levelOf, record, pickAdaptive } from "./mastery.js";
+import { loadPackFor } from "./ai-qgen.js";
 
 export const MODES = [
   { id: "flash", icon: "cards", name: L("Thẻ ghi nhớ", "Flashcards"), desc: L("Lật thẻ, đánh dấu từ đã thuộc", "Flip cards and mark what you know") },
@@ -34,18 +38,22 @@ export function renderStudy(ctx, modeId, r) {
     body.append(el("div", { class: "notice notice-warn" }, L("Học phần cần ít nhất 2 thẻ để học.", "A set needs at least 2 cards to study.")));
     return root;
   }
-  setup(body, r, mode, (opts) => {
+  const aiP = loadPackFor(r).catch(() => ({}));
+  setup(body, r, mode, async (opts) => {
     body.innerHTML = "";
+    const ai = await aiP;
     const cards = opts.starOnly ? r.cards.filter((c) => starredIds(r.ref).has(c.id)) : r.cards;
     const again = () => ctx.go(`study/${modeId}/${r.ref}`, { again: Date.now() });
-    ({ flash, learn, write, spell, test, match }[modeId])(body, { ctx, r, cards, pool: r.cards, opts, again });
+    // mức câu hỏi của từng thẻ: theo năng lực học sinh (mặc định) hoặc cố định theo lựa chọn
+    const levelFor = (c) => (opts.diff === "auto" ? levelOf(c) : +opts.diff);
+    ({ flash, learn, write, spell, test, match }[modeId])(body, { ctx, r, cards, pool: r.cards, opts, again, ai, levelFor });
   });
   return root;
 }
 
 function setup(body, r, mode, start) {
   const stars = starredIds(r.ref);
-  const opts = { dir: "wd", shuffle: true, starOnly: false, count: Math.min(20, r.cards.length), types: { mc: true, tf: true, match: true, write: true } };
+  const opts = { diff: "auto", dir: "wd", shuffle: true, starOnly: false, count: Math.min(20, r.cards.length), types: { mc: true, tf: true, match: true, write: true } };
   const row = (label, ...children) => el("div", { class: "setup-row" }, el("div", { class: "setup-label" }, label), el("div", { class: "setup-ctl" }, children));
   const seg = (key, choices) => {
     const wrap = el("div", { class: "seg" });
@@ -68,6 +76,8 @@ function setup(body, r, mode, start) {
         : [["wd", L("Từ", "Word")], ["dw", L("Nghĩa", "Meaning")]])));
     if (mode.id === "write") opts.dir = "dw";
   }
+  if (["learn", "write", "test"].includes(mode.id)) rows.push(row(L("Độ khó", "Difficulty"),
+    seg("diff", [["auto", L("Theo năng lực của tôi", "Adapt to me")], ["0", L("Dễ", "Easy")], ["1", L("Vừa", "Medium")], ["2", L("Khó", "Hard")], ["3", L("Rất khó", "Very hard")]])));
   if (mode.id === "flash") rows.push(row(L("Thứ tự", "Order"), check(L("Xáo trộn thẻ", "Shuffle cards"), () => opts.shuffle, (v) => (opts.shuffle = v))));
   if (mode.id === "test") {
     const max = r.cards.length;
@@ -173,102 +183,43 @@ function flash(body, { ctx, r, cards, opts, again }) {
 }
 
 /* ======================= LEARN ======================= */
-function learn(body, { r, cards, pool, again }) {
-  const level = new Map(cards.map((c) => [c.id, 0]));   // 0 chưa biết · 1 qua trắc nghiệm · 2 đã thuộc
+// Mỗi thẻ phải đúng 2 lần mới "thuộc": lần 1 trắc nghiệm, lần 2 tự gõ. Mức câu theo năng lực từng thẻ,
+// đúng thì câu sau khó hơn, sai thì lùi về dễ và hỏi lại.
+function learn(body, { cards, pool, again, ai, levelFor }) {
+  const stage = new Map(cards.map((c) => [c.id, 0]));   // 0 chưa · 1 qua trắc nghiệm · 2 thuộc
+  const bump = new Map();                                  // độ khó cộng thêm trong phiên
   const misses = new Map();
-  const canMC = pool.length >= 4;
   let working = [], last = null, answered = 0, right = 0;
 
   const bar = el("div", { class: "bar-track" }, el("span"));
-  const stage = el("div", { class: "learn-stage" });
-  body.append(el("div", { class: "fc-wrap" }, bar, stage));
-
-  const mastered = () => [...level.values()].filter((v) => v >= 2).length;
+  const box = el("div", { class: "learn-stage" });
+  body.append(el("div", { class: "fc-wrap" }, bar, box));
+  const mastered = () => [...stage.values()].filter((v) => v >= 2).length;
 
   function next() {
     bar.firstChild.style.width = `${pct(mastered(), cards.length)}%`;
     if (mastered() === cards.length) return finish();
-    working = working.filter((c) => level.get(c.id) < 2);
+    working = working.filter((c) => stage.get(c.id) < 2);
     if (working.length < 7) {
       const ids = new Set(working.map((c) => c.id));
-      working.push(...shuffle(cards.filter((c) => level.get(c.id) < 2 && !ids.has(c.id))).slice(0, 7 - working.length));
+      working.push(...pickAdaptive(cards.filter((c) => stage.get(c.id) < 2 && !ids.has(c.id)), 7 - working.length));
     }
     let pick = working.filter((c) => c.id !== last);
     if (!pick.length) pick = working;
     const c = pick[Math.floor(Math.random() * pick.length)];
     last = c.id;
-    ask(c);
-  }
-
-  function head(c, kind) {
-    return el("div", { class: "learn-head" },
-      el("span", { class: "chip" }, kind === "mc" ? L("Chọn nghĩa đúng", "Choose the meaning") : L("Gõ lại từ", "Type the word")),
-      el("span", { class: "muted small" }, `${mastered()}/${cards.length} ${L("đã thuộc", "learned")}`),
-      el("button", { class: "icon-btn", title: L("Đọc", "Listen"), onclick: () => speak(c) }, icon("volume")));
-  }
-
-  function ask(c) {
-    stage.innerHTML = "";
-    if (level.get(c.id) === 0 && canMC) askMC(c); else askWrite(c);
-  }
-
-  function feedback(ok, c, extra) {
-    answered++; if (ok) right++;
-    const lv = level.get(c.id);
-    if (ok) level.set(c.id, Math.min(2, lv + 1)); else { level.set(c.id, 0); misses.set(c.id, (misses.get(c.id) || 0) + 1); }
-    return extra;
-  }
-
-  function askMC(c) {
-    const q = makeMC(c, pool, "wd");
-    const opts = q.options.map((o, i) => el("button", { class: "opt", onclick: () => pick(i) }, el("span", { class: "opt-n" }, i + 1), clip(o)));
-    let done = false;
-    function pick(i) {
-      if (done) return; done = true;
-      const ok = i === q.answer;
-      opts[q.answer].classList.add("ok");
-      if (!ok) opts[i].classList.add("bad");
-      feedback(ok, c);
-      if (ok) setTimeout(next, 800);
-      else stage.append(el("button", { class: "btn btn-primary", onclick: next }, L("Tiếp tục", "Continue")));
-    }
-    stage.append(head(c, "mc"), el("div", { class: "q-prompt" }, q.prompt), el("div", { class: "opts" }, opts));
-    speak(c);
-    const key = (e) => {
-      if (!stage.isConnected || done) { document.removeEventListener("keydown", key); return; }
-      const n = +e.key; if (n >= 1 && n <= opts.length) pick(n - 1);
-    };
-    document.addEventListener("keydown", key);
-  }
-
-  function askWrite(c) {
-    const answer = c.word;
-    const input = el("input", { type: "text", class: "type-input", autocomplete: "off", autocapitalize: "off", spellcheck: "false", placeholder: L("Gõ từ tiếng Anh…", "Type the English word…") });
-    let done = false;
-    function submit() {
-      if (done) return;
-      if (!input.value.trim()) return;
-      done = true;
-      const ok = isCorrect(input.value, answer);
-      input.disabled = true;
-      feedback(ok, c);
-      input.classList.add(ok ? "ok" : "bad");
-      if (ok) { setTimeout(next, 800); return; }
-      stage.append(
-        el("div", { class: "reveal" }, L("Đáp án: ", "Answer: "), el("b", {}, answer)),
-        el("div", { class: "row", style: "gap:8px" },
-          el("button", { class: "btn btn-sm", onclick: () => { level.set(c.id, 1); misses.set(c.id, Math.max(0, (misses.get(c.id) || 1) - 1)); right++; next(); } }, L("Tôi đã đúng", "I was right")),
-          el("button", { class: "btn btn-primary", onclick: next }, L("Tiếp tục", "Continue"))));
-    }
-    input.addEventListener("keydown", (e) => { if (e.key === "Enter") submit(); });
-    stage.append(head(c, "write"), el("div", { class: "q-prompt" }, meaning(c)), c.example ? el("div", { class: "muted small center" }, c.example.replace(new RegExp(c.word, "ig"), "____")) : null,
-      input, el("div", { class: "row", style: "gap:8px;justify-content:center" },
-        el("button", { class: "btn btn-ghost btn-sm", onclick: () => { input.value = ""; done = false; input.disabled = false; submit_skip(); } }, L("Không biết", "Don't know")),
-        el("button", { class: "btn btn-primary", onclick: submit }, L("Kiểm tra", "Check"))));
-    function submit_skip() {
-      input.value = "?"; done = false; submit();
-    }
-    setTimeout(() => input.focus(), 0);
+    const st = stage.get(c.id);
+    const base = Math.max(0, Math.min(4, levelFor(c) + (bump.get(c.id) || 0)));
+    const q = st === 0 && pool.length >= 4
+      ? makeQuestion(c, { level: Math.min(base, 2), pool, ai, only: "mc" })
+      : makeQuestion(c, { level: Math.max(2, base), pool, ai, only: "type" });
+    askQuestion(box, q, (ok) => {
+      answered++; if (ok) right++;
+      record(c, ok, q.level);
+      if (ok) { stage.set(c.id, st + 1); bump.set(c.id, (bump.get(c.id) || 0) + 1); }
+      else { stage.set(c.id, 0); bump.set(c.id, -1); misses.set(c.id, (misses.get(c.id) || 0) + 1); }
+      next();
+    }, { head: null });
   }
 
   function finish() {
@@ -278,51 +229,32 @@ function learn(body, { r, cards, pool, again }) {
       title: L("Đã thuộc cả học phần", "You learned the whole set"), big: `${cards.length}/${cards.length}`, sub: L("thẻ đã thuộc", "cards learned"),
       stats: [L(`${pct(right, answered)}% trả lời đúng`, `${pct(right, answered)}% correct`), L(`${answered} lượt trả lời`, `${answered} answers`)],
       actions: [el("button", { class: "btn btn-primary", onclick: again }, icon("refresh"), L("Học lại", "Learn again"))] });
-    if (hard.length) body.firstChild.append(el("div", { class: "muted small center" }, L("Từ hay sai: ", "Tricky words: ") + hard.map((c) => c.word).join(", ")));
+    if (hard.length) body.firstChild.append(el("div", { class: "muted small center" }, L("Từ hay sai (lần sau sẽ hỏi nhiều hơn): ", "Tricky words (you'll see them more): ") + hard.map((c) => c.word).join(", ")));
   }
-
   next();
 }
 
 /* ======================= WRITE ======================= */
-function write(body, { cards, opts, again }) {
-  const dir = opts.dir;   // "dw": nhìn nghĩa, gõ từ
-  let queue = shuffle(cards), wrong = [], total = cards.length, ok = 0, i = 0;
+function write(body, { cards, pool, opts, again, ai, levelFor }) {
+  const dir = opts.dir;   // "dw": gõ từ tiếng Anh (câu theo độ khó) · "wd": nhìn từ, gõ nghĩa
+  let queue = pickAdaptive(cards, cards.length), wrong = [], ok = 0, i = 0;
+  const total = cards.length;
   const bar = el("div", { class: "bar-track" }, el("span"));
-  const stage = el("div", { class: "learn-stage" });
-  body.append(el("div", { class: "fc-wrap" }, bar, stage));
+  const box = el("div", { class: "learn-stage" });
+  body.append(el("div", { class: "fc-wrap" }, bar, box));
 
   function ask() {
     bar.firstChild.style.width = `${pct(i, total)}%`;
-    if (!queue.length) {
-      if (wrong.length) { queue = shuffle(wrong); wrong = []; } else return finish();
-    }
+    if (!queue.length) { if (wrong.length) { queue = shuffle(wrong); wrong = []; } else return finish(); }
     const c = queue.shift();
-    stage.innerHTML = "";
-    const expected = back(c, dir);
-    const input = el("input", { type: "text", class: "type-input", autocomplete: "off", autocapitalize: "off", spellcheck: "false",
-      placeholder: dir === "dw" ? L("Gõ từ tiếng Anh…", "Type the English word…") : L("Gõ nghĩa…", "Type the meaning…") });
-    let done = false;
-    const submit = (skip) => {
-      if (done) return;
-      if (!skip && !input.value.trim()) return;
-      done = true; input.disabled = true;
-      const good = !skip && isCorrect(input.value, expected);
-      input.classList.add(good ? "ok" : "bad");
-      if (good) { ok++; i++; setTimeout(ask, 700); return; }
-      wrong.push(c);
-      stage.append(el("div", { class: "reveal" }, L("Đáp án: ", "Answer: "), el("b", {}, expected)),
-        el("div", { class: "row", style: "gap:8px" },
-          el("button", { class: "btn btn-sm", onclick: () => { wrong.pop(); ok++; i++; ask(); } }, L("Tôi đã đúng", "I was right")),
-          el("button", { class: "btn btn-primary", onclick: () => { ask(); } }, L("Tiếp tục", "Continue"))));
-    };
-    input.addEventListener("keydown", (e) => { if (e.key === "Enter") submit(false); });
-    stage.append(el("div", { class: "learn-head" }, el("span", { class: "chip" }, `${i + 1}/${total}`), c.pos ? el("span", { class: "muted small" }, c.pos) : null),
-      el("div", { class: "q-prompt" }, front(c, dir)), input,
-      el("div", { class: "row", style: "gap:8px;justify-content:center" },
-        el("button", { class: "btn btn-ghost btn-sm", onclick: () => submit(true) }, L("Không biết", "Don't know")),
-        el("button", { class: "btn btn-primary", onclick: () => submit(false) }, L("Kiểm tra", "Check"))));
-    setTimeout(() => input.focus(), 0);
+    const q = dir === "dw"
+      ? makeQuestion(c, { level: Math.max(2, levelFor(c)), pool, ai, only: "type" })
+      : { kind: "meanType", level: 2, card: c, cardId: c.id, label: L("Nhìn từ, gõ nghĩa", "See the word, type the meaning"), prompt: c.word, accept: back(c, "wd"), hint: back(c, "wd").slice(0, 2) + "…" };
+    askQuestion(box, q, (good) => {
+      record(c, good, q.level);
+      if (good) { ok++; i++; } else wrong.push(c);
+      ask();
+    });
   }
   function finish() {
     addXP(Math.min(40, ok));
@@ -383,11 +315,11 @@ function spell(body, { cards, again }) {
 }
 
 /* ======================= TEST ======================= */
-function test(body, { cards, pool, opts, again }) {
+function test(body, { cards, pool, opts, again, ai, levelFor }) {
   const types = Object.entries(opts.types).filter(([, v]) => v).map(([k]) => k).filter((k) => (k !== "mc" || pool.length >= 3));
   if (!types.length) types.push("write");
   const n = Math.min(opts.count, cards.length);
-  const picked = shuffle(cards).slice(0, n);
+  const picked = shuffle(pickAdaptive(cards, n));
 
   // chia câu cho các dạng; "nối" lấy một nhóm tối đa 6 thẻ
   const groups = { tf: [], mc: [], match: [], write: [] };
@@ -418,11 +350,11 @@ function test(body, { cards, pool, opts, again }) {
 
   // Trắc nghiệm
   section(L("Trắc nghiệm", "Multiple choice"), groups.mc.map((c) => {
-    const q = makeMC(c, pool, Math.random() < 0.7 ? "wd" : "dw");
-    const it = { c, val: -1 };
+    const q = makeQuestion(c, { level: Math.min(2, levelFor(c)), pool, ai, only: "mc" });
+    const it = { c, val: -1, lv: q.level };
     const bs = q.options.map((o, i) => el("button", { type: "button", class: "opt", onclick: () => { it.val = i; bs.forEach((b, k) => b.classList.toggle("sel", k === i)); } }, el("span", { class: "opt-n" }, i + 1), clip(o)));
-    it.node = el("div", { class: "t-q" }, el("div", { class: "q-prompt left" }, q.prompt), el("div", { class: "opts" }, bs));
-    it.grade = () => { it.ok = it.val === q.answer; it.show = q.options[q.answer]; bs[q.answer].classList.add("ok"); if (!it.ok && it.val >= 0) bs[it.val].classList.add("bad"); return it.ok; };
+    it.node = el("div", { class: "t-q" }, el("div", { class: "tiny muted" }, q.label), el("div", { class: "q-prompt left" }, q.prompt), q.sub ? el("div", { class: "muted small" }, q.sub) : null, el("div", { class: "opts" }, bs));
+    it.grade = () => { it.ok = it.val === q.answer; if (q.explain) it.node.append(el("div", { class: "small muted" }, q.explain)); it.show = q.options[q.answer]; bs[q.answer].classList.add("ok"); if (!it.ok && it.val >= 0) bs[it.val].classList.add("bad"); return it.ok; };
     items.push(it); return it.node;
   }));
 
@@ -441,10 +373,11 @@ function test(body, { cards, pool, opts, again }) {
 
   // Tự luận
   section(L("Tự luận — gõ từ tiếng Anh", "Written — type the English word"), groups.write.map((c) => {
+    const q = makeQuestion(c, { level: Math.max(2, levelFor(c)), pool, ai, only: "type" });
     const input = el("input", { type: "text", class: "type-input small", autocomplete: "off", autocapitalize: "off", spellcheck: "false", placeholder: L("Gõ từ…", "Type the word…") });
-    const it = { c, input };
-    it.node = el("div", { class: "t-q" }, el("div", { class: "q-prompt left" }, meaning(c)), input);
-    it.grade = () => { it.ok = isCorrect(input.value, c.word); it.show = c.word; input.disabled = true; return it.ok; };
+    const it = { c, input, lv: q.level };
+    it.node = el("div", { class: "t-q" }, el("div", { class: "tiny muted" }, q.label), el("div", { class: "q-prompt left" }, q.prompt), q.sub ? el("div", { class: "muted small" }, q.sub) : null, input);
+    it.grade = () => { it.ok = checkTyped(input.value, q.accept) === "ok"; it.show = q.accept; input.disabled = true; return it.ok; };
     items.push(it); return it.node;
   }));
 
@@ -454,7 +387,7 @@ function test(body, { cards, pool, opts, again }) {
 
   function grade() {
     let ok = 0;
-    items.forEach((it) => { if (it.grade()) ok++; mark(it); if (!it.ok && it.show) it.node.append(el("div", { class: "reveal" }, L("Đáp án: ", "Answer: "), el("b", {}, it.show))); });
+    items.forEach((it) => { if (it.grade()) ok++; record(it.c, it.ok, it.lv || 0); mark(it); if (!it.ok && it.show) it.node.append(el("div", { class: "reveal" }, L("Đáp án: ", "Answer: "), el("b", {}, it.show))); });
     items.forEach((it) => it.node.querySelectorAll("button,select").forEach((b) => (b.disabled = true)));
     submit.remove();
     addXP(Math.min(60, ok * 2));

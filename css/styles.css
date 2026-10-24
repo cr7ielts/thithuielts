@@ -1890,3 +1890,18 @@ mark.ev.flash { background: color-mix(in srgb, var(--copper) 38%, transparent); 
 .meme-mine { display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .meme-upload { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; width: 100%; }
 .meme-upload input[type="text"] { flex: 1 1 200px; }
+
+/* ---------- câu hỏi nhiều mức khó (qgen) ---------- */
+.lvl-0 { background: var(--mint-soft); color: var(--mint); }
+.lvl-1 { background: var(--navy-soft); color: var(--navy-ink); }
+.lvl-2 { background: var(--copper-soft); color: var(--copper-dark); }
+.lvl-3 { background: var(--red-soft); color: var(--red); }
+.q-prompt.long { font-family: var(--font-ui, inherit); font-size: 1.2rem; font-weight: 600; line-height: 1.55; }
+.q-prompt .gap, .fc-cloze b { display: inline-block; min-width: 70px; border-bottom: 3px solid var(--copper); color: transparent; }
+.fc-cloze b { color: var(--copper-dark); border: 0; min-width: 0; }
+.hint-line { min-height: 1.2em; font-family: var(--font-ipa, monospace); letter-spacing: .08em; }
+.lv-kind { font-size: .85rem; font-weight: 700; color: var(--ink-3); letter-spacing: .02em; margin-bottom: 6px; font-family: var(--font-ui, inherit); }
+.quiz-word.long { font-size: 1.15rem; line-height: 1.5; font-weight: 600; }
+.ai-box .ai-sample { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+.ai-q { padding: 10px 12px; border-radius: 12px; background: var(--surface-2); border: 1px solid var(--line); }
+.fc-verdict { margin-top: 8px; font-weight: 700; } .fc-verdict.ok { color: var(--mint); } .fc-verdict.bad { color: var(--red); }

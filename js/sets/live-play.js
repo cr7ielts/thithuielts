@@ -93,7 +93,7 @@ export function renderLivePlay(ctx, pin) {
       sig = ""; refresh();
       liveDb.update(myPath, { answers }).catch((e) => console.warn(e));
     } }, el("span", { class: "lv-shape" }, OPT_STYLE[i].shape), el("span", {}, o)));
-    shell(...bits, meter, el("div", { class: "lp-prompt" }, q.p), el("div", { class: "lp-opts" }, tiles));
+    shell(...bits, meter, el("div", { class: "lp-prompt" }, q.k ? el("div", { class: "lv-kind" }, q.k) : null, q.p), el("div", { class: "lp-opts" }, tiles));
     const t0 = shownAt, secs = game.qSecs;
     leftTimer = setInterval(() => {
       if (!root.isConnected) { clearInterval(leftTimer); return; }
@@ -136,7 +136,7 @@ export function renderLivePlay(ctx, pin) {
         el("div", { class: "lv-track" }, el("span", { class: "lv-run", style: `width:${Math.min(100, (t.progress / game.goal) * 100)}%` }), el("span", { class: "lv-flag" }, "🏁")),
         el("div", { class: "lv-lane-n" }, `${t.progress}/${game.goal}`)),
       fb,
-      el("div", { class: "lp-prompt" }, q.p),
+      el("div", { class: "lp-prompt" }, q.k ? el("div", { class: "lv-kind" }, q.k) : null, q.p),
       el("p", { class: "muted small center" }, L("Bạn chỉ thấy một phần đáp án. Bàn với đồng đội: ai giữ đáp án đúng thì bấm!", "You only see some of the answers. Talk to your team — whoever holds the right one taps it!")),
       el("div", { class: "lp-opts" }, mine.map(([o, i]) => el("button", { class: "lp-opt", style: `--oc:${OPT_STYLE[i].color}`, onclick: () => {
         if (sent) return; sent = true;

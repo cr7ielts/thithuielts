@@ -56,7 +56,7 @@ export async function saveSet(user, set, { teacher = false } = {}) {
   }
   const { db, dbMod } = await initFirebase();
   if (set.id) {
-    await dbMod.setDoc(dbMod.doc(db, "studySets", set.id), clean({ ...body, createdAt: set.createdAt || Date.now() }));
+    await dbMod.setDoc(dbMod.doc(db, "studySets", set.id), clean({ ...body, createdAt: set.createdAt || Date.now() }), { merge: true });   // merge: giữ gói câu hỏi AI
     return set.id;
   }
   const ref = await dbMod.addDoc(dbMod.collection(db, "studySets"), clean({ ...body, createdAt: Date.now() }));

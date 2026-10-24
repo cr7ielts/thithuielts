@@ -6,6 +6,7 @@ import { isAdmin } from "../firebase.js";
 import { liveDb, listMySets, listTeacherSets } from "./store.js";
 import { resolveSet, buildLiveQuestions, DECKS } from "./cards.js";
 import { startScanner } from "./qr.js";
+import { loadPackFor } from "./ai-qgen.js";
 
 export const OPT_STYLE = [
   { color: "#e21b3c", shape: "▲" }, { color: "#1368ce", shape: "◆" },
@@ -79,7 +80,7 @@ export function renderLiveSetup(ctx, presetRef = "") {
       " ", el("a", { href: "#live", onclick: (e) => { e.preventDefault(); ctx.go("live"); } }, L("Vào phòng", "Join a room"))));
     return root;
   }
-  const cfg = { ref: presetRef, mode: "solo", count: 15, secs: 20, goal: 10 };
+  const cfg = { ref: presetRef, mode: "solo", count: 15, secs: 20, goal: 10, level: "ramp" };
   const setSel = el("select", {}, el("option", { value: "" }, L("— Chọn học phần —", "— Choose a set —")));
   const addGroup = (label, items) => { if (items.length) setSel.append(el("optgroup", { label }, items.map(([v, t]) => el("option", { value: v }, t)))); };
   addGroup(L("Sổ từ", "Word bank"), [["saved", L("Sổ từ của tôi", "My word bank")], ["learning", L("Từ đang học", "Words in progress")]]);
@@ -108,6 +109,8 @@ export function renderLiveSetup(ctx, presetRef = "") {
   const secsRow = el("div", { class: "setup-row" }, el("div", { class: "setup-label" }, L("Thời gian mỗi câu", "Seconds per question")), el("div", { class: "setup-ctl" }, seg("secs", [[10, "10s"], [20, "20s"], [30, "30s"], [45, "45s"]])));
   const goalRow = el("div", { class: "setup-row" }, el("div", { class: "setup-label" }, L("Đích của cuộc đua", "Race goal")), el("div", { class: "setup-ctl" }, seg("goal", [[8, L("8 câu đúng", "8 correct")], [10, L("10 câu đúng", "10 correct")], [15, L("15 câu đúng", "15 correct")]])));
   const countRow = el("div", { class: "setup-row" }, el("div", { class: "setup-label" }, L("Số câu", "Questions")), el("div", { class: "setup-ctl" }, seg("count", [[10, "10"], [15, "15"], [20, "20"], [30, "30"]])));
+  const levelRow = el("div", { class: "setup-row" }, el("div", { class: "setup-label" }, L("Độ khó", "Difficulty")), el("div", { class: "setup-ctl" },
+    seg("level", [["ramp", L("Tăng dần", "Ramp up")], ["0", L("Dễ", "Easy")], ["1", L("Vừa", "Medium")], ["2", L("Khó", "Hard")]])));
   function sync() {
     [...modeBox.children].forEach((b) => b.classList.toggle("sel", b.dataset.m === cfg.mode));
     secsRow.classList.toggle("hidden", cfg.mode === "race");
@@ -123,7 +126,8 @@ export function renderLiveSetup(ctx, presetRef = "") {
       const r = await resolveSet(ctx.user, cfg.ref);
       if (!r || r.cards.length < 4) { toast(L("Học phần cần ít nhất 4 thẻ để chơi live.", "A set needs at least 4 cards for live play."), "error"); go.disabled = false; return; }
       const nQ = cfg.mode === "race" ? Math.min(30, r.cards.length) : Math.min(cfg.count, r.cards.length);
-      const { qs, key } = buildLiveQuestions(r.cards, nQ);
+      const ai = await loadPackFor(r).catch(() => ({}));
+      const { qs, key } = buildLiveQuestions(r.cards, nQ, { level: cfg.level, ai });
       let pin = "";
       for (let i = 0; i < 12 && !pin; i++) {
         const p = String(Math.floor(100000 + Math.random() * 900000));
@@ -148,7 +152,7 @@ export function renderLiveSetup(ctx, presetRef = "") {
     el("div", { class: "row" }, el("button", { class: "btn btn-ghost btn-sm", onclick: () => ctx.go("sets") }, icon("back"), L("Học phần", "Sets")), el("h1", { style: "margin:0" }, L("Tạo phòng live", "Host a live game"))),
     el("div", { class: "card stack" },
       el("div", { class: "setup-row" }, el("div", { class: "setup-label" }, L("Học phần", "Study set")), el("div", { class: "setup-ctl" }, setSel)),
-      el("div", { class: "setup-label" }, L("Chế độ chơi", "Game mode")), modeBox, secsRow, countRow, goalRow, go));
+      el("div", { class: "setup-label" }, L("Chế độ chơi", "Game mode")), modeBox, levelRow, secsRow, countRow, goalRow, go));
   return root;
 }
 

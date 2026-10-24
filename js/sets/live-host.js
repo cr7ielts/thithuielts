@@ -191,7 +191,7 @@ export function renderLiveHost(ctx, pin) {
         el("div", { class: "spacer" }),
         el("span", { class: "chip" }, icon("users"), `${answered}/${players.length}`),
         el("div", { class: "score-pill timer-pill" }, icon("clock"), view.timer)),
-      el("div", { class: "lv-prompt" }, q.p),
+      el("div", { class: "lv-prompt" }, q.k ? el("div", { class: "lv-kind" }, q.k) : null, q.p),
       optTiles(q),
       el("div", { class: "row", style: "justify-content:center" }, el("button", { class: "btn", onclick: endQuestion }, L("Kết thúc câu này", "End this question")))));
   }
@@ -203,7 +203,7 @@ export function renderLiveHost(ctx, pin) {
       el("div", { class: "row wrap" }, el("span", { class: "chip" }, L(`Câu ${game.qIndex + 1}/${game.total}`, `Question ${game.qIndex + 1}/${game.total}`)), el("div", { class: "spacer" }),
         el("button", { class: "btn btn-primary btn-lg", onclick: () => (last ? update({ status: "finished" }) : startQuestion(game.qIndex + 1)) },
           last ? L("Xem kết quả", "See results") : L("Câu tiếp theo", "Next question"), icon("arrow"))),
-      el("div", { class: "lv-prompt" }, q.p),
+      el("div", { class: "lv-prompt" }, q.k ? el("div", { class: "lv-kind" }, q.k) : null, q.p),
       optTiles(q, { correct: game.correct, counts: game.counts }),
       el("div", { class: "grid grid-2" },
         el("div", { class: "card" }, el("h3", {}, L("Bảng xếp hạng", "Leaderboard")), leaderboard(players, game, { limit: 5 })),

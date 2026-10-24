@@ -6,6 +6,8 @@ import { meaning } from "../data/vocab.js";
 import { listMySets, listTeacherSets, saveSet, deleteSet, MAX_CARDS } from "./store.js";
 import { resolveSet, DECKS, starredIds, toggleStar } from "./cards.js";
 import { MODES, renderStudy } from "./modes.js";
+import { aiQuizAvailable, canGenerate, loadPackFor, generatePack, savePack } from "./ai-qgen.js";
+import { aiKey } from "./qgen.js";
 
 const SERIES = [
   ["ielts", L("IELTS theo chủ đề", "IELTS topics")],
@@ -124,9 +126,52 @@ export function renderSetDetail(ctx, ref) {
       });
     };
     paint();
-    root.append(head, modes, el("section", {}, el("h2", {}, L("Danh sách thẻ", "Cards")), list));
+    root.append(head, modes, aiBox(ctx, r, teacher), el("section", {}, el("h2", {}, L("Danh sách thẻ", "Cards")), list));
   }).catch((err) => { console.warn(err); root.innerHTML = ""; root.append(notFound(ctx)); });
   return root;
+}
+
+/* ----- AI soạn câu hỏi riêng cho học phần ----- */
+function aiBox(ctx, r, teacher) {
+  const box = el("section", { class: "card ai-box" });
+  const status = el("div", { class: "muted small" }, L("Đang kiểm tra…", "Checking…"));
+  const may = canGenerate(r, ctx.user, teacher);
+  const btns = el("div", { class: "row wrap", style: "gap:8px" });
+  const sample = el("div", { class: "ai-sample" });
+  box.append(el("div", { class: "card-title" }, icon("bolt"), el("h3", {}, L("Câu hỏi AI soạn riêng cho học phần này", "AI questions written for this set"))),
+    el("p", { class: "muted small mt-0" }, L("AI đọc từng từ, nghĩa và chủ đề của học phần để viết câu điền từ mới, đáp án bẫy gần nghĩa / cùng từ loại và lời giải thích. Learn, Write, Test và live game sẽ ưu tiên dùng các câu này.",
+      "AI reads each word, its meaning and the set's topic to write new gap-fill sentences, near-miss distractors and explanations. Learn, Write, Test and live games use them first.")),
+    status, btns, sample);
+  let pack = {};
+  const paint = () => {
+    const n = r.cards.filter((c) => pack[aiKey(c.word)]).length;
+    status.textContent = n ? L(`Đã có câu hỏi AI cho ${n}/${r.cards.length} thẻ.`, `AI questions ready for ${n}/${r.cards.length} cards.`)
+      : L("Chưa có câu hỏi AI — đang dùng bộ sinh câu hỏi có sẵn (vẫn có câu điền từ, chính tả, đáp án bẫy).", "No AI questions yet — using the built-in generator (gap-fills, spelling, tricky distractors).");
+    btns.innerHTML = "";
+    if (may && aiQuizAvailable()) {
+      if (n < r.cards.length) btns.append(el("button", { class: "btn btn-primary btn-sm", onclick: () => run(false) }, icon("bolt"), n ? L(`Soạn tiếp ${r.cards.length - n} thẻ`, `Write the remaining ${r.cards.length - n}`) : L("AI soạn câu hỏi", "Generate with AI")));
+      if (n) btns.append(el("button", { class: "btn btn-sm", onclick: () => run(true) }, icon("refresh"), L("Soạn lại tất cả", "Regenerate all")));
+    } else if (may) btns.append(el("span", { class: "muted small" }, L("AI chưa bật (AI_QUIZ trong js/config.js, cần Firebase AI Logic).", "AI is off (AI_QUIZ in js/config.js, needs Firebase AI Logic).")));
+    sample.innerHTML = "";
+    r.cards.filter((c) => pack[aiKey(c.word)]).slice(0, 3).forEach((c) => {
+      const it = pack[aiKey(c.word)];
+      sample.append(el("div", { class: "ai-q" }, el("div", {}, it.sentence), el("div", { class: "small" }, el("b", {}, it.answer), el("span", { class: "muted" }, "  ·  " + (it.traps || []).join(" / ")))));
+    });
+  };
+  async function run(redo) {
+    btns.querySelectorAll("button").forEach((b) => (b.disabled = true));
+    try {
+      pack = await generatePack(r, pack, { redo, onProgress: (d, t) => { status.textContent = L(`AI đang soạn… ${d}/${t} thẻ`, `AI is writing… ${d}/${t} cards`); } });
+      await savePack(ctx.user, r, pack);
+      toast(L("Đã lưu câu hỏi AI.", "AI questions saved."), "ok");
+    } catch (err) {
+      console.warn(err);
+      toast(L("AI không soạn được: ", "AI failed: ") + (err.message || err), "error", 6000);
+    }
+    paint();
+  }
+  loadPackFor(r).then((p) => { pack = p || {}; paint(); }).catch(() => paint());
+  return box;
 }
 
 async function copySet(ctx, r) {

@@ -8,6 +8,8 @@ import {
 } from "./progress.js";
 import { listLeaderboard } from "../store.js";
 import { L } from "../i18n.js";
+import { levelOf, record } from "../sets/mastery.js";
+import { findInSentence, checkTyped } from "../sets/qgen.js";
 
 const STATUS_LABEL = {
   new: L("Mới", "New"),
@@ -331,9 +333,25 @@ export function renderReview(ctx, source) {
     const w = queue[0];
     const isNew = wordStatus(w.id) === "new";
     stage.innerHTML = "";
+    // Từ đã chắc (mức ≥ 2): mặt trước là thử thách nhớ lại — điền từ vào câu, hoặc nhìn nghĩa đoán từ — thay vì cho thấy từ
+    const lv = isNew ? 0 : levelOf(w);
+    const gap = lv >= 2 ? findInSentence(w.word, w.example) : null;
+    const challenge = lv >= 2 ? (gap && (lv >= 3 || Math.random() < 0.6) ? "cloze" : "reverse") : null;
+    const tryIn = challenge ? el("input", { type: "text", class: "type-input small", autocomplete: "off", autocapitalize: "off", spellcheck: "false",
+      placeholder: L("Gõ thử từ trước khi lật (không bắt buộc)", "Try typing the word first (optional)"),
+      onclick: (e) => e.stopPropagation(), onkeydown: (e) => { e.stopPropagation(); if (e.key === "Enter") flip(); } }) : null;
+    const verdict = el("div", { class: "fc-verdict" });
 
     const card = el("div", { class: "flashcard", tabindex: "0", role: "button", "aria-label": L("Lật thẻ", "Flip card") },
       el("div", { class: "fc-inner" },
+        challenge ? el("div", { class: "fc-face fc-front" },
+          el("span", { class: "chip chip-gold" }, L("Thử thách: bạn đã nhớ từ này khá lâu", "Challenge: you've known this one a while")),
+          challenge === "cloze"
+            ? el("div", { class: "example center fc-cloze" }, gap.before, el("b", {}, "_____"), gap.after)
+            : el("div", { class: "fc-vi" }, meaning(w)),
+          el("div", { class: "tiny muted" }, challenge === "cloze" ? L(`Từ còn thiếu (${w.pos}) là gì?`, `What's the missing word (${w.pos})?`) : L("Từ tiếng Anh nào mang nghĩa này?", "Which English word means this?")),
+          tryIn,
+          el("div", { class: "tiny muted fc-hint" }, L("Nhấn Space hoặc bấm vào thẻ để lật", "Press Space or tap the card to flip"))) :
         el("div", { class: "fc-face fc-front" },
           isNew ? el("span", { class: "chip chip-new" }, L("Từ mới", "New word")) : null,
           el("div", { class: "fc-word" }, w.word),
@@ -344,7 +362,7 @@ export function renderReview(ctx, source) {
             el("span", { class: "fc-word sm" }, w.word), el("span", { class: "pos" }, w.pos)),
           el("div", { class: "fc-vi" }, meaning(w)),
           el("div", { class: "muted small" }, altMeaning(w)),
-          el("div", { class: "example center" }, w.example))));
+          el("div", { class: "example center" }, w.example), verdict)));
 
     const speakBtn = el("button", { class: "icon-btn lg", title: L("Nghe phát âm (P)", "Listen (P)"), onclick: (e) => { e.stopPropagation(); speakText(w.word); } }, icon("volume"));
     const saveBtn = el("button", {
@@ -368,6 +386,11 @@ export function renderReview(ctx, source) {
     function flip() {
       if (flipped) return;
       flipped = true;
+      if (tryIn && tryIn.value.trim()) {
+        const r = checkTyped(tryIn.value, gap && challenge === "cloze" ? gap.form : w.word);
+        verdict.textContent = r === "ok" ? L("✓ Bạn gõ đúng!", "✓ You typed it right!") : r === "close" ? L(`≈ Gần đúng: “${tryIn.value}”`, `≈ Almost: “${tryIn.value}”`) : L(`✗ Bạn gõ “${tryIn.value}”`, `✗ You typed “${tryIn.value}”`);
+        verdict.className = "fc-verdict " + (r === "ok" ? "ok" : "bad");
+      }
       card.classList.add("flipped");
       flipBtn.classList.add("hidden");
       grades.classList.remove("hidden");
@@ -392,6 +415,7 @@ export function renderReview(ctx, source) {
       rated = true;
       const before = getStats().xp;
       grade(w.id, g);
+      record(w, g >= 2, challenge ? 2 : 0);
       xpGained += getStats().xp - before;
       queue.shift();
       if (g === 0) {

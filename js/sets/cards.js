@@ -4,6 +4,7 @@ import { savedWords, poolFor } from "../vocab/progress.js";
 import { shuffle } from "../ui.js";
 import { L } from "../i18n.js";
 import { getSet } from "./store.js";
+import { makeQuestion } from "./qgen.js";
 
 /** ref: "my:<id>" (học phần tự tạo) · "deck:<id>" (bộ từ có sẵn) · "saved" · "learning" */
 export const refOf = (kind, id) => (id ? `${kind}:${id}` : kind);
@@ -79,13 +80,17 @@ export function makeMC(card, pool, dir = "wd", n = 4) {
   return { card, dir, prompt: front(card, dir), options: opts, answer: opts.indexOf(right) };
 }
 
-/** Câu hỏi cho live game: { qs: [{ p, o }], key: [chỉ số đúng] } — key chỉ gửi cho giáo viên */
-export function buildLiveQuestions(cards, count) {
+/**
+ * Câu hỏi cho live game: { qs: [{ p, o, w, k }], key: [chỉ số đúng] } — key chỉ gửi cho giáo viên.
+ * level: 0 dễ · 1 vừa · 2 khó · "ramp" tăng dần từ dễ đến khó. ai: gói câu hỏi AI của học phần.
+ */
+export function buildLiveQuestions(cards, count, { level = 1, ai = null } = {}) {
   const picked = shuffle(cards).slice(0, count);
   const qs = [], key = [];
   picked.forEach((c, i) => {
-    const q = makeMC(c, cards, i % 3 === 2 ? "dw" : "wd");
-    qs.push({ p: clip(q.prompt, 120), o: q.options.map((o) => clip(o, 90)), w: c.word });
+    const lv = level === "ramp" ? Math.min(2, Math.floor((i / Math.max(1, picked.length)) * 3)) : +level;
+    const q = makeQuestion(c, { level: lv, pool: cards, ai, only: "mc" });
+    qs.push({ p: clip(q.prompt, 160), o: q.options.map((o) => clip(o, 90)), w: c.word, k: q.label });
     key.push(q.answer);
   });
   return { qs, key };

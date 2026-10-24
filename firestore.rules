@@ -154,6 +154,12 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // Câu hỏi AI soạn cho bộ từ có sẵn: giáo viên tạo, mọi học sinh dùng chung
+    match /aiPacks/{pid} {
+      allow read:  if request.auth != null;
+      allow write: if isAdmin();
+    }
+
     // ================= HỌC PHẦN (study set) =================
     // Mỗi người tạo / sửa / xoá học phần của mình. Đọc được khi là chủ, là giáo viên, hoặc học phần bật "chia sẻ".
     // byTeacher (hiện ở mục "Giáo viên chia sẻ") chỉ giáo viên đặt được.
