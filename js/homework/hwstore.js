@@ -345,17 +345,17 @@ export async function deleteDraft(aid, uid) {
 }
 
 /** criteria (Speaking): { fc, lr, gra, p } — band giáo viên chấm từng tiêu chí, hoặc null */
-export async function gradeHomework(sid, { score, comment, graderEmail, criteria = null }) {
+export async function gradeHomework(sid, { score, comment, graderEmail, criteria = null, meme = null }) {
   if (!isConfigured) {
     const all = lsGet(LS.s, {});
     if (all[sid]) {
-      all[sid] = { ...all[sid], teacherScore: score, teacherComment: comment, teacherCriteria: criteria, gradedAt: new Date().toISOString(), graderEmail };
+      all[sid] = { ...all[sid], teacherScore: score, teacherComment: comment, teacherCriteria: criteria, teacherMeme: meme, gradedAt: new Date().toISOString(), graderEmail };
       lsSet(LS.s, all);
     }
     return;
   }
   const { db, dbMod } = await initFirebase();
   await dbMod.updateDoc(dbMod.doc(db, "hwSubmissions", sid), {
-    teacherScore: score, teacherComment: comment, teacherCriteria: criteria, graderEmail, gradedAt: dbMod.serverTimestamp(),
+    teacherScore: score, teacherComment: comment, teacherCriteria: criteria, teacherMeme: meme, graderEmail, gradedAt: dbMod.serverTimestamp(),
   });
 }
