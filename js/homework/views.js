@@ -12,6 +12,7 @@ import {
 } from "./hwstore.js";
 import { docxLines, parseQuiz, parseKeyDoc, quizQuestions, gradeQuiz } from "./quizdoc.js";
 import { quizView } from "./quizview.js";
+import { memePicker, memeCard } from "./memes.js";
 import { speakingFormSection, speakingWorkArea, recordingsList, aiReport, speakingTurns } from "./speaking.js";
 import { CRITERIA, overallBand, aiAvailable } from "./speaking-ai.js";
 import { bankPicker, findBankItem } from "../bank/bank.js";
@@ -224,7 +225,7 @@ export function renderHomeworkDetail(ctx, id) {
         el("button", { class: "btn btn-sm", onclick: () => ctx.go(`homework/edit/${a.id}`) }, icon("writing"), L("Sửa", "Edit")),
         el("button", { class: "btn btn-sm btn-primary", onclick: () => ctx.go(`homework/review/${a.id}`) }, icon("cards"), L("Chấm bài", "Review work"))));
     }
-    if (sub && (sub.teacherScore || sub.teacherComment)) parts.push(feedbackBlock(sub));
+    if (sub && (sub.teacherScore || sub.teacherComment || sub.teacherMeme)) parts.push(feedbackBlock(sub));
 
     const work = async (proctor) => {
       const out = [];
@@ -307,7 +308,8 @@ function feedbackBlock(sub) {
       sub.teacherCriteria.t2 != null ? el("span", { class: "chip" }, `Task 2: ${Number(sub.teacherCriteria.t2).toFixed(1)}`) : null)
     : sub.teacherCriteria ? el("div", { class: "crit-chips" }, CRITERIA.map((c) =>
       sub.teacherCriteria[c.key] != null ? el("span", { class: "chip" }, `${c.name}: ${Number(sub.teacherCriteria[c.key]).toFixed(1)}`) : null)) : null,
-    sub.teacherComment ? el("p", { class: "mb-0", style: "white-space:pre-wrap" }, sub.teacherComment) : null);
+    sub.teacherComment ? el("p", { class: "mb-0", style: "white-space:pre-wrap" }, sub.teacherComment) : null,
+    sub.teacherMeme ? el("div", { class: "hw-meme" }, memeCard(sub.teacherMeme, "lg")) : null);
 }
 
 /* ----- Reading / Listening: phiếu trả lời, chấm tự động ----- */
@@ -1308,6 +1310,8 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
     critBox = el("div", { class: "crit-inputs" }, CRITERIA.map((c, i) =>
       el("label", { class: "crit-input", for: sels[i].id }, el("span", { class: "tiny strong" }, c.name), sels[i])));
   }
+  const meme = memePicker({ initial: s.teacherMeme || null, getContext: () => ({ score: scoreIn.value, late: isLate }) });
+  scoreIn.addEventListener("input", () => meme.refresh());
   const saveBtn = el("button", { class: "btn btn-teal btn-sm" }, icon("check"), L("Lưu điểm", "Save mark"));
   const markChip = el("span", { class: s.gradedAt || s.teacherScore ? "chip chip-gold" : "chip chip-warn" },
     s.teacherScore || (s.gradedAt ? L("Đã chấm", "Marked") : L("Chờ chấm", "To mark")));
@@ -1315,7 +1319,8 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
     saveBtn.disabled = true;
     try {
       const criteria = readCriteria();
-      await gradeHomework(s.id, { score: scoreIn.value.trim(), comment: comment.value.trim(), graderEmail: ctx.user.email || "", criteria });
+      await gradeHomework(s.id, { score: scoreIn.value.trim(), comment: comment.value.trim(), graderEmail: ctx.user.email || "", criteria, meme: meme.value() });
+      s.teacherMeme = meme.value();
       s.teacherCriteria = criteria;
       s.teacherScore = scoreIn.value.trim(); s.gradedAt = new Date();
       markChip.className = "chip chip-gold"; markChip.textContent = s.teacherScore || L("Đã chấm", "Marked");
@@ -1324,7 +1329,7 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
   };
   details.append(el("div", { class: "hw-grade" },
     critBox,
-    el("label", { class: "field-label mb-0", for: scoreIn.id }, ["speaking", "writingmock"].includes(a.type) ? L("Band tổng", "Overall band") : L("Điểm", "Mark")), scoreIn, comment, el("div", {}, saveBtn)));
+    el("label", { class: "field-label mb-0", for: scoreIn.id }, ["speaking", "writingmock"].includes(a.type) ? L("Band tổng", "Overall band") : L("Điểm", "Mark")), scoreIn, comment, meme.node, el("div", {}, saveBtn)));
 
   const toggle = el("button", { class: "btn btn-sm", onclick: () => {
     const open = details.classList.toggle("hidden") === false;

@@ -45,6 +45,13 @@ export const AI_SPEAKING = {
   feedbackLang: "vi",   // "vi": giải thích bằng tiếng Việt · "en": tiếng Anh
 };
 
+// AI soạn câu hỏi riêng cho từng học phần / bộ từ (Gemini qua Firebase AI Logic, cùng project với AI chấm Speaking).
+// Tắt (false) nếu project chưa bật Firebase AI Logic — web vẫn dùng bộ sinh câu hỏi không cần AI.
+export const AI_QUIZ = {
+  enabled: true,
+  model: "gemini-3.8-flash",
+};
+
 // App Check (reCAPTCHA Enterprise) — chặn người ngoài dùng trộm Storage / Gemini của project.
 // Firebase Console → Security → App Check → Apps → web app → reCAPTCHA Enterprise → dán "site key" vào đây.
 // Để trống "" thì web không gửi mã App Check (khi đó đừng bật Enforce cho API nào).
