@@ -84,7 +84,10 @@ service cloud.firestore {
       allow read: if isAdmin() || (request.auth != null &&
         exists(/databases/$(database)/documents/hwSubmissions/$(aid + '_' + request.auth.uid)) &&
         (request.time > get(/databases/$(database)/documents/assignments/$(aid)).data.dueAt ||
-         get(/databases/$(database)/documents/assignments/$(aid)).data.get('keyAfterSubmit', false) == true));
+         (get(/databases/$(database)/documents/assignments/$(aid)).data.get('keyAfterSubmit', false) == true &&
+          // cho làm lần 2: chỉ xem đáp án sau khi đã nộp lần 2
+          (get(/databases/$(database)/documents/assignments/$(aid)).data.get('secondAttempt', false) != true ||
+           get(/databases/$(database)/documents/hwSubmissions/$(aid + '_' + request.auth.uid)).data.get('attempt', 1) == 2))));
       allow write: if isAdmin();
     }
 
@@ -117,6 +120,19 @@ service cloud.firestore {
         && resource.data.type in ['writing', 'upload', 'speaking']
         && asg(resource.data.assignmentId).get('allowResubmit', false) == true
         && resource.data.get('gradedAt', null) == null
+        && studentFieldsOk())
+        // Làm lần 2 (second attempt): bài chấm tự động, giáo viên bật "Cho làm lần 2", mới nộp 1 lần, chưa chấm;
+        // lần 1 phải được giữ nguyên trong firstAttempt
+        || (request.auth != null
+        && resource.data.uid == request.auth.uid
+        && resource.data.type in ['reading', 'listening', 'quiz', 'bank', 'speaking']
+        && asg(resource.data.assignmentId).get('secondAttempt', false) == true
+        && resource.data.get('attempt', 1) == 1
+        && request.resource.data.attempt == 2
+        && request.resource.data.firstAttempt.answers == resource.data.get('answers', null)
+        && request.resource.data.firstAttempt.score == resource.data.get('score', null)
+        && resource.data.get('gradedAt', null) == null
+        && resource.data.get('teacherScore', null) == null
         && studentFieldsOk());
       allow delete: if false;
     }

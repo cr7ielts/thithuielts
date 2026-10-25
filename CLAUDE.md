@@ -14,7 +14,8 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
 - `js/bank/`: Ngân hàng đề. `bank.js` (danh sách, làm bài, thi thử ghép đề `mockr`/`mockl`), `exam.js` (giao diện làm trên máy, chia theo Part), `review.js` + `listen-review.js` (xem lại, giải thích).
 - `js/homework/`: bài tập về nhà theo lớp. `quizdoc.js`/`quizview.js` = bài kiểm tra dựng từ file Word.
 - `js/vocab/`, `js/wordplay/`: Từ vựng (SRS, game), Idioms, Puns.
-- `firestore.rules`: đáp án (`assignmentKeys`) chỉ đọc được khi đã nộp và (qua hạn hoặc `keyAfterSubmit`).
+- `firestore.rules`: đáp án (`assignmentKeys`) chỉ đọc được khi đã nộp và (qua hạn hoặc `keyAfterSubmit`; nếu bật `secondAttempt` thì phải nộp xong lần 2).
+- Homework "Cho làm lần 2" (`secondAttempt`, bài Reading/Listening/quiz/bank/Speaking): bài nộp có `attempt` 1|2, lần 1 giữ trong `firstAttempt`.
 
 ## Dữ liệu
 - Reading: `js/data/bank-reading.js`, `bank-vol8.js`, `bank-vol9.js`, `bank-extra.js` (đề sưu tầm).

@@ -305,9 +305,11 @@ export function renderBankPractice(ctx, kind, id, hwId = null) {
       if (a && a.type === "bank" && a.bank?.kind === kind && a.bank?.id === id) {
         const done = isAdmin(ctx.user) ? null : await getMySubmission(hwId, ctx.user.uid);
         const late = a.dueAt < new Date() && !a.allowLate;
-        hw = { a, done, late, active: !done && !late && !isAdmin(ctx.user) };
+        // được làm lần 2 (second attempt): lần 1 đã nộp, chưa chấm, còn hạn
+        const retry = !!done && !!a.secondAttempt && (done.attempt || 1) < 2 && !done.gradedAt && !done.teacherScore && !late;
+        hw = { a, done: retry ? null : done, prev: retry ? done : null, late, active: (!done || retry) && !late && !isAdmin(ctx.user) };
         // đã nộp mà chưa tới hạn: chưa cho luyện lại (luyện xong sẽ thấy đáp án)
-        if (done && a.dueAt > new Date() && !a.keyAfterSubmit) { body.replaceWith(lockNotice(ctx, { a, sub: done })); return; }
+        if (done && !retry && a.dueAt > new Date() && !a.keyAfterSubmit) { body.replaceWith(lockNotice(ctx, { a, sub: done })); return; }
       }
     }
     const inter = isMock(kind) ? await mockInteractive(kind, item) : await loadInteractive(item.id);   // có nội dung đề -> làm như thi trên máy, không cần PDF
@@ -448,7 +450,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
         raw: res.correct, total: res.total, band: bandFor(kind, res.correct, res.total),
         details: res.details, graded: true,
         // homework: đáp án trong lần làm này chỉ hiện sau hạn nộp (trừ khi giáo viên mở đáp án ngay khi nộp)
-        ...(proctor ? { hwId: hw.a.id, revealAt: (hw.a.keyAfterSubmit ? new Date() : hw.a.dueAt).toISOString(), integrity: proctor.report() } : {}),
+        ...(proctor ? { hwId: hw.a.id, revealAt: (hw.a.keyAfterSubmit && !(hw.a.secondAttempt && !hw.prev) ? new Date() : hw.a.dueAt).toISOString(), integrity: proctor.report() } : {}),
       });
       draft.clear(ctx.user.uid, draftKey);
       // bài tập về nhà: ghi bài nộp vào Homework (lượt đầu tiên, còn hạn)
@@ -458,7 +460,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
             answers, score: { raw: res.correct, total: res.total }, details: res.details,
             practiceId: sub.id || "", durationSec: timer.elapsedSeconds, autoSubmitted: auto,
             integrity: proctor?.report() || null,
-          });
+          }, hw.prev);
           proctor?.stop();
           clearOnce(`bank-hw-${hw.a.id}-`);
           resetLockCache();
