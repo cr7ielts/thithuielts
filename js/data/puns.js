@@ -248,4 +248,65 @@ export const PUNS = [
     meanings: ["I slowly started to like it", "it literally grew on my face"],
     vi: "“grew on me” vừa là dần dần thấy thích, vừa là (râu) mọc trên mặt mình.",
   },
+  // ===== English Vocabulary in Use Upper-intermediate: đồng âm, đồng tự (unit 81–82) =====
+  {
+    text: "Why did the car get a gold star at driving school? It always knew when to brake.",
+    key: "brake", decoys: ["star", "school", "knew"], type: "sound",
+    meanings: ["brake: stop a car", "break: a rest from work or study"],
+    vi: "“brake” (phanh xe) đọc giống “break” (giờ nghỉ). Xe biết lúc nào cần phanh, cũng như học sinh giỏi biết lúc nào cần nghỉ.",
+  },
+  {
+    text: "I asked the cheese for some advice. It said, \"You're doing grate!\"",
+    key: "grate", decoys: ["asked", "advice", "doing"], type: "sound",
+    meanings: ["grate: rub food into small pieces", "great: very good"],
+    vi: "“grate” (bào, nạo phô mai) đọc giống “great” (tuyệt). Phô mai khen bạn theo đúng nghề của nó.",
+  },
+  {
+    text: "The vegetarian butcher said he was happy to meat new customers.",
+    key: "meat", decoys: ["vegetarian", "happy", "customers"], type: "sound",
+    meanings: ["meat: food from animals", "meet: see someone for the first time"],
+    vi: "“meat” (thịt) đọc giống “meet” (gặp). Người bán thịt “gặp” khách bằng thịt.",
+  },
+  {
+    text: "Seven days without exercise makes one weak.",
+    key: "weak", decoys: ["days", "exercise", "makes"], type: "sound",
+    meanings: ["weak: not strong", "week: seven days"],
+    vi: "“weak” (yếu) đọc giống “week” (tuần). Bảy ngày không tập là một tuần, cũng là… yếu đi.",
+  },
+  {
+    text: "The pizza chef finally found inner peace when he cut the last slice.",
+    key: "peace", decoys: ["chef", "inner", "slice"], type: "sound",
+    meanings: ["peace: calm and quiet", "piece: one part of something, like a slice of pizza"],
+    vi: "“peace” (bình yên) đọc giống “piece” (miếng). Đầu bếp pizza tìm thấy “bình yên” trong từng miếng bánh.",
+  },
+  {
+    text: "The weather forecaster couldn't decide whether to go out.",
+    key: "whether", decoys: ["forecaster", "decide", "out"], type: "sound",
+    meanings: ["whether: if (used when there is a choice)", "weather: rain, sun, wind and so on"],
+    vi: "“whether” (liệu có) đọc giống “weather” (thời tiết). Người dự báo thời tiết phân vân vì… thời tiết.",
+  },
+  {
+    text: "The archaeologist was put in charge of the dig, so he had to lead the way through the old pipes.",
+    key: "lead", decoys: ["archaeologist", "charge", "pipes"], type: "double",
+    meanings: ["lead /liːd/: go first and show the way", "lead /led/: a heavy metal used in old pipes"],
+    vi: "“lead” đọc /liːd/ là dẫn đường, đọc /led/ là chì. Ống nước cổ làm bằng chì, còn ông thì dẫn đường.",
+  },
+  {
+    text: "The farmer and his pig had a terrible row about which way to plant the potatoes.",
+    key: "row", decoys: ["farmer", "terrible", "plant"], type: "double",
+    meanings: ["row /raʊ/: a noisy argument", "row /rəʊ/: a straight line of plants"],
+    vi: "“row” đọc /raʊ/ là cãi nhau, đọc /rəʊ/ là hàng (cây). Họ cãi nhau về cách trồng khoai theo hàng.",
+  },
+  {
+    text: "The bee kept buzzing around the office until the boss gave it a buzz back.",
+    key: "buzz", decoys: ["office", "boss", "kept"], type: "double",
+    meanings: ["buzz: the sound a bee makes", "give someone a buzz: phone someone (informal)"],
+    vi: "“buzz” vừa là tiếng ong vo ve, vừa có nghĩa thân mật là gọi điện cho ai (give sb a buzz).",
+  },
+  {
+    text: "The grumpy dog always growls about his work, but it never stops him from barking orders.",
+    key: "barking orders", decoys: ["grumpy", "growls", "work"], type: "double",
+    meanings: ["bark: the sound a dog makes", "bark orders: give orders in a loud, unfriendly way"],
+    vi: "“bark orders” là quát tháo ra lệnh, mà “bark” cũng là tiếng chó sủa. Chú chó cáu kỉnh làm sếp thì quát đúng nghĩa đen.",
+  },
 ].map((p, i) => ({ id: `pun-${i + 1}`, ...p }));

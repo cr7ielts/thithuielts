@@ -13,6 +13,8 @@ import { L } from "../i18n.js";
 import { startProctor, onceAudio, clearOnce } from "../proctor.js";
 import { bankLock, lockNotice, resetLockCache } from "../homework/hwlock.js";
 import { READING_FORECAST } from "../data/reading-forecast.js";
+import { rawToBand } from "../engine.js";
+import { BAND_READING } from "../data/current.js";
 
 const ROMANS = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x", "xi", "xii", "xiii", "xiv", "xv"];
 const KIND_LABEL = {
@@ -20,9 +22,9 @@ const KIND_LABEL = {
   letter: L("Chọn chữ cái", "Choose a letter"), multi: L("Chọn nhiều đáp án", "Choose more than one"),
   gap: L("Điền từ", "Completion"), other: L("Trả lời", "Answer"),
 };
-const MINUTES = { reading: 20, listening: 40, section: 15 };
+const MINUTES = { reading: 20, listening: 40, section: 15, mockr: 60, mockl: 40 };
 const KINDS = ["reading", "listening", "section"];
-const SKILL = { reading: "reading", listening: "listening", section: "listening" };
+const SKILL = { reading: "reading", listening: "listening", section: "listening", mockr: "reading", mockl: "listening" };
 const TAB_LABEL = { reading: "Reading", listening: L("Listening · cả đề", "Listening · full tests"), section: L("Listening · từng section", "Listening · sections") };
 
 /* ---------------- Dữ liệu ---------------- */
@@ -55,12 +57,113 @@ export async function fileUrl(path) {
   return stMod.getDownloadURL(stMod.ref(storage, path));
 }
 
+/* ---------------- Thi thử: ghép ngẫu nhiên P1+P2+P3 (Reading) / S1–S4 (Listening) ----------------
+   id dạng "id1~id2~id3": giữ nguyên số câu của từng bài (P1 1–13, P2 14–26, P3 27–40…) nên chấm và xem lại như một đề */
+const MOCK = { mockr: { from: "reading", n: 3 }, mockl: { from: "section", n: 4 } };
+export const isMock = (kind) => kind in MOCK;
+const span = (it) => [Math.min(...it.groups.map((g) => g.from)), Math.max(...it.groups.map((g) => g.to))];
+
+async function mockItem(kind, id) {
+  const banks = await loadBanks();
+  const subs = id.split("~").map((x) => banks[MOCK[kind].from].find((i) => i.id === x));
+  if (subs.length !== MOCK[kind].n || subs.some((x) => !x)) return null;
+  return {
+    id, mock: true, subs,
+    title: subs.map((x) => x.title).join(" · "),
+    set: partLabel(kind),
+    groups: subs.flatMap((x) => x.groups),
+    key: Object.assign({}, ...subs.map((x) => x.key)),
+    // Listening: chỉ lấy audio của từng section (đề làm trên máy, không cần PDF)
+    files: kind === "mockl" ? subs.flatMap((x, i) => (x.files || []).filter((f) => f.type === "audio").map((f) => ({ ...f, label: `Section ${i + 1}` }))) : [],
+  };
+}
+
+/** nội dung tương tác của đề ghép: Reading có 3 bài đọc (passages), Listening chỉ có câu hỏi */
+export async function mockInteractive(kind, item) {
+  const ins = await Promise.all(item.subs.map((x) => loadInteractive(x.id)));
+  if (ins.some((x) => !x)) return null;
+  return {
+    id: item.id, kind: SKILL[kind], groups: ins.flatMap((x) => x.groups),
+    ...(kind === "mockr" ? { passages: ins.map((x, i) => ({ ...x.passage, title: x.passage?.title || item.subs[i].title, from: span(item.subs[i])[0], to: span(item.subs[i])[1] })) } : {}),
+  };
+}
+
+/** chọn ngẫu nhiên một đề ghép hợp lệ: số câu nối tiếp, đủ 40 câu, bài nào cũng làm được trên máy */
+async function pickMock(kind) {
+  const banks = await loadBanks();
+  const { INTERACTIVE_IDS } = await import("../data/bank-interactive.js");
+  const rnd = (a) => a[Math.floor(Math.random() * a.length)];
+  if (kind === "mockl") {
+    // section có bản đồ / sơ đồ (inter.paper) cần trang PDF để nhìn hình -> bỏ qua cho đề ghép
+    const ok = (x, k) => INTERACTIVE_IDS.has(x.id) && x.section === k && (x.files || []).some((f) => f.type === "audio")
+      && span(x)[0] === (k - 1) * 10 + 1 && span(x)[1] === k * 10;
+    const ids = [];
+    for (const k of [1, 2, 3, 4]) {
+      const pool = banks.section.filter((x) => ok(x, k)).sort(() => Math.random() - 0.5);
+      let got = null;
+      for (const x of pool.slice(0, 12)) { const it = await loadInteractive(x.id); if (it && !it.paper) { got = x; break; } }
+      if (!got) return null;
+      ids.push(got.id);
+    }
+    return ids.join("~");
+  }
+  const by = (part) => banks.reading.filter((x) => x.part === part && INTERACTIVE_IDS.has(x.id));
+  const [p1s, p2s, p3s] = [by(1), by(2), by(3)];
+  for (let t = 0; t < 200; t++) {
+    const a = rnd(p1s);
+    if (span(a)[0] !== 1) continue;
+    const bs = p2s.filter((x) => span(x)[0] === span(a)[1] + 1);
+    if (!bs.length) continue;
+    const b = rnd(bs);
+    const cs = p3s.filter((x) => span(x)[0] === span(b)[1] + 1 && span(x)[1] === 40);
+    if (!cs.length) continue;
+    return [a, b, rnd(cs)].map((x) => x.id).join("~");
+  }
+  return null;
+}
+
+/** #bank/mock/<reading|listening>: bốc đề ngẫu nhiên, xem trước, đổi đề hoặc bắt đầu */
+export function renderMockStart(ctx, skill) {
+  const kind = skill === "listening" ? "mockl" : "mockr";
+  const wrap = el("div", { class: "stack-lg" },
+    el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go("exams") }, icon("back"), L("Thi thử", "Mock tests")));
+  let body = el("div", { class: "card muted" }, L("Đang bốc đề…", "Picking a test…"));
+  wrap.append(body);
+  const draw = async () => {
+    const id = await pickMock(kind);
+    if (!id) { body.replaceChildren(L("Chưa đủ bài làm trên máy để ghép đề.", "Not enough on-screen tests to build a mock.")); return; }
+    const item = await mockItem(kind, id);
+    const card = el("div", { class: "card intro-card" },
+      el("div", { class: "row", style: "gap:14px;margin-bottom:6px" },
+        el("div", { class: `skill-ico ${SKILL[kind]}` }, icon(SKILL[kind])),
+        el("div", {},
+          el("div", { class: "eyebrow" }, L("Đề ghép ngẫu nhiên", "Randomly built test")),
+          el("h1", { style: "margin-bottom:2px" }, partLabel(kind)),
+          el("div", { class: "muted" }, L(`40 câu · ${MINUTES[kind]} phút`, `40 questions · ${MINUTES[kind]} minutes`)))),
+      el("ol", { class: "mock-parts" }, item.subs.map((x) => el("li", {},
+        el("strong", {}, kind === "mockr" ? `Passage ${x.part}` : `Section ${x.section}`), " · ", x.title,
+        el("span", { class: "tiny muted" }, ` — ${x.set ? `${x.set} · ${x.testTitle}` : ""}`)))),
+      el("ul", { class: "muted small", style: "margin:6px 0 16px;padding-left:20px" },
+        el("li", {}, kind === "mockr"
+          ? L("Như thi trên máy: bài đọc bên trái, câu hỏi bên phải; chuyển Passage bằng thanh dưới cùng.", "Like the computer test: passage on the left, questions on the right; switch passages with the bar at the bottom.")
+          : L("Audio gốc từng section; làm theo từng Part, chuyển Part bằng thanh dưới cùng.", "Original audio for each section; one Part at a time, switch Parts with the bar at the bottom.")),
+        el("li", {}, L("Hết giờ tự nộp. Nộp xong xem điểm, band và đáp án từng câu.", "Submits automatically when time runs out. Then see your score, band and every answer."))),
+      el("div", { class: "row wrap", style: "gap:10px" },
+        el("button", { class: "btn btn-primary btn-lg", onclick: () => ctx.go(`bank/${kind}/${id}`) }, L("Bắt đầu", "Start")),
+        el("button", { class: "btn btn-lg", onclick: () => { const w = el("div", { class: "card muted" }, L("Đang bốc đề…", "Picking a test…")); body.replaceWith(w); body = w; draw(); } }, icon("refresh"), L("Đổi đề khác", "Pick another"))));
+    body.replaceWith(card);
+    body = card;
+  };
+  draw().catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
+  return wrap;
+}
+
 const questionCount = (item) => item.groups.reduce((s, g) => s + g.to - g.from + 1, 0);
 const testId = (kind, item) => `bank:${kind}:${item.id}`;
 // bài Reading nằm trong bảng dự đoán của kỳ đề hiện tại (js/data/reading-forecast.js)
 const FORECAST = new Set(READING_FORECAST.ids);
 const FC_CHIP = "forecast";
-const partLabel = (kind, item) => (kind === "reading" ? `Passage ${item.part}` : kind === "section" ? `Section ${item.section}` : item.set || "Listening");
+const partLabel = (kind, item) => (kind === "reading" ? `Passage ${item.part}` : kind === "section" ? `Section ${item.section}` : kind === "mockr" ? L("Thi thử Reading", "Reading mock test") : kind === "mockl" ? L("Thi thử Listening", "Listening mock test") : item.set || "Listening");
 const sourceLabel = (item) => `${item.set} · ${item.testTitle}`;
 
 /* ======================= Danh sách ======================= */
@@ -139,7 +242,7 @@ function bankList(ctx, banks, kind, best) {
     p === "all" ? L("Tất cả", "All") : p)));
   if (hasFc) chips.append(el("button", { class: "chip-btn", dataset: { part: FC_CHIP }, onclick: () => { part = FC_CHIP; paint(); } },
     icon("star"), L(` Dự đoán ${READING_FORECAST.period}`, ` Forecast ${READING_FORECAST.period}`)));
-  box.append(tabs, el("div", { class: "row wrap", style: "gap:10px" }, search, count), chips, fcMissing, grid);
+  box.append(tabs, el("div", { class: "row wrap", style: "gap:10px" }, search, count), chips, fcMissing || "", grid);
   paint();
   return box;
 }
@@ -170,15 +273,16 @@ export function renderBankPractice(ctx, kind, id, hwId = null) {
   const wrap = el("div", { class: "stack-lg" });
   wrap.append(hwId
     ? el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go(`homework/${hwId}`) }, icon("back"), "Homework")
+    : isMock(kind) ? el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go("exams") }, icon("back"), L("Thi thử", "Mock tests"))
     : el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go(`bank/${kind}`) }, icon("back"), L("Ngân hàng đề", "Question bank")));
   const body = el("div", { class: "card muted" }, L("Đang tải…", "Loading…"));
   wrap.append(body);
   (async () => {
     const banks = await loadBanks();
-    const item = (banks[kind] || []).find((i) => i.id === id);
+    const item = isMock(kind) ? await mockItem(kind, id) : (banks[kind] || []).find((i) => i.id === id);
     if (!item) throw new Error(L("Không tìm thấy bài này.", "Test not found."));
     // bài đang là homework: không luyện tự do (sẽ thấy đáp án) cho tới hạn nộp
-    if (!hwId) {
+    if (!hwId && !isMock(kind)) {
       const lock = await bankLock(ctx, kind, id);
       if (lock) { body.replaceWith(lockNotice(ctx, lock)); return; }
     }
@@ -201,12 +305,14 @@ export function renderBankPractice(ctx, kind, id, hwId = null) {
       if (a && a.type === "bank" && a.bank?.kind === kind && a.bank?.id === id) {
         const done = isAdmin(ctx.user) ? null : await getMySubmission(hwId, ctx.user.uid);
         const late = a.dueAt < new Date() && !a.allowLate;
-        hw = { a, done, late, active: !done && !late && !isAdmin(ctx.user) };
+        // được làm lần 2 (second attempt): lần 1 đã nộp, chưa chấm, còn hạn
+        const retry = !!done && !!a.secondAttempt && (done.attempt || 1) < 2 && !done.gradedAt && !done.teacherScore && !late;
+        hw = { a, done: retry ? null : done, prev: retry ? done : null, late, active: (!done || retry) && !late && !isAdmin(ctx.user) };
         // đã nộp mà chưa tới hạn: chưa cho luyện lại (luyện xong sẽ thấy đáp án)
-        if (done && a.dueAt > new Date() && !a.keyAfterSubmit) { body.replaceWith(lockNotice(ctx, { a, sub: done })); return; }
+        if (done && !retry && a.dueAt > new Date() && !a.keyAfterSubmit) { body.replaceWith(lockNotice(ctx, { a, sub: done })); return; }
       }
     }
-    const inter = await loadInteractive(item.id);   // có nội dung đề -> làm như thi trên máy, không cần PDF
+    const inter = isMock(kind) ? await mockInteractive(kind, item) : await loadInteractive(item.id);   // có nội dung đề -> làm như thi trên máy, không cần PDF
     // homework: giám sát bắt đầu ngay trong cú bấm "Bắt đầu" (trình duyệt chỉ cho vào toàn màn hình khi người dùng bấm)
     const intro = briefing(ctx, kind, item, () => {
       const proctor = hw?.active ? startProctor({ key: `hw-${hw.a.id}-${ctx.user.uid}` }) : null;
@@ -275,24 +381,35 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
     paper.append(el("div", { class: "bank-audio" }, audios.map(({ f, url }, i) => proctor
       // homework: nghe một lần như thi thật
       ? onceAudio({ src: url, label: f.label || "Audio", key: `bank-hw-${hw.a.id}-${ctx.user.uid}-${i}` })
-      : el("div", { class: "bank-audio-row" }, el("span", { class: "tiny strong" }, f.label || "Audio"),
+      : el("div", { class: "bank-audio-row", dataset: { part: (/(\d)\s*$/.exec(f.label || "") || [])[1] || "" } }, el("span", { class: "tiny strong" }, f.label || "Audio"),
         el("audio", { controls: "", preload: "none", src: url, controlslist: "nodownload" })))));
   }
   // bài tương tác thì không cần PDF nữa — trừ bài có bản đồ/sơ đồ (inter.paper): vẫn hiện trang PDF để nhìn hình
+  let figure = null;   // Listening làm trên máy: hình trong đề nằm trên phần câu hỏi, không dính vào thanh audio
   if (pdfIdx >= 0 && (!inter || inter.paper)) {
     const pages = files[pdfIdx].pages || null;
+    const listenFig = inter && !inter.passage;
     // file có kèm trang đáp án / nhiều đề -> chỉ hiện đúng các trang của đề, không cho mở cả file
-    if (!pages && !files[pdfIdx].keyInside) paper.append(el("div", { class: "row", style: "justify-content:flex-end" },
+    if (!pages && !files[pdfIdx].keyInside && !listenFig) paper.append(el("div", { class: "row", style: "justify-content:flex-end" },
       el("a", { class: "btn btn-sm", href: urls[pdfIdx], target: "_blank", rel: "noopener" }, L("Mở PDF trong tab mới", "Open PDF in a new tab"), icon("arrow"))));
-    paper.append(pdfViewer(urls[pdfIdx], item.title, pages, hlStore, !!files[pdfIdx].keyInside));
+    const viewer = pdfViewer(urls[pdfIdx], item.title, pages, hlStore, !!files[pdfIdx].keyInside);
+    // Listening làm trên máy: đề PDF chỉ để xem bản đồ / sơ đồ -> gập lại, mở khi cần
+    if (listenFig) figure = el("details", { class: "bank-figure" }, el("summary", {}, L("Xem hình trong đề (bản đồ, sơ đồ)", "Show the pictures from the test paper (maps, diagrams)")), viewer);
+    else paper.append(viewer);
   }
 
   // Phiếu trả lời — bản tương tác (như thi trên máy) hoặc phiếu cạnh PDF
   let sheet, exam = null;
   if (inter) {
     exam = examView(inter, item, answers, save);
-    if (inter.passage) paper.append(exam.paper);   // Listening không có bài đọc -> câu hỏi chiếm cả bề ngang
-    sheet = el("div", { class: "bank-sheet cdi" }, exam.sheet);
+    if (inter.passage || inter.passages) paper.append(exam.paper);   // Listening không có bài đọc -> câu hỏi chiếm cả bề ngang
+    // Listening cả đề: mỗi lần một Part, chỉ hiện audio của Part đó
+    if (exam.byPart) {
+      const rows = [...paper.querySelectorAll(".bank-audio-row[data-part]")].filter((r) => r.dataset.part);
+      const showAudio = (p) => rows.forEach((r) => r.classList.toggle("hidden", r.dataset.part !== String(p)));
+      if (rows.length) { exam.onPart(showAudio); showAudio(1); }
+    }
+    sheet = el("div", { class: "bank-sheet cdi" }, figure || "", exam.sheet);
   } else {
     sheet = el("div", { class: "bank-sheet" });
     for (const g of item.groups) sheet.append(groupInputs(g, answers, save));
@@ -300,7 +417,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
   const submitBtn = el("button", { class: "btn btn-primary btn-lg", onclick: () => doSubmit(false) }, icon("check"), L("Nộp bài", "Submit"));
   sheet.append(el("div", { class: "row", style: "margin-top:12px" }, submitBtn));
 
-  const barTitle = kind === "listening" ? `${item.set} · ${item.title}` : kind === "section" ? `Section ${item.section} · ${item.title}` : item.title;
+  const barTitle = isMock(kind) ? partLabel(kind) : kind === "listening" ? `${item.set} · ${item.title}` : kind === "section" ? `Section ${item.section} · ${item.title}` : item.title;
   attachHtmlHighlighter(sheet, hl);
   if (exam) attachHtmlHighlighter(exam.paper, hl);   // tô màu ngay trên bài đọc tương tác
   const bar = el("div", { class: "exam-bar" }, el("strong", {}, barTitle), timer.node, hl.toolbar, proctor?.badge, el("div", { class: "spacer" }),
@@ -328,12 +445,12 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
     try {
       const sub = await saveSubmission(ctx.user, {
         testId: testId(kind, item), skill: SKILL[kind], practice: true,
-        testTitle: kind === "section" ? `Section ${item.section} · ${item.title} (${sourceLabel(item)})` : `${partLabel(kind, item)} · ${item.title}`,
+        testTitle: isMock(kind) ? `${partLabel(kind)} · ${item.title}` : kind === "section" ? `Section ${item.section} · ${item.title} (${sourceLabel(item)})` : `${partLabel(kind, item)} · ${item.title}`,
         startedAt: startedAt.toISOString(), durationSec: timer.elapsedSeconds, autoSubmitted: auto,
         raw: res.correct, total: res.total, band: bandFor(kind, res.correct, res.total),
         details: res.details, graded: true,
         // homework: đáp án trong lần làm này chỉ hiện sau hạn nộp (trừ khi giáo viên mở đáp án ngay khi nộp)
-        ...(proctor ? { hwId: hw.a.id, revealAt: (hw.a.keyAfterSubmit ? new Date() : hw.a.dueAt).toISOString(), integrity: proctor.report() } : {}),
+        ...(proctor ? { hwId: hw.a.id, revealAt: (hw.a.keyAfterSubmit && !(hw.a.secondAttempt && !hw.prev) ? new Date() : hw.a.dueAt).toISOString(), integrity: proctor.report() } : {}),
       });
       draft.clear(ctx.user.uid, draftKey);
       // bài tập về nhà: ghi bài nộp vào Homework (lượt đầu tiên, còn hạn)
@@ -343,7 +460,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
             answers, score: { raw: res.correct, total: res.total }, details: res.details,
             practiceId: sub.id || "", durationSec: timer.elapsedSeconds, autoSubmitted: auto,
             integrity: proctor?.report() || null,
-          });
+          }, hw.prev);
           proctor?.stop();
           clearOnce(`bank-hw-${hw.a.id}-`);
           resetLockCache();
@@ -362,7 +479,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
     }
   }
 
-  const oneCol = inter && !inter.passage;
+  const oneCol = inter && !inter.passage && !inter.passages;
   const split = el("div", { class: oneCol ? "stack cdi-one" : "bank-split" + (inter ? " cdi-split" : "") }, paper, sheet);
   return el("div", { class: "stack" }, bar, split, exam ? exam.nav : null);
 }
@@ -563,7 +680,8 @@ export function gradeItem(item, answers) {
 // Listening đủ 40 câu thì quy đổi band theo thang chuẩn
 const LISTENING_BANDS = [[39, 9], [37, 8.5], [35, 8], [32, 7.5], [30, 7], [26, 6.5], [23, 6], [18, 5.5], [16, 5], [13, 4.5], [10, 4], [8, 3.5], [6, 3], [4, 2.5], [0, 0]];
 function bandFor(kind, raw, total) {
-  if (kind !== "listening" || total !== 40) return null;
+  if (kind === "mockr" && total === 40) return rawToBand(raw, BAND_READING);
+  if (!["listening", "mockl"].includes(kind) || total !== 40) return null;
   return LISTENING_BANDS.find(([min]) => raw >= min)[1];
 }
 
@@ -704,7 +822,7 @@ export function bankItemTitle(kind, item) {
 export async function findBankItem(ref) {
   if (!ref?.kind || !ref?.id) return null;
   const banks = await loadBanks();
-  const item = (banks[ref.kind] || []).find((i) => i.id === ref.id);
+  const item = isMock(ref.kind) ? await mockItem(ref.kind, ref.id) : (banks[ref.kind] || []).find((i) => i.id === ref.id);
   return item ? { item, title: bankItemTitle(ref.kind, item), count: questionCount(item) } : null;
 }
 

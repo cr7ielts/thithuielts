@@ -80,7 +80,7 @@ export async function getAssignment(id) {
 export async function saveAssignment(id, data, answers, user) {
   const body = {
     title: data.title, type: data.type, instructions: data.instructions || "", classId: data.classId || null,
-    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published, allowResubmit: !!data.allowResubmit, keyAfterSubmit: !!data.keyAfterSubmit,
+    dueAt: data.dueAt, allowLate: !!data.allowLate, published: !!data.published, allowResubmit: !!data.allowResubmit, keyAfterSubmit: !!data.keyAfterSubmit, secondAttempt: !!data.secondAttempt,
     materials: data.materials || [], links: data.links || [],
     questionCount: answers ? answers.length : (data.type === "bank" ? data.bank?.count || 0 : 0),
     speaking: data.type === "speaking" ? (data.speaking || null) : null,
@@ -234,7 +234,8 @@ export async function countSubmissions() {
  * Nộp / nộp lại. body: { answers?, text?, files?, note?, turns?, analysis?, analysisError? }
  * Thời điểm nộp lấy từ đồng hồ máy chủ.
  */
-export async function submitHomework(assignment, user, body) {
+/** prev: bài nộp lần 1 khi học sinh nộp lần 2 (second attempt) — lần 1 được giữ trong firstAttempt */
+export async function submitHomework(assignment, user, body, prev = null) {
   const base = {
     assignmentId: assignment.id,
     type: assignment.type,
@@ -256,6 +257,13 @@ export async function submitHomework(assignment, user, body) {
     autoSubmitted: body.autoSubmitted ?? null,
     startedAt: body.startedAt || null,
     integrity: body.integrity || null,  // giám sát: rời màn hình, dán chữ… (js/proctor.js)
+    attempt: prev ? 2 : 1,
+    firstAttempt: prev ? {
+      answers: prev.answers || null, score: prev.score || null, details: prev.details || null,
+      turns: prev.turns || null, files: prev.files || [], analysis: prev.analysis || null,   // Speaking: bản ghi lần 1
+      submittedAt: prev.submittedAt instanceof Date ? prev.submittedAt.toISOString() : String(prev.submittedAt || ""),
+      durationSec: prev.durationSec ?? null, integrity: prev.integrity || null,
+    } : null,
   };
   if (!isConfigured) {
     const all = lsGet(LS.s, {});
@@ -345,17 +353,17 @@ export async function deleteDraft(aid, uid) {
 }
 
 /** criteria (Speaking): { fc, lr, gra, p } — band giáo viên chấm từng tiêu chí, hoặc null */
-export async function gradeHomework(sid, { score, comment, graderEmail, criteria = null }) {
+export async function gradeHomework(sid, { score, comment, graderEmail, criteria = null, meme = null }) {
   if (!isConfigured) {
     const all = lsGet(LS.s, {});
     if (all[sid]) {
-      all[sid] = { ...all[sid], teacherScore: score, teacherComment: comment, teacherCriteria: criteria, gradedAt: new Date().toISOString(), graderEmail };
+      all[sid] = { ...all[sid], teacherScore: score, teacherComment: comment, teacherCriteria: criteria, teacherMeme: meme, gradedAt: new Date().toISOString(), graderEmail };
       lsSet(LS.s, all);
     }
     return;
   }
   const { db, dbMod } = await initFirebase();
   await dbMod.updateDoc(dbMod.doc(db, "hwSubmissions", sid), {
-    teacherScore: score, teacherComment: comment, teacherCriteria: criteria, graderEmail, gradedAt: dbMod.serverTimestamp(),
+    teacherScore: score, teacherComment: comment, teacherCriteria: criteria, teacherMeme: meme, graderEmail, gradedAt: dbMod.serverTimestamp(),
   });
 }

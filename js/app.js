@@ -16,10 +16,15 @@ import { renderResult, renderHistory, renderAdmin } from "./results.js";
 import { initProgress, getStats } from "./vocab/progress.js";
 import { renderVocabHub, renderDeck, renderReview, statStrip } from "./vocab/views.js";
 import { renderGamesHub, renderGame, GAMES, WORDPLAY_GAMES } from "./vocab/games.js";
+import { renderNews, renderArticle } from "./news/views.js";
+import { renderSetsHub, renderSetDetail, renderSetEditor, renderStudyRoute } from "./sets/views.js";
+import { renderLiveSetup, renderLiveJoin } from "./sets/live.js";
+import { renderLiveHost } from "./sets/live-host.js";
+import { renderLivePlay } from "./sets/live-play.js";
 import { renderIdioms, renderIdiomGame } from "./wordplay/idioms.js";
 import { renderPuns, renderPunGame } from "./wordplay/puns.js";
 import { renderHomework, renderHomeworkDetail, renderHomeworkForm, renderHomeworkReview, homeworkWidget } from "./homework/views.js";
-import { renderBank, renderBankPractice, renderBankImport } from "./bank/bank.js";
+import { renderBank, renderBankPractice, renderBankImport, renderMockStart } from "./bank/bank.js";
 import { renderBankReview } from "./bank/review.js";
 import { loadMyClasses, hasClass, normCode } from "./classes/clstore.js";
 import { renderClasses, renderClass, renderJoin, tryJoin } from "./classes/views.js";
@@ -38,10 +43,10 @@ const ctx = {
 const SKILLS = [
   { id: "listening", name: "Listening",
     meta: L(`40 câu · ${DURATION.listening} phút`, `40 questions · ${DURATION.listening} min`),
-    desc: L("4 section hội thoại và bài giảng, nghe một lần như thi thật.", "4 sections of conversations and talks, played once like the real test.") },
+    desc: L("Mỗi lần ghép ngẫu nhiên Section 1–4 từ đề thật có audio gốc.", "A random Section 1–4 from real tests with the original audio, every time.") },
   { id: "reading", name: "Reading",
     meta: L(`40 câu · ${DURATION.reading} phút`, `40 questions · ${DURATION.reading} min`),
-    desc: L("3 bài đọc học thuật, bài đọc và câu hỏi đặt cạnh nhau.", "3 academic passages with the text and questions side by side.") },
+    desc: L("Mỗi lần ghép ngẫu nhiên Passage 1, 2, 3 từ ngân hàng đề.", "A random Passage 1, 2 and 3 from the question bank, every time.") },
   { id: "writing", name: "Writing",
     meta: L(`2 task · ${DURATION.writing} phút`, `2 tasks · ${DURATION.writing} min`),
     desc: L("Task 1 mô tả biểu đồ, Task 2 nghị luận, đếm từ trực tiếp.", "Task 1 chart report and Task 2 essay, with a live word count.") },
@@ -230,6 +235,7 @@ async function demoSignIn(name, teacher = false) {
 
 /* ===================== Router ===================== */
 // #home · #exams · #vocab · #deck/education · #review/due · #games/saved · #game/rain/all
+// #sets · #set/my:<id> · #study/learn/deck:education · #live · #live/play/<pin>
 // #idioms · #idioms/play/meaning · #idioms/play/missing · #puns · #puns/play
 let route = location.hash.replace("#", "") || "home";
 let routeData = null;
@@ -274,6 +280,7 @@ function render() {
     case "bank":
       if (a === "import") main.append(renderBankImport(ctx));
       else if (b && c === "review") main.append(renderBankReview(ctx, a, b, routeData?.submission || null));   // #bank/<loại>/<id>/review
+      else if (a === "mock") main.append(renderMockStart(ctx, b));   // #bank/mock/<reading|listening>: thi thử ghép đề ngẫu nhiên
       else if (b) main.append(renderBankPractice(ctx, a, b, c === "hw" ? d : null));   // #bank/<loại>/<id>/hw/<bài tập>
       else main.append(renderBank(ctx, a || "reading"));
       break;
@@ -282,6 +289,16 @@ function render() {
     case "review":    main.append(renderReview(ctx, a || "due")); break;
     case "games":     main.append(renderGamesHub(ctx, a || "all")); break;
     case "game":      main.append(renderGame(ctx, a, b || "all")); break;
+    case "sets":      main.append(a === "new" ? renderSetEditor(ctx, null) : a === "edit" ? renderSetEditor(ctx, b) : renderSetsHub(ctx)); break;   // #sets · #sets/new · #sets/edit/<id>
+    case "set":       main.append(renderSetDetail(ctx, a || "saved")); break;                                  // #set/my:<id> · #set/deck:<id> · #set/saved
+    case "study":     main.append(renderStudyRoute(ctx, a, b || "saved")); break;                             // #study/<flash|learn|write|spell|test|match>/<ref>
+    case "live":                                                                                            // #live · #live/new[/<ref>] · #live/host/<pin> · #live/play/<pin>
+      if (a === "new") main.append(renderLiveSetup(ctx, b || ""));
+      else if (a === "host" && b) main.append(renderLiveHost(ctx, b));
+      else if (a === "play" && b) main.append(renderLivePlay(ctx, b));
+      else main.append(renderLiveJoin(ctx));
+      break;
+    case "news":      main.append(a === "words" ? renderNews(ctx, "words") : a ? renderArticle(ctx, a) : renderNews(ctx)); break;   // #news · #news/<id> · #news/words
     case "idioms":    main.append(a === "play" ? renderIdiomGame(ctx, b) : renderIdioms(ctx)); break;
     case "puns":      main.append(a === "play" ? renderPunGame(ctx) : renderPuns(ctx)); break;
     case "homework":
@@ -416,8 +433,9 @@ function googleIcon() {
 const SECTION_OF = {
   home: "home", exams: "exams", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
   vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
+  sets: "sets", set: "sets", study: "sets", live: "live",
   idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
-  classes: "classes", class: "classes", join: "classes",
+  classes: "classes", class: "classes", join: "classes", news: "news",
 };
 
 /** Các mục menu, chia nhóm. Homework chỉ hiện khi đã vào lớp (giáo viên luôn thấy) */
@@ -431,9 +449,12 @@ function navGroups() {
     { title: L("Luyện thi", "Practice"), items: [
       ["exams", "exam", L("Thi thử", "Mock tests")],
       ["bank", "file", L("Ngân hàng đề", "Practice bank")],
+      ["news", "globe", L("Đọc báo khoa học", "Science reading")],
       ["history", "history", L("Lịch sử làm bài", "History")]] },
     { title: L("Từ vựng", "Words"), items: [
       ["vocab", "cards", L("Từ vựng", "Vocabulary")],
+      ["sets", "bookmark", L("Học phần", "Study sets")],
+      ["live", "qr", L("Vào phòng live", "Live game")],
       ["games", "game", L("Trò chơi", "Games")],
       ["idioms", "quote", "Idioms"],
       ["puns", "laugh", "Puns"]] },
@@ -615,7 +636,8 @@ function wordplayTile(routeName, ic, title, desc, color) {
 function skillGrid() {
   return el("div", { class: "skill-grid" },
     SKILLS.map((k) =>
-      el("button", { class: `skill-card ${k.id}`, onclick: () => go(k.id) },
+      // Reading / Listening: ghép đề ngẫu nhiên từ ngân hàng (P1+P2+P3, S1–S4)
+      el("button", { class: `skill-card ${k.id}`, onclick: () => go(["reading", "listening"].includes(k.id) ? `bank/mock/${k.id}` : k.id) },
         el("span", { class: "skill-ico" }, icon(k.id)),
         el("h3", {}, k.name),
         el("p", { class: "muted small" }, k.desc),
@@ -627,7 +649,7 @@ function examsView() {
   return el("div", { class: "stack-lg" },
     el("section", { class: "games-hero" },
       el("div", { style: "flex:1;min-width:260px" },
-        el("div", { class: "eyebrow" }, L("Đề thi thử số 01", "Mock test 01")),
+        el("div", { class: "eyebrow" }, L("Thi thử", "Mock test")),
         el("h1", {}, L("Thi thử IELTS Academic", "IELTS Academic mock test")),
         el("p", { class: "lead" },
           L("Mỗi kỹ năng có đồng hồ riêng và tự nộp khi hết giờ. Thời điểm nộp được ghi lại cho từng bài.",

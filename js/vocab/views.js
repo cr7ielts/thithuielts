@@ -8,6 +8,8 @@ import {
 } from "./progress.js";
 import { listLeaderboard } from "../store.js";
 import { L } from "../i18n.js";
+import { levelOf, record } from "../sets/mastery.js";
+import { findInSentence, checkTyped } from "../sets/qgen.js";
 
 const STATUS_LABEL = {
   new: L("Mới", "New"),
@@ -22,7 +24,7 @@ export function renderVocabHub(ctx) {
   const wrap = el("div", { class: "stack-lg" });
 
   const cat = createCat({
-    size: 150, mood: s.due ? "wow" : "idle", bubbleSide: "left",
+    size: 110, mood: s.due ? "wow" : "idle", bubbleSide: "left",
     say: s.due
       ? L(`Có ${s.due} từ đang chờ bạn ôn nè!`, `${s.due} words are waiting for you!`)
       : s.learned ? L("Hôm nay học thêm vài từ mới nhé?", "Shall we learn a few new words today?")
@@ -42,17 +44,13 @@ export function renderVocabHub(ctx) {
             class: "btn btn-primary btn-lg", disabled: s.due ? null : "",
             onclick: () => ctx.go("review/due"),
           }, icon("refresh"), s.due ? L(`Ôn ${s.due} từ đến hạn`, `Review ${s.due} due words`) : L("Chưa có từ đến hạn", "Nothing due yet")),
-          el("button", { class: "btn btn-lg", onclick: () => ctx.go("games") }, icon("game"), L("Chơi mà học", "Learn by playing")))),
+          el("button", { class: "btn btn-lg", onclick: () => ctx.go("games") }, icon("game"), L("Chơi mà học", "Learn by playing")),
+          el("button", { class: "btn btn-lg", onclick: () => ctx.go("sets") }, icon("bookmark"), L("Học phần & live", "Study sets & live")))),
       el("div", { class: "vocab-hero-cat" }, cat)),
     statStrip(s)
   );
 
-  wrap.append(
-    el("div", { class: "section-head" },
-      el("h2", {}, L("Bộ từ theo chủ đề", "Topic decks")),
-      el("span", { class: "muted small" }, L(`${DECKS.length} bộ · ${ALL_WORDS.length} từ`, `${DECKS.length} decks · ${ALL_WORDS.length} words`))),
-    el("div", { class: "deck-grid" }, DECKS.map((d) => deckCard(d, ctx)))
-  );
+  wrap.append(deckLibrary(ctx));
 
   const saved = savedWords();
   const lb = el("div", { class: "lb-list" }, el("div", { class: "muted small" }, L("Đang tải…", "Loading…")));
@@ -110,8 +108,80 @@ function miniStat(ic, v, k, sub) {
       el("div", { class: "ms-k" }, sub)));
 }
 
-function deckCard(d, ctx) {
-  const p = deckProgress(d);
+/* ----- Thư viện bộ từ: chọn bộ sách, tìm, lọc theo tiến độ ----- */
+const SERIES = [
+  ["ielts", L("IELTS theo chủ đề", "IELTS topics")],
+  ["evu", L("Vocabulary in Use", "Vocabulary in Use")],
+  ["ows", L("Oxford Word Skills", "Oxford Word Skills")],
+];
+const PREF = "ielts:vocab:hub";
+const loadPref = () => { try { return JSON.parse(localStorage.getItem(PREF) || "{}"); } catch { return {}; } };
+const savePref = (v) => { try { localStorage.setItem(PREF, JSON.stringify(v)); } catch { /* bỏ qua */ } };
+const FILTERS = [
+  ["all", L("Tất cả", "All")], ["due", L("Cần ôn", "Due")], ["going", L("Đang học", "In progress")],
+  ["new", L("Chưa học", "Not started")], ["done", L("Đã học hết", "Finished")],
+];
+
+function deckLibrary(ctx) {
+  const pref = { series: "ielts", filter: "all", ...loadPref() };
+  if (!DECKS.some((d) => d.series === pref.series)) pref.series = "ielts";
+  const prog = new Map(DECKS.map((d) => [d.id, deckProgress(d)]));
+  const box = el("section", { class: "deck-lib stack" });
+
+  // đang học dở: bộ đã bắt đầu hoặc có từ cần ôn — mở lại nhanh, khỏi tìm
+  const going = DECKS.filter((d) => { const p = prog.get(d.id); return p.due || (p.learned && p.learned < p.total); })
+    .sort((a, b) => prog.get(b.id).due - prog.get(a.id).due || prog.get(b.id).learned - prog.get(a.id).learned).slice(0, 8);
+  if (going.length) box.append(
+    el("div", { class: "section-head" }, el("h2", {}, L("Đang học dở", "Continue learning"))),
+    el("div", { class: "deck-rail" }, going.map((d) => deckCard(d, ctx, prog.get(d.id)))));
+
+  const tabs = el("div", { class: "deck-tabs", role: "tablist" });
+  const search = el("input", { type: "search", class: "deck-search", placeholder: L("Tìm bộ từ, chủ đề, unit…", "Search decks, topics, units…") });
+  const filters = el("div", { class: "row wrap", style: "gap:6px" });
+  const count = el("span", { class: "muted small" });
+  const grid = el("div", { class: "deck-grid compact" });
+
+  const match = (d) => {
+    const p = prog.get(d.id);
+    const f = pref.filter;
+    if (f === "due" && !p.due) return false;
+    if (f === "going" && !(p.learned && p.learned < p.total)) return false;
+    if (f === "new" && p.learned) return false;
+    if (f === "done" && p.learned < p.total) return false;
+    const q = search.value.trim().toLowerCase();
+    return !q || `${d.title} ${d.sub} ${d.units ? "unit " + d.units : ""}`.toLowerCase().includes(q);
+  };
+  const paint = () => {
+    const q = search.value.trim();
+    const pool = q ? DECKS : DECKS.filter((d) => d.series === pref.series);   // đang tìm thì tìm trong mọi bộ sách
+    const ds = pool.filter(match);
+    tabs.querySelectorAll("button").forEach((b) => b.classList.toggle("on", !q && b.dataset.s === pref.series));
+    filters.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.dataset.f === pref.filter));
+    const n = ds.reduce((k, d) => k + d.words.length, 0);
+    count.textContent = L(`${ds.length} bộ · ${n} từ`, `${ds.length} decks · ${n} words`);
+    grid.replaceChildren(...(ds.length ? ds.map((d) => deckCard(d, ctx, prog.get(d.id)))
+      : [el("p", { class: "muted" }, L("Không có bộ nào khớp.", "No decks match."))]));
+    savePref({ series: pref.series, filter: pref.filter });
+  };
+  for (const [id, label] of SERIES) {
+    const ds = DECKS.filter((d) => d.series === id);
+    if (!ds.length) continue;
+    tabs.append(el("button", { type: "button", class: "deck-tab", dataset: { s: id }, onclick: () => { pref.series = id; search.value = ""; paint(); } },
+      el("span", {}, label), el("span", { class: "deck-tab-n" }, L(`${ds.length} bộ`, `${ds.length} decks`))));
+  }
+  for (const [id, label] of FILTERS) filters.append(el("button", { type: "button", class: "chip-btn", dataset: { f: id }, onclick: () => { pref.filter = id; paint(); } }, label));
+  search.oninput = paint;
+
+  box.append(
+    el("div", { class: "section-head" }, el("h2", {}, L("Thư viện bộ từ", "Deck library")), count),
+    tabs,
+    el("div", { class: "deck-toolbar" }, search, filters),
+    grid);
+  paint();
+  return box;
+}
+
+function deckCard(d, ctx, p = deckProgress(d)) {
   return el("button", { class: "deck-card", style: `--deck:${d.color}`, onclick: () => ctx.go(`deck/${d.id}`) },
     el("div", { class: "deck-top" },
       el("div", { class: "deck-ico" }, icon(d.icon)),
@@ -133,8 +203,27 @@ export function renderDeck(ctx, deckId) {
   const p = deckProgress(d);
   const fresh = d.words.filter((w) => wordStatus(w.id) === "new").length;
 
+  // bộ dài (tới 100+ từ): tìm, lọc theo trạng thái, hiện dần từng trang 30 từ
+  const PAGE = 30;
+  let shown = PAGE, st = "all";
   const list = el("div", { class: "word-list" });
-  for (const w of d.words) list.append(wordRow(w));
+  const q = el("input", { type: "search", class: "deck-search", placeholder: L("Tìm từ hoặc nghĩa…", "Search a word or meaning…") });
+  const chips = el("div", { class: "row wrap", style: "gap:6px" });
+  const more = el("div", { class: "word-more" });
+  const paintWords = () => {
+    const k = q.value.trim().toLowerCase();
+    const ws = d.words.filter((w) => (st === "all" || wordStatus(w.id) === st)
+      && (!k || `${w.word} ${w.vi} ${w.def}`.toLowerCase().includes(k)));
+    list.replaceChildren(...(ws.length ? ws.slice(0, shown).map(wordRow) : [el("p", { class: "muted", style: "padding:16px 20px" }, L("Không có từ nào khớp.", "No words match."))]));
+    more.replaceChildren(...(ws.length > shown ? [el("button", { class: "btn btn-sm", onclick: () => { shown += PAGE; paintWords(); } },
+      L(`Xem thêm (${ws.length - shown} từ)`, `Show more (${ws.length - shown} words)`))] : []));
+    more.classList.toggle("hidden", ws.length <= shown);
+    chips.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.dataset.s === st));
+  };
+  for (const [id, label] of [["all", L("Tất cả", "All")], ["new", STATUS_LABEL.new], ["learning", STATUS_LABEL.learning], ["due", STATUS_LABEL.due], ["mastered", STATUS_LABEL.mastered]])
+    chips.append(el("button", { type: "button", class: "chip-btn", dataset: { s: id }, onclick: () => { st = id; shown = PAGE; paintWords(); } }, label));
+  q.oninput = () => { shown = PAGE; paintWords(); };
+  paintWords();
 
   return el("div", { class: "stack-lg" },
     el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go("vocab") }, icon("back"), L("Tất cả bộ từ", "All decks")),
@@ -155,7 +244,7 @@ export function renderDeck(ctx, deckId) {
           : fresh ? L(`Học ${Math.min(fresh, NEW_PER_SESSION)} từ mới`, `Learn ${Math.min(fresh, NEW_PER_SESSION)} new words`)
           : L("Đã ôn hết hôm nay", "All done for today")),
         el("button", { class: "btn btn-lg", onclick: () => ctx.go(`games/${d.id}`) }, icon("game"), L("Chơi với bộ này", "Play with this deck")))),
-    el("div", { class: "card card-flush" }, list));
+    el("div", { class: "card card-flush" }, d.words.length > 15 ? el("div", { class: "word-tools" }, q, chips) : "", list, more));
 }
 
 function wordRow(w) {
@@ -179,7 +268,7 @@ function wordRow(w) {
         el("strong", { class: "word" }, w.word),
         el("span", { class: "ipa" }, w.ipa),
         el("span", { class: "pos" }, w.pos)),
-      el("div", { class: "vi" }, meaning(w), el("span", { class: "alt" }, ` · ${altMeaning(w)}`)),
+      el("div", { class: "vi" }, meaning(w), altMeaning(w) ? el("span", { class: "alt" }, ` · ${altMeaning(w)}`) : null),
       el("div", { class: "example" }, w.example)),
     el("span", { class: `status status-${st}` }, STATUS_LABEL[st]),
     saveBtn);
@@ -244,9 +333,25 @@ export function renderReview(ctx, source) {
     const w = queue[0];
     const isNew = wordStatus(w.id) === "new";
     stage.innerHTML = "";
+    // Từ đã chắc (mức ≥ 2): mặt trước là thử thách nhớ lại — điền từ vào câu, hoặc nhìn nghĩa đoán từ — thay vì cho thấy từ
+    const lv = isNew ? 0 : levelOf(w);
+    const gap = lv >= 2 ? findInSentence(w.word, w.example) : null;
+    const challenge = lv >= 2 ? (gap && (lv >= 3 || Math.random() < 0.6) ? "cloze" : "reverse") : null;
+    const tryIn = challenge ? el("input", { type: "text", class: "type-input small", autocomplete: "off", autocapitalize: "off", spellcheck: "false",
+      placeholder: L("Gõ thử từ trước khi lật (không bắt buộc)", "Try typing the word first (optional)"),
+      onclick: (e) => e.stopPropagation(), onkeydown: (e) => { e.stopPropagation(); if (e.key === "Enter") flip(); } }) : null;
+    const verdict = el("div", { class: "fc-verdict" });
 
     const card = el("div", { class: "flashcard", tabindex: "0", role: "button", "aria-label": L("Lật thẻ", "Flip card") },
       el("div", { class: "fc-inner" },
+        challenge ? el("div", { class: "fc-face fc-front" },
+          el("span", { class: "chip chip-gold" }, L("Thử thách: bạn đã nhớ từ này khá lâu", "Challenge: you've known this one a while")),
+          challenge === "cloze"
+            ? el("div", { class: "example center fc-cloze" }, gap.before, el("b", {}, "_____"), gap.after)
+            : el("div", { class: "fc-vi" }, meaning(w)),
+          el("div", { class: "tiny muted" }, challenge === "cloze" ? L(`Từ còn thiếu (${w.pos}) là gì?`, `What's the missing word (${w.pos})?`) : L("Từ tiếng Anh nào mang nghĩa này?", "Which English word means this?")),
+          tryIn,
+          el("div", { class: "tiny muted fc-hint" }, L("Nhấn Space hoặc bấm vào thẻ để lật", "Press Space or tap the card to flip"))) :
         el("div", { class: "fc-face fc-front" },
           isNew ? el("span", { class: "chip chip-new" }, L("Từ mới", "New word")) : null,
           el("div", { class: "fc-word" }, w.word),
@@ -257,7 +362,7 @@ export function renderReview(ctx, source) {
             el("span", { class: "fc-word sm" }, w.word), el("span", { class: "pos" }, w.pos)),
           el("div", { class: "fc-vi" }, meaning(w)),
           el("div", { class: "muted small" }, altMeaning(w)),
-          el("div", { class: "example center" }, w.example))));
+          el("div", { class: "example center" }, w.example), verdict)));
 
     const speakBtn = el("button", { class: "icon-btn lg", title: L("Nghe phát âm (P)", "Listen (P)"), onclick: (e) => { e.stopPropagation(); speakText(w.word); } }, icon("volume"));
     const saveBtn = el("button", {
@@ -281,6 +386,11 @@ export function renderReview(ctx, source) {
     function flip() {
       if (flipped) return;
       flipped = true;
+      if (tryIn && tryIn.value.trim()) {
+        const r = checkTyped(tryIn.value, gap && challenge === "cloze" ? gap.form : w.word);
+        verdict.textContent = r === "ok" ? L("✓ Bạn gõ đúng!", "✓ You typed it right!") : r === "close" ? L(`≈ Gần đúng: “${tryIn.value}”`, `≈ Almost: “${tryIn.value}”`) : L(`✗ Bạn gõ “${tryIn.value}”`, `✗ You typed “${tryIn.value}”`);
+        verdict.className = "fc-verdict " + (r === "ok" ? "ok" : "bad");
+      }
       card.classList.add("flipped");
       flipBtn.classList.add("hidden");
       grades.classList.remove("hidden");
@@ -305,6 +415,7 @@ export function renderReview(ctx, source) {
       rated = true;
       const before = getStats().xp;
       grade(w.id, g);
+      record(w, g >= 2, challenge ? 2 : 0);
       xpGained += getStats().xp - before;
       queue.shift();
       if (g === 0) {

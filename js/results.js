@@ -146,7 +146,7 @@ function stat(k, v) {
 
 /** Bài Reading/Listening trong ngân hàng đề: mở trang xem lại (bài đọc hoặc lời thoại + nghe lại), giải thích */
 function reviewLink(ctx, sub) {
-  const m = /^bank:(reading|listening|section):(.+)$/.exec(sub.testId || "");
+  const m = /^bank:(reading|listening|section|mockr|mockl):(.+)$/.exec(sub.testId || "");
   if (!m || !sub.details?.length) return null;
   return el("div", { class: "card rv-cta row wrap" },
     el("span", { class: "rv-cta-ic" }, icon("search")),

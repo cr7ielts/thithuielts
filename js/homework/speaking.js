@@ -290,7 +290,15 @@ export function speakingWorkArea(ctx, a, sub, teacher, proctor = null) {
           : L("Giáo viên sẽ nghe và chấm bài của bạn.", "Your teacher will listen and mark your work."))));
     if (showAi && sub.analysis) card.append(aiReport(sub.analysis, { forTeacher: false }));
     card.append(recordingsList(sub, turns, showAi ? sub.analysis : null));
-    if (!graded && !teacher && a.allowResubmit) {
+    // Cho làm lần 2: giữ bản ghi lần 1, giáo viên nghe cả hai
+    const retry = !teacher && !!a.secondAttempt && (sub.attempt || 1) < 2 && !graded && (a.dueAt > new Date() || a.allowLate);
+    if (retry) {
+      card.append(el("div", { class: "notice notice-info small" },
+        L("Giáo viên cho làm lại một lần nữa. Lần 2 ghi âm mới từ đầu; bản ghi lần 1 vẫn được giữ để giáo viên so sánh.",
+          "Your teacher allows one more attempt. Attempt 2 is recorded from scratch; attempt 1 is kept so your teacher can compare.")),
+        el("div", {}, el("button", { class: "btn btn-primary", onclick: () => { card.replaceWith(recorderArea(ctx, a, turns, teacher, false, sub)); } },
+          icon("refresh"), L("Làm lần 2", "Start attempt 2"))));
+    } else if (!graded && !teacher && a.allowResubmit) {
       card.append(el("div", {}, el("button", { class: "btn", onclick: () => { card.replaceWith(recorderArea(ctx, a, turns, teacher, true)); } },
         icon("refresh"), L("Ghi âm lại và nộp lại", "Record again and resubmit"))));
     }
@@ -299,7 +307,8 @@ export function speakingWorkArea(ctx, a, sub, teacher, proctor = null) {
   return recorderArea(ctx, a, turns, teacher, !!sub);
 }
 
-function recorderArea(ctx, a, turns, teacher, resubmit) {
+/** prev: bài lần 1 khi đang làm lần 2 */
+function recorderArea(ctx, a, turns, teacher, resubmit, prev = null) {
   const state = [];
   const card = el("div", { class: "card stack" });
   const counter = el("span", { class: "chip" });
@@ -352,7 +361,7 @@ function recorderArea(ctx, a, turns, teacher, resubmit) {
         status.textContent = L(`Đang tải ghi âm ${i + 1}/${turns.length}…`, `Uploading recording ${i + 1}/${turns.length}…`);
         const ext = r.blob.type.includes("mp4") ? "m4a" : "webm";
         const audio = await uploadFile({ aid: a.id, uid: ctx.user.uid, kind: "submissions", file: r.blob,
-          name: `speaking-${String(i + 1).padStart(2, "0")}.${ext}`,
+          name: `${prev ? "a2-" : ""}speaking-${String(i + 1).padStart(2, "0")}.${ext}`,   // lần 2: tên khác, không đè file lần 1
           onProgress: (p) => { bar.style.width = `${Math.round(((i + p) / turns.length) * 40)}%`; } });
         recorded.push({ part: turns[i].part, prompt: turns[i].prompt, seconds: r.seconds, audio, blob: r.blob });
       }
@@ -389,8 +398,8 @@ function recorderArea(ctx, a, turns, teacher, resubmit) {
         turns: recorded.map(({ blob, ...t }) => t),
         files: recorded.filter((t) => t.audio).map((t) => t.audio),
         analysis, analysisError,
-        integrity: rep || prevIntegrity, startedAt: rep?.startedAt || null, durationSec: rep?.elapsedSec ?? null,
-      });
+        integrity: rep || (prev ? null : prevIntegrity), startedAt: rep?.startedAt || null, durationSec: rep?.elapsedSec ?? null,
+      }, prev);
       curProctor?.stop();
       curProctor = null;
       bar.style.width = "100%";
