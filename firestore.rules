@@ -171,6 +171,12 @@ service cloud.firestore {
     }
 
     // Câu hỏi AI soạn cho bộ từ có sẵn: giáo viên tạo, mọi học sinh dùng chung
+    // Đọc báo khoa học: bài giáo viên dán (có link nguồn) — ai đăng nhập cũng đọc được, chỉ giáo viên sửa
+    match /newsArticles/{nid} {
+      allow read:  if request.auth != null;
+      allow write: if isAdmin();
+    }
+
     match /aiPacks/{pid} {
       allow read:  if request.auth != null;
       allow write: if isAdmin();

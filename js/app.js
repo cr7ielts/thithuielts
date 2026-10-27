@@ -16,6 +16,7 @@ import { renderResult, renderHistory, renderAdmin } from "./results.js";
 import { initProgress, getStats } from "./vocab/progress.js";
 import { renderVocabHub, renderDeck, renderReview, statStrip } from "./vocab/views.js";
 import { renderGamesHub, renderGame, GAMES, WORDPLAY_GAMES } from "./vocab/games.js";
+import { renderNews, renderArticle } from "./news/views.js";
 import { renderSetsHub, renderSetDetail, renderSetEditor, renderStudyRoute } from "./sets/views.js";
 import { renderLiveSetup, renderLiveJoin } from "./sets/live.js";
 import { renderLiveHost } from "./sets/live-host.js";
@@ -297,6 +298,7 @@ function render() {
       else if (a === "play" && b) main.append(renderLivePlay(ctx, b));
       else main.append(renderLiveJoin(ctx));
       break;
+    case "news":      main.append(a === "words" ? renderNews(ctx, "words") : a ? renderArticle(ctx, a) : renderNews(ctx)); break;   // #news · #news/<id> · #news/words
     case "idioms":    main.append(a === "play" ? renderIdiomGame(ctx, b) : renderIdioms(ctx)); break;
     case "puns":      main.append(a === "play" ? renderPunGame(ctx) : renderPuns(ctx)); break;
     case "homework":
@@ -433,7 +435,7 @@ const SECTION_OF = {
   vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
   sets: "sets", set: "sets", study: "sets", live: "live",
   idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
-  classes: "classes", class: "classes", join: "classes",
+  classes: "classes", class: "classes", join: "classes", news: "news",
 };
 
 /** Các mục menu, chia nhóm. Homework chỉ hiện khi đã vào lớp (giáo viên luôn thấy) */
@@ -447,6 +449,7 @@ function navGroups() {
     { title: L("Luyện thi", "Practice"), items: [
       ["exams", "exam", L("Thi thử", "Mock tests")],
       ["bank", "file", L("Ngân hàng đề", "Practice bank")],
+      ["news", "globe", L("Đọc báo khoa học", "Science reading")],
       ["history", "history", L("Lịch sử làm bài", "History")]] },
     { title: L("Từ vựng", "Words"), items: [
       ["vocab", "cards", L("Từ vựng", "Vocabulary")],
