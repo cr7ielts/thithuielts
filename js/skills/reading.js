@@ -25,7 +25,7 @@ function briefing(ctx, view) {
       el("div", {},
         el("h1", { style: "margin-bottom:2px" }, "Reading"),
         el("div", { class: "muted" },
-          L(`${totalQ} câu · ${DURATION.reading} phút · 3 passage`, `${totalQ} questions · ${DURATION.reading} minutes · 3 passages`)))
+          L(`${totalQ} câu, ${DURATION.reading} phút, 3 passage`, `${totalQ} questions, ${DURATION.reading} minutes, 3 passages`)))
     ),
     el("div", {
       class: "notice notice-info", style: "margin:16px 0",
@@ -82,7 +82,7 @@ function examUI(ctx, proctor) {
 
   TEST.reading.passages.forEach((p, i) => {
     tabs.append(el("button", { class: "btn btn-sm", onclick: () => show(i) },
-      `${p.title} · ${L("câu", "Q")} ${p.groups[0].questions[0].n}–${lastN(p)}`));
+      `${p.title}, ${L("câu", "Q")} ${p.groups[0].questions[0].n}–${lastN(p)}`));
   });
   function show(i) {
     [...tabs.children].forEach((b, j) => b.classList.toggle("btn-primary", i === j));

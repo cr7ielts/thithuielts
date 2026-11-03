@@ -12,8 +12,9 @@ const TAG_LABEL = {
   feelings: L("Cảm xúc", "Feelings"), life: L("Cuộc sống", "Life"), animals: L("Động vật", "Animals"),
   work: L("Công việc", "Work"), technology: L("Công nghệ", "Technology"), change: L("Thay đổi", "Change"),
   environment: L("Môi trường", "Environment"), travel: L("Du lịch", "Travel"),
+  communication: L("Giao tiếp", "Communication"), similes: L("So sánh (as… as)", "Similes"), proverbs: L("Tục ngữ", "Proverbs"),
 };
-const REGISTER_LABEL = { informal: L("thân mật", "informal"), neutral: L("trung tính", "neutral") };
+const REGISTER_LABEL = { informal: L("thân mật", "informal"), neutral: L("trung tính", "neutral"), formal: L("trang trọng", "formal") };
 
 const mainMeaning = (i) => (isVi() ? i.vi : i.meaning);
 const otherMeaning = (i) => (isVi() ? i.meaning : i.vi);
@@ -29,7 +30,8 @@ function highlight(example, phrase) {
   const words = phrase.split(" ").filter((w) => w.length >= 3 && !/^(the|and|you|can|than|that|with|your|someone's|out|off|for|has)$/i.test(w));
   let out = safe;
   for (const w of words) {
-    const stem = w.replace(/(ing|ed|s)$/i, "");
+    const stem = w.replace(/[^A-Za-z'-]/g, "").replace(/(ing|ed|s)$/i, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (!stem) continue;
     out = out.replace(new RegExp(`\\b(${stem}\\w*)`, "i"), "<mark>$1</mark>");
   }
   return out;

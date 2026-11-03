@@ -4,7 +4,7 @@
     "public": ".",
     "ignore": [
       "firebase.json", "firestore.rules", "firestore.indexes.json", "storage.rules",
-      "README.md", "bank-report.md", "deploy.cmd", "tools/**", "**/*.log", "**/.*", "**/node_modules/**"
+      "README.md", "CLAUDE.md", "bank-report.md", "deploy.cmd", "tools/**", "**/*.log", "**/.*", "**/node_modules/**"
     ],
     "rewrites": [{ "source": "**", "destination": "/index.html" }],
     "headers": [

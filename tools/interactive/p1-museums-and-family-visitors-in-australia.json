@@ -11,52 +11,57 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "Museums Dedicated Target users Aim of dedicated spaces spaces Melbourne � � Museum �"
+     "text": "Melbourne Museum — Children's Gallery (3–8 years old)"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "3 - 8 years old � present {{1}} topics in National � Children's interesting ways"
+     "text": "aim: to present {{1}} topics in interesting ways"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "aim: to stimulate children's senses"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Museum of Gallery �"
+     "text": "National Museum of Australia — KSpace (children)"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "aim: to use {{2}} to imagine the future"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Australia � stimulate children's senses Australian � � Children National � Maritime � KSpace � Museum � Our Place � use {{2}} to imagine the"
+     "text": "National Museum of Australia — Our Place (children)"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "Children of future {{4}} � school age"
+     "text": "aim: to explore the museum's themes"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Museum �"
+     "text": "Australian National Maritime Museum — Pirates (children of school age and their {{3}})"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "Pirates � {{3}}"
+     "text": "aim: to simulate the life of a pirate"
     },
     {
-     "level": 2,
-     "bullet": "•",
-     "text": "stimulate the life of a pirate"
+     "level": 0,
+     "bullet": "",
+     "text": "{{4}} Museum — Zoe's House (pre-schoolers)"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "� �"
-    },
-    {
-     "level": 2,
-     "bullet": "•",
-     "text": "Zoe's � Pre-schoolers House � use play to encourage {{5}} between children"
+     "text": "aim: to use play to encourage {{5}} between children"
     }
    ],
    "noteTitle": "Dedicated museum spaces for families with children"

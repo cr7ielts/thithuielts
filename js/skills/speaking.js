@@ -46,7 +46,7 @@ function briefing(ctx, view) {
       el("div", {},
         el("h1", { style: "margin-bottom:2px" }, "Speaking"),
         el("div", { class: "muted" },
-          L(`${turns.length} lượt nói · khoảng ${est} phút · 3 part`, `${turns.length} questions · about ${est} minutes · 3 parts`)))
+          L(`${turns.length} lượt nói, khoảng ${est} phút, 3 part`, `${turns.length} questions, about ${est} minutes, 3 parts`)))
     ),
     el("div", {
       class: "notice notice-warn", style: "margin:16px 0",
@@ -110,7 +110,7 @@ function examUI(ctx, proctor) {
   /* ---------------- một lượt nói ---------------- */
   function showTurn() {
     const t = turns[idx];
-    progressBadge.textContent = `${L("Lượt", "Question")} ${idx + 1}/${turns.length} · ${t.partTitle.split("—")[0].trim()}`;
+    progressBadge.textContent = `${L("Lượt", "Question")} ${idx + 1}/${turns.length}, ${t.partTitle.split("—")[0].trim()}`;
     stage.innerHTML = "";
 
     const phase = el("div", { class: "badge" }, L("Chuẩn bị", "Prepare"));

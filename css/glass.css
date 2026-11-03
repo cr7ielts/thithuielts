@@ -1,0 +1,169 @@
+/* ==========================================================================
+   LIQUID GLASS — lớp giao diện kính mờ nhiều màu, nạp SAU styles.css và chỉ ghi đè.
+   Nền: các vệt màu loang (tím, hồng, xanh, cam, ngọc). Bề mặt: kính trong mờ, viền sáng, bóng nhẹ.
+   Muốn quay lại giao diện cũ: bỏ dòng <link href="css/glass.css"> trong index.html.
+   ========================================================================== */
+:root {
+  --lg-a: #7c5cff; --lg-b: #ff5fa2; --lg-c: #22b8ff; --lg-d: #ffb03b; --lg-e: #1fd1a5;
+  --ground: #eef0fb;
+  --surface: rgba(255, 255, 255, .58);
+  --surface-2: rgba(255, 255, 255, .42);
+  --glass: rgba(255, 255, 255, .5);
+  --line: rgba(255, 255, 255, .7);
+  --line-strong: rgba(120, 130, 170, .28);
+  --lg-edge: rgba(255, 255, 255, .85);
+  --lg-shine: inset 0 1px 0 rgba(255, 255, 255, .9), inset 0 -1px 0 rgba(255, 255, 255, .25);
+  --lg-blur: blur(22px) saturate(180%);
+  --shadow-sm: 0 8px 24px -12px rgba(60, 50, 140, .25);
+  --shadow: 0 18px 40px -18px rgba(60, 50, 140, .35);
+  --r: 22px; --r-lg: 30px;
+  --sidebar-bg: rgba(255, 255, 255, .45);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0b0d1f;
+    --surface: rgba(30, 34, 70, .5); --surface-2: rgba(40, 46, 90, .42); --glass: rgba(22, 26, 56, .5);
+    --line: rgba(255, 255, 255, .12); --line-strong: rgba(255, 255, 255, .2); --lg-edge: rgba(255, 255, 255, .22);
+    --lg-shine: inset 0 1px 0 rgba(255, 255, 255, .18), inset 0 -1px 0 rgba(255, 255, 255, .04);
+    --shadow-sm: 0 10px 28px -14px rgba(0, 0, 0, .7); --shadow: 0 20px 44px -18px rgba(0, 0, 0, .8);
+    --sidebar-bg: rgba(20, 24, 52, .45);
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0b0d1f;
+  --surface: rgba(30, 34, 70, .5); --surface-2: rgba(40, 46, 90, .42); --glass: rgba(22, 26, 56, .5);
+  --line: rgba(255, 255, 255, .12); --line-strong: rgba(255, 255, 255, .2); --lg-edge: rgba(255, 255, 255, .22);
+  --lg-shine: inset 0 1px 0 rgba(255, 255, 255, .18), inset 0 -1px 0 rgba(255, 255, 255, .04);
+  --shadow-sm: 0 10px 28px -14px rgba(0, 0, 0, .7); --shadow: 0 20px 44px -18px rgba(0, 0, 0, .8);
+  --sidebar-bg: rgba(20, 24, 52, .45);
+}
+
+/* ---------- nền màu loang ---------- */
+body {
+  background-color: var(--ground);
+  background-image:
+    radial-gradient(620px 520px at 8% 12%, color-mix(in srgb, var(--lg-a) 38%, transparent), transparent 70%),
+    radial-gradient(560px 480px at 92% 6%, color-mix(in srgb, var(--lg-b) 32%, transparent), transparent 70%),
+    radial-gradient(700px 560px at 78% 78%, color-mix(in srgb, var(--lg-c) 30%, transparent), transparent 70%),
+    radial-gradient(520px 460px at 18% 92%, color-mix(in srgb, var(--lg-d) 30%, transparent), transparent 70%),
+    radial-gradient(480px 420px at 50% 48%, color-mix(in srgb, var(--lg-e) 18%, transparent), transparent 70%);
+  background-attachment: fixed;
+}
+
+/* ---------- bề mặt kính ---------- */
+.card, .set-card, .mode-card, .deck-card, .modal, .learn-stage, .fc-side, .t-q, .test-score, .lv-prompt,
+.game-bar, .user-chip, .more-panel, .meme-body, .skill-card, .hw-card, .stat, .notice, .tile, .opt, .seg button,
+.lp-wait, .join-card, .card-row, .lv-chip {
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur);
+  border-color: var(--lg-edge);
+  box-shadow: var(--lg-shine), var(--shadow-sm);
+}
+.card, .set-card, .mode-card, .deck-card, .learn-stage, .test-score, .lv-prompt, .game-bar { background: var(--surface); }
+.card:hover, .set-card:hover, .mode-card:hover:not(:disabled), .deck-card:hover { box-shadow: var(--lg-shine), var(--shadow); }
+
+/* ô nhập: kính đặc hơn để chữ dễ đọc */
+input[type="text"], input[type="search"], input[type="email"], input[type="password"], input[type="number"], textarea, select, .type-input, .pin-input, .num-input {
+  background: rgba(255, 255, 255, .72); border-color: var(--lg-edge);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+}
+:root[data-theme="dark"] :is(input[type="text"], input[type="search"], input[type="email"], input[type="password"], input[type="number"], textarea, select, .type-input, .pin-input, .num-input) { background: rgba(20, 24, 52, .6); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) :is(input[type="text"], input[type="search"], input[type="email"], input[type="password"], input[type="number"], textarea, select, .type-input, .pin-input, .num-input) { background: rgba(20, 24, 52, .6); }
+}
+
+/* ---------- thanh bên: kính sáng, mỗi mục một màu ---------- */
+.sidebar {
+  background: var(--sidebar-bg); color: var(--ink-2);
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur);
+  border-right: 1px solid var(--lg-edge); box-shadow: var(--lg-shine);
+  margin: 12px 0 12px 12px; height: calc(100vh - 24px); top: 12px; border-radius: 28px; border: 1px solid var(--lg-edge);
+}
+.shell { grid-template-columns: calc(var(--sidebar-w) + 12px) minmax(0, 1fr); }
+.sidebar .brand { color: var(--ink); }
+.side-title { color: var(--ink-3); }
+.side-link { color: var(--ink-2); }
+.side-link:hover { background: rgba(255, 255, 255, .45); color: var(--ink); }
+.side-link.active { background: rgba(255, 255, 255, .85); color: var(--ink); box-shadow: var(--lg-shine), 0 8px 20px -10px rgba(60, 50, 140, .45); }
+:root[data-theme="dark"] .side-link.active, :root[data-theme="dark"] .side-link:hover { background: rgba(255, 255, 255, .12); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(.side-link.active, .side-link:hover) { background: rgba(255, 255, 255, .12); } }
+.side-ico { --c: var(--lg-a); background: color-mix(in srgb, var(--c) 18%, transparent); color: var(--c); }
+.side-link.active .side-ico { background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 55%, #fff)); color: #fff; box-shadow: 0 6px 14px -6px var(--c); }
+.side-link[href="#home"] .side-ico { --c: #7c5cff; }
+.side-link[href="#classes"] .side-ico { --c: #22b8ff; }
+.side-link[href="#homework"] .side-ico { --c: #ff5fa2; }
+.side-link[href="#exams"] .side-ico { --c: #ff7a3d; }
+.side-link[href="#bank"] .side-ico { --c: #1fb98a; }
+.side-link[href="#history"] .side-ico { --c: #8a7dff; }
+.side-link[href="#vocab"] .side-ico { --c: #ff9f1c; }
+.side-link[href="#sets"] .side-ico { --c: #e0559b; }
+.side-link[href="#live"] .side-ico { --c: #00a6d6; }
+.side-link[href="#games"] .side-ico { --c: #2fbf71; }
+.side-link[href="#idioms"] .side-ico { --c: #b45cff; }
+.side-link[href="#puns"] .side-ico { --c: #ff6b6b; }
+.side-link[href="#admin"] .side-ico { --c: #4f7cff; }
+.side-level { background: rgba(255, 255, 255, .4); color: var(--ink-2); box-shadow: var(--lg-shine); }
+.side-xp { color: var(--copper-dark); }
+.side-bar { background: rgba(120, 130, 170, .2); }
+.side-bar > span { background: linear-gradient(90deg, var(--lg-a), var(--lg-b), var(--lg-d)); }
+.logo { box-shadow: var(--lg-shine), 0 6px 16px -8px rgba(60, 50, 140, .5); }
+
+/* ---------- thanh trên / thanh đáy ---------- */
+.topbar { background: transparent; border-bottom: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.topbar::before { content: ""; position: absolute; inset: 8px 16px; z-index: -1; border-radius: 22px; background: var(--glass);
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur); border: 1px solid var(--lg-edge); box-shadow: var(--lg-shine), var(--shadow-sm); }
+.streak-pill { background: linear-gradient(135deg, #ffd29a, #ff9f6b); color: #7a2e00; box-shadow: var(--lg-shine); }
+@media (max-width: 760px) {
+  .sidebar { margin: 0; border-radius: 0; height: 100vh; top: 0; }
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .bottombar { background: var(--glass) !important; -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur);
+    border: 1px solid var(--lg-edge) !important; box-shadow: var(--lg-shine), var(--shadow); }
+}
+
+/* ---------- nút: viên kính bóng ---------- */
+.btn { border-radius: 999px; box-shadow: var(--lg-shine), 0 6px 16px -10px rgba(60, 50, 140, .45); border-color: var(--lg-edge);
+  -webkit-backdrop-filter: blur(12px) saturate(170%); backdrop-filter: blur(12px) saturate(170%); }
+.btn:not(.btn-primary):not(.btn-teal):not(.btn-danger):not(.btn-ghost) { --btn-bg: rgba(255, 255, 255, .55); }
+:root[data-theme="dark"] .btn:not(.btn-primary):not(.btn-teal):not(.btn-danger):not(.btn-ghost) { --btn-bg: rgba(255, 255, 255, .1); }
+.btn:active { transform: translateY(1px) scale(.98); box-shadow: var(--lg-shine); }
+.btn-primary { background: linear-gradient(135deg, #ff9a3d 0%, #ff5f8f 100%); border-color: rgba(255, 255, 255, .5); color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55), 0 10px 22px -10px rgba(255, 95, 143, .8); }
+.btn-teal { background: linear-gradient(135deg, #1fd1a5 0%, #22b8ff 100%); border-color: rgba(255, 255, 255, .5); color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .55), 0 10px 22px -10px rgba(34, 184, 255, .8); }
+.btn-danger { --btn-bg: rgba(255, 255, 255, .55); }
+.icon-btn { border-radius: 999px; background: rgba(255, 255, 255, .45); border-color: var(--lg-edge); box-shadow: var(--lg-shine);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.chip, .badge { box-shadow: var(--lg-shine); }
+
+/* ---------- khối nổi bật (hero) nhiều màu ---------- */
+.vocab-hero, .games-hero {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--lg-a) 30%, transparent), color-mix(in srgb, var(--lg-b) 22%, transparent) 50%, color-mix(in srgb, var(--lg-c) 26%, transparent)), var(--surface);
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur); border: 1px solid var(--lg-edge); box-shadow: var(--lg-shine), var(--shadow);
+}
+
+/* thẻ/ô có màu riêng: thêm ánh màu */
+.set-card { background: linear-gradient(160deg, color-mix(in srgb, var(--deck, var(--lg-a)) 16%, transparent), transparent 60%), var(--surface); border-top: 1px solid var(--lg-edge); }
+.mode-card .game-ico { box-shadow: 0 8px 18px -8px var(--game, var(--lg-a)); }
+.mode-grid .mode-card:nth-child(6n+1) { --game: #7c5cff; } .mode-grid .mode-card:nth-child(6n+2) { --game: #ff9f1c; }
+.mode-grid .mode-card:nth-child(6n+3) { --game: #22b8ff; } .mode-grid .mode-card:nth-child(6n+4) { --game: #1fb98a; }
+.mode-grid .mode-card:nth-child(6n+5) { --game: #ff5fa2; } .mode-grid .mode-card:nth-child(6n+6) { --game: #b45cff; }
+.mode-card .game-ico { background: linear-gradient(135deg, var(--game), color-mix(in srgb, var(--game) 55%, #fff)); }
+.bar-track, .progress, .lv-bar, .lv-track { background: rgba(120, 130, 170, .18); }
+.bar-track > span { background: linear-gradient(90deg, var(--lg-a), var(--lg-b), var(--lg-d)); }
+
+/* trang làm bài / tờ đề giữ nền giấy đặc để dễ đọc */
+.passage, .pane-body, .bank-sheet, .pdf-inner, .hw-essay { background: var(--paper, #fff); -webkit-backdrop-filter: none; backdrop-filter: none; }
+:root[data-theme="dark"] :is(.passage, .pane-body, .bank-sheet, .hw-essay) { background: #141a33; }
+
+/* máy yếu / giảm hiệu ứng: tắt làm mờ */
+@media (prefers-reduced-transparency: reduce) {
+  * { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
+  :root { --surface: rgba(255, 255, 255, .94); --glass: rgba(255, 255, 255, .96); }
+}
+
+/* khối chào trang chủ: kính màu tím → hồng → xanh thay cho nền navy đặc */
+.home-hero {
+  background: linear-gradient(130deg, rgba(110, 76, 255, .88) 0%, rgba(232, 79, 160, .82) 52%, rgba(34, 160, 255, .8) 100%) !important;
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur);
+  border: 1px solid rgba(255, 255, 255, .45); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 24px 50px -24px rgba(110, 76, 255, .7);
+}
+.home-hero .btn:not(.btn-primary) { --btn-bg: rgba(255, 255, 255, .22); --btn-fg: #fff; color: #fff; }
