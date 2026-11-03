@@ -1,5 +1,5 @@
 // HOMEWORK — trang học sinh (danh sách, làm bài) và trang giáo viên (tạo bài, chấm bài)
-import { el, icon, toast, confirmDialog, fmtDateTime, draft } from "../ui.js";
+import { el, icon, toast, confirmDialog, fmtDateTime, draft, escapeHtml } from "../ui.js";
 import { createCat } from "../cat.js";
 import { isCorrect, countWords } from "../engine.js";
 import { isAdmin } from "../firebase.js";
@@ -226,6 +226,7 @@ export function renderHomeworkDetail(ctx, id) {
         el("button", { class: "btn btn-sm btn-primary", onclick: () => ctx.go(`homework/review/${a.id}`) }, icon("cards"), L("Chấm bài", "Review work"))));
     }
     if (sub && (sub.teacherScore || sub.teacherComment || sub.teacherMeme)) parts.push(feedbackBlock(sub));
+    const hist = historyBlock(sub);
 
     const work = async (proctor) => {
       const out = [];
@@ -266,10 +267,37 @@ export function renderHomeworkDetail(ctx, id) {
       });
       parts.push(gate);
     } else parts.push(...(await work(null)));
+    if (hist) parts.push(hist);
     body.replaceWith(el("div", { class: "stack-lg" }, ...parts));
   })().catch((err) => body.replaceWith(el("div", { class: "notice notice-error" }, err.message)));
 
   return wrap;
+}
+
+/* ----- Lịch sử làm bài: các lần nộp trước (history) + lần hiện tại ----- */
+function historyBlock(sub, { teacher = false } = {}) {
+  const past = sub?.history || [];
+  if (!past.length) return null;
+  const scoreOf = (x) => x.score ? `${x.score.raw}/${x.score.total}` : x.analysis?.overall != null ? `AI ${Number(x.analysis.overall).toFixed(1)}` : "";
+  const row = (x, n, current) => {
+    const body = el("div", { class: "stack-sm" });
+    if (x.text) body.append(el("div", { class: "hw-essay small" }, x.text), el("div", { class: "tiny muted" }, L(`${countWords(x.text)} từ`, `${countWords(x.text)} words`)));
+    if (x.tasks?.length) x.tasks.forEach((t) => body.append(el("div", { class: "strong small" }, t.title || ""), el("div", { class: "hw-essay small" }, t.text || "")));
+    if (x.files?.length) body.append(fileList(x.files));
+    if (x.answers && !x.text) body.append(el("div", { class: "tiny muted" }, L("Đáp án đã chọn: ", "Answers: ") +
+      Object.entries(x.answers).slice(0, 60).map(([k, v]) => `${k}. ${v || "—"}`).join("  ")));
+    if (x.note) body.append(el("div", { class: "tiny muted" }, L("Lời nhắn: ", "Note: ") + x.note));
+    const meta = [fmtDateTime(x.submittedAt), scoreOf(x), x.durationSec ? fmtMinSec(x.durationSec) : ""].filter(Boolean).join(" · ");
+    return el("details", { class: "hw-attempt" + (current ? " current" : "") },
+      el("summary", {}, el("b", {}, current ? L(`Lần ${n} (hiện tại)`, `Attempt ${n} (current)`) : L(`Lần ${n}`, `Attempt ${n}`)), el("span", { class: "muted small" }, "  " + meta)),
+      body.childElementCount ? body : el("div", { class: "tiny muted" }, L("Không có nội dung để hiện lại.", "Nothing to show.")));
+  };
+  const total = past.length + 1;
+  return el("section", { class: "card hw-history stack-sm" },
+    el("div", { class: "row", style: "gap:8px" }, icon("history"), el("h3", { class: "mb-0" }, L("Lịch sử làm bài", "Attempt history")),
+      el("span", { class: "chip" }, L(`${total} lần nộp`, `${total} submissions`))),
+    teacher ? null : el("div", { class: "tiny muted" }, L("Giáo viên chấm lần nộp gần nhất; các lần trước được lưu lại để bạn so sánh.", "Your teacher marks the latest submission; earlier ones are kept so you can compare.")),
+    ...past.map((x, i) => row(x, i + 1, false)), row(sub, total, true));
 }
 
 /** Màn hình trước khi làm homework: luật làm bài + nút Bắt đầu */
@@ -759,6 +787,21 @@ function renderTeacherHomework(ctx) {
 }
 
 /** Bảng bài tập cho giáo viên. sizeOf(a): sĩ số lớp của bài · names: Map id lớp -> tên (null thì ẩn cột Lớp) */
+/** Hỏi rồi xoá bài tập; có ô chọn xoá luôn bài học sinh đã nộp. Trả true nếu đã xoá */
+async function confirmDeleteAssignment(a, submitted = 0) {
+  const ok = await confirmDialog({ title: L("Xoá bài tập?", "Delete this assignment?"),
+    body: L(`<p>Bài tập “${escapeHtml(a.title || "")}” và đáp án sẽ bị xoá, học sinh không còn thấy bài này.</p>`, `<p>“${escapeHtml(a.title || "")}” and its key will be deleted; students will no longer see it.</p>`) +
+      (submitted ? `<label class="check"><input type="checkbox" id="hw-del-subs"> ${L(`Xoá luôn ${submitted} bài học sinh đã nộp (không khôi phục được)`, `Also delete ${submitted} student submissions (cannot be undone)`)}</label>` : ""),
+    okText: L("Xoá", "Delete"), danger: true });
+  if (!ok) return false;
+  // hộp thoại đã đóng: đọc ô chọn trước khi nó bị gỡ khỏi trang
+  const withSubmissions = !!lastDelChoice;
+  try { await deleteAssignment(a.id, { withSubmissions }); toast(L("Đã xoá bài tập", "Assignment deleted"), "ok"); return true; }
+  catch (err) { toast(err.message || String(err), "err"); return false; }
+}
+let lastDelChoice = false;
+document.addEventListener("change", (e) => { if (e.target?.id === "hw-del-subs") lastDelChoice = e.target.checked; });
+
 export function teacherTable(ctx, list, counts, sizeOf, names = null) {
   const table = el("table");
   table.append(el("thead", {}, el("tr", {},
@@ -782,7 +825,9 @@ export function teacherTable(ctx, list, counts, sizeOf, names = null) {
         " ",
         el("button", { class: "btn btn-sm", onclick: () => ctx.go(`homework/edit/${a.id}`) }, L("Sửa", "Edit")),
         " ",
-        el("button", { class: "btn btn-sm btn-ghost", title: L("Xem như học sinh", "Preview as student"), onclick: () => ctx.go(`homework/${a.id}`) }, icon("eye")))));
+        el("button", { class: "btn btn-sm btn-ghost", title: L("Xem như học sinh", "Preview as student"), onclick: () => ctx.go(`homework/${a.id}`) }, icon("eye")),
+        el("button", { class: "btn btn-sm btn-ghost hw-del", title: L("Xoá bài tập", "Delete assignment"), "aria-label": L("Xoá bài tập", "Delete assignment"),
+          onclick: async (e) => { lastDelChoice = false; if (await confirmDeleteAssignment(a, n)) e.target.closest("tr")?.remove(); } }, icon("trash")))));
   }
   table.append(tbody);
   return el("div", { class: "card card-flush" }, el("div", { class: "table-wrap", style: "border:0" }, table));
@@ -1045,14 +1090,10 @@ export function renderHomeworkForm(ctx, id) {
     };
 
     const delBtn = id ? el("button", { class: "btn btn-danger", onclick: async () => {
-      const ok = await confirmDialog({ title: L("Xoá bài tập?", "Delete this assignment?"),
-        body: L("Bài tập và đáp án sẽ bị xoá. Bài học sinh đã nộp vẫn còn trong hệ thống.", "The assignment and its key will be deleted. Work students already submitted is kept."),
-        okText: L("Xoá", "Delete"), danger: true });
-      if (!ok) return;
-      await deleteAssignment(id);
-      toast(L("Đã xoá", "Deleted"), "ok");
-      ctx.go("homework");
-    } }, L("Xoá bài tập", "Delete")) : null;
+      lastDelChoice = false;
+      const n = (await listSubmissionsFor(id).catch(() => [])).length;
+      if (await confirmDeleteAssignment({ ...a, id }, n)) ctx.go("homework");
+    } }, icon("trash"), L("Xoá bài tập", "Delete")) : null;
 
     body.replaceWith(el("div", { class: "card stack" },
       el("h1", { class: "mb-0" }, id ? L("Sửa bài tập", "Edit assignment") : L("Bài tập mới", "New assignment")),
@@ -1276,6 +1317,8 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
     if (fl) details.append(fl);
   }
   if (s.note) details.append(el("div", { class: "notice notice-info small" }, el("strong", {}, L("Lời nhắn: ", "Note: ")), s.note));
+  const hist = historyBlock(s, { teacher: true });
+  if (hist) details.append(hist);
 
   const aiBand = s.analysis?.overall != null ? s.analysis.overall.toFixed(1) : null;
   const scoreIn = el("input", { type: "text", id: `score-${s.id}`,

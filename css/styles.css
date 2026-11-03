@@ -1934,3 +1934,10 @@ body:not(.hl-on):not(.hl-erasing) .news-para { cursor: help; }
   .news-bar { top: 56px; }
   .word-pop { left: 8px !important; right: 8px; top: auto !important; bottom: calc(76px + env(safe-area-inset-bottom)); width: auto; max-height: 55vh; }
 }
+
+/* lịch sử làm bài homework */
+.hw-history .hw-attempt { border: 1px solid var(--line); border-radius: 14px; padding: 10px 14px; background: var(--surface-2); }
+.hw-history .hw-attempt.current { border-color: var(--copper-line); }
+.hw-history summary { cursor: pointer; }
+.hw-history .hw-attempt[open] summary { margin-bottom: 8px; }
+.hw-del:hover { color: var(--red); }

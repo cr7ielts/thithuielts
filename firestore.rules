@@ -135,7 +135,7 @@ service cloud.firestore {
         && resource.data.get('gradedAt', null) == null
         && resource.data.get('teacherScore', null) == null
         && studentFieldsOk());
-      allow delete: if false;
+      allow delete: if isAdmin();   // giáo viên xoá bài tập kèm bài nộp
     }
 
     // Bản nháp có giờ của Writing full test: lưu trong lúc làm; giờ bắt đầu lấy đồng hồ máy chủ,
