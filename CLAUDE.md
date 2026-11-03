@@ -10,6 +10,7 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
 - Kiểm tra cú pháp: `node --check <file>`.
 
 ## Cấu trúc chính
+- `css/glass.css`: lớp giao diện Liquid Glass (kính mờ, nền màu loang, mỗi mục menu một màu), nạp sau `styles.css`, chỉ ghi đè; bỏ link trong `index.html` là về giao diện cũ.
 - `js/app.js`: router (hash), trang chủ, Thi thử (`exams`).
 - `js/bank/`: Ngân hàng đề. `bank.js` (danh sách, làm bài, thi thử ghép đề `mockr`/`mockl`), `exam.js` (giao diện làm trên máy, chia theo Part), `review.js` + `listen-review.js` (xem lại, giải thích).
 - `js/homework/`: bài tập về nhà theo lớp. `memes.js` = meme nhận xét (40 meme mèo i-melts theo 10 sắc thái + ảnh giáo viên tải lên ở `memes`/Storage `memes/`, gợi ý theo điểm; lưu `teacherMeme` trong bài nộp). `quizdoc.js`/`quizview.js` = bài kiểm tra dựng từ file Word.
