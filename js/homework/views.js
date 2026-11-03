@@ -43,7 +43,7 @@ function dueInfo(a) {
   const rel = h < 1 ? L(`còn ${Math.max(1, Math.round(ms / 60000))} phút`, `${Math.max(1, Math.round(ms / 60000))} min left`)
     : h < 48 ? L(`còn ${Math.round(h)} giờ`, `${Math.round(h)} h left`)
     : L(`còn ${Math.round(h / 24)} ngày`, `${Math.round(h / 24)} days left`);
-  return { state: h < 48 ? "soon" : "open", text: `${L("Hạn", "Due")} ${when} · ${rel}` };
+  return { state: h < 48 ? "soon" : "open", text: `${L("Hạn", "Due")} ${when}, ${rel}` };
 }
 
 /** todo | late-ok | missed | submitted | late | graded */
@@ -215,7 +215,7 @@ export function renderHomeworkDetail(ctx, id) {
         ["reading", "listening", "bank", "quiz"].includes(a.type) && a.questionCount ? el("span", { class: "chip" }, L(`${a.questionCount} câu`, `${a.questionCount} questions`)) : null,
         a.type === "speaking" ? el("span", { class: "chip" }, ((n) => L(`${n} câu hỏi`, `${n} question${n === 1 ? "" : "s"}`))(speakingTurns(a).length)) : null),
       el("h1", { style: "margin:8px 0 4px" }, a.title),
-      el("div", { class: `hw-due due-${due.state}` }, icon("clock"), due.text, a.allowLate ? el("span", { class: "tiny muted" }, L(" · cho phép nộp muộn", " · late work accepted")) : null),
+      el("div", { class: `hw-due due-${due.state}` }, icon("clock"), due.text, a.allowLate ? el("span", { class: "tiny muted" }, L(", cho phép nộp muộn", ", late work accepted")) : null),
       a.instructions && !gated ? el("div", { class: "hw-instructions" }, a.instructions) : null);
 
     const parts = [head];
@@ -287,7 +287,7 @@ function historyBlock(sub, { teacher = false } = {}) {
     if (x.answers && !x.text) body.append(el("div", { class: "tiny muted" }, L("Đáp án đã chọn: ", "Answers: ") +
       Object.entries(x.answers).slice(0, 60).map(([k, v]) => `${k}. ${v || "—"}`).join("  ")));
     if (x.note) body.append(el("div", { class: "tiny muted" }, L("Lời nhắn: ", "Note: ") + x.note));
-    const meta = [fmtDateTime(x.submittedAt), scoreOf(x), x.durationSec ? fmtMinSec(x.durationSec) : ""].filter(Boolean).join(" · ");
+    const meta = [fmtDateTime(x.submittedAt), scoreOf(x), x.durationSec ? fmtMinSec(x.durationSec) : ""].filter(Boolean).join(", ");
     return el("details", { class: "hw-attempt" + (current ? " current" : "") },
       el("summary", {}, el("b", {}, current ? L(`Lần ${n} (hiện tại)`, `Attempt ${n} (current)`) : L(`Lần ${n}`, `Attempt ${n}`)), el("span", { class: "muted small" }, "  " + meta)),
       body.childElementCount ? body : el("div", { class: "tiny muted" }, L("Không có nội dung để hiện lại.", "Nothing to show.")));
@@ -355,7 +355,7 @@ function retryCard(ctx, a, sub, start) {
   const card = el("div", { class: "card stack hw-retry" },
     el("div", { class: "row", style: "gap:10px" }, icon("check"), el("h2", { class: "mb-0" }, L("Đã nộp lần 1", "Attempt 1 submitted"))),
     el("div", { class: "muted small" }, `${L("Nộp lúc", "Submitted")} ${fmtDateTime(sub.submittedAt)}`,
-      sub.score ? ` · ${L("điểm", "score")} ${sub.score.raw}/${sub.score.total}` : ""),
+      sub.score ? `, ${L("điểm", "score")} ${sub.score.raw}/${sub.score.total}` : ""),
     el("p", { class: "mb-0" }, L("Giáo viên cho làm lại một lần nữa. Lần 2 bắt đầu với phiếu trống; điểm và đáp án hiện sau khi nộp lần 2. Giáo viên thấy cả hai lần.",
       "Your teacher allows one more attempt. Attempt 2 starts with a blank sheet; the score and answers appear after you submit it. Your teacher sees both attempts.")),
     a.dueAt > new Date() ? el("div", { class: "tiny muted" }, L(`Hạn làm lần 2: ${fmtDateTime(a.dueAt)}. Không làm thì bài lần 1 được giữ nguyên.`,
@@ -371,7 +371,7 @@ function retryCard(ctx, a, sub, start) {
   return card;
 }
 const firstLine = (sub, first) => sub.firstAttempt ? el("div", { class: "small" },
-  L(`Lần 1: ${first} · nộp ${fmtDateTime(sub.firstAttempt.submittedAt)}`, `Attempt 1: ${first} · ${fmtDateTime(sub.firstAttempt.submittedAt)}`)) : null;
+  L(`Lần 1: ${first}, nộp ${fmtDateTime(sub.firstAttempt.submittedAt)}`, `Attempt 1: ${first}, ${fmtDateTime(sub.firstAttempt.submittedAt)}`)) : null;
 
 /** prev: bài nộp lần 1 (đang làm lần 2) */
 async function answerSheet(ctx, a, sub, teacher, proctor = null, prev = null) {
@@ -546,7 +546,7 @@ async function bankWorkArea(ctx, a, sub, teacher) {
     el("div", { style: "flex:1;min-width:220px" },
       el("div", { class: "eyebrow" }, L("Bài trong ngân hàng đề", "From the question bank")),
       el("h2", { class: "mb-0" }, found.title),
-      el("div", { class: "muted small" }, L(`${found.count} câu · chấm tự động`, `${found.count} questions · marked automatically`)))));
+      el("div", { class: "muted small" }, L(`${found.count} câu, chấm tự động`, `${found.count} questions, marked automatically`)))));
   if (sub?.score && canRetry(a, sub, teacher)) {
     card.append(el("div", { class: "row wrap", style: "gap:14px" },
       el("div", { class: "band-ring sm", style: `--pct:${sub.score.total ? (sub.score.raw / sub.score.total) * 100 : 0}%` }, el("div", { class: "val" }, `${sub.score.raw}/${sub.score.total}`)),
@@ -615,9 +615,9 @@ function workArea(ctx, a, sub, teacher, proctor = null) {
     const row = (label, meta, onRemove, extra) => el("div", { class: "hw-attach-row" }, icon("file"), el("span", { class: "strong" }, label),
       el("span", { class: "tiny muted" }, meta), extra, el("div", { class: "spacer" }),
       locked ? null : el("button", { class: "icon-btn", title: L("Bỏ file", "Remove"), onclick: onRemove }, icon("x")));
-    files.forEach((f, i) => listBox.append(row(f.name, `${fmtSize(f.size || 0)} · ${L("đã tải lên", "uploaded")}`, () => { files.splice(i, 1); paintFiles(); },
+    files.forEach((f, i) => listBox.append(row(f.name, `${fmtSize(f.size || 0)}, ${L("đã tải lên", "uploaded")}`, () => { files.splice(i, 1); paintFiles(); },
       f.contentType?.startsWith("audio/") ? el("audio", { controls: "", src: f.url, preload: "metadata" }) : null)));
-    pending.forEach((p, i) => listBox.append(row(p.name, `${fmtSize(p.file.size)} · ${L("chưa tải lên", "not uploaded yet")}`, () => { pending.splice(i, 1); paintFiles(); },
+    pending.forEach((p, i) => listBox.append(row(p.name, `${fmtSize(p.file.size)}, ${L("chưa tải lên", "not uploaded yet")}`, () => { pending.splice(i, 1); paintFiles(); },
       p.preview ? el("audio", { controls: "", src: p.preview }) : null)));
     if (!files.length && !pending.length) listBox.append(el("div", { class: "muted small" }, L("Chưa có file nào.", "No files attached.")));
   };
@@ -909,7 +909,7 @@ export function renderHomeworkForm(ctx, id) {
       const NAME = { mcq: L("trắc nghiệm", "multiple choice"), choice: "True/False/NG", bank: L("chọn từ", "word list"), text: L("điền", "fill-in"), free: L("viết (GV chấm)", "written (teacher-marked)") };
       const missing = parseKey(keyBox.value).filter((alts) => !alts.length).length;
       quizStatus.replaceChildren(
-        el("div", {}, el("strong", {}, qz.quiz.title), " · ", L(`${qs.length} câu`, `${qs.length} questions`), " (",
+        el("div", {}, el("strong", {}, qz.quiz.title), ", ", L(`${qs.length} câu`, `${qs.length} questions`), " (",
           Object.entries(kinds).map(([k, v]) => `${v} ${NAME[k] || k}`).join(", "), ")"),
         el("div", { class: "tiny muted" }, L("Kiểm tra lại ô Đáp án bên dưới trước khi lưu. Dòng có * là câu viết, giáo viên chấm tay. Bấm Xem trước để xem bài như học sinh.",
           "Check the answer key below before saving. Lines marked * are written answers you mark yourself.")),
@@ -990,7 +990,7 @@ export function renderHomeworkForm(ctx, id) {
         el("span", { class: "tiny muted" }, fmtSize(f.size || 0)), el("div", { class: "spacer" }),
         el("button", { class: "icon-btn", title: L("Bỏ", "Remove"), onclick: () => { materials.splice(i, 1); paintMats(); } }, icon("x")))));
       pending.forEach((f, i) => matList.append(el("div", { class: "hw-attach-row" }, icon("upload"), el("span", { class: "strong" }, f.name),
-        el("span", { class: "tiny muted" }, `${fmtSize(f.size)} · ${L("tải lên khi lưu", "uploads on save")}`), el("div", { class: "spacer" }),
+        el("span", { class: "tiny muted" }, `${fmtSize(f.size)}, ${L("tải lên khi lưu", "uploads on save")}`), el("div", { class: "spacer" }),
         el("button", { class: "icon-btn", onclick: () => { pending.splice(i, 1); paintMats(); } }, icon("x")))));
       links.forEach((l, i) => matList.append(el("div", { class: "hw-attach-row" }, icon("link"), el("span", { class: "strong" }, l.label || l.url),
         el("span", { class: "tiny muted" }, l.url.slice(0, 40)), el("div", { class: "spacer" }),
@@ -1150,7 +1150,7 @@ function classPicker(classes, a, preset) {
   const checks = classes.map((c) => ({ id: c.id,
     input: el("input", { type: "checkbox", checked: c.id === preset || c.id === only ? "" : null }), name: c.name, section: c.section }));
   box.append(el("div", { class: "row wrap", style: "gap:8px 18px" },
-    checks.map((x) => el("label", { class: "check" }, x.input, x.name, x.section ? el("span", { class: "tiny muted" }, ` · ${x.section}`) : null))));
+    checks.map((x) => el("label", { class: "check" }, x.input, x.name, x.section ? el("span", { class: "tiny muted" }, `, ${x.section}`) : null))));
   if (classes.length > 1) box.append(el("div", { class: "tiny muted" },
     L("Chọn nhiều lớp thì mỗi lớp nhận một bản riêng, chấm riêng.", "Each class you tick gets its own copy, marked separately.")));
   box.read = () => checks.filter((x) => x.input.checked).map((x) => x.id);
@@ -1256,7 +1256,7 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
   const who = el("div", {}, el("div", { class: "strong" }, r.name || "—"), el("div", { class: "tiny muted" }, r.email || ""));
   if (!s) {
     return el("div", { class: "hw-review-row missing" }, who, el("div", { class: "spacer" }),
-      working ? el("span", { class: "chip chip-warn" }, icon("clock"), L(`Đang làm · bắt đầu ${fmtDateTime(working.startedAtServer)}`, `In progress · started ${fmtDateTime(working.startedAtServer)}`)) : null,
+      working ? el("span", { class: "chip chip-warn" }, icon("clock"), L(`Đang làm, bắt đầu ${fmtDateTime(working.startedAtServer)}`, `In progress, started ${fmtDateTime(working.startedAtServer)}`)) : null,
       el("span", { class: a.dueAt < Date.now() ? "chip chip-bad" : "chip" }, a.dueAt < Date.now() ? L("Không nộp", "Not submitted") : L("Chưa nộp", "Not yet")));
   }
   const isLate = s.submittedAt > a.dueAt;
@@ -1309,7 +1309,7 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
       L("AI chưa phân tích được bài này — hãy nghe và chấm thủ công. ", "The AI couldn't analyse this one — listen and mark it yourself. "), el("span", { class: "tiny" }, `(${s.analysisError})`)));
     details.append(recordingsList(s, null, s.analysis));
     if (s.firstAttempt?.turns) details.append(el("details", { class: "hw-first" },
-      el("summary", {}, L(`Bài lần 1 · nộp ${fmtDateTime(s.firstAttempt.submittedAt)}`, `Attempt 1 · ${fmtDateTime(s.firstAttempt.submittedAt)}`)),
+      el("summary", {}, L(`Bài lần 1, nộp ${fmtDateTime(s.firstAttempt.submittedAt)}`, `Attempt 1, ${fmtDateTime(s.firstAttempt.submittedAt)}`)),
       s.firstAttempt.analysis ? aiReport(s.firstAttempt.analysis, { forTeacher: true }) : "",
       recordingsList(s.firstAttempt, null, s.firstAttempt.analysis)));
   } else {
@@ -1387,7 +1387,7 @@ function reviewRow(ctx, a, r, key, autoScore, working = null) {
       s.autoSubmitted && a.type === "writingmock" ? el("span", { class: "chip chip-warn", title: s.fromDraft ? L("Học sinh rời trang trước khi hết giờ; bài thu từ bản lưu tự động", "Collected from the autosaved copy") : "" },
         s.fromDraft ? L("tự nộp khi hết giờ (bản lưu)", "auto-submitted (saved copy)") : L("tự nộp khi hết giờ", "auto-submitted")) : null,
       s.firstAttempt && a.type === "speaking" ? el("span", { class: "chip" }, L("Lần 2", "2nd attempt"),
-        s.firstAttempt.analysis?.overall != null ? L(` · lần 1 AI ${s.firstAttempt.analysis.overall.toFixed(1)}`, ` · 1st AI ${s.firstAttempt.analysis.overall.toFixed(1)}`) : "") : null,
+        s.firstAttempt.analysis?.overall != null ? L(`, lần 1 AI ${s.firstAttempt.analysis.overall.toFixed(1)}`, `, 1st AI ${s.firstAttempt.analysis.overall.toFixed(1)}`) : "") : null,
       s.firstAttempt && a.type !== "speaking" ? el("span", { class: "chip", title: L(`Lần 1 nộp ${fmtDateTime(s.firstAttempt.submittedAt)}`, `Attempt 1 at ${fmtDateTime(s.firstAttempt.submittedAt)}`) },
         L("Lần 1: ", "1st: "), a.type === "bank" ? (s.firstAttempt.score ? `${s.firstAttempt.score.raw}/${s.firstAttempt.score.total}` : "—") : `${autoScore({ answers: s.firstAttempt.answers }) ?? "—"}/${autoTotal}`) : null,
       auto != null ? el("span", { class: "chip" }, s.attempt === 2 ? L("Lần 2: ", "2nd: ") : "", `${auto}/${autoTotal}`) : null,

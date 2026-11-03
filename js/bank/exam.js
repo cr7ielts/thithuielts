@@ -42,7 +42,7 @@ export function examView(data, item, answers, onChange) {
   // đề Reading đầy đủ (3 passage): mỗi Part một bài đọc, chỉ hiện bài của Part đang làm
   const passageNodes = new Map();
   (data.passages || []).forEach((ps, i) => {
-    const node = passageNode(ps, `${L("Bài đọc", "Passage")} ${i + 1} · ${ps.title}`, i + 1);
+    const node = passageNode(ps, `${L("Bài đọc", "Passage")} ${i + 1}, ${ps.title}`, i + 1);
     passageNodes.set(i + 1, node);
     paper.append(node);
   });

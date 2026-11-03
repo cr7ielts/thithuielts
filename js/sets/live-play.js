@@ -63,7 +63,7 @@ export function renderLivePlay(ctx, pin) {
       el("div", { class: "card center stack lp-wait" },
         el("div", { class: "lp-pulse" }, icon("users")),
         el("h2", {}, L("Bạn đã vào phòng!", "You're in!")),
-        el("p", { class: "muted" }, game.title, " · ", MODE_INFO[game.mode].name),
+        el("p", { class: "muted" }, game.title, ", ", MODE_INFO[game.mode].name),
         isTeamMode(game.mode) ? (t
           ? el("div", { class: "lv-team", style: `--tc:${TEAM_STYLE[t.id % 8][2]}` }, el("b", {}, L("Đội của bạn: ", "Your team: "), teamName(t)), el("div", { class: "muted small" }, mates.map((p) => p.name).join(", ")))
           : el("p", { class: "muted" }, L("Chờ giáo viên chia đội…", "Waiting for the teacher to make teams…")))

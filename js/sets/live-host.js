@@ -218,7 +218,7 @@ export function renderLiveHost(ctx, pin) {
       el("div", { class: "lv-race" }, game.teams.map((t) => {
         const c = TEAM_STYLE[t.id % 8][2];
         return el("div", { class: "lv-lane", style: `--tc:${c}` },
-          el("div", { class: "lv-lane-name" }, teamName(t), el("small", {}, ` · ${players.filter((p) => String(p.team) === String(t.id)).length}`)),
+          el("div", { class: "lv-lane-name" }, teamName(t), el("small", {}, `, ${players.filter((p) => String(p.team) === String(t.id)).length}`)),
           el("div", { class: "lv-track" }, el("span", { class: "lv-run", style: `width:${Math.min(100, (t.progress / goal) * 100)}%` }), el("span", { class: "lv-flag" }, "🏁")),
           el("div", { class: "lv-lane-n" }, `${t.progress}/${goal}`),
           t.last ? el("span", { class: "chip " + (t.last.ok ? "chip-ok" : "chip-bad") }, t.last.ok ? "✓" : L("Sai – về vạch xuất phát", "Missed – back to start")) : null);

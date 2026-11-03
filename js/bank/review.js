@@ -49,7 +49,7 @@ function withOption(v, options) {
   const parts = String(v).split(/\s*,\s*/);
   return parts.map((p) => {
     const o = options?.find((x) => x.v.toLowerCase() === p.toLowerCase());
-    return o ? `${p} · ${o.t}` : TF[p.toUpperCase()] && !options ? p.toUpperCase() : p;
+    return o ? `${p}, ${o.t}` : TF[p.toUpperCase()] && !options ? p.toUpperCase() : p;
   }).join(" / ");
 }
 
@@ -136,7 +136,7 @@ function view(ctx, kind, item, sub, inter, exp, lexp) {
         el("div", { class: "small muted" }, [
           sub.submittedAt ? fmtDateTime(sub.submittedAt) : null,
           sub.durationSec ? `${L("thời gian", "time")} ${fmtDuration(sub.durationSec)}` : null,
-        ].filter(Boolean).join(" · "))),
+        ].filter(Boolean).join(", "))),
       el("div", { class: "row wrap", style: "gap:8px" },
         el("span", { class: "chip chip-ok" }, icon("check"), L(`${right} đúng`, `${right} correct`)),
         el("span", { class: "chip chip-bad" }, icon("x"), L(`${details.length - right - blank} sai`, `${details.length - right - blank} wrong`)),
@@ -209,7 +209,7 @@ function view(ctx, kind, item, sub, inter, exp, lexp) {
             String(d.key).includes(" / ") ? el("span", { class: "tiny muted" }, ` (${L("chấp nhận", "also")}: ${String(d.key).split(" / ").slice(1).join(", ")})`) : null))),
       e?.why ? el("div", { class: "rv-why" }, el("div", { class: "rv-lbl" }, icon("bolt"), L("Giải thích", "Explanation")), el("div", {}, e.why)) : null,
       e?.ev?.length ? el("div", { class: "rv-ev" },
-        el("div", { class: "rv-lbl" }, icon("quote"), L("Dẫn chứng", "Evidence"), e.para ? el("span", { class: "tiny muted" }, ` · ${L("đoạn", "paragraph")} ${e.para}`) : null),
+        el("div", { class: "rv-lbl" }, icon("quote"), L("Dẫn chứng", "Evidence"), e.para ? el("span", { class: "tiny muted" }, `, ${L("đoạn", "paragraph")} ${e.para}`) : null),
         e.ev.map((t) => el("blockquote", {}, `“${t}”`)),
         evFirst.has(d.n) ? el("button", { class: "btn btn-sm", onclick: (ev) => { ev.stopPropagation(); locate(d.n); } }, icon("search"), L("Xem trong bài", "Show in passage")) : null)
         : null,
@@ -240,7 +240,7 @@ function listenRow(lp, n) {
         if (ev.currentTarget.closest(".rv-q")?.classList.contains("playing")) lp.stop(); else lp.playClip(n);
       } },
         icon("play"), L("Nghe lại", "Replay")),
-      el("span", { class: "tiny muted" }, `Section ${q.s} · ${mmss(q.t[0])}–${mmss(q.t[1])}`,
-        q.m === "guess" ? L(" · ước lượng (máy chưa dò ra chỗ đáp án)", " · estimated") : "")),
+      el("span", { class: "tiny muted" }, `Section ${q.s}, ${mmss(q.t[0])}–${mmss(q.t[1])}`,
+        q.m === "guess" ? L(", ước lượng (máy chưa dò ra chỗ đáp án)", ", estimated") : "")),
     lp.quote(n));
 }

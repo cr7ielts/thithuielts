@@ -42,16 +42,16 @@ const ctx = {
 
 const SKILLS = [
   { id: "listening", name: "Listening",
-    meta: L(`40 câu · ${DURATION.listening} phút`, `40 questions · ${DURATION.listening} min`),
+    meta: L(`40 câu, ${DURATION.listening} phút`, `40 questions, ${DURATION.listening} min`),
     desc: L("Mỗi lần ghép ngẫu nhiên Section 1–4 từ đề thật có audio gốc.", "A random Section 1–4 from real tests with the original audio, every time.") },
   { id: "reading", name: "Reading",
-    meta: L(`40 câu · ${DURATION.reading} phút`, `40 questions · ${DURATION.reading} min`),
+    meta: L(`40 câu, ${DURATION.reading} phút`, `40 questions, ${DURATION.reading} min`),
     desc: L("Mỗi lần ghép ngẫu nhiên Passage 1, 2, 3 từ ngân hàng đề.", "A random Passage 1, 2 and 3 from the question bank, every time.") },
   { id: "writing", name: "Writing",
-    meta: L(`2 task · ${DURATION.writing} phút`, `2 tasks · ${DURATION.writing} min`),
+    meta: L(`2 task, ${DURATION.writing} phút`, `2 tasks, ${DURATION.writing} min`),
     desc: L("Task 1 mô tả biểu đồ, Task 2 nghị luận, đếm từ trực tiếp.", "Task 1 chart report and Task 2 essay, with a live word count.") },
   { id: "speaking", name: "Speaking",
-    meta: L(`3 part · ~${DURATION.speaking} phút`, `3 parts · ~${DURATION.speaking} min`),
+    meta: L(`3 part, ~${DURATION.speaking} phút`, `3 parts, ~${DURATION.speaking} min`),
     desc: L("Trả lời và ghi âm từng câu để giáo viên nghe, chấm điểm.", "Answer and record each question so your teacher can listen and mark.") },
 ];
 
@@ -507,7 +507,7 @@ function chrome(page) {
       avatar(),
       el("div", { class: "meta" },
         el("div", { class: "name" }, name),
-        el("div", { class: "role" }, isAdmin(user) ? L("Giáo viên", "Teacher") : `${L("Cấp", "Level")} ${s.level} · ${s.xp} XP`))),
+        el("div", { class: "role" }, isAdmin(user) ? L("Giáo viên", "Teacher") : `${L("Cấp", "Level")} ${s.level}, ${s.xp} XP`))),
     el("button", { class: "icon-btn", title: L("Đăng xuất", "Sign out"), "aria-label": L("Đăng xuất", "Sign out"), onclick: () => signOutFn?.() }, icon("logout")));
 
   // Điện thoại: 4 mục chính + "Thêm" mở bảng đủ các mục
@@ -612,7 +612,7 @@ function homeView() {
           el("div", { class: "spacer" }),
           el("span", { class: "small strong" },
             (sub.skill === "listening" || sub.skill === "reading")
-              ? `${sub.raw}/${sub.total} · Band ${Number(sub.band).toFixed(1)}`
+              ? `${sub.raw}/${sub.total}, Band ${Number(sub.band).toFixed(1)}`
               : (sub.teacherBand != null ? `Band ${Number(sub.teacherBand).toFixed(1)}` : L("chờ chấm", "awaiting mark"))),
           el("button", { class: "btn btn-sm", onclick: () => go("result", { submission: sub }) }, L("Xem", "View"))));
     });

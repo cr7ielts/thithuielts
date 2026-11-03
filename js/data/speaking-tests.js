@@ -10,7 +10,7 @@ const READY_MADE = [
   {
     id: "cum3-getting-around-money",
     title: "IELTS Speaking Mock Test — Cụm 3: Getting Around & Money",
-    topics: "Public transport · Bikes · Roads & streets · Street markets · Shopping · Money & saving · Advertisements · Borrowing & lending",
+    topics: "Public transport, Bikes, Roads & streets, Street markets, Shopping, Money & saving, Advertisements, Borrowing & lending",
     instructions:
       "IELTS Speaking Mock Test — Cụm 3: Getting Around & Money\n" +
       "Part 1 (4–5 phút): 12 câu, 3 chủ đề × 4 câu.\n" +
@@ -67,12 +67,12 @@ export function forecastTests(f = SPEAKING_FORECAST) {
   return f.part2.map((card, k) => {
     const p1 = [f.core[k % f.core.length], f.part1[(2 * k) % f.part1.length], f.part1[(2 * k + 1) % f.part1.length]];
     const short = card.topic.replace(/^Describe\s+/i, "").replace(/\.$/, "");
-    const title = `Forecast ${f.period} · Đề ${pad(k + 1)} — ${short[0].toUpperCase()}${short.slice(1)}`;
+    const title = `Forecast ${f.period}, Đề ${pad(k + 1)} — ${short[0].toUpperCase()}${short.slice(1)}`;
     return {
       id: `fc-${f.period.replace(/\D+/g, "-")}-${card.id}`,
       group: `Forecast ${f.period} (cập nhật ${f.updated.split("-").reverse().join("/")})`,
       title,
-      topics: p1.map((t) => t.topic).join(" · "),
+      topics: p1.map((t) => t.topic).join(", "),
       instructions:
         `IELTS Speaking Mock Test — Forecast ${f.period}\n` +
         "Part 1 (4–5 phút): 12 câu, 3 chủ đề × 4 câu.\n" +

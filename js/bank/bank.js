@@ -25,7 +25,7 @@ const KIND_LABEL = {
 const MINUTES = { reading: 20, listening: 40, section: 15, mockr: 60, mockl: 40 };
 const KINDS = ["reading", "listening", "section"];
 const SKILL = { reading: "reading", listening: "listening", section: "listening", mockr: "reading", mockl: "listening" };
-const TAB_LABEL = { reading: "Reading", listening: L("Listening · cả đề", "Listening · full tests"), section: L("Listening · từng section", "Listening · sections") };
+const TAB_LABEL = { reading: "Reading", listening: L("Listening, cả đề", "Listening, full tests"), section: L("Listening, từng section", "Listening, sections") };
 
 /* ---------------- Dữ liệu ---------------- */
 let _banks = null;
@@ -69,7 +69,7 @@ async function mockItem(kind, id) {
   if (subs.length !== MOCK[kind].n || subs.some((x) => !x)) return null;
   return {
     id, mock: true, subs,
-    title: subs.map((x) => x.title).join(" · "),
+    title: subs.map((x) => x.title).join(", "),
     set: partLabel(kind),
     groups: subs.flatMap((x) => x.groups),
     key: Object.assign({}, ...subs.map((x) => x.key)),
@@ -139,10 +139,10 @@ export function renderMockStart(ctx, skill) {
         el("div", {},
           el("div", { class: "eyebrow" }, L("Đề ghép ngẫu nhiên", "Randomly built test")),
           el("h1", { style: "margin-bottom:2px" }, partLabel(kind)),
-          el("div", { class: "muted" }, L(`40 câu · ${MINUTES[kind]} phút`, `40 questions · ${MINUTES[kind]} minutes`)))),
+          el("div", { class: "muted" }, L(`40 câu, ${MINUTES[kind]} phút`, `40 questions, ${MINUTES[kind]} minutes`)))),
       el("ol", { class: "mock-parts" }, item.subs.map((x) => el("li", {},
-        el("strong", {}, kind === "mockr" ? `Passage ${x.part}` : `Section ${x.section}`), " · ", x.title,
-        el("span", { class: "tiny muted" }, ` — ${x.set ? `${x.set} · ${x.testTitle}` : ""}`)))),
+        el("strong", {}, kind === "mockr" ? `Passage ${x.part}` : `Section ${x.section}`), ", ", x.title,
+        el("span", { class: "tiny muted" }, ` — ${x.set ? `${x.set}, ${x.testTitle}` : ""}`)))),
       el("ul", { class: "muted small", style: "margin:6px 0 16px;padding-left:20px" },
         el("li", {}, kind === "mockr"
           ? L("Như thi trên máy: bài đọc bên trái, câu hỏi bên phải; chuyển Passage bằng thanh dưới cùng.", "Like the computer test: passage on the left, questions on the right; switch passages with the bar at the bottom.")
@@ -164,7 +164,7 @@ const testId = (kind, item) => `bank:${kind}:${item.id}`;
 const FORECAST = new Set(READING_FORECAST.ids);
 const FC_CHIP = "forecast";
 const partLabel = (kind, item) => (kind === "reading" ? `Passage ${item.part}` : kind === "section" ? `Section ${item.section}` : kind === "mockr" ? L("Thi thử Reading", "Reading mock test") : kind === "mockl" ? L("Thi thử Listening", "Listening mock test") : item.set || "Listening");
-const sourceLabel = (item) => `${item.set} · ${item.testTitle}`;
+const sourceLabel = (item) => `${item.set}, ${item.testTitle}`;
 
 /* ======================= Danh sách ======================= */
 export function renderBank(ctx, kind = "reading") {
@@ -255,9 +255,9 @@ function bankCard(ctx, kind, item, done) {
         kind === "reading" && FORECAST.has(item.id) ? el("span", { class: "chip chip-warn", title: READING_FORECAST.source }, L("Dự đoán", "Forecast")) : null),
       done ? el("span", { class: "chip chip-ok" }, icon("check"), `${done.raw}/${done.total}`) : el("span", { class: "tiny muted" }, L(`${n} câu`, `${n} Qs`))),
     el("div", { class: "bank-title" }, item.title),
-    kind === "reading" && item.set ? el("div", { class: "tiny muted" }, `${item.set} · ${item.testTitle}`) : null,
+    kind === "reading" && item.set ? el("div", { class: "tiny muted" }, `${item.set}, ${item.testTitle}`) : null,
     kind === "section" ? el("div", { class: "tiny muted" }, sourceLabel(item),
-      item.alsoIn?.length ? L(` · có trong ${item.alsoIn.length} đề khác`, ` · also in ${item.alsoIn.length} other test(s)`) : "") : null);
+      item.alsoIn?.length ? L(`, có trong ${item.alsoIn.length} đề khác`, `, also in ${item.alsoIn.length} other test(s)`) : "") : null);
 }
 
 const SECTION_HINT = {
@@ -332,16 +332,16 @@ function briefing(ctx, kind, item, start, hw = null, inter = null) {
     : hw.late ? el("div", { class: "notice notice-error small", style: "margin-top:12px" },
         L("Đã hết hạn nộp — lần làm này chỉ để luyện tập.", "The deadline has passed — this attempt is practice only."))
     : el("div", { class: "notice notice-info small", style: "margin-top:12px" },
-        el("strong", {}, L("Bài tập về nhà: ", "Homework: ")), hw.a.title, " · ",
+        el("strong", {}, L("Bài tập về nhà: ", "Homework: ")), hw.a.title, ", ",
         L(`hạn ${due}. Nộp xong giáo viên thấy ngay; chỉ nộp một lần.`, `due ${due}. Your teacher sees it as soon as you submit; one attempt only.`),
         integrityRules(kind));
   return el("div", { class: "card intro-card" },
     el("div", { class: "row", style: "gap:14px;margin-bottom:6px" },
       el("div", { class: `skill-ico ${SKILL[kind]}` }, icon(SKILL[kind])),
       el("div", {},
-        el("div", { class: "eyebrow" }, kind === "section" ? `Section ${item.section} · ${sourceLabel(item)}` : partLabel(kind, item)),
+        el("div", { class: "eyebrow" }, kind === "section" ? `Section ${item.section}, ${sourceLabel(item)}` : partLabel(kind, item)),
         el("h1", { style: "margin-bottom:2px" }, item.title),
-        el("div", { class: "muted" }, L(`${n} câu · ${MINUTES[kind]} phút`, `${n} questions · ${MINUTES[kind]} minutes`)))),
+        el("div", { class: "muted" }, L(`${n} câu, ${MINUTES[kind]} phút`, `${n} questions, ${MINUTES[kind]} minutes`)))),
     el("ul", { class: "muted small", style: "margin:14px 0 18px;padding-left:20px" },
       el("li", {}, inter
         ? L("Làm trực tiếp trên web như thi trên máy: chọn/gõ đáp án ngay dưới mỗi câu, có thanh số câu và nút đánh dấu để xem lại.",
@@ -417,7 +417,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
   const submitBtn = el("button", { class: "btn btn-primary btn-lg", onclick: () => doSubmit(false) }, icon("check"), L("Nộp bài", "Submit"));
   sheet.append(el("div", { class: "row", style: "margin-top:12px" }, submitBtn));
 
-  const barTitle = isMock(kind) ? partLabel(kind) : kind === "listening" ? `${item.set} · ${item.title}` : kind === "section" ? `Section ${item.section} · ${item.title}` : item.title;
+  const barTitle = isMock(kind) ? partLabel(kind) : kind === "listening" ? `${item.set}, ${item.title}` : kind === "section" ? `Section ${item.section}, ${item.title}` : item.title;
   attachHtmlHighlighter(sheet, hl);
   if (exam) attachHtmlHighlighter(exam.paper, hl);   // tô màu ngay trên bài đọc tương tác
   const bar = el("div", { class: "exam-bar" }, el("strong", {}, barTitle), timer.node, hl.toolbar, proctor?.badge, el("div", { class: "spacer" }),
@@ -445,7 +445,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
     try {
       const sub = await saveSubmission(ctx.user, {
         testId: testId(kind, item), skill: SKILL[kind], practice: true,
-        testTitle: isMock(kind) ? `${partLabel(kind)} · ${item.title}` : kind === "section" ? `Section ${item.section} · ${item.title} (${sourceLabel(item)})` : `${partLabel(kind, item)} · ${item.title}`,
+        testTitle: isMock(kind) ? `${partLabel(kind)}, ${item.title}` : kind === "section" ? `Section ${item.section}, ${item.title} (${sourceLabel(item)})` : `${partLabel(kind, item)}, ${item.title}`,
         startedAt: startedAt.toISOString(), durationSec: timer.elapsedSeconds, autoSubmitted: auto,
         raw: res.correct, total: res.total, band: bandFor(kind, res.correct, res.total),
         details: res.details, graded: true,
@@ -601,7 +601,7 @@ function pdfViewer(url, title, pages = null, hlStore = null, keyInside = false) 
 /* ----- Ô trả lời theo dạng câu hỏi ----- */
 function groupInputs(g, answers, onChange) {
   const box = el("div", { class: "qgroup" },
-    el("div", { class: "qgroup-title" }, `${L("Câu", "Questions")} ${g.from}${g.to > g.from ? `–${g.to}` : ""} · ${KIND_LABEL[g.kind] || ""}`));
+    el("div", { class: "qgroup-title" }, `${L("Câu", "Questions")} ${g.from}${g.to > g.from ? `–${g.to}` : ""}, ${KIND_LABEL[g.kind] || ""}`));
   if (g.kind === "multi") {
     const key = `g${g.from}`;
     const pick = g.to - g.from + 1;
@@ -758,8 +758,8 @@ function importCard(kind, items, folderHint) {
         } catch (err) {
           failed++; console.error(m.path, err);
         }
-        log.textContent = L(`Đã tải ${uploaded} · bỏ qua ${skipped} (đã có) · lỗi ${failed} · còn ${queue.length}`,
-          `Uploaded ${uploaded} · skipped ${skipped} (already online) · failed ${failed} · ${queue.length} left`);
+        log.textContent = L(`Đã tải ${uploaded}, bỏ qua ${skipped} (đã có), lỗi ${failed}, còn ${queue.length}`,
+          `Uploaded ${uploaded}, skipped ${skipped} (already online), failed ${failed}, ${queue.length} left`);
         bar.style.width = `${Math.round((doneBytes / total) * 100)}%`;
       }
     };
@@ -813,9 +813,9 @@ function importCard(kind, items, folderHint) {
 
 /* ======================= Giáo viên: chọn bài trong ngân hàng đề để giao bài tập ======================= */
 export function bankItemTitle(kind, item) {
-  return kind === "reading" ? `Reading · Passage ${item.part} · ${item.title}`
-    : kind === "listening" ? `Listening · ${item.set} · ${item.title}`
-    : `Listening · Section ${item.section} · ${item.title} (${sourceLabel(item)})`;
+  return kind === "reading" ? `Reading, Passage ${item.part}, ${item.title}`
+    : kind === "listening" ? `Listening, ${item.set}, ${item.title}`
+    : `Listening, Section ${item.section}, ${item.title} (${sourceLabel(item)})`;
 }
 
 /** Tìm bài theo {kind, id}: { item, title, count } hoặc null */
@@ -833,7 +833,7 @@ export function bankPicker(initial, onPick) {
   const list = el("select", { class: "pick", id: "hw-bank-item", size: 8, style: "width:100%;height:auto" });
   const chosen = el("div", { class: "small" });
   let banks = null, picked = null;
-  const label = (k, i) => (k === "reading" ? `P${i.part} · ${i.title}` : k === "listening" ? `${i.set} · ${i.title}` : `S${i.section} · ${i.title} — ${sourceLabel(i)}`);
+  const label = (k, i) => (k === "reading" ? `P${i.part}, ${i.title}` : k === "listening" ? `${i.set}, ${i.title}` : `S${i.section}, ${i.title} — ${sourceLabel(i)}`);
   const paint = () => {
     if (!banks) return;
     const k = kindSel.value, q = search.value.trim().toLowerCase();
@@ -846,7 +846,7 @@ export function bankPicker(initial, onPick) {
   const showChosen = () => {
     chosen.innerHTML = "";
     if (!picked) { chosen.append(el("span", { class: "muted" }, L("Chưa chọn bài.", "Nothing selected yet."))); return; }
-    chosen.append(icon("check"), " ", el("strong", {}, picked.title), el("span", { class: "muted" }, L(` · ${picked.count} câu`, ` · ${picked.count} questions`)));
+    chosen.append(icon("check"), " ", el("strong", {}, picked.title), el("span", { class: "muted" }, L(`, ${picked.count} câu`, `, ${picked.count} questions`)));
   };
   list.onchange = () => {
     const item = banks[kindSel.value].find((i) => i.id === list.value);

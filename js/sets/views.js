@@ -75,8 +75,8 @@ export function renderSetsHub(ctx) {
   wrap.append(el("section", {},
     el("h2", {}, L("Bộ từ có sẵn", "Ready-made decks")),
     el("div", { class: "set-grid", style: "margin-bottom:12px" },
-      setCard(ctx, "saved", L("Sổ từ của tôi", "My word bank"), "", "·"),
-      setCard(ctx, "learning", L("Từ đang học", "Words in progress"), "", "·")),
+      setCard(ctx, "saved", L("Sổ từ của tôi", "My word bank"), "", ", "),
+      setCard(ctx, "learning", L("Từ đang học", "Words in progress"), "", ", ")),
     tabs, deckBox));
   return wrap;
 }
@@ -95,7 +95,7 @@ export function renderSetDetail(ctx, ref) {
         el("div", { style: "flex:1 1 280px" },
           el("button", { class: "btn btn-ghost btn-sm", onclick: () => ctx.go("sets") }, icon("back"), L("Thư viện", "Library")),
           el("h1", { style: "margin:6px 0" }, r.title),
-          el("div", { class: "muted" }, [r.sub, L(`${r.cards.length} thẻ`, `${r.cards.length} cards`)].filter(Boolean).join(" · ")),
+          el("div", { class: "muted" }, [r.sub, L(`${r.cards.length} thẻ`, `${r.cards.length} cards`)].filter(Boolean).join(", ")),
           r.set?.desc ? el("p", {}, r.set.desc) : null),
         el("div", { class: "row wrap", style: "gap:8px" },
           r.editable ? el("button", { class: "btn btn-sm", onclick: () => ctx.go(`sets/edit/${r.set.id}`) }, icon("edit"), L("Sửa", "Edit")) : null,
@@ -155,7 +155,7 @@ function aiBox(ctx, r, teacher) {
     sample.innerHTML = "";
     r.cards.filter((c) => pack[aiKey(c.word)]).slice(0, 3).forEach((c) => {
       const it = pack[aiKey(c.word)];
-      sample.append(el("div", { class: "ai-q" }, el("div", {}, it.sentence), el("div", { class: "small" }, el("b", {}, it.answer), el("span", { class: "muted" }, "  ·  " + (it.traps || []).join(" / ")))));
+      sample.append(el("div", { class: "ai-q" }, el("div", {}, it.sentence), el("div", { class: "small" }, el("b", {}, it.answer), el("span", { class: "muted" }, ", " + (it.traps || []).join(" / ")))));
     });
   };
   async function run(redo) {

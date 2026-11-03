@@ -227,17 +227,17 @@ function reader(ctx, a) {
       if (!(await confirmDialog({ title: L("Xoá bài này?", "Delete this article?"), body: a.title, danger: true }))) return;
       await deleteArticle(a.id); ctx.go("news");
     } }, icon("trash")) : null);
-  const tip = el("div", { class: "notice notice-info small" }, L("Mẹo: bấm vào một từ để tra · bôi đen 2–6 từ để tra cụm từ / collocation · chọn màu bút rồi bôi đen để tô highlight (bấm lại màu để tắt bút).",
-    "Tip: click a word to look it up · select 2–6 words for a phrase or collocation · pick a pen colour and select text to highlight (click the colour again to stop)."));
+  const tip = el("div", { class: "notice notice-info small" }, L("Mẹo: bấm vào một từ để tra, bôi đen 2–6 từ để tra cụm từ / collocation, chọn màu bút rồi bôi đen để tô highlight (bấm lại màu để tắt bút).",
+    "Tip: click a word to look it up, select 2–6 words for a phrase or collocation, pick a pen colour and select text to highlight (click the colour again to stop)."));
   return el("div", { class: "stack" }, bar, tip, el("div", { class: "news-layout" }, article, pop), savedInArticle(ctx, a));
 }
 
 function sourceBlock(a) {
   if (a.url) return el("div", { class: "news-source" }, L("Nguồn: ", "Source: "), el("a", { href: a.url, target: "_blank", rel: "noopener" }, a.source || a.url),
-    a.license ? ` · ${a.license}` : "");
+    a.license ? `, ${a.license}` : "");
   return el("div", { class: "news-source" },
     L("Bài do i-melts biên soạn theo văn phong IELTS Reading, tổng hợp từ kiến thức khoa học phổ biến. Đọc thêm: ", "Written by i-melts in IELTS Reading style from widely reported science. Further reading: "),
-    ...(a.refs || []).flatMap((r, i) => [i ? " · " : "", el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name)]));
+    ...(a.refs || []).flatMap((r, i) => [i ? ", " : "", el("a", { href: r.url, target: "_blank", rel: "noopener" }, r.name)]));
 }
 
 /* ----- highlight: lưu theo vị trí chữ trong đoạn ----- */
@@ -386,7 +386,7 @@ function showPop(ctx, a, pop, text, sentence, rect) {
         el("button", { class: "icon-btn", title: L("Nghe", "Listen"), onclick: () => speakText(d.word) }, icon("volume"))),
       el("div", { class: "row wrap", style: "gap:6px" }, d.pos ? el("span", { class: "pos" }, d.pos) : null,
         d.level ? el("span", { class: "chip chip-lv" }, d.level) : null,
-        d.ai ? el("span", { class: "tiny muted" }, L("· AI tra theo ngữ cảnh", "· AI, in context")) : null),
+        d.ai ? el("span", { class: "tiny muted" }, L(", AI tra theo ngữ cảnh", ", AI, in context")) : null),
       d.vi ? el("div", { class: "word-pop-vi" }, d.vi) : null,
       d.def ? el("div", { class: "small muted" }, d.def) : null,
       d.colloc?.length ? el("div", { class: "stack-sm" }, el("div", { class: "tiny strong" }, "Collocations"),
@@ -408,13 +408,13 @@ function saveBox(ctx, a, d) {
   const all = lsGet(K.words(uid), {});
   const note = el("textarea", { class: "word-pop-note", rows: 2, placeholder: L("Ghi chú của bạn: collocation, ví dụ tự đặt…", "Your note: collocations, your own example…") });
   note.value = all[k]?.note || "";
-  const btn = el("button", { class: "btn btn-sm " + (all[k] ? "" : "btn-primary") }, icon("bookmark"), all[k] ? L("Đã lưu · cập nhật", "Saved · update") : L("Lưu từ", "Save word"));
+  const btn = el("button", { class: "btn btn-sm " + (all[k] ? "" : "btn-primary") }, icon("bookmark"), all[k] ? L("Đã lưu, cập nhật", "Saved, update") : L("Lưu từ", "Save word"));
   btn.onclick = () => {
     const cur = lsGet(K.words(uid), {});
     cur[k] = { word: d.word, ipa: d.ipa || "", pos: d.pos || "", level: d.level || "", vi: d.vi || "", def: d.def || "", colloc: d.colloc || [],
       note: note.value.trim(), sentence: d.sentence || "", articleId: a.id, title: a.title, savedAt: cur[k]?.savedAt || Date.now() };
     lsSet(K.words(uid), cur);
-    btn.className = "btn btn-sm"; btn.lastChild.textContent = L("Đã lưu · cập nhật", "Saved · update");
+    btn.className = "btn btn-sm"; btn.lastChild.textContent = L("Đã lưu, cập nhật", "Saved, update");
     toast(L(`Đã lưu “${d.word}”`, `Saved “${d.word}”`), "ok");
     document.dispatchEvent(new CustomEvent("news-words"));
   };
@@ -451,14 +451,14 @@ function savedWordsView(ctx) {
       toSet.disabled = true;
       try {
         const id = await saveSet(ctx.user, { title: L("Từ đọc báo khoa học", "Science reading words"), desc: L("Lưu từ mục Đọc báo", "Saved while reading"),
-          cards: ws.map(([, w]) => ({ t: w.word, d: [w.vi || w.def, w.ipa].filter(Boolean).join(" · ") || w.note || "—" })) });
+          cards: ws.map(([, w]) => ({ t: w.word, d: [w.vi || w.def, w.ipa].filter(Boolean).join(", ") || w.note || "—" })) });
         toast(L("Đã tạo học phần", "Study set created"), "ok");
         ctx.go(`set/my:${id}`);
       } catch (err) { toSet.disabled = false; toast(err.message, "err", 6000); }
     };
     box.replaceChildren(
       el("div", { class: "row wrap", style: "gap:10px" }, el("span", { class: "muted small", style: "flex:1" },
-        L(`${ws.length} từ · lưu trên trình duyệt này`, `${ws.length} words · saved in this browser`)), toSet),
+        L(`${ws.length} từ, lưu trên trình duyệt này`, `${ws.length} words, saved in this browser`)), toSet),
       el("div", { class: "card card-flush" }, el("div", { class: "word-list" }, ws.map(([k, w]) => {
         const note = el("textarea", { class: "word-pop-note", rows: 2 });
         note.value = w.note || "";

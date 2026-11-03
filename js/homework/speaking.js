@@ -179,7 +179,7 @@ function turnRecorder(turn, index, state, onChange) {
     player.innerHTML = "";
     if (r) {
       status.className = "chip chip-ok";
-      status.textContent = `${L("Đã ghi", "Recorded")} · ${fmtClock(r.seconds)}`;
+      status.textContent = `${L("Đã ghi", "Recorded")}, ${fmtClock(r.seconds)}`;
       player.append(el("audio", { controls: "", src: r.url }));
       recordBtn.innerHTML = ""; recordBtn.append(icon("refresh"), L("Ghi lại", "Re-record"));
       recordBtn.className = "btn btn-sm";

@@ -168,7 +168,7 @@ function flash(body, { ctx, r, cards, opts, again }) {
       el("div", { class: "row", style: "justify-content:center;gap:14px" },
         el("button", { class: "btn btn-ghost btn-sm", disabled: i ? null : "", onclick: () => { if (i) { i--; paint(); } } }, icon("back"), L("Thẻ trước", "Previous")),
         count),
-      el("p", { class: "muted small center" }, L("Phím tắt: Space lật · ← chưa thuộc · → đã thuộc", "Keys: Space flip · ← still learning · → know it"))));
+      el("p", { class: "muted small center" }, L("Phím tắt: Space lật, ← chưa thuộc, → đã thuộc", "Keys: Space flip, ← still learning, → know it"))));
   }
   mount(); paint();
 

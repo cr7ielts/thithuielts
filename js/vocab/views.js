@@ -158,7 +158,7 @@ function deckLibrary(ctx) {
     tabs.querySelectorAll("button").forEach((b) => b.classList.toggle("on", !q && b.dataset.s === pref.series));
     filters.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.dataset.f === pref.filter));
     const n = ds.reduce((k, d) => k + d.words.length, 0);
-    count.textContent = L(`${ds.length} bộ · ${n} từ`, `${ds.length} decks · ${n} words`);
+    count.textContent = L(`${ds.length} bộ, ${n} từ`, `${ds.length} decks, ${n} words`);
     grid.replaceChildren(...(ds.length ? ds.map((d) => deckCard(d, ctx, prog.get(d.id)))
       : [el("p", { class: "muted" }, L("Không có bộ nào khớp.", "No decks match."))]));
     savePref({ series: pref.series, filter: pref.filter });
@@ -231,10 +231,10 @@ export function renderDeck(ctx, deckId) {
       el("div", { class: "deck-ico lg" }, icon(d.icon)),
       el("div", { style: "flex:1;min-width:220px" },
         el("h1", { class: "mb-0" }, d.title),
-        el("div", { class: "muted" }, `${d.sub} · ${L(`${p.total} từ`, `${p.total} words`)}`),
+        el("div", { class: "muted" }, `${d.sub}, ${L(`${p.total} từ`, `${p.total} words`)}`),
         el("div", { class: "progress", style: "margin-top:12px;max-width:360px" }, el("span", { style: `width:${p.pct}%` })),
         el("div", { class: "tiny muted", style: "margin-top:6px" },
-          L(`Đã học ${p.learned} · Cần ôn ${p.due} · Đã thuộc ${p.mastered}`, `Learned ${p.learned} · Due ${p.due} · Mastered ${p.mastered}`))),
+          L(`Đã học ${p.learned}, Cần ôn ${p.due}, Đã thuộc ${p.mastered}`, `Learned ${p.learned}, Due ${p.due}, Mastered ${p.mastered}`))),
       el("div", { class: "row wrap", style: "gap:10px" },
         el("button", {
           class: "btn btn-primary btn-lg", disabled: p.due || fresh ? null : "",
@@ -268,7 +268,7 @@ function wordRow(w) {
         el("strong", { class: "word" }, w.word),
         el("span", { class: "ipa" }, w.ipa),
         el("span", { class: "pos" }, w.pos)),
-      el("div", { class: "vi" }, meaning(w), altMeaning(w) ? el("span", { class: "alt" }, ` · ${altMeaning(w)}`) : null),
+      el("div", { class: "vi" }, meaning(w), altMeaning(w) ? el("span", { class: "alt" }, `, ${altMeaning(w)}`) : null),
       el("div", { class: "example" }, w.example)),
     el("span", { class: `status status-${st}` }, STATUS_LABEL[st]),
     saveBtn);
