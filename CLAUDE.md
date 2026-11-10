@@ -28,6 +28,7 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
 - Giải thích Listening: transcript `tools/transcripts/` + `tools/explain_listening/` → `gen_explain_listening.py`.
 - Từ vựng: `js/data/vocab.js` (bộ IELTS, series `ielts`), `vocab-evu.js` (English Vocabulary in Use, `evu`), `vocab-ows.js` (Oxford Word Skills, `ows`). Mỗi từ `[word, ipa, pos, vi, def, example]`; `def` rỗng thì web dùng nghĩa Việt. Phiên âm 2 bộ sách sinh tự động từ từ điển CMU.
 - Dự đoán Reading kỳ hiện tại: `js/data/reading-forecast.js`.
+- Đề mới tự nhập: `cap-nhat-de.cmd` (máy giáo viên) → `tools/import_new.py` đọc `OneDrive\2. IELTS\DE MOI\{READING,LISTENING}\<tên đề>\`; Reading ghi vào `bank-extra.js`, Listening vào `bank-listening-new.js` + audio chép vào `media/listening/<id>/` (gitignore, lên hosting qua deploy). Bài đọc không chắc chắn thì bỏ qua và báo lỗi.
 
 ## Việc còn dở
 - 10 đề Listening chưa có bản làm trên máy: forecast-06, 08, 10, 13, 16, 17, 18, 19, dudoan-02, vol8-02.

@@ -31,16 +31,18 @@ const TAB_LABEL = { reading: "Reading", listening: L("Listening, cả đề", "L
 let _banks = null;
 async function loadBanks() {
   if (_banks) return _banks;
-  const [r, v9, v8, ex, l] = await Promise.all([
+  const [r, v9, v8, ex, l, ln] = await Promise.all([
     import("../data/bank-reading.js").then((m) => m.READING_BANK).catch(() => []),
     import("../data/bank-vol9.js").then((m) => m.VOL9_READING).catch(() => []),
     import("../data/bank-vol8.js").then((m) => m.VOL8_READING).catch(() => []),
     import("../data/bank-extra.js").then((m) => m.EXTRA_READING).catch(() => []),
     import("../data/bank-listening.js").catch(() => ({})),
+    import("../data/bank-listening-new.js").catch(() => ({})),   // đề mới nhập bằng cap-nhat-de.cmd
   ]);
   // Actual Test Vol 8/9 và đề sưu tầm không có file PDF: làm thẳng trên web, xếp cùng danh sách Reading
   const reading = [...r, ...v9, ...v8, ...ex].sort((a, b) => a.part - b.part || a.title.localeCompare(b.title));
-  _banks = { reading, listening: l.LISTENING_BANK || [], section: l.LISTENING_SECTIONS || [] };
+  _banks = { reading, listening: [...(l.LISTENING_BANK || []), ...(ln.NEW_LISTENING_BANK || [])],
+    section: [...(l.LISTENING_SECTIONS || []), ...(ln.NEW_LISTENING_SECTIONS || [])] };
   return _banks;
 }
 
@@ -52,6 +54,7 @@ export function filesOf(kind, item) {
 
 export async function fileUrl(path) {
   if (!isConfigured) return path; // chế độ thử: đọc file tĩnh cùng thư mục web
+  if (path.startsWith("media/")) return path;   // đề mới (cap-nhat-de.cmd): audio nằm trên hosting, không qua Storage
   if (globalThis.BANK_FILE_BASE) return globalThis.BANK_FILE_BASE + path;   // trang thử tools/reviewtest.html
   const { storage, stMod } = await initFirebase();
   return stMod.getDownloadURL(stMod.ref(storage, path));
