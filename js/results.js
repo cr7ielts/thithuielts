@@ -21,7 +21,7 @@ export function renderResult(ctx, sub) {
         el("div", { class: "row", style: "gap:14px;margin-bottom:4px" },
           el("div", { class: "skill-ico " + sub.skill }, icon(sub.skill)),
           el("h1", { style: "margin:0" }, SKILL_LABEL[sub.skill] || sub.skill)),
-        el("div", { class: "muted" }, sub.testTitle ? `${L("Ngân hàng đề", "Question bank")} · ${sub.testTitle}` : sub.testId),
+        el("div", { class: "muted" }, sub.testTitle ? `${L("Ngân hàng đề", "Question bank")}, ${sub.testTitle}` : sub.testId),
         el("div", { class: "row wrap", style: "margin-top:12px;gap:8px" },
           el("span", { class: "badge badge-brand" }, `${L("Nộp lúc", "Submitted")}: ${fmtDateTime(sub.submittedAt)}`),
           el("span", { class: "badge" }, `${L("Thời gian làm", "Time taken")}: ${fmtDuration(sub.durationSec)}`),
@@ -146,7 +146,7 @@ function stat(k, v) {
 
 /** Bài Reading/Listening trong ngân hàng đề: mở trang xem lại (bài đọc hoặc lời thoại + nghe lại), giải thích */
 function reviewLink(ctx, sub) {
-  const m = /^bank:(reading|listening|section):(.+)$/.exec(sub.testId || "");
+  const m = /^bank:(reading|listening|section|mockr|mockl):(.+)$/.exec(sub.testId || "");
   if (!m || !sub.details?.length) return null;
   return el("div", { class: "card rv-cta row wrap" },
     el("span", { class: "rv-cta-ic" }, icon("search")),
@@ -171,7 +171,7 @@ function reviewCard(sub) {
             el("div", { class: "small", style: "margin-top:4px" },
               el("span", { class: "dim" }, L("Bạn trả lời: ", "Your answer: ")),
               el("span", { style: "font-weight:800" }, d.given || L("(bỏ trống)", "(blank)")),
-              d.ok ? null : el("span", {}, "  ·  "),
+              d.ok ? null : el("span", {}, ", "),
               d.ok ? null : el("span", { class: "dim" }, L("Đáp án: ", "Answer: ")),
               d.ok ? null : el("span", { class: "ans-key" }, d.key))),
           el("span", { class: "badge " + (d.ok ? "badge-green" : "badge-red") }, d.ok ? L("Đúng", "Correct") : L("Sai", "Wrong"))))
@@ -350,7 +350,7 @@ function studentTable(students, counts, onView) {
       el("td", {}, st.createdAt ? fmtDateTime(st.createdAt) : "—"),
       el("td", {}, st.lastLoginAt ? fmtDateTime(st.lastLoginAt) : "—"),
       el("td", {}, String(n)),
-      el("td", {}, `${L("Cấp", "Lv")} ${st.level ?? 1} · ${st.xp ?? 0} XP`),
+      el("td", {}, `${L("Cấp", "Lv")} ${st.level ?? 1}, ${st.xp ?? 0} XP`),
       el("td", {}, n ? el("button", { class: "btn btn-sm", onclick: () => onView(st.uid) }, L("Xem bài", "View work")) : null)));
   }
   table.append(tbody);
@@ -370,7 +370,7 @@ function submissionTable(list, ctx, showStudent) {
   const tbody = el("tbody");
   for (const s of list) {
     const score = (s.skill === "listening" || s.skill === "reading")
-      ? `${s.raw}/${s.total}${hasBand(s) ? ` · Band ${Number(s.band).toFixed(1)}` : ""}`
+      ? `${s.raw}/${s.total}${hasBand(s) ? `, Band ${Number(s.band).toFixed(1)}` : ""}`
       : (s.teacherBand != null ? `Band ${Number(s.teacherBand).toFixed(1)}` : L("chờ chấm", "awaiting mark"));
     tbody.append(el("tr", {},
       showStudent ? el("td", {}, el("div", {}, s.name || "—"), el("div", { class: "tiny dim" }, s.email || "")) : null,

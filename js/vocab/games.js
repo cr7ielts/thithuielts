@@ -5,6 +5,9 @@ import { createCat, praise, comfort } from "../cat.js";
 import { DECKS, ALL_WORDS, meaning } from "../data/vocab.js";
 import { poolFor, recordGame, bestScore, savedWords } from "./progress.js";
 import { L } from "../i18n.js";
+import { makeQuestion } from "../sets/qgen.js";
+import { levelOf, record, pickAdaptive } from "../sets/mastery.js";
+import { loadPackFor } from "../sets/ai-qgen.js";
 
 export const GAMES = [
   { id: "match", name: L("Ghép cặp", "Word Match"), icon: "grid", color: "#7c8cf0",
@@ -409,7 +412,10 @@ function playSpell(g, pool) {
 /* ======================= 4. TRẮC NGHIỆM TỐC ĐỘ ======================= */
 function playQuiz(g, pool) {
   const TOTAL = 15, LIMIT = 7;
-  const qs = shuffle(pool).slice(0, Math.min(TOTAL, pool.length));
+  const qs = pickAdaptive(pool, Math.min(TOTAL, pool.length));   // ưu tiên từ hay sai, chưa chắc
+  let aiPack = null;
+  const decks = [...new Set(qs.map((w) => w.deckId))];
+  Promise.all(decks.slice(0, 8).map((d) => loadPackFor({ cards: ALL_WORDS.filter((x) => x.deckId === d) }))).then((ps) => { aiPack = Object.assign({}, ...ps); }).catch(() => {});
   let i = 0, combo = 0, correct = 0;
   const round = el("span", { class: "score-pill" }, `1/${qs.length}`);
   const comboPill = el("span", { class: "score-pill combo hidden" }, "x1");
@@ -424,33 +430,32 @@ function playQuiz(g, pool) {
     if (!g.alive()) return;
     if (i >= qs.length) return g.over(L(`Đúng ${correct}/${qs.length} câu.`, `${correct}/${qs.length} correct.`));
     const w = qs[i];
-    const reverse = i % 3 === 2; // mỗi câu thứ 3: cho nghĩa, chọn từ
     round.textContent = `${i + 1}/${qs.length}`;
-    const distract = shuffle(ALL_WORDS.filter((x) => x.id !== w.id && x.pos === w.pos)).slice(0, 3);
-    while (distract.length < 3) distract.push(shuffle(ALL_WORDS.filter((x) => x.id !== w.id && !distract.includes(x)))[0]);
-    const options = shuffle([w, ...distract]);
+    // câu theo năng lực từng từ: từ đã chắc thì hỏi điền vào câu / chính tả / đáp án bẫy, từ mới thì hỏi nghĩa
+    const q = makeQuestion(w, { level: Math.min(2, levelOf(w) + (i >= qs.length / 2 ? 1 : 0)), pool: ALL_WORDS.filter((x) => x.deckId === w.deckId).length >= 8 ? ALL_WORDS.filter((x) => x.deckId === w.deckId) : ALL_WORDS, ai: aiPack, only: "mc" });
 
     let answered = false;
     const start = Date.now();
     const yarn = track.firstChild;
+    const limit = LIMIT + (q.kind === "cloze" ? 4 : 0);
     yarn.style.transition = "none";
     yarn.style.left = "0%";
     void yarn.offsetWidth;
-    yarn.style.transition = `left ${LIMIT}s linear`;
+    yarn.style.transition = `left ${limit}s linear`;
     yarn.style.left = "calc(100% - 34px)";
 
-    const timeout = setTimeout(() => answer(null), LIMIT * 1000);
+    const timeout = setTimeout(() => answer(-1), limit * 1000);
 
     qBox.innerHTML = "";
     qBox.append(
       el("div", { class: "quiz-q" },
-        el("div", { class: "tiny muted" }, reverse ? L("Từ tiếng Anh nào mang nghĩa", "Which word means") : L("Nghĩa của từ", "What does this word mean?")),
-        el("div", { class: "quiz-word" }, reverse ? meaning(w) : w.word),
-        reverse ? null : el("div", { class: "ipa" }, w.ipa)),
+        el("div", { class: "tiny muted" }, q.label),
+        el("div", { class: "quiz-word" + (q.prompt.length > 40 ? " long" : "") }, q.prompt),
+        q.sub ? el("div", { class: q.kind === "mean" ? "ipa" : "tiny muted" }, q.sub) : null),
       el("div", { class: "quiz-options" },
-        options.map((o, k) => el("button", { class: "opt", dataset: { id: o.id }, onclick: (e) => answer(o, e.currentTarget) },
-          el("kbd", {}, k + 1), reverse ? o.word : meaning(o)))));
-    if (!reverse) speakText(w.word);
+        q.options.map((o, k) => el("button", { class: "opt", dataset: { k }, onclick: (e) => answer(k, e.currentTarget) },
+          el("kbd", {}, k + 1), o))));
+    if (q.speak) speakText(q.speak);
 
     const keyer = (e) => {
       if (!g.alive()) return window.removeEventListener("keydown", keyer);
@@ -466,11 +471,13 @@ function playQuiz(g, pool) {
       window.removeEventListener("keydown", keyer);
       const leftPx = parseFloat(getComputedStyle(yarn).left);
       yarn.style.transition = "none"; yarn.style.left = `${leftPx}px`;
-      const ok = o && o.id === w.id;
+      const ok = o === q.answer;
+      record(w, ok, q.level);
       qBox.querySelectorAll(".opt").forEach((b) => {
         b.disabled = true;
-        if (b.dataset.id === w.id) b.classList.add("ok");
+        if (+b.dataset.k === q.answer) b.classList.add("ok");
       });
+      if (q.explain) qBox.append(el("div", { class: "small muted center" }, q.explain));
       if (ok) {
         correct++; combo++;
         const secs = Math.max(0, LIMIT - (Date.now() - start) / 1000);
@@ -482,10 +489,10 @@ function playQuiz(g, pool) {
         combo = 0;
         comboPill.classList.add("hidden");
         btn?.classList.add("bad");
-        g.cat.react(false, o ? comfort() : L("Cuộn len tới rồi!", "The yarn got here first!"));
+        g.cat.react(false, o >= 0 ? comfort() : L("Cuộn len tới rồi!", "The yarn got here first!"));
       }
       i++;
-      setTimeout(next, ok ? 700 : 1500);
+      setTimeout(next, ok ? 700 : q.explain ? 2600 : 1600);
     }
   }
 }

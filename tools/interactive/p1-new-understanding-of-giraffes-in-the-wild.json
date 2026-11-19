@@ -47,22 +47,42 @@
     {
      "level": 0,
      "bullet": "",
-     "text": "Physical features Study findings"
+     "text": "Physical features → study findings"
     },
     {
      "level": 0,
-     "bullet": "",
-     "text": "Skin/Coat � Provides {{8}} when standing near trees Eyes � Let them look out for lions Mouth � Can be used like {{9}} to get leaves Neck � About equal in length to the legs"
-    },
-    {
-     "level": 2,
      "bullet": "•",
-     "text": "Length develops in childhood to provide an easier {{10}}"
+     "text": "Skin / coat: provides {{8}} when standing near trees"
     },
     {
-     "level": 2,
-     "bullet": "",
-     "text": "for mothers Cardiovascular � Extra strong {{11}} keep blood from spilling into other system tissue {{12}} � Normal size for such a large animal Nerves � Slower reaction time because {{13}} need to go farther to the brain"
+     "level": 0,
+     "bullet": "•",
+     "text": "Eyes: let them look out for lions"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Mouth: can be used like {{9}} to get leaves"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Neck: about equal in length to the legs; length develops in childhood to provide an easier {{10}} for mothers"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Cardiovascular system: extra strong {{11}} keep blood from spilling into other tissue"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "{{12}}: normal size for such a large animal"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Nerves: slower reaction time because {{13}} need to go farther to the brain"
     }
    ],
    "noteTitle": "Giraffes: body structure"

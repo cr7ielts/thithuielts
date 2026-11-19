@@ -22,7 +22,7 @@ function briefing(ctx, view) {
       el("div", { class: "skill-ico writing" }, icon("writing")),
       el("div", {},
         el("h1", { style: "margin-bottom:2px" }, "Writing"),
-        el("div", { class: "muted" }, L(`2 task · ${DURATION.writing} phút`, `2 tasks · ${DURATION.writing} minutes`)))
+        el("div", { class: "muted" }, L(`2 task, ${DURATION.writing} phút`, `2 tasks, ${DURATION.writing} minutes`)))
     ),
     el("div", {
       class: "notice notice-info", style: "margin:16px 0",
@@ -79,7 +79,7 @@ function examUI(ctx, proctor) {
 
   TEST.writing.tasks.forEach((t, i) => {
     tabs.append(el("button", { class: "btn btn-sm", onclick: () => show(i) },
-      `${t.title} · ${t.minutes} ${L("phút", "min")}`));
+      `${t.title}, ${t.minutes} ${L("phút", "min")}`));
   });
   function show(i) {
     [...tabs.children].forEach((b, j) => b.classList.toggle("btn-primary", i === j));

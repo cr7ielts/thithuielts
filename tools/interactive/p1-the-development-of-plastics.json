@@ -6,80 +6,120 @@
    "from": 1,
    "to": 7,
    "kind": "gap",
-   "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from the passage for each answer. Name Date Early types of plastic Common uses Celluloid 1860s Country Properties of origin USA can be soften and � billiard balls reshaped by heat (original use)",
+   "instruction": "Complete the table below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
    "notes": [
     {
      "level": 0,
      "bullet": "",
-     "text": "Celluloid 1860s"
+     "text": "Celluloid · 1860s · USA"
     },
     {
-     "level": 2,
-     "bullet": "",
-     "text": "Country Properties"
-    },
-    {
-     "level": 2,
-     "bullet": "",
-     "text": "of origin USA can be soften and � billiard balls reshaped by heat (original use) {{2}} 1907 USA can't be softened after � cutlery {{4}} setting; good insulator; � clothing Polythene 1930s resistant to water and � {{1}} acid"
-    },
-    {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "{{3}} can be softened and � household reshaped by heat object"
+     "text": "properties: can be softened and reshaped by heat"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "common uses: billiard balls (original use); {{1}}"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Polypropylene 1950s"
+     "text": "{{2}} · 1907 · USA"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "bottles Rigid PVC is {{5}} � pipes"
+     "text": "properties: can't be softened after setting; good insulator; resistant to water and acid"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "plastic bags"
-    },
-    {
-     "level": 2,
-     "bullet": "•",
-     "text": "bottles"
-    },
-    {
-     "level": 2,
-     "bullet": "•",
-     "text": "pipes"
-    },
-    {
-     "level": 2,
-     "bullet": "•",
-     "text": "plastic bags"
-    },
-    {
-     "level": 2,
-     "bullet": "•",
-     "text": "external piping Soft PVC � outdoor clothing"
+     "text": "common uses: {{3}}; household objects"
     },
     {
      "level": 0,
      "bullet": "",
-     "text": "Polystyrene"
+     "text": "Polythene · 1930s · {{4}}"
     },
     {
-     "level": 2,
-     "bullet": "",
-     "text": "1930s Germany resembles {{6}} � food containers"
-    },
-    {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "toy Polyurethane Germany usually manufactured as � insulation a {{7}}"
+     "text": "properties: can be softened and reshaped by heat"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "common uses: bottles, pipes, plastic bags"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Polypropylene · 1950s"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "common uses: bottles, pipes, plastic bags"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Rigid PVC"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "properties: is {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "common uses: external piping"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Soft PVC"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "common uses: outdoor clothing"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Polystyrene · 1930s · Germany"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "properties: resembles {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "common uses: food containers, toys"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Polyurethane · Germany"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "properties: usually manufactured as a {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "common uses: insulation"
     }
    ],
-   "noteTitle": "Name          Date     Early types of plastic           Common uses"
+   "noteTitle": "Early types of plastic"
   },
   {
    "from": 8,

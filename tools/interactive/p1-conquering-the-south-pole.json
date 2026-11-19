@@ -42,35 +42,55 @@
    "from": 8,
    "to": 13,
    "kind": "gap",
-   "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer. Amundsen Scott",
+   "instruction": "Complete the table below. Choose ONE WORD ONLY from the passage for each answer.",
    "notes": [
     {
      "level": 0,
      "bullet": "",
-     "text": "Transport � used dogs and sledges for � used ponies (which needed to Food depots carrying supplies have their food carried) General outlook"
+     "text": "Transport"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "used {{8}} for their own � used motor sledges (which transport needed fuel and {{9}})"
+     "text": "Amundsen: used dogs and sledges for carrying supplies; used {{8}} for their own transport"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "many food depots clearly � fewer food depots, with food marked with stones and providing insufficient calories {{10}} and lacking important {{11}}"
+     "text": "Scott: used ponies (which needed to have their food carried); used motor sledges (which needed fuel and {{9}})"
     },
     {
-     "level": 2,
-     "bullet": "•",
-     "text": "plenty of food"
+     "level": 0,
+     "bullet": "",
+     "text": "Food depots"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "{{12}} was not regarded � {{13}} was seen as the as an acceptable option most important personal quality"
+     "text": "Amundsen: many food depots, clearly marked with {{10}}; plenty of food"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Scott: fewer food depots, with food marked with stones; food providing insufficient calories and lacking important {{11}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "General outlook"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Amundsen: {{12}} was not regarded as an acceptable option"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Scott: {{13}} was seen as the most important personal quality"
     }
    ],
-   "noteTitle": "Amundsen                               Scott"
+   "noteTitle": "Amundsen and Scott"
   }
  ],
  "passage": {

@@ -3,6 +3,8 @@ chcp 65001 >nul
 title Cap nhat web IELTS Mock
 cd /d "%~dp0"
 set FIREBASE=%APPDATA%\npm\firebase.cmd
+rem Tai khoan Google so huu Firebase project xamenglish-d8ebd (may co the dang nhap nhieu tai khoan cung luc)
+set ACCOUNT=nguyennhatkha812@gmail.com
 
 rem ---- Lay ban moi nhat tu GitHub (dung nhanh dang mo) truoc khi deploy ----
 where git >nul 2>nul
@@ -31,17 +33,25 @@ pause
 exit /b 1
 
 :deploy
+call "%FIREBASE%" login:list 2>nul | findstr /i /c:"%ACCOUNT%" >nul
+if not errorlevel 1 goto deploy2
+echo.
+echo  Chua dang nhap tai khoan %ACCOUNT% tren may nay.
+echo  Trinh duyet se mo: chon dung tai khoan %ACCOUNT%. Tai khoan cu van giu nguyen.
+call "%FIREBASE%" login:add %ACCOUNT%
+
+:deploy2
 echo.
 echo  Dang dua ban moi nhat len https://xamenglish-d8ebd.web.app ...
 echo.
-call "%FIREBASE%" deploy --only hosting,firestore,storage
+call "%FIREBASE%" deploy --only hosting,firestore,storage --account %ACCOUNT%
 if not errorlevel 1 goto ok
 
 echo.
 echo  [!] Lan 1 khong xong (thuong do mang chap chon). Thu lai sau 8 giay...
 timeout /t 8 /nobreak >nul
 echo.
-call "%FIREBASE%" deploy --only hosting,firestore,storage
+call "%FIREBASE%" deploy --only hosting,firestore,storage --account %ACCOUNT%
 if not errorlevel 1 goto ok
 
 echo.

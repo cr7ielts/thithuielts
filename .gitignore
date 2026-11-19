@@ -11,3 +11,6 @@ __pycache__/
 tools/ls/
 tools/wav/
 tools/docx/
+
+# Audio đề mới (cap-nhat-de.cmd chép vào, deploy.cmd đưa lên hosting) — nặng, không đưa lên GitHub
+media/
