@@ -81,17 +81,6 @@ body::after { right: 0; top: 0; transform: rotate(180deg); transform-origin: 100
 .app, .shell { position: relative; z-index: 1; }
 
 /* ---------- lá rơi (do js/leaves.js tạo) ---------- */
-.leaf-fall { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-.leaf { position: absolute; top: -40px; left: var(--x); width: var(--s); height: var(--s); color: var(--c); opacity: 0;
-  animation: leaf-drop var(--d) linear var(--dl) infinite; }
-.leaf svg { width: 100%; height: 100%; display: block; animation: leaf-swing var(--sw) ease-in-out var(--dl) infinite alternate; }
-@keyframes leaf-drop {
-  0% { transform: translate3d(0, 0, 0); opacity: 0; }
-  8% { opacity: .75; }
-  90% { opacity: .6; }
-  100% { transform: translate3d(var(--dx), 108vh, 0); opacity: 0; }
-}
-@keyframes leaf-swing { from { transform: rotate(-35deg) translateX(-14px); } to { transform: rotate(40deg) translateX(14px); } }
 
 /* ---------- khung: viền đung đưa như cành cây ---------- */
 .card, .modal, .set-card, .hw-card, .home-hero, .vocab-hero, .games-hero { position: relative; }
@@ -197,7 +186,6 @@ code { background: var(--fur-soft); color: var(--wood); }
 
 /* ---------- giảm chuyển động ---------- */
 @media (prefers-reduced-motion: reduce) {
-  .leaf-fall { display: none; }
   body::before, body::after, .card::before, .modal::before, .set-card::before, .hw-card::before,
   .toast, .modal, .card, .set-card, .hw-card { animation: none !important; }
 }

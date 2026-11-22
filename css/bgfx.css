@@ -1,0 +1,45 @@
+/* Hiệu ứng nền động theo bộ giao diện. Phần tử do js/bgfx.js tạo; chỉ lớp khớp html[data-skin] được hiện. */
+.bgfx { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; display: none; }
+html[data-skin="vintage"] .bgfx-vintage, html[data-skin="sakura"] .bgfx-sakura, html[data-skin="ocean"] .bgfx-ocean,
+html[data-skin="glass"] .bgfx-glass, html[data-skin="neon"] .bgfx-neon, html[data-skin="mono"] .bgfx-mono,
+html[data-skin="classic"] .bgfx-classic { display: block; }
+.bgfx span { position: absolute; left: var(--x); top: var(--y, auto); width: var(--s); height: var(--s); will-change: transform, opacity; }
+.app { position: relative; z-index: 1; }
+
+/* lá / cánh hoa rơi */
+.fx-fall { top: -40px !important; color: var(--c); opacity: 0; animation: fx-drop var(--d) linear var(--dl) infinite; }
+.fx-fall svg { width: 100%; height: 100%; display: block; animation: fx-swing var(--sw) ease-in-out var(--dl) infinite alternate; }
+.fx-petal { filter: drop-shadow(0 2px 3px rgba(190, 24, 93, .18)); }
+@keyframes fx-drop { 0% { transform: translate3d(0, 0, 0); opacity: 0; } 8% { opacity: .75; } 90% { opacity: .6; } 100% { transform: translate3d(var(--dx), 108vh, 0); opacity: 0; } }
+@keyframes fx-swing { from { transform: rotate(-35deg) translateX(-14px); } to { transform: rotate(40deg) translateX(14px); } }
+
+/* bọt nước nổi lên */
+.fx-bubble { top: auto !important; bottom: -30px; border-radius: 50%; opacity: 0;
+  background: radial-gradient(circle at 32% 30%, rgba(255, 255, 255, .9), rgba(255, 255, 255, .15) 45%, rgba(14, 165, 183, .18) 70%);
+  border: 1px solid rgba(255, 255, 255, .55); animation: fx-rise var(--d) ease-in var(--dl) infinite; }
+@keyframes fx-rise { 0% { transform: translate3d(0, 0, 0); opacity: 0; } 10% { opacity: .8; } 50% { transform: translate3d(var(--dx), -55vh, 0); }
+  95% { opacity: .5; } 100% { transform: translate3d(calc(var(--dx) * -1), -110vh, 0); opacity: 0; } }
+
+/* quả cầu màu trôi (kính) */
+.fx-orb { border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--c) 45%, transparent), transparent 68%);
+  filter: blur(18px); opacity: .55; animation: fx-drift var(--d) ease-in-out var(--dl) infinite alternate; }
+@keyframes fx-drift { from { transform: translate3d(0, 0, 0) scale(1); } to { transform: translate3d(var(--dx), var(--dy), 0) scale(1.25); } }
+
+/* hạt neon nhấp nháy + lưới chạy */
+.bgfx-neon::before { content: ""; position: absolute; inset: -60px 0 0; opacity: .25;
+  background-image: linear-gradient(rgba(34, 211, 238, .25) 1px, transparent 1px), linear-gradient(90deg, rgba(232, 121, 249, .2) 1px, transparent 1px);
+  background-size: 60px 60px; mask-image: linear-gradient(to top, #000 0%, transparent 65%); -webkit-mask-image: linear-gradient(to top, #000 0%, transparent 65%);
+  animation: fx-grid 6s linear infinite; }
+@keyframes fx-grid { to { transform: translateY(60px); } }
+.fx-spark { border-radius: 50%; background: var(--c); box-shadow: 0 0 8px 2px var(--c); animation: fx-blink var(--d) ease-in-out var(--dl) infinite; }
+@keyframes fx-blink { 0%, 100% { opacity: .1; transform: scale(.6); } 50% { opacity: .9; transform: scale(1.2); } }
+
+/* chấm mảnh (tối giản) */
+.fx-dot { border-radius: 50%; background: var(--ink-3); opacity: .35; animation: fx-drift var(--d) ease-in-out var(--dl) infinite alternate; }
+
+/* hình tròn lơ lửng (cổ điển) */
+.fx-float { border-radius: 50%; border: 2px solid color-mix(in srgb, var(--c) 30%, transparent); background: color-mix(in srgb, var(--c) 6%, transparent);
+  animation: fx-bob var(--d) ease-in-out var(--dl) infinite alternate; }
+@keyframes fx-bob { from { transform: translateY(-18px) rotate(0); } to { transform: translateY(18px) rotate(20deg); } }
+
+@media (prefers-reduced-motion: reduce) { .bgfx { display: none !important; } }
