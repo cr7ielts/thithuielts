@@ -1,0 +1,13 @@
+/* SAKURA — hồng anh đào + tím nhạt, nạp sau glass.css, chỉ đổi màu. */
+:root {
+  --hero-bg: linear-gradient(130deg, rgba(190, 24, 93, .85) 0%, rgba(244, 114, 182, .82) 55%, rgba(168, 85, 247, .8) 100%);
+  --btn-grad: linear-gradient(135deg, #f472b6 0%, #c026d3 100%);
+  --lg-a: #f472b6; --lg-b: #fda4af; --lg-c: #c084fc; --lg-d: #fbcfe8; --lg-e: #a78bfa;
+  --ground: #fff3f8;
+  --navy: #9d2c6b; --navy-2: #b83a80; --navy-3: #d45c9c; --navy-soft: #fde7f1; --navy-ink: #8a2560;
+  --copper: #ec4899; --copper-dark: #c0267a; --copper-press: #be185d; --copper-soft: #fde4f0; --copper-line: #f9a8d4;
+  --focus-ring: rgba(236, 72, 153, .3);
+  --r: 26px; --r-lg: 34px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ground: #22101c; --navy-soft: #3d1830; --copper-soft: #45162f; --navy-ink: #f9a8d4; --copper-dark: #f9a8d4; } }
+:root[data-theme="dark"] { --ground: #22101c; --navy-soft: #3d1830; --copper-soft: #45162f; --navy-ink: #f9a8d4; --copper-dark: #f9a8d4; }

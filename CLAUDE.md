@@ -12,6 +12,7 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
 ## Cấu trúc chính
 - `css/glass.css`: lớp giao diện Liquid Glass (kính mờ, nền màu loang, mỗi mục menu một màu), nạp sau `styles.css`, chỉ ghi đè; bỏ link trong `index.html` là về giao diện cũ.
 - `css/vintage.css` + `css/fern.svg` + `js/leaves.js`: theme Vintage Green (xanh rêu/ô liu, giấy kem, chữ nâu gỗ, font Lora + Courier Prime; lá rơi nền, khung mọc lên như lá, viền đung đưa, dương xỉ ở góc, nút chính hình lá). Nạp sau `glass.css`; bỏ link `vintage.css` + script `leaves.js` là về Liquid Glass.
+- Bộ giao diện (skin): người dùng bấm nút bảng màu ở thanh trên để chọn 7 giao diện (Vintage mặc định, Liquid Glass, Ocean, Sakura, Neon, Tối giản, Cổ điển) + Sáng/Tối/Theo máy. Danh sách `SKINS` ở `js/theme.js` phải khớp đoạn script trong `index.html` (bật/tắt `<link id="skin-*">`); lưu `ielts:skin` trong localStorage. File màu: `css/ocean.css`, `sakura.css`, `neon.css`, `mono.css`.
 - `js/app.js`: router (hash), trang chủ, Thi thử (`exams`).
 - `js/bank/`: Ngân hàng đề. `bank.js` (danh sách, làm bài, thi thử ghép đề `mockr`/`mockl`), `exam.js` (giao diện làm trên máy, chia theo Part), `review.js` + `listen-review.js` (xem lại, giải thích).
 - `js/homework/`: bài tập về nhà theo lớp. `memes.js` = meme nhận xét (40 meme mèo i-melts theo 10 sắc thái + ảnh giáo viên tải lên ở `memes`/Storage `memes/`, gợi ý theo điểm; lưu `teacherMeme` trong bài nộp). `quizdoc.js`/`quizview.js` = bài kiểm tra dựng từ file Word.

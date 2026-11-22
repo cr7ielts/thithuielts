@@ -1,0 +1,12 @@
+/* OCEAN — biển xanh ngọc, nạp sau glass.css, chỉ đổi màu. */
+:root {
+  --hero-bg: linear-gradient(130deg, rgba(11, 79, 122, .9) 0%, rgba(14, 165, 183, .85) 55%, rgba(56, 189, 248, .8) 100%);
+  --btn-grad: linear-gradient(135deg, #22c3d6 0%, #2563eb 100%);
+  --lg-a: #0ea5b7; --lg-b: #38bdf8; --lg-c: #14b8a6; --lg-d: #67e8f9; --lg-e: #2563eb;
+  --ground: #e8f6f8;
+  --navy: #0b4f7a; --navy-2: #0e6596; --navy-3: #1d86bd; --navy-soft: #dff1f8; --navy-ink: #0b4f7a;
+  --copper: #0ea5b7; --copper-dark: #0b7f8d; --copper-press: #0b7f8d; --copper-soft: #dcf5f8; --copper-line: #9fdde6;
+  --focus-ring: rgba(14, 165, 183, .3);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ground: #06202b; --navy-soft: #0f3346; --copper-soft: #0d3a40; --navy-ink: #8fd6ec; --copper-dark: #5fd4e2; } }
+:root[data-theme="dark"] { --ground: #06202b; --navy-soft: #0f3346; --copper-soft: #0d3a40; --navy-ink: #8fd6ec; --copper-dark: #5fd4e2; }

@@ -1,0 +1,21 @@
+/* MINIMAL — trắng đen phẳng, không kính, không bóng màu. Nạp sau styles.css (không cần glass.css). */
+:root {
+  --ground: #fafafa; --ground-2: #f2f2f2; --surface: #ffffff; --surface-2: #f6f6f6;
+  --line: #e6e6e6; --line-strong: #cfcfcf;
+  --ink: #111111; --ink-2: #555555; --ink-3: #8a8a8a;
+  --navy: #111111; --navy-2: #2a2a2a; --navy-3: #444444; --navy-soft: #efefef; --navy-ink: #111111;
+  --copper: #111111; --copper-dark: #111111; --copper-press: #000000; --copper-soft: #efefef; --copper-line: #d0d0d0;
+  --shadow-sm: none; --shadow: 0 8px 24px -16px rgba(0, 0, 0, .25);
+  --focus-ring: rgba(0, 0, 0, .2);
+  --r: 10px; --r-lg: 14px;
+  --sidebar-bg: #111111;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --ground: #0e0e0e; --ground-2: #151515; --surface: #181818; --surface-2: #202020; --line: #2a2a2a; --line-strong: #3a3a3a;
+  --ink: #f2f2f2; --ink-2: #b0b0b0; --ink-3: #7a7a7a; --navy: #f2f2f2; --navy-2: #dddddd; --navy-soft: #242424; --navy-ink: #f2f2f2;
+  --copper: #f2f2f2; --copper-dark: #f2f2f2; --copper-press: #bbbbbb; --copper-soft: #242424; --copper-line: #444444; } }
+:root[data-theme="dark"] {
+  --ground: #0e0e0e; --ground-2: #151515; --surface: #181818; --surface-2: #202020; --line: #2a2a2a; --line-strong: #3a3a3a;
+  --ink: #f2f2f2; --ink-2: #b0b0b0; --ink-3: #7a7a7a; --navy: #f2f2f2; --navy-2: #dddddd; --navy-soft: #242424; --navy-ink: #f2f2f2;
+  --copper: #f2f2f2; --copper-dark: #f2f2f2; --copper-press: #bbbbbb; --copper-soft: #242424; --copper-line: #444444; }
+:root[data-theme="dark"] .btn-primary { color: #111; }

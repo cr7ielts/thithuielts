@@ -1941,3 +1941,18 @@ body:not(.hl-on):not(.hl-erasing) .news-para { cursor: help; }
 .hw-history summary { cursor: pointer; }
 .hw-history .hw-attempt[open] summary { margin-bottom: 8px; }
 .hw-del:hover { color: var(--red); }
+
+/* lá rơi chỉ hiện ở bộ giao diện Vintage */
+html:not([data-skin="vintage"]) .leaf-fall { display: none; }
+
+/* bảng chọn giao diện */
+.skin-menu { position: fixed; z-index: 90; width: 280px; max-width: calc(100vw - 24px); padding: 14px; border-radius: var(--r, 16px);
+  background: var(--surface); border: 1px solid var(--line-strong); box-shadow: var(--shadow); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.skin-menu h4 { margin: 2px 0 10px; font-size: 13px; color: var(--ink-2); font-weight: 700; }
+.skin-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.skin-opt { display: flex; flex-direction: column; gap: 6px; padding: 8px; border-radius: 12px; border: 2px solid var(--line); background: var(--surface-2); cursor: pointer; text-align: left; font: inherit; font-size: 13px; color: var(--ink); }
+.skin-opt.on { border-color: var(--copper); }
+.skin-sw { height: 30px; border-radius: 8px; }
+.skin-modes { display: flex; gap: 6px; }
+.skin-modes button { flex: 1; padding: 7px 4px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; }
+.skin-modes button.on { background: var(--copper); color: #fff; border-color: transparent; }

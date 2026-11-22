@@ -13,10 +13,22 @@
   <script>
     // Áp giao diện sáng/tối đã chọn trước khi trang vẽ (tránh nháy trắng). "auto" = theo máy.
     try { var t = localStorage.getItem("ielts:theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+    // Bộ giao diện (skin): bật/tắt các file CSS theo lựa chọn đã lưu. Danh sách ở js/theme.js (SKINS).
+    try { var k = localStorage.getItem("ielts:skin") || "vintage"; document.documentElement.dataset.skin = k;
+      var need = { classic: [], glass: ["glass"], vintage: ["glass", "vintage"], ocean: ["glass", "ocean"], sakura: ["glass", "sakura"], mono: ["mono"], neon: ["glass", "neon"] }[k] || ["glass", "vintage"];
+      window.__skinNeed = need; } catch (e) {}
   </script>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/glass.css" />
-  <link rel="stylesheet" href="css/vintage.css" />
+  <link rel="stylesheet" href="css/glass.css" id="skin-glass" />
+  <link rel="stylesheet" href="css/vintage.css" id="skin-vintage" />
+  <link rel="stylesheet" href="css/ocean.css" id="skin-ocean" />
+  <link rel="stylesheet" href="css/sakura.css" id="skin-sakura" />
+  <link rel="stylesheet" href="css/mono.css" id="skin-mono" />
+  <link rel="stylesheet" href="css/neon.css" id="skin-neon" />
+  <script>
+    (function () { var need = window.__skinNeed || ["glass", "vintage"];
+      ["glass", "vintage", "ocean", "sakura", "mono", "neon"].forEach(function (n) { var l = document.getElementById("skin-" + n); if (l) l.disabled = need.indexOf(n) < 0; }); })();
+  </script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231a2b5f'/><text x='50' y='68' font-size='52' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>ID</text></svg>" />
 </head>
 <body>

@@ -6,7 +6,7 @@ import { ensureStudentProfile, listMySubmissions } from "./store.js";
 import { DURATION, BRAND, ALLOW_EMAIL_SIGNUP } from "./config.js";
 import { createCat, catLogoSVG } from "./cat.js";
 import { L, getLang, setLang } from "./i18n.js";
-import { currentTheme, toggleTheme } from "./theme.js";
+import { getThemePref, setThemePref, SKINS, getSkin, setSkin } from "./theme.js";
 import { mountBackground } from "./bgfloat.js";
 import { renderListening } from "./skills/listening.js";
 import { renderReading } from "./skills/reading.js";
@@ -491,9 +491,8 @@ function chrome(page) {
           el("span", {}, `${L("Cấp", "Level")} ${s.level}`), el("span", { class: "side-xp" }, `${s.xp} XP`)),
         el("div", { class: "side-bar" }, el("span", { style: `width:${s.pct ?? 0}%` })))));
 
-  const themeBtn = el("button", { class: "icon-btn theme-btn", title: currentTheme() === "dark" ? L("Giao diện sáng", "Light mode") : L("Giao diện tối", "Dark mode"),
-    "aria-label": L("Đổi giao diện sáng / tối", "Toggle light / dark mode"),
-    onclick: () => { toggleTheme(); render(); } }, icon(currentTheme() === "dark" ? "sun" : "moon"));
+  const themeBtn = el("button", { class: "icon-btn theme-btn", title: L("Đổi giao diện", "Change theme"),
+    "aria-label": L("Đổi giao diện", "Change theme"), onclick: (e) => openSkinMenu(e.currentTarget) }, icon("palette"));
 
   const header = el("header", { class: "topbar" },
     el("a", { class: "brand brand-mobile", href: "#home", onclick: (e) => { e.preventDefault(); go("home"); } },
@@ -525,8 +524,8 @@ function chrome(page) {
       el("div", { class: "more-grid" }, g.items.map(([r, ic, t]) => el("button", { class: "more-item" + (section === r ? " active" : ""),
         onclick: () => { closeSheet(); go(r); } }, el("span", { class: "side-ico" }, icon(ic)), t))))),
     el("div", { class: "row wrap", style: "gap:8px;margin-top:14px" }, langToggle(),
-      el("button", { class: "btn btn-sm", onclick: () => { toggleTheme(); render(); } }, icon(currentTheme() === "dark" ? "sun" : "moon"),
-        currentTheme() === "dark" ? L("Giao diện sáng", "Light mode") : L("Giao diện tối", "Dark mode")),
+      el("button", { class: "btn btn-sm", onclick: (e) => openSkinMenu(e.currentTarget) }, icon("palette"),
+        L("Đổi giao diện", "Change theme")),
       el("div", { class: "spacer" }),
       el("button", { class: "btn btn-sm btn-ghost", onclick: () => signOutFn?.() }, icon("logout"), L("Đăng xuất", "Sign out")))));
   const bottom = el("nav", { class: "bottombar", "aria-label": L("Menu", "Menu") },
@@ -675,3 +674,25 @@ function firstName(full) {
 /* Chạy sau cùng, khi mọi biến trong module đã sẵn sàng */
 mountBackground();
 init();
+
+// Bảng chọn bộ giao diện + sáng/tối/theo máy
+function openSkinMenu(anchor) {
+  document.querySelector(".skin-menu")?.remove();
+  const menu = el("div", { class: "skin-menu", role: "dialog", "aria-label": L("Giao diện", "Theme") });
+  const draw = () => {
+    menu.replaceChildren(
+      el("h4", {}, L("Bộ giao diện", "Theme")),
+      el("div", { class: "skin-grid" }, SKINS.map((k) => el("button", { class: "skin-opt" + (getSkin() === k.id ? " on" : ""),
+        onclick: () => { setSkin(k.id); draw(); } }, el("span", { class: "skin-sw", style: `background:${k.sw}` }), L(k.vi, k.en)))),
+      el("h4", {}, L("Độ sáng", "Brightness")),
+      el("div", { class: "skin-modes" }, [["light", L("Sáng", "Light")], ["dark", L("Tối", "Dark")], ["auto", L("Theo máy", "Auto")]].map(([m, t]) =>
+        el("button", { class: getThemePref() === m ? "on" : "", onclick: () => { setThemePref(m); draw(); } }, t))));
+  };
+  draw();
+  document.body.appendChild(menu);
+  const r = anchor.getBoundingClientRect();
+  menu.style.top = `${r.bottom + 8}px`;
+  menu.style.left = `${Math.max(12, Math.min(r.right - menu.offsetWidth, window.innerWidth - menu.offsetWidth - 12))}px`;
+  const close = (e) => { if (!menu.contains(e.target) && !anchor.contains(e.target)) { menu.remove(); document.removeEventListener("pointerdown", close); } };
+  setTimeout(() => document.addEventListener("pointerdown", close), 0);
+}
