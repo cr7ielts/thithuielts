@@ -469,3 +469,17 @@ mạo từ thừa ở đầu.
 - Ghi âm dùng `MediaRecorder` (Chrome, Edge, Firefox, Safari 14.1+); trên iOS Safari cũ có thể
   không ghi được, khi đó hệ thống vẫn ghi nhận thời gian nói.
 - Bài chỉ có một đề (`test-01`); học sinh làm lại sẽ tạo bài nộp mới chứ không ghi đè.
+
+
+## Gói đề theo quý, thẻ điểm học viên, giới thiệu ở trang đăng nhập
+
+- **Gói đề theo quý** (menu *Gói đề theo quý*, `#packs`): *Speaking Forecast Quý IV/2026* (27 đề đủ 3 part),
+  *Writing Real Tests Quý IV/2026* (24 đề Task 2 thí sinh báo lại tháng 10–11/2026, `js/data/writing-real.js`),
+  *Reading Forecast Quý IV/2026* (các passage dự đoán). Mỗi gói đếm số bài học sinh đã làm / tổng. Sang quý mới:
+  sửa `quarter`, `period`, `tests` trong `writing-real.js`; Speaking/Reading lấy theo file forecast tương ứng.
+- **Thẻ điểm học viên**: trang chủ (giáo viên) có nút *Thêm thẻ điểm*: chọn IELTS hoặc TOEIC, tên hiển thị, ngày thi,
+  điểm 4 kỹ năng; Overall tự tính (IELTS làm tròn kiểu IELTS, TOEIC = L + R). Thẻ hiện công khai ở trang đăng nhập,
+  nên chỉ nhập điểm thật và hỏi học viên trước. Cần **deploy lại `firestore.rules`** (luật mới cho `scoreCards`).
+- **Vấn đề → Cách xử lý**: ba vấn đề khi tự luyện, mỗi vấn đề cạnh ảnh chụp thật của web (`img/showcase/`).
+- **Làm bài trên máy**: nút *Chưa chắc* ở từng câu, *Danh sách câu hỏi* (lọc câu trống / chưa chắc, có đồng hồ),
+  thanh tiến độ dưới cùng, hỏi lại khi chuyển Part mà còn câu trống, hộp nộp bài liệt kê câu trống để quay lại.

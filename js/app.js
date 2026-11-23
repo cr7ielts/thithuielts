@@ -13,6 +13,8 @@ import { renderReading } from "./skills/reading.js";
 import { renderWriting } from "./skills/writing.js";
 import { renderSpeaking } from "./skills/speaking.js";
 import { renderPacks, renderPack, renderPackItem, packsStrip } from "./packs.js";
+import { scoreCardsSection } from "./scorecards.js";
+import { showcaseSection } from "./showcase.js";
 import { renderResult, renderHistory, renderAdmin } from "./results.js";
 import { initProgress, getStats } from "./vocab/progress.js";
 import { renderVocabHub, renderDeck, renderReview, statStrip } from "./vocab/views.js";
@@ -404,7 +406,9 @@ function loginView() {
         feat("exam", L("Thi thử 4 kỹ năng", "4-skill mock tests")),
         feat("cards", L("Flashcard nhắc ôn", "Spaced-repetition flashcards")),
         feat("game", L("Trò chơi từ vựng", "Vocabulary games")),
-        feat("quote", L("Thành ngữ & chơi chữ", "Idioms & puns")))));
+        feat("quote", L("Thành ngữ & chơi chữ", "Idioms & puns")))),
+    // giới thiệu cho người mới: vấn đề → cách xử lý (ảnh thật của web) + thẻ điểm học viên
+    el("div", { class: "login-more" }, showcaseSection(), scoreCardsSection(null)));
 }
 
 const feat = (ic, t) => el("span", { class: "feat" }, icon(ic), t);
@@ -580,7 +584,8 @@ function homeView() {
     el("div", { class: "section-head" },
       el("h2", {}, L("Gói đề theo quý", "Quarterly packs")),
       el("button", { class: "btn btn-ghost btn-sm", onclick: () => go("packs") }, L("Xem tất cả", "See all"), icon("arrow"))),
-    packsStrip(ctx));
+    packsStrip(ctx),
+    scoreCardsSection(user));
 
   wrap.append(
     el("div", { class: "section-head" },

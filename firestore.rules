@@ -231,6 +231,13 @@ service cloud.firestore {
     }
 
     // Bài nộp: học sinh chỉ tạo & đọc bài của chính mình, không sửa/xoá được sau khi nộp
+    // Thẻ điểm học viên (trang đăng nhập): ai cũng xem được, chỉ giáo viên sửa
+    match /scoreCards/{cid} {
+      allow read:  if true;
+      allow write: if isAdmin() &&
+                   (request.resource == null || request.resource.data.exam in ['IELTS', 'TOEIC']);
+    }
+
     match /submissions/{id} {
       allow read:   if request.auth != null &&
                     (isAdmin() || resource.data.uid == request.auth.uid);
