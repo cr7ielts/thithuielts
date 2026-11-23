@@ -43,7 +43,8 @@ export function toast(msg, kind = "", ms = 3200) {
 }
 
 /* ---------- Modal xác nhận ---------- */
-export function confirmDialog({ title, body, okText = L("Đồng ý", "OK"), cancelText = L("Huỷ", "Cancel"), danger = false }) {
+// extra: phần tử thêm dưới nội dung (ô đánh dấu, nút…); gọi close(false) từ bên ngoài qua opts.bind(close)
+export function confirmDialog({ title, body, okText = L("Đồng ý", "OK"), cancelText = L("Huỷ", "Cancel"), danger = false, extra = null, bind = null }) {
   return new Promise((resolve) => {
     const back = el("div", { class: "modal-back" });
     const close = (v) => { back.remove(); resolve(v); };
@@ -51,6 +52,7 @@ export function confirmDialog({ title, body, okText = L("Đồng ý", "OK"), can
       "div", { class: "modal" },
       el("h3", {}, title),
       el("div", { class: "muted", html: body || "" }),
+      extra,
       el(
         "div", { class: "modal-actions" },
         el("button", { class: "btn", onclick: () => close(false) }, cancelText),
@@ -59,6 +61,7 @@ export function confirmDialog({ title, body, okText = L("Đồng ý", "OK"), can
     );
     back.append(modal);
     back.addEventListener("click", (e) => { if (e.target === back) close(false); });
+    bind?.(close);
     document.body.append(back);
   });
 }

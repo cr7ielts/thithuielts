@@ -404,7 +404,12 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
   // Phiếu trả lời — bản tương tác (như thi trên máy) hoặc phiếu cạnh PDF
   let sheet, exam = null;
   if (inter) {
-    exam = examView(inter, item, answers, save);
+    // câu "chưa chắc" lưu kèm bản nháp: tải lại trang vẫn còn
+    const flagKey = `${draftKey}:flags`;
+    exam = examView(inter, item, answers, save, {
+      flags: draft.load(ctx.user.uid, flagKey)?.data || [], timer,
+      onFlags: (list) => draft.save(ctx.user.uid, flagKey, list),
+    });
     if (inter.passage || inter.passages) paper.append(exam.paper);   // Listening không có bài đọc -> câu hỏi chiếm cả bề ngang
     // Listening cả đề: mỗi lần một Part, chỉ hiện audio của Part đó
     if (exam.byPart) {
@@ -432,12 +437,21 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
     if (!auto) {
       const blank = res.details.filter((d) => !d.given).length;
       const marked = exam ? exam.flagged() : [];
+      // câu trống / chưa chắc: bấm số câu là đóng hộp và nhảy tới câu đó
+      let closeDlg = null;
+      const chips = (ns, cls) => el("div", { class: "row wrap", style: "gap:5px;margin-top:6px" }, ns.map((n) =>
+        el("button", { type: "button", class: `cdi-num ${cls}`, onclick: () => { closeDlg?.(false); exam.jump(n); } }, String(n))));
+      const blanks = exam ? exam.blankList() : [];
+      const extra = exam && (blanks.length || marked.length) ? el("div", { class: "submit-review" },
+        blanks.length ? el("div", {}, el("div", { class: "tiny strong" }, L("Câu còn trống:", "Unanswered:")), chips(blanks, "")) : null,
+        marked.length ? el("div", { style: "margin-top:8px" }, el("div", { class: "tiny strong" }, L("Câu chưa chắc:", "Marked unsure:")), chips(marked, "flag")) : null,
+        el("div", { class: "tiny muted", style: "margin-top:8px" }, L("Bấm vào số câu để quay lại câu đó.", "Click a number to go back to it."))) : null;
       const ok = await confirmDialog({
         title: L("Nộp bài?", "Submit?"),
         body: (blank ? L(`Còn <strong>${blank}</strong> câu bỏ trống. `, `<strong>${blank}</strong> answers are blank. `) : L("Bạn đã trả lời hết các câu. ", "You've answered every question. "))
-          + (marked.length ? L(`Còn <strong>${marked.length}</strong> câu đang đánh dấu xem lại (câu ${marked.join(", ")}).`,
-                               `<strong>${marked.length}</strong> questions are flagged for review (${marked.join(", ")}).`) : ""),
-        okText: L("Nộp bài", "Submit"),
+          + (marked.length ? L(`<strong>${marked.length}</strong> câu đang đánh dấu chưa chắc.`, `<strong>${marked.length}</strong> marked as unsure.`) : ""),
+        extra, bind: (c) => { closeDlg = c; },
+        okText: L("Nộp bài", "Submit"), cancelText: L("Làm tiếp", "Keep working"),
       });
       if (!ok) return;
     }
@@ -456,6 +470,7 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
         ...(proctor ? { hwId: hw.a.id, revealAt: (hw.a.keyAfterSubmit && !(hw.a.secondAttempt && !hw.prev) ? new Date() : hw.a.dueAt).toISOString(), integrity: proctor.report() } : {}),
       });
       draft.clear(ctx.user.uid, draftKey);
+      draft.clear(ctx.user.uid, `${draftKey}:flags`);
       // bài tập về nhà: ghi bài nộp vào Homework (lượt đầu tiên, còn hạn)
       if (hw && !hw.done && !hw.late && !isAdmin(ctx.user)) {
         try {

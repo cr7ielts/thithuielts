@@ -297,7 +297,7 @@ button { font: inherit; }
   .bb-item.active { color: var(--copper-dark); }
   .bb-item.active .i { background: var(--copper-soft); border-radius: 10px; padding: 3px 12px; }
   #toasts { bottom: calc(80px + env(safe-area-inset-bottom)) !important; }
-  .cdi-nav { bottom: calc(72px + env(safe-area-inset-bottom)) !important; }
+  .cdi-nav, .cdi-dock { bottom: calc(72px + env(safe-area-inset-bottom)) !important; }
 }
 
 /* ---------- Buttons ---------- */
@@ -1392,7 +1392,9 @@ body.hl-on .textLayer span { cursor: text; }
 .cdi-opt:hover { border-color: var(--copper); }
 .cdi-opt.on { background: var(--copper-soft); border-color: var(--copper); color: var(--copper-dark); font-weight: 700; }
 .cdi-opt-v { font-weight: 700; }
-.cdi-flag { flex: none; width: 28px; height: 28px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink-3); cursor: pointer; display: grid; place-items: center; }
+.cdi-flag { flex: none; height: 28px; padding: 0 8px; gap: 4px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink-3); cursor: pointer; display: inline-flex; align-items: center; font: inherit; font-size: .74rem; font-weight: 600; white-space: nowrap; }
+.cdi-flag.mini { width: 28px; padding: 0; justify-content: center; }
+@media (max-width: 560px) { .cdi-flag .cdi-flag-t { display: none; } .cdi-flag { width: 28px; padding: 0; justify-content: center; } }
 .cdi-flag .i svg { width: 15px; height: 15px; }
 .cdi-flag.on { background: var(--amber-soft); border-color: var(--amber); color: var(--amber); }
 .cdi-nav { position: sticky; bottom: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 5px; padding: 10px 12px; background: var(--surface); border: 2px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); }
@@ -1954,3 +1956,26 @@ body:not(.hl-on):not(.hl-erasing) .news-para { cursor: help; }
 .skin-modes { display: flex; gap: 6px; }
 .skin-modes button { flex: 1; padding: 7px 4px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; }
 .skin-modes button.on { background: var(--copper); color: #fff; border-color: transparent; }
+
+/* ===== Làm bài: thanh dưới cùng (tiến độ + số câu), Danh sách câu hỏi, hộp nộp bài ===== */
+.cdi-dock { position: sticky; bottom: 0; z-index: 5; display: flex; flex-direction: column; gap: 8px; padding: 8px 12px 10px; background: var(--surface); border: 2px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); }
+.cdi-dock .cdi-nav { position: static; padding: 0; border: 0; box-shadow: none; background: none; border-radius: 0; }
+.cdi-prog { display: flex; align-items: center; gap: 10px; }
+.cdi-prog-bar { flex: 1; height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; min-width: 60px; }
+.cdi-prog-fill { display: block; height: 100%; width: 0; border-radius: inherit; background: var(--mint, #2f9e6b); transition: width .3s ease; }
+.cdi-prog-text { font-size: .78rem; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+.cdi-list-btn { flex: none; }
+@media (max-width: 560px) { .cdi-list-btn { font-size: 0; gap: 0; padding: 6px 8px; } .cdi-list-btn .i { font-size: 1rem; } }
+.cdi-list { width: min(680px, 94vw); max-height: 86vh; display: flex; flex-direction: column; gap: 12px; }
+.cdi-list-clock { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .85rem; color: var(--ink-2); }
+.cdi-list-rows { overflow-y: auto; display: flex; flex-direction: column; gap: 4px; min-height: 120px; }
+.cdi-list-row { display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 10px; border: 1.5px solid var(--line); cursor: pointer; background: var(--surface); }
+.cdi-list-row:hover { border-color: var(--copper, #c97a3a); }
+.cdi-list-n { flex: none; width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-weight: 700; font-size: .8rem; border: 1.5px solid var(--line-strong); }
+.cdi-list-row.done .cdi-list-n { background: var(--mint-soft); border-color: var(--ok-line); color: var(--mint); }
+.cdi-list-row.flag .cdi-list-n { background: var(--amber-soft); border-color: var(--amber); color: var(--amber); }
+.cdi-list-q { flex: 1; min-width: 0; font-size: .85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cdi-list-a { flex: none; max-width: 32%; font-size: .78rem; font-weight: 600; color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cdi-list-row.blank .cdi-list-a { color: var(--red, #c0392b); font-weight: 500; font-style: italic; }
+.submit-review { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--bg-soft, rgba(0,0,0,.03)); border: 1px solid var(--line); }
+.submit-review .cdi-num.flag { box-shadow: inset 0 -4px 0 var(--amber); }
