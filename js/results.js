@@ -21,7 +21,7 @@ export function renderResult(ctx, sub) {
         el("div", { class: "row", style: "gap:14px;margin-bottom:4px" },
           el("div", { class: "skill-ico " + sub.skill }, icon(sub.skill)),
           el("h1", { style: "margin:0" }, SKILL_LABEL[sub.skill] || sub.skill)),
-        el("div", { class: "muted" }, sub.testTitle ? `${L("Ngân hàng đề", "Question bank")}, ${sub.testTitle}` : sub.testId),
+        el("div", { class: "muted" }, sub.testTitle ? `${sub.packTitle || L("Ngân hàng đề", "Question bank")}, ${sub.testTitle}` : sub.testId),
         el("div", { class: "row wrap", style: "margin-top:12px;gap:8px" },
           el("span", { class: "badge badge-brand" }, `${L("Nộp lúc", "Submitted")}: ${fmtDateTime(sub.submittedAt)}`),
           el("span", { class: "badge" }, `${L("Thời gian làm", "Time taken")}: ${fmtDuration(sub.durationSec)}`),

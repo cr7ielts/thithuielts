@@ -29,7 +29,7 @@ const TAB_LABEL = { reading: "Reading", listening: L("Listening, cả đề", "L
 
 /* ---------------- Dữ liệu ---------------- */
 let _banks = null;
-async function loadBanks() {
+export async function loadBanks() {
   if (_banks) return _banks;
   const [r, v9, v8, ex, l, ln] = await Promise.all([
     import("../data/bank-reading.js").then((m) => m.READING_BANK).catch(() => []),

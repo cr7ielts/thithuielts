@@ -9,8 +9,16 @@ import { startProctor } from "../proctor.js";
 
 const SKILL = "writing";
 
-export function renderWriting(ctx) {
+// đề đang làm: mặc định là đề thi thử chung; gói đề theo quý (js/packs.js) truyền đề riêng
+//  opt: { title, testTitle, packTitle, back: [route, nhãn] }
+let T = TEST, OPT = {};
+const minutesOf = () => (T === TEST ? DURATION.writing : T.writing.tasks.reduce((s, t) => s + t.minutes, 0));
+const draftKey = () => (T === TEST ? SKILL : `${SKILL}:${T.id}`);
+
+export function renderWriting(ctx, test = TEST, opt = {}) {
+  T = test; OPT = opt;
   const view = el("div");
+  if (opt.back) view.append(el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go(opt.back[0]) }, icon("back"), opt.back[1]));
   view.append(briefing(ctx, view));
   return view;
 }
@@ -21,10 +29,12 @@ function briefing(ctx, view) {
     el("div", { class: "row", style: "gap:14px;margin-bottom:6px" },
       el("div", { class: "skill-ico writing" }, icon("writing")),
       el("div", {},
-        el("h1", { style: "margin-bottom:2px" }, "Writing"),
-        el("div", { class: "muted" }, L(`2 task, ${DURATION.writing} phút`, `2 tasks, ${DURATION.writing} minutes`)))
+        el("h1", { style: "margin-bottom:2px" }, OPT.title || "Writing"),
+        el("div", { class: "muted" }, L(`${T.writing.tasks.length} task, ${minutesOf()} phút`, `${T.writing.tasks.length} task${T.writing.tasks.length > 1 ? "s" : ""}, ${minutesOf()} minutes`)))
     ),
-    el("div", {
+    T.writing.tasks.length === 1 ? el("div", { class: "notice notice-info", style: "margin:16px 0" },
+      L(`Một bài Task 2, ${minutesOf()} phút, tối thiểu ${T.writing.tasks[0].minWords} từ. Hết giờ bài tự nộp.`,
+        `One Task 2 essay, ${minutesOf()} minutes, at least ${T.writing.tasks[0].minWords} words. It submits itself when time runs out.`)) : el("div", {
       class: "notice notice-info", style: "margin:16px 0",
       html: L(
         "Đồng hồ chạy chung cho cả hai task. Khuyến nghị: <strong>20 phút</strong> cho Task 1 (tối thiểu 150 từ) và <strong>40 phút</strong> cho Task 2 (tối thiểu 250 từ). Task 2 chiếm tỉ trọng điểm gấp đôi Task 1.",
@@ -46,20 +56,20 @@ function briefing(ctx, view) {
 
 function examUI(ctx, proctor) {
   const texts = {};
-  const saved = draft.load(ctx.user.uid, SKILL);
+  const saved = draft.load(ctx.user.uid, draftKey());
   if (saved?.data) Object.assign(texts, saved.data);
 
   const startedAt = new Date();
   let submitted = false;
 
-  const timer = new Countdown({ seconds: DURATION.writing * 60, onEnd: () => doSubmit(true) }).start();
+  const timer = new Countdown({ seconds: minutesOf() * 60, onEnd: () => doSubmit(true) }).start();
   setExamGuard(true);
 
   const wordsLabel = (n) => L(`${n} từ`, `${n} words`);
   const totalWords = el("span", { class: "badge" }, wordsLabel(0));
   const bar = el(
     "div", { class: "exam-bar" },
-    el("strong", {}, "Writing"),
+    el("strong", {}, OPT.title || "Writing"),
     timer.node,
     el("div", { class: "spacer" }),
     totalWords,
@@ -68,16 +78,16 @@ function examUI(ctx, proctor) {
   bar.insertBefore(proctor.badge, bar.querySelector(".spacer"));
 
   const refresh = () => {
-    const n = TEST.writing.tasks.reduce((s, t) => s + countWords(texts[t.id]), 0);
+    const n = T.writing.tasks.reduce((s, t) => s + countWords(texts[t.id]), 0);
     totalWords.textContent = wordsLabel(n);
-    draft.save(ctx.user.uid, SKILL, texts);
+    draft.save(ctx.user.uid, draftKey(), texts);
   };
 
   const tabs = el("div", { class: "tabs" });
   const holder = el("div");
-  const panels = TEST.writing.tasks.map((t) => taskPanel(t, texts, refresh, proctor));
+  const panels = T.writing.tasks.map((t) => taskPanel(t, texts, refresh, proctor));
 
-  TEST.writing.tasks.forEach((t, i) => {
+  T.writing.tasks.forEach((t, i) => {
     tabs.append(el("button", { class: "btn btn-sm", onclick: () => show(i) },
       `${t.title}, ${t.minutes} ${L("phút", "min")}`));
   });
@@ -92,7 +102,7 @@ function examUI(ctx, proctor) {
 
   async function doSubmit(auto) {
     if (submitted) return;
-    const tasks = TEST.writing.tasks.map((t) => ({
+    const tasks = T.writing.tasks.map((t) => ({
       id: t.id, title: t.title,
       text: texts[t.id] || "",
       words: countWords(texts[t.id]),
@@ -117,7 +127,8 @@ function examUI(ctx, proctor) {
 
     try {
       const sub = await saveSubmission(ctx.user, {
-        testId: TEST.id, skill: SKILL,
+        testId: T.id, skill: SKILL,
+        ...(OPT.testTitle ? { testTitle: OPT.testTitle, packTitle: OPT.packTitle || "" } : {}),
         integrity: proctor.report(),
         startedAt: startedAt.toISOString(),
         durationSec: timer.elapsedSeconds,
@@ -125,7 +136,7 @@ function examUI(ctx, proctor) {
         tasks,
         graded: false, teacherBand: null, teacherComment: "",
       });
-      draft.clear(ctx.user.uid, SKILL);
+      draft.clear(ctx.user.uid, draftKey());
       toast(auto ? L("Hết giờ — bài đã được nộp tự động", "Time's up — your test was submitted") : L("Đã nộp bài", "Submitted"), "ok");
       proctor.stop();
       ctx.go("result", { submission: sub });

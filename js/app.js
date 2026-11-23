@@ -12,6 +12,7 @@ import { renderListening } from "./skills/listening.js";
 import { renderReading } from "./skills/reading.js";
 import { renderWriting } from "./skills/writing.js";
 import { renderSpeaking } from "./skills/speaking.js";
+import { renderPacks, renderPack, renderPackItem, packsStrip } from "./packs.js";
 import { renderResult, renderHistory, renderAdmin } from "./results.js";
 import { initProgress, getStats } from "./vocab/progress.js";
 import { renderVocabHub, renderDeck, renderReview, statStrip } from "./vocab/views.js";
@@ -277,6 +278,8 @@ function render() {
     case "writing":   main.append(renderWriting(ctx)); break;
     case "speaking":  main.append(renderSpeaking(ctx)); break;
     case "exams":     main.append(examsView()); break;
+    case "packs":     main.append(a ? renderPack(ctx, a) : renderPacks(ctx)); break;              // #packs · #packs/<gói>
+    case "pack":      main.append(renderPackItem(ctx, a, b)); break;                            // #pack/<gói>/<bài>
     case "bank":
       if (a === "import") main.append(renderBankImport(ctx));
       else if (b && c === "review") main.append(renderBankReview(ctx, a, b, routeData?.submission || null));   // #bank/<loại>/<id>/review
@@ -431,7 +434,7 @@ function googleIcon() {
 
 /* ===================== Khung trang: menu bên trái · thanh trên · thanh đáy (điện thoại) ===================== */
 const SECTION_OF = {
-  home: "home", exams: "exams", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
+  home: "home", exams: "exams", packs: "packs", pack: "packs", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
   vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
   sets: "sets", set: "sets", study: "sets", live: "live",
   idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
@@ -448,6 +451,7 @@ function navGroups() {
       teacher || hasClass() ? ["homework", "homework", L("Bài tập", "Homework")] : null] },
     { title: L("Luyện thi", "Practice"), items: [
       ["exams", "exam", L("Thi thử", "Mock tests")],
+      ["packs", "star", L("Gói đề theo quý", "Quarterly packs")],
       ["bank", "file", L("Ngân hàng đề", "Practice bank")],
       ["news", "globe", L("Đọc báo khoa học", "Science reading")],
       ["history", "history", L("Lịch sử làm bài", "History")]] },
@@ -572,7 +576,11 @@ function homeView() {
     el("div", { class: "section-head" },
       el("h2", {}, L("Thi thử IELTS", "IELTS mock test")),
       el("button", { class: "btn btn-ghost btn-sm", onclick: () => go("history") }, L("Lịch sử làm bài", "Test history"), icon("arrow"))),
-    skillGrid());
+    skillGrid(),
+    el("div", { class: "section-head" },
+      el("h2", {}, L("Gói đề theo quý", "Quarterly packs")),
+      el("button", { class: "btn btn-ghost btn-sm", onclick: () => go("packs") }, L("Xem tất cả", "See all"), icon("arrow"))),
+    packsStrip(ctx));
 
   wrap.append(
     el("div", { class: "section-head" },
@@ -655,6 +663,7 @@ function examsView() {
             "Each skill has its own timer and submits automatically when time runs out. Every submission time is recorded."))),
       el("div", { class: "games-hero-cat" }, cat)),
     skillGrid(),
+    packsStrip(ctx),
     el("button", { class: "card bank-promo", onclick: () => go("bank") },
       el("div", { class: "skill-ico reading" }, icon("file")),
       el("div", { style: "flex:1" },

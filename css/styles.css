@@ -1979,3 +1979,25 @@ body:not(.hl-on):not(.hl-erasing) .news-para { cursor: help; }
 .cdi-list-row.blank .cdi-list-a { color: var(--red, #c0392b); font-weight: 500; font-style: italic; }
 .submit-review { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--bg-soft, rgba(0,0,0,.03)); border: 1px solid var(--line); }
 .submit-review .cdi-num.flag { box-shadow: inset 0 -4px 0 var(--amber); }
+
+/* ===== Gói đề theo quý ===== */
+.pack-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.pack-card { display: flex; flex-direction: column; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.pack-card:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+.pack-meter { display: flex; align-items: center; gap: 10px; width: 100%; }
+.pack-meter-bar { flex: 1; height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; }
+.pack-meter-fill { display: block; height: 100%; border-radius: inherit; background: var(--mint, #16a870); }
+.pack-meter-text { font-size: .78rem; font-weight: 700; color: var(--ink-2); white-space: nowrap; }
+.pack-items { display: flex; flex-direction: column; gap: 8px; }
+.pack-item { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: var(--r); border: 2px solid var(--line); background: var(--surface); font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.pack-item:hover { border-color: var(--line-strong); }
+.pack-item-tick { flex: none; width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; font-weight: 700; font-size: .82rem; border: 1.5px solid var(--line-strong); }
+.pack-item.done .pack-item-tick { background: var(--mint-soft); border-color: var(--ok-line); color: var(--mint); }
+.pack-item-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.pack-item-title { font-weight: 600; }
+.pack-item-res { flex: none; font-size: .82rem; font-weight: 700; color: var(--ink-2); }
+.pack-item:not(.done) .pack-item-res { color: var(--copper-dark, var(--ink-2)); }
+.pack-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.pack-mini { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: var(--r); border: 2px solid var(--line); background: var(--surface); font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.pack-mini:hover { border-color: var(--line-strong); }
+.pack-mini-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
