@@ -2,7 +2,7 @@
 .bgfx { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; display: none; }
 html[data-skin="vintage"] .bgfx-vintage, html[data-skin="sakura"] .bgfx-sakura, html[data-skin="ocean"] .bgfx-ocean,
 html[data-skin="glass"] .bgfx-glass, html[data-skin="neon"] .bgfx-neon, html[data-skin="mono"] .bgfx-mono,
-html[data-skin="classic"] .bgfx-classic { display: block; }
+html[data-skin="classic"] .bgfx-classic, html[data-skin="mochi"] .bgfx-mochi { display: block; }
 .bgfx span { position: absolute; left: var(--x); top: var(--y, auto); width: var(--s); height: var(--s); will-change: transform, opacity; }
 .app { position: relative; z-index: 1; }
 
@@ -41,5 +41,15 @@ html[data-skin="classic"] .bgfx-classic { display: block; }
 .fx-float { border-radius: 50%; border: 2px solid color-mix(in srgb, var(--c) 30%, transparent); background: color-mix(in srgb, var(--c) 6%, transparent);
   animation: fx-bob var(--d) ease-in-out var(--dl) infinite alternate; }
 @keyframes fx-bob { from { transform: translateY(-18px) rotate(0); } to { transform: translateY(18px) rotate(20deg); } }
+
+/* viên mochi bóng mềm: trôi + nhún (dẹt ra rồi tròn lại) */
+.fx-mochi { border-radius: 50% 50% 46% 54% / 55% 52% 48% 45%; opacity: .9;
+  background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, .95) 0 6%, rgba(255, 255, 255, .35) 14%, transparent 30%),
+    radial-gradient(circle at 70% 80%, color-mix(in srgb, var(--c) 70%, #8a3a4a) 0, transparent 55%),
+    radial-gradient(circle at 50% 45%, var(--c), color-mix(in srgb, var(--c) 82%, #b0566a));
+  box-shadow: inset -8px -12px 24px rgba(160, 60, 80, .18), inset 6px 8px 18px rgba(255, 255, 255, .5), 0 24px 40px -18px rgba(150, 70, 90, .35);
+  animation: fx-mfloat var(--d) ease-in-out var(--dl) infinite alternate, fx-squish calc(var(--d) / 3) ease-in-out var(--dl) infinite; }
+@keyframes fx-mfloat { from { translate: 0 -24px; rotate: -6deg; } to { translate: var(--dx) 24px; rotate: 8deg; } }
+@keyframes fx-squish { 0%, 100% { scale: 1 1; } 50% { scale: 1.07 .93; } }
 
 @media (prefers-reduced-motion: reduce) { .bgfx { display: none !important; } }

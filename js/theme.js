@@ -34,10 +34,11 @@ export const SKINS = [
   { id: "ocean", vi: "Biển xanh", en: "Ocean", css: ["glass", "ocean"], sw: "linear-gradient(135deg,#e0f7fa,#0ea5b7 55%,#0b4f7a)" },
   { id: "sakura", vi: "Hoa anh đào", en: "Sakura", css: ["glass", "sakura"], sw: "linear-gradient(135deg,#fff0f5,#f472b6 55%,#a855f7)" },
   { id: "neon", vi: "Đêm neon", en: "Neon Night", css: ["glass", "neon"], sw: "linear-gradient(135deg,#0b0820,#22d3ee 50%,#e879f9)" },
+  { id: "mochi", vi: "Mochi", en: "Mochi", css: ["mochi"], sw: "radial-gradient(circle at 35% 35%,#fff 0 8%,#f7b8c4 30%,#e98fa3 70%),#f6efe4" },
   { id: "mono", vi: "Tối giản", en: "Minimal", css: ["mono"], sw: "linear-gradient(135deg,#ffffff,#d4d4d4 50%,#111111)" },
   { id: "classic", vi: "Cổ điển", en: "Classic", css: [], sw: "linear-gradient(135deg,#f4f6fb,#1a2b5f 55%,#ff8a2a)" },
 ];
-const ALL_CSS = ["glass", "vintage", "ocean", "sakura", "mono", "neon"];
+const ALL_CSS = ["glass", "vintage", "ocean", "sakura", "mono", "neon", "mochi"];
 
 export function getSkin() {
   try { const k = localStorage.getItem(SKIN_KEY); return SKINS.some((s) => s.id === k) ? k : "vintage"; } catch { return "vintage"; }

@@ -1,0 +1,57 @@
+/* MOCHI — kem sữa + hồng dâu phấn, tiêu đề DM Serif Display, nút đen bo tròn, bề mặt mềm bóng như bánh mochi.
+   Nạp sau styles.css (không dùng glass.css). Nền động: viên mochi ở css/bgfx.css. */
+:root {
+  --ground: #f6efe4; --ground-2: #f1e6d6;
+  --surface: rgba(255, 252, 247, .92); --surface-2: #fbf4ec; --glass: rgba(255, 250, 244, .9);
+  --line: #efdfd2; --line-strong: #e2cbbb;
+  --ink: #2a1f1d; --ink-2: #6d5953; --ink-3: #a38e86; --paper: #fffaf4;
+  --navy: #2a1f1d; --navy-2: #3d2e2a; --navy-3: #6d5953; --navy-soft: #f9e3e7; --navy-ink: #8c3d51;
+  --copper: #2a1f1d; --copper-dark: #b04a63; --copper-press: #000; --copper-soft: #fbe3e8; --copper-line: #f2bccb;
+  --pink: #f4b6c2; --pink-soft: #fbe3e8; --pink-ink: #9c3f57;
+  --focus-ring: rgba(233, 143, 163, .35);
+  --shadow-sm: 0 10px 24px -16px rgba(140, 70, 80, .35); --shadow: 0 20px 44px -22px rgba(140, 70, 80, .4);
+  --sidebar-bg: rgba(255, 250, 244, .85);
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-ui: "DM Sans", "Be Vietnam Pro", system-ui, sans-serif;
+  --r: 22px; --r-lg: 30px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --ground: #1f1716; --ground-2: #271d1b; --surface: rgba(44, 33, 31, .9); --surface-2: #332623; --glass: rgba(40, 30, 28, .9);
+  --line: #3e2f2c; --line-strong: #56423d; --ink: #f8ece6; --ink-2: #d4beb6; --ink-3: #9c8780; --paper: #2a201e;
+  --navy: #f4b6c2; --navy-2: #f7c7d0; --navy-soft: #3d2629; --navy-ink: #f4b6c2;
+  --copper: #f4b6c2; --copper-dark: #f4b6c2; --copper-press: #c97a8c; --copper-soft: #3d2629; --copper-line: #6b3c47;
+  --sidebar-bg: rgba(36, 27, 25, .85); } }
+:root[data-theme="dark"] {
+  --ground: #1f1716; --ground-2: #271d1b; --surface: rgba(44, 33, 31, .9); --surface-2: #332623; --glass: rgba(40, 30, 28, .9);
+  --line: #3e2f2c; --line-strong: #56423d; --ink: #f8ece6; --ink-2: #d4beb6; --ink-3: #9c8780; --paper: #2a201e;
+  --navy: #f4b6c2; --navy-2: #f7c7d0; --navy-soft: #3d2629; --navy-ink: #f4b6c2;
+  --copper: #f4b6c2; --copper-dark: #f4b6c2; --copper-press: #c97a8c; --copper-soft: #3d2629; --copper-line: #6b3c47;
+  --sidebar-bg: rgba(36, 27, 25, .85); }
+
+body { background: linear-gradient(180deg, var(--ground) 0 38%, color-mix(in srgb, #f4b6c2 45%, var(--ground)) 38% 100%) fixed; }
+h1, h2, h3, .topbar-title, .brand-name { font-family: var(--font-display); font-weight: 400; letter-spacing: -.01em; }
+
+/* bề mặt mềm, bóng nhẹ như vỏ mochi */
+.card, .set-card, .mode-card, .deck-card, .stat, .tile, .hw-card, .modal, .user-chip, .sidebar, .topbar {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8), inset 0 -10px 24px -18px rgba(176, 74, 99, .25), var(--shadow-sm);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+
+/* nút chính: viên đen bo tròn, chữ in hoa giãn */
+.btn-primary { background: var(--copper); color: #fff; border-color: transparent; border-radius: 999px;
+  text-transform: uppercase; letter-spacing: .08em; font-size: .85em; box-shadow: 0 10px 20px -12px rgba(0, 0, 0, .6); }
+.btn-primary:hover { transform: translateY(-1px); }
+:root[data-theme="dark"] .btn-primary { color: #2a1f1d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-primary { color: #2a1f1d; } }
+.btn { border-radius: 999px; }
+
+/* khối chào: nền hồng dâu, tiêu đề serif lớn */
+.home-hero { background: linear-gradient(180deg, #f7d3da 0%, #f0b3c0 100%) !important; color: #2a1f1d !important; }
+.home-hero h1 { font-family: var(--font-display); font-size: clamp(34px, 5vw, 58px); line-height: 1.02; text-transform: uppercase; color: #2a1f1d; }
+.home-hero :is(p, .muted, .eyebrow, .hero-kicker) { color: #5a3f3f !important; }
+.home-hero .btn:not(.btn-primary) { background: rgba(255, 255, 255, .55); color: #2a1f1d; border-color: rgba(42, 31, 29, .15); }
+.home-hero .btn-primary { background: #2a1f1d; color: #fff; }
+
+.side-link.active { background: var(--copper-soft); color: var(--navy-ink); }
+.sidebar .brand, .sidebar .side-title { color: var(--ink); }
+.sidebar .side-link { color: var(--ink-2); } .sidebar .side-link:hover { background: var(--surface-2); color: var(--ink); }
+.sidebar .side-ico { color: var(--ink-2); } .sidebar .side-level, .sidebar .side-xp { color: var(--ink-2); }

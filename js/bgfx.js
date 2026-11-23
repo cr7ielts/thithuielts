@@ -49,4 +49,8 @@
   const clsC = ["#1a2b5f", "#ff8a2a", "#3d57a8", "#ff9fb2"];
   layer("classic", small ? 5 : 9, (i) => item("fx-float", { x: rnd(0, 95).toFixed(1) + "%", y: rnd(0, 95).toFixed(1) + "%", s: rnd(30, 90).toFixed(0) + "px",
     c: clsC[i % 4], d: rnd(8, 14).toFixed(1) + "s", dl: (-rnd(0, 14)).toFixed(1) + "s" }));
+
+  const mochiC = ["#f4b6c2", "#f7d9a8", "#cfe3b5", "#fbe9ee", "#e8c6e6"];
+  layer("mochi", small ? 3 : 6, (i) => item("fx-mochi", { x: rnd(0, 88).toFixed(1) + "%", y: rnd(5, 85).toFixed(1) + "%", s: rnd(70, 170).toFixed(0) + "px",
+    c: mochiC[i % 5], d: rnd(9, 15).toFixed(1) + "s", dl: (-rnd(0, 15)).toFixed(1) + "s", dx: rnd(-40, 40).toFixed(0) + "px" }));
 })();
