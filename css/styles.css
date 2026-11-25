@@ -2054,3 +2054,9 @@ body:not(.hl-on):not(.hl-erasing) .news-para { cursor: help; }
 .score-form input, .score-form select { width: 100%; }
 .score-form-overall { font-size: 1.3rem; }
 @media (max-width: 520px) { .score-form-skills { grid-template-columns: 1fr 1fr; } }
+
+/* Giao diện gọn: giữ tiêu đề, ẩn các dòng mô tả phụ */
+.lead, .skill-card > p, .wordplay-tile .wp-body > .muted, .section-head > .muted,
+.mini-stat .ms-body > .ms-k:not(.inline) { display: none !important; }
+.home-hero { min-height: 0; }
+.home-hero h1 { margin-bottom: 18px; }
