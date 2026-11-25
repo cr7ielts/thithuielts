@@ -14,7 +14,10 @@ echo.
 echo  Dang lay ban moi nhat tu GitHub...
 for /f "delims=" %%b in ('git rev-parse --abbrev-ref HEAD') do set BRANCH=%%b
 echo  Nhanh: %BRANCH%
-git pull --ff-only origin %BRANCH%
+rem Tat tu don .git (Windows hay khoa thu muc -> hoi "Deletion of directory ... failed")
+git config gc.auto 0
+set GIT_ASK_YESNO=false
+git -c gc.auto=0 pull --ff-only origin %BRANCH%
 if errorlevel 1 goto pullfail
 goto deploy
 
