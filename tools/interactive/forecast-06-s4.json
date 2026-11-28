@@ -1,0 +1,56 @@
+{
+ "id": "forecast-06-s4",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Questions 31–40: look at the test paper above and type your answer for each question.",
+   "questions": [
+    {
+     "n": 31,
+     "text": "Question 31"
+    },
+    {
+     "n": 32,
+     "text": "Question 32"
+    },
+    {
+     "n": 33,
+     "text": "Question 33"
+    },
+    {
+     "n": 34,
+     "text": "Question 34"
+    },
+    {
+     "n": 35,
+     "text": "Question 35"
+    },
+    {
+     "n": 36,
+     "text": "Question 36"
+    },
+    {
+     "n": 37,
+     "text": "Question 37"
+    },
+    {
+     "n": 38,
+     "text": "Question 38"
+    },
+    {
+     "n": 39,
+     "text": "Question 39"
+    },
+    {
+     "n": 40,
+     "text": "Question 40"
+    }
+   ]
+  }
+ ],
+ "paper": true,
+ "paperFirst": true
+}

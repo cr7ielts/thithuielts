@@ -1,0 +1,553 @@
+{
+ "id": "vol8-02",
+ "kind": "listening",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Fearnley Sports Center – Lifeguard Application Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Personal details"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Name: Peter Smith"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Home address: 130 South Main Street, Lake {{1}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Contact number: {{2}} (cell phone)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Present occupation:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "has temporary job as a part-time {{3}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "is studying PE"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "wants to be a high school {{4}} coach"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Qualifications"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Already holds: water safety certificate"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Certificate expires in: {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Relevant work experience"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Lifeguard at: the {{6}} in Fearnley"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Additional relevant skills: {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other information: is happy to"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "work on {{8}} mornings"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "start at {{9}} o'clock"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "How did the applicant find out about this job? On the {{10}}"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 11,
+     "text": "Arthur feels that when starting a business, mistakes should be",
+     "options": [
+      {
+       "v": "A",
+       "t": "seen as an opportunity to learn."
+      },
+      {
+       "v": "B",
+       "t": "predicted and minimised."
+      },
+      {
+       "v": "C",
+       "t": "avoided at all costs."
+      }
+     ]
+    },
+    {
+     "n": 12,
+     "text": "Recent American studies found that confidence will",
+     "options": [
+      {
+       "v": "A",
+       "t": "sometimes reduce people's chances of success."
+      },
+      {
+       "v": "B",
+       "t": "be increased by reading self-help books."
+      },
+      {
+       "v": "C",
+       "t": "ensure good results on business courses."
+      }
+     ]
+    },
+    {
+     "n": 13,
+     "text": "The American studies recommended that new entrepreneurs",
+     "options": [
+      {
+       "v": "A",
+       "t": "listen to their colleagues' advice."
+      },
+      {
+       "v": "B",
+       "t": "get professional help when things go wrong."
+      },
+      {
+       "v": "C",
+       "t": "remain concentrated on their aims."
+      }
+     ]
+    },
+    {
+     "n": 14,
+     "text": "What does Arthur say about his own experience of marketing?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He relied on what he already knew."
+      },
+      {
+       "v": "B",
+       "t": "He hired an expert to take care of it."
+      },
+      {
+       "v": "C",
+       "t": "He realised its importance too late."
+      }
+     ]
+    },
+    {
+     "n": 15,
+     "text": "What does Arthur think is an important quality shared by good leaders?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They are ambitious for their company."
+      },
+      {
+       "v": "B",
+       "t": "They can deal with difficult people."
+      },
+      {
+       "v": "C",
+       "t": "They earn the respect of their workforce."
+      }
+     ]
+    },
+    {
+     "n": 16,
+     "text": "What does Arthur say about taking risks?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He advises being cautious."
+      },
+      {
+       "v": "B",
+       "t": "He favours a long-term view."
+      },
+      {
+       "v": "C",
+       "t": "He believes it is financially advantageous."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A - E. Which TWO things does Arthur say people should focus on when developing their business idea?",
+   "options": [
+    {
+     "v": "A",
+     "t": "making sure the idea is original"
+    },
+    {
+     "v": "B",
+     "t": "offering a better deal than competitors"
+    },
+    {
+     "v": "C",
+     "t": "being committed to it"
+    },
+    {
+     "v": "D",
+     "t": "paying attention to detail"
+    },
+    {
+     "v": "E",
+     "t": "fixing realistic prices"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A - E. Which TWO things does Arthur say helped him get his business started?",
+   "options": [
+    {
+     "v": "A",
+     "t": "family support"
+    },
+    {
+     "v": "B",
+     "t": "getting a loan from a bank"
+    },
+    {
+     "v": "C",
+     "t": "good business advice"
+    },
+    {
+     "v": "D",
+     "t": "a favourable economic climate"
+    },
+    {
+     "v": "E",
+     "t": "an effective approach to business"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "noteTitle": "Feedback on second year of Performance Arts Course",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Gina chose to study performance arts at this university because the course",
+     "options": [
+      {
+       "v": "A",
+       "t": "has a very good reputation."
+      },
+      {
+       "v": "B",
+       "t": "has links with various theatres."
+      },
+      {
+       "v": "C",
+       "t": "has an international flavour."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Which of the options they chose have Gina and Charlie both found useful?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Movement Analysis"
+      },
+      {
+       "v": "B",
+       "t": "Dance and Drama"
+      },
+      {
+       "v": "C",
+       "t": "The Body in Dance"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What did Charlie do during his work experience?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He worked in a costume department."
+      },
+      {
+       "v": "B",
+       "t": "He performed with a ballet company."
+      },
+      {
+       "v": "C",
+       "t": "He helped out at a dance school for children."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What does Gina say she learnt from her work experience?",
+     "options": [
+      {
+       "v": "A",
+       "t": "how to organise her time better"
+      },
+      {
+       "v": "B",
+       "t": "how to work better in a team"
+      },
+      {
+       "v": "C",
+       "t": "how to cope when under pressure"
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "What does Charlie say about his dissertation topic?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He wanted it to be different from those of other students."
+      },
+      {
+       "v": "B",
+       "t": "He had already done an assignment in this area."
+      },
+      {
+       "v": "C",
+       "t": "He was inspired to choose it by a performance he saw."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "Which aspect of writing a dissertation is Gina worried about?",
+     "options": [
+      {
+       "v": "A",
+       "t": "finding enough to say"
+      },
+      {
+       "v": "B",
+       "t": "doing the background reading"
+      },
+      {
+       "v": "C",
+       "t": "presenting it in an appropriate way"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What do the students say about each of the following types of careers in performance arts? Choose FOUR answers from the box and write the correct letter, A-F, next to questions 27-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "The pay can be low."
+    },
+    {
+     "v": "B",
+     "t": "There is a lot of competition."
+    },
+    {
+     "v": "C",
+     "t": "An additional qualification is required."
+    },
+    {
+     "v": "D",
+     "t": "Good communication skills are required."
+    },
+    {
+     "v": "E",
+     "t": "People with experience feel very positive about it."
+    },
+    {
+     "v": "F",
+     "t": "It is a relatively unpopular choice."
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Performance"
+    },
+    {
+     "n": 28,
+     "text": "Education"
+    },
+    {
+     "n": 29,
+     "text": "Theatre management"
+    },
+    {
+     "n": 30,
+     "text": "Marketing"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Sea lion tracking study (Western Australia)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Reason for the study"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The Australian sea lion is an endangered species."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Until 1892, numbers were affected by hunting."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Sea lions are now affected by nets used to control {{31}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Animal tracking systems"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Considerations when choosing a tracking method include {{32}} and ease of use."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Plastic tags: the animal must be easy to {{33}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "GPS tracking will not work in the {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "In isolated regions, some animals are tracked by {{35}} (e.g. the polar bear)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Some animals are identified by markings (e.g. the dolphin is identified by its scars)."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Challenges of tracking sea lions"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Perth study: the sea lions lost their tags. (They rubbed against {{36}} to remove them.)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Californian researchers used {{37}} to identify sea lions. (This was unreliable due to regular loss of fur.)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Our study"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Aims:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "to find out if sea lions' whiskers can be used to identify them"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "to create a {{38}} to use as a guide"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Methods:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "contacting {{39}} in Australia for photographs"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "asking the {{40}} to get involved"
+    }
+   ]
+  }
+ ]
+}

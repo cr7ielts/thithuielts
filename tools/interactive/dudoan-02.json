@@ -1,0 +1,456 @@
+{
+ "id": "dudoan-02",
+ "kind": "listening",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "noteTitle": "Rental Property Application Form",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Name: Susan Smith (example)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Phone number: {{1}} (mobile)"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Email address: susansmith@{{2}}.com"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Current address: 234 Becketts Road, Brisbane 4054"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "New Zealand employer: Auckland Hospital"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Occupation: a {{3}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Rental start date: 8th February"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Preferred property type:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "first preference: a house with a {{4}}"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "second preference: an apartment with a big {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Bedrooms: two"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Furnishings: a {{6}} is required"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Maximum rent: ${{7}} per week"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Preferred location: near the {{8}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Other requirements:"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "must have {{9}} nearby"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "would like {{10}} included in the rent"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 20,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN THREE WORDS AND/OR A NUMBER for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Features of the Pre-school Family Centre"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "for children from {{11}} to 5 years old"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "run as a {{12}} by parents, who attend with their children"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "parents receive special {{13}} from the centre"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "children's activities organised in {{14}} age groups"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Facts about the Centre"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "sessions from 9.30–12.30 each morning"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "one afternoon session to help prepare older children for {{15}} at school"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "parents must make several {{16}} before they enrol their child"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "each centre is officially recognised and receives {{17}} funding"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Parents' Commitments"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "take on responsibility for a special {{18}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "attend one {{19}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Practical Advice"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "attend regularly to help your child gain {{20}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "younger children may need to leave early"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "provide a snack for your child"
+    }
+   ],
+   "noteTitle": "The Pre-school Family Centre"
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "John and Cath's presentation plans are different in",
+     "options": [
+      {
+       "v": "A",
+       "t": "the examples used."
+      },
+      {
+       "v": "B",
+       "t": "the order of information."
+      },
+      {
+       "v": "C",
+       "t": "the main points made."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What do the students agree about the anatomy section of their presentation?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It would be better if Cath spoke about it."
+      },
+      {
+       "v": "B",
+       "t": "It should be kept quite short."
+      },
+      {
+       "v": "C",
+       "t": "It should be based on information from the internet."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What do the students agree to include in the last section?",
+     "options": [
+      {
+       "v": "A",
+       "t": "visuals of injuries"
+      },
+      {
+       "v": "B",
+       "t": "demonstrations of treatment"
+      },
+      {
+       "v": "C",
+       "t": "interviews with patients"
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What is said about the different types of heel injury?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Diagnosis is straightforward."
+      },
+      {
+       "v": "B",
+       "t": "They are expensive to treat."
+      },
+      {
+       "v": "C",
+       "t": "Some are more serious than others."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "On the subject of causes of heel injuries, the students agree to",
+     "options": [
+      {
+       "v": "A",
+       "t": "focus on a single reason."
+      },
+      {
+       "v": "B",
+       "t": "reject certain approaches."
+      },
+      {
+       "v": "C",
+       "t": "use a source written by their professor."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "What does Cath say about stretching as a treatment?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is potentially risky."
+      },
+      {
+       "v": "B",
+       "t": "It is commonly confused with strengthening."
+      },
+      {
+       "v": "C",
+       "t": "It is the least effective part of treatment."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 28,
+   "kind": "multi",
+   "instruction": "Choose TWO letters A-E. Which TWO treatment techniques did the female runner find useful for her swollen heel?",
+   "options": [
+    {
+     "v": "A",
+     "t": "massage"
+    },
+    {
+     "v": "B",
+     "t": "ultrasound"
+    },
+    {
+     "v": "C",
+     "t": "rest"
+    },
+    {
+     "v": "D",
+     "t": "balancing exercises"
+    },
+    {
+     "v": "E",
+     "t": "ice"
+    }
+   ]
+  },
+  {
+   "from": 29,
+   "to": 30,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO sports did the male sprinter find most effective during his rehabilitation programme?",
+   "options": [
+    {
+     "v": "A",
+     "t": "swimming"
+    },
+    {
+     "v": "B",
+     "t": "weight-training"
+    },
+    {
+     "v": "C",
+     "t": "running on grass"
+    },
+    {
+     "v": "D",
+     "t": "cycling"
+    },
+    {
+     "v": "E",
+     "t": "jumping"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 36,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN THREE WORDS for each answer.",
+   "noteTitle": "Different Types of Supermarket Layout (Layout – Description – Advantages – Disadvantages)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Grid"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Description: parallel aisles"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Advantages: efficient use of floor space; controls {{31}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Disadvantages: uninteresting layout; shoppers can {{32}} through their shopping"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Free-form"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Description: {{33}} organisation"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Disadvantages: customers need more {{34}} to find products; poor use of space, so less {{35}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Boutique"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Description: displays arranged around a food speciality"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Advantages: separates space into {{36}}; creates attractive image"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Disadvantages: poor use of space"
+    }
+   ]
+  },
+  {
+   "from": 37,
+   "to": 40,
+   "kind": "letter",
+   "instruction": "Questions 37-40: see the test paper for the questions and options, then choose the correct letter.",
+   "questions": [
+    {
+     "n": 37,
+     "text": "Question 37 (see the test paper)"
+    },
+    {
+     "n": 38,
+     "text": "Question 38 (see the test paper)"
+    },
+    {
+     "n": 39,
+     "text": "Question 39 (see the test paper)"
+    },
+    {
+     "n": 40,
+     "text": "Question 40 (see the test paper)"
+    }
+   ]
+  }
+ ],
+ "paper": true,
+ "paperFirst": true
+}

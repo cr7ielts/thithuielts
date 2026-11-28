@@ -1,0 +1,82 @@
+{
+ "id": "forecast-06-s3",
+ "kind": "section",
+ "groups": [
+  {
+   "from": 21,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Questions 21–30: read the questions and options on the test paper above, then choose the correct letter.",
+   "bank": [
+    {
+     "v": "A",
+     "t": ""
+    },
+    {
+     "v": "B",
+     "t": ""
+    },
+    {
+     "v": "C",
+     "t": ""
+    },
+    {
+     "v": "D",
+     "t": ""
+    },
+    {
+     "v": "E",
+     "t": ""
+    },
+    {
+     "v": "F",
+     "t": ""
+    }
+   ],
+   "questions": [
+    {
+     "n": 21,
+     "text": "Question 21"
+    },
+    {
+     "n": 22,
+     "text": "Question 22"
+    },
+    {
+     "n": 23,
+     "text": "Question 23"
+    },
+    {
+     "n": 24,
+     "text": "Question 24"
+    },
+    {
+     "n": 25,
+     "text": "Question 25"
+    },
+    {
+     "n": 26,
+     "text": "Question 26"
+    },
+    {
+     "n": 27,
+     "text": "Question 27"
+    },
+    {
+     "n": 28,
+     "text": "Question 28"
+    },
+    {
+     "n": 29,
+     "text": "Question 29"
+    },
+    {
+     "n": 30,
+     "text": "Question 30"
+    }
+   ]
+  }
+ ],
+ "paper": true,
+ "paperFirst": true
+}

@@ -91,5 +91,6 @@
    ]
   }
  ],
- "paper": true
+ "paper": true,
+ "paperFirst": true
 }

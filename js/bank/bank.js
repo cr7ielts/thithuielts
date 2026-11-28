@@ -397,7 +397,10 @@ function practiceUI(ctx, kind, item, files, urls, hw = null, inter = null, proct
       el("a", { class: "btn btn-sm", href: urls[pdfIdx], target: "_blank", rel: "noopener" }, L("Mở PDF trong tab mới", "Open PDF in a new tab"), icon("arrow"))));
     const viewer = pdfViewer(urls[pdfIdx], item.title, pages, hlStore, !!files[pdfIdx].keyInside);
     // Listening làm trên máy: đề PDF chỉ để xem bản đồ / sơ đồ -> gập lại, mở khi cần
-    if (listenFig) figure = el("details", { class: "bank-figure" }, el("summary", {}, L("Xem hình trong đề (bản đồ, sơ đồ)", "Show the pictures from the test paper (maps, diagrams)")), viewer);
+    // paperFirst: câu hỏi chỉ có trên trang đề (PDF scan) -> mở sẵn trang đề
+    if (listenFig) figure = el("details", { class: "bank-figure", open: inter.paperFirst ? "" : null },
+      el("summary", {}, inter.paperFirst ? L("Trang đề (câu hỏi nằm trên trang này — trả lời ở ô bên dưới)", "Test paper (the questions are on this page — answer in the boxes below)")
+        : L("Xem hình trong đề (bản đồ, sơ đồ)", "Show the pictures from the test paper (maps, diagrams)")), viewer);
     else paper.append(viewer);
   }
 

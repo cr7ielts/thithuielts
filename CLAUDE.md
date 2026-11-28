@@ -45,7 +45,7 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
   4. `node --check` file JS đã sửa, commit + push `firebase-app`. Không có gì mới thì không commit.
 
 ## Việc còn dở
-- 10 đề Listening chưa có bản làm trên máy: forecast-06, 08, 10, 13, 16, 17, 18, 19, dudoan-02, vol8-02.
+- Một số section Listening chỉ có trang đề dạng ảnh scan (forecast-06 s1–s4, forecast-08-s4, forecast-10-s1, forecast-16-s2, forecast-17-s1, forecast-19-s4, dudoan-02-s4 câu 37–40): làm trên máy dạng `paperFirst` (mở sẵn trang PDF + ô trả lời "Question n"). Có bản chữ của đề thì dựng lại câu hỏi đầy đủ.
 - Transcript forecast-15 section 2–4 rỗng (cần `transcribe.cmd --force forecast-15`).
 - 5 bài Reading dự đoán chưa có: The Dunedin study, Dark Chocolate's Health-giving Benefits, IQ Scores, Lawrence Johnston and Hidcote Garden, Neanderthal Technology.
 - Phiên âm cặp từ "a / b" trong `vocab-evu.js`/`vocab-ows.js` chỉ có của từ đầu.

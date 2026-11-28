@@ -246,7 +246,7 @@ function groupBlock(g, item, answers, change, flagUI, qNodes) {
       g.instruction ? el("div", { class: "cdi-instr" }, g.instruction) : null));
 
   // khung đáp án dùng chung (heading / matching)
-  if (g.bank?.length) {
+  if (g.bank?.some((o) => o.t)) {   // khung chữ cái trống (đề chỉ có trên trang PDF) thì khỏi liệt kê
     box.append(el("div", { class: "cdi-bank" }, g.bank.map((o) =>
       el("div", { class: "cdi-bank-row" }, el("span", { class: "cdi-bank-v" }, o.v), el("span", {}, o.t)))));
   }

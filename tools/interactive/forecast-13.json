@@ -1,0 +1,501 @@
+{
+ "id": "forecast-13",
+ "kind": "listening",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Mobile phone number: 021 636 7189"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Email address"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "graceb@{{1}}.co.nz"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Qualification"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "a diploma in {{2}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Agreed work hours"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "from {{3}} am to 2pm Monday to Friday"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Volunteer work experience"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "a volunteer city {{4}} at Rugby World Cup"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "a volunteer netball team {{5}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Hobbies"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "likes to work in her {{6}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "enjoys flower arranging"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "plays the {{7}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Type of work offered"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "working on a {{8}} for a month"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "working in a community centre with elderly people"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Why is she interested in volunteering?"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "wants to have more {{9}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "wants to help others"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Where did she hear about the agency?"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "saw an advertisement at the {{10}}"
+    }
+   ],
+   "noteTitle": "Volunteer work application form: Grace Brown"
+  },
+  {
+   "from": 11,
+   "to": 16,
+   "kind": "letter",
+   "instruction": "Which comment does John make about each of the following photography magazines? Choose SIX answers from the box and write the correct letter, A-H, next to questions 11-16. Comments",
+   "bank": [
+    {
+     "v": "A",
+     "t": "useful technical advice"
+    },
+    {
+     "v": "B",
+     "t": "easy-to-understand advice"
+    },
+    {
+     "v": "C",
+     "t": "free offers"
+    },
+    {
+     "v": "D",
+     "t": "reports about new products"
+    },
+    {
+     "v": "E",
+     "t": "advice about photography locations"
+    },
+    {
+     "v": "F",
+     "t": "high quality photos"
+    },
+    {
+     "v": "G",
+     "t": "only available online"
+    },
+    {
+     "v": "H",
+     "t": "monthly competitions"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Camera Ready"
+    },
+    {
+     "n": 12,
+     "text": "Outdoor Lens"
+    },
+    {
+     "n": 13,
+     "text": "Photographer Today"
+    },
+    {
+     "n": 14,
+     "text": "Photo Now"
+    },
+    {
+     "n": 15,
+     "text": "Wild Photos"
+    },
+    {
+     "n": 16,
+     "text": "Photo Monthly"
+    }
+   ]
+  },
+  {
+   "from": 17,
+   "to": 18,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO useful features of the Photo Safari tour does John mention?",
+   "options": [
+    {
+     "v": "A",
+     "t": "the photography classes"
+    },
+    {
+     "v": "B",
+     "t": "having space to store equipment"
+    },
+    {
+     "v": "C",
+     "t": "the high standard of accommodation"
+    },
+    {
+     "v": "D",
+     "t": "the quality of the food"
+    },
+    {
+     "v": "E",
+     "t": "the airport pick-up service"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "kind": "multi",
+   "instruction": "Choose TWO letters, A-E. Which TWO opinions does John give about his holiday with Photo Safari?",
+   "options": [
+    {
+     "v": "A",
+     "t": "Good advice was given about what clothes to take."
+    },
+    {
+     "v": "B",
+     "t": "There were photo opportunities every day."
+    },
+    {
+     "v": "C",
+     "t": "The non-photographers had a good time."
+    },
+    {
+     "v": "D",
+     "t": "It was the best time of year to see the animals."
+    },
+    {
+     "v": "E",
+     "t": "The guides knew a lot about photography."
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Janet says that over time, shampoo has become",
+     "options": [
+      {
+       "v": "A",
+       "t": "a cheaper product."
+      },
+      {
+       "v": "B",
+       "t": "more hygienic in its effects."
+      },
+      {
+       "v": "C",
+       "t": "a different kind of commodity."
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What does Janet say about 'bad hair days'?",
+     "options": [
+      {
+       "v": "A",
+       "t": "They really do exist."
+      },
+      {
+       "v": "B",
+       "t": "Women worry about them more than men."
+      },
+      {
+       "v": "C",
+       "t": "Their name is inaccurate."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What do Janet and Michael say about the chemicals used in shampoos?",
+     "options": [
+      {
+       "v": "A",
+       "t": "All shampoos contain the same chemicals."
+      },
+      {
+       "v": "B",
+       "t": "The chemicals are believed to be dangerous."
+      },
+      {
+       "v": "C",
+       "t": "The presence of the chemicals is rarely publicised."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "According to Janet, printing directly onto shampoo bottles, rather than onto labels,",
+     "options": [
+      {
+       "v": "A",
+       "t": "costs more."
+      },
+      {
+       "v": "B",
+       "t": "looks less attractive."
+      },
+      {
+       "v": "C",
+       "t": "takes a lot longer."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "With regard to environmental issues, Michael and Janet want to investigate",
+     "options": [
+      {
+       "v": "A",
+       "t": "the appearance of shampoo bottles."
+      },
+      {
+       "v": "B",
+       "t": "variations in the weight of shampoo bottles."
+      },
+      {
+       "v": "C",
+       "t": "the source of recycled plastic in shampoo bottles."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "Michael bases his own shampoo purchase decisions on his",
+     "options": [
+      {
+       "v": "A",
+       "t": "loyalty to certain brands."
+      },
+      {
+       "v": "B",
+       "t": "desire to get value for money."
+      },
+      {
+       "v": "C",
+       "t": "willingness to try new products."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "According to the speakers, what is the main advertising focus of each of the following shampoo advertisements? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "link to relaxation"
+    },
+    {
+     "v": "B",
+     "t": "enviable lifestyle"
+    },
+    {
+     "v": "C",
+     "t": "natural ingredients"
+    },
+    {
+     "v": "D",
+     "t": "masculine image"
+    },
+    {
+     "v": "E",
+     "t": "product reliability"
+    },
+    {
+     "v": "F",
+     "t": "romantic interest"
+    },
+    {
+     "v": "G",
+     "t": "use by celebrities"
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "Zing"
+    },
+    {
+     "n": 28,
+     "text": "Splash"
+    },
+    {
+     "n": 29,
+     "text": "Just Go"
+    },
+    {
+     "n": 30,
+     "text": "Brozene"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The most common symbols include:"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "simple shapes, e.g. dots and a {{31}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "more complex shapes, e.g. a wavy line to represent a {{32}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "How the hand symbol was made"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The paint was made by mixing charcoal with {{33}} and saliva"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The paint was applied using something similar to a {{34}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Applying paint made an unusual {{35}} and also caused lightheadedness"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The importance of the symbols"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Researchers are developing a database to help identify any patterns."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "The symbols are likely to be a {{36}} used by different groups."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "A sequence of five of the symbols has been found on cave walls in Spain and on a {{37}} made from a deer's teeth."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "What researchers disagree about"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Some researchers say the symbols were part of the 'Great Leap Forward' which also included innovations such as the first {{38}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "Others say the discovery in Africa of earlier artefacts such as types of {{39}} disproves the theory."
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "It is likely that some art painted on {{40}} did not survive."
+    }
+   ],
+   "noteTitle": "Ancient cave art symbols"
+  }
+ ]
+}
