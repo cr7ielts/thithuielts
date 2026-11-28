@@ -4,7 +4,7 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
 
 ## Quy trình làm việc
 - Chỉ làm trên nhánh **`firebase-app`**. Không push / force-push `main`.
-- Không deploy từ cloud. Commit + push lên `firebase-app`; giáo viên tự Fetch → Pull bằng GitHub Desktop rồi chạy `deploy.cmd` (deploy hosting, firestore rules, storage).
+- Không deploy từ cloud bằng tay. Commit + push lên `firebase-app` là **GitHub Actions tự deploy** (hosting + firestore + storage rules, ~1–2 phút). `deploy.cmd` trên máy giáo viên vẫn dùng được khi cần.
 - Trả lời người dùng bằng tiếng Việt, ngắn gọn, không vòng vo.
 - Thử nhanh không cần Firebase: đổi `apiKey` trong `js/config.js` thành `"PASTE_DEMO"` (bản sao ở thư mục tạm, không commit) → chế độ demo lưu localStorage. Playwright + Chromium có sẵn ở `/opt/pw-browsers`.
 - Kiểm tra cú pháp: `node --check <file>`.
