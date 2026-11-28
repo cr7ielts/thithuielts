@@ -1,0 +1,20 @@
+/* NEON NIGHT — nền đêm, viền phát sáng xanh/hồng. Luôn tối, nạp sau glass.css. */
+:root, :root[data-theme="light"], :root[data-theme="dark"] {
+  --hero-bg: linear-gradient(130deg, rgba(14, 10, 50, .92) 0%, rgba(49, 46, 129, .9) 50%, rgba(8, 51, 68, .9) 100%);
+  --btn-grad: linear-gradient(135deg, #22d3ee 0%, #e879f9 100%);
+  color-scheme: dark;
+  --lg-a: #22d3ee; --lg-b: #e879f9; --lg-c: #6366f1; --lg-d: #f472b6; --lg-e: #a3e635;
+  --ground: #07061a; --ground-2: #0d0b26;
+  --surface: rgba(20, 18, 52, .62); --surface-2: rgba(30, 26, 70, .5); --glass: rgba(16, 14, 44, .6);
+  --line: rgba(130, 120, 255, .22); --line-strong: rgba(130, 120, 255, .38); --lg-edge: rgba(34, 211, 238, .35);
+  --ink: #eef0ff; --ink-2: #b9bce8; --ink-3: #7f83b8; --paper: #110f2c;
+  --navy: #22d3ee; --navy-2: #67e8f9; --navy-3: #a5f3fc; --navy-soft: #13284a; --navy-ink: #67e8f9;
+  --copper: #e879f9; --copper-dark: #f0abfc; --copper-press: #a21caf; --copper-soft: #2c1240; --copper-line: #86198f;
+  --lg-shine: inset 0 1px 0 rgba(255, 255, 255, .12);
+  --shadow-sm: 0 0 0 1px rgba(34, 211, 238, .08), 0 10px 28px -14px rgba(232, 121, 249, .45);
+  --shadow: 0 0 0 1px rgba(34, 211, 238, .1), 0 20px 44px -18px rgba(232, 121, 249, .5);
+  --sidebar-bg: rgba(12, 10, 34, .6);
+  --overlay: rgba(2, 2, 12, .65); --focus-ring: rgba(34, 211, 238, .35);
+}
+.btn-primary { box-shadow: 0 0 18px -4px var(--copper); }
+h1, h2 { text-shadow: 0 0 18px rgba(34, 211, 238, .25); }

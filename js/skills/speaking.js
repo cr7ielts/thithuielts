@@ -8,10 +8,14 @@ import { startProctor } from "../proctor.js";
 
 const SKILL = "speaking";
 
+// đề đang làm: mặc định là đề thi thử chung; gói đề theo quý (js/packs.js) truyền đề riêng
+//  opt: { title, testTitle, packTitle, back: [route, nhãn] }
+let T = TEST, OPT = {};
+
 /* Dựng danh sách lượt nói phẳng từ 3 part */
 function buildTurns() {
   const turns = [];
-  for (const part of TEST.speaking.parts) {
+  for (const part of T.speaking.parts) {
     if (part.cue) {
       turns.push({
         partId: part.id, partTitle: part.title,
@@ -30,8 +34,10 @@ function buildTurns() {
   return turns;
 }
 
-export function renderSpeaking(ctx) {
+export function renderSpeaking(ctx, test = TEST, opt = {}) {
+  T = test; OPT = opt;
   const view = el("div");
+  if (opt.back) view.append(el("button", { class: "btn btn-ghost btn-sm back", onclick: () => ctx.go(opt.back[0]) }, icon("back"), opt.back[1]));
   view.append(briefing(ctx, view));
   return view;
 }
@@ -44,9 +50,9 @@ function briefing(ctx, view) {
     el("div", { class: "row", style: "gap:14px;margin-bottom:6px" },
       el("div", { class: "skill-ico speaking" }, icon("speaking")),
       el("div", {},
-        el("h1", { style: "margin-bottom:2px" }, "Speaking"),
+        el("h1", { style: "margin-bottom:2px" }, OPT.title || "Speaking"),
         el("div", { class: "muted" },
-          L(`${turns.length} lượt nói · khoảng ${est} phút · 3 part`, `${turns.length} questions · about ${est} minutes · 3 parts`)))
+          L(`${turns.length} lượt nói, khoảng ${est} phút, 3 part`, `${turns.length} questions, about ${est} minutes, 3 parts`)))
     ),
     el("div", {
       class: "notice notice-warn", style: "margin:16px 0",
@@ -110,7 +116,7 @@ function examUI(ctx, proctor) {
   /* ---------------- một lượt nói ---------------- */
   function showTurn() {
     const t = turns[idx];
-    progressBadge.textContent = `${L("Lượt", "Question")} ${idx + 1}/${turns.length} · ${t.partTitle.split("—")[0].trim()}`;
+    progressBadge.textContent = `${L("Lượt", "Question")} ${idx + 1}/${turns.length}, ${t.partTitle.split("—")[0].trim()}`;
     stage.innerHTML = "";
 
     const phase = el("div", { class: "badge" }, L("Chuẩn bị", "Prepare"));
@@ -244,7 +250,7 @@ function examUI(ctx, proctor) {
       let audioUrl = null;
       if (r?.blob && ENABLE_AUDIO_UPLOAD) {
         progress.textContent = L(`Đang tải file ghi âm ${i + 1}/${turns.length}…`, `Uploading recording ${i + 1}/${turns.length}…`);
-        audioUrl = await uploadAudio(ctx.user.uid, r.blob, `${TEST.id}/${Date.now()}-turn${String(i + 1).padStart(2, "0")}.webm`);
+        audioUrl = await uploadAudio(ctx.user.uid, r.blob, `${String(T.id).replace(/[^\w-]+/g, "_")}/${Date.now()}-turn${String(i + 1).padStart(2, "0")}.webm`);
       }
       payloadTurns.push({
         part: t.partTitle, prompt: t.prompt,
@@ -256,7 +262,8 @@ function examUI(ctx, proctor) {
     const spokenTotal = payloadTurns.reduce((s, t) => s + t.seconds, 0);
     try {
       const sub = await saveSubmission(ctx.user, {
-        testId: TEST.id, skill: SKILL,
+        testId: T.id, skill: SKILL,
+        ...(OPT.testTitle ? { testTitle: OPT.testTitle, packTitle: OPT.packTitle || "" } : {}),
         integrity: proctor.report(),
         startedAt: startedAt.toISOString(),
         durationSec: Math.round((Date.now() - t0) / 1000),

@@ -1,0 +1,206 @@
+/* ==========================================================================
+   VINTAGE GREEN — xanh rêu / ô liu, giấy kem ngả vàng, chữ nâu gỗ, font sách cũ + máy đánh chữ.
+   Nạp SAU glass.css và chỉ ghi đè. Quay lại Liquid Glass: bỏ dòng <link href="css/vintage.css"> và <script src="js/leaves.js"> trong index.html.
+   ========================================================================== */
+:root {
+  --moss: #4f6b34; --moss-d: #3a5026; --olive: #6b7a2a; --olive-d: #4f5c1d; --olive-l: #a3ad5c;
+  --cream: #f3e8c8; --cream-2: #ebdeb8; --paper-v: #f8f0d8; --wood: #4a3524; --wood-2: #6b5037; --wood-3: #947a5c;
+
+  --ground: var(--cream); --ground-2: var(--cream-2);
+  --surface: rgba(250, 243, 222, .88); --surface-2: rgba(238, 226, 190, .7); --glass: rgba(246, 238, 213, .82);
+  --line: #d8c898; --line-strong: #b9a574; --lg-edge: #cdbb86;
+  --ink: var(--wood); --ink-2: var(--wood-2); --ink-3: var(--wood-3);
+  --paper: var(--paper-v);
+
+  --navy: var(--moss); --navy-2: #5d7b3e; --navy-3: #7a9a55; --navy-soft: #e3e8c6; --navy-ink: var(--moss-d);
+  --fur: #8a8a5a; --fur-dark: #5e5d38; --fur-light: #cfc79a; --fur-soft: #ece3bf;
+  --copper: var(--olive); --copper-dark: var(--olive-d); --copper-press: #434e18; --copper-soft: #e9ecc6; --copper-line: #c6cd8d;
+  --mint: var(--moss); --mint-press: var(--moss-d); --mint-soft: #dfe7c5;
+  --pink: #c98a6a; --pink-soft: #f3dfc9; --pink-ink: #8a4a2c;
+  --red: #a8452f; --red-soft: #f3d9cd;
+  --amber: #8a6410; --amber-soft: #f1e2b2; --indigo-soft: #e1e5c4; --indigo-ink: var(--moss-d); --indigo-line: #c3cc93;
+  --ok-ink: #3a5a24; --ok-line: #b4c88a; --ok-bg: #f0f4de; --ok-solid: var(--moss);
+  --bad-solid: #a8452f; --bad-bg: #f8e6dc;
+  --c-listening: #5f7f6a; --c-reading: var(--moss); --c-writing: #a8704a; --c-speaking: #a58a2a;
+  --overlay: rgba(52, 40, 22, .5); --focus-ring: rgba(107, 122, 42, .3);
+
+  --lg-a: #6b7a2a; --lg-b: #a8704a; --lg-c: #5f7f6a; --lg-d: #c4a24a; --lg-e: #7a9a55;
+  --lg-shine: inset 0 1px 0 rgba(255, 250, 230, .7);
+  --shadow-sm: 0 6px 16px -10px rgba(74, 53, 36, .35); --shadow: 0 14px 30px -16px rgba(74, 53, 36, .45); --shadow-lg: 0 26px 50px -22px rgba(74, 53, 36, .5);
+  --sidebar-bg: rgba(243, 232, 200, .85);
+
+  --font-display: "Courier Prime", "Courier New", ui-monospace, monospace;   /* tiêu đề kiểu máy đánh chữ */
+  --font-ui: "Lora", Georgia, "Times New Roman", serif;                      /* chữ có chân kiểu sách cũ */
+  --font-read: var(--font-ui);
+  --r: 14px; --r-lg: 20px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #1c2216; --ground-2: #232a1b; --surface: rgba(38, 46, 28, .85); --surface-2: rgba(48, 58, 36, .7); --glass: rgba(30, 37, 23, .85);
+    --line: #3d4a2c; --line-strong: #566840; --lg-edge: #4a5a35; --ink: #efe3c2; --ink-2: #cdbf9a; --ink-3: #9a9070; --paper: #2a3220;
+    --navy: #9bb36b; --navy-2: #b0c680; --navy-3: #c4d79a; --navy-soft: #2c371f; --navy-ink: #cfe0a6;
+    --copper: #a9b447; --copper-dark: #c4cf6a; --copper-soft: #2f3719; --copper-line: #55621f; --mint: #86a35e; --mint-soft: #26331a;
+    --fur-soft: #2b3320; --fur-light: #4a5636; --ok-bg: #243019; --bad-bg: #3a2318; --sidebar-bg: rgba(28, 34, 22, .85);
+    --lg-shine: inset 0 1px 0 rgba(255, 245, 210, .08);
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #1c2216; --ground-2: #232a1b; --surface: rgba(38, 46, 28, .85); --surface-2: rgba(48, 58, 36, .7); --glass: rgba(30, 37, 23, .85);
+  --line: #3d4a2c; --line-strong: #566840; --lg-edge: #4a5a35; --ink: #efe3c2; --ink-2: #cdbf9a; --ink-3: #9a9070; --paper: #2a3220;
+  --navy: #9bb36b; --navy-2: #b0c680; --navy-3: #c4d79a; --navy-soft: #2c371f; --navy-ink: #cfe0a6;
+  --copper: #a9b447; --copper-dark: #c4cf6a; --copper-soft: #2f3719; --copper-line: #55621f; --mint: #86a35e; --mint-soft: #26331a;
+  --fur-soft: #2b3320; --fur-light: #4a5636; --ok-bg: #243019; --bad-bg: #3a2318; --sidebar-bg: rgba(28, 34, 22, .85);
+  --lg-shine: inset 0 1px 0 rgba(255, 245, 210, .08);
+}
+
+/* ---------- nền giấy kem ngả vàng + vân giấy ---------- */
+body {
+  color: var(--ink); font-family: var(--font-ui);
+  background-color: var(--ground);
+  background-image:
+    radial-gradient(900px 600px at 10% 0%, rgba(214, 190, 120, .35), transparent 70%),
+    radial-gradient(800px 600px at 100% 100%, rgba(120, 140, 70, .22), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .35 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+.bg-float { display: none; }                      /* bỏ hình trôi cũ, đã có lá rơi */
+h1, h2, h3, h4, .brand, .topbar-title { letter-spacing: 0; font-weight: 700; }
+h1, h2, .card-title h3 { text-transform: none; }
+
+/* họa tiết dương xỉ ở hai góc */
+body::before, body::after {
+  content: ""; position: fixed; z-index: 0; pointer-events: none; width: min(34vw, 320px); aspect-ratio: 1;
+  background: url("fern.svg") no-repeat center / contain; opacity: .5;
+}
+body::before { left: 0; bottom: 0; transform-origin: 0 100%; animation: fern-sway 9s ease-in-out infinite; }
+body::after { right: 0; top: 0; transform: rotate(180deg); transform-origin: 100% 0; animation: fern-sway-r 11s ease-in-out infinite; }
+:root[data-theme="dark"] body::before, :root[data-theme="dark"] body::after { opacity: .3; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(body::before, body::after) { opacity: .3; } }
+@keyframes fern-sway { 0%, 100% { transform: rotate(-1.2deg); } 50% { transform: rotate(1.4deg); } }
+@keyframes fern-sway-r { 0%, 100% { transform: rotate(178.8deg); } 50% { transform: rotate(181.4deg); } }
+.app, .shell { position: relative; z-index: 1; }
+
+/* ---------- lá rơi (do js/leaves.js tạo) ---------- */
+
+/* ---------- khung: viền đung đưa như cành cây ---------- */
+.card, .modal, .set-card, .hw-card, .home-hero, .vocab-hero, .games-hero { position: relative; }
+.card, .set-card, .hw-card, .modal, .mode-card, .deck-card, .learn-stage, .game-bar, .lv-prompt, .test-score, .user-chip, .more-panel, .stat, .tile {
+  background: var(--surface); border-color: var(--line); border-radius: var(--r);
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+  box-shadow: var(--lg-shine), var(--shadow-sm);
+}
+.modal { border: 1.5px solid var(--line-strong); box-shadow: var(--lg-shine), var(--shadow-lg); }
+.card::before, .modal::before, .set-card::before, .hw-card::before {
+  content: ""; position: absolute; inset: -4px; z-index: -1; pointer-events: none;
+  border: 1.5px solid var(--olive-l); border-radius: 18px 24px 16px 26px / 24px 16px 26px 18px; opacity: .65;
+  transform-origin: 50% 0; animation: branch-sway 7s ease-in-out infinite;
+}
+.card:nth-child(2n)::before, .set-card:nth-child(2n)::before { animation-duration: 8.5s; animation-delay: -2s; border-radius: 24px 16px 26px 18px / 16px 26px 18px 24px; }
+.card:nth-child(3n)::before, .set-card:nth-child(3n)::before { animation-duration: 6.2s; animation-delay: -4s; }
+.modal::before { z-index: 0; inset: -6px; }
+@keyframes branch-sway { 0%, 100% { transform: translate(-2px, 0) rotate(-.12deg); } 50% { transform: translate(2px, 1px) rotate(.12deg); } }
+
+/* ---------- tin nhắn (toast) và khung mới hiện: mọc lên như lá ---------- */
+.toast { background: var(--moss-d); color: #f8f0d8; font-family: var(--font-ui); font-weight: 600; border: 1.5px solid var(--olive-l);
+  border-radius: 4px 22px 4px 22px; box-shadow: var(--shadow-lg); transform-origin: 0 100%; animation: leaf-grow .6s cubic-bezier(.2, .9, .3, 1.25) both; }
+.toast.ok { background: var(--moss); } .toast.err { background: #8c3a27; }
+.modal { transform-origin: 50% 100%; animation: leaf-grow .55s cubic-bezier(.2, .9, .3, 1.2) both; }
+.card, .set-card, .hw-card { animation: leaf-grow .6s cubic-bezier(.2, .9, .3, 1.15) both; transform-origin: 0 100%; }
+@keyframes leaf-grow {
+  0% { opacity: 0; transform: translateY(14px) scale(.6) rotate(-5deg); clip-path: ellipse(8% 8% at 0 100%); }
+  60% { opacity: 1; clip-path: ellipse(120% 120% at 0 100%); }
+  100% { opacity: 1; transform: none; clip-path: none; }
+}
+
+/* ---------- nút: viền lá, nút chính hình chiếc lá ---------- */
+.btn { border-radius: 10px; font-family: var(--font-display); font-weight: 700; letter-spacing: .01em; border-color: var(--line-strong);
+  -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: 0 3px 0 var(--btn-press, var(--line-strong)); }
+.btn:not(.btn-primary):not(.btn-teal):not(.btn-danger):not(.btn-ghost) { --btn-bg: var(--paper-v); --btn-fg: var(--wood); --btn-press: var(--line-strong); }
+:root[data-theme="dark"] .btn:not(.btn-primary):not(.btn-teal):not(.btn-danger):not(.btn-ghost) { --btn-bg: #2e3822; --btn-fg: var(--ink); }
+.btn-primary, .btn-teal {
+  background: linear-gradient(135deg, var(--olive) 0%, var(--moss) 100%); color: #fbf4dc; border-color: var(--olive-d);
+  border-radius: 4px 26px 4px 26px; box-shadow: 0 3px 0 var(--olive-d), 0 10px 18px -10px rgba(58, 80, 38, .8);
+}
+.btn-teal { background: linear-gradient(135deg, var(--moss) 0%, #6f8b45 100%); border-color: var(--moss-d); box-shadow: 0 3px 0 var(--moss-d); }
+.btn-primary:hover, .btn-teal:hover { filter: brightness(1.07); }
+.btn-primary.btn-lg, .btn-teal.btn-lg { border-radius: 6px 34px 6px 34px; }
+.btn-sm { border-radius: 8px; } .btn-primary.btn-sm, .btn-teal.btn-sm { border-radius: 3px 16px 3px 16px; }
+.btn-ghost { box-shadow: none; }
+/* nút gửi / nộp (submit) có thêm biểu tượng chiếc lá */
+.btn[type="submit"]::after {
+  content: ""; display: inline-block; width: 1.05em; height: 1.05em; margin-left: .5em; vertical-align: -.15em; background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 3C9 3 4 9 4 15c0 1.6.4 3 1 4.2C8 14 12 11 16 9c-3 3-6 6-8 11 1 .6 2.300 1 3.800 1C19 21 21 12 20 3z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 3C9 3 4 9 4 15c0 1.6.4 3 1 4.2C8 14 12 11 16 9c-3 3-6 6-8 11 1 .6 2.300 1 3.800 1C19 21 21 12 20 3z'/%3E%3C/svg%3E") center / contain no-repeat;
+  transition: transform .3s; }
+.btn[type="submit"]:hover::after { transform: rotate(-18deg) translateY(-2px); }
+.icon-btn { border-radius: 10px; background: var(--paper-v); border-color: var(--line-strong); box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+
+/* ---------- ô nhập: giấy ---------- */
+input[type="text"], input[type="search"], input[type="email"], input[type="password"], input[type="number"], textarea, select, .type-input, .pin-input, .num-input {
+  background: var(--paper-v); border-color: var(--line-strong); color: var(--ink); font-family: var(--font-ui); border-radius: 10px;
+  -webkit-backdrop-filter: none; backdrop-filter: none; }
+:root[data-theme="dark"] :is(input[type="text"], input[type="search"], input[type="email"], input[type="password"], input[type="number"], textarea, select, .type-input, .pin-input, .num-input) { background: #2a3220; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(input[type="text"], input[type="search"], input[type="email"], input[type="password"], input[type="number"], textarea, select, .type-input, .pin-input, .num-input) { background: #2a3220; } }
+
+/* ---------- thanh bên / thanh trên ---------- */
+.sidebar { background: var(--sidebar-bg); border: 1.5px solid var(--line-strong); border-radius: 20px; -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--shadow-sm); }
+.side-link { font-family: var(--font-ui); font-weight: 600; }
+.side-link:hover { background: rgba(107, 122, 42, .12); }
+.side-link.active { background: var(--paper-v); box-shadow: 0 2px 0 var(--line-strong); }
+:root[data-theme="dark"] .side-link.active { background: #2e3822; }
+.side-title { font-family: var(--font-display); }
+.side-ico { --c: var(--olive); }
+.side-link.active .side-ico { background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 60%, #f3e8c8)); box-shadow: none; }
+.side-link[href="#home"] .side-ico { --c: #6b7a2a; } .side-link[href="#classes"] .side-ico { --c: #5f7f6a; }
+.side-link[href="#homework"] .side-ico { --c: #a8704a; } .side-link[href="#exams"] .side-ico { --c: #b0792a; }
+.side-link[href="#bank"] .side-ico { --c: #4f6b34; } .side-link[href="#history"] .side-ico { --c: #7d7a4a; }
+.side-link[href="#vocab"] .side-ico { --c: #a58a2a; } .side-link[href="#sets"] .side-ico { --c: #8a5a3a; }
+.side-link[href="#live"] .side-ico { --c: #4a7a6a; } .side-link[href="#games"] .side-ico { --c: #5d8a3a; }
+.side-link[href="#idioms"] .side-ico { --c: #7a6a3a; } .side-link[href="#puns"] .side-ico { --c: #a8452f; }
+.side-link[href="#admin"] .side-ico { --c: #5a6a4a; }
+.side-level { background: var(--fur-soft); color: var(--ink-2); box-shadow: none; }
+.side-bar, .bar-track, .progress, .lv-bar, .lv-track { background: rgba(120, 100, 60, .18); }
+.side-bar > span, .bar-track > span { background: linear-gradient(90deg, var(--olive), var(--olive-l)); }
+.topbar::before { background: var(--glass); border-color: var(--line-strong); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: var(--shadow-sm); border-radius: 16px; }
+.streak-pill { background: linear-gradient(135deg, #e8cf84, #c9a24a); color: #4a3200; }
+@media (max-width: 760px) {
+  .bottombar { background: var(--glass) !important; -webkit-backdrop-filter: none; backdrop-filter: none; border: 1.5px solid var(--line-strong) !important; }
+}
+
+/* ---------- khối chào / hero ---------- */
+.home-hero, .vocab-hero, .games-hero {
+  background: linear-gradient(135deg, #5a7437 0%, #3f5a2a 60%, #4a5c24 100%) !important; border: 1.5px solid var(--olive-d);
+  -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: inset 0 0 0 4px rgba(243, 232, 200, .08), var(--shadow);
+}
+.home-hero h1, .vocab-hero h1, .games-hero h1 { color: #f8f0d8; }
+.home-hero .eyebrow { color: #e8d48a; } .home-hero .lead { color: #e3dcb8; }
+.home-hero .btn:not(.btn-primary):not(.btn-teal):not(.btn-danger):not(.btn-ghost) { --btn-bg: rgba(248, 240, 216, .14); --btn-fg: #f8f0d8; --btn-bd: rgba(248, 240, 216, .35); color: #f8f0d8; }
+.home-hero .btn-primary { background: linear-gradient(135deg, #e0c868, #c4a24a); color: #3a2c08; border-color: #8a6e1f; box-shadow: 0 3px 0 #8a6e1f; }
+.set-card { background: linear-gradient(160deg, color-mix(in srgb, var(--deck, var(--olive)) 14%, transparent), transparent 60%), var(--surface); }
+
+/* mục lục, bảng, mã: đồng bộ giấy cũ */
+code { background: var(--fur-soft); color: var(--wood); }
+.passage, .pane-body, .bank-sheet, .pdf-inner, .hw-essay { background: var(--paper-v); color: var(--wood); }
+:root[data-theme="dark"] :is(.passage, .pane-body, .bank-sheet, .hw-essay) { background: #2a3220; color: var(--ink); }
+.passage, .hw-essay { font-family: var(--font-read); line-height: 1.75; }
+
+/* ---------- giảm chuyển động ---------- */
+@media (prefers-reduced-motion: reduce) {
+  body::before, body::after, .card::before, .modal::before, .set-card::before, .hw-card::before,
+  .toast, .modal, .card, .set-card, .hw-card { animation: none !important; }
+}
+
+/* ---------- trang đăng nhập: giấy kem thay nền navy ---------- */
+body:has(.login-stack) {
+  background-color: var(--ground) !important;
+  background-image:
+    radial-gradient(900px 600px at 50% 0%, rgba(214, 190, 120, .4), transparent 70%),
+    radial-gradient(700px 500px at 100% 100%, rgba(120, 140, 70, .25), transparent 70%) !important;
+}
+:root[data-theme="dark"] body:has(.login-stack) { background-image: radial-gradient(900px 600px at 50% 0%, rgba(120, 140, 70, .18), transparent 70%) !important; }
+.login-lang .lang-toggle { background: var(--paper-v); border-color: var(--line-strong); color: var(--wood-2); }
+.login-lang .lang-toggle button { color: var(--wood-2); }
+.login-lang .lang-toggle button.on { background: var(--olive); color: #fbf4dc; }
+:root[data-theme="dark"] .login-lang .lang-toggle { background: #2a3220; }
+:root[data-theme="dark"] code { color: var(--ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) code { color: var(--ink); } }

@@ -48,6 +48,13 @@ service firebase.storage {
       allow delete: if isAdmin();
     }
 
+    // Ảnh meme nhận xét homework: giáo viên tải lên (ảnh < 5 MB), ai đăng nhập cũng xem được
+    match /memes/{file} {
+      allow read:   if request.auth != null;
+      allow write:  if isAdmin() && underMB(5) && request.resource.contentType.matches('image/.*');
+      allow delete: if isAdmin();
+    }
+
     // File học sinh nộp: chỉ chủ nhân và giáo viên xem được
     match /homework/{aid}/submissions/{uid}/{allPaths=**} {
       allow read:   if request.auth != null && (request.auth.uid == uid || isAdmin());

@@ -6,20 +6,28 @@ import { ensureStudentProfile, listMySubmissions } from "./store.js";
 import { DURATION, BRAND, ALLOW_EMAIL_SIGNUP } from "./config.js";
 import { createCat, catLogoSVG } from "./cat.js";
 import { L, getLang, setLang } from "./i18n.js";
-import { currentTheme, toggleTheme } from "./theme.js";
+import { getThemePref, setThemePref, SKINS, getSkin, setSkin } from "./theme.js";
 import { mountBackground } from "./bgfloat.js";
 import { renderListening } from "./skills/listening.js";
 import { renderReading } from "./skills/reading.js";
 import { renderWriting } from "./skills/writing.js";
 import { renderSpeaking } from "./skills/speaking.js";
+import { renderPacks, renderPack, renderPackItem, packsStrip } from "./packs.js";
+import { scoreCardsSection } from "./scorecards.js";
+import { showcaseSection } from "./showcase.js";
 import { renderResult, renderHistory, renderAdmin } from "./results.js";
 import { initProgress, getStats } from "./vocab/progress.js";
 import { renderVocabHub, renderDeck, renderReview, statStrip } from "./vocab/views.js";
 import { renderGamesHub, renderGame, GAMES, WORDPLAY_GAMES } from "./vocab/games.js";
+import { renderNews, renderArticle } from "./news/views.js";
+import { renderSetsHub, renderSetDetail, renderSetEditor, renderStudyRoute } from "./sets/views.js";
+import { renderLiveSetup, renderLiveJoin } from "./sets/live.js";
+import { renderLiveHost } from "./sets/live-host.js";
+import { renderLivePlay } from "./sets/live-play.js";
 import { renderIdioms, renderIdiomGame } from "./wordplay/idioms.js";
 import { renderPuns, renderPunGame } from "./wordplay/puns.js";
 import { renderHomework, renderHomeworkDetail, renderHomeworkForm, renderHomeworkReview, homeworkWidget } from "./homework/views.js";
-import { renderBank, renderBankPractice, renderBankImport } from "./bank/bank.js";
+import { renderBank, renderBankPractice, renderBankImport, renderMockStart } from "./bank/bank.js";
 import { renderBankReview } from "./bank/review.js";
 import { loadMyClasses, hasClass, normCode } from "./classes/clstore.js";
 import { renderClasses, renderClass, renderJoin, tryJoin } from "./classes/views.js";
@@ -37,16 +45,16 @@ const ctx = {
 
 const SKILLS = [
   { id: "listening", name: "Listening",
-    meta: L(`40 câu · ${DURATION.listening} phút`, `40 questions · ${DURATION.listening} min`),
-    desc: L("4 section hội thoại và bài giảng, nghe một lần như thi thật.", "4 sections of conversations and talks, played once like the real test.") },
+    meta: L(`40 câu, ${DURATION.listening} phút`, `40 questions, ${DURATION.listening} min`),
+    desc: L("Mỗi lần ghép ngẫu nhiên Section 1–4 từ đề thật có audio gốc.", "A random Section 1–4 from real tests with the original audio, every time.") },
   { id: "reading", name: "Reading",
-    meta: L(`40 câu · ${DURATION.reading} phút`, `40 questions · ${DURATION.reading} min`),
-    desc: L("3 bài đọc học thuật, bài đọc và câu hỏi đặt cạnh nhau.", "3 academic passages with the text and questions side by side.") },
+    meta: L(`40 câu, ${DURATION.reading} phút`, `40 questions, ${DURATION.reading} min`),
+    desc: L("Mỗi lần ghép ngẫu nhiên Passage 1, 2, 3 từ ngân hàng đề.", "A random Passage 1, 2 and 3 from the question bank, every time.") },
   { id: "writing", name: "Writing",
-    meta: L(`2 task · ${DURATION.writing} phút`, `2 tasks · ${DURATION.writing} min`),
+    meta: L(`2 task, ${DURATION.writing} phút`, `2 tasks, ${DURATION.writing} min`),
     desc: L("Task 1 mô tả biểu đồ, Task 2 nghị luận, đếm từ trực tiếp.", "Task 1 chart report and Task 2 essay, with a live word count.") },
   { id: "speaking", name: "Speaking",
-    meta: L(`3 part · ~${DURATION.speaking} phút`, `3 parts · ~${DURATION.speaking} min`),
+    meta: L(`3 part, ~${DURATION.speaking} phút`, `3 parts, ~${DURATION.speaking} min`),
     desc: L("Trả lời và ghi âm từng câu để giáo viên nghe, chấm điểm.", "Answer and record each question so your teacher can listen and mark.") },
 ];
 
@@ -230,6 +238,7 @@ async function demoSignIn(name, teacher = false) {
 
 /* ===================== Router ===================== */
 // #home · #exams · #vocab · #deck/education · #review/due · #games/saved · #game/rain/all
+// #sets · #set/my:<id> · #study/learn/deck:education · #live · #live/play/<pin>
 // #idioms · #idioms/play/meaning · #idioms/play/missing · #puns · #puns/play
 let route = location.hash.replace("#", "") || "home";
 let routeData = null;
@@ -271,9 +280,12 @@ function render() {
     case "writing":   main.append(renderWriting(ctx)); break;
     case "speaking":  main.append(renderSpeaking(ctx)); break;
     case "exams":     main.append(examsView()); break;
+    case "packs":     main.append(a ? renderPack(ctx, a) : renderPacks(ctx)); break;              // #packs · #packs/<gói>
+    case "pack":      main.append(renderPackItem(ctx, a, b)); break;                            // #pack/<gói>/<bài>
     case "bank":
       if (a === "import") main.append(renderBankImport(ctx));
       else if (b && c === "review") main.append(renderBankReview(ctx, a, b, routeData?.submission || null));   // #bank/<loại>/<id>/review
+      else if (a === "mock") main.append(renderMockStart(ctx, b));   // #bank/mock/<reading|listening>: thi thử ghép đề ngẫu nhiên
       else if (b) main.append(renderBankPractice(ctx, a, b, c === "hw" ? d : null));   // #bank/<loại>/<id>/hw/<bài tập>
       else main.append(renderBank(ctx, a || "reading"));
       break;
@@ -282,6 +294,16 @@ function render() {
     case "review":    main.append(renderReview(ctx, a || "due")); break;
     case "games":     main.append(renderGamesHub(ctx, a || "all")); break;
     case "game":      main.append(renderGame(ctx, a, b || "all")); break;
+    case "sets":      main.append(a === "new" ? renderSetEditor(ctx, null) : a === "edit" ? renderSetEditor(ctx, b) : renderSetsHub(ctx)); break;   // #sets · #sets/new · #sets/edit/<id>
+    case "set":       main.append(renderSetDetail(ctx, a || "saved")); break;                                  // #set/my:<id> · #set/deck:<id> · #set/saved
+    case "study":     main.append(renderStudyRoute(ctx, a, b || "saved")); break;                             // #study/<flash|learn|write|spell|test|match>/<ref>
+    case "live":                                                                                            // #live · #live/new[/<ref>] · #live/host/<pin> · #live/play/<pin>
+      if (a === "new") main.append(renderLiveSetup(ctx, b || ""));
+      else if (a === "host" && b) main.append(renderLiveHost(ctx, b));
+      else if (a === "play" && b) main.append(renderLivePlay(ctx, b));
+      else main.append(renderLiveJoin(ctx));
+      break;
+    case "news":      main.append(a === "words" ? renderNews(ctx, "words") : a ? renderArticle(ctx, a) : renderNews(ctx)); break;   // #news · #news/<id> · #news/words
     case "idioms":    main.append(a === "play" ? renderIdiomGame(ctx, b) : renderIdioms(ctx)); break;
     case "puns":      main.append(a === "play" ? renderPunGame(ctx) : renderPuns(ctx)); break;
     case "homework":
@@ -384,7 +406,9 @@ function loginView() {
         feat("exam", L("Thi thử 4 kỹ năng", "4-skill mock tests")),
         feat("cards", L("Flashcard nhắc ôn", "Spaced-repetition flashcards")),
         feat("game", L("Trò chơi từ vựng", "Vocabulary games")),
-        feat("quote", L("Thành ngữ & chơi chữ", "Idioms & puns")))));
+        feat("quote", L("Thành ngữ & chơi chữ", "Idioms & puns")))),
+    // giới thiệu cho người mới: vấn đề → cách xử lý (ảnh thật của web) + thẻ điểm học viên
+    el("div", { class: "login-more" }, showcaseSection(), scoreCardsSection(null)));
 }
 
 const feat = (ic, t) => el("span", { class: "feat" }, icon(ic), t);
@@ -414,10 +438,11 @@ function googleIcon() {
 
 /* ===================== Khung trang: menu bên trái · thanh trên · thanh đáy (điện thoại) ===================== */
 const SECTION_OF = {
-  home: "home", exams: "exams", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
+  home: "home", exams: "exams", packs: "packs", pack: "packs", listening: "exams", reading: "exams", writing: "exams", speaking: "exams", result: "exams",
   vocab: "vocab", deck: "vocab", review: "vocab", games: "games", game: "games",
+  sets: "sets", set: "sets", study: "sets", live: "live",
   idioms: "idioms", puns: "puns", history: "history", admin: "admin", homework: "homework", bank: "bank",
-  classes: "classes", class: "classes", join: "classes",
+  classes: "classes", class: "classes", join: "classes", news: "news",
 };
 
 /** Các mục menu, chia nhóm. Homework chỉ hiện khi đã vào lớp (giáo viên luôn thấy) */
@@ -430,10 +455,14 @@ function navGroups() {
       teacher || hasClass() ? ["homework", "homework", L("Bài tập", "Homework")] : null] },
     { title: L("Luyện thi", "Practice"), items: [
       ["exams", "exam", L("Thi thử", "Mock tests")],
+      ["packs", "star", L("Gói đề theo quý", "Quarterly packs")],
       ["bank", "file", L("Ngân hàng đề", "Practice bank")],
+      ["news", "globe", L("Đọc báo khoa học", "Science reading")],
       ["history", "history", L("Lịch sử làm bài", "History")]] },
     { title: L("Từ vựng", "Words"), items: [
       ["vocab", "cards", L("Từ vựng", "Vocabulary")],
+      ["sets", "bookmark", L("Học phần", "Study sets")],
+      ["live", "qr", L("Vào phòng live", "Live game")],
       ["games", "game", L("Trò chơi", "Games")],
       ["idioms", "quote", "Idioms"],
       ["puns", "laugh", "Puns"]] },
@@ -470,9 +499,8 @@ function chrome(page) {
           el("span", {}, `${L("Cấp", "Level")} ${s.level}`), el("span", { class: "side-xp" }, `${s.xp} XP`)),
         el("div", { class: "side-bar" }, el("span", { style: `width:${s.pct ?? 0}%` })))));
 
-  const themeBtn = el("button", { class: "icon-btn theme-btn", title: currentTheme() === "dark" ? L("Giao diện sáng", "Light mode") : L("Giao diện tối", "Dark mode"),
-    "aria-label": L("Đổi giao diện sáng / tối", "Toggle light / dark mode"),
-    onclick: () => { toggleTheme(); render(); } }, icon(currentTheme() === "dark" ? "sun" : "moon"));
+  const themeBtn = el("button", { class: "icon-btn theme-btn", title: L("Đổi giao diện", "Change theme"),
+    "aria-label": L("Đổi giao diện", "Change theme"), onclick: (e) => openSkinMenu(e.currentTarget) }, icon("palette"));
 
   const header = el("header", { class: "topbar" },
     el("a", { class: "brand brand-mobile", href: "#home", onclick: (e) => { e.preventDefault(); go("home"); } },
@@ -486,7 +514,7 @@ function chrome(page) {
       avatar(),
       el("div", { class: "meta" },
         el("div", { class: "name" }, name),
-        el("div", { class: "role" }, isAdmin(user) ? L("Giáo viên", "Teacher") : `${L("Cấp", "Level")} ${s.level} · ${s.xp} XP`))),
+        el("div", { class: "role" }, isAdmin(user) ? L("Giáo viên", "Teacher") : `${L("Cấp", "Level")} ${s.level}, ${s.xp} XP`))),
     el("button", { class: "icon-btn", title: L("Đăng xuất", "Sign out"), "aria-label": L("Đăng xuất", "Sign out"), onclick: () => signOutFn?.() }, icon("logout")));
 
   // Điện thoại: 4 mục chính + "Thêm" mở bảng đủ các mục
@@ -504,8 +532,8 @@ function chrome(page) {
       el("div", { class: "more-grid" }, g.items.map(([r, ic, t]) => el("button", { class: "more-item" + (section === r ? " active" : ""),
         onclick: () => { closeSheet(); go(r); } }, el("span", { class: "side-ico" }, icon(ic)), t))))),
     el("div", { class: "row wrap", style: "gap:8px;margin-top:14px" }, langToggle(),
-      el("button", { class: "btn btn-sm", onclick: () => { toggleTheme(); render(); } }, icon(currentTheme() === "dark" ? "sun" : "moon"),
-        currentTheme() === "dark" ? L("Giao diện sáng", "Light mode") : L("Giao diện tối", "Dark mode")),
+      el("button", { class: "btn btn-sm", onclick: (e) => openSkinMenu(e.currentTarget) }, icon("palette"),
+        L("Đổi giao diện", "Change theme")),
       el("div", { class: "spacer" }),
       el("button", { class: "btn btn-sm btn-ghost", onclick: () => signOutFn?.() }, icon("logout"), L("Đăng xuất", "Sign out")))));
   const bottom = el("nav", { class: "bottombar", "aria-label": L("Menu", "Menu") },
@@ -552,7 +580,12 @@ function homeView() {
     el("div", { class: "section-head" },
       el("h2", {}, L("Thi thử IELTS", "IELTS mock test")),
       el("button", { class: "btn btn-ghost btn-sm", onclick: () => go("history") }, L("Lịch sử làm bài", "Test history"), icon("arrow"))),
-    skillGrid());
+    skillGrid(),
+    el("div", { class: "section-head" },
+      el("h2", {}, L("Gói đề theo quý", "Quarterly packs")),
+      el("button", { class: "btn btn-ghost btn-sm", onclick: () => go("packs") }, L("Xem tất cả", "See all"), icon("arrow"))),
+    packsStrip(ctx),
+    scoreCardsSection(user));
 
   wrap.append(
     el("div", { class: "section-head" },
@@ -591,7 +624,7 @@ function homeView() {
           el("div", { class: "spacer" }),
           el("span", { class: "small strong" },
             (sub.skill === "listening" || sub.skill === "reading")
-              ? `${sub.raw}/${sub.total} · Band ${Number(sub.band).toFixed(1)}`
+              ? `${sub.raw}/${sub.total}, Band ${Number(sub.band).toFixed(1)}`
               : (sub.teacherBand != null ? `Band ${Number(sub.teacherBand).toFixed(1)}` : L("chờ chấm", "awaiting mark"))),
           el("button", { class: "btn btn-sm", onclick: () => go("result", { submission: sub }) }, L("Xem", "View"))));
     });
@@ -615,7 +648,8 @@ function wordplayTile(routeName, ic, title, desc, color) {
 function skillGrid() {
   return el("div", { class: "skill-grid" },
     SKILLS.map((k) =>
-      el("button", { class: `skill-card ${k.id}`, onclick: () => go(k.id) },
+      // Reading / Listening: ghép đề ngẫu nhiên từ ngân hàng (P1+P2+P3, S1–S4)
+      el("button", { class: `skill-card ${k.id}`, onclick: () => go(["reading", "listening"].includes(k.id) ? `bank/mock/${k.id}` : k.id) },
         el("span", { class: "skill-ico" }, icon(k.id)),
         el("h3", {}, k.name),
         el("p", { class: "muted small" }, k.desc),
@@ -627,13 +661,14 @@ function examsView() {
   return el("div", { class: "stack-lg" },
     el("section", { class: "games-hero" },
       el("div", { style: "flex:1;min-width:260px" },
-        el("div", { class: "eyebrow" }, L("Đề thi thử số 01", "Mock test 01")),
+        el("div", { class: "eyebrow" }, L("Thi thử", "Mock test")),
         el("h1", {}, L("Thi thử IELTS Academic", "IELTS Academic mock test")),
         el("p", { class: "lead" },
           L("Mỗi kỹ năng có đồng hồ riêng và tự nộp khi hết giờ. Thời điểm nộp được ghi lại cho từng bài.",
             "Each skill has its own timer and submits automatically when time runs out. Every submission time is recorded."))),
       el("div", { class: "games-hero-cat" }, cat)),
     skillGrid(),
+    packsStrip(ctx),
     el("button", { class: "card bank-promo", onclick: () => go("bank") },
       el("div", { class: "skill-ico reading" }, icon("file")),
       el("div", { style: "flex:1" },
@@ -653,3 +688,25 @@ function firstName(full) {
 /* Chạy sau cùng, khi mọi biến trong module đã sẵn sàng */
 mountBackground();
 init();
+
+// Bảng chọn bộ giao diện + sáng/tối/theo máy
+function openSkinMenu(anchor) {
+  document.querySelector(".skin-menu")?.remove();
+  const menu = el("div", { class: "skin-menu", role: "dialog", "aria-label": L("Giao diện", "Theme") });
+  const draw = () => {
+    menu.replaceChildren(
+      el("h4", {}, L("Bộ giao diện", "Theme")),
+      el("div", { class: "skin-grid" }, SKINS.map((k) => el("button", { class: "skin-opt" + (getSkin() === k.id ? " on" : ""),
+        onclick: () => { setSkin(k.id); draw(); } }, el("span", { class: "skin-sw", style: `background:${k.sw}` }), L(k.vi, k.en)))),
+      el("h4", {}, L("Độ sáng", "Brightness")),
+      el("div", { class: "skin-modes" }, [["light", L("Sáng", "Light")], ["dark", L("Tối", "Dark")], ["auto", L("Theo máy", "Auto")]].map(([m, t]) =>
+        el("button", { class: getThemePref() === m ? "on" : "", onclick: () => { setThemePref(m); draw(); } }, t))));
+  };
+  draw();
+  document.body.appendChild(menu);
+  const r = anchor.getBoundingClientRect();
+  menu.style.top = `${r.bottom + 8}px`;
+  menu.style.left = `${Math.max(12, Math.min(r.right - menu.offsetWidth, window.innerWidth - menu.offsetWidth - 12))}px`;
+  const close = (e) => { if (!menu.contains(e.target) && !anchor.contains(e.target)) { menu.remove(); document.removeEventListener("pointerdown", close); } };
+  setTimeout(() => document.addEventListener("pointerdown", close), 0);
+}

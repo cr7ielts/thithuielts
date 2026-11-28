@@ -98,7 +98,7 @@
    "from": 10,
    "to": 13,
    "kind": "gap",
-   "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer. Opabinia Feature Nectocaris",
+   "instruction": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
    "notes": [
     {
      "level": 0,
@@ -106,9 +106,19 @@
      "text": "Opabinia"
     },
     {
-     "level": 2,
-     "bullet": "",
-     "text": "Feature"
+     "level": 0,
+     "bullet": "•",
+     "text": "five eyes"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "tail resembling a {{10}}"
+    },
+    {
+     "level": 0,
+     "bullet": "•",
+     "text": "claws used to hold {{11}}"
     },
     {
      "level": 0,
@@ -116,42 +126,37 @@
      "text": "Nectocaris"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "Five eyes Hallucigenia � Tail resembling a {{10}}"
+     "text": "looked like a {{12}}"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "Claws used to hold {{11}}"
+     "text": "fins"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "Looked like a {{12}}"
+     "text": "tentacles"
     },
     {
-     "level": 2,
-     "bullet": "•",
-     "text": "Fins"
+     "level": 0,
+     "bullet": "",
+     "text": "Hallucigenia"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "Tentacles"
+     "text": "spines used to {{13}}"
     },
     {
-     "level": 2,
+     "level": 0,
      "bullet": "•",
-     "text": "Spines used to {{13}}"
-    },
-    {
-     "level": 2,
-     "bullet": "•",
-     "text": "Tentacles"
+     "text": "tentacles"
     }
    ],
-   "noteTitle": "Name               Burgess Shale Creatures"
+   "noteTitle": "Burgess Shale creatures"
   }
  ],
  "passage": {

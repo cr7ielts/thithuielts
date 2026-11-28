@@ -79,7 +79,7 @@ function toIso(v) {
   return null;
 }
 
-export async function listMySubmissions(uid) {
+export async function listMySubmissions(uid, max = 100) {
   if (!isConfigured) {
     return localAll().filter((s) => s.uid === uid).reverse();
   }
@@ -88,7 +88,7 @@ export async function listMySubmissions(uid) {
     dbMod.collection(db, "submissions"),
     dbMod.where("uid", "==", uid),
     dbMod.orderBy("submittedAt", "desc"),
-    dbMod.limit(100)
+    dbMod.limit(max)
   );
   const snap = await dbMod.getDocs(q);
   return snap.docs.map((d) => ({ id: d.id, ...d.data(), submittedAt: toIso(d.data().submittedAt) }));

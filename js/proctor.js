@@ -43,7 +43,7 @@ export function startProctor({ key, fullscreen = true } = {}) {
     "Leaving this screen or pasting text is recorded and shown to your teacher.") });
   const paint = () => {
     badge.replaceChildren(icon("eye"), st.leaves || st.fsExits
-      ? L(`Đang giám sát · rời ${st.leaves + st.fsExits} lần`, `Monitored · left ${st.leaves + st.fsExits}×`)
+      ? L(`Đang giám sát, rời ${st.leaves + st.fsExits} lần`, `Monitored, left ${st.leaves + st.fsExits}×`)
       : L("Đang giám sát", "Monitored"));
     badge.classList.toggle("chip-bad", st.leaves + st.fsExits >= 3);
     badge.classList.toggle("chip-warn", st.leaves + st.fsExits > 0 && st.leaves + st.fsExits < 3);
@@ -240,7 +240,7 @@ export function integrityFlags(sub, opt = {}) {
   if (g) {
     const left = (g.leaves || 0) + (g.fsExits || 0);
     if (g.leaves) f.push({ level: g.leaves >= 3 || g.awaySec >= 60 ? "bad" : "warn",
-      text: L(`Rời màn hình ${g.leaves} lần · ${mmss(g.awaySec || 0)}`, `Left screen ${g.leaves}× · ${mmss(g.awaySec || 0)}`) });
+      text: L(`Rời màn hình ${g.leaves} lần, ${mmss(g.awaySec || 0)}`, `Left screen ${g.leaves}×, ${mmss(g.awaySec || 0)}`) });
     if (g.fsExits) f.push({ level: left >= 3 ? "bad" : "warn", text: L(`Thoát toàn màn hình ${g.fsExits} lần`, `Left full screen ${g.fsExits}×`) });
     if (g.pasteBlocked) f.push({ level: "bad", text: L(`Cố dán chữ ${g.pasteBlocked} lần`, `Tried to paste ${g.pasteBlocked}×`) });
     if (g.bigInserts) f.push({ level: "bad", text: L(`Chữ xuất hiện đột ngột ${g.bigInserts} lần`, `Text appeared suddenly ${g.bigInserts}×`) });

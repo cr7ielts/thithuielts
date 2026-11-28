@@ -43,7 +43,7 @@ export function writingMockFormSection(a) {
     preview.replaceChildren(src
       ? el("div", { class: "stack-sm" }, el("img", { src, alt: "Task 1" }),
           el("div", { class: "row", style: "gap:8px" }, el("span", { class: "tiny muted", style: "flex:1" },
-            pendingImage ? L(`${pendingImage.name} · tải lên khi lưu`, `${pendingImage.name} · uploads on save`) : image?.name || ""),
+            pendingImage ? L(`${pendingImage.name}, tải lên khi lưu`, `${pendingImage.name}, uploads on save`) : image?.name || ""),
             el("button", { type: "button", class: "btn btn-sm", onclick: () => { pendingImage = null; image = null; paint(); } }, icon("x"), L("Bỏ ảnh", "Remove"))))
       : el("div", { class: "muted small" }, L("Chưa có hình. Task 1 Academic thường có biểu đồ / bảng / bản đồ / quy trình.", "No image yet. Academic Task 1 usually has a chart, table, map or process.")));
   };
@@ -167,8 +167,8 @@ export function writingMockWorkArea(ctx, a, sub, teacher, proctor = null, saved 
   const total = el("span", { class: "badge" });
   const counters = {};
   const refresh = () => {
-    total.textContent = L(`Task 1: ${countWords(texts.task1)} từ · Task 2: ${countWords(texts.task2)} từ`,
-      `Task 1: ${countWords(texts.task1)} · Task 2: ${countWords(texts.task2)} words`);
+    total.textContent = L(`Task 1: ${countWords(texts.task1)} từ, Task 2: ${countWords(texts.task2)} từ`,
+      `Task 1: ${countWords(texts.task1)}, Task 2: ${countWords(texts.task2)} words`);
     for (const k of ["task1", "task2"]) {
       const n = countWords(texts[k]);
       dirty = true;

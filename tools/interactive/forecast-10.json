@@ -1,0 +1,432 @@
+{
+ "id": "forecast-10",
+ "kind": "listening",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Questions 1–10: look at the test paper above and type your answer for each question.",
+   "questions": [
+    {
+     "n": 1,
+     "text": "Question 1"
+    },
+    {
+     "n": 2,
+     "text": "Question 2"
+    },
+    {
+     "n": 3,
+     "text": "Question 3"
+    },
+    {
+     "n": 4,
+     "text": "Question 4"
+    },
+    {
+     "n": 5,
+     "text": "Question 5"
+    },
+    {
+     "n": 6,
+     "text": "Question 6"
+    },
+    {
+     "n": 7,
+     "text": "Question 7"
+    },
+    {
+     "n": 8,
+     "text": "Question 8"
+    },
+    {
+     "n": 9,
+     "text": "Question 9"
+    },
+    {
+     "n": 10,
+     "text": "Question 10"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 15,
+   "kind": "letter",
+   "instruction": "Which change is proposed for each of the following problem areas? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 11-15.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "improve the road surface"
+    },
+    {
+     "v": "B",
+     "t": "add flowering plants"
+    },
+    {
+     "v": "C",
+     "t": "provide more bus stops"
+    },
+    {
+     "v": "D",
+     "t": "plant native trees"
+    },
+    {
+     "v": "E",
+     "t": "create new grassy area"
+    },
+    {
+     "v": "F",
+     "t": "build a noise barrier"
+    },
+    {
+     "v": "G",
+     "t": "install traffic lights"
+    }
+   ],
+   "questions": [
+    {
+     "n": 11,
+     "text": "Shared access paths"
+    },
+    {
+     "n": 12,
+     "text": "Highway"
+    },
+    {
+     "n": 13,
+     "text": "Housing estate"
+    },
+    {
+     "n": 14,
+     "text": "Local roads"
+    },
+    {
+     "n": 15,
+     "text": "Picnic area"
+    }
+   ]
+  },
+  {
+   "from": 16,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Label the plan (see the plan on the test paper). Write the correct letter, A-H, next to questions 16-20.",
+   "questions": [
+    {
+     "n": 16,
+     "text": "Park'n'ride car park"
+    },
+    {
+     "n": 17,
+     "text": "Bus interchange"
+    },
+    {
+     "n": 18,
+     "text": "Bicycle lockers"
+    },
+    {
+     "n": 19,
+     "text": "Showers"
+    },
+    {
+     "n": 20,
+     "text": "Lift"
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 25,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "Why is Beth unconvinced that allergies are linked to vitamin D deficiency?",
+     "options": [
+      {
+       "v": "A",
+       "t": "because people's diets have improved since the 1950s"
+      },
+      {
+       "v": "B",
+       "t": "because most people get enough vitamin D"
+      },
+      {
+       "v": "C",
+       "t": "because the evidence only applies in Britain"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "Eliot explains that rising CO2 levels",
+     "options": [
+      {
+       "v": "A",
+       "t": "will mean distribution of pollen over a wider area."
+      },
+      {
+       "v": "B",
+       "t": "are having less impact on pollen than milder winters."
+      },
+      {
+       "v": "C",
+       "t": "are responsible for higher quantities of pollen."
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What does Beth say about seasonal changes?",
+     "options": [
+      {
+       "v": "A",
+       "t": "There is no clear short-term trend for the arrival of spring."
+      },
+      {
+       "v": "B",
+       "t": "In general, spring is likely to continue arriving early."
+      },
+      {
+       "v": "C",
+       "t": "Springs are becoming milder and longer."
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "What point is made about the plant ragweed?",
+     "options": [
+      {
+       "v": "A",
+       "t": "It is spreading to more countries."
+      },
+      {
+       "v": "B",
+       "t": "It is the most widespread cause of allergies globally."
+      },
+      {
+       "v": "C",
+       "t": "It causes the most severe type of allergy."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "Why is tree pollen a more serious problem in cities?",
+     "options": [
+      {
+       "v": "A",
+       "t": "Trees produce more pollen there."
+      },
+      {
+       "v": "B",
+       "t": "There is less to absorb the tree pollen."
+      },
+      {
+       "v": "C",
+       "t": "There is not enough control over tree-planting."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 26,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "What comment is made about the seasonal changes in pollen in each of the following European countries? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 26- 30. Seasonal changes in pollen",
+   "bank": [
+    {
+     "v": "A",
+     "t": "greatest change recorded for oak pollen"
+    },
+    {
+     "v": "B",
+     "t": "changes identified for two pollen types only"
+    },
+    {
+     "v": "C",
+     "t": "a longer season for grass pollen"
+    },
+    {
+     "v": "D",
+     "t": "earlier start dates for all pollen types"
+    },
+    {
+     "v": "E",
+     "t": "significant change in start date of birch pollen"
+    },
+    {
+     "v": "F",
+     "t": "little difference in start dates"
+    },
+    {
+     "v": "G",
+     "t": "information only available for birch pollen"
+    }
+   ],
+   "questions": [
+    {
+     "n": 26,
+     "text": "Austria"
+    },
+    {
+     "n": 27,
+     "text": "France"
+    },
+    {
+     "n": 28,
+     "text": "The Netherlands"
+    },
+    {
+     "n": 29,
+     "text": "Switzerland"
+    },
+    {
+     "n": 30,
+     "text": "UK"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+   "noteTitle": "Textiles with Business Studies",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "New development"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Now possible to work with the {{31}} Faculty to widen learning opportunities"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Aims of course"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "To cover three areas of textiles:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "knitted"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "{{32}}"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "woven"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "To focus on related business operations"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Work placement: focus on studio work in the context of the {{33}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Course content"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Year One: experimentation"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Visual research with {{34}} and suggestions for its application"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Year Two: relating skills to the real world"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Optional course: {{35}} design processes"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Three- or four-year course? Students are offered {{36}} to help them make their decision."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Year Three: consolidation"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Learning style: {{37}} practice"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Students produce:"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a dissertation"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a portfolio"
+    },
+    {
+     "level": 2,
+     "bullet": "•",
+     "text": "a {{38}}"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Career opportunities"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Within textile business – e.g. stylists, retail managers"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Further opportunities – jobs in {{39}} and trend forecasting"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "If interested – come back tomorrow for a short {{40}}."
+    }
+   ]
+  }
+ ],
+ "paper": true,
+ "paperFirst": true
+}

@@ -1,0 +1,524 @@
+{
+ "id": "forecast-18",
+ "kind": "listening",
+ "groups": [
+  {
+   "from": 1,
+   "to": 10,
+   "kind": "gap",
+   "instruction": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Choosing an apartment",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "General information"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The {{1}} of the city of Toronto is a popular place to live."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "The area has a well-known {{2}}."
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "There are several {{3}} in the area."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Apartment: things to check"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Kitchen"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Check there is not a bad {{4}} in the fridge"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Living room"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Make sure the {{5}} is OK on the balcony door"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Look at the condition of the {{6}} in the room"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Bathroom"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Check for a {{7}} under the sink"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Bedroom"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Check for the amount of {{8}} outside"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Building facilities"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Find the location of the {{9}} (possibly in the basement)"
+    },
+    {
+     "level": 1,
+     "bullet": "•",
+     "text": "Check that every floor has a place for {{10}}"
+    }
+   ]
+  },
+  {
+   "from": 11,
+   "to": 18,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+   "noteTitle": "Spring Festival (Event – Location – Date and time – Other information)",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Firework display"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: near the {{11}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 4 September, 9 p.m."
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Other information: pack a {{12}} and blanket"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Display of {{13}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: Central Park"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: daily"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Other information: buses run from the town centre every {{14}} minutes"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "The {{15}} Show"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: Exhibition Centre"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 10–15 September, 9 a.m. – 10 p.m."
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "'Grow Your Imagination'"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: in the {{16}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 11–19 September"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "'Swing in Spring'"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Location: in the {{17}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Date and time: 17 & 18 September"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Other information: Saturday matinee performance at {{18}}"
+    }
+   ]
+  },
+  {
+   "from": 19,
+   "to": 20,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 19,
+     "text": "In the Spring Festival competition, you can win",
+     "options": [
+      {
+       "v": "A",
+       "t": "a family pass to 'Balloons Down Under'."
+      },
+      {
+       "v": "B",
+       "t": "a cheque for $200."
+      },
+      {
+       "v": "C",
+       "t": "a flight in a hot air balloon."
+      }
+     ]
+    },
+    {
+     "n": 20,
+     "text": "You can get an entry form for the competition from",
+     "options": [
+      {
+       "v": "A",
+       "t": "the radio station."
+      },
+      {
+       "v": "B",
+       "t": "the newspaper."
+      },
+      {
+       "v": "C",
+       "t": "the Festival's website."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 21,
+   "to": 26,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 21,
+     "text": "In Laura's opinion, what should Mike's first reflective journal include?",
+     "options": [
+      {
+       "v": "A",
+       "t": "his learning aims for the module"
+      },
+      {
+       "v": "B",
+       "t": "which study skills he needs to improve"
+      },
+      {
+       "v": "C",
+       "t": "his strengths and weaknesses"
+      }
+     ]
+    },
+    {
+     "n": 22,
+     "text": "What evidence can Mike provide that he is an effective communicator?",
+     "options": [
+      {
+       "v": "A",
+       "t": "his use of technology"
+      },
+      {
+       "v": "B",
+       "t": "listening to others"
+      },
+      {
+       "v": "C",
+       "t": "a presentation"
+      }
+     ]
+    },
+    {
+     "n": 23,
+     "text": "What does Mike decide to do to improve his skills as an effective communicator?",
+     "options": [
+      {
+       "v": "A",
+       "t": "ask questions during a class discussion"
+      },
+      {
+       "v": "B",
+       "t": "offer to lead a group discussion"
+      },
+      {
+       "v": "C",
+       "t": "do an online course in writing skills"
+      }
+     ]
+    },
+    {
+     "n": 24,
+     "text": "Laura says Mike can prove he is a critical thinker by",
+     "options": [
+      {
+       "v": "A",
+       "t": "solving a problem."
+      },
+      {
+       "v": "B",
+       "t": "using a range of sources."
+      },
+      {
+       "v": "C",
+       "t": "analysing his learning style."
+      }
+     ]
+    },
+    {
+     "n": 25,
+     "text": "After his discussion with Laura, how does Mike feel now about writing a reflective journal?",
+     "options": [
+      {
+       "v": "A",
+       "t": "He is looking forward to it."
+      },
+      {
+       "v": "B",
+       "t": "He wishes he had more time."
+      },
+      {
+       "v": "C",
+       "t": "He wants to finish it quickly."
+      }
+     ]
+    },
+    {
+     "n": 26,
+     "text": "What is it important to demonstrate in the work selected for the reflective portfolio?",
+     "options": [
+      {
+       "v": "A",
+       "t": "self-awareness"
+      },
+      {
+       "v": "B",
+       "t": "a positive attitude"
+      },
+      {
+       "v": "C",
+       "t": "creative input"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 27,
+   "to": 30,
+   "kind": "letter",
+   "instruction": "Why has Laura included each of the following samples of work in her portfolio? Choose FOUR answers from the box and write the correct letter, A-G, next to questions 27-30.",
+   "bank": [
+    {
+     "v": "A",
+     "t": "This was something which she found difficult."
+    },
+    {
+     "v": "B",
+     "t": "This helped her to identify a problem."
+    },
+    {
+     "v": "C",
+     "t": "This gave her more confidence."
+    },
+    {
+     "v": "D",
+     "t": "This is evidence of independent learning."
+    },
+    {
+     "v": "E",
+     "t": "This was something she enjoyed doing."
+    },
+    {
+     "v": "F",
+     "t": "This shows she is aware of her learning style."
+    },
+    {
+     "v": "G",
+     "t": "This shows she can work as part of a team."
+    }
+   ],
+   "questions": [
+    {
+     "n": 27,
+     "text": "essay"
+    },
+    {
+     "n": 28,
+     "text": "test with result"
+    },
+    {
+     "n": 29,
+     "text": "class notes"
+    },
+    {
+     "n": 30,
+     "text": "presentation notes"
+    }
+   ]
+  },
+  {
+   "from": 31,
+   "to": 33,
+   "kind": "letter",
+   "instruction": "Choose the correct letter, A, B or C.",
+   "questions": [
+    {
+     "n": 31,
+     "text": "The speaker says he is going to report on",
+     "options": [
+      {
+       "v": "A",
+       "t": "his own research."
+      },
+      {
+       "v": "B",
+       "t": "the research of wildlife experts."
+      },
+      {
+       "v": "C",
+       "t": "research carried out by the government."
+      }
+     ]
+    },
+    {
+     "n": 32,
+     "text": "Wind turbine farms are most dangerous to birds which",
+     "options": [
+      {
+       "v": "A",
+       "t": "live in coastal regions."
+      },
+      {
+       "v": "B",
+       "t": "gather in large flocks."
+      },
+      {
+       "v": "C",
+       "t": "feed on fish and other seafood."
+      }
+     ]
+    },
+    {
+     "n": 33,
+     "text": "The speaker implies that wind farms should be sited",
+     "options": [
+      {
+       "v": "A",
+       "t": "in gaps between hills."
+      },
+      {
+       "v": "B",
+       "t": "along sea coasts."
+      },
+      {
+       "v": "C",
+       "t": "on higher ground."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "from": 34,
+   "to": 40,
+   "kind": "gap",
+   "instruction": "Complete the table below. Write ONE WORD ONLY for each answer.",
+   "noteTitle": "Study – Main focus – Problems – Proposed solutions",
+   "notes": [
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Vulture study"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Main focus: connection between how high they fly and weather conditions: quantity of {{34}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Problems: vultures fly lower in strong winds, so are in more {{35}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Proposed solution: use a fixed {{36}} to monitor bird activity"
+    },
+    {
+     "level": 0,
+     "bullet": "",
+     "text": "Nocturnal bird survey"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Main focus: bird movements at night, particularly near wind farms and {{37}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Problems: previous tracking methods not practical because they were not very {{38}}"
+    },
+    {
+     "level": 1,
+     "bullet": "",
+     "text": "Proposed solutions: develop new {{39}} systems; produce {{40}} models for use"
+    }
+   ]
+  }
+ ]
+}
