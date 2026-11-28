@@ -1,0 +1,27 @@
+# Tự đưa web lên Firebase mỗi khi nhánh firebase-app có thay đổi (từ GitHub Desktop, cap-nhat-de.cmd hay Claude).
+# Cần secret FIREBASE_SERVICE_ACCOUNT (nội dung file khoá JSON của service account) — xem huong-dan-tu-dong.md.
+# Chưa có secret thì bước deploy tự bỏ qua, không báo lỗi.
+name: Deploy Firebase
+on:
+  push:
+    branches: [firebase-app]
+  workflow_dispatch:
+concurrency:
+  group: deploy-firebase
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Deploy hosting + rules
+        env:
+          SA: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ -z "$SA" ]; then echo "Chưa có secret FIREBASE_SERVICE_ACCOUNT — bỏ qua deploy."; exit 0; fi
+          printf '%s' "$SA" > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          npx -y firebase-tools@13 deploy --only hosting,firestore,storage --project xamenglish-d8ebd --non-interactive

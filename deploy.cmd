@@ -32,7 +32,7 @@ echo.
 echo  [LOI] Khong lay duoc ban moi tu GitHub (xem dong bao loi o tren).
 echo        Chua dua gi len web. Chup man hinh cua so nay gui cho Claude.
 echo.
-pause
+if /i not "%~1"=="/auto" pause
 exit /b 1
 
 :deploy
@@ -62,11 +62,11 @@ echo  [LOI] Cap nhat that bai sau 2 lan thu.
 echo        - Kiem tra mang, tat VPN neu co, roi chay lai file nay.
 echo        - Van loi thi chup man hinh cua so nay gui cho Claude.
 echo.
-pause
+if /i not "%~1"=="/auto" pause
 exit /b 1
 
 :ok
 echo.
 echo  [XONG] Web da duoc cap nhat. Hoc sinh tai lai trang la thay ban moi.
 echo.
-pause
+if /i not "%~1"=="/auto" pause

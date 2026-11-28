@@ -13,7 +13,7 @@
 # Kết quả:
 #   Reading   -> js/data/bank-extra.js (EXTRA_READING) + tools/txt/<id>.txt + tools/interactive/<id>.json
 #   Listening -> js/data/bank-listening-new.js (NEW_LISTENING_BANK / NEW_LISTENING_SECTIONS)
-#                + audio chép vào media/listening/<id>/ (đưa lên web cùng deploy.cmd, không cần trang Tải file)
+#                + audio chép vào media/listening/<id>/ (lên GitHub + hosting, không cần trang Tải file)
 # Bài nào không đọc chắc chắn được (thiếu đáp án, không nhận ra nhóm câu hỏi, bảng bị lỗi chữ…) thì KHÔNG nhập,
 # được liệt kê trong báo cáo để giáo viên / Claude xử lý tay. Thư mục đó vẫn nằm lại trong DE MOI.
 import json, os, re, sys, shutil, zipfile, html, unicodedata, datetime
@@ -230,6 +230,7 @@ def main():
     if not os.path.isdir(inbox):
         os.makedirs(os.path.join(inbox, 'READING'), exist_ok=True)
         os.makedirs(os.path.join(inbox, 'LISTENING'), exist_ok=True)
+        os.makedirs(os.path.join(inbox, 'FORECAST'), exist_ok=True)
         print(f'Đã tạo thư mục đề mới: {inbox}\n  Bỏ đề vào READING\\<tên đề>\\ hoặc LISTENING\\<tên đề>\\ rồi chạy lại.')
         return 0
     have = existing_ids()
@@ -290,7 +291,7 @@ def main():
             lt, ls = [], []
         write_js(os.path.join(PROJ, 'js', 'data', 'bank-listening-new.js'),
                  ['NGÂN HÀNG ĐỀ LISTENING — ĐỀ MỚI (tools/import_new.py, cap-nhat-de.cmd)',
-                  'Audio ở media/listening/<id>/ (đưa lên hosting cùng deploy.cmd, không qua Firebase Storage).'],
+                  'Audio ở media/listening/<id>/ (lên hosting cùng bản web, không qua Firebase Storage).'],
                  [('NEW_LISTENING_BANK', lt + new_lt), ('NEW_LISTENING_SECTIONS', ls + new_ls)])
         for src, dst in copies.items():
             os.makedirs(os.path.dirname(dst), exist_ok=True)

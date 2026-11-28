@@ -33,7 +33,16 @@ Vanilla JS (ES modules, không build) + Firebase (Auth, Firestore, Storage, Host
 - Giải thích Listening: transcript `tools/transcripts/` + `tools/explain_listening/` → `gen_explain_listening.py`.
 - Từ vựng: `js/data/vocab.js` (bộ IELTS, series `ielts`), `vocab-evu.js` (English Vocabulary in Use, `evu`), `vocab-ows.js` (Oxford Word Skills, `ows`). Mỗi từ `[word, ipa, pos, vi, def, example]`; `def` rỗng thì web dùng nghĩa Việt. Phiên âm 2 bộ sách sinh tự động từ từ điển CMU.
 - Dự đoán Reading kỳ hiện tại: `js/data/reading-forecast.js`.
-- Đề mới tự nhập: `cap-nhat-de.cmd` (máy giáo viên) → `tools/import_new.py` đọc `OneDrive\2. IELTS\DE MOI\{READING,LISTENING}\<tên đề>\`; Reading ghi vào `bank-extra.js`, Listening vào `bank-listening-new.js` + audio chép vào `media/listening/<id>/` (gitignore, lên hosting qua deploy). Bài đọc không chắc chắn thì bỏ qua và báo lỗi.
+- Đề mới tự nhập: `cap-nhat-de.cmd` (máy giáo viên) → `tools/import_new.py` đọc `OneDrive\2. IELTS\DE MOI\{READING,LISTENING}\<tên đề>\`; Reading ghi vào `bank-extra.js`, Listening vào `bank-listening-new.js` + audio chép vào `media/listening/<id>/` (commit lên GitHub để GitHub Actions deploy được). Bài đọc không chắc chắn thì bỏ qua và báo lỗi.
+
+## Tự động mỗi quý (xem `huong-dan-tu-dong.md`)
+- Máy giáo viên: `cai-tu-dong.cmd` tạo lịch chạy `cap-nhat-de.cmd /auto` mỗi tối; `deploy.cmd /auto` không dừng hỏi phím.
+- GitHub Actions `.github/workflows/deploy.yml`: push lên `firebase-app` là deploy (cần secret `FIREBASE_SERVICE_ACCOUNT`; thiếu thì bỏ qua).
+- **Routine đầu quý (Claude)** — khi được gọi để "xử lý inbox đầu quý":
+  1. `inbox/forecast/<quý>/`: đọc bảng dự đoán, cập nhật Gói đề quý trong `js/packs.js` / `js/data/*forecast*` / `js/data/writing-real.js` / `reading-forecast.js` (bài đã có thì gắn id, chưa có thì ghi vào danh sách thiếu); xong thì chuyển file sang `inbox/da-xu-ly/`.
+  2. `inbox/bao-cao-nhap-de.txt`: bài nhập lỗi → không sửa được từ cloud (file gốc ở máy giáo viên) thì ghi rõ cần gì vào mục Việc còn dở.
+  3. Đề mới trong `bank-extra.js` / `bank-listening-new.js` chưa có giải thích → viết `tools/explain/<id>.json` (chạy `gen_explain.py`, phải ĐẠT); Listening chỉ viết khi có transcript.
+  4. `node --check` file JS đã sửa, commit + push `firebase-app`. Không có gì mới thì không commit.
 
 ## Việc còn dở
 - 10 đề Listening chưa có bản làm trên máy: forecast-06, 08, 10, 13, 16, 17, 18, 19, dudoan-02, vol8-02.
